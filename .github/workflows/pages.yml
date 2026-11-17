@@ -27,13 +27,14 @@ jobs:
       - run: python build.py --check
       # The site. Kept out of search engines unless the repository variable PUBLIC is set to true.
       - run: python tools/package.py ${{ vars.PUBLIC == 'true' && '--public' || '' }}
+      # Publishing to GitHub Pages is off unless the repository variable PAGES is true (Vercel hosts it otherwise).
       - uses: actions/upload-pages-artifact@v3
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && vars.PAGES == 'true'
         with:
           path: dist/site
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && vars.PAGES == 'true'
     needs: build
     runs-on: ubuntu-latest
     environment:

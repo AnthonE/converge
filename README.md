@@ -45,10 +45,11 @@ Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file w
 **Vercel.** Import the repository at vercel.com/new. `vercel.json` sets the build (`python3 tools/package.py`),
 the output folder (`dist/site`) and the security headers; there is nothing to choose. Every push to `main` redeploys,
 and every pull request gets its own preview link. To let search engines in, add the environment variable
-`PUBLIC` = `true` in the project's settings and redeploy. If you use Vercel, turn off GitHub Pages (or leave it
-unset), so there is one public copy.
+`PUBLIC` = `true` in the project's settings and redeploy. The workflow still validates every push and
+pull request; it publishes to GitHub Pages only if you ask it to (below), so there is one copy online.
 
-**GitHub Pages.** Pushing to `main` runs the workflow in `.github/workflows/pages.yml`: it validates the data, builds the site and
+**GitHub Pages** (instead of Vercel). Set the repository variable `PAGES` to `true` and choose Settings → Pages →
+Source: GitHub Actions. Pushing to `main` then runs the workflow in `.github/workflows/pages.yml`: it validates the data, builds the site and
 publishes it to GitHub Pages. The site is kept out of search engines until you set the repository variable
 `PUBLIC` to `true` (Settings → Secrets and variables → Actions → Variables). Elsewhere, run
 `python3 tools/package.py` and upload `dist/site/` to any static host (Netlify and Cloudflare Pages read its
