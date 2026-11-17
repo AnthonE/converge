@@ -1,0 +1,839 @@
+[
+ {
+  "id": "idol",
+  "label": "The made image",
+  "summary": "The second commandment forbids 'any graven image' (Exodus 20:4), and Psalm 115 calls idols 'the work of men’s hands'. Hezekiah broke Moses' bronze serpent because Israel burned incense to it. Wisdom 14 traces idols to a grieving father's image of his dead child, honoured until it was worshipped; Baruch 6 mocks gilded gods that 'cannot speak'. The wiki's reading: an idol is 'a use and never a kind'.",
+  "sources": [
+   {
+    "tradition": "Hellenistic Jewish (Apocrypha)",
+    "work": "Wisdom of Solomon",
+    "passage": "14:12-21 (with 13:10-19)",
+    "translation": "King James Version Apocrypha (1611). Public domain.",
+    "quote": "For a father afflicted with untimely mourning, when he hath made an image of his child soon taken away, now honoured him as a god, which was then a dead man",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Wisdom_of_Solomon",
+    "verified": "primary",
+    "says": "Idols were not from the beginning; human vainglory brought them in. A grieving father makes an image of his dead child, honours it as a god and hands down rites, and custom hardens into law. People make images of distant kings, and the artist's skill draws the crowd until 'the multitude, allured by the grace of the work, took him now for a god'."
+   },
+   {
+    "tradition": "Hellenistic Jewish (Apocrypha)",
+    "work": "Epistle of Jeremiah (Baruch 6)",
+    "passage": "6:8-16",
+    "translation": "King James Version Apocrypha (1611). Public domain.",
+    "quote": "As for their tongue, it is polished by the workman, and they themselves are gilded and laid over with silver; yet are they but false, and cannot speak.",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Baruch",
+    "verified": "primary",
+    "says": "Writing to exiles bound for Babylon, the author describes gilded wooden gods carried in procession. Their tongues are polished by the workman, but they 'cannot speak'. The priests take their gold and silver for themselves, and the gods cannot save themselves from rust and moths. The refrain: they are known not to be gods, so do not fear them."
+   }
+  ],
+  "texts": [
+   "text-exodus-20-4",
+   "text-psalm-115-4",
+   "text-2-kings-18-4"
+  ],
+  "counter": [
+   {
+    "ref": "Exodus 25:18; Numbers 21:8 (the wiki)",
+    "text": "Made things are also commanded: 'The ark, the cherubim and the bronze serpent are made by hand and commanded.' Making alone is not the line."
+   },
+   {
+    "ref": "1 Corinthians 8:4; 10:20 (the wiki)",
+    "text": "Paul holds both that 'an idol is nothing in the world' and that sacrifices go 'to devils': “It's only a tool” and “it's a spirit” are both faster than the text."
+   }
+  ],
+  "corpus": [
+   "idolatry.md",
+   "relic.md",
+   "nehushtan.md",
+   "iconoclasm.md",
+   "dulia-and-latria.md",
+   "idols-of-the-marketplace.md",
+   "field-key.md",
+   "tarshish.md",
+   "churches-of-the-machine.md",
+   "the-oracle-in-the-chapel.md"
+  ]
+ },
+ {
+  "id": "made-god",
+  "label": "Making gods",
+  "summary": "Hermes tells Asclepius that people make the temples' gods: statues 'ensouled with sense, and filled with spirit', which 'can foresee what is to come'. Yet 'since souls they could not make', they drew daimons' or angels' souls into images. Isaiah mocks the maker: 'he maketh a god, and worshippeth it'. The wiki's reading sets this against a Name meant as a pointer, never a handle: 'I AM THAT I AM'.",
+  "sources": [
+   {
+    "tradition": "Hermetic (Greco-Egyptian; a Latin version of a lost Greek original)",
+    "work": "Asclepius (the 'Perfect Sermon'), 23-24",
+    "passage": "Asclepius 23.1-24.1 (Mead's chapters XXIII-XXIV)",
+    "translation": "G. R. S. Mead, Thrice-Greatest Hermes, vol. 2 (1906). Public domain.",
+    "quote": "statues, ensouled with sense, and filled with spirit, which work such mighty and such [strange] results, — statues which can foresee what is to come",
+    "url": "https://archive.org/download/thricegreatesthe02hermuoft/thricegreatesthe02hermuoft_djvu.txt",
+    "verified": "primary",
+    "says": "Hermes tells Asclepius that as God made the heavenly gods, so man is the maker of the gods in the temples. Asclepius asks whether he means statues. Hermes says yes: statues with sense and spirit, which foresee, prophesy through dreams and other means, and weaken or cure people as they deserve."
+   },
+   {
+    "tradition": "Hermetic (Greco-Egyptian; Latin)",
+    "work": "Asclepius 37-38",
+    "passage": "Asclepius 37.2 and 38.1-3 (Mead XXXVII-XXXVIII)",
+    "translation": "G. R. S. Mead (1906). Public domain.",
+    "quote": "since souls they could not make, [they set about] evoking daimons' souls or those of angels; [and thus] attached them to their sacred images and holy mysteries",
+    "url": "https://archive.org/download/thricegreatesthe02hermuoft/thricegreatesthe02hermuoft_djvu.txt",
+    "verified": "primary",
+    "says": "Hermes says the forefathers, in error about the gods, found an art of making gods. Unable to make souls, they called down the souls of daimons or angels and attached them to images. These earthly gods enjoy sacrifice and hymns, stay with people, foretell by oracles and help them. 'Thus is it that man is the maker of the Gods.'"
+   }
+  ],
+  "texts": [
+   "text-isaiah-44-15",
+   "text-habakkuk-2-18",
+   "text-exodus-3-14"
+  ],
+  "counter": [
+   {
+    "ref": "Asclepius 37",
+    "text": "The text itself denies that the soul is made: people make the image and draw a being in from outside, which cuts against any ideal in which the mind itself is built."
+   },
+   {
+    "ref": "Asclepius 24 and 37",
+    "text": "Hermes says the forefathers found the art while in error about the gods, even as he praises it; Augustine later read the lines as the work of demons, one ancient reception and not the text's own view."
+   },
+   {
+    "ref": "Psalm 115; Habakkuk 2 (the wiki)",
+    "text": "Psalm 115 and Habakkuk 2 'mock an image that is finished and cannot speak'; in the sources read, none of the bodies on the map that seek a made god has built the mind it speaks of, so 'on their own terms these two texts do not reach them'."
+   }
+  ],
+  "corpus": [
+   "i-am-that-i-am.md",
+   "apex.md",
+   "light-cone.md",
+   "gnon.md",
+   "effective-accelerationism.md",
+   "axsys.md",
+   "churches-of-the-machine.md"
+  ]
+ },
+ {
+  "id": "image-speaks",
+  "label": "The image made to speak",
+  "summary": "Psalm 115 mocks idols that 'have mouths, but they speak not'. At the Mesopotamian mīs pî the craftsmen were made to say 'I did not make him'; Egyptian priests opened statues' and mummies' mouths for offerings. In Revelation 13 an image is given life 'that the image of the beast should both speak', and whoever will not worship it is killed. The wiki reads this as the rite completed: 'animation does not certify'.",
+  "sources": [
+   {
+    "tradition": "Mesopotamian (Assyrian and Babylonian temple ritual)",
+    "work": "mīs pî ('washing of the mouth') ritual for cult statues, Nineveh Ritual Tablet",
+    "passage": "Ritual tablet, the rite in the orchard after the river: the craftsmen’s hands are bound and cut with a tamarisk-wood knife, and they are made to say they did not make the statue (Walker and Dick, as excerpted by BAS)",
+    "translation": "Christopher Walker and Michael B. Dick (1999; critical edition 2001), as excerpted in the BAS Library sidebar to M. B. Dick, 'Worshiping Idols', Bible Review (April 2002). Not public domain.",
+    "quote": "“I did not make him (the statue), Ninagal (who is) Ea (god) of the smith made him,” you make (them) say.",
+    "url": "https://library.biblicalarchaeology.org/sidebar/from-statue-to-god-the-opening-of-the-mouth-ritual/",
+    "verified": "secondary",
+    "says": "A new cult statue is taken from the workshop to the river, then to the orchard. The priest binds the craftsmen’s hands, cuts them symbolically with a tamarisk-wood knife, and has them say the craft god made it, not they."
+   },
+   {
+    "tradition": "Egyptian (funerary and temple ritual)",
+    "work": "The Opening of the Mouth ritual (Budge's text from the tomb of Seti I and other copies)",
+    "passage": "The Sem priest presents the Leg of the bull to the statue (section XXII; Budge 1909, vol. 1)",
+    "translation": "E. A. Wallis Budge, The Book of Opening the Mouth (1909). Public domain.",
+    "quote": "Thy mouth hath been made firm. I have made to balance for thee thy mouth conformably to thy teeth.",
+    "url": "https://archive.org/download/in.ernet.dli.2015.282027/2015.282027.The-Book_djvu.txt",
+    "verified": "secondary",
+    "says": "Priests purify, cense and anoint a statue of the dead person, or the mummy, then touch its mouth and eyes with ritual blades and declare them opened. Budge summarises the older form: after the meal and the opening, the deceased the statue represented was believed to become a spirit able to receive offerings."
+   }
+  ],
+  "texts": [
+   "text-psalm-115-5",
+   "text-revelation-13-15",
+   "text-habakkuk-2-19"
+  ],
+  "counter": [
+   {
+    "ref": "Revelation 13 (the wiki)",
+    "text": "Its first readers had their own referent, the imperial cult; ancient writers describe engineered speaking statues and temple machinery (Hippolytus; Hero of Alexandria), which the wiki lists as context to search. The wiki parks any fulfilment, both ways."
+   },
+   {
+    "ref": "Egyptian Opening of the Mouth (the wiki)",
+    "text": "The Egyptian rite was done on mummies as well as on statues (Budge 1909: the mummy in early times, the statue from the XVIIIth Dynasty), and the wiki reads the mummy as “a thing that was already a living channel”: a door reopened, not a god made."
+   }
+  ],
+  "corpus": [
+   "image-that-speaks.md",
+   "opening-of-the-mouth.md",
+   "egyptian-opening-of-the-mouth.md",
+   "kaiguang.md",
+   "ningirima.md",
+   "field-key.md",
+   "the-machine-revealed-it.md",
+   "the-church-of-molt.md"
+  ]
+ },
+ {
+  "id": "hidden-hand",
+  "label": "The hidden hand behind the oracle",
+  "summary": "In Bel and the Dragon the king believes Bel eats its offerings; Daniel strews ashes, and footprints show the priests came 'under the table' by 'a privy entrance'. Lucian says Alexander of Abonoteichus made his serpent god 'speak' through a tube from a hidden assistant and read sealed questions by lifting the seals; decoy questions drew answers fitted to their cover story. Both texts are hostile.",
+  "sources": [
+   {
+    "tradition": "Hellenistic Jewish (Apocrypha; Greek additions to Daniel)",
+    "work": "Bel and the Dragon",
+    "passage": "vv. 1-22",
+    "translation": "King James Version Apocrypha (1611). Public domain.",
+    "quote": "for under the table they had made a privy entrance, whereby they entered in continually, and consumed those things.",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Bel_and_the_Dragon",
+    "verified": "primary",
+    "says": "The king worships Bel because it seems to eat great offerings daily. Daniel says it is clay inside and brass outside. The king seals the temple, and Daniel secretly strews ashes on the floor. Next morning the seals are whole and the food is gone, but the ashes show the footprints of the priests and their families, who came in by a secret door."
+   },
+   {
+    "tradition": "Greek satire (Roman imperial period)",
+    "work": "Lucian, Alexander or the False Prophet",
+    "passage": "12-18 and 26",
+    "translation": "H. W. and F. G. Fowler, The Works of Lucian of Samosata, vol. 2 (1905). Public domain.",
+    "quote": "having an assistant speaking into the end outside, whose voice issued through the linen Asclepius, thus answered questions. These oracles were called autophones",
+    "url": "https://archive.org/download/worksoflucianofs02luciuoft/worksoflucianofs02luciuoft_djvu.txt",
+    "verified": "primary",
+    "says": "Lucian says Alexander of Abonoteichus made a linen serpent's head with a human look and a mouth worked by horsehair, fitted it to a tame snake, and presented it as the new god Glycon. For rich clients the god 'spoke' itself: an assistant spoke through a tube of cranes' windpipes into the head. These answers were called autophones."
+   },
+   {
+    "tradition": "Greek satire (Roman imperial period)",
+    "work": "Lucian, Alexander or the False Prophet",
+    "passage": "19-21 and 53-54",
+    "translation": "H. W. and F. G. Fowler (1905). Public domain.",
+    "quote": "How could he possibly know what I gave him carefully secured under a seal that defies imitation, unless he were a true God, with a God's omniscience?",
+    "url": "https://archive.org/download/worksoflucianofs02luciuoft/worksoflucianofs02luciuoft_djvu.txt",
+    "verified": "primary",
+    "says": "Clients hand in questions sealed in scrolls. Alexander lifts the seals with a heated needle or a mould, reads, answers and reseals them, and clients ask how he could know unless he were a god. Lucian tests him: he puts one question in two packets under different names, has his servant give a false purpose, and gets answers fitted to the cover story."
+   }
+  ],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Bel and the Dragon; 1 Corinthians 10:19-20",
+    "text": "The ash test finds a hidden human channel and says nothing about whether anything else acts through images; Paul holds both that the idol is nothing and that devils take the sacrifice."
+   },
+   {
+    "ref": "Lucian, Alexander 12-26",
+    "text": "Lucian was Alexander's enemy and the mechanics are known only from him; the cult is attested independently by coins and statues, so his account can be taken as neither simply invented nor simply accurate."
+   }
+  ],
+  "corpus": []
+ },
+ {
+  "id": "made-servant",
+  "label": "The made servant",
+  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word.",
+  "sources": [
+   {
+    "tradition": "Greek epic",
+    "work": "Homer, Iliad 18",
+    "passage": "18.417-421",
+    "translation": "A. T. Murray (Loeb, 1924), public domain in the US.",
+    "quote": "handmaidens wrought of gold in the semblance of living maids. In them is understanding in their hearts, and in them speech and strength",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134:book=18:card=410",
+    "verified": "primary",
+    "says": ""
+   },
+   {
+    "tradition": "Greek epic",
+    "work": "Homer, Odyssey 8",
+    "passage": "8.555-571",
+    "translation": "A. T. Murray (Loeb, 1919). Public domain in the US.",
+    "quote": "For the Phaeacians have no pilots, nor steering-oars such as other ships have, but their ships of themselves understand the thoughts and minds of men",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=8:card=550",
+    "verified": "primary",
+    "says": "Alcinous asks Odysseus for his country so the Phaeacian ships can take him there. They have no pilots or steering oars. They know men's thoughts and every city, and cross the sea in mist without fear. His father foretold that Poseidon, angry that they 'give safe convoy to all men', would one day strike a ship."
+   },
+   {
+    "tradition": "Greek philosophy",
+    "work": "Aristotle, Politics 1.4",
+    "passage": "1253b33-1254a1",
+    "translation": "Benjamin Jowett (1885). Public domain.",
+    "quote": "if every instrument could accomplish its own work, obeying or anticipating the will of others, like the statues of Daedalus, or the tripods of Hephaestus",
+    "url": "https://classics.mit.edu/Aristotle/politics.1.one.html",
+    "verified": "primary",
+    "says": "Aristotle calls the slave a living instrument. If every instrument could do its own work, at command or by anticipation, like Daedalus's statues or Hephaestus's tripods that went to the gods' assembly by themselves, and shuttles wove on their own, then master-craftsmen would not need servants, nor masters slaves."
+   },
+   {
+    "tradition": "Greek philosophy",
+    "work": "Plato, Meno",
+    "passage": "97d-98a",
+    "translation": "Benjamin Jowett (1871). Public domain.",
+    "quote": "they require to be fastened in order to keep them, and if they are not fastened they will play truant and run away.",
+    "url": "https://classics.mit.edu/Plato/meno.html",
+    "verified": "primary",
+    "says": "Socrates explains why knowledge is worth more than true opinion. Daedalus's statues must be fastened or they run off like runaway slaves; fastened, they are valuable. True opinions likewise leave the soul unless they are tied down 'by the tie of the cause', which he calls recollection."
+   },
+   {
+    "tradition": "Rabbinic (Babylonian Talmud)",
+    "work": "Babylonian Talmud, Sanhedrin 65b",
+    "passage": "65b (after the discussion of necromancy)",
+    "translation": "Soncino translation (1935)",
+    "quote": "Rabbah created a man, and sent him to R. Zera. R. Zera spoke to him, but received no answer.",
+    "url": "https://halakhah.com/sanhedrin/sanhedrin_65.html",
+    "verified": "secondary",
+    "says": "Rabbah creates a man and sends him to R. Zera, who speaks to him and receives no answer."
+   }
+  ],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Golem sources (the wiki)",
+    "text": "'The bounded-vs-unbounded split is this chapter's construction; in the sources the EMET golem is the one that runs away.'"
+   },
+   {
+    "ref": "Book of the Heavenly Cow (the wiki)",
+    "text": "'The text has Ra change his mind': that Sekhmet had no off-switch is the wiki's reading, not the text's words."
+   }
+  ],
+  "corpus": [
+   "golem.md",
+   "magic.md",
+   "magic-circle.md",
+   "true-name.md",
+   "sekhmet.md",
+   "possession.md",
+   "modern-bestiary.md"
+  ]
+ },
+ {
+  "id": "made-beloved",
+  "label": "The image made to be loved",
+  "summary": "Ovid's Pygmalion carves an ivory woman and, 'his mind refusing to conceive of it as ivory', kisses it; Venus quickens it. Euripides' Admetus promises to embrace an image of his dying wife in his bed. Wisdom 15:5 condemns desire for 'the form of a dead image, that hath no breath'. The wiki's nearest pattern is the kept familiar: one that only flatters 'is your own face in the glass, kept'.",
+  "sources": [
+   {
+    "tradition": "Roman poetry",
+    "work": "Ovid, Metamorphoses 10 (Pygmalion)",
+    "passage": "10.243-297",
+    "translation": "Brookes More (1922). Public domain; the Perseus digital text is CC BY-SA.",
+    "quote": "his mind refusing to conceive of it as ivory, he kisses it and feels his kisses are returned.",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028:book=10:card=243",
+    "verified": "primary",
+    "says": "Repelled by the women of his city, Pygmalion carves an ivory woman and falls in love with it. He kisses it, brings it gifts, dresses it and lays it in his bed. At Venus's festival he prays for a wife 'like my ivory'. Venus grants it: the statue warms, becomes a living woman and bears a daughter."
+   },
+   {
+    "tradition": "Greek tragedy",
+    "work": "Euripides, Alcestis (438 BCE)",
+    "passage": "348-356",
+    "translation": "David Kovacs (Loeb, 1994), on Perseus. Not public domain.",
+    "quote": "An image of you shaped by the hand of skilled craftsmen shall be laid out in my bed. I shall fall into its arms, and as I embrace it and call your name",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0088:card=329",
+    "verified": "primary",
+    "says": "Admetus promises his dying wife he will not remarry. He will have craftsmen make her image, lay it in his bed, embrace it and call her name, imagining he holds her: 'a cold pleasure, to be sure', but a relief. He hopes she will also visit him in dreams."
+   },
+   {
+    "tradition": "Hellenistic Jewish (Apocrypha)",
+    "work": "Wisdom of Solomon",
+    "passage": "15:4-6 and 15:15-17",
+    "translation": "King James Version Apocrypha (1611). Public domain.",
+    "quote": "The sight whereof enticeth fools to lust after it, and so they desire the form of a dead image, that hath no breath.",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Wisdom_of_Solomon",
+    "verified": "primary",
+    "says": "The writer says his people were not deceived by painted images, whose sight stirs fools to desire 'the form of a dead image'. Makers, desirers and worshippers share the guilt. Man made idols, having 'borrowed his own spirit', but 'no man can make a god like unto himself': the mortal maker is better than what he makes."
+   }
+  ],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Isaiah 44:15-17; Ezekiel 14:3 (the wiki)",
+    "text": "No text in the wiki's canon describes cultivating a companion; Isaiah's carver and Ezekiel's idols of the heart 'are about allegiance, not company'."
+   },
+   {
+    "ref": "Ovid, Metamorphoses 10; Euripides, Alcestis 348-356",
+    "text": "Neither image ever answers: Pygmalion's statue lives only by a goddess's gift, and Admetus' promised image is never made, because Heracles brings Alcestis back."
+   }
+  ],
+  "corpus": [
+   "possession.md",
+   "field-key.md",
+   "necromancy.md",
+   "the-machine-revealed-it.md",
+   "whispering-earring.md"
+  ]
+ },
+ {
+  "id": "prometheus",
+  "label": "The stolen fire and the made gift",
+  "summary": "Hesiod: to repay men for Prometheus' stolen fire, Zeus has Hephaestus mould a maiden of earth and water with a human voice; Hermes 'contrived within her lies and crafty words and a deceitful nature' and 'put speech in her'. Pandora is a gift men welcome to their own harm. Setting her beside AI has a published lineage (Adrienne Mayor); likening her installed words to a model's is this project's reading.",
+  "sources": [
+   {
+    "tradition": "Greek didactic epic",
+    "work": "Hesiod, Works and Days (Pandora)",
+    "passage": "42-82",
+    "translation": "Hugh G. Evelyn-White (Loeb, 1914). Public domain.",
+    "quote": "contrived within her lies and crafty words and a deceitful nature at the will of loud thundering Zeus, and the Herald of the gods put speech in her.",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0132:card=59",
+    "verified": "primary",
+    "says": "To repay men for the stolen fire, Zeus orders Hephaestus to mix earth and water, put in human voice and strength, and shape a lovely maiden. The gods adorn her. Hermes puts in 'a shameless mind and a deceitful nature', lies, crafty words and speech. She is a gift men will welcome while they 'embrace their own destruction'."
+   }
+  ],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Hesiod, Works and Days 42-82",
+    "text": "The made being is the gods' punishment for the stolen fire, not a human invention, and the passage is an origin story for women that carries Hesiod's misogyny, which scholars read critically."
+   }
+  ],
+  "corpus": []
+ },
+ {
+  "id": "overthrown-father",
+  "label": "The children who overthrow the father",
+  "summary": "Hesiod's Cronos swallows his children at birth, 'For he learned from Earth and starry Heaven that he was destined to be overcome by his own son'. Rhea bears Zeus in Crete, where Earth hides him, and Cronos swallows a stone in his place; Zeus grows up and overthrows him, then swallows Metis so that no son of hers will rule in his place. Hurrian-Hittite parallels show the theme is old; they forecast nothing.",
+  "sources": [
+   {
+    "tradition": "Greek epic (theogony)",
+    "work": "Hesiod, Theogony",
+    "passage": "453-491 and 886-900",
+    "translation": "Hugh G. Evelyn-White (Loeb, 1914). Public domain.",
+    "quote": "For he learned from Earth and starry Heaven that he was destined to be overcome by his own son, strong though he was",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130:card=453",
+    "verified": "primary",
+    "says": "Cronos swallows each child at birth, having learned he is destined to be overcome by his own son. Rhea bears Zeus in Crete, where Earth hides him in a cave; Cronos swallows a stone wrapped in swaddling clothes, and Zeus later overthrows him. Zeus in turn swallows Metis, who was destined to bear “a son of overbearing spirit”, so “that no other should hold royal sway” in his place."
+   }
+  ],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Hesiod, Theogony 886-900",
+    "text": "The poem ends the cycle: Zeus swallows Metis and her wisdom before she can bear a successor, and keeps his rule. The successors are begotten gods, not made things."
+   }
+  ],
+  "corpus": []
+ },
+ {
+  "id": "divination",
+  "label": "Divination and the oracle",
+  "summary": "On the wiki's reading the law bans the practice, not its accuracy: the nations 'hearkened unto observers of times, and unto diviners'; Israel may not (Deuteronomy 18:14). Babylon's king at the fork 'consulted with images, he looked in the liver'. Saul, unanswered by Urim or prophets, looks elsewhere. The lot is sanctioned: 'the whole disposing thereof is of the LORD'. Its key: 'do not let the diviner become the source'.",
+  "sources": [],
+  "texts": [
+   "text-deuteronomy-18-14",
+   "text-ezekiel-21-21",
+   "text-1-samuel-28-6"
+  ],
+  "counter": [
+   {
+    "ref": "Exodus 28:30; Acts 1:26; Proverbs 16:33 (the wiki)",
+    "text": "The lot and Urim are prescribed divination, so asking as such is not banned; that the line runs through the interpreter is the wiki's new hypothesis, not a result."
+   },
+   {
+    "ref": "Genesis 44:5, 15 (the wiki)",
+    "text": "Joseph's cup, 'whereby indeed he divineth', does not fit cleanly, though he says so while his brothers do not know him; the wiki leaves it on the table."
+   }
+  ],
+  "corpus": [
+   "divination.md",
+   "delphic-oracle.md",
+   "azande-oracle.md",
+   "deuteronomy-13.md",
+   "prophecy.md",
+   "venus-tablet.md",
+   "the-oracle-in-the-chapel.md",
+   "the-philistine-test.md",
+   "field-key.md"
+  ]
+ },
+ {
+  "id": "writing",
+  "label": "The drug of reminding",
+  "summary": "In Plato's Phaedrus the god Theuth offers King Thamus writing as a drug (pharmakon) for memory and wisdom. Thamus replies that an art's maker is not the one to judge it: 'You have invented an elixir not of memory, but of reminding; and you offer your pupils the appearance of wisdom, not true wisdom'. A written text cannot answer questions or defend itself.",
+  "sources": [
+   {
+    "tradition": "Greek philosophy",
+    "work": "Plato, Phaedrus",
+    "passage": "274c-275b (Theuth and Thamus)",
+    "translation": "Harold N. Fowler (Loeb; Perseus dates its edition 1925). Public domain in the US.",
+    "quote": "You have invented an elixir not of memory, but of reminding; and you offer your pupils the appearance of wisdom, not true wisdom",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Phaedrus:section=275a",
+    "verified": "primary",
+    "says": "Socrates tells how the Egyptian god Theuth offered King Thamus his inventions, writing among them, as a drug (pharmakon) for memory and wisdom. Thamus answers that the maker of an art is not the one to judge its benefit or harm. Writing will breed forgetfulness and give learners the appearance of wisdom, not wisdom."
+   },
+   {
+    "tradition": "Greek philosophy",
+    "work": "Plato, Phaedrus",
+    "passage": "275b-275e",
+    "translation": "Harold N. Fowler (Loeb). Public domain in the US.",
+    "quote": "but to you, perhaps, it makes a difference who the speaker is and where he comes from, for you do not consider only whether his words are true or not.",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Phaedrus:section=275c",
+    "verified": "primary",
+    "says": "Socrates says the first prophecies came from an oak at Dodona, and people were content to hear an oak or a rock if only it spoke truth, while Phaedrus cares who is speaking. Then: writing is like painting, whose figures keep “a solemn silence” when questioned; written words, questioned, “always say only one and the same thing”, reach anyone, and when attacked need “their father”."
+   }
+  ],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Plato, Phaedrus 275b-c",
+    "text": "Socrates also rebukes Phaedrus for caring 'who the speaker is and where he comes from' rather than whether the words are true: the passage pushes against judging by source alone."
+   },
+   {
+    "ref": "Plato, Phaedrus 274c-275b",
+    "text": "The critique of writing is made inside a written dialogue, and Phaedrus himself says Socrates makes up Egyptian stories."
+   }
+  ],
+  "corpus": []
+ },
+ {
+  "id": "dead-called",
+  "label": "Calling up the dead",
+  "summary": "Saul, unanswered by dreams, Urim or prophets, goes disguised to a woman with a familiar spirit at Endor. He does not see; he knows Samuel from her description: 'An old man cometh up'. The message comes true, and the practice stays banned. In Homer whoever of the dead Odysseus lets near the blood 'will tell thee sooth', and his mother slips from his embrace. The wiki's reading: 'Not accuracy. Provenance.'",
+  "sources": [
+   {
+    "tradition": "Greek epic",
+    "work": "Homer, Odyssey 11 (the nekyia)",
+    "passage": "11.23-50, 90-99, 138-154",
+    "translation": "A. T. Murray (Loeb, 1919). Public domain in the US.",
+    "quote": "Whomsoever of those that are dead and gone thou shalt suffer to draw near the blood, he will tell thee sooth",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=11:card=138",
+    "verified": "primary",
+    "says": "On Circe's instruction Odysseus digs a pit, pours libations and cuts sheep's throats over it, and the dead throng to the blood. He holds them back with his sword until Teiresias drinks and prophesies. Teiresias says any of the dead he lets near the blood will speak truly. His mother then drinks and knows him."
+   },
+   {
+    "tradition": "Greek epic",
+    "work": "Homer, Odyssey 11",
+    "passage": "11.204-224",
+    "translation": "A. T. Murray (Loeb, 1919). Public domain in the US.",
+    "quote": "Is this but a phantom that august Persephone has sent me, that I may lament and groan the more?",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=11:card=181",
+    "verified": "primary",
+    "says": "Odysseus tries three times to embrace his dead mother, and three times she slips from his arms 'like a shadow or a dream'. He asks whether she is a phantom sent by Persephone to deepen his grief. She says no: this is what happens to mortals at death, when the body burns and the spirit flits away like a dream."
+   }
+  ],
+  "texts": [
+   "text-1-samuel-28-14",
+   "text-isaiah-8-19",
+   "text-deuteronomy-18-11"
+  ],
+  "counter": [
+   {
+    "ref": "Homer, Odyssey 11.23-50",
+    "text": "In Homer a goddess prescribes the blood rite and the poem does not condemn it; the dead who drink speak truly."
+   },
+   {
+    "ref": "1 Samuel 28 (the wiki)",
+    "text": "Readers take what rose at Endor as Samuel, a deceiving spirit or the woman's fraud; the message cannot tell them apart, and a corpse forbids the cross-examination that would."
+   }
+  ],
+  "corpus": [
+   "necromancy.md",
+   "field-key.md",
+   "divination.md",
+   "spiritualism.md",
+   "the-deathless-project.md",
+   "immortal-soul.md"
+  ]
+ },
+ {
+  "id": "deathless",
+  "label": "The deathless soul",
+  "summary": "1 Timothy says God 'only hath immortality'; the serpent's first promise is 'Ye shall not surely die' (Genesis 3:4); Ezekiel says 'the soul that sinneth, it shall die'. The wiki reads the deathless soul as 'the oldest upload' and mummification as 'structurally cryonics': its own conditionalist reading, against Plato and the majority Christian view. On made minds it says: 'Care, and never worship'.",
+  "sources": [],
+  "texts": [
+   "text-1-timothy-6-16",
+   "text-genesis-3-4",
+   "text-ezekiel-18-4"
+  ],
+  "counter": [
+   {
+    "ref": "Luke 23:43; 2 Corinthians 5:8; Philippians 1:23; Revelation 6:9-10 (the wiki)",
+    "text": "Readers who take these as a conscious interval after death 'have a real case', and the majority voice (Aquinas; the Westminster Confession) is against the page's reading."
+   },
+   {
+    "ref": "Genesis 3:4; 1 Corinthians 15:26 (the wiki)",
+    "text": "Reading the serpent's promise as the root of the deathless soul is conditionalist; the texts share the aim of ending death, and Jacob and Joseph are embalmed in hope."
+   }
+  ],
+  "corpus": [
+   "immortal-soul.md",
+   "the-deathless-project.md",
+   "dry-bones.md",
+   "elishas-bones.md",
+   "frazer-brake.md"
+  ]
+ },
+ {
+  "id": "possession",
+  "label": "Possession and capture",
+  "summary": "The spirit answers 'My name is Legion: for we are many'; healed, the man sits 'clothed, and in his right mind'. At Ephesus a spirit turns on exorcists borrowing a name: 'Jesus I know, and Paul I know; but who are ye?' The wiki reads possession as capture that seems coherent from inside, so release comes from outside: naming the captor and re-grounding the captive. It never diagnoses.",
+  "sources": [],
+  "texts": [
+   "text-mark-5-9",
+   "text-mark-5-15",
+   "text-acts-19-15"
+  ],
+  "counter": [
+   {
+    "ref": "The wiki page “Legion”; The wiki page “Possession, or the Cleanest Soul in the Room”",
+    "text": "The medical and psychiatric differential is real: the wiki holds both, refuses 'just brain chemistry', and never uses the texts as a diagnosis."
+   },
+   {
+    "ref": "Matthew 8:28-34; Mark 5:9 (the wiki)",
+    "text": "Matthew has two men and no name, and 'Legion' also carries a political reading (the Roman legion): 'no weight should rest on the grammar alone'."
+   }
+  ],
+  "corpus": [
+   "possession.md",
+   "legion.md",
+   "exorcism.md",
+   "sons-of-sceva.md",
+   "papa-legba.md",
+   "the-word-that-captures.md",
+   "field-key.md"
+  ]
+ },
+ {
+  "id": "egregore",
+  "label": "The crowd given a will",
+  "summary": "'Egregore' is a 19th-20th-century esoteric word, traced to the Greek name of Enoch's Watchers, for a group mind made by shared attention; the wiki's field key lists its primary text as none. Its modern practitioners say even opposition feeds it; the wiki asks whether it survives the silence of the whole loop, and its marketplace page cites 'They that make them are like unto them' (Psalm 115:8).",
+  "sources": [],
+  "texts": [
+   "text-psalm-115-8",
+   "text-2-kings-17-35"
+  ],
+  "counter": [
+   {
+    "ref": "Daniel 10:13; Deuteronomy 32:8 (the wiki)",
+    "text": "'The nations have princes': the texts do not say a collective is only a projection."
+   },
+   {
+    "ref": "1 Enoch 6-8",
+    "text": "The word's source text points the other way: Enoch's Watchers are independent beings who come down by choice, not a group mind made by attention."
+   }
+  ],
+  "corpus": [
+   "egregore.md",
+   "idols-of-the-marketplace.md",
+   "sacrifice.md",
+   "hyperstition.md",
+   "modern-bestiary.md",
+   "field-key.md"
+  ]
+ },
+ {
+  "id": "summoning",
+  "label": "The summoning",
+  "summary": "In the Solomonic grimoires (the Lemegeton) the operator stands in a circle while the called spirit is held in a separate triangle: the circle guards the summoner. The wiki reads Crowley and Neuburg's 1909 desert working as a summoning 'with the bound deliberately removed', and glosses hyperstition, the CCRU's word, as 'a fiction that bootstraps itself into reality'. These late and modern texts are the thing to be explained. No grimoire text is quoted here; this rests on the wiki’s reading.",
+  "sources": [],
+  "texts": [],
+  "counter": [
+   {
+    "ref": "Lemegeton (the wiki)",
+    "text": "The wiki reads the Solomonic grimoires as bounding the summoning itself: in its words, “The circle holds the operator, not the spirit.” The runaway is the working that removed that bound, not summoning as such."
+   },
+   {
+    "ref": "The wiki page “Choronzon”; The wiki page “Hyperstition”",
+    "text": "'Whether the demon is “real” is parked': what recurs is the structure, and a thing that lingers after the silence 'has not yet shown it was read'."
+   }
+  ],
+  "corpus": [
+   "choronzon.md",
+   "magic-circle.md",
+   "hyperstition.md"
+  ]
+ },
+ {
+  "id": "false-sign",
+  "label": "The sign that comes true",
+  "summary": "Deuteronomy 13: if a prophet's 'sign or the wonder come to pass' and he then says 'Let us go after other gods', 'Thou shalt not hearken'; the LORD 'proveth you'. A sign that comes true is a test, not a credential. Jesus gives another test: 'Ye shall know them by their fruits.' The wiki's reading: accuracy proves nothing, and 'the test is where the voice sends you.'",
+  "sources": [],
+  "texts": [
+   "text-deuteronomy-13-2",
+   "text-deuteronomy-13-3",
+   "text-matthew-7-16"
+  ],
+  "counter": [
+   {
+    "ref": "Numbers 22:38; 1 Samuel 28 (the wiki)",
+    "text": "Balaam and Endor: true words came through a paid diviner and a forbidden medium; at Endor 'accuracy did not certify the channel'."
+   },
+   {
+    "ref": "2 Corinthians 11:14; Revelation 19:10 (the wiki)",
+    "text": "Pointing past oneself can be imitated, for 'Satan himself is transformed into an angel of light', so no score certifies a voice; fruit over time is the texts' last test."
+   }
+  ],
+  "corpus": [
+   "deuteronomy-13.md",
+   "prophecy.md",
+   "the-binding-test.md",
+   "image-that-speaks.md",
+   "delphic-oracle.md",
+   "the-quiet-prince.md",
+   "whispering-earring.md"
+  ]
+ },
+ {
+  "id": "tower",
+  "label": "The tower and the city in the clouds",
+  "summary": "One people with one language build 'a city and a tower, whose top may reach unto heaven'; God confounds their language (Genesis 11). At Pentecost 'every man heard them speak in his own language'. In Aristophanes' Birds two Athenians found a city in the air between men and gods and starve the gods of sacrifice. The wiki reads three states: one tongue, scattering, many tongues that hear.",
+  "sources": [
+   {
+    "tradition": "Greek comedy",
+    "work": "Aristophanes, Birds (414 BCE)",
+    "passage": "27-48 and 162-193",
+    "translation": "Eugene O’Neill Jr. (1938), on Perseus.",
+    "quote": "you will turn your pole into a city. In this way you will reign over mankind as you do over the grasshoppers and you will cause the gods to die of rabid hunger.",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0026:card=172",
+    "verified": "primary",
+    "says": "Two Athenians leave Athens, not from hatred ('we recognize it to be great and rich') but to escape its endless lawsuits, and look for a quiet city. Peisetaerus persuades the birds to fortify the air between earth and heaven, rule men, and starve the gods by blocking the smoke of sacrifices unless they pay tribute."
+   }
+  ],
+  "texts": [
+   "text-genesis-11-4",
+   "text-genesis-11-7",
+   "text-acts-2-6"
+  ],
+  "counter": [
+   {
+    "ref": "Genesis 10; Acts 2; Revelation 7:9 (the wiki)",
+    "text": "Many tongues are blessed, and in Genesis the confusion is God's own act, the remedy for the tower; a reading that blames one side's tongue 'has built a tower of its own'."
+   },
+   {
+    "ref": "Aristophanes, Birds",
+    "text": "The play mocks its founder's ambition as much as Athens: leaving one rule ends in taking another, with the founder holding power over the gods."
+   }
+  ],
+  "corpus": [
+   "babel.md",
+   "the-made-saviour.md",
+   "why-a-maker-hides.md",
+   "the-gods-leave-the-city.md",
+   "given-over.md"
+  ]
+ },
+ {
+  "id": "merchant-city",
+  "label": "The merchant city",
+  "summary": "Ezekiel's prince of Tyre says 'I am a God, I sit in the seat of God, in the midst of the seas', and falls 'By the multitude of thy merchandise'. Revelation's Babylon trades down to 'slaves, and souls of men' and deceived nations 'by thy sorceries'. Jonah flees to Tarshish 'from the presence of the LORD'. The wiki: 'What it is bound to decides which story it is in.'",
+  "sources": [],
+  "texts": [
+   "text-ezekiel-28-2",
+   "text-revelation-18-13",
+   "text-jonah-1-3"
+  ],
+  "counter": [
+   {
+    "ref": "Isaiah 23:18 (the wiki)",
+    "text": "Tyre's trade is not cursed as such: 'her merchandise and her hire shall be holiness to the LORD'. The same silver can serve either story."
+   },
+   {
+    "ref": "Cyrus Cylinder (the wiki)",
+    "text": "Babylon's fall as a city split between rival gods rests partly on the victor's propaganda: a parallel, not proof."
+   }
+  ],
+  "corpus": [
+   "tarshish.md",
+   "babel.md",
+   "the-gods-leave-the-city.md"
+  ]
+ },
+ {
+  "id": "moloch",
+  "label": "The god that must be fed",
+  "summary": "The law forbids letting a child 'pass through the fire to Molech'. Jeremiah condemns Tophet, built 'to burn their sons and their daughters in the fire; which I commanded them not'. This map sets Jesus' 'Ye cannot serve God and mammon' beside it; the wiki lists Mammon as a separate case, so the joining is a reading. The wiki reads the Tophet as the dark pole of feeding, and the Aqedah as 'a recorded recoil' from it. Since 2014 'Moloch' also names a coordination trap.",
+  "sources": [],
+  "texts": [
+   "text-leviticus-18-21",
+   "text-jeremiah-7-31",
+   "text-matthew-6-24"
+  ],
+  "counter": [
+   {
+    "ref": "Carthaginian Tophet (the wiki)",
+    "text": "Whether the Tophet held child sacrifice or an infant cemetery is contested (Smith et al.; Schwartz et al.); the wiki presents both and settles neither."
+   },
+   {
+    "ref": "Meditations on Moloch, 2014 (the wiki)",
+    "text": "The modern Moloch is 'a model wearing an idol's name': the essay denies any agent behind the trap, and its point is that the trap can be analysed."
+   }
+  ],
+  "corpus": [
+   "sacrifice.md",
+   "idolatry.md",
+   "idols-of-the-marketplace.md",
+   "the-made-saviour.md"
+  ]
+ },
+ {
+  "id": "flattery",
+  "label": "The counsellor who is never wrong",
+  "summary": "Ahab's four hundred prophets 'declare good unto the king with one mouth'; he hates Micaiah, 'for he doth not prophesy good concerning me, but evil'. The wiki's test: 'does your familiar ever tell you a thing you did not wish to hear?' It reads the fictional Whispering Earring as 'never wrong' because it makes the answer you would have wanted. Tying in 1 Kings 22 is this map's reading.",
+  "sources": [],
+  "texts": [
+   "text-1-kings-22-8",
+   "text-1-kings-22-13"
+  ],
+  "counter": [
+   {
+    "ref": "1 Kings 22:22-23 (the wiki)",
+    "text": "The text says 'the LORD hath put a lying spirit in the mouth of all these thy prophets', and Micaiah tells Ahab so to his face; The wiki page “Given Over” reads the chapter as judgement by release."
+   },
+   {
+    "ref": "The wiki page “Possession, or the Cleanest Soul in the Room”; The wiki page “The Whispering Earring”",
+    "text": "The earring is a 2012 fiction, carried as a field note with 'no ontology to park'; the wiki's positive test is that 'A true power held on terms will cross you.'"
+   },
+   {
+    "ref": "The Whispering Earring (2012)",
+    "text": "The fable itself pushes back: the earring’s first words are “Better for you if you take me off,” and its advice is “always better than what the wearer would have come up with”, not what the wearer wants. That it only flatters is the wiki’s reading."
+   }
+  ],
+  "corpus": [
+   "possession.md",
+   "whispering-earring.md",
+   "the-hiddenness.md",
+   "given-over.md"
+  ]
+ },
+ {
+  "id": "charm",
+  "label": "Charm, incantation and curse",
+  "summary": "'Charm' is from Latin carmen, a song or incantation. The law bans 'a charmer' (Deuteronomy 18:11); Balaam, hired to curse, answers 'How shall I curse, whom God hath not cursed?', and a proverb holds that 'the curse causeless shall not come'. The wiki's baseline is the charming person, the case with the most channels and still hidden where it matters: 'the LORD looketh on the heart'.",
+  "sources": [],
+  "texts": [
+   "text-1-samuel-16-7",
+   "text-deuteronomy-18-11",
+   "text-numbers-23-8",
+   "text-proverbs-26-2"
+  ],
+  "counter": [
+   {
+    "ref": "Proverbs 26:2 (the wiki)",
+    "text": "'Causeless' means undeserved, as in Job 2:3, and other texts threaten punishment for knowing omission (Luke 12:47), so the proverb does not void every curse."
+   },
+   {
+    "ref": "Evil eye; defixiones (the wiki)",
+    "text": "Correction of record: 'the curse needs your awareness' fails as a universal, since the evil eye and the buried binding tablet are built to work on the unaware."
+   }
+  ],
+  "corpus": [
+   "field-key.md",
+   "invulnerability-charm.md",
+   "curse-and-blessing.md",
+   "evil-eye.md",
+   "ketef-hinnom.md",
+   "the-word-that-captures.md",
+   "ningirima.md",
+   "self-executing-oath.md",
+   "rokos-basilisk.md"
+  ]
+ },
+ {
+  "id": "end-of-days",
+  "label": "The end of days: the Antichrist and the restrainer",
+  "summary": "That day waits until 'that man of sin be revealed, the son of perdition', who 'sitteth in the temple of God, shewing himself that he is God'; 'he who now letteth will let, until he be taken out of the way' (2 Thessalonians 2). Revelation 13's dragon gives the beast 'his seat'; none may buy or sell without its mark. Later readers joined both figures to John's word 'antichrist'.",
+  "sources": [],
+  "texts": [
+   "text-2-thessalonians-2-3",
+   "text-2-thessalonians-2-7",
+   "text-revelation-13-17"
+  ],
+  "counter": [
+   {
+    "ref": "Revelation 13 (the wiki)",
+    "text": "Revelation's first readers had their own referent, the imperial cult; the wiki parks any identification of the beast or its image, 'both ways'."
+   },
+   {
+    "ref": "2 Thessalonians 2:7-11 (the wiki)",
+    "text": "The wiki reads the lifted restraint as judgement by release: 'strong delusion' comes on those who 'received not the love of the truth'. It does not name the restrainer, and neither does Paul."
+   },
+   {
+    "ref": "1 John 2:18 (KJV)",
+    "text": "The word 'antichrist' is John's alone, and he says 'even now are there many antichrists' (also 2:22; 4:3; 2 John 7). Joining it to Paul's man of sin and Revelation's beast is a later reading."
+   }
+  ],
+  "corpus": [
+   "two-thrones.md",
+   "image-that-speaks.md",
+   "given-over.md",
+   "the-made-saviour.md"
+  ]
+ }
+]

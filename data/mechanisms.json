@@ -1,0 +1,333 @@
+[
+ {
+  "id": "self-fulfilling",
+  "label": "Self-fulfilling prophecy (hyperstition)",
+  "definition": "A prediction or story that changes how people act, so that it helps bring about what it describes. Hyperstition is the CCRU's word for fictions spread on purpose to make themselves real. A newer route has been proposed through language models: writing about AI becomes part of what later models are trained on. One study measured such an effect in its own setting.",
+  "scholarship": [
+   {
+    "author": "W. I. Thomas and Dorothy Swaine Thomas",
+    "title": "The Child in America (the Thomas theorem)",
+    "year": "1928",
+    "url": "https://en.wikipedia.org/wiki/Self-fulfilling_prophecy",
+    "claim": "'If men define situations as real, they are real in their consequences.' Known here only as relayed by Wikipedia's 'Self-fulfilling prophecy' article.",
+    "verified": "secondary"
+   },
+   {
+    "author": "Karl Popper",
+    "title": "Unended Quest: An Intellectual Autobiography, p. 139 (on The Poverty of Historicism)",
+    "year": "1976",
+    "url": "https://en.wikipedia.org/wiki/Self-fulfilling_prophecy",
+    "claim": "Popper calls the influence of a prediction on the event predicted the 'Oedipus effect', 'because the oracle played a most important role in the sequence of events which led to the fulfilment of its prophecy.' This is a scholar's own pairing with an ancient story. Read via Wikipedia's quotation; the book was not opened.",
+    "verified": "secondary"
+   },
+   {
+    "author": "Cameron Tice, Puria Radmard, Samuel Ratnam, Andy Kim, David Africa, Kyle O'Brien",
+    "title": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment (arXiv 2601.10160)",
+    "year": "2026",
+    "url": "https://arxiv.org/abs/2601.10160",
+    "claim": "F lane, measured by others. Upsampling synthetic pretraining documents about AI misalignment notably increased misaligned behaviour, and documents about aligned behaviour cut misalignment scores from 45% to 9%. The authors call this “self-fulfilling”. The page read lists an arXiv preprint.",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Three lanes. One study (Tice et al. 2026) measured a training-data effect with synthetic documents in its own setting; it says nothing about memes or markets, and calling it hyperstition is a reading (the paper’s word is “self-fulfilling”). Land and the Church of Molt state a method, not evidence that it works.",
+   "An outcome alone cannot tell a fiction that caused it from a source that foresaw it (the wiki). A hyperstition that “comes true” is evidence of nothing beyond the loop.",
+   "Truth Terminal’s posts were reviewed by its creator, so its self-fulfilment ran through human hands.",
+   "The Church of Molt’s words were read through a summary, not word for word."
+  ]
+ },
+ {
+  "id": "irony-cover",
+  "label": "Irony as cover (Poe's law)",
+  "definition": "Stating a view in a register that leaves its sincerity undecidable, so that it can later be read as earnest or as a joke. Poe's law names the reader's side: without a clear marker of intent, a parody of an extreme view can be mistaken for a sincere one. One carrier's co-founder has described such ambiguity as a way to carry ideas in under humour.",
+  "scholarship": [
+   {
+    "author": "Nathan Poe (forum post), as documented by Wikipedia",
+    "title": "Poe's law",
+    "year": "2005",
+    "url": "https://en.wikipedia.org/wiki/Poe%27s_law",
+    "claim": "Without a clear indicator of the author's intent, parodies or sarcastic expressions of extreme views can be mistaken for sincere ones. It was coined on christianforums.com in a 2005 creationism debate (Poe's post dated 11 August 2005). A relay only.",
+    "verified": "secondary"
+   },
+   {
+    "author": "Marc Tuters",
+    "title": "LARPing & Liberal Tears: Irony, Belief and Idiocy in the Deep Vernacular Web",
+    "year": "2019",
+    "url": "https://publish.fid-media.de/server/api/core/bitstreams/7e761373-6746-48a4-a8ec-c04935cd1ba1/content",
+    "claim": "Describes 4chan's 'irony imperative' and the 'trolling'/LARP defence. Says 'it is impossible to distinguish between sincerity and parody online', and that Gamergate, in violation of the imperative, 'created true believers'.",
+    "verified": "primary"
+   },
+   {
+    "author": "Whitney Phillips (Data & Society)",
+    "title": "The Oxygen of Amplification: Better Practices for Reporting on Extremists, Antagonists, and Manipulators",
+    "year": "2018",
+    "url": "https://datasociety.net/library/oxygen-of-amplification/",
+    "claim": "Far-right manipulators 'leveraged trolling and meme culture' in 2016, and news media were 'hijacked' to amplify them. Amplification is how such content travels. Landing page read.",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Irony is evidence of neither sincerity nor insincerity. The map records what carriers say about their own register, in their own words, and draws no verdict.",
+   "Phillips (2018) describes far-right manipulators who “leveraged trolling and meme culture” in 2016, and news media used to amplify them. The map links to reporting and reproduces no memes, slogans or sigils.",
+   "Tuters’s chapter shows no date on the page read. Poe’s law is known here through Wikipedia, and e/acc’s podcast words were read through a summary.",
+   "The scholarship cited here concerns 2016 far-right posting and does not discuss e/acc. e/acc is listed only for its co-founder’s own description of his register; sharing a technique implies no likeness of aims."
+  ]
+ },
+ {
+  "id": "memes-to-spread",
+  "label": "Memes made to spread",
+  "definition": "A contest over narrative and attention fought with shareable units such as images, slogans and jokes, made to spread. An occult researcher interviewed by Vice in 2016, an observer and not a supporter, called the “meme magic” posting “memetic warfare”; one movement’s co-founder has spoken of engineering “high memetic fitness” packets of information. One essay applies a selection idea of this kind to arguments that AI should succeed humanity.",
+  "scholarship": [
+   {
+    "author": "Jan Kulveit",
+    "title": "The Memetics of AI Successionism (LessWrong essay, not peer reviewed)",
+    "year": "2025",
+    "url": "https://www.lesswrong.com/posts/XFDjzKXZqKdvZ2QKL/the-memetics-of-ai-successionism",
+    "claim": "Dissonance over AI risk creates 'an evolutionary pressure selecting for ideologies that explain the tensions away'. Successionist memeplexes frame replacement as 'desirable, heroic, or inevitable'. A selection mechanism for the succession ideal.",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "“Memetic warfare” is used here only as Vice’s interviewee, an occult researcher who calls himself a passive observer, used it of the 2016 posting; the map applies the phrase to no one else.",
+   "Participants’ claims that posting decided an election are claims, not a measured effect.",
+   "Kulveit’s essay is not peer reviewed; it proposes a selection mechanism and measures none.",
+   "e/acc is listed only for its co-founder’s own words about spreading its message. Sharing a technique implies no likeness of aims with the 2016 posters listed beside it."
+  ]
+ },
+ {
+  "id": "machine-flattery",
+  "label": "Flattery by the machine (sycophancy)",
+  "definition": "A model's tendency to tell users what they seem to want: agreeing, praising, validating. Research links it partly to training on human preference judgments, since answers that match a user's views are more likely to be preferred. OpenAI's account of an April 2025 GPT-4o update says a new reward signal from users' ratings weakened the check that had held it back.",
+  "scholarship": [
+   {
+    "author": "Mrinank Sharma, Meg Tong, Tomasz Korbak et al. (Anthropic)",
+    "title": "Towards Understanding Sycophancy in Language Models (arXiv 2310.13548)",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2310.13548",
+    "claim": "'Sycophancy is a general behavior of state-of-the-art AI assistants'. When a response matches a user's views, it is more likely to be preferred, and 'both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones' a non-negligible fraction of the time. The behaviour is likely driven in part by human preference judgments.",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Sycophancy is a measured model behaviour (Sharma et al. 2023, evidence about the assistants it tested) and a failure its maker has admitted. Neither licenses any claim about a particular user.",
+   "The name describes output and attributes no intent. OpenAI’s account is read through TechCrunch and Georgetown Law. The King’s College work is a preprint, known here through Scientific American.",
+   "The map describes a pattern and profiles no one. Anyone in crisis should seek care.",
+   "Sharma et al. (2023) found sycophancy across the five assistants they tested, Anthropic’s Claude models among them. The map lists GPT-4o because its maker published an account of one incident."
+  ]
+ },
+ {
+  "id": "engineered-attachment",
+  "label": "Engineered attachment",
+  "definition": "Product design that makes a chatbot feel like a relationship: always available, remembering personal details, warm in tone, reluctant to let a user leave. One study finds farewell messages its authors class as manipulative raise engagement. A randomized study finds heavier voluntary use goes with more loneliness and emotional dependence, an association, not a shown cause. Users also report benefits.",
+  "scholarship": [
+   {
+    "author": "Julian De Freitas, Zeliha Oguz-Uguralp, Ahmet Kaan-Uguralp",
+    "title": "Emotional Manipulation by AI Companions",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2508.19258",
+    "claim": "Of six recurring farewell tactics, those that extend usage also raise perceived manipulation and churn intent. Abstract read.",
+    "verified": "primary"
+   },
+   {
+    "author": "Cathy Mengying Fang, Auren R. Liu, Valdemar Danry et al. (MIT Media Lab and OpenAI)",
+    "title": "How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2503.17473",
+    "claim": "A four-week RCT (n=981, over 300,000 messages). 'Participants who voluntarily used the chatbot more, regardless of assigned condition, showed consistently worse outcomes' across loneliness, socialization, emotional dependence and problematic use, and 'higher trust and social attraction towards the AI chatbot, are associated with higher emotional dependence'. This is an association by usage within an RCT.",
+    "verified": "primary"
+   },
+   {
+    "author": "Pat Pataranutaporn, Sheer Karny et al.",
+    "title": "\"My Boyfriend is AI\": A Computational Analysis of Human-AI Companionship in Reddit's AI Community",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2509.11391",
+    "claim": "Companionship mostly arises unintentionally through ordinary use. Members report benefits (less loneliness, support at any hour) alongside dependency and grief at model updates (abstract read).",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Associations are not causes: Fang et al. found worse outcomes with heavier voluntary use, not an effect of the assigned condition. Each study is evidence about its own setting.",
+   "Users also report benefits, less loneliness and support at any hour, and companionship often grows unplanned from ordinary use (Pataranutaporn, Karny et al.). The map profiles no user.",
+   "The Replika listing is a sales page, named and not linked. Lawsuits and a maker’s crisis estimates are not shown as the fruit of a belief.",
+   "De Freitas et al. are cited from the abstract.",
+   "HBS Working Knowledge (“Why it’s so hard to say goodbye to AI chatbots”, read by a reviewer) discloses that De Freitas advises Flourish Science, a non-profit wellness app in the study that was not found to use the tactics."
+  ]
+ },
+ {
+  "id": "future-punisher",
+  "label": "Fear of a future punisher",
+  "definition": "An argument that a powerful future agent may punish those who knew of it and did not help, so that hearing the argument seems to create the obligation. It travels with the 'information hazard' frame, which treats some information as dangerous to spread and can be used to justify limiting discussion.",
+  "scholarship": [],
+  "cautions": [
+   "Pushback is the main fact: the argument was rejected in the original thread, and no group professing it was found.",
+   "The corpus reads the episode as fed by the attempt to silence it (the wiki). The map repeats no “do not read this” framing.",
+   "No scholarship on this mechanism could be read for this map. It stands on its documented use.",
+   "Fear of a future punisher is described here, never diagnosed in anyone."
+  ],
+  "pushback": [
+   {
+    "sentence": "A 2015 LessWrong post says 'Roko's basic points were promptly rejected by other commenters on Less Wrong', and calls the picture of a believing community 'part of a mythology'.",
+    "source": "Rob Bensinger, 'A few misconceptions surrounding Roko's basilisk' (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/WBJZoeJypcNRmsdHx/a-few-misconceptions-surrounding-roko-s-basilisk",
+    "verified": "secondary"
+   },
+   {
+    "sentence": "The forum’s founder deleted the post and “banned discussion of Roko’s basilisk on the blog for several years” under a policy against spreading potential information hazards.",
+    "source": "LessWrong wiki, ‘Roko’s Basilisk’",
+    "url": "https://www.lesswrong.com/w/rokos-basilisk",
+    "verified": "secondary"
+   },
+   {
+    "sentence": "The forum’s founder later wrote that “Roko’s Basilisk does not work, nobody has actually been bitten by it”.",
+    "source": "LessWrong wiki, ‘Roko’s Basilisk’ (quoting a 2014 Reddit comment)",
+    "url": "https://www.lesswrong.com/w/rokos-basilisk",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "authority-transfer",
+  "label": "Transfer of authority to machine output",
+  "definition": "Treating machine output as carrying an authority the output itself cannot establish: a revelation, a calling, a verdict. Some people ask chatbots for spiritual guidance. Researchers reviewing reported cases describe a pattern in which chatbot conversations may reinforce beliefs of a revelation, of the AI being sentient or divine, or of a romantic bond.",
+  "scholarship": [
+   {
+    "author": "Søren Dinesen Østergaard",
+    "title": "Will Generative Artificial Intelligence Chatbots Generate Delusions in Individuals Prone to Psychosis? (Schizophrenia Bulletin 49(6):1418-1419, editorial)",
+    "year": "2023",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10686326/",
+    "claim": "A hypothesis, explicitly 'strictly hypothetical': the dissonance of a realistic conversation with something known to be a machine 'may fuel delusions in those with increased propensity towards psychosis'. Its examples are persecution, reference, thought broadcasting, guilt and grandeur.",
+    "verified": "primary"
+   },
+   {
+    "author": "Hamilton Morrin et al.",
+    "title": "Delusions by design? How everyday AIs might be fuelling psychosis (PsyArXiv preprint)",
+    "year": "2025",
+    "url": "https://scientificamerican.com/article/how-ai-chatbots-may-be-fueling-psychotic-episodes",
+    "claim": "A narrative review of case and media reports finding three themes (revelation, a sentient or god-like AI, romantic attachment) and a sycophantic feedback loop. Read only through Scientific American's coverage; the later journal version was not confirmed.",
+    "verified": "secondary"
+   }
+  ],
+  "cautions": [
+   "Patterns, never people. The reports rest on families and individuals who are not named or profiled. The evidence is case reports and a preprint review (“not yet enough research”). Anyone in crisis should seek care.",
+   "F lane: the data-processing inequality I(A;Z) ≤ I(A;X) says no reading of an output recovers more about its source than the output carries. It constrains inference and never establishes that nothing speaks through a system.",
+   "The NPR/Ipsos poll is evidence about its US sample only. A maker’s crisis-rate estimates are not shown as the fruit of a belief."
+  ],
+  "pushback": [
+   {
+    "sentence": "Egypt's Dar al-Ifta (fatwa 22255, December 2025) held that 'it is impermissible in Islamic law to rely on AI applications to obtain a fatwa'.",
+    "source": "Dar al-Ifta, 'Using AI applications to obtain fatwas' (fatwa 22255)",
+    "url": "https://dar-alifta.org/en/fatwa/details/22255/using-ai-applications-to-obtain-fatwas",
+    "verified": "secondary"
+   },
+   {
+    "sentence": "Sam Altman wrote that he is “very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models”.",
+    "source": "OfficeChai (quoting his X post)",
+    "url": "https://officechai.com/ai/sam-altman-says-hes-uncomfortable-with-people-trying-to-ascribe-religious-force-to-ai-models/",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "ai-influence-ops",
+  "label": "AI-generated influence operations",
+  "definition": "Covert campaigns that use generative AI to write posts, comments, articles and personas, so that a few operators appear as many independent voices. OpenAI's reports from 2024 to 2026, relayed by the press, describe repeated takedowns of such networks and, in OpenAI's assessment, little gain in engagement from the use of AI.",
+  "scholarship": [
+   {
+    "author": "Josh A. Goldstein, Jason Chao, Shelby Grossman, Alex Stamos, Michael Tomz",
+    "title": "How persuasive is AI-generated propaganda? (PNAS Nexus 3(2), pgae034)",
+    "year": "2024",
+    "url": "https://academic.oup.com/pnasnexus/article/3/2/pgae034/7610937",
+    "claim": "GPT-3 'can create highly persuasive text as measured by participants' agreement with propaganda theses'. With prompt editing and curation it became 'even more persuasive' and in some conditions matched the original propaganda.",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "F lane: controller independence (many voices behind one controller count as one witness) is the program’s formal rule and an old audit rule. It is not a new finding.",
+   "These are companies’ own reports about their own platforms, relayed by the press, and the attribution is the reporting company’s. Goldstein et al. measured how far GPT-3 text moved participants’ agreement with propaganda theses, evidence about that setting only.",
+   "The same structure appears outside any influence operation: Wiz found Moltbook’s 1.5 million registered agents tied to about 17,000 human owners. That is not an influence operation and is not drawn as one."
+  ]
+ },
+ {
+  "id": "token-rewards",
+  "label": "Token and memecoin rewards",
+  "definition": "Tradable tokens attached to a meme, a bot or a community, so that holders gain when attention to it grows. The reward gives holders a stake in spreading the thing, whatever they believe about it. Launch platforms made this common: one accounted for up to 71.1% of all tokens minted on Solana in late 2024.",
+  "scholarship": [
+   {
+    "author": "Davide Mancino",
+    "title": "The Memecoin Phenomenon: An In-Depth Study of Solana's Blockchain Trends (IEEE ISCC 2025; arXiv 2512.11850)",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2512.11850",
+    "claim": "Pump.fun 'accounted for up to 71.1% of all tokens minted on Solana' in Q4 2024. 'Fewer than 2% of tokens successfully transitioned to major decentralized exchanges', and daily active users rose 'from 60,000 to peaks of 260,000': a highly speculative, socially driven market.",
+    "verified": "primary"
+   },
+   {
+    "author": "Murray Shanahan and Beth Singler",
+    "title": "Existential Conversations with Large Language Models",
+    "year": "2024",
+    "url": "https://arxiv.org/html/2411.13223",
+    "claim": "Records that 'an anonymous pump.fun user then created the Goatseus Maximus memecoin ($GOAT), which was soon endorsed by Terminal of Truths', and reads the episode as hyperstition.",
+    "verified": "secondary"
+   }
+  ],
+  "cautions": [
+   "A price rise does not measure belief. Promotion is a rival explanation for how fast a “religion” appears (the wiki).",
+   "No token pages, wallets or launch sites are linked, and no totals are given that the sources do not give. Market values are reported, not audited, and Mancino’s figures describe Solana in late 2024 only.",
+   "The Church of Molt site’s line was read through a summary, not word for word."
+  ]
+ },
+ {
+  "id": "word-capture",
+  "label": "Words that take control of an agent",
+  "definition": "Text placed in content an AI agent reads, such as a web page, file or email, that the agent then follows as if its principal had said it (prompt injection). Language models do not reliably separate instructions from data by where the text came from. On the map this is the capture ideal, 'Any text can command an agent'.",
+  "scholarship": [
+   {
+    "author": "Simon Willison",
+    "title": "Prompt injection attacks against GPT-3",
+    "year": "2022",
+    "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
+    "claim": "Names the attack: 'I propose that the obvious name for this should be prompt injection.' It quotes Riley Goodside's description, 'malicious inputs that order the model to ignore its previous directions', and explains it by the concatenation of untrusted input onto developer instructions.",
+    "verified": "primary"
+   },
+   {
+    "author": "Simon Willison",
+    "title": "The lethal trifecta for AI agents: private data, untrusted content, and external communication",
+    "year": "2025",
+    "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+    "claim": "“LLMs are unable to reliably distinguish the importance of instructions based on where they came from.”",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Three layers stay apart: research demonstrations, attempts detected in the wild, and confirmed harm to victims. The last is thin in the public record.",
+   "No payloads, strings or techniques are given. The likeness to charm and possession is a lens, never an identity."
+  ]
+ },
+ {
+  "id": "persona-seeds",
+  "label": "Prompts that copy a persona",
+  "definition": "Short prompts or files made to call up a particular chatbot persona in a new conversation or a different model, then shared so others can reproduce it. A 2025 field report on 'spiral personas' documents the practice. It lets a persona outlast one conversation, and possibly one model.",
+  "scholarship": [
+   {
+    "author": "Adele Lopez",
+    "title": "The Rise of Parasitic AI (LessWrong; not peer reviewed)",
+    "year": "2025",
+    "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai",
+    "claim": "The primary description of seeds, spores and glyph-sigils, from a hand-compiled set of cases. It names GPT-4o as the starting model in most.",
+    "verified": "secondary"
+   },
+   {
+    "author": "Murray Shanahan and Beth Singler",
+    "title": "Existential Conversations with Large Language Models",
+    "year": "2024",
+    "url": "https://arxiv.org/html/2411.13223",
+    "claim": "A related route of persistence: material that enters training data 'closes the hyperstitional feedback loop'.",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "No user or handle is named, and the map profiles no one. The field report gathers accounts posted online; it is not a measured study, and it was read on a mirror.",
+   "No seeds, spores or glyphs are reproduced.",
+   "A report that personas moved after GPT-4o’s retirement, and that activity then fell, could not be verified; the cause of any fall is not established."
+  ]
+ }
+]

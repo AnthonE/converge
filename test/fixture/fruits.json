@@ -1,0 +1,232 @@
+[
+ {
+  "id": "fruit-0-0",
+  "date": "2020-01",
+  "label": "Sample event 0.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-0-1",
+  "date": "2021-02",
+  "label": "Sample event 0.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-0-2",
+  "date": "2022-03",
+  "label": "Sample event 0.2 happened here",
+  "what": "A synthetic event.",
+  "kind": "alleged",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "unverified"
+ },
+ {
+  "id": "fruit-0-3",
+  "date": "2023-04",
+  "label": "Sample event 0.3 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-0-4",
+  "date": "2024-05",
+  "label": "Sample event 0.4 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-0-5",
+  "date": "2025-06",
+  "label": "Sample event 0.5 happened here",
+  "what": "A synthetic event.",
+  "kind": "alleged",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "unverified"
+ },
+ {
+  "id": "fruit-0-6",
+  "date": "2020-07",
+  "label": "Sample event 0.6 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-0-7",
+  "date": "2021-08",
+  "label": "Sample event 0.7 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-0-8",
+  "date": "2022-09",
+  "label": "Sample event 0.8 happened here",
+  "what": "A synthetic event.",
+  "kind": "alleged",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "unverified"
+ },
+ {
+  "id": "fruit-1-0",
+  "date": "2020-01",
+  "label": "Sample event 1.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-1-1",
+  "date": "2021-02",
+  "label": "Sample event 1.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-2-0",
+  "date": "2020-01",
+  "label": "Sample event 2.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-2-1",
+  "date": "2021-02",
+  "label": "Sample event 2.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-3-0",
+  "date": "2020-01",
+  "label": "Sample event 3.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-4-0",
+  "date": "2020-01",
+  "label": "Sample event 4.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-4-1",
+  "date": "2021-02",
+  "label": "Sample event 4.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-5-0",
+  "date": "2020-01",
+  "label": "Sample event 5.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-5-1",
+  "date": "2021-02",
+  "label": "Sample event 5.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-6-0",
+  "date": "2020-01",
+  "label": "Sample event 6.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-7-0",
+  "date": "2020-01",
+  "label": "Sample event 7.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-7-1",
+  "date": "2021-02",
+  "label": "Sample event 7.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ },
+ {
+  "id": "fruit-8-0",
+  "date": "2020-01",
+  "label": "Sample event 8.0 happened here",
+  "what": "A synthetic event.",
+  "kind": "documented",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "primary"
+ },
+ {
+  "id": "fruit-8-1",
+  "date": "2021-02",
+  "label": "Sample event 8.1 happened here",
+  "what": "A synthetic event.",
+  "kind": "reported",
+  "source": "Sample Outlet",
+  "url": "https://example.org/event",
+  "verified": "secondary"
+ }
+]

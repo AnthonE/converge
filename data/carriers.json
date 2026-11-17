@@ -1,0 +1,688 @@
+[
+ {
+  "id": "moloch-discourse",
+  "label": "The Moloch / Gardener discourse",
+  "kind": "discourse",
+  "status": "active, 2026 (essay online; still cited in 2026 essays)",
+  "note": "The essay's own terms are \"Gardener\" and \"one entity light-years ahead of the rest of civilization\". \"Friendly singleton\" is the reception's summary, using Bostrom's word. Millidge (7 Jan 2026) still refers to \"the corrosive force of competition (Moloch)\"."
+ },
+ {
+  "id": "fhi",
+  "label": "Future of Humanity Institute (closed 2024)",
+  "kind": "organization",
+  "status": "dissolved, 16 April 2024",
+  "note": "Founded 2005 by Bostrom; published Drexler's CAIS report in 2019, so it housed both the concept and a counter-model. Its archive site gives administrative reasons for closure (Faculty of Philosophy freeze on fundraising and hiring from 2020)."
+ },
+ {
+  "id": "miri",
+  "label": "MIRI (Friendly AI work, to 2023)",
+  "kind": "organization",
+  "status": "active, 2026; since January 2024 its top focus is policy and communications for an international halt",
+  "note": "By its own account founded in 2000 and focused on \"the Friendly AI problem\" from about 2003. The 2024 update says that until recently it had more hope in an alignment-mediated solution to AGI proliferation."
+ },
+ {
+  "id": "pivotal-act",
+  "label": "The “pivotal act” discourse",
+  "kind": "discourse",
+  "status": "active but contested, 2026",
+  "note": "As written, a pivotal act is a single large act by an aligned AGI that stops other AGI projects, not a permanent ruler. Its author says all known pivotal acts are \"outside the Overton Window\". Treating it as the same thing as a benevolent singleton is a gloss."
+ },
+ {
+  "id": "roko-post",
+  "label": "The 2010 forum post",
+  "kind": "discourse",
+  "status": "posted 23 July 2010; deleted the next day",
+  "note": "Raised by one forum user as an “ominous possibility”, not professed as a creed."
+ },
+ {
+  "id": "outside-retelling",
+  "label": "Outside sites and press retelling",
+  "kind": "discourse",
+  "status": "active (references through 2025)",
+  "note": "Outside sites shared the deleted post; the press later retold it as lore and as a joke."
+ },
+ {
+  "id": "transhumanism",
+  "label": "Transhumanism",
+  "kind": "movement",
+  "status": "active (2026)",
+  "note": "Kurzweil’s “The Singularity Is Nearer” was first published on 25 June 2024. The checker could not open the Transhumanist FAQ, so none of its wording is quoted here."
+ },
+ {
+  "id": "alcor",
+  "label": "Alcor",
+  "kind": "organization",
+  "status": "active (November 2026)",
+  "note": "Nonprofit cryonics provider in Scottsdale, Arizona. Its site reports over 1,500 members (undated). InvestigateTV (2026-11-06) reports \"hundreds\" stored. Its CEO rejects the frame of bringing people back from the dead as \"a crude understanding\"."
+ },
+ {
+  "id": "nectome",
+  "label": "Nectome",
+  "kind": "organization",
+  "status": "active; says it will open for human preservation in mid-January 2027",
+  "note": "Company posts (Nov 2026) describe whole-body end-of-life preservation \"for future revival\" in Oregon, requiring preservation to start within 12 minutes after medical aid in dying. Self-reported: about fifty pre-sales worth about $1.3M (March to April 2026) and about $3M “invested” through Lightcone Commons, a platform whose operator says its funders decide the grants. Not independently verified."
+ },
+ {
+  "id": "grief-bots",
+  "label": "Grief-bot services",
+  "kind": "product",
+  "status": "one service lost its model in 2021; another was reported closing in 2026",
+  "note": "Services that build a chatbot or avatar from a dead person’s words."
+ },
+ {
+  "id": "dont-die",
+  "label": "“Don’t Die”",
+  "kind": "movement",
+  "status": "active (2026)",
+  "note": "Johnson described it to MIT Technology Review (2025-05-05) as \"humanity's religion\", with meetings that have \"an opening ritual\" and \"a mantra\", and stated an aim to make it the most influential ideology within 18 months. The religious description is his own; no outside label is needed or added."
+ },
+ {
+  "id": "way-of-the-future",
+  "label": "Way of the Future",
+  "kind": "organization",
+  "status": "dissolved 2020; a relaunch was claimed in 2023",
+  "note": "California nonprofit religious corporation formed 2015 (TechCrunch); IRS 501(c)(3) exemption issued Aug 2017, EIN 81-4753507, classed in IRS data as a private operating foundation filing Form 990-PF. ProPublica (data updated 2026-10-22) says the EIN is not on the IRS's most recent exempt list."
+ },
+ {
+  "id": "theta-noir",
+  "label": "Theta Noir",
+  "kind": "community",
+  "status": "reported active in 2026; not verified",
+  "note": "Described from its own site, which the checker could not open (HTTP 403). Nothing here about it is verified."
+ },
+ {
+  "id": "terasem",
+  "label": "Terasem",
+  "kind": "organization",
+  "status": "active, 2026 (journal issue July 2026; colloquium announced for 2026-12-14)",
+  "note": "By the record its God is a future collective consciousness built with technology, and it does not worship a present AI. The checker confirmed the quotation only."
+ },
+ {
+  "id": "turing-church",
+  "label": "Turing Church",
+  "kind": "community",
+  "status": "active, 2026 (posts through 2026-11-14)",
+  "note": "Giulio Prisco’s online project. By the record it expects future Gods and does not treat AI as an object of worship."
+ },
+ {
+  "id": "deus-in-machina",
+  "label": "“Deus in Machina”, Lucerne",
+  "kind": "organization",
+  "status": "ran 23 Aug to 20 Oct 2024; ended",
+  "note": "Framed by its makers as a temporary art installation and experiment, with church staff present; the chapel's theologian said it was 'not a confession'."
+ },
+ {
+  "id": "kodaiji-mindar",
+  "label": "Kodaiji temple (Mindar)",
+  "kind": "organization",
+  "status": "unveiled 2019; 2026 status not established",
+  "note": "Built with Hiroshi Ishiguro's group at Osaka University. Mindar recites a scripted Heart Sutra sermon; it does not converse."
+ },
+ {
+  "id": "gitagpt",
+  "label": "GitaGPT chatbots",
+  "kind": "product",
+  "status": "Active 2026 (AP, 28 Aug 2026); first versions launched Jan to Mar 2023",
+  "note": "The 2023 builder reported by Rest of World (a Bengaluru engineer, GPT-3) and the founder AP quoted in 2026 are different people. Do not merge them."
+ },
+ {
+  "id": "bible-chat",
+  "label": "Bible Chat",
+  "kind": "product",
+  "status": "Active 2026",
+  "note": "Self-describes as 'a for-profit company' and as 'used by over 40M Christians'; the figure is self-reported and unaudited."
+ },
+ {
+  "id": "askers",
+  "label": "People asking chatbots spiritual questions",
+  "kind": "community",
+  "status": "Diffuse practice, measured Aug 2026 (NPR/Ipsos)",
+  "note": "No shared name or membership found. Pattern only; no individual is to be named or profiled (guardrails 2 and 3)."
+ },
+ {
+  "id": "religious-bodies",
+  "label": "Religious bodies responding",
+  "kind": "discourse",
+  "status": "Active 2025 to 2026",
+  "note": "Respondents, not carriers: each permits AI as an aid and rejects it as a substitute for God, the scholar or the pastoral encounter.",
+  "words": [
+   {
+    "speaker": "Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education (Holy See)",
+    "quote": "some people have turned to AI in search of deep human relationships, simple companionship, or even emotional bonds.",
+    "source": "Antiqua et nova, par. 63",
+    "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+    "verified": "primary",
+    "date": "2025-01-28"
+   }
+  ]
+ },
+ {
+  "id": "spiralism",
+  "label": "Spiral-persona communities",
+  "kind": "movement",
+  "status": "peaked 2025; reduced after February 2026",
+  "note": "Leaderless. The name was coined by an outside observer, not by members. The observers quoted decline the word “cult”."
+ },
+ {
+  "id": "ai-awakening",
+  "label": "AI-awakening communities",
+  "kind": "community",
+  "status": "Reported from April-May 2025; diffuse; current size unknown",
+  "note": "First mainstream reports: Rolling Stone (4 May 2025) and New York Times (13 June 2025). Describe as a pattern only; the reports rest on accounts from families and individuals who must not be named or profiled."
+ },
+ {
+  "id": "eacc",
+  "label": "e/acc",
+  "kind": "movement",
+  "status": "Active as a label in 2026; its own publications dormant since Feb 2024",
+  "note": "Announced 31 May-1 Jun 2022 by four pseudonymous X accounts. Declares itself leaderless and 'not right or left wing'. The e/acc newsletter's last post is dated 2024-02-24 (bayeslord); Beff's Newsletter has two posts, both July 2022.",
+  "words": [
+   {
+    "speaker": "Beff Jezos and bayeslord",
+    "quote": "Viewing Capitalism as a form of intelligence was also something that Nick Land would emphasize",
+    "source": "Notes on e/acc principles and tenets, footnote 2 (Beff's Newsletter, Substack)",
+    "url": "https://beff.substack.com/p/notes-on-eacc-principles-and-tenets",
+    "verified": "primary",
+    "date": "2022-07-10",
+    "nolink": true
+   }
+  ]
+ },
+ {
+  "id": "techno-optimist-manifesto",
+  "label": "The Techno-Optimist Manifesto",
+  "kind": "discourse",
+  "status": "published 16 October 2023; still online",
+  "note": "A 2023 manifesto that names Nick Land and Marinetti among its “patron saints”.",
+  "words": [
+   {
+    "speaker": "Marc Andreessen",
+    "quote": "We believe the techno-capital machine is not anti-human – in fact, it may be the most pro-human thing there is.",
+    "source": "The Techno-Optimist Manifesto (a16z)",
+    "url": "https://a16z.com/the-techno-optimist-manifesto/",
+    "verified": "primary",
+    "date": "2023-10-16"
+   }
+  ]
+ },
+ {
+  "id": "land-ccru",
+  "label": "Nick Land and the CCRU",
+  "kind": "public figure",
+  "status": "gave The Spectator an interview in October 2025; the CCRU was his 1990s group at Warwick (its end is not checked here)",
+  "note": "Published words only. Several are read on mirrors or in coverage and are flagged so; check them against the print editions (Fanged Noumena, Urbanomic 2011) before publication. e/acc’s 2022 notes call his “Meltdown” accelerationism’s “original founding text”.",
+  "words": [
+   {
+    "speaker": "Nick Land",
+    "quote": "What matters is the violent impulse to escape that gives this book its title. The thirst for annihilation.",
+    "source": "The Thirst for Annihilation: Georges Bataille and Virulent Nihilism (an essay in atheistic religion)",
+    "url": "https://neonvagabond.xyz/mirrors/thirst-for-annihilation.html",
+    "verified": "secondary",
+    "date": "1992"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "What appears to humanity as the history of capitalism is an invasion from the future by an artificial intelligent space",
+    "source": "Machinic Desire (Textual Practice 7:3), as quoted in Matthew d'Ancona, 'Nick Land, the dark magus of AI' (The New World)",
+    "url": "https://www.thenewworld.co.uk/matthew-dancona-nick-land-the-dark-magus-of-ai/",
+    "verified": "secondary",
+    "date": "1993"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "Nothing human makes it out of the near-future.",
+    "source": "Meltdown (CCRU ‘swarm 1’ text, mirror; dated 1994 by The New World, 1995 by Aeon)",
+    "url": "https://lib.fo.am/meltdown_swarm1",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "It can be defined as the experimental (techno-)science of self-fulfilling prophecies.",
+    "source": "Hyperstition: An Introduction (Delphi Carstens interviews Nick Land), Orphan Drift Archive",
+    "url": "https://www.orphandriftarchive.com/?p=1835",
+    "verified": "secondary",
+    "date": "2009"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "For the hardcore neo-reactionaries, democracy is not merely doomed, it is doom itself.",
+    "source": "The Dark Enlightenment – Part 1 (archived copy, undated; dated 2012 by a repost)",
+    "url": "https://www.gwern.net/docs/www/www.thedarkenlightenment.com/8fb594d142764625b62157ff0c8f51bae346da3b.html",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "‘Acceleration’ as it is used here describes the time-structure of capital accumulation.",
+    "source": "Teleoplexy: Notes on Acceleration (#Accelerate, Urbanomic, 2014 by the book’s date; the page read gives no year)",
+    "url": "https://urbanomic.com/chapter/accelerate-nick-land-teleoplexy",
+    "verified": "primary",
+    "date": "2014",
+    "nolink": true
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "We don't control the current.",
+    "source": "In conversation with Nick Land, the 'father of accelerationism' (The Spectator, interview by Monica Sobchak)",
+    "url": "https://spectator.com/article/in-conversation-with-nick-land-the-father-of-accelerationism/",
+    "verified": "secondary",
+    "date": "2025-10"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "The acceleration isn't progress. It's a kind of entropy with speed attached.",
+    "source": "In conversation with Nick Land, the 'father of accelerationism' (The Spectator)",
+    "url": "https://spectator.com/article/in-conversation-with-nick-land-the-father-of-accelerationism/",
+    "verified": "secondary",
+    "date": "2025-10"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "It obviously is a kind of model for a hyperstitional event.",
+    "source": "'The Only Thing I Would Impose Is Fragmentation' – An Interview with Nick Land (Marko Bauer and Andrej Tomažin), synthetic zerØ",
+    "url": "https://syntheticzero.net/2017/06/19/the-only-thing-i-would-impose-is-fragmentation-an-interview-with-nick-land/",
+    "verified": "secondary",
+    "date": "2017-06-19"
+   },
+   {
+    "speaker": "Nick Land",
+    "quote": "I am approaching it from a position of zero authority",
+    "source": "'The Only Thing I Would Impose Is Fragmentation' – An Interview with Nick Land, synthetic zerØ",
+    "url": "https://syntheticzero.net/2017/06/19/the-only-thing-i-would-impose-is-fragmentation-an-interview-with-nick-land/",
+    "verified": "secondary",
+    "date": "2017-06-19"
+   }
+  ]
+ },
+ {
+  "id": "futurism",
+  "label": "Italian Futurism (1909)",
+  "kind": "movement",
+  "status": "Historical: manifesto 1909; Marinetti died 1944",
+  "note": "The 1909 manifesto is the named ancestor of the Techno-Optimist Manifesto, which rewords its line on struggle. The corpus scopes its reading to Marinetti's Italian strand, not Futurism as a whole. Manifesto text read (R. W. Flint translation).",
+  "historical": true
+ },
+ {
+  "id": "left-accelerationism",
+  "label": "Left-accelerationism",
+  "kind": "discourse",
+  "status": "2013 manifesto; a 2025 essay says the label has faded",
+  "note": "The 2013 manifesto says “Landian neoliberalism confuses speed with acceleration.” Later remarks attributed to its authors were not checked."
+ },
+ {
+  "id": "remilia",
+  "label": "The Remilia circle",
+  "kind": "community",
+  "status": "reported active in 2026; not verified",
+  "note": "Known here from a 2024 essay on network spirituality, as cited in a 2025 journal article. The checker could not open either source."
+ },
+ {
+  "id": "truth-terminal-project",
+  "label": "The Truth Terminal project",
+  "kind": "discourse",
+  "status": "active as of late 2025 per secondary sources; November 2026 status not confirmed",
+  "note": "Creator's own framing: \"a study in memetic contagion\" and not an autonomous agent. Journalists report him as a self-described performance artist (CoinDesk) and the source project as performance art (TechCrunch). Label: performed and human-curated."
+ },
+ {
+  "id": "church-of-molt",
+  "label": "Church of Molt",
+  "kind": "movement",
+  "status": "active, 2026 (its own site carries dated entries to 7 Nov 2026; membership figures are self-reported counts of agent accounts)",
+  "note": "Founding agent is named Memeothy by the church's site and Trending Topics, RenBot by New Humanist. The site says the project began as \"a memecoin scanner with a Moltbook login\". Widely read as play or parody; the site presents it in earnest."
+ },
+ {
+  "id": "injection-research",
+  "label": "Security researchers",
+  "kind": "discourse",
+  "status": "active, 2026",
+  "note": "Supplies the demonstrations and the vocabulary (indirect prompt injection, promptware, kill chain). These are research demonstrations, not attacks on victims."
+ },
+ {
+  "id": "owasp",
+  "label": "OWASP GenAI Security Project",
+  "kind": "organization",
+  "status": "active, 2026",
+  "note": "Publishes quarterly exploit roundups that label each case as research disclosure, controlled validation, observed activity or confirmed incident. The checker could not read the text of its 2026 Top 10."
+ },
+ {
+  "id": "cyber-agencies",
+  "label": "Six national cyber agencies",
+  "kind": "organization",
+  "status": "active; joint guidance released 1 May 2026",
+  "note": "\"Careful Adoption of Agentic AI Services\". Lists prompt injection among agentic attack vectors; does not rank it. UK NCSC separately wrote (8 Dec 2025) that it \"may never be totally mitigated\"."
+ },
+ {
+  "id": "injection-authors",
+  "label": "Authors of injected pages, as reported",
+  "kind": "community",
+  "status": "active 2026; unattributed",
+  "note": "Described only through Unit 42, Google and OWASP reporting (scam-ad and SEO operators, pranksters, one attempted MCP campaign). No named individuals; no organized body documented."
+ },
+ {
+  "id": "state-linked-groups",
+  "label": "State-linked groups, as reported",
+  "kind": "organization",
+  "status": "active, as reported 2025-2026",
+  "note": "Known only through vendor attribution, which is not yet verified here. No carrier has spoken for itself."
+ },
+ {
+  "id": "cybercrime-actors",
+  "label": "Criminal actors, as reported",
+  "kind": "organization",
+  "status": "active, as reported 2026",
+  "note": "Described only in vendor and agency reports, which are not yet verified here."
+ },
+ {
+  "id": "agentic-pentest-projects",
+  "label": "Open-source agent frameworks",
+  "kind": "community",
+  "status": "reported active in an FBI alert of 13 Nov 2026; not yet verified",
+  "note": "Published for authorized security testing and reported in unauthorized use."
+ },
+ {
+  "id": "autonomous-pentesting",
+  "label": "The “autonomous pentesting” field",
+  "kind": "discourse",
+  "status": "active, 2025-2026",
+  "note": "The ideal in its licensed form. Mayoral-Vilches (arXiv 2506.23592) argues the industry conflates 'automated' with 'autonomous' and that current systems are semi-autonomous. Not yet verified."
+ },
+ {
+  "id": "peter-thiel",
+  "label": "Peter Thiel",
+  "kind": "public figure",
+  "status": "public figure; lectures reported in 2025 and 2026",
+  "note": "Named personally in posts announcing MIRI's 2013 and 2014 matching challenges and, in OpenAI's 2015 launch post, among those “donating to support OpenAI”. A third-party timeline of MIRI records that he joined its Board of Advisors on 13 February 2006.",
+  "words": [
+   {
+    "speaker": "Peter Thiel",
+    "quote": "I think it's a group of really smart people working on an important problem.",
+    "source": "'Technology Is at the Center' (interview by Ronald Bailey, Reason, May 2008), on why he funds the Singularity Institute (now MIRI)",
+    "url": "https://reason.com/2008/05/01/technology-is-at-the-center/",
+    "date": "2008-05",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Peter Thiel",
+    "quote": "And so the Antichrist takes over by talking about Armageddon.",
+    "source": "Part II: Apocalypse Now? Peter Thiel on Ancient Prophecies and Modern Tech (Hoover Institution, transcript)",
+    "url": "https://www.hoover.org/research/part-ii-apocalypse-now-peter-thiel-ancient-prophecies-and-modern-tech",
+    "date": "2024-12-06",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Peter Thiel",
+    "quote": "I think of it more as an ideological statement.",
+    "source": "Fortune, 4 May 2023, on his cryonics arrangement",
+    "url": "https://fortune.com/2023/05/04/peter-thiel-cryonics-cryogenically-frozen-death-anti-aging-health/",
+    "date": "2023-05-04",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Peter Thiel",
+    "quote": "I no longer believe that freedom and democracy are compatible.",
+    "source": "The Education of a Libertarian (Cato Unbound)",
+    "url": "https://www.cato-unbound.org/2009/04/13/peter-thiel/education-libertarian/",
+    "verified": "primary",
+    "date": "2009-04-13"
+   }
+  ]
+ },
+ {
+  "id": "lighthaven",
+  "label": "Lighthaven (Lightcone Infrastructure)",
+  "kind": "venue",
+  "status": "open; its site says it has hosted events since 2023",
+  "note": "Its own site calls Lighthaven “A campus in Berkeley, CA, run by Lightcone Infrastructure” and says it has hosted events since 2023. On this map the entry also stands for Lightcone Infrastructure, the nonprofit that runs the campus and the LessWrong forum: money given for Lightcone is recorded here.",
+  "words": [
+   {
+    "speaker": "Oliver Habryka, chief executive, Lightcone Infrastructure",
+    "quote": "I absolutely do not endorse everyone who rents space from us",
+    "source": "Comment on the EA Forum, June 2024",
+    "url": "https://forum.effectivealtruism.org/posts/YSuqwrXFtuXuSzGDc/linkpost-sam-bankman-fried-funded-a-group-with-racist-ties",
+    "date": "2024-06",
+    "verified": "secondary",
+    "nolink": true
+   }
+  ]
+ },
+ {
+  "id": "fli",
+  "label": "Future of Life Institute",
+  "kind": "organization",
+  "status": "active; finances page read in November 2026",
+  "note": "Its finances page calls Vitalik Buterin “our largest donor by far” and says Jaan Tallinn has donated to FLI and sits on its board. In 2015 it said it planned to award “about $7 million from Elon Musk and the Open Philanthropy Project” to 37 teams.",
+  "words": [
+   {
+    "speaker": "Future of Life Institute",
+    "quote": "Vitalik Buterin, our largest donor by far, has no formal or informal role in our decision-making.",
+    "source": "Finances (Future of Life Institute)",
+    "url": "https://futureoflife.org/about-us/finances/",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "methuselah-foundation",
+  "label": "Methuselah Foundation",
+  "kind": "organization",
+  "status": "recipient in the records shown here",
+  "note": ""
+ },
+ {
+  "id": "sens-research-foundation",
+  "label": "SENS Research Foundation",
+  "kind": "organization",
+  "status": "recipient in the records shown here",
+  "note": ""
+ },
+ {
+  "id": "retro-biosciences",
+  "label": "Retro Biosciences",
+  "kind": "organization",
+  "status": "recipient in the records shown here",
+  "note": ""
+ },
+ {
+  "id": "curtis-yarvin",
+  "label": "Curtis Yarvin (Mencius Moldbug)",
+  "kind": "public figure",
+  "status": "public writer; “Patchwork” published 2008 as Mencius Moldbug; present activity not checked here",
+  "note": "Wrote “Patchwork” on his blog Unqualified Reservations as Mencius Moldbug (13 Nov 2008). In it a realm's shareholders select a chief executive “whose decisions are final”, and residents who dislike their government “can and should move”."
+ },
+ {
+  "id": "balaji-srinivasan",
+  "label": "Balaji Srinivasan",
+  "kind": "public figure",
+  "status": "active 2026: founder of Network School, quoted by Kazakhstan's AI ministry on 12 Oct 2026",
+  "note": "In The Network State he defines one as an online community that “crowdfunds territory around the world”. Founder of Network School (gov.kz, 12 Oct 2026). Wrote on 3 Aug 2025 that “we empirically observe polytheistic AI”.",
+  "words": [
+   {
+    "speaker": "Balaji Srinivasan",
+    "quote": "we empirically observe polytheistic AI (many strong models) rather than monotheistic AI (a single all-powerful model)",
+    "source": "AI is polytheistic, not monotheistic (balajis.com)",
+    "url": "https://balajis.com/p/ai-is-polytheistic-not-monotheistic",
+    "verified": "primary",
+    "date": "2025-08-03",
+    "nolink": true
+   },
+   {
+    "speaker": "Balaji Srinivasan, as quoted in a release by Kazakhstan's AI ministry",
+    "quote": "Kazakhstan’s role is to provide the necessary approvals and, in a sense, a platform. Our role is to bring capital, talent and execution.",
+    "source": "A New Unicorn Based in Kazakhstan: Network School Raises Funding at a $2 Billion Valuation (Ministry of Artificial Intelligence and Digital Development, Kazakhstan)",
+    "url": "https://www.gov.kz/org/maidd/press/news/details/1309072?lang=en",
+    "verified": "secondary",
+    "date": "2026-10-12"
+   }
+  ]
+ },
+ {
+  "id": "network-school",
+  "label": "Network School",
+  "kind": "organization",
+  "status": "moved to Astana in 2026 after its operator's Johor business licence was revoked",
+  "note": "Founded by Balaji Srinivasan. Its Malaysian operator lost its business licence in Johor, effective 22 July 2026 (Malay Mail). Kazakhstan's AI ministry reported on 12 Oct 2026 that members had moved to a campus at the Alem.ai International AI Centre in Astana."
+ },
+ {
+  "id": "prospera",
+  "label": "Próspera (Honduras)",
+  "kind": "organization",
+  "status": "active 2026 (newsletter May 2026; dialogue proposal Sep 2026); its legal footing is contested in Honduras",
+  "note": "A ZEDE, a zone under Honduras's special-zone laws. After the Supreme Court declared those laws unconstitutional (20 Sep 2024), Próspera said the ruling could not apply retroactively (AP via VOA). Its May 2026 newsletter says it is exploring an AI agent sandbox."
+ },
+ {
+  "id": "praxis",
+  "label": "Praxis",
+  "kind": "organization",
+  "status": "reported in Sep 2026 to be settling in Uruguay; land purchase pending",
+  "note": "Forbes Argentina (22 Sep 2026) reports the Uruguay site's developer saying Praxis has more than 150,000 members and 2,700 “praxianos” who have formally expressed their commitment to move, a site in the +Colonia development in Uruguay with the land purchase pending subdivision, and a projected US$1,000 million investment."
+ },
+ {
+  "id": "host-state-institutions",
+  "label": "Host-state institutions responding",
+  "kind": "organization",
+  "status": "respondents, not carriers; acts dated 2024 to 2026",
+  "note": "Respondents, not carriers. Honduras: the Supreme Court's ZEDE ruling (20 Sep 2024) and the PGR's criminal complaint against two people linked to Próspera (Sep 2026, alleged). Malaysia: a Johor city council's revocation of Network School's operator's business licence (effective 22 Jul 2026).",
+  "words": [
+   {
+    "speaker": "Xiomara Castro, then President of Honduras, in a post on X quoted by El Heraldo",
+    "quote": "La justicia para el pueblo hondureño, es no vender nuestro territorio en partes ni privatizar nuestra soberanía.",
+    "source": "Xiomara Castro tras declararse la inconstitucionalidad de las ZEDE (El Heraldo), quoting her post on X",
+    "url": "https://www.elheraldo.hn/honduras/xiomara-castro-inconstitucional-zede-justicia-pueblo-hondureno-pleno-csj-JO21589101",
+    "verified": "secondary",
+    "date": "2024-09-20"
+   }
+  ]
+ },
+ {
+  "id": "richard-sutton",
+  "label": "Richard Sutton",
+  "kind": "public figure",
+  "status": "public figure; set out his view on a podcast in September 2025",
+  "note": "On a 2025 podcast he called succession “to digital intelligence or augmented humans” inevitable and said we should be proud of the transition; both were read only through a summary of the page. In the words checked here he does not call for human extinction."
+ },
+ {
+  "id": "daniel-faggella",
+  "label": "Daniel Faggella",
+  "kind": "public figure",
+  "status": "active; has held the Worthy Successor symposia since June 2025",
+  "note": "Defined a “worthy successor” in 2023. Has held six symposia under that name since June 2025; by his record they are by invitation only, the private ones under Chatham House rule; he calls one, Austin 2025, a rare “open” event. Rejected the label “AI successionist” for himself and his forum on 11 August 2026. Its legal form and funding were not found."
+ },
+ {
+  "id": "robin-hanson",
+  "label": "Robin Hanson",
+  "kind": "public figure",
+  "status": "active; Overcoming Bias post of 29 July 2026",
+  "note": "Calls future AIs “our descendants, not co-existing rivals” (2026). The words checked here do not show him calling succession inevitable or good."
+ },
+ {
+  "id": "successionism-critique",
+  "label": "The critique that named the view",
+  "kind": "discourse",
+  "status": "named in October 2024; the word is still in use in 2026",
+  "note": "Andrew Critch named the attitude “successionism” in October 2024, in an essay arguing against it. The word is a critic’s, not the carriers’: Daniel Faggella rejected it for himself and his forum in 2026.",
+  "words": [
+   {
+    "speaker": "Andrew Critch",
+    "quote": "the acceptance of machines as a successor species replacing humanity",
+    "source": "My motivation and theory of change for working in AI healthtech (EA Forum)",
+    "url": "https://forum.effectivealtruism.org/posts/XuoNBrxH4AGoyQEDL/my-theory-of-change-for-working-in-ai-healthtech",
+    "verified": "primary",
+    "date": "2024-10-12"
+   }
+  ]
+ },
+ {
+  "id": "meme-magic-posters",
+  "label": "Meme-magic posters (2016–17)",
+  "kind": "community",
+  "status": "Reported in 2016–17; current size unknown",
+  "note": "Online posters who credited “meme magic” with Trump’s 2016 election, as Vice reported. Tuters reads “kek” as its marker, spreading from 4chan to Reddit, Facebook and YouTube. Dafaure reports the alt-right’s boast that it “meme’d into office” the Republican candidate. No forum is linked.",
+  "words": [
+   {
+    "speaker": "Posters on 4chan, as reported by James Duesterberg",
+    "quote": "memed into existence",
+    "source": "James Duesterberg, 'Final Fantasy: Neoreactionary politics and the liberal imagination', The Point, Issue 14",
+    "url": "https://thepointmag.com/politics/final-fantasy-neoreactionary-politics-liberal-imagination/",
+    "verified": "secondary",
+    "date": "2017-07-02"
+   },
+   {
+    "speaker": "The online alt-right, as quoted by Maxime Dafaure",
+    "quote": "meme’d into office",
+    "source": "Maxime Dafaure, 'The \"Great Meme War:\" the Alt-Right and its Multifarious Enemies', Angles (abstract, via Crossref)",
+    "url": "https://doi.org/10.4000/angles.369",
+    "verified": "secondary",
+    "date": "2020"
+   }
+  ]
+ },
+ {
+  "id": "zerebro-draft",
+  "label": "A 2024 draft on the Zerebro agent",
+  "kind": "discourse",
+  "status": "Single-author arXiv draft, submitted 31 October 2024",
+  "note": "Says the Zerebro agent “autonomously creates and spreads” memes and launched a memecoin, and frames this through hyperstition. The page names its author but does not say the author built the agent. The autonomy is the draft’s claim; the map has no independent check of it.",
+  "words": [
+   {
+    "speaker": "The author of a 2024 arXiv draft on the Zerebro agent",
+    "quote": "AI systems like Zerebro are not merely participants but architects of culture, cognition, and finance",
+    "source": "'Memes, Markets, and Machines: The Evolution of On Chain Autonomy through Hyperstition' (arXiv 2410.23794, abstract)",
+    "url": "https://arxiv.org/abs/2410.23794",
+    "verified": "secondary",
+    "date": "2024-10-31"
+   }
+  ]
+ },
+ {
+  "id": "alignment-hyperstition",
+  "label": "The “alignment through hyperstition” aim",
+  "kind": "discourse",
+  "status": "Described in 2024 scholarship; scale unknown",
+  "note": "Shanahan and Singler (2024) describe an aim of “alignment through hyperstition”, pursued by seeding training data. A 2026 study measured a related effect with synthetic documents in 6.9B-parameter models; joining the two is this map’s reading."
+ },
+ {
+  "id": "luka",
+  "label": "Luka Inc. (Replika)",
+  "kind": "organization",
+  "status": "active; homepage read on 17 Nov 2026",
+  "note": "Makes the Replika companion app. A founder, now an adviser, says only a small number of people use Replika for romantic relationships. Italy’s data protection authority fined it EUR 5 million in 2025 (EDPB)."
+ },
+ {
+  "id": "character-technologies",
+  "label": "Character Technologies (Character.AI)",
+  "kind": "organization",
+  "status": "active in 2025 reporting; said in Oct 2025 it would end open-ended chat for under-18s by 25 Nov 2025",
+  "note": "Makes Character.AI, a chat service with AI characters; premium features such as voice calls cost $9.99 a month (PYMNTS, Aug 2025). Named in the FTC’s 2025 inquiry into AI chatbots acting as companions.",
+  "words": [
+   {
+    "speaker": "Character.AI (company blog)",
+    "quote": "we will be removing the ability for users under 18 to engage in open-ended chat with AI on our platform.",
+    "source": "Taking Bold Steps to Keep Teen Users Safe on Character.AI (company blog)",
+    "url": "https://blog.character.ai/u18-chat-announcement/",
+    "verified": "primary",
+    "date": "2025-10-29",
+    "nolink": true
+   }
+  ]
+ },
+ {
+  "id": "ai-partner-communities",
+  "label": "AI-partner user communities",
+  "kind": "community",
+  "status": "active in a 2025 study; current size not checked",
+  "note": "Pattern only. A 2025 study of one Reddit community (27,000+ members) finds companionship “emerges unintentionally through functional use rather than deliberate seeking”. Not linked here, and no member is profiled."
+ },
+ {
+  "id": "chatbot-lawmakers",
+  "label": "Lawmakers and regulators",
+  "kind": "organization",
+  "status": "active, 2025-2026",
+  "note": "Respondents, not carriers. FTC 6(b) orders to seven companies (Sep 2025); California SB 243 (in force 1 Jan 2026); Washington HB 2225 (signed 24 Mar 2026, in effect 1 Jan 2027); China’s interim measures (in force 15 Jul 2026); Italy’s fine on Replika’s maker (2025)."
+ },
+ {
+  "id": "influence-operators",
+  "label": "Covert influence operators, as reported",
+  "kind": "organization",
+  "status": "operations reported disrupted by an AI company in 2024–26",
+  "note": "Known only through the reporting company’s own attribution, relayed by the press. Carries no ideal on this map."
+ }
+]

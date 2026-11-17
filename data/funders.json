@@ -1,0 +1,392 @@
+[
+ {
+  "id": "jaan-tallinn",
+  "label": "Jaan Tallinn",
+  "kind": "person",
+  "note": "SFF’s table names him as the funder, alone or with Dustin Moskovitz, on those METR, Apollo Research, Palisade Research and Lightcone rows shown here whose funder was checked, and Anthropic’s 2021 announcement says he led its Series A. FLI’s finances page says he has donated to FLI and sits on its board."
+ },
+ {
+  "id": "sff",
+  "label": "Survival and Flourishing Fund (SFF)",
+  "kind": "fund",
+  "note": "SFF publishes recommendations made for its funders. The lines drawn from SFF on this map are those recommendations, except the line to MIRI, which shows the figure MIRI’s own contributors page lists for SFF. The recommendations are not payments out of a fund of its own, and the record does not show what was paid on them. Its table gives each row a round, an amount and a named funder: Jaan Tallinn on the rows where the funder was checked, and in 2026 also Dustin Moskovitz. An amount marked ‡ is a matching pledge, which SFF’s 2026 page says depends on the recipient raising outside funds."
+ },
+ {
+  "id": "dustin-moskovitz",
+  "label": "Dustin Moskovitz",
+  "kind": "person",
+  "note": "Anthropic’s announcement of 28 May 2021 names him among the participants in its Series A, with no amount. SFF’s table names him, with Jaan Tallinn, as a funder on its 2026 rows for Apollo Research, Palisade Research and Lightcone Infrastructure."
+ },
+ {
+  "id": "coefficient-giving",
+  "label": "Coefficient Giving (formerly Open Philanthropy)",
+  "kind": "foundation",
+  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement.",
+  "words": [
+   {
+    "speaker": "Open Philanthropy (grant record)",
+    "quote": "$370,000 represents an \"exit grant\" for Lightcone’s other work.",
+    "source": "Lightcone Infrastructure - General Support (2023) (Open Philanthropy grant record, as mirrored by LongtermWiki)",
+    "url": "https://www.longtermwiki.com/grants/SWev_3EIDG",
+    "date": "2023-10",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "ftx-future-fund",
+  "label": "FTX Future Fund (FTX Foundation)",
+  "kind": "foundation",
+  "disputes": [
+   {
+    "date": "2022-11-15",
+    "what": "The Alignment Research Center wrote on 15 November 2022 that its $1.25M FTX Foundation grant “morally (if not legally) belongs to FTX customers or creditors” and that it would return it. Its 2024 update says the grant went back to the FTX bankruptcy estate, less legal and administrative expenses.",
+    "response": "",
+    "kind": "documented",
+    "source": "Funding from FTX (Alignment Research Center)",
+    "url": "https://alignment.org/funding-from-ftx/",
+    "verified": "secondary"
+   },
+   {
+    "date": "2022-11-11",
+    "what": "The FTX Future Fund’s team announced on 11 November 2022 that it had resigned. It wrote that “it looks likely that there are many committed grants that the Future Fund will be unable to honor” and cited “fundamental questions about the legitimacy and integrity of the business operations”.",
+    "response": "",
+    "kind": "documented",
+    "source": "The FTX Future Fund team has resigned (EA Forum)",
+    "url": "https://forum.effectivealtruism.org/posts/xafpj3on76uRDoBja/the-ftx-future-fund-team-has-resigned-1",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "vitalik-buterin",
+  "label": "Vitalik Buterin",
+  "kind": "person",
+  "disputes": [
+   {
+    "date": "2026-03-13",
+    "what": "Cointelegraph reported on 13 March 2026 that Vitalik Buterin wrote he had expected FLI to cash out “at most $10-25M” of his 2021 token gift, that it “managed to cash out something like $500M”, and that he was wary of “large-scale coordinated political action with big money pools”.",
+    "response": "In an update of 16 March 2026 to the same article, FLI’s president and CEO Anthony Aguirre said FLI has “immense respect for Vitalik’s views on AI safety” and that the two remain aligned on some specific approaches.",
+    "kind": "reported",
+    "source": "Cointelegraph, 13 March 2026, updated 16 March",
+    "url": "https://cointelegraph.com/news/vitalik-buterin-future-of-life-institute-shib-donation",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "elon-musk",
+  "label": "Elon Musk",
+  "kind": "person"
+ },
+ {
+  "id": "thiel-foundation",
+  "label": "Thiel Foundation",
+  "kind": "foundation",
+  "note": "MIRI's Top Contributors page lists it under Past Contributors at $1,627,000 and gives no year. Whether the pledges and matches recorded under Peter Thiel's own name are part of that figure is not established here, so the amounts are not to be added."
+ },
+ {
+  "id": "founders-fund",
+  "label": "Founders Fund",
+  "kind": "firm",
+  "note": "Venture firm. In the rounds recorded here (OpenAI 2023 and 2025, Anthropic 2026, Cognition 2024) the sources give the round's size or its lead investors, not Founders Fund's own share."
+ },
+ {
+  "id": "audacious-project",
+  "label": "The Audacious Project (TED)",
+  "kind": "fund"
+ },
+ {
+  "id": "marc-andreessen",
+  "label": "Marc Andreessen",
+  "kind": "person",
+  "note": "The Transformer tracker lists him as an individual donor to Leading the Future (employer: Andreessen Horowitz) at $25.00M across two filings. The tracker's figure is a running total across filings, not a single gift.",
+  "words": [
+   {
+    "speaker": "Marc Andreessen",
+    "quote": "The grant was intended to support independent AI research, and the results have been wonderful.",
+    "source": "DL News, 17 October 2024, quoting his post on X",
+    "url": "https://www.dlnews.com/articles/people-culture/marc-andreessen-distances-himself-from-obscene-memecoin-goat",
+    "verified": "secondary"
+   }
+  ],
+  "disputes": [
+   {
+    "date": "2024-10-17",
+    "what": "After a memecoin promoted by the Truth Terminal account surged, DL News reported on 17 October 2024 that Marc Andreessen said he had nothing to do with the token and did not own any of it.",
+    "response": "DL News quotes his post describing the $50K as a “no-string-attached unconditional research grant”.",
+    "kind": "reported",
+    "source": "DL News, 17 October 2024",
+    "url": "https://www.dlnews.com/articles/people-culture/marc-andreessen-distances-himself-from-obscene-memecoin-goat",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "ben-horowitz",
+  "label": "Ben Horowitz",
+  "kind": "person",
+  "note": "The Transformer tracker lists him as an individual donor to Leading the Future (employer: Andreessen Horowitz) at $25.00M across two filings, a running total and not a single gift."
+ },
+ {
+  "id": "a16z",
+  "label": "Andreessen Horowitz (a16z)",
+  "kind": "firm",
+  "note": "The pages read for the gifts to Leading the Future (the NOTUS report, the Bloomberg report and the Transformer tracker) name Marc Andreessen and Ben Horowitz as individual donors. None names A16Z Capital Management LLC as the contributor.",
+  "words": [
+   {
+    "speaker": "Anjney Midha, general partner, Andreessen Horowitz",
+    "quote": "We invested in LMArena because the future of AI is about reliability",
+    "source": "LMArena and The Future of AI Reliability (company blog)",
+    "url": "https://arena.ai/blog/new-lmarena",
+    "date": "2025-05",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "greg-brockman",
+  "label": "Greg Brockman",
+  "kind": "person",
+  "note": "Gizmodo's report of 1 October 2026 calls Greg Brockman OpenAI's president and relays OpenAI's statement that his engagement was “in a personal capacity, not on behalf of the company”.",
+  "disputes": [
+   {
+    "date": "2026-09-30",
+    "what": "The New York Times reported on 30 September 2026, as relayed by Gizmodo, that Greg Brockman would not give a second $25 million that the super PAC said he and his wife had promised.",
+    "response": "A June 2026 Slack message from him, as reported by the Times and relayed by Gizmodo, reads: “We’ve donated $25m so far, and have no plans to donate more at this time.” OpenAI said his engagement was “in a personal capacity, not on behalf of the company”.",
+    "kind": "reported",
+    "source": "Gizmodo, 1 October 2026, citing the New York Times",
+    "url": "https://gizmodo.com/openai-president-reportedly-pulls-support-from-controversial-ai-super-pac-2000820292",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "leading-the-future",
+  "label": "Leading the Future (super PAC)",
+  "kind": "political committee",
+  "note": "The Transformer tracker, compiled from FEC filings, lists it as the top donor to two other committees, Think Big and American Mission. Zac Moffatt and Josh Vlasto issued a statement for it, quoted in a NOTUS report of 30 January 2026.",
+  "words": [
+   {
+    "speaker": "Zac Moffatt and Josh Vlasto, Leading the Future",
+    "quote": "Candidates who grasp the stakes can expect us to help elevate that message,",
+    "source": "NOTUS report on Leading the Future's first FEC filing (now served at washingtonsun.com with NOTUS Media footer)",
+    "url": "https://washingtonsun.com/money/ai-super-pac-fundraising-midterms-democrats-republicans",
+    "date": "2026-01-30",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "think-big",
+  "label": "Think Big (super PAC)",
+  "kind": "political committee",
+  "disputes": [
+   {
+    "date": "2026-05-05",
+    "what": "Campaign Legal Center's page of 5 May 2026 says its FEC complaint alleges that American Mission and Think Big “have unlawfully evaded federal reporting requirements” by passing payments through shell companies. This is an allegation, not a ruling.",
+    "response": "Not yet checked at the source: The Intercept (29 Oct 2026) is cited as reporting that Leading the Future defended its tactics as legal in a statement to WIRED.",
+    "kind": "alleged",
+    "source": "AI Industry-Funded Super PACs Unlawfully Evaded Transparency Rules, CLC Alleges (Campaign Legal Center)",
+    "url": "https://campaignlegal.org/document/ai-industry-funded-super-pacs-unlawfully-evaded-transparency-rules-clc-alleges",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "american-mission",
+  "label": "American Mission (super PAC)",
+  "kind": "political committee",
+  "disputes": [
+   {
+    "date": "2026-05-05",
+    "what": "Campaign Legal Center's page of 5 May 2026 says its FEC complaint alleges that American Mission and Think Big “have unlawfully evaded federal reporting requirements” by passing payments through shell companies. This is an allegation, not a ruling.",
+    "response": "Not yet checked at the source: The Intercept (29 Oct 2026) is cited as reporting that Leading the Future defended its tactics as legal in a statement to WIRED.",
+    "kind": "alleged",
+    "source": "AI Industry-Funded Super PACs Unlawfully Evaded Transparency Rules, CLC Alleges (Campaign Legal Center)",
+    "url": "https://campaignlegal.org/document/ai-industry-funded-super-pacs-unlawfully-evaded-transparency-rules-clc-alleges",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "public-first-action",
+  "label": "Public First Action",
+  "kind": "nonprofit",
+  "note": "Anthropic's February 2026 post calls it “a new bipartisan 501(c)(4)”; its July 2026 post says Anthropic's donations “cannot be used to influence the election of any candidate”. The Transformer tracker lists it as a donor to two political committees. How its funds are kept apart was not established from the sources read."
+ },
+ {
+  "id": "jobs-and-democracy-pac",
+  "label": "Jobs and Democracy PAC",
+  "kind": "political committee",
+  "note": "The Transformer tracker also lists Public First, a super PAC with its own tracker page, as a donor to this committee at $4.05M."
+ },
+ {
+  "id": "defending-our-values-pac",
+  "label": "Defending Our Values PAC",
+  "kind": "political committee"
+ },
+ {
+  "id": "atep",
+  "label": "American Technology Excellence Project (super PAC)",
+  "kind": "political committee",
+  "note": "A New York Times report of 18 February 2026, read at GV Wire, says its money is expected to flow on to Forge the Future Project and Making Our Tomorrow."
+ },
+ {
+  "id": "meta-california-pac",
+  "label": "Mobilizing Economic Transformation Across California (super PAC)",
+  "kind": "political committee"
+ },
+ {
+  "id": "kindred-ventures",
+  "label": "Kindred Ventures",
+  "kind": "firm"
+ },
+ {
+  "id": "us-commerce",
+  "label": "US Department of Commerce",
+  "kind": "government"
+ },
+ {
+  "id": "us-congress",
+  "label": "US Congress",
+  "kind": "government"
+ },
+ {
+  "id": "uk-government",
+  "label": "UK Government",
+  "kind": "government",
+  "words": [
+   {
+    "speaker": "Kanishka Narayan, UK AI minister",
+    "quote": "When you're reliant on someone else's technology, you have to be clear-eyed about the permanence of any outcome.",
+    "source": "UK given access to safety-test latest AI models, minister says (Reuters, in The Star)",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/10/12/uk-given-access-to-safety-test-latest-ai-models-minister-says",
+    "date": "2026-10-12",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "nimh",
+  "label": "US National Institute of Mental Health",
+  "kind": "government"
+ },
+ {
+  "id": "uc-investments",
+  "label": "UC Investments (University of California)",
+  "kind": "fund"
+ },
+ {
+  "id": "felicis",
+  "label": "Felicis",
+  "kind": "firm"
+ },
+ {
+  "id": "lightspeed",
+  "label": "Lightspeed Venture Partners",
+  "kind": "firm"
+ },
+ {
+  "id": "khosla-ventures",
+  "label": "Khosla Ventures",
+  "kind": "firm"
+ },
+ {
+  "id": "fifty-years",
+  "label": "50Y",
+  "kind": "firm"
+ },
+ {
+  "id": "y-combinator",
+  "label": "Y Combinator",
+  "kind": "firm"
+ },
+ {
+  "id": "frontier-model-forum",
+  "label": "Frontier Model Forum",
+  "kind": "nonprofit",
+  "note": "Body whose About page says it 'is funded by fees from its member firms' and gives no fee levels. Its AI Safety Fund page names Anthropic, Google, Microsoft and OpenAI as its four founders; no page listing current members was checked."
+ },
+ {
+  "id": "ai-safety-fund",
+  "label": "AI Safety Fund",
+  "kind": "fund",
+  "note": "The Frontier Model Forum calls it a '$10 million+ initiative established in October 2023'. A November 2024 update reports over $3 million to twelve grantees; a December 2025 announcement, more than $5 million to 11 grantees. No source relates the figures."
+ },
+ {
+  "id": "alignment-project",
+  "label": "The Alignment Project",
+  "kind": "fund",
+  "note": "Fund for outside alignment research, led by the UK AI Security Institute and presented on its site. A UK government release of 19 February 2026 says over £27 million is available, backing some 60 projects. The same release lists Anthropic in the coalition, with Amazon Web Services and Schmidt Sciences, and does not say what Anthropic contributed."
+ },
+ {
+  "id": "lightcone-commons",
+  "label": "Lightcone Commons (funding platform)",
+  "kind": "fund",
+  "note": "A funding platform announced by Lightcone's chief executive in July 2026. Its “evaluators” recommend grants to funders and are not the bodies that test AI models elsewhere on this map. He wrote that \"Evaluators are paid 2% of recommendations, and we charge a 3% platform fee\" and, in November 2026, that \"We don’t decide to make specific grants.\"",
+  "words": [
+   {
+    "speaker": "Oliver Habryka, chief executive, Lightcone Infrastructure",
+    "quote": "Lightcone Commons is not a foundation. We don’t decide to make specific grants.",
+    "source": "Lightcone Commons: Round 1 complete, Round 2 underway (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/3ASLq8ePNqkbeGqdj/lightcone-commons-round-1-complete-round-2-underway",
+    "date": "2026-11-10",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Oliver Habryka, chief executive, Lightcone Infrastructure",
+    "quote": "Evaluators are paid 2% of recommendations, and we charge a 3% platform fee.",
+    "source": "Lightcone Commons (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/tjeoLz2GzfFMysZhg/lightcone-commons",
+    "date": "2026-07-23",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Oliver Habryka, chief executive, Lightcone Infrastructure",
+    "quote": "Some Lightcone staff are also active as evaluators on the platform, but ultimately what gets funded is up to the funders",
+    "source": "Lightcone Commons: Round 1 complete, Round 2 underway (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/3ASLq8ePNqkbeGqdj/lightcone-commons-round-1-complete-round-2-underway",
+    "date": "2026-11-10",
+    "verified": "primary"
+   }
+  ],
+  "disputes": [
+   {
+    "date": "2026-11-10",
+    "what": "Nectome wrote on 3 November 2026 that Lightcone Commons \"invested ~$3M\" in it; its post names no individual funders.",
+    "response": "Lightcone's chief executive wrote on 10 November 2026 that \"Lightcone Commons is not a foundation\" and that \"Lightcone Commons staff do not decide what grants get made\", and asked recipients to stop saying \"Lightcone Commons funded us\".",
+    "kind": "documented",
+    "source": "Lightcone Commons: Round 1 complete, Round 2 underway (LessWrong, 10 November 2026)",
+    "url": "https://www.lesswrong.com/posts/3ASLq8ePNqkbeGqdj/lightcone-commons-round-1-complete-round-2-underway",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "aubrey-de-grey",
+  "label": "Aubrey de Grey",
+  "kind": "person",
+  "words": [
+   {
+    "speaker": "Aubrey de Grey",
+    "quote": "I've dedicated my life to this mission, and I dedicate all my time to it, so why not my money too?",
+    "source": "Ben Best Interviews Aubrey de Grey (Fight Aging!)",
+    "url": "https://www.fightaging.org/?p=9758",
+    "date": "2013-07-17",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "sam-altman",
+  "label": "Sam Altman",
+  "kind": "person"
+ },
+ {
+  "id": "lab-employees",
+  "label": "Employees of Anthropic and OpenAI (personal donations)",
+  "kind": "individuals",
+  "note": "A group, not one person: staff of AI companies giving from their own holdings, as the recipient reports it. By the recipient’s account it received no revenue directly from AI developers as organisations."
+ }
+]

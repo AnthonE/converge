@@ -1,0 +1,177 @@
+[
+ {
+  "id": "pattern-0",
+  "label": "Sample ancient pattern 0",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "0.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "primary"
+   }
+  ],
+  "texts": [
+   "text-0-0"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ },
+ {
+  "id": "pattern-1",
+  "label": "Sample ancient pattern 1",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "1.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "secondary"
+   }
+  ],
+  "texts": [
+   "text-0-1"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ },
+ {
+  "id": "pattern-2",
+  "label": "Sample ancient pattern 2",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "2.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "unverified"
+   }
+  ],
+  "texts": [
+   "text-0-2"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ },
+ {
+  "id": "pattern-3",
+  "label": "Sample ancient pattern 3",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "3.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "primary"
+   }
+  ],
+  "texts": [
+   "text-0-3"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ },
+ {
+  "id": "pattern-4",
+  "label": "Sample ancient pattern 4",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "4.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "secondary"
+   }
+  ],
+  "texts": [
+   "text-0-4"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ },
+ {
+  "id": "pattern-5",
+  "label": "Sample ancient pattern 5",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "5.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "unverified"
+   }
+  ],
+  "texts": [
+   "text-0-5"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ },
+ {
+  "id": "pattern-6",
+  "label": "Sample ancient pattern 6",
+  "summary": "Synthetic.",
+  "sources": [
+   {
+    "tradition": "Sample tradition",
+    "work": "Sample Work",
+    "passage": "6.1",
+    "translation": "Sample translator",
+    "quote": "A short sample line.",
+    "url": "https://example.org/text",
+    "verified": "primary"
+   }
+  ],
+  "texts": [
+   "text-0-0"
+  ],
+  "counter": [
+   {
+    "ref": "Sample 1:1",
+    "text": "A sample counter-reading."
+   }
+  ]
+ }
+]

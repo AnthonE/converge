@@ -1,0 +1,198 @@
+[
+ {
+  "id": "carrier-0-0",
+  "label": "Carrier 0.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-1",
+  "label": "Carrier 0.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-2",
+  "label": "Carrier 0.2 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-3",
+  "label": "Carrier 0.3 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-4",
+  "label": "Carrier 0.4 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-5",
+  "label": "Carrier 0.5 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-6",
+  "label": "Carrier 0.6 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-7",
+  "label": "Carrier 0.7 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-8",
+  "label": "Carrier 0.8 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-0-9",
+  "label": "Carrier 0.9 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-1-0",
+  "label": "Carrier 1.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-1-1",
+  "label": "Carrier 1.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-2-0",
+  "label": "Carrier 2.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-2-1",
+  "label": "Carrier 2.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-2-2",
+  "label": "Carrier 2.2 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-3-0",
+  "label": "Carrier 3.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-4-0",
+  "label": "Carrier 4.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-4-1",
+  "label": "Carrier 4.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-5-0",
+  "label": "Carrier 5.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-5-1",
+  "label": "Carrier 5.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-5-2",
+  "label": "Carrier 5.2 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-6-0",
+  "label": "Carrier 6.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-7-0",
+  "label": "Carrier 7.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-7-1",
+  "label": "Carrier 7.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-8-0",
+  "label": "Carrier 8.0 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-8-1",
+  "label": "Carrier 8.1 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "carrier-8-2",
+  "label": "Carrier 8.2 Collective",
+  "kind": "movement",
+  "status": "active (fixture)",
+  "note": "Synthetic."
+ },
+ {
+  "id": "venue-0",
+  "label": "Sample Venue",
+  "kind": "venue",
+  "status": "open (fixture)",
+  "note": "Synthetic."
+ }
+]

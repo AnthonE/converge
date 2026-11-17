@@ -1,0 +1,72 @@
+[
+ {
+  "id": "vehicle-0-0",
+  "label": "Vehicle 0.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-0-1",
+  "label": "Vehicle 0.1 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-0-2",
+  "label": "Vehicle 0.2 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-0-3",
+  "label": "Vehicle 0.3 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-0-4",
+  "label": "Vehicle 0.4 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-0-5",
+  "label": "Vehicle 0.5 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-1-0",
+  "label": "Vehicle 1.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-2-0",
+  "label": "Vehicle 2.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-3-0",
+  "label": "Vehicle 3.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-4-0",
+  "label": "Vehicle 4.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-5-0",
+  "label": "Vehicle 5.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-6-0",
+  "label": "Vehicle 6.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-7-0",
+  "label": "Vehicle 7.0 Model",
+  "note": "Synthetic."
+ },
+ {
+  "id": "vehicle-8-0",
+  "label": "Vehicle 8.0 Model",
+  "note": "Synthetic."
+ }
+]

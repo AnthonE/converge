@@ -1,0 +1,73 @@
+[
+ {
+  "id": "evaluator-0",
+  "label": "Sample Evaluation Institute 0",
+  "note": "Synthetic.",
+  "policy": {
+   "speaker": "Sample Evaluation Institute 0",
+   "quote": "A sample statement about independence.",
+   "source": "Sample Policy Page",
+   "url": "https://example.org/policy",
+   "verified": "secondary"
+  },
+  "disputes": [
+   {
+    "date": "2025-01",
+    "what": "A sample episode was reported.",
+    "response": "A sample reply was published.",
+    "kind": "reported",
+    "source": "Sample Outlet",
+    "url": "https://example.org/episode",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "evaluator-1",
+  "label": "Sample Evaluation Institute 1",
+  "note": "Synthetic.",
+  "policy": {
+   "speaker": "Sample Evaluation Institute 1",
+   "quote": "A sample statement about independence.",
+   "source": "Sample Policy Page",
+   "url": "https://example.org/policy",
+   "verified": "secondary"
+  }
+ },
+ {
+  "id": "evaluator-2",
+  "label": "Sample Evaluation Institute 2",
+  "note": "Synthetic.",
+  "policy": {
+   "speaker": "Sample Evaluation Institute 2",
+   "quote": "A sample statement about independence.",
+   "source": "Sample Policy Page",
+   "url": "https://example.org/policy",
+   "verified": "secondary"
+  }
+ },
+ {
+  "id": "evaluator-3",
+  "label": "Sample Evaluation Institute 3",
+  "note": "Synthetic.",
+  "policy": {
+   "speaker": "Sample Evaluation Institute 3",
+   "quote": "A sample statement about independence.",
+   "source": "Sample Policy Page",
+   "url": "https://example.org/policy",
+   "verified": "secondary"
+  }
+ },
+ {
+  "id": "evaluator-4",
+  "label": "Sample Evaluation Institute 4",
+  "note": "Synthetic.",
+  "policy": {
+   "speaker": "Sample Evaluation Institute 4",
+   "quote": "A sample statement about independence.",
+   "source": "Sample Policy Page",
+   "url": "https://example.org/policy",
+   "verified": "secondary"
+  }
+ }
+]

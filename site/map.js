@@ -1,0 +1,482 @@
+/* Ideals Map: state, side panel, list view, boot. */
+(function (ns) {
+  'use strict';
+
+  var VERIFIED = { primary: 'machine-checked at the source', secondary: 'machine-checked on a relay or coverage', unverified: 'not yet checked' };
+  var KIND = { documented: 'documented', reported: 'reported', alleged: 'alleged' };
+  var ix, state = { view: 'overview', ideal: null, selected: null, edge: null };
+  var svg, panel, tip, stage;
+
+  function h(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined && text !== null) e.textContent = text;
+    return e;
+  }
+  function add(parent) { for (var i = 1; i < arguments.length; i++) if (arguments[i]) parent.appendChild(arguments[i]); return parent; }
+
+  /* nolink: a carrier's own sign-up or sales site is named as the source but never linked. */
+  function link(url, text, nolink) {
+    if (nolink || !/^https?:\/\//.test(url || '')) return h('span', 'src', text);
+    var a = h('a', 'src', text);
+    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    return a;
+  }
+  function badge(v) { return h('span', 'badge badge-' + (v || 'unverified'), VERIFIED[v] || VERIFIED.unverified); }
+  function section(title, note) {
+    var s = h('section', 'sec');
+    add(s, h('h3', null, title));
+    if (note) add(s, h('p', 'note', note));
+    return s;
+  }
+
+  function linkList(edges) {
+    var ul = h('ul', 'links');
+    edges.forEach(function (e) {
+      var li = h('li', e.lens ? 'is-lens' : null);
+      var b = h('button', 'linkbtn', e.sentence || (ix.byId[e.from].label + ' ' + e.type + ' ' + (ix.byId[e.to].label || ix.byId[e.to].ref)));
+      b.type = 'button';
+      b.addEventListener('click', function () { state.edge = e.i; render(); });
+      add(li, b);
+      if (e.lens) add(li, h('span', 'lane', 'lens'));
+      add(ul, li);
+    });
+    return ul;
+  }
+
+  function quoteList(words) {
+    var box = h('div', 'quotes');
+    (words || []).forEach(function (w) {
+      var q = h('blockquote', null, '“' + w.quote + '”');
+      var c = h('p', 'cite');
+      add(c, h('span', null, w.speaker + ', '), link(w.url, w.source, w.nolink), h('span', null, w.date ? ' (' + w.date + ') ' : ' '), badge(w.verified));
+      add(box, q, c);
+    });
+    return box;
+  }
+
+  function idealPanel(d, drawn) {
+    var root = h('div');
+    add(root, h('p', 'kicker', 'Ideal'), h('h2', null, d.label), h('p', 'statement', d.ideal));
+    if (d.summary) add(root, h('p', null, d.summary));
+
+    var ph = section('Where it stands', 'Phases turn on conditions you could observe, not on dates. Filled means met, half means partly, hollow means not met, dotted means unknown.');
+    (ix.g.phases || []).forEach(function (p) {
+      var entry = (d.phases || []).filter(function (x) { return x.phase === p.phase; })[0];
+      var row = h('div', 'phase');
+      add(row, h('h4', null, p.phase + ' · ' + p.name), h('p', 'note', p.what));
+      var ul = h('ul', 'conds');
+      ((entry && entry.conditions) || []).forEach(function (c) {
+        var li = h('li', 'cond cond-' + c.status);
+        add(li, add(h('span', 'glyph'), ns.pipIcon(c.status)), h('span', 'sr', ns.phaseWord[c.status] + ': '), h('span', null, c.text));
+        if (c.evidence) add(li, h('span', 'evidence', ' ' + c.evidence + ' '));
+        if (c.context) add(li, h('span', 'lane', 'context, not counted'));
+        if (c.url && !c.nolink) add(li, link(c.url, 'source'));
+        add(ul, li);
+      });
+      if (!entry || !(entry.conditions || []).length) add(ul, add(h('li', 'cond cond-unknown'), add(h('span', 'glyph'), ns.pipIcon('unknown')), h('span', null, 'nothing recorded')));
+      add(row, ul); add(ph, row);
+    });
+    add(root, ph);
+
+    if ((d.words || []).length) add(root, add(section('Quoted words', 'Carriers, observers and critics. Each line names its speaker.'), quoteList(d.words)));
+
+    /* Only the links drawn in this view, the ideal's own first. */
+    var mem = ns.members(ix, d.id);
+    var own = drawn.filter(function (e) { return e.from === d.id || e.to === d.id; });
+    var rest = drawn.filter(function (e) { return e.from !== d.id && e.to !== d.id; });
+    add(root, add(section('How it links', 'Each line is one link on the map, read as a sentence.'), linkList(own.concat(rest))));
+
+    var texts = Object.keys(mem).map(function (m) { return ix.byId[m]; }).filter(function (n) { return n.type === 'text'; });
+    if (texts.length) {
+      var ts = section('Texts', 'A tradition’s own words for the pattern. A text can motivate a question. It never confirms a mechanism or a source.');
+      texts.forEach(function (t) { add(ts, h('blockquote', null, '“' + t.quote + '”'), h('p', 'cite', t.ref + (t.proposed ? ' (proposed parallel)' : ''))); });
+      add(root, ts);
+    }
+    /* Names under this ideal that have a money record. The detail is in the money view. */
+    var paid = Object.keys(mem).map(function (m) { return ix.byId[m]; }).filter(function (n) {
+      return n.type !== 'ideal' && ns.hasMoney(ix, n.id);
+    });
+    if (paid.length) {
+      var ms = section('Money and evaluators', 'Names in this view with a money record: who funds, hosts or evaluates them, or what they fund or host. A record of money is not a finding about anyone\u2019s work or motive.');
+      var ml = h('ul', 'links');
+      paid.forEach(function (n) {
+        var count = ix.adj[n.id].filter(function (l) { return ns.isMoney(l.edge); }).length;
+        var b = h('button', 'linkbtn money-link', n.label + ': ' + count + (count === 1 ? ' record' : ' records')), li = h('li');
+        b.type = 'button';
+        b.addEventListener('click', function () { goMoney(n.id); });
+        add(ml, add(li, b));
+      });
+      add(root, add(ms, ml));
+    }
+    if (ns.hasAncients(ix) && ns.ancientLines(ix).some(function (l) { return l.from === d.id; })) {
+      var an = h('button', 'more-btn', 'Line it up with the ancients');
+      an.type = 'button';
+      an.addEventListener('click', function () { goAncients(d.id); });
+      add(root, add(section('What the ancients called it', 'Its patterns, how it takes hold, and the field key, in the ancients view.'), an));
+    }
+    if ((d.cautions || []).length) {
+      var cs = section('Cautions'), ul = h('ul');
+      d.cautions.forEach(function (c) { add(ul, h('li', null, c)); });
+      add(root, add(cs, ul));
+    }
+    return root;
+  }
+
+  function nodePanel(n, drawn) {
+    var root = h('div');
+    add(root, h('p', 'kicker', ns.typeWord[n.type]), h('h2', null, n.label || n.ref));
+    if (n.type === 'fruit') {
+      add(root, h('p', 'statement', n.what));
+      var p = h('p', 'cite');
+      add(p, h('span', null, n.date + ' · ' + (KIND[n.kind] || n.kind) + ' · '), link(n.url, n.source || 'source', n.nolink), h('span', null, ' '), badge(n.verified));
+      add(root, p);
+    } else if (n.type === 'offshoot') {
+      add(root, h('p', 'cite', n.status));
+      if (n.note) add(root, h('p', null, n.note));
+      add(root, h('p', 'loop', 'Why it is not an ideal here: ' + n.why_not));
+      var came = ix.adj[n.id].filter(function (l) { return l.edge.type === 'breaks_from' && l.edge.from === n.id; });
+      if (came.length) {
+        var cs2 = section('Where it came from', 'The record of lineage. It says where the group came from, not that the community or any ideal caused what followed.'), cl = h('ul', 'links');
+        came.forEach(function (l) {
+          var li = h('li', 'flow'), e = l.edge;
+          add(li, h('span', null, e.sentence + ' '), link(e.url, e.source || 'source', e.nolink), h('span', null, ' '), h('span', 'lane', KIND[e.kind] || e.kind), h('span', null, ' '), badge(e.verified));
+          add(cl, li);
+        });
+        add(root, add(cs2, cl));
+      }
+      if ((n.record || []).length) {
+        var rs = section('On the record', 'Every legal matter is given as charged, pending or decided, or unknown where no outcome was found. A charge is not a finding.'), rl = h('ul', 'links');
+        n.record.forEach(function (r) {
+          var li = h('li', 'happened');
+          add(li, h('span', null, r.date + ': ' + r.what + ' '), r.status ? h('span', 'lane', r.status) : null, h('span', null, ' '),
+            link(r.url, r.source || 'source', r.nolink), h('span', null, ' '), h('span', 'lane', KIND[r.kind] || r.kind), h('span', null, ' '), badge(r.verified));
+          add(rl, li);
+        });
+        add(root, add(rs, rl));
+      }
+      var other = ix.adj[n.id].filter(function (l) { return l.edge.type !== 'breaks_from'; });
+      if (other.length) {
+        var os2 = section('Other links on the record'), ox = h('ul', 'links');
+        other.forEach(function (l) {
+          var li = h('li', 'flow'), e = l.edge;
+          add(li, h('span', null, e.sentence + ' '), e.source ? link(e.url, e.source, e.nolink) : null, h('span', null, ' '),
+            e.kind ? h('span', 'lane', KIND[e.kind] || e.kind) : null, h('span', null, ' '), e.verified ? badge(e.verified) : null);
+          add(ox, li);
+        });
+        add(root, add(os2, ox));
+      }
+      if ((n.cautions || []).length) { var oc = section('Cautions'), ol = h('ul'); n.cautions.forEach(function (c) { add(ol, h('li', null, c)); }); add(root, add(oc, ol)); }
+    } else if (n.type === 'text') {
+      add(root, h('blockquote', null, '“' + n.quote + '”'),
+        h('p', 'note', 'A text can motivate a question. It never confirms a mechanism or a source.'));
+    } else {
+      if (n.kind || n.status) add(root, h('p', 'cite', [n.kind, n.status].filter(Boolean).join(' · ')));
+      if (n.note) add(root, h('p', null, n.note));
+      if ((n.words || []).length) add(root, add(section('In their own words'), quoteList(n.words)));
+    }
+    add(root, add(section('How it links'), linkList(drawn.filter(function (e) { return e.from === n.id || e.to === n.id; }))));
+    /* Every event that hangs on this name, drawn in this view or not. */
+    var events = n.type === 'fruit' ? [] : ix.adj[n.id].filter(function (l) { return l.edge.type === 'bears_fruit' && l.edge.from === n.id; })
+      .map(function (l) { return ix.byId[l.other]; }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
+    if (events.length) {
+      var es = section('What happened (' + events.length + ')'), el = h('ul', 'links');
+      events.forEach(function (f) {
+        var li = h('li', 'happened');
+        li.setAttribute('data-event', f.id);
+        add(li, h('span', null, f.date + ': ' + f.what + ' '), link(f.url, f.source || 'source', f.nolink), h('span', null, ' '),
+          h('span', 'lane', KIND[f.kind] || f.kind), h('span', null, ' '), badge(f.verified));
+        add(el, li);
+      });
+      add(root, add(es, el));
+    }
+    if (ns.hasAncientLinks && ns.hasAncientLinks(ix, n.id)) {
+      var an = h('button', 'more-btn', 'Line it up with the ancients');
+      an.type = 'button';
+      an.addEventListener('click', function () { goAncients(n.id); });
+      add(root, add(section('The ancients'), an));
+    }
+    if (ns.hasMoney(ix, n.id)) {
+      var m = h('button', 'more-btn', 'Its records of money, hosting and evaluation');
+      m.type = 'button';
+      m.addEventListener('click', function () { goMoney(n.id); });
+      add(root, add(section('Money and evaluators'), m));
+    }
+    return root;
+  }
+
+  function edgePanel(e) {
+    var root = h('div');
+    add(root, h('p', 'kicker', 'Link' + (e.lens ? ' · interpretive lens' : '')), h('p', 'statement', e.sentence || e.type));
+    if (e.lens) add(root, h('p', 'note', 'This link is a way of reading, not a finding. It claims no shared mechanism.'));
+    if (e.source) add(root, add(h('p', 'cite'), link(e.url, e.source)));
+    return root;
+  }
+
+  function introPanel() {
+    var root = h('div'), m = ix.g.meta || {};
+    add(root, h('p', 'kicker', 'How to read this'), h('h2', null, m.title || 'The Ideals Map'),
+      h('p', null, 'Each large circle is an ideal: the end a movement serves. Pick one to see who carries it, what it runs on, what has happened, and the old texts this project reads beside it.'),
+      h('p', null, 'The six squares over each ideal are its phases. Nothing here is a forecast. A phase turns when its conditions are met, and the conditions still unmet are what to watch.'),
+      h('p', 'note', m.note || ''), h('p', 'note', m.made_with || ''));
+    var off = (ix.g.offshoots || []).slice().sort(function (a, b) { return a.label.localeCompare(b.label); });
+    if (off.length) {
+      var s = section('Offshoots (' + off.length + ')', 'Groups that came out of a community on this map and state no program the map records as an ideal. Each is shown with its public record and every matter’s status. Coming out of a community is not being caused by it.');
+      var ul = h('ul', 'links');
+      off.forEach(function (o) {
+        var b = h('button', 'linkbtn', o.label);
+        b.type = 'button'; b.setAttribute('data-offshoot', o.id);
+        b.addEventListener('click', function () { state.selected = o.id; state.edge = null; render(); });
+        var from = ix.adj[o.id].filter(function (l) { return l.edge.type === 'breaks_from' && l.edge.from === o.id; }).map(function (l) {
+          var t = ix.byId[l.other]; return (t.label || t.ref) + ' (' + (ns.typeWord[t.type] || t.type).toLowerCase() + ')'; });
+        add(ul, add(h('li'), b, h('span', null, (from.length ? ' came out of ' + from.join(', ') + '. ' : ' ') + (o.status || ''))));
+      });
+      add(root, add(s, ul));
+    }
+    return root;
+  }
+
+  /* What the money view needs from this file. */
+  var ui = { h: h, add: add, link: link, badge: badge, section: section, quoteList: quoteList,
+    select: function (id) { goMoney(id); }, go: function (id) { go(id); } };
+  var uiA = { h: h, add: add, link: link, badge: badge, section: section, quoteList: quoteList,
+    select: function (id) { goAncients(id); }, go: function (id) { go(id); } };
+
+  /* Redrawing destroys the focused element, so put keyboard focus back where it was. */
+  function render() {
+    var act = document.activeElement, kb = act && act.matches && act.matches(':focus-visible');
+    var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
+    var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
+    if (state.view === 'watch') { paintWatch(); return; }
+    document.getElementById('the-watch').hidden = true;
+    document.getElementById('layout').hidden = false;
+    document.getElementById('tab-watch').setAttribute('aria-pressed', 'false');
+    paint();
+    var again = id && svg.querySelector('[data-id="' + id + '"]');
+    if (again) again.focus();
+    else if (ours) { panel.setAttribute('tabindex', '-1'); panel.focus(); }
+  }
+  function paint() {
+    var money = state.view === 'money', anc = state.view === 'ancients';
+    var layout = money ? ns.money(ix, state.selected) : anc ? ns.ancients(ix, state.selected) : state.view === 'focus' ? ns.focus(ix, state.ideal) : ns.overview(ix);
+    var drawn = layout.edges.map(function (e) { return e.edge; });
+    ns.draw(svg, layout, ix, state, { node: onNode, edge: onEdge, tip: showTip, untip: hideTip });
+    stage.setAttribute('data-view', state.view);
+    document.getElementById('more').textContent = layout.dropped
+      ? layout.dropped + ' more linked items are in the list below.' : '';
+    while (panel.firstChild) panel.removeChild(panel.firstChild);
+    var body, back;
+    if (anc) {
+      if (state.edge !== null) body = ns.ancientsEdgePanel(ix, ns.ancientLine(ix, state.edge), uiA);
+      else if (state.selected) body = ns.ancientsPanel(ix, ix.byId[state.selected], uiA);
+      else body = ns.ancientsIntro(ix, uiA);
+      if (state.edge !== null && state.selected) {
+        back = h('button', 'back', '← ' + (ix.byId[state.selected].label || ix.byId[state.selected].ref));
+        back.addEventListener('click', function () { state.edge = null; render(); });
+      } else if (state.edge !== null || state.selected) {
+        back = h('button', 'back', '← The whole line-up');
+        back.addEventListener('click', function () { goAncients(null); });
+      }
+    } else if (money) {
+      if (state.edge !== null) body = ns.moneyEdgePanel(ix, ix.g.edges[state.edge], ui);
+      else if (state.selected) body = ns.moneyPanel(ix, ix.byId[state.selected], ui);
+      else body = ns.moneyIntro(ix, ui);
+      if (state.edge !== null && state.selected) {
+        back = h('button', 'back', '← ' + (ix.byId[state.selected].label || ix.byId[state.selected].ref));
+        back.addEventListener('click', function () { state.edge = null; render(); });
+      } else if (state.edge !== null || state.selected) {
+        back = h('button', 'back', '← All money and evaluators');
+        back.addEventListener('click', function () { goMoney(null); });
+      }
+    } else {
+      if (state.edge !== null) body = ns.isMoney(ix.g.edges[state.edge]) ? ns.moneyEdgePanel(ix, ix.g.edges[state.edge], ui) : edgePanel(ix.g.edges[state.edge]);
+      else if (state.selected && state.selected !== state.ideal) body = nodePanel(ix.byId[state.selected], drawn);
+      else if (state.ideal) body = idealPanel(ix.byId[state.ideal], drawn);
+      else body = introPanel();
+      if (state.edge !== null || (state.selected && state.selected !== state.ideal)) {
+        back = h('button', 'back', '← ' + (state.ideal ? ix.byId[state.ideal].label : 'All ideals'));
+        back.addEventListener('click', function () { state.selected = null; state.edge = null; render(); });
+      }
+    }
+    if (back) { back.type = 'button'; add(panel, back); }
+    add(panel, body);
+    panel.scrollTop = 0;
+    document.getElementById('to-overview').hidden = state.view !== 'focus';
+    document.getElementById('tab-ideals').setAttribute('aria-pressed', money || anc ? 'false' : 'true');
+    document.getElementById('tab-money').setAttribute('aria-pressed', money ? 'true' : 'false');
+    document.getElementById('tab-ancients').setAttribute('aria-pressed', anc ? 'true' : 'false');
+    document.getElementById('legend-ideals').hidden = money || anc;
+    document.getElementById('legend-money').hidden = !money;
+    document.getElementById('legend-ancients').hidden = !anc;
+    svg.setAttribute('aria-label', money ? 'Map of who pays, hosts and evaluates whom' : anc ? 'Ideals lined up with how they take hold and what the ancients called them' : 'Map of ideals and what links to them');
+  }
+
+  /* The Watch is a page of its own: a timeline of claims, not a drawing. */
+  function paintWatch() {
+    var box = document.getElementById('the-watch');
+    document.getElementById('layout').hidden = true;
+    box.hidden = false;
+    ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
+    document.getElementById('to-overview').hidden = true;
+    ['tab-ideals', 'tab-money', 'tab-ancients'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
+    document.getElementById('tab-watch').setAttribute('aria-pressed', 'true');
+    ns.renderWatch(box, ix, ui, openNode);
+    var target = state.selected && document.getElementById('watch-' + state.selected);
+    if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
+  }
+  function goWatch(id) {
+    state.view = 'watch'; state.ideal = null; state.edge = null;
+    state.selected = id && (ix.g.watch || []).some(function (w) { return w.id === id; }) ? id : null;
+    setHash(state.selected ? '#watch/' + state.selected : '#watch');
+    render();
+  }
+  /* From the Watch to a name on the map: its ideal's view if it has one, else the ancients or money view. */
+  function openNode(id) {
+    var n = ix.byId[id];
+    if (!n) return;
+    if (n.type === 'ideal') { go(id); return; }
+    if (/^(pattern|mechanism)$/.test(n.type)) { goAncients(id); return; }
+    if (/^(funder|lab|evaluator)$/.test(n.type) && ns.hasMoney(ix, id)) { goMoney(id); return; }
+    var home = (ix.g.ideals || []).find(function (d) { return ns.members(ix, d.id)[id]; });
+    if (home) { go(home.id); state.selected = id; render(); return; }
+    if (ns.hasAncientLinks(ix, id)) { goAncients(id); return; }
+    if (ns.hasMoney(ix, id)) { goMoney(id); return; }
+    go(null); state.selected = id; render();
+  }
+
+  function setHash(want) {
+    if (location.hash !== want) { try { history.replaceState(null, '', want || location.pathname + location.search); } catch (err) { /* file:// */ } }
+  }
+  function go(idealId) {
+    state.view = idealId ? 'focus' : 'overview';
+    state.ideal = idealId || null; state.selected = null; state.edge = null;
+    setHash(idealId ? '#' + idealId : '');
+    render();
+  }
+  /* The money view. With an id it turns to that name alone. */
+  function goMoney(id) {
+    state.view = 'money'; state.ideal = null; state.edge = null;
+    state.selected = ns.hasMoney(ix, id) ? id : null;
+    setHash(state.selected ? '#money/' + state.selected : '#money');
+    render();
+  }
+  /* The ancients view. With an id it lists that name's lines; the drawing stays whole. */
+  function goAncients(id) {
+    state.view = 'ancients'; state.ideal = null; state.edge = null;
+    var n = id && Array.isArray(ix.adj[id]) ? ix.byId[id] : null;
+    state.selected = n && (/^(ideal|pattern|mechanism)$/.test(n.type) || ns.hasAncientLinks(ix, id)) ? id : null;
+    setHash(state.selected ? '#ancients/' + state.selected : '#ancients');
+    render();
+  }
+  function route() {
+    var hash = location.hash.slice(1);
+    if (hash === 'ancients' || hash.indexOf('ancients/') === 0) { goAncients(hash.slice(9) || null); return; }
+    if (hash === 'money' || hash.indexOf('money/') === 0) { goMoney(hash.slice(6) || null); return; }
+    if (ns.hasWatch(ix) && (hash === 'watch' || hash.indexOf('watch/') === 0)) { goWatch(hash.slice(6) || null); return; }
+    go(ix.byId[hash] && ix.byId[hash].type === 'ideal' ? hash : null);
+  }
+  function onNode(n) {
+    hideTip();
+    if (state.view === 'money') { if (n.id === state.selected) { state.edge = null; render(); } else goMoney(n.id); return; }
+    if (state.view === 'ancients') { if (n.id === state.selected) { state.edge = null; render(); } else goAncients(n.id); return; }
+    if (n.type === 'ideal') { if (n.id === state.ideal) { state.selected = null; state.edge = null; render(); } else go(n.id); return; }
+    state.selected = n.id; state.edge = null; render();
+  }
+  function onEdge(e) { state.edge = e.i; render(); }
+
+  function showTip(text, ev, anchor) {
+    tip.textContent = text; tip.hidden = false;
+    var box = stage.getBoundingClientRect(), x, y;
+    if (ev) { x = ev.clientX - box.left + 14; y = ev.clientY - box.top + 14; }
+    else { var r = anchor.getBoundingClientRect(); x = r.left - box.left + r.width / 2; y = r.bottom - box.top + 6; }
+    tip.style.left = stage.scrollLeft + Math.max(4, Math.min(x, box.width - tip.offsetWidth - 4)) + 'px';
+    tip.style.top = Math.max(4, Math.min(y, box.height - tip.offsetHeight - 4)) + 'px';
+  }
+  function hideTip() { tip.hidden = true; }
+
+  function table(title, cols, rows) {
+    var wrap = h('div', 'tbl'), t = h('table'), thead = h('thead'), tr = h('tr'), tb = h('tbody');
+    add(wrap, h('h3', null, title + ' (' + rows.length + ')'));
+    cols.forEach(function (c) { add(tr, h('th', null, c)); });
+    add(thead, tr); add(t, thead);
+    rows.forEach(function (r) {
+      var row = h('tr');
+      r.forEach(function (c) { var td = h('td'); if (c && c.nodeType) add(td, c); else td.textContent = c === undefined || c === null ? '' : c; add(row, td); });
+      add(tb, row);
+    });
+    add(t, tb); add(wrap, t);
+    return wrap;
+  }
+  var ANCIENT_LINK = { invokes: 'in their own words', reads_as: 'this project’s reading', uses: 'a recorded use', breaks_from: 'came out of' };
+  function renderTables() {
+    var box = document.getElementById('tables'), g = ix.g;
+    add(box,
+      table('Ideals', ['Ideal', 'Statement', 'Phases 0–5'], g.ideals.map(function (d) {
+        return [d.label, d.ideal, ns.phaseSummary(d).map(function (s) { return ns.phaseWord[s]; }).join(' / ')]; })),
+      table('Carriers', ['Name', 'Kind', 'Status', 'Note'], g.carriers.map(function (c) { return [c.label, c.kind, c.status, c.note]; })),
+      table('Vehicles', ['Name', 'Note'], g.vehicles.map(function (v) { return [v.label, v.note]; })),
+      table('Events', ['Date', 'What', 'Kind', 'Source', 'Checked'], g.fruits.map(function (f) {
+        return [f.date, f.what, f.kind, link(f.url, f.source || 'source', f.nolink), VERIFIED[f.verified] || VERIFIED.unverified]; })),
+      table('Texts', ['Reference', 'Words'], g.texts.map(function (t) { return [t.ref, t.quote]; })),
+      table('Links', ['Sentence', 'Type', 'Lens'], g.edges.filter(function (e) { return !ns.isMoney(e) && !ANCIENT_LINK[e.type]; }).map(function (e) {
+        return [e.sentence, e.type.replace(/_/g, ' '), e.lens ? 'yes' : '']; })));
+    function nm0(id) { return ix.byId[id] ? (ix.byId[id].label || ix.byId[id].ref) : id; }
+    if ((g.patterns || []).length || (g.offshoots || []).length) add(box,
+      table('Ancient patterns', ['Pattern', 'What the tradition saw', 'Sources'], (g.patterns || []).map(function (p) {
+        return [p.label, p.summary, (p.sources || []).map(function (s) { return s.work + (s.passage ? ' ' + s.passage : ''); })
+          .concat((p.texts || []).map(function (t) { return ix.byId[t] ? ix.byId[t].ref + ' (KJV)' : t; })).join('; ')]; })),
+      table('Ancient links', ['From', 'Link', 'To', 'Words or reading', 'Where it stops', 'Source', 'Checked'],
+        g.edges.filter(function (e) { return ANCIENT_LINK[e.type]; }).map(function (e) {
+          return [nm0(e.from), ANCIENT_LINK[e.type], nm0(e.to), e.type === 'invokes' ? e.speaker + ': “' + e.quote + '” (' + e.sense + ')' : e.sentence,
+            e.limit || '', e.source ? link(e.url, e.source, e.nolink) : '', e.verified ? (VERIFIED[e.verified] || '') : 'this project’s reading']; })),
+      table('How it takes hold', ['Mechanism', 'Definition'], (g.mechanisms || []).map(function (m) { return [m.label, m.definition]; })),
+      table('Offshoots', ['Name', 'Status', 'Why not an ideal'], (g.offshoots || []).map(function (o) { return [o.label, o.status, o.why_not]; })));
+    var flows = g.edges.filter(ns.isMoney);
+    if (!flows.length) return;
+    function nm(id) { return ix.byId[id] ? (ix.byId[id].label || ix.byId[id].ref) : id; }
+    add(box,
+      table('Funders', ['Name', 'Kind', 'Note'], (g.funders || []).map(function (f) { return [f.label, f.kind, f.note]; })),
+      table('AI companies', ['Name', 'Note'], (g.labs || []).map(function (f) { return [f.label, f.note]; })),
+      table('Evaluators', ['Name', 'Note'], (g.evaluators || []).map(function (f) { return [f.label, f.note]; })),
+      table('Money, hosting and evaluation', ['From', 'Link', 'To', 'Amount', 'Date', 'What the record says', 'Kind', 'Source', 'Checked'], flows.map(function (e) {
+        return [nm(e.from), e.type, nm(e.to), e.amount, e.date, e.sentence, e.kind, e.source ? link(e.url, e.source, e.nolink) : '', VERIFIED[e.verified] || VERIFIED.unverified]; })));
+  }
+
+  function boot(g) {
+    ix = ns.index(g);
+    svg = document.getElementById('map'); panel = document.getElementById('panel');
+    tip = document.getElementById('tip'); stage = document.getElementById('stage');
+    document.getElementById('to-overview').addEventListener('click', function () { go(null); });
+    document.getElementById('theme').addEventListener('click', function () {
+      var root = document.documentElement, cur = root.getAttribute('data-theme');
+      var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      root.setAttribute('data-theme', dark ? 'light' : 'dark');
+    });
+    document.getElementById('tab-ideals').addEventListener('click', function () { go(null); });
+    document.getElementById('tab-money').addEventListener('click', function () { goMoney(null); });
+    document.getElementById('tab-ancients').addEventListener('click', function () { goAncients(null); });
+    document.getElementById('tab-ancients').hidden = !ns.hasAncients(ix);
+    document.getElementById('tab-watch').addEventListener('click', function () { goWatch(null); });
+    document.getElementById('tab-watch').hidden = !ns.hasWatch(ix);
+    document.getElementById('tab-money').hidden = !ix.g.edges.some(ns.isMoney);
+    /* The offshoot mark is drawn only where an offshoot came out of a carrier. */
+    var lo = document.querySelector('.legend-offshoot');
+    if (lo) lo.hidden = !(ix.g.offshoots || []).some(function (o) {
+      return ix.adj[o.id].some(function (l) { return l.edge.type === 'breaks_from' && ix.byId[l.other].type === 'carrier'; }); });
+    /* Round the last tab that is shown, whichever it is. */
+    var shown = [].slice.call(document.querySelectorAll('.views button')).filter(function (b) { return !b.hidden; });
+    if (shown.length) shown[shown.length - 1].classList.add('last-visible');
+    document.getElementById('views').hidden = !g.edges.some(ns.isMoney) && !ns.hasAncients(ix) && !ns.hasWatch(ix);
+    window.addEventListener('hashchange', route);
+    renderTables();
+    route();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var inline = document.getElementById('graph-data');
+    if (inline) { boot(JSON.parse(inline.textContent)); return; }
+    fetch('graph.json').then(function (r) { return r.json(); }).then(boot).catch(function (err) {
+      document.getElementById('panel').textContent = 'Could not load graph.json: ' + err.message;
+    });
+  });
+})(window.IdealsMap = window.IdealsMap || {});

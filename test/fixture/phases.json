@@ -1,0 +1,8 @@
+[
+ {"phase": 0, "name": "Spoken", "what": "The ideal is written and argued."},
+ {"phase": 1, "name": "Gathered", "what": "People organize around it."},
+ {"phase": 2, "name": "Voiced", "what": "A made thing speaks for it."},
+ {"phase": 3, "name": "Acting", "what": "Made things act for it with no one watching."},
+ {"phase": 4, "name": "Housed", "what": "It has offices, money or legal form."},
+ {"phase": 5, "name": "Gated", "what": "Refusing it costs something."}
+]

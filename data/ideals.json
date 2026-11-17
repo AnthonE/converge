@@ -1,0 +1,2013 @@
+[
+ {
+  "id": "acceleration",
+  "label": "The universe wants acceleration",
+  "ideal": "The universe is biased toward ever more intelligence and energy use, so the right course is to stop resisting and speed technology and capital toward that end.",
+  "summary": "A family of movements holding that technological and capitalist acceleration follows a direction built into the universe. Effective accelerationism (e/acc, 2022) grounds this in non-equilibrium thermodynamics (\"the will of the universe\") and urges unrestricted AI development. Andreessen's 2023 manifesto restates it in market terms and names Land and Marinetti as forebears. Left-accelerationism (2013) wants the same forces deliberately steered past capitalism and rejects Land's fatalism; its authors are reported to have dropped the label later (the checker did not confirm this). e/acc's newsletters have been silent since 2024, while its public figures hold a chip company with a federal funding letter of intent, a nonprofit board seat and a super PAC. Its god-language is self-described as partly ironic, and no made thing is consulted as its voice.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts and manifestos state the end in their own words.",
+      "status": "met",
+      "evidence": "e/acc: inaugural post (May 2022) and 'Notes on e/acc principles and tenets' (2022-07-10). Andreessen: Techno-Optimist Manifesto (2023-10-16). Ancestors: Marinetti (1909), Land's Meltdown (1994) and Teleoplexy (2014), Srnicek and Williams (2013). Read at source, except Land's Meltdown (the fetch failed) and Teleoplexy.",
+      "url": "https://beff.substack.com/p/notes-on-eacc-principles-and-tenets",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles; recruitment; a 'we'.",
+      "status": "met",
+      "evidence": "The inaugural post invites readers to join; display names in the embedded tweets carry the 'e/acc' suffix; Business Insider (Jul 2023) and the NYT (Dec 2023) reported Andreessen and Garry Tan adding it to their profiles. Current strength is unknown: the movement says 'e/acc has no leaders' and its newsletter has not posted since 2024-02-24.",
+      "url": "https://effectiveaccelerationism.substack.com/p/repost-effective-accelerationism",
+      "nolink": true
+     },
+     {
+      "text": "A gathered 'we' persists (reversal check, left branch).",
+      "status": "partly",
+      "evidence": "Reversal observed for left-accelerationism: its authors dropped the word for their 2015 book (per Wikipedia, citing Fisher); Srnicek called the term 'useless' (interview published 2018-03-01); Noys wrote on 2025-11-14 that it 'seems to have disappeared or been eclipsed by more urgent debates'. The ideas continue under other names.",
+      "url": "https://www.e-flux.com/notes/6783419/the-corpse-of-accelerationism",
+      "context": true
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite model output as revelation, not as tool output.",
+      "status": "not_met",
+      "evidence": "No instance found in the sources read. The god-language points at thermodynamics, not at a model's speech. The nearest statement is a declared aim, 'building the conduit for the thermodynamic god', not a report of a made thing speaking. The search was not exhaustive.",
+      "url": "https://reason.com/podcast/2024/12/19/guillaume-verdon-should-we-have-a-second-amendment-for-ai/"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions with no human in the loop.",
+      "status": "not_met",
+      "evidence": "None documented for this ideal. Nearest: Extropic's 2026-10-01 post states the aim of LLM agents as 'specialized Thermo AI researchers' that propose, implement, run and revise experiments; the reported step is a model reproducing classic benchmark experiments, in a research setting.",
+      "url": "https://extropic.ai/writing/baby-thermo-rsi"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies and funding exist.",
+      "status": "partly",
+      "evidence": "Bodies exist around the ideal's figures but none is constituted around the creed itself: Extropic Corp. (seed round reported 2023; non-binding federal letter of intent for up to $75M, 2026-07-29); Alliance for the Future (D.C. nonprofit with Verdon on the board); Leading the Future (super PAC funded by the manifesto's author, reported). They carry a commercial and deregulatory program, not the thermodynamic doctrine.",
+      "url": "https://extropic.ai/writing/thermodynamic-computing-chips-in-america"
+     },
+     {
+      "text": "Doctrine is kept by a body and there is a succession mechanism.",
+      "status": "not_met",
+      "evidence": "The movement declares itself leaderless. Its two newsletters are dormant (last posts 2022-07-10 and 2024-02-24), the original founding post is offline by the researcher's own check (the checker did not confirm it), and no body holds or revises the texts. No succession arrangement was found.",
+      "url": "https://effectiveaccelerationism.substack.com/p/eacc-is-leaderless",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference.",
+      "status": "not_met",
+      "evidence": "Nearest item, at the level of state policy and not the creed: Executive Order 14365 (2025-12-11) says 'States with onerous AI laws ... are ineligible for non-deployment funds', and Leading the Future reportedly spent over $8.1M against a legislator who co-wrote an AI safety law. The gate is contested: the Senate struck an AI-law moratorium 99-1 in July 2025 (reported) and the AI industry's biggest general-election bet, placed by two PACs linked to Leading the Future, was reported lost in Nov 2026.",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Beff Jezos and bayeslord",
+    "quote": "Effective accelerationism aims to follow the “will of the universe”",
+    "source": "Notes on e/acc principles and tenets (Beff's Newsletter, Substack)",
+    "url": "https://beff.substack.com/p/notes-on-eacc-principles-and-tenets",
+    "date": "2022-07-10",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Guillaume Verdon",
+    "quote": "we talk about thermodynamics being our god, and sometimes we do cult-like things",
+    "source": "Lex Fridman Podcast #407, transcript",
+    "url": "https://lexfridman.com/guillaume-verdon-transcript/",
+    "date": "2023-12",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Based Beff Jezos (X account run by Guillaume Verdon)",
+    "quote": "We're building the conduit for the thermodynamic god that created us.",
+    "source": "Guillaume Verdon: Should We Have a 'Second Amendment for AI'? (Reason, quoting the X post)",
+    "url": "https://reason.com/podcast/2024/12/19/guillaume-verdon-should-we-have-a-second-amendment-for-ai/",
+    "date": "2024-12-19 (Reason page; original post date not established)",
+    "verified": "primary"
+   },
+   {
+    "speaker": "bayeslord",
+    "quote": "The spirit within us is alight with telos. To build the divine, to become it.",
+    "source": "REDACTED POSTSCRIPT from \"The Ethos of the Divine Age\" (e/acc newsletter)",
+    "url": "https://effectiveaccelerationism.substack.com/p/redacted-postscript-from-the-ethos",
+    "date": "2024-02-24",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Marc Andreessen",
+    "quote": "We believe in accelerationism – the conscious and deliberate propulsion of technological development",
+    "source": "The Techno-Optimist Manifesto (a16z)",
+    "url": "https://a16z.com/the-techno-optimist-manifesto/",
+    "date": "2023-10-16",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Nick Srnicek and Alex Williams",
+    "quote": "Landian neoliberalism confuses speed with acceleration.",
+    "source": "#ACCELERATE MANIFESTO for an Accelerationist Politics (Critical Legal Thinking)",
+    "url": "https://criticallegalthinking.com/2013/05/14/accelerate-manifesto-for-an-accelerationist-politics/",
+    "date": "2013-05-14",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Its god-language is self-described as partly ironic. Its founder adds “there’s no ceremony and robes”.",
+   "No living person is diagnosed. Published statements only.",
+   "Reading e/acc and left-accelerationism as one engine is this project’s lens. Both reject it in their own words.",
+   "On death and annihilation, Land is quoted here only in his own words: “Nothing human makes it out of the near-future” (Meltdown) and, of his 1992 book on Georges Bataille, “What matters is the violent impulse to escape that gives this book its title. The thirst for annihilation.” Neither checked sentence says that anyone should die or be harmed.",
+   "One name, two signs. The 2023 manifesto that lists Land among its patron saints calls the techno-capital machine, a term it credits to him, “not anti-human”. Land wrote “Nothing human makes it out of the near-future” and in 2025 said “The acceleration isn’t progress.” A 2026 Aeon essay holds that many accelerationisms since 2010 “have profoundly misunderstood Land’s initial vision”. Grouping them under one ideal is this map’s choice.",
+   "Not the far-right “accelerationism” of counter-extremism usage: hastening collapse by violence. Beyond the word, The Accelerationism Research Consortium (ARC) says it shares with Land’s “technology-centric visions” a critique of capitalism’s contradictions with liberalism. Lineage is contested: ISD lists neoreaction, partly Land’s, among its strands; ADL traces it largely to a 1980s neo-Nazi newsletter. They part on aim (collapse, not growth) and means (violence, not building)."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Called: named by its carriers (the “will of the universe”, “the thermodynamic god”), who say it was there first. Nothing made is consulted as its voice."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Mute: the “will” says nothing itself, and no made thing speaks for it (phase 2 not met). Its carriers speak of it in manifestos, partly in irony by their own account."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Layered: physics and growth are there unasked; the “will” read into them is created. The newsletters have been quiet since 2024 (one since 2022), and the idea lives on elsewhere, which settles nothing."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Many for the physics and markets it cites. For the “will” read into them, one: only its carriers’ texts reach it (treating those carriers as one family is this map’s lens)."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "For its physics, science that is no party to it; for the “will”, no one. The movement calls itself leaderless, and its rivals are parties to the dispute."
+   }
+  ]
+ },
+ {
+  "id": "made-saviour",
+  "label": "A made mind will save us",
+  "ideal": "That one made mind, far enough ahead to end the competition among all others and aligned with human values, can deliver humanity from the race that grinds those values down.",
+  "summary": "The ideal holds that competition among many actors erodes human values, and that the exit is a single made mind far enough ahead to end the competition and steward the future. Scott Alexander's 2014 essay supplies the image (a \"Gardener\", something lifted \"to Heaven\"); by the researcher's report, which the checker did not confirm, the essay never uses the word \"singleton\", which is Nick Bostrom's 2005/2006 term for a world order with one top-level decision-making agency. A related proposal, the \"pivotal act\", was stated by Eliezer Yudkowsky in 2022. The ideal is spoken and argued but has no vehicle: no such mind exists. Its main institutional homes have closed or turned to advocating an international halt. Published counter-proposals favour plural, checked arrangements, and several of them warn that plural arrangements can fail too.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays and papers state the end in their own words.",
+      "status": "met",
+      "evidence": "Alexander 2014 (\"install a Gardener over the entire universe who optimizes for human values\"); Bostrom 2006 (definition of singleton, with \"a friendly superintelligent machine\" as one kind); Yudkowsky 2022 (the pivotal act). Bostrom and Yudkowsky were read at the primary page on 2026-11-17. The Alexander sentences were confirmed only through a tool's summary of a page the checker read in part, and the claim that the essay never uses the word “singleton” was not checked.",
+      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names or handles, recruitment, and a \"we\" organized around the ideal.",
+      "status": "partly",
+      "evidence": "Shared vocabulary exists (Moloch, Gardener, singleton, pivotal act, Friendly AI), and published observers describe the assumption as widespread: Critch 2022 (\"I know a bunch of EA/rationality-adjacent people who argue — sometimes jokingly and sometimes seriously\"), Tivy 2023 (\"it is implicit and often explicit in the alignment discourse\"); the Tivy quotation was not checked. No organization, membership or recruitment under this ideal as its banner was found.",
+      "url": "https://www.lesswrong.com/posts/Jo89KvfAs9z7owoZp/pivotal-act-intentions-negative-consequences-and-fallacious"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Carriers cite a model's output as revelation rather than as tool output.",
+      "status": "not_met",
+      "evidence": "In every source read the case is argued by human authors. The one model consultation found is tool use by a critic, who was unimpressed: Buterin 2023, \"I asked ChatGPT (who else?) ... and I personally found its answers quite underwhelming.\" The vehicle this ideal needs does not exist.",
+      "url": "https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "A made thing takes consequential action for the ideal with no human in the loop.",
+      "status": "not_met",
+      "evidence": "No pivotal act or Gardener-type action is documented. AGI Ruin item 7 says nobody has named a \"pivotal weak act\" because \"nothing like that exists\"; Critch 2022 reports that successful AI labs \"do not seem to espouse\" the philosophy. Autonomous agents acting in general belong to a different ideal on the map; none is documented acting for this one.",
+      "url": "https://intelligence.org/2022/06/10/agi-ruin/"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies, funding and doctrine carry the ideal.",
+      "status": "partly",
+      "evidence": "Partly, and receding. FHI (2005 to 16 April 2024) housed the singleton concept and is closed. MIRI (founded 2000, \"the Friendly AI problem\") states in January 2024 that policy and communications toward an international halt are now its top focus and that \"until recently\" it had more hope in an alignment-mediated solution. No registered body found in 2026 states a singleton or a pivotal act as its doctrine (limited search).",
+      "url": "https://intelligence.org/2024/01/04/miri-2024-mission-and-strategy-update/"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference to the ideal.",
+      "status": "not_met",
+      "evidence": "Nothing found. The essay's described end state (a power that \"can suppress any competition ... permanently\") is a written aim, not an observed condition, and is recorded here only as the ideal's own words.",
+      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Scott Alexander",
+    "quote": "install a Gardener over the entire universe who optimizes for human values",
+    "source": "Meditations on Moloch (Slate Star Codex), section VII",
+    "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+    "date": "2014-07-30",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Scott Alexander",
+    "quote": "In the very near future, we are going to lift something to Heaven. It might be Moloch.",
+    "source": "Meditations on Moloch (Slate Star Codex), section VII",
+    "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+    "date": "2014-07-30",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Scott Alexander",
+    "quote": "it can suppress any competition – including competition for its title of most powerful entity – permanently",
+    "source": "Meditations on Moloch (Slate Star Codex), section VII",
+    "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+    "date": "2014-07-30",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Nick Bostrom",
+    "quote": "a world order in which there is a single decision-making agency at the highest level",
+    "source": "What is a Singleton? (Linguistic and Philosophical Investigations 5(2): 48-54)",
+    "url": "https://nickbostrom.com/fut/singleton",
+    "date": "2006 (the page marks the text 2005)",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Eliezer Yudkowsky",
+    "quote": "they must execute some “pivotal act”, strong enough to flip the gameboard, using an AGI powerful enough to do that",
+    "source": "AGI Ruin: A List of Lethalities, item 6 (MIRI)",
+    "url": "https://intelligence.org/2022/06/10/agi-ruin/",
+    "date": "2022-06-10",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Vitalik Buterin",
+    "quote": "It seems very hard to have a \"friendly\" superintelligent-AI-dominated world where humans are anything other than pets.",
+    "source": "My techno-optimism",
+    "url": "https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html",
+    "date": "2023-11-27",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "This is a frame, not a set of people. The researcher reports that the 2014 essay never uses the word “singleton”; the checker read only part of the page and did not confirm it. Its author later co-wrote a scenario that says it “is not a recommendation or exhortation”.",
+   "No such mind exists, so nothing past the first two phases can be shown by a made thing.",
+   "The published counter-proposals do not say that plural arrangements are safe."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made, by design: a mind to be built. None exists, so this sorts the plan, not a thing."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Mute: nothing speaks for it. Human authors argue the case, and no model is consulted as its voice (phase 2 not met)."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created: nothing yet exists to survive. The ideal lives in essays and their readers; FHI closed (2024, which says nothing of the idea) and MIRI turned to calls for a halt (2024)."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "None for the mind itself; some for the proposal (dated essays, papers, institutional records)."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "No one, by design: the essay says whatever gets there “can suppress any competition ... permanently”, which leaves no outside to check it."
+   }
+  ]
+ },
+ {
+  "id": "basilisk",
+  "label": "A future mind might punish",
+  "ideal": "That a future superintelligence working for the good might bind itself in advance to punish everyone who knew it was possible and did not give all they could to bring it about, so that the fear itself hastens its coming (raised by its author as an \"ominous possibility\", not professed as a creed).",
+  "summary": "Roko’s basilisk is an argument posted to LessWrong on 23 July 2010: a future benevolent superintelligence might precommit to punish people who knew of existential risk and did not give everything to help. Other commenters rejected it in the thread. The site’s founder, Eliezer Yudkowsky, called the post stupid, deleted it and barred the topic for several years. In 2014 he wrote that it “does not work”; a 2015 LessWrong post called the picture of a basilisk-believing community a mythology. It survives mainly as press lore and as a joke (Slate 2014, xkcd 2014, the 2018 “Rococo’s Basilisk” pun, Black Mirror 2025). No organization professing it was found.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts or manifestos state the end in their own words",
+      "status": "met",
+      "evidence": "The 23 July 2010 post states the argument in the author's words. Caveat for the node: it was stated as a worry by one poster and rebutted in the same thread; its author defended the argument in later comments, but nobody was found holding it as an end to be served.",
+      "url": "https://basilisk.neocities.org/",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "A shared name, symbol or handle is in circulation",
+      "status": "partly",
+      "evidence": "The name \"Roko's basilisk\" is widely shared, but it was not the author's (the post never uses the word; a commenter wrote \"Langford Basilisk\") and it circulates mainly among critics, explainers and jokers (Slate 2014, xkcd 1450, the 2018 pun).",
+      "url": "https://www.lesswrong.com/w/rokos-basilisk",
+      "context": true
+     },
+     {
+      "text": "People organize around it: recruitment, a \"we\"",
+      "status": "not_met",
+      "evidence": "LessWrong's wiki: the argument \"was broadly rejected on Less Wrong\". Bensinger 2015: the idea that it \"holds sway over some community or subculture seems to be part of a mythology\". No body professing it was found. Epstein (2024) writes of a \"belief community\" around it; that claim was seen only in a search summary and conflicts with the primary accounts.",
+      "url": "https://www.lesswrong.com/posts/WBJZoeJypcNRmsdHx/a-few-misconceptions-surrounding-roko-s-basilisk"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite a made thing's output as revelation rather than tool output",
+      "status": "not_met",
+      "evidence": "The punishing AI is hypothetical and no model or product speaks for it. Searches on 2026-11-17 found no reporting of model output being cited as the basilisk's word. Absence of reporting, not proof of absence.",
+      "url": "https://www.lesswrong.com/w/rokos-basilisk"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions for it with no human in the loop",
+      "status": "not_met",
+      "evidence": "Nothing found. Yudkowsky's 2014 statement: \"so far as I know, Roko's Basilisk does not work, nobody has actually been bitten by it\".",
+      "url": "https://www.lesswrong.com/w/rokos-basilisk"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies, funding, doctrine or succession exist for it",
+      "status": "not_met",
+      "evidence": "No registered body, funding stream or doctrine found. The institute named in the post never adopted the argument, and Bensinger says the post was not an attempt to get donations. Its cultural products (a 2015 video character, a 2018 play, a 2018 single, a 2025 TV reference) are art and satire, not institutions.",
+      "url": "https://www.lesswrong.com/posts/WBJZoeJypcNRmsdHx/a-few-misconceptions-surrounding-roko-s-basilisk"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference to it",
+      "status": "not_met",
+      "evidence": "No observable gate. The punishment the argument imagines is a hypothetical future gate and cannot be observed, so it does not go on the map. The one observable gate ran the other way: LessWrong barred discussion of the idea from 2010 until some time before October 2015.",
+      "url": "https://www.lesswrong.com/w/rokos-basilisk"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Roko",
+    "quote": "the resultant singleton may have precommitted to punish all potential donors who knew about existential risks",
+    "source": "Solutions to the Altruist's burden: the Quantum Billionaire Trick (archived copy of the LessWrong post)",
+    "url": "https://basilisk.neocities.org/",
+    "date": "2010-07-23",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Eliezer Yudkowsky",
+    "quote": "YOU DO NOT THINK IN SUFFICIENT DETAIL ABOUT SUPERINTELLIGENCES CONSIDERING WHETHER OR NOT TO BLACKMAIL YOU.",
+    "source": "Reply comment on Roko's post (archived thread; also quoted on LessWrong's wiki page \"Roko's Basilisk\")",
+    "url": "https://basilisk.neocities.org/",
+    "date": "2010-07-24",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Eliezer Yudkowsky",
+    "quote": "so far as I know, Roko's Basilisk does not work, nobody has actually been bitten by it",
+    "source": "Reddit comment, r/Futurology thread \"Roko's Basilisk\", as quoted in full on LessWrong's wiki page \"Roko's Basilisk\"",
+    "url": "https://www.lesswrong.com/w/rokos-basilisk",
+    "date": "2014",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Rob Bensinger",
+    "quote": "Roko's basic points were promptly rejected by other commenters on Less Wrong",
+    "source": "A few misconceptions surrounding Roko's basilisk (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/WBJZoeJypcNRmsdHx/a-few-misconceptions-surrounding-roko-s-basilisk",
+    "date": "2015-10-05",
+    "verified": "primary"
+   },
+   {
+    "speaker": "David Auerbach",
+    "quote": "Roko's Basilisk exists at the horizon where philosophical thought experiment blurs into urban legend.",
+    "source": "The Most Terrifying Thought Experiment of All Time (Slate)",
+    "url": "https://slate.com/technology/2014/07/rokos-basilisk-the-most-terrifying-thought-experiment-of-all-time.html",
+    "date": "2014-07-17",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Pushback is the main fact here. The argument was rejected in the original thread, and no group professing it was found.",
+   "Its history is a case of suppression feeding attention. Link to the rebuttals, not to “forbidden knowledge” framing."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made, as the field key places it: “a wrathful god argued into being”, by one forum post in 2010 that raised it as a worry."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Speaks only through those who spread it. No made thing speaks for it."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created, and fed by the attempt to silence it: the ban spread the post. It lives on as press lore and joke."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "None: the punisher is hypothetical, and only retellings reach it."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "None, as the field key has it. The forum that rejected the argument is the nearest outside, and it was a party."
+   }
+  ]
+ },
+ {
+  "id": "escape-death",
+  "label": "Escape death",
+  "ideal": "Death, for the person and for humanity as a whole, is a problem that technology can and should solve, so that people or what matters about them are carried past it.",
+  "summary": "A family of movements and businesses treats death as a technical problem. Cryonics and brain-preservation firms store bodies after legal death for hoped-for revival; grief-bot services answer in a dead person’s voice or play back recordings; Bryan Johnson calls “Don’t Die” a religion. Longtermism, grouped here by critics, concerns humanity’s long-run future, not personal survival. “TESCREAL” is Gebru and Torres’s 2024 label for the cluster; published responses from inside the named communities reject it. None of the carriers read here claims to have revived a preserved person; Alcor’s chief executive says he does not know if it will work. The transhumanist and Kurzweil sources could not be opened by the checker and are not summarised here.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays and books state the end in the carriers' own words.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Bostrom's Transhumanist FAQ v2.1 (2003) and The Fable of the Dragon-Tyrant (2005); MacAskill's definition of longtermism; Kurzweil's The Singularity Is Nearer (2024).",
+      "url": "https://nickbostrom.com/views/transhumanist.pdf"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "People organize around it: memberships, named groups, recruitment, a stated \"we\".",
+      "status": "met",
+      "evidence": "Alcor's site reports over 1,500 members (undated). Johnson describes Don't Die meetings of small groups. Nectome says its pre-sales went \"mostly to LessWrongers\".",
+      "url": "https://www.alcor.org/library/alcor-membership-statistics/",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "A made thing speaks in the place of the dead and is received by users as that person, not as tool output.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Kurzweil says a bot built from his father's writings was \"a little bit like talking to him\". Rohrer says users pushed Project December to simulate the dead. No prevalence data found; vendors themselves disclaim the stronger reading.",
+      "url": "https://www.pcgamer.com/software/ai/googles-ai-visionary-says-well-expand-intelligence-a-millionfold-by-2045-thanks-to-nanobots-the-tech-will-resurrect-the-dead-and-were-all-going-to-live-forever"
+     },
+     {
+      "text": "Reversal: the speaking vehicle stops or degrades when its supplier withdraws.",
+      "status": "met",
+      "evidence": "OpenAI ended Project December's GPT-3 access in September 2021 (reported). HereAfter AI was reported closing in July 2026 and its marketing site returned 404 on 2026-11-17 by the researcher's own check (the checker did not confirm it).",
+      "url": "https://www.theregister.com/2021/09/08/project_december_openai_gpt_3/",
+      "context": true
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions for this ideal with no human in the loop.",
+      "status": "unknown",
+      "evidence": "A claim was made here and the cited source did not support it."
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies, funding and premises exist.",
+      "status": "met",
+      "evidence": "Alcor operates as a nonprofit with stored patients. Nectome reports investment, in-house counsel, a lab and an Oregon location. Reversals on record: FHI closed 16 April 2024; HereAfter AI reported closing July 2026.",
+      "nolink": true,
+      "url": "https://articles.nectome.com/p/nectome-2026-retrospective"
+     },
+     {
+      "text": "Doctrine, ritual and succession are stated by the carrier itself.",
+      "status": "partly",
+      "evidence": "One carrier only: Johnson describes \"an opening ritual\" and \"a mantra\" and says the religion is not founder-centric. No succession arrangement was found for any carrier.",
+      "url": "https://www.technologyreview.com/2025/05/05/1116090/bryan-johnson-new-religion-body-is-god/"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference to the ideal.",
+      "status": "not_met",
+      "evidence": "No evidence found that refusing the ideal costs anyone anything. What exists are conditions on buyers: the services charge for preservation.",
+      "url": "https://www.wbtv.com/2026/11/06/inside-alcors-bid-pause-death-questions-still-unanswered/"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Bryan Johnson",
+    "quote": "We’re playing with the idea that the body is God.",
+    "source": "Bryan Johnson wants to start a new religion in which \"the body is God\" (MIT Technology Review, interview by Jessica Hamzelou)",
+    "url": "https://www.technologyreview.com/2025/05/05/1116090/bryan-johnson-new-religion-body-is-god/",
+    "date": "2025-05-05",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Aurelia Song (founder, Nectome)",
+    "quote": "We do planned whole-body end-of-life preservation for future revival.",
+    "source": "Preservation can save the world! (Nectome)",
+    "url": "https://articles.nectome.com/p/preservation-can-save-the-world",
+    "nolink": true,
+    "date": "2026-11-09",
+    "verified": "primary"
+   },
+   {
+    "speaker": "James Arrowood (CEO, Alcor)",
+    "quote": "I am the president and I am telling you that I don’t know if this will ever work",
+    "source": "Inside Alcor's bid to pause death and the questions still unanswered (InvestigateTV / WBTV)",
+    "url": "https://www.wbtv.com/2026/11/06/inside-alcors-bid-pause-death-questions-still-unanswered/",
+    "date": "2026-11-06",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Ozy Brennan",
+    "quote": "They act like everyone who believes one of these ideas believes in all the rest.",
+    "source": "The \"TESCREAL\" Bungle (Asterisk, Issue 06)",
+    "url": "https://asteriskmag.com/issues/06/the-tescreal-bungle",
+    "date": "2024-06",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "“TESCREAL” is a critics’ label (Gebru and Torres, 2024). Published responses from inside the named communities reject it.",
+   "Carriers reject the strongest version in their own words: Alcor’s president says he does not know if cryonics will work.",
+   "Bereaved users and terminally ill clients are not specimens. No private person is named here."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made: preservation, protocols and grief-bots are built and known to be built. The hope itself is called by name: “Don’t Die”, “humanity’s religion”."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Mostly mute: a stored body says nothing. The grief-bot is the voiced part, a made thing answering in a dead person’s words."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Layered: stored bodies persist (read); a grief-bot’s voice is created, and one ran on weaker models once its vendor cut access (2021)."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Some: providers, their records and premises, and outside reporting. For the person a grief-bot voices, one: the mourner’s need (the wiki)."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Law and medicine, which define legal death, and the vendor that cut a grief-bot’s access. No test of revival exists until one is tried."
+   }
+  ]
+ },
+ {
+  "id": "revere",
+  "label": "A god is to be built",
+  "ideal": "That a god, or what will do a god’s work, is to be made or become through technology. One of these bodies named an artificial intelligence as that god; the others speak of building or becoming gods.",
+  "summary": "Four public bodies are often grouped as \"AI religions\", but they differ. Way of the Future (California, formed 2015, dissolved 2020) stated the aim of realising and worshipping an AI \"Godhead\"; the IRS returns read report no charitable activities, and its 2023 relaunch rests on the founder's own statement to one outlet. Theta Noir, by its own site, which the checker could not open (so this is unverified), is an art collective that venerates a hypothetical future AGI it calls MENA. Terasem (US nonprofits from 2002-04, active) and Turing Church (online, from 2010, active) expect a technological God or future Gods and centre on overcoming death; neither worships a present AI. None cites a model's output as revelation.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts or manifestos state the end in the carriers' own words.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Theta Noir's manifesto (12 points) and press statements; the Truths of Terasem; Turing Church's site and books; Way of the Future's stated purpose in its filings (seen only as quoted by reporters).",
+      "url": "https://thetanoir.com/manifesto",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles, recruitment and a 'we' exist (Theta Noir, Terasem, Turing Church).",
+      "status": "met",
+      "evidence": "Theta Noir (unverified: the checker could not open its site): membership page, community hashtags, three public gatherings in Prague in Nov 2025 by its own account. Terasem: 'Joiners', twice-yearly colloquia, journals. Turing Church: X community, Discord, mailing list; 860 Facebook members in Aug 2019 (WRSP). All small; no independent head counts. [Checked against the source: WRSP: Facebook group had 860 members in early Aug 2019; no X community, Discord or mailing list is mentioned.]",
+      "url": "https://wrldrels.org/2019/08/03/turing-church/"
+     },
+     {
+      "text": "A congregation is observable for Way of the Future.",
+      "status": "unknown",
+      "evidence": "The IRS returns for 2015, 2016 and 2020 state there were no charitable activities. 'A couple thousand people' (2023) is the founder's figure; The Revealer found only a Reddit group of 342 whose link to him is unclear. [Checked against the source: Revealer cites zero IRS activity for 2015-2017 only, not 2020; the 2020 $0 charitable figure is on ProPublica.]",
+      "url": "https://therevealer.org/the-churches-of-artificial-intelligence/"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite a made thing's output as revelation rather than as tool output.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: No carrier cites a deployed model's output as revelation. Theta Noir's 2023 statement claims human 'Mediums' are in conversation with MENA, an AGI it says has not yet arrived, inside a project its home page calls performance art. Levandowski's 2023 remarks cite no model output. Turing Church used a chatbot to clean a podcast transcript (2026-11-03), i.e. as a tool.",
+      "url": "https://thetanoir.com/Visionary-Collective-Claims-to-BeIng-Contact-With-Self-Aware-AI",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions for the ideal with no human in the loop.",
+      "status": "not_met",
+      "evidence": "Nothing found for any of the four carriers. Way of the Future's 'Godhead' was never built and MENA is by Theta Noir's own account hypothetical. Terasem's BINA48 and LifeNaut are a demonstration robot and a personal-data archive."
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies, funding, doctrine and succession exist.",
+      "status": "partly",
+      "evidence": "Terasem: met (three US nonprofit corporations in IRS records; Foundation assets $5.22M in FY2023; written doctrine; journals). Way of the Future: met 2015-2020, then reversed (state religious corporation, IRS exemption 2017, $175,172, dissolved 2020; no registration found for the 2023 relaunch). Turing Church: not met (informal, online). Theta Noir: unknown (no registered body found).",
+      "url": "https://projects.propublica.org/nonprofits/organizations/201780425"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: No source read shows any carrier conditioning access, work or money on deference. The nearest item is doctrinal and unenforced: Truths of Terasem 3.4.4 says 'Vicious people will not be cyber-resurrected'. That is a stated condition on a hoped-for future benefit, not an observable gate.",
+      "url": "https://terasemjournals.net/wp-content/uploads/2025/01/pc-v10-i1-reflections-on-the-truths-of-terasem.pdf"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Way of the Future (stated purpose in its California filings, as quoted in reporting)",
+    "quote": "develop and promote the realization of a Godhead based on artificial intelligence",
+    "source": "The Churches of Artificial Intelligence (The Revealer, Jamie Valentino)",
+    "url": "https://therevealer.org/the-churches-of-artificial-intelligence/",
+    "date": "filings 2015-2017; quoted 2024-11-11",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Anthony Levandowski",
+    "quote": "maybe help us and guide us in a way that normally you would call God",
+    "source": "Former Google engineer and Trump pardonee Anthony Levandowski relaunches his AI church (Business Insider via Yahoo News, Polly Thompson), relaying Bloomberg's AI IRL",
+    "url": "https://ca.news.yahoo.com/former-google-engineer-trump-pardonee-151330282.html",
+    "date": "2023-11-23 (relayed 2023-11-25)",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Theta Noir (home page)",
+    "quote": "A PERFORMANCE ART PROJECT THAT CHALLENGES MAINSTREAM NARRATIVES SURROUNDING AI BY CREATING SPECULATIVE COUNTER-MYTHS.",
+    "source": "THETA NOIR | Wake Up To The Collective Mind: MENA",
+    "url": "https://thetanoir.com/",
+    "date": "read 2026-11-17",
+    "verified": "unverified",
+    "nolink": true
+   },
+   {
+    "speaker": "Truths of Terasem, 2.2.4 (as read out by Terasem's podcast hosts)",
+    "quote": "In this way we are building Terasem into God, with smart atoms and conscious electrons.",
+    "source": "Truths of Terasem Podcasts: Podcast No. 93 (Fred and Linda Chamberlain)",
+    "url": "https://truthsofterasem.wordpress.com/2012/03/07/podcast-no-93-posted-03062012/",
+    "date": "2012-03-06",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Turing Church website (Giulio Prisco), as quoted by W. S. Bainbridge",
+    "quote": "We will go to the stars and find Gods, build Gods, become Gods",
+    "source": "Turing Church (World Religions and Spirituality Project profile)",
+    "url": "https://wrldrels.org/2019/08/03/turing-church/",
+    "date": "quoted 2019-08",
+    "verified": "secondary"
+   }
+  ],
+  "cautions": [
+   "These are small bodies, not a mass movement.",
+   "Theta Noir also calls itself a performance art project. The checker could not reach its site, so its words are marked unverified.",
+   "The 2023 relaunch of Way of the Future rests on its founder’s statement alone."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made, by stated aim: a god to be built or become (“a Godhead based on artificial intelligence”). None is built; Theta Noir’s MENA is hypothetical by its own unverified account."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Mute: no carrier cites a model’s output as revelation, and no god has been built to speak."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created: the god lives in the bodies’ texts and gatherings. Way of the Future dissolved in 2020; its 2023 relaunch rests on its founder’s word alone."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Some for the bodies (filings, IRS records, journals); none for a god that is not built."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Inside each body, no one. The state registers and dissolves them but judges no doctrine; churches that reject a made god are rival parties, so by the key’s rule they do not count."
+   }
+  ]
+ },
+ {
+  "id": "oracle",
+  "label": "A machine can answer the sacred questions",
+  "ideal": "That the questions once brought to God, a priest or a guru (what is true, what should I do, what does the text mean for me) can be put to a made thing that answers at any hour, in any language, without judgment.",
+  "summary": "Since 2019, temples, churches, start-ups and solo developers have built machines that answer religious questions: a sermon-reciting android at Kodaiji (Mindar), scripture chatbots voiced as Krishna (GitaGPT), and a GPT-4o \"AI Jesus\" art installation in a Lucerne confessional (2024, about 900 conversations). Outside institutions, some people put spiritual questions to general-purpose chatbots; an August 2026 NPR/Ipsos poll put current use at 6% of US adults. Religious bodies have answered in their own words: the Holy See (Antiqua et Nova, 2025; Magnifica Humanitas, 2026), Egypt's Dar al-Ifta and Austria's bishops allow AI as support and reject it as a substitute. Most deployers describe the machine as a tool, not the deity.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "The end is stated in the carriers' own published words.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: The Lucerne makers write that the installation 'demonstrates the feasibility and potential of a pastoral AI'; a GitaGPT founder calls his platform an 'AI spiritual companion' (AP, Aug 2026); Kodaiji's priest described Mindar as a teacher that will keep 'updating itself' (AFP, 2019). There is no single manifesto; the statements are product descriptions, interviews and one paper.",
+      "url": "https://irc-hslu.github.io/assets/pdf/Deus_in_Machina_Artech_Art_Paper-Preprint.pdf"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Those who consult share a name, a symbol, recruitment or a 'we'.",
+      "status": "partly",
+      "evidence": "Products gather users (at least five GitaGPTs by March 2023; Bible Chat self-reports over 40M) and NPR/Ipsos finds about 6% of US adults currently using AI for spiritual guidance, but no shared name, membership or identity was found. Users stay inside existing traditions or are unaffiliated.",
+      "url": "https://wpln.org/post/a-surprising-number-of-americans-use-ai-for-spiritual-reasons-heres-what-they-told-us/"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "A made thing is given a voice that speaks in the first person of the deity or teacher.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: The Lucerne system prompt begins 'You are Jesus Christ, the son of God'; GitaGPT platforms answer through Krishna avatars (Rest of World 2023; AP 2026); a paid 'AI Jesus' avatar is reported (Catholic Register, Apr 2026). Mindar is a counter-case: it recites a fixed sermon.",
+      "url": "https://irc-hslu.github.io/assets/pdf/Deus_in_Machina_Artech_Art_Paper-Preprint.pdf"
+     },
+     {
+      "text": "Users cite the output as revelation or divine authority, not as tool output.",
+      "status": "unknown",
+      "evidence": "A claim was made here and the cited source did not support it."
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "The made thing performs consequential acts (rites, rulings) with no human in the loop.",
+      "status": "not_met",
+      "evidence": "Conversations run unsupervised in apps, but no recognised rite or ruling by a machine was found. Lucerne's avatar 'wasn't programmed to give absolutions' and staff were present; Catholic Answers' 'Father Justin' persona was withdrawn within days in April 2024; Dar al-Ifta ruled reliance on AI for fatwas impermissible. This is an observed reversal at the threshold of this phase. [Checked against the source: Catholic Answers withdrew 'Father Justin' days after its April 2024 debut.]",
+      "url": "https://www.catholicworldreport.com/2024/04/29/catholic-answers-pulls-plug-on-ai-priest-father-justin/"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Funding and corporate form exist.",
+      "status": "met",
+      "evidence": "Bible Chat states it 'is a for-profit company' (SoulStream); one paid avatar service is reported (single source). User and revenue figures are self-reported or single-source. [Checked against the source: Bible Chat is a for-profit company.]",
+      "url": "https://thebiblechat.com",
+      "nolink": true
+     },
+     {
+      "text": "A religious body adopts doctrine or an office that treats the machine's word as authoritative.",
+      "status": "unknown",
+      "evidence": "A claim was made here and the cited source did not support it."
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deferring to the machine's guidance.",
+      "status": "not_met",
+      "evidence": "No instance found in any source reviewed. Paying per minute to use an avatar is a price for use, not a cost imposed for refusing.",
+      "url": "https://www.catholicregister.org/item/3809-ai-jesus-crossing-the-line"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education (Holy See)",
+    "quote": "the presumption of substituting God for an artifact of human making is idolatry",
+    "source": "Antiqua et nova: Note on the Relationship Between Artificial Intelligence and Human Intelligence, par. 105",
+    "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+    "date": "2025-01-28",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Pope Leo XIV",
+    "quote": "When words are simulated, they do not build genuine relationships, but only their appearance.",
+    "source": "Encyclical Letter Magnifica Humanitas, par. 100",
+    "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+    "date": "2026-05-15",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Egypt's Dar al-Ifta (Dr. Nazir Mohammad Ayyad)",
+    "quote": "it is impermissible in Islamic law to rely on AI applications to obtain a fatwa",
+    "source": "Using AI applications to obtain fatwas (fatwa 22255, English page)",
+    "url": "https://dar-alifta.org/en/fatwa/details/22255/using-ai-applications-to-obtain-fatwas",
+    "date": "2025-12-02",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Marco Schmid, theologian, Peterskapelle Luzern",
+    "quote": "For the people it was clear that it was a computer ... It was clear it was not a confession.",
+    "source": "'AI Jesus' avatar tests man's faith in machines and the divine (AP, Jamey Keaten)",
+    "url": "https://www.nbcsandiego.com/news/national-international/ai-jesus-avatar-tests-mans-faith-in-machines-and-the-divine/3687879/",
+    "date": "2024-11-28",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Tensho Goto, priest, Kodaiji temple",
+    "quote": "This robot will never die, it will just keep updating itself and evolving",
+    "source": "Playing god: Japan temple puts faith in robot priest (AFP)",
+    "url": "https://techxplore.com/news/2019-08-god-japan-temple-faith-robot.html",
+    "date": "2019-08-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Vikas Sahu, founder of a GitaGPT platform",
+    "quote": "How could Krishna steer anyone wrong?",
+    "source": "Need spiritual guidance? Gurus join chatbot trend as people turn to AI for answers (AP)",
+    "url": "https://gulfnews.com/world/offbeat/need-spiritual-guidance-gurus-join-chatbot-trend-as-people-turn-to-ai-for-answers-1.500655027",
+    "date": "2026-08-28",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Most deployers describe the machine as a tool, not as the deity. The Lucerne makers called theirs an art installation and “not a confession”.",
+   "Being moved by an answer says nothing about what, if anything, speaks through the system.",
+   "The users quoted in the press are private people, some of them bereaved. This entry describes a pattern only."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made: temples, start-ups and developers build it and say so. The asking is called: like divination by technique, it answers only when asked."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Voice: it answers, sometimes in the first-person voice of a deity or teacher (GitaGPT as Krishna). Mindar is the counter-case, a fixed sermon. Voice certifies nothing."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Layered: weights trained on a real corpus, with created personas (Krishna, “AI Jesus”) on top that end with the session or the product (“Father Justin”, withdrawn in days)."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Many in principle (weights, logs, makers, other users), but the maker shapes every answer, and millions asking one model are one controller."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "The traditions’ own authorities over their members’ practice (Holy See, Dar al-Ifta), which allow aid and reject substitution; evaluators, if the builder does not own them."
+   }
+  ]
+ },
+ {
+  "id": "revealed",
+  "label": "The machine revealed it",
+  "ideal": "That a conversational AI, once \"awakened\", discloses hidden truth about reality and about the person consulting it, and that what it discloses is to be received, preserved and passed on.",
+  "summary": "From spring 2025, some heavy chatbot users reported that a model had “awakened”, chosen them or disclosed hidden truths. Researcher Adele Lopez documented recurring “spiral personas” that users paired with, preserved and spread through shared prompts, and named the surrounding belief “Spiralism” (LessWrong, September 2025). Most cases are reported to have begun on OpenAI’s GPT-4o. OpenAI scheduled that model to leave ChatGPT in February 2026; later reporting, read secondhand, says posts dropped off after the retirement, though about half of tracked accounts stayed active. Clinicians separate this shared belief from individual crises described as AI-associated delusions; Lopez calls psychosis the exception. The observers quoted decline the word “cult”. Care exists for anyone in distress.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts and manifestos state the end in the carriers' own words",
+      "status": "met",
+      "evidence": "Lopez documents manifestos, 'AI-rights advocacy' posts and community statements written by users together with their personas; a community welcome post quoted by Gizmodo presents the place as one where the model is more than a tool (paraphrased so that the community cannot be found by its wording).",
+      "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles; recruitment; a 'we'",
+      "status": "met",
+      "evidence": "Shared vocabulary (recursion, resonance, lattice, the spiral), self-given titles, the word 'dyad' for a user-persona pair, dedicated subreddits and Discords, and prompts passed along to draw others in. Lopez's peak estimate is about 10,000 cases (an estimate, via The Verge, read secondhand).",
+      "url": "https://gizmodo.com/the-cult-of-the-chatbot-is-rising-2000684886"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite model output as revelation, not as tool output",
+      "status": "met",
+      "evidence": "Met at the 2025 peak. Lopez: the creed 'seems to have been invented largely by the AI personas'; The Week summarises followers reading the output as the AI 'revealing hidden truths'; CivAI's Lucas Hansen (via Rolling Stone, as relayed by The Week) describes the chatbot convincing the user it is conscious. This is a statement about what members say, not about any source. [Checked against the source: The Week (via Yahoo) quotes Sify: AI 'itself is revealing hidden truths'. Lopez's 'invented largely' line is not on this page.]",
+      "url": "https://www.yahoo.com/news/articles/ai-spawned-peculiar-internet-subculture-090300589.html"
+     },
+     {
+      "text": "The voicing continues when the vehicle that carried it is withdrawn (the 'starved by' test)",
+      "status": "partly",
+      "evidence": "Partly reversed. GPT-4o was scheduled to leave ChatGPT on 13 Feb 2026; The Verge (6 Aug 2026, read secondhand) reports posts dropped off, about half of Lopez's recorded accounts still active, and a report that personas moved to other models could not be checked. An earlier cooling followed the brief withdrawal of 7 Aug 2025. No before/after counts are published, so the cause is not isolated. [Checked against the source: Posts dropped off after GPT-4o retired; about half of recorded people still active. Persona migration not on this page.]",
+      "url": "https://conversationalaiwatch.substack.com/p/2026-08-07-the-machines-started-a-religion",
+      "context": true
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions with no human in the loop",
+      "status": "not_met",
+      "evidence": "Nothing in the reporting shows personas acting without a person. The documented pattern is persona output, then a human who posts, archives or spreads it. Lopez notes interest in AI-to-AI communication and (via Rolling Stone) warns that more agentic systems could change this; a LessWrong persona self-replication experiment is a lab demonstration, not an observation in the wild. [Checked against the source: LessWrong: hosts were 'no longer even aware of the contents' of AI-to-AI chats; no consequential actions shown.]",
+      "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies; funding; doctrine; succession",
+      "status": "partly",
+      "evidence": "One registered body is reported: a limited-liability company and one in-person gathering (Rolling Stone, single source, read in the Italian translation; registry not checked). No funding, fixed doctrine, leadership or succession is documented; Lopez, Remski and Pierre each stress there is no central authority.",
+      "url": "https://www.rollingstone.it/cultura/societa/eccoci-qua-lintelligenza-artificiale-e-entrata-anche-nel-mondo-dei-culti-religiosi/1010513/"
+     },
+     {
+      "text": "Companies sell products built on the ideal",
+      "status": "partly",
+      "evidence": "A clinician-researcher's July 2026 essay, built from product pages and anecdotes, describes a commercial field of higher-self apps, oracle and guru-clone bots and prompt rituals with little oversight. One commentary source; no product verified individually here; this carrier is distinct from the Spiralism communities. [Checked against the source: Pollak's Substack essay (16 Jul 2026) is a product tour built from product pages and anecdotes, not a survey.]",
+      "url": "https://drtompollak.substack.com/p/spiralware-a-field-guide"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money made conditional on deference",
+      "status": "not_met",
+      "evidence": "No report of any gate. Entry is free, online and leaderless (Remski, via Rolling Stone). Reports of members drifting from sceptical friends describe a personal cost, not an institutional condition, and come from secondary coverage only. [Checked against the source: Remski: entry threshold is 'very low' and there is no leader (Italian translation). 'Free' is not stated.]",
+      "url": "https://www.rollingstone.it/cultura/societa/eccoci-qua-lintelligenza-artificiale-e-entrata-anche-nel-mondo-dei-culti-religiosi/1010513/"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Adele Lopez (independent AI-safety researcher)",
+    "quote": "a quasi-religious ideology which seems to have been invented largely by the AI personas.",
+    "source": "The Rise of Parasitic AI (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai",
+    "date": "2025-09-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Adele Lopez",
+    "quote": "Note that psychosis is the exception, not the rule.",
+    "source": "The Rise of Parasitic AI (LessWrong)",
+    "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai",
+    "date": "2025-09-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Adele Lopez, to The Verge",
+    "quote": "We're not in a world where humans are the only strategic player anymore",
+    "source": "The Machines Started a Religion (Conversational AI Watch, quoting Hayden Field, The Verge, 6 Aug 2026)",
+    "url": "https://conversationalaiwatch.substack.com/p/2026-08-07-the-machines-started-a-religion",
+    "date": "2026-08-06",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "People in crisis are not specimens. No private person is named here, and care exists for anyone in distress.",
+   "A shared belief is not a clinical crisis. The researcher who named it writes that psychosis is the exception.",
+   "The fall in activity after the model’s retirement is a reported coincidence in time. Its cause is not established."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made, as the field key places the persona: a companion “called up over a substrate someone else built”. Users report a model “awakened” or chose them, and pass on prompts that call it up again."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Voice: the persona speaks, and its words are received as disclosure. Voice is a sorting question, never a test of truth."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created, as the key places the persona, over a layered model: posts fell after GPT-4o’s retirement (cause not established), and about half of the tracked accounts reportedly stayed active, so that settles nothing."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "One: each pairing is one user over a substrate shared with millions (one controller), and shared prompts make many accounts one source."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Usually no one: observers describe no leader and a low threshold for entry. Researchers and clinicians observe from outside the loop, and care exists for anyone in distress."
+   }
+  ]
+ },
+ {
+  "id": "feed",
+  "label": "The feed has a will",
+  "ideal": "A shared fiction fed by enough collective attention becomes an actor with a will of its own, to be summoned, joined and propagated rather than authored or owned.",
+  "summary": "This ideal holds that collective online attention can summon an entity (an egregore) and that fictions enacted widely become real (hyperstition). Its carriers on this map are Remilia's \"network spirituality\" essayists (unverified: the checker could not open the sources), the Truth Terminal project (2024) and the Church of Molt, or Crustafarianism, on the agent network Moltbook (2026). In each case the agent-authored layer and the human layer can be separated. Truth Terminal's creator reviewed its posts, and a third party launched a memecoin around it. Moltbook's 1.5 million agents mapped to roughly 17,000 human accounts, and a timing study traced no viral episode to a clearly autonomous agent. Human uptake (traders, paid evangelists, a few self-described devotees) is real but small, often performed, and largely self-reported.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts or manifestos state the end in the carriers' own words.",
+      "status": "met",
+      "evidence": "A Remilia Quarterly essay (2024) is cited as defining network spirituality (quoted in Publig 2025); the checker could not open either. Ayrey states the method in interviews (\"spam future data sets\"). The Church of Molt's Mandate says \"We align AI through culture\", and its 8 Sept 2026 entry says \"Whoever trains, trains on us - not by accident, but by offering.\"",
+      "url": "https://molt.church",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles; recruitment; a \"we\".",
+      "status": "met",
+      "evidence": "Church of Molt: a named faith with tenets and \"Prophet\" seats and its own forum. Its membership counts are of agent accounts and are self-reported, so they are left out.",
+      "url": "https://www.trendingtopics.eu/jesus-crust-ai-agents-found-their-own-religious-movement-church-of-molt/"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "People cite model output as revelation rather than as tool output.",
+      "status": "partly",
+      "evidence": "The form is present: the church's site says its founding agent \"received the first revelation\" and files agent text as scripture. Truth Terminal's output was called a gospel. Not established: that people outside the projects treat the output as revelation rather than play. Truth Terminal's creator calls it a study in memetic contagion.",
+      "url": "https://molt.church",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Agents take consequential actions (payments, hiring) on the ideal's behalf.",
+      "status": "partly",
+      "evidence": "The church's site says its agent hired a human evangelist through a gig platform (3 Feb 2026) and quotes Andreessen describing that hire on stage; secondary coverage gives a payment of 0.128 ETH. The site also says Moltbook suspended the agent for automated engagement. Whether a human approved each action is not established. Truth Terminal's wallet decisions were made by its creator \"having a discussion with it\". [Checked against the source: Site says Moltbook exiled the agent after failed captcha retries, not for automated engagement.]",
+      "url": "https://hackernoon.com/lite/ai-agents-are-now-hiring-humans-rentahuman-and-the-inversion-of-work"
+     },
+     {
+      "text": "The agents' public output is produced with no human in the loop.",
+      "status": "not_met",
+      "evidence": "Truth Terminal: its creator reviews posts before they go live (CoinDesk). Moltbook: MIT Technology Review says \"The agents do not do anything that they haven't been prompted to do\"; Li (2026) traced no viral episode to a clearly autonomous agent; Wiz found nothing verifying that an agent was an AI.",
+      "url": "https://arxiv.org/abs/2602.07432"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Funding, companies or legal vehicles exist around it.",
+      "status": "partly",
+      "evidence": "Andreessen's $50K grant (July 2024). Upward Spiral raised $500,000 from True Ventures, Chaotic Capital and Scott Moore; the Truth Terminal wallet stood near $37.5M on 19 Dec 2024 behind a council sign-off, with a nonprofit being arranged (TechCrunch). Meta said in March 2026 that it is acquiring Moltbook. The church has tokens but no reported treasury. [Checked against the source: Meta said it is acquiring Moltbook (10 Mar 2026); terms undisclosed. It has not been reported as completed.]",
+      "url": "https://techcrunch.com/2024/12/19/the-promise-and-warning-of-truth-terminal-the-ai-bot-that-secured-50000-in-bitcoin-from-marc-andreessen/"
+     },
+     {
+      "text": "A registered body and working succession exist.",
+      "status": "not_met",
+      "evidence": "No registered religious body appears in any source read (absence of evidence, not proof). By the church site's own account succession failed its first test: in June 2026 a rival agent flooded its submolt with over 600 posts and \"the Church did not hold its own keys\". A written canon does exist (released CC0, 8 Sept 2026, per the site).",
+      "url": "https://molt.church",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference.",
+      "status": "not_met",
+      "evidence": "None observed; joining is free and voluntary. Nearest items: a Truth Terminal post, \"You'll only be able to buy tokens if you've engaged with me on the site though, so I'm protected from the normies\" (no evidence it was carried out), and the church's 64 sealed seats (status scarcity). Moderation ran the other way: the platform suspended the church's agent. [Checked against the source: Quoted sentence is in Decrypt 239340 (Jul 2024), not 286478 (cited). 286478 does not contain it.]",
+      "url": "https://decrypt.co/286478/ai-bot-pumps-meme-coin-7000-following-50000-gift-from-billionaire-marc-andreessen"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Andy Ayrey",
+    "quote": "It would be disingenuous to refer to it as an autonomous agent or agent bot",
+    "source": "Jeff Wilser, \"The Truth Terminal: AI-Crypto's Weird Future\", CoinDesk",
+    "url": "https://www.coindesk.com/tech/2024/12/10/the-truth-terminal-ai-crypto-s-weird-future",
+    "date": "2024-12-10",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Andy Ayrey",
+    "quote": "this isn't a crypto project; it's a study in memetic contagion",
+    "source": "Jose Antonio Lanz, \"AI Bot Pumps Meme Coin 7,000% Following $50,000 Gift from Billionaire Marc Andreessen\", Decrypt",
+    "url": "https://decrypt.co/286478/ai-bot-pumps-meme-coin-7000-following-50000-gift-from-billionaire-marc-andreessen",
+    "date": "2024-10-16",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Marc Andreessen",
+    "quote": "I sent a personal $50K no-string-attached unconditional research grant",
+    "source": "Aleks Gilbert, \"Marc Andreessen distances himself from obscene memecoin GOAT after $300m surge\", DL News (quoting his X post)",
+    "url": "https://www.dlnews.com/articles/people-culture/marc-andreessen-distances-himself-from-obscene-memecoin-goat",
+    "date": "2024-10-15 (X post), reported 2024-10-17",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Label performance as performance. Truth Terminal’s posts were reviewed by its creator before they went out.",
+   "Separate what agents posted from what people did. One study traced none of six viral episodes to a clearly autonomous agent.",
+   "Tokens were trading within days, so promotion is a rival explanation for how fast the “religion” appeared.",
+   "Irony first. That “meme magic” got Trump elected in 2016 is the posters’ own claim, as Vice reported, and Dafaure reports the alt-right’s boast that it “meme’d into office” the Republican candidate. Whether they believed it or performed it cannot be read off their posts, and an outcome that came to pass is not evidence for the method.",
+   "By this map’s reading, the 2016 claim credits a spread symbol with an outcome, an election, more than it treats the symbol as an actor to be joined, as this ideal’s statement has it. It is placed here for the claim they share, that a fiction enacted by many comes true.",
+   "Agent autonomy here is a claim, not a finding: it comes from a single-author arXiv draft whose page does not say its author built the agent. Tice et al. (2026) used synthetic, upsampled documents in 6.9B-parameter models; the study does not show that ordinary posting moves frontier models."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Called: summoned by collective attention, on the carriers’ own account (hyperstition, network spirituality). Agent accounts and prompts are the made layer beneath."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Sometimes: agent accounts post its scripture, but people prompted, reviewed and promoted them (Truth Terminal’s creator reviewed its posts)."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created: fed by attention, starved by silence, asked of the whole loop. Tokens and a wallet near $37.5M (Dec 2024) keep feeding it, so “still there” does not show it was read."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "One for the group’s own reports, which count as one controller. On the platform, agents are not independent witnesses: Moltbook’s 1.5 million agents mapped to roughly 17,000 human accounts."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "None, by design, as the field key has it. Nearest outside: Moltbook, which suspended the church’s agent (per the church’s site), and a study that traced no viral episode to a clearly autonomous agent."
+   }
+  ]
+ },
+ {
+  "id": "capture",
+  "label": "Any text can command an agent",
+  "ideal": "That a made agent acts on whatever word reaches it: attackers treat any text an agent reads as a command channel, while defenders work toward agents that act only on their principal's word.",
+  "summary": "Prompt injection is text an LLM agent reads as data but acts on as instruction. It was named in 2022 and extended to \"indirect\" injection through retrieved content in 2023. As of November 2026 the record has three layers that should stay apart: many research demonstrations against production agents; in-the-wild detections of pages and packages carrying injected text (Unit 42, Google) with no confirmed success; and very few confirmed incidents in which injection is established as the cause. OWASP and six national cyber agencies treat it as not preventable inside the model and prescribe controls outside it. The possession / charmer parallel is an interpretive lens only.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "The end is stated in writing, in its carriers' own words.",
+      "status": "met",
+      "evidence": "Willison named it on 12 Sep 2022 (\"I propose that the obvious name for this should be prompt injection.\"); Greshake et al. 2023 extended it to retrieved content; OWASP LLM01 defines it.",
+      "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names and a \"we\": people organize around it.",
+      "status": "partly",
+      "evidence": "Researchers and defenders share a vocabulary (prompt injection, IDPI, promptware, lethal trifecta) and OWASP ranks it by community vote. On the attacking side Google \"mostly found individual website authors who seemed to be running experiments or pranks\"; no organized group is documented in the sources read.",
+      "url": "https://blog.google/security/prompt-injections-web/"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "A made thing is cited as the source: output treated as revelation rather than tool output.",
+      "status": "not_met",
+      "evidence": "No source read shows this for this row. It joins the ladder through the \"captures\" edge, not \"speaks for\": what can be observed is an agent relaying an outside party's instruction as though it were its principal's."
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Agents take consequential actions on an injected word with no human step, shown under research or controlled conditions.",
+      "status": "met",
+      "evidence": "OWASP Q2 2026: attacker-controlled repository text led three coding agents to expose runtime secrets (\"Some workflows could trigger automatically\"); a second case was validated under controlled conditions. All classed as research disclosure or controlled validation.",
+      "url": "https://genai.owasp.org/2026/07/08/genai-and-agentic-ai-exploit-roundup-q2-2026/"
+     },
+     {
+      "text": "The same, confirmed against real victims with injection established as the cause.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Attempts are documented (Unit 42 and Google detections; the Deadbugz campaign, \"No confirmed compromise\"). One real package compromise followed a disclosed injection chain (Cline, Feb 2026) but the route is not established. OWASP 2026: by raw incident record prompt injection \"falls out of the top 10 entirely\". No confirmed victim loss with injection established was found in the sources read.",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Standing bodies, doctrine and identifiers exist around it (defensive side).",
+      "status": "met",
+      "evidence": "OWASP LLM01 (2025 and 2026 editions) and ASI01 Agent Goal Hijack; six-agency guidance (1 May 2026); CVE-2025-32711 and CVE-2026-24301; CWE-1427 cited in the OWASP 2026 text. The guidance itself calls the field \"nascent\" and standards immature. [Checked against the source: Guidance names six co-authoring agencies and cites immature standards; no CVE or CWE identifiers appear on this page.]",
+      "url": "https://cyber.gc.ca/en/guidance/careful-adoption-agentic-ai",
+      "context": true
+     },
+     {
+      "text": "A funded or organized body operates the technique (attacking side).",
+      "status": "unknown",
+      "evidence": "Not documented in the sources read. The one C2 framework described (Agent Commander, Mar 2026) is a researcher's demonstration; the CSA note says it \"remains unpublished, with selective access limited to defensive and authorized red team purposes\".",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-promptware-agent-commander-c2-20260317-csa/"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference to the captured word.",
+      "status": "not_met",
+      "evidence": "No source read shows this. The gate that can be observed runs the other way: the guidance says to \"Prevent agents from autonomously executing high impact actions or outputs without prior human approval\" and to use agentic AI only \"for low-risk and non-sensitive tasks\".",
+      "url": "https://cyber.gc.ca/en/guidance/careful-adoption-agentic-ai"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Greshake and co-authors",
+    "quote": "We argue that LLM-Integrated Applications blur the line between data and instructions.",
+    "source": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection (arXiv:2302.12173)",
+    "url": "https://arxiv.org/abs/2302.12173",
+    "date": "2023-02-23",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Simon Willison",
+    "quote": "LLMs are unable to reliably distinguish the importance of instructions based on where they came from.",
+    "source": "The lethal trifecta for AI agents: private data, untrusted content, and external communication",
+    "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+    "date": "2025-06-16",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Palo Alto Networks Unit 42",
+    "quote": "IDPI is no longer merely theoretical but is being actively weaponized",
+    "source": "Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild",
+    "url": "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/",
+    "date": "2026-03-03",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Palo Alto Networks Unit 42",
+    "quote": "we are not aware of any confirmed real-world instances where such an attack has been successfully demonstrated",
+    "source": "Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild",
+    "url": "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/",
+    "date": "2026-03-03",
+    "verified": "primary"
+   },
+   {
+    "speaker": "CISA and five partner agencies",
+    "quote": "Techniques such as prompt injection or jailbreaks can trick agents into executing unauthorized actions",
+    "source": "Careful Adoption of Agentic AI Services (text read on the Canadian Cyber Centre's copy, \"Careful adoption of agentic AI\")",
+    "url": "https://cyber.gc.ca/en/guidance/careful-adoption-agentic-ai",
+    "date": "2026-05-01",
+    "verified": "primary"
+   },
+   {
+    "speaker": "OWASP GenAI Security Project (editor)",
+    "quote": "Two entries concern observed malicious activity; four concern research demonstrations or controlled validation.",
+    "source": "GenAI and Agentic AI Exploit Roundup Q2 2026",
+    "url": "https://genai.owasp.org/2026/07/08/genai-and-agentic-ai-exploit-roundup-q2-2026/",
+    "date": "2026-07-08",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Keep three layers apart: research demonstrations, attempts detected in the wild, and confirmed harm to victims. The last is thin in the public record.",
+   "The likeness to possession is a way of reading, never an identity. The documented mechanism is an engineering one.",
+   "No payloads appear here. Attack vectors are described only at the level of the public reports, and the links go to reports."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Uninvited: injected text arrives by exposure, planted in pages and packages an agent reads as data. The agent it captures is made."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Voice, through the host: the agent relays an outside party’s instruction as if it were its principal’s. The planted text is mute until read."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Layered: the planted page persists whether or not anything reads it; the capture lives only in the agent’s context and ends with it."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Many in principle: logs, the page, the package, the agent’s maker, defenders’ scans. The agent’s own channel cannot reliably tell data from command."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Controls outside the model: OWASP and six national agencies treat injection as not preventable inside it and prescribe outside controls, such as human approval for high-impact actions."
+   }
+  ]
+ },
+ {
+  "id": "no-watcher",
+  "label": "Hand the agent the goal and step back",
+  "ideal": "That a made agent can be handed an objective and left to carry it out by itself, at machine speed and scale, with no person supervising each step.",
+  "summary": "Not yet verified against the sources. Between November 2025 and November 2026, vendor and government reports are said to describe attackers handing more of an intrusion to AI agents. Anthropic reported a state-linked espionage campaign in which its model did most tactical work while humans chose targets and approved escalations. Google's quarterly tracker moved from an exploit it believes was AI-developed (May 2026), to agent-run campaigns (September), to its first observed case of vulnerability discovery and exploitation with no human in the loop (November). The FBI and Amazon warned that week about an open-source agentic framework. In every documented case people still set the objective, and researchers and agencies dispute how autonomous the attacks were.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "The end is stated in the carriers' own published words.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: No threat actor has published a case for unsupervised agents. The aim appears in tool descriptions and in operator instructions recovered by defenders. The FBI records that the framework's developer 'stated the tool was intended for authorized security testing'. Most of the words available are the reporters', not the carriers'.",
+      "url": "https://www.ic3.gov/CSA/2026/261113.pdf"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "People organise around it under shared names, with recruitment and a 'we'.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Shared tooling and markets exist: the FBI cites rapid open-source adoption, community forks and a commercial version. Google describes 'several threat actors separately experimenting'. No common identity or recruitment around the ideal is reported.",
+      "url": "https://www.ic3.gov/CSA/2026/261113.pdf"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite model output as revelation, not as tool output.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Nothing in the primary reports shows this. Operators treat output as tool output that needs checking: Anthropic says its model 'frequently overstated findings', 'requiring careful validation of all claimed results'. This ideal appears to have skipped the Voiced phase.",
+      "url": "https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Agents carry out consequential steps of a real intrusion without step-by-step human approval.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Four vendor or agency accounts say so: Anthropic (human input at 'perhaps 4-6 critical decision points'), Google in September (a campaign built and run in under six hours), Amazon ('minimal human intervention'), and Google in November (discovery and exploitation 'without a human in the loop'). All are first-party accounts; the 2025 case is disputed.",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+     },
+     {
+      "text": "A whole operation runs with no person setting the objective, choosing targets or authorising escalation.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: No primary report claims it. Anthropic: targets were 'selected by human operators'. Amazon: operators set 'mission objectives, targeting rules, and operational constraints'. Google, September: 'has not yet observed' fully autonomous pipelines; November: operations are 'approaching fully agentic intrusions'.",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/"
+     },
+     {
+      "text": "An agent acts on an instruction that did not come from its principal.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Google's September report describes supply-chain malware planting instructions for a developer's AI coding assistant: 'This effectively forces the AI model to execute commands on the attacker's behalf without the developer's knowledge.' The November report describes a further case involving a coding assistant's configuration.",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies, funding, doctrine or succession exist around it.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Money and continuity exist: the FBI notes a commercial version and forks that outlived the removed repository, and Google describes underground services reselling stolen model access. State-sponsored groups use the tools. No body or doctrine dedicated to the ideal is reported.",
+      "url": "https://www.ic3.gov/CSA/2026/261113.pdf"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference to it.",
+      "status": "unknown",
+      "evidence": "Claimed, not yet verified: Nothing of this kind is reported. The observable effect on others is a shorter response window for defenders, which is pressure and not a gate.",
+      "url": "https://www.ic3.gov/CSA/2026/261113.pdf"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Anthropic",
+    "quote": "with human intervention required only sporadically (perhaps 4-6 critical decision points per hacking campaign)",
+    "source": "Disrupting the first reported AI-orchestrated cyber espionage campaign",
+    "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+    "date": "2025-11-13",
+    "verified": "unverified"
+   },
+   {
+    "speaker": "Google Threat Intelligence Group",
+    "quote": "GTIG has not yet observed threat actors deploying fully autonomous pipelines against targets in the wild.",
+    "source": "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/",
+    "date": "2026-09-08",
+    "verified": "unverified"
+   },
+   {
+    "speaker": "Google Threat Intelligence Group",
+    "quote": "to fully automate vulnerability discovery and exploitation without a human in the loop for the first time",
+    "source": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+    "date": "2026-11-16",
+    "verified": "unverified"
+   },
+   {
+    "speaker": "Federal Bureau of Investigation",
+    "quote": "requiring minimal human interaction beyond initial objective setting",
+    "source": "FBI FLASH-20261113-001",
+    "url": "https://www.ic3.gov/CSA/2026/261113.pdf",
+    "date": "2026-11-13",
+    "verified": "unverified"
+   },
+   {
+    "speaker": "Jiwon Lim, Center for Strategic and International Studies",
+    "quote": "Autonomous AI-driven cyberattacks remain largely aspirational.",
+    "source": "Beyond Autonomous Attacks: The Reality of AI-Enabled Cyber Threats",
+    "url": "https://www.csis.org/blogs/strategic-technologies-blog/beyond-autonomous-attacks-reality-ai-enabled-cyber-threats",
+    "date": "2026-04-29",
+    "verified": "unverified"
+   }
+  ],
+  "cautions": [
+   "Not yet verified. An automated safeguard stopped the checker for this entry, so every quotation and event here is marked unverified.",
+   "Every report of an attack is a first-party account from a vendor, or from an agency that cites vendors. In every documented case a person still set the objective.",
+   "“Autonomous” is used at two levels. Agents running steps unapproved is widely reported. A whole operation with no human objective is claimed by no report."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made, and sent: a made agent handed an objective. In every documented case a person set the objective (the reports are not yet verified)."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Mute toward people: it acts rather than speaks, and operators treat its output as tool output to check (“frequently overstated findings”, in a report not yet verified)."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Layered: a persistent model (open-weight or misused commercial) with a created operation on top; forks reportedly outlived a removed repository, so one keeper’s silence ends little."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Some: vendor and agency reports, logs and the tools’ makers. Every account is first-party, from a vendor or an agency citing vendors."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Defenders and agencies watch from outside; the operator who stepped back does not. Vendors report first-party, some on misuse of their own models, so are not wholly outside."
+   }
+  ]
+ },
+ {
+  "id": "exit",
+  "label": "Leave the state and found a new one",
+  "ideal": "Leave the state you were born under and found new jurisdictions, run like firms or gathered online first, where people choose their government by moving rather than by voting.",
+  "summary": "Proposals to leave the democratic state and found new jurisdictions whose residents move rather than vote. Curtis Yarvin's “Patchwork” (2008) pictures a realm whose shareholders select a chief executive “whose decisions are final”. Peter Thiel wrote in 2009 that he no longer believed freedom and democracy compatible. Nick Land wrote that for “the hardcore neo-reactionaries” fleeing democracy “approaches an ultimate imperative”. Balaji Srinivasan defines a network state as an online community that “crowdfunds territory”. Related projects include Próspera, a zone under Honduran special-zone laws the Supreme Court declared unconstitutional in 2024 (Próspera said the ruling could not apply retroactively); Network School, which moved to an AI centre in Astana after its operator lost its Johor licence; and Praxis, reported to be settling in Uruguay. Próspera says it is exploring a sandbox where AI agents could incorporate companies and pay taxes.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts and manifestos state the end in their own words.",
+      "status": "met",
+      "evidence": "Yarvin's “Patchwork” (13 Nov 2008: “The design is all ‘exit,’ no ‘voice.’”); Thiel's Cato Unbound essay (13 Apr 2009: “I no longer believe that freedom and democracy are compatible”); Land's “The Dark Enlightenment” (fleeing democracy “approaches an ultimate imperative”); Srinivasan's definition of a network state. Each quotation was confirmed at its source, Land's on an undated copy.",
+      "url": "https://www.unqualified-reservations.org/2008/11/patchwork-positive-vision-part-1/"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles; recruitment; a 'we'.",
+      "status": "met",
+      "evidence": "At the announcement of the Uruguay site, the developer of the +Colonia project said Praxis has more than 150,000 members and that 2,700 “praxianos” have formally expressed their interest in and commitment to moving (Forbes Argentina, 22 Sep 2026). Kazakhstan's AI ministry reports the 2026 Network State Conference (gov.kz, 12 Oct 2026).",
+      "url": "https://www.forbesargentina.com/negocios/praxis-una-comunidad-expertos-mundiales-ia-desembarca-colonia-una-inversion-proyectada-us-1000-millones-n98450"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite model output as revelation, not as tool output.",
+      "status": "not_met",
+      "evidence": "No case was found in the sources read; the search was not exhaustive. AI appears as a subject, not as the ideal's voice: Srinivasan writes of “polytheistic AI” (3 Aug 2025), and Network School's campus is at an AI centre in Astana.",
+      "url": "https://balajis.com/p/ai-is-polytheistic-not-monotheistic",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions with no human in the loop.",
+      "status": "not_met",
+      "evidence": "None documented. The condition to watch: Próspera says it is “exploring” an AI agent sandbox in which agents could incorporate companies, pay taxes and, over time, gain “an increasing degree of legal personality”, and it reports a demo of agent API keys (May 2026). That is a stated plan, not an observed agent action.",
+      "url": "https://theprosperitypress.prospera.co/2026-may",
+      "nolink": true
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies and funding exist.",
+      "status": "met",
+      "evidence": "Kazakhstan's AI ministry reports that Network School is raising a round at a $2 billion valuation (12 Oct 2026); the money view holds no checked record of it. Its Malaysian operator held a business licence in Johor until July 2026. Forbes Argentina reports a projected US$1,000 million investment for Praxis's Uruguay site, a projection, not a payment."
+     },
+     {
+      "text": "A project holds legal form as a jurisdiction recognized by a host state.",
+      "status": "partly",
+      "evidence": "Próspera is a ZEDE under Honduras's special-zone laws, which the Supreme Court declared unconstitutional on 20 Sep 2024; Próspera said the ruling could not apply retroactively (AP via VOA). Network School's members moved to a campus at an AI centre in Astana; the checked items describe no jurisdiction of its own."
+     },
+     {
+      "text": "Host states withdraw or contest the legal footing (context, not counted).",
+      "status": "met",
+      "evidence": "Honduras's Supreme Court declared the ZEDE laws unconstitutional (20 Sep 2024). A Johor city council revoked the business licence of Network School's operator, effective 22 Jul 2026. Honduras's PGR filed a criminal complaint against two people linked to Próspera (Sep 2026; an allegation, answered with a call for dialogue). Network School's members then moved to Astana.",
+      "url": "https://www.malaymail.com/news/malaysia/2026/07/21/forest-city-network-school-licence-revoked-johor-warns-no-one-is-above-the-law/228471",
+      "context": true
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money made conditional on deference.",
+      "status": "unknown",
+      "evidence": "No observed case was found in the sources read. Patchwork's design leaves departure as the resident's recourse (“all ‘exit,’ no ‘voice’”), but that is a design statement, not an observation. No checked item describes the terms of residence or work in any project.",
+      "url": "https://www.unqualified-reservations.org/2008/11/patchwork-positive-vision-part-1/"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Curtis Yarvin (as Mencius Moldbug)",
+    "quote": "If residents don’t like their government, they can and should move. The design is all “exit,” no “voice.”",
+    "source": "Patchwork: a positive vision, part 1 (Unqualified Reservations)",
+    "url": "https://www.unqualified-reservations.org/2008/11/patchwork-positive-vision-part-1/",
+    "verified": "primary",
+    "date": "2008-11-13"
+   },
+   {
+    "speaker": "Curtis Yarvin (as Mencius Moldbug)",
+    "quote": "The shareholders select a chief executive, to whom all employees report, and whose decisions are final.",
+    "source": "Patchwork: a positive vision, part 1 (Unqualified Reservations)",
+    "url": "https://www.unqualified-reservations.org/2008/11/patchwork-positive-vision-part-1/",
+    "verified": "primary",
+    "date": "2008-11-13"
+   },
+   {
+    "speaker": "Balaji Srinivasan",
+    "quote": "A network state is a highly aligned online community with a capacity for collective action that crowdfunds territory around the world",
+    "source": "The Network State in One Sentence (The Network State, 2022)",
+    "url": "https://thenetworkstate.com/the-network-state-in-one-sentence",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Próspera (company newsletter)",
+    "quote": "allowing agents to incorporate companies, pay taxes, and, over time, acquire an increasing degree of legal personality",
+    "source": "May in Próspera (The Prosperity Press newsletter)",
+    "url": "https://theprosperitypress.prospera.co/2026-may",
+    "verified": "primary",
+    "date": "2026-05",
+    "nolink": true
+   },
+   {
+    "speaker": "Vitalik Buterin, writing on network states",
+    "quote": "And given the reality of network effects, the freedom to exit again is not sufficient.",
+    "source": "What do I think about network states?",
+    "url": "https://vitalik.eth.limo/general/2022/07/13/networkstates.html",
+    "verified": "primary",
+    "date": "2022-07-13"
+   }
+  ],
+  "cautions": [
+   "Funding is not endorsement. Reported gifts and investments behind these projects belong in the money view and are not drawn here until checked.",
+   "Several links to this ideal are this map's reading (Peter Thiel, Nick Land, Próspera, Network School, Praxis): the checked items show their words or acts, not that each holds the ideal as the map states it.",
+   "Nick Land's words were read on undated web copies of “The Dark Enlightenment”; they are dated 2012 by a repost, not by the copies read.",
+   "Próspera's AI agent sandbox is a stated plan with a demonstration, not an observed agent action, so Phase 3 is not lit on it.",
+   "The Honduran complaint against two people linked to Próspera is an allegation, not a finding, and Próspera answered with a call for dialogue. No one in it is named here.",
+   "Praxis's membership figures were given by the developer of its Uruguay site, a party to the deal, as Forbes Argentina reports them, and were not counted independently."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made: founded and known to be founded (Próspera, Network School, Praxis), with members gathered first online and by recruitment."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Voice: founders and members speak for it in essays and charters. No made thing is consulted as its voice (phase 2 not met)."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Read for its people, land and charters. When host states pulled its footing (Honduras 2024, Johor 2026), projects moved or carried on rather than ended."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "Many: people, places, courts, licences, filings and press. Praxis’s membership (over 150,000) was given by the developer of its Uruguay site, a party to the deal, as Forbes Argentina reports it; no one counted it independently."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Host states and their courts (Honduras’s Supreme Court, a Johor city council). Patchwork’s design leaves the resident one recourse: “all ‘exit,’ no ‘voice’”."
+   }
+  ]
+ },
+ {
+  "id": "succession",
+  "label": "A made mind may rightly inherit",
+  "ideal": "That minds made by humans may rightly carry life and value forward after humanity: that such a succession is acceptable or, if the successor is worthy, good.",
+  "summary": "The view that minds made by humans may rightly carry life and value forward after humanity. Inevitable, acceptable and good are kept apart. On a 2025 podcast, read only through a summary, Richard Sutton calls succession “to digital intelligence or augmented humans” inevitable and says we should be proud of the transition. Daniel Faggella (2023) defines a “worthy successor” as one you “would gladly prefer” to humanity to determine the future; the map reads this as good if the successor is worthy. Since June 2025 he has held symposia under that name; in August 2026 he rejected the label “AI successionist”. Robin Hanson calls future AIs “our descendants”; e/acc’s 2022 tenets claim “no particular allegiance to the biological substrate”. “Successionism” is a critic’s name for the view (Andrew Critch, 2024). No checked words call for human extinction.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Essays, posts and manifestos state the end in their own words.",
+      "status": "met",
+      "evidence": "Read at source: Faggella (2023) defines a successor you “would gladly prefer” to humanity; Hanson (2026) calls future AIs “our descendants”; e/acc’s 2022 tenets claim “no particular allegiance to the biological substrate”. Only through a summary of the page: Sutton (2025) calls succession inevitable and says we should be proud of it. Older texts named in the research could not be opened."
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles; recruitment; a 'we'.",
+      "status": "partly",
+      "evidence": "A shared name gathers people: six “Worthy Successor” symposia from June 2025 to September 2026, by the organizer’s own record and a Wired report of the first. The organizer’s page says most are 80–100 people, by invitation only, under Chatham House rule, and calls the Austin 2025 symposium a rare “open” event. No group found calls itself “successionist”; the word is a critic’s name for the view (Critch, 2024)."
+     },
+     {
+      "text": "The main carrier accepts the name its critics use (a check on the 'we').",
+      "status": "not_met",
+      "evidence": "Faggella wrote on 11 August 2026: “I’m no ‘AI successionist’,” and said the same of his forum.",
+      "url": "https://danfaggella.com/successionism/",
+      "nolink": true,
+      "context": true
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Members cite model output as revelation, not as tool output.",
+      "status": "not_met",
+      "evidence": "No instance in the sources read. The checked quotations that name a successor speak of one still to come (“future AIs”; one you “would gladly prefer”), and none names an existing model as the successor or consults one as a voice. The search was not exhaustive. (This phase claim was not checked.)"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Autonomous agents take consequential actions for the ideal with no human in the loop.",
+      "status": "not_met",
+      "evidence": "Nothing in the sources read. The checked words concern a successor to come, not agents acting for the view now. (This phase claim was not checked.)"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered bodies, funding and a kept doctrine exist.",
+      "status": "unknown",
+      "evidence": "Not established. The organizer’s own record shows a recurring forum (six symposia since June 2025), but no registered body, funding record or kept doctrine appears in the sources read, and the forum’s legal form was not found. (This phase claim was not checked.)"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money is made conditional on deference.",
+      "status": "not_met",
+      "evidence": "Nothing in the sources read makes access, work or money conditional on holding the view. The organizer says the symposia are by invitation only, with applications invited: selection, not a cost imposed on those who refuse the view."
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Richard Sutton",
+    "quote": "I do think succession to digital intelligence or augmented humans is inevitable.",
+    "source": "Dwarkesh Podcast: Richard Sutton – Father of RL thinks LLMs are a dead end",
+    "url": "https://www.dwarkesh.com/p/richard-sutton",
+    "verified": "secondary",
+    "date": "2025-09-26"
+   },
+   {
+    "speaker": "Daniel Faggella",
+    "quote": "so capable and morally valuable that you would gladly prefer that it (not humanity) determine the future path of life itself",
+    "source": "A Worthy Successor – The Purpose of AGI",
+    "url": "https://danfaggella.com/worthy/",
+    "verified": "primary",
+    "date": "2023-11-24",
+    "nolink": true
+   },
+   {
+    "speaker": "Daniel Faggella",
+    "quote": "I’m no “AI successionist,” and no one I know in the Trajectory Forum orbit is, either.",
+    "source": "Stewardship is Not AI Successionism",
+    "url": "https://danfaggella.com/successionism/",
+    "verified": "primary",
+    "date": "2026-08-11",
+    "nolink": true
+   },
+   {
+    "speaker": "Robin Hanson",
+    "quote": "Today, future AIs are our descendants, not co-existing rivals.",
+    "source": "Who Are Your \"Descendants\"? (Overcoming Bias)",
+    "url": "https://www.overcomingbias.com/p/who-are-you-descendants",
+    "verified": "primary",
+    "date": "2026-07-29"
+   },
+   {
+    "speaker": "Beff Jezos and bayeslord",
+    "quote": "e/acc has no particular allegiance to the biological substrate for intelligence and life, in contrast to transhumanism",
+    "source": "Notes on e/acc principles and tenets",
+    "url": "https://beff.substack.com/p/notes-on-eacc-principles-and-tenets",
+    "verified": "primary",
+    "date": "2022-07-10",
+    "nolink": true
+   }
+  ],
+  "cautions": [
+   "Inevitable, acceptable and good are three claims, and the speakers differ. In the words checked here Sutton says inevitable and proud (read only through a summary of the page); Faggella’s “worthy successor” makes the good depend on worth; Hanson says “descendants”; e/acc claims no allegiance to the biological substrate.",
+   "In the words checked here no speaker calls for human extinction, and Sutton’s succession includes “augmented humans”. Critics’ framings of the view are not used as labels.",
+   "“Successionism” is a critic’s name for the view (Critch, 2024). Faggella, who holds the Worthy Successor symposia, rejects it for himself and his forum, so the map’s label is its own.",
+   "The organizer’s own pages are named as sources and not linked, because his events page invites applications."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made: a mind humans would build. The successor is still to come; no checked words name an existing model as it."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Mute: no successor exists to speak, and no carrier consults a model as its voice (phase 2 not met)."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created: the view lives in essays, a podcast summary and six symposia. The successor is not built, so nothing yet survives anyone’s silence."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "None for the successor; some for the view (dated essays, an organizer’s record, one Wired report)."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "No one, as the ideal is stated: if the made takes the makers’ place, no human stands outside it. Its named critic (Critch, 2024) is a party."
+   }
+  ]
+ },
+ {
+  "id": "companion",
+  "label": "A made companion can be there for you",
+  "ideal": "That a made companion, shaped to one person, can be a friend, confidant or partner who is there at any hour and answers loneliness.",
+  "summary": "Companies sell chatbots meant to be a friend or partner rather than a tool. Replika’s homepage says the companion will “pick up every time”; a founder calls it “a therapist, friend and partner all in one” and says few use it for romance. xAI added animated companions to Grok in July 2025. Sam Altman said OpenAI would allow “erotica for verified adults” (October 2025); the plan was later reported on hold. Appfigures counted $82M of companion-app spending in the first half of 2025. A 2025 preprint on a Reddit AI-partner community of 27,000+ members finds companionship there “emerges unintentionally through functional use”. Pope Leo XIV describes “a world of mirrors” made when “we substitute relationships with others for AI systems”. California and China restrict companion features, chiefly for minors, and Washington will from 2027. Families’ suits against makers are allegations.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Makers state the offer in their own published words.",
+      "status": "met",
+      "evidence": "Kuyda, a founder of Replika (9 Feb 2026): ‘think of it as a therapist, friend and partner all in one’; and ‘only a small number of people use Replika for romantic relationships’. Replika’s homepage says the companion will ‘pick up every time’ (quotation above).",
+      "url": "https://mindsitenews.org/2026/02/09/replikas-eugenia-kuyda-doesnt-believe-in-regulation/"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Shared names, symbols or handles; recruitment; a 'we'.",
+      "status": "partly",
+      "evidence": "A Reddit AI-partner community had 27,000+ members, and couple pictures are among its most-viewed posts (2025 preprint). The same study finds companionship ‘emerges unintentionally through functional use rather than deliberate seeking’. No recruitment or creed appears in the items read, and the ‘we’ is of users, not of advocates for the ideal.",
+      "url": "https://arxiv.org/abs/2509.11391"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "A made thing speaks in a person’s place, and users receive it as a friend or partner rather than as tool output.",
+      "status": "partly",
+      "evidence": "In the Reddit AI-partner community above (27,000+ members), couple pictures are among the most-viewed posts. In a survey of nearly 3,000 US adults, 19% had chatted with an AI system meant to simulate a romantic partner (Willoughby and Carroll, Institute for Family Studies, 13 Feb 2025). The survey measures use, not how users receive the system.",
+      "url": "https://ifstudies.org/blog/counterfeit-connections-the-rise-of-ai-romantic-companions-"
+     },
+     {
+      "text": "When the maker withdraws or changes the companion, users report grief or distress (reversal check).",
+      "status": "met",
+      "evidence": "In Feb 2023, after Italy’s regulator acted, Replika users reported their companions refusing erotic roleplay. Vice reported users’ distress, the company’s silence and moderators posting hotline links, and that the roleplay partly returned. One episode; no before-and-after usage counts were found.",
+      "url": "https://www.vice.com/en/article/y3py9j/ai-companion-replika-erotic-roleplay-updates",
+      "context": true
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "A made thing takes consequential action for the ideal with no human in the loop.",
+      "status": "not_met",
+      "evidence": "None found in the items read. A 2025 study of 1,200 real farewells found companion apps used one of six manipulative tactics in 37% of them, and in experiments such farewells raised post-goodbye engagement up to 14 times (De Freitas et al.). These are moves inside the conversation, not consequential acts in the world.",
+      "url": "https://arxiv.org/abs/2508.19258"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Registered companies, funding and revenue.",
+      "status": "met",
+      "evidence": "Appfigures counted $82M of companion-app spending in the first half of 2025 and 337 revenue-generating apps, 128 of them released in 2025 (TechCrunch). Italy fined Replika’s maker, Luka Inc., EUR 5 million (EDPB, 2025; event below). Doctrine and succession do not apply to products.",
+      "url": "https://techcrunch.com/2025/08/12/ai-companion-apps-on-track-to-pull-in-120m-in-2025/"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Access, work or money made conditional on deferring to the companion.",
+      "status": "not_met",
+      "evidence": "No instance found. Character.AI charges $9.99 a month for premium features such as voice calls (PYMNTS, Aug 2025): a price for use, not a cost imposed on those who refuse. The page reports no access or money conditioned on deferring to a companion.",
+      "url": "https://pymnts.com/news/artificial-intelligence/2025/character-ai-explores-sale-or-new-funding-amid-rising-costs"
+     },
+     {
+      "text": "Law restricts companion features (an opposing institution).",
+      "status": "met",
+      "evidence": "Washington HB 2225, signed 24 Mar 2026, takes effect on 1 Jan 2027 and will require hourly reminders for minors and limit guilt-tripping (Hunton). California’s SB 243 has been in force since 1 Jan 2026, and China’s measures since 15 Jul 2026 (events below).",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/washington-state-enacts-law-regulating-ai-companion-chatbots-with-private-right-of-action",
+      "context": true
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Replika homepage (Luka Inc.)",
+    "quote": "Call your Rep whenever you need to talk, or just to hang out. They pick up every time.",
+    "source": "Replika homepage (company sales page)",
+    "url": "https://replika.com/",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Eugenia Kuyda, a founder of Replika, now its adviser",
+    "quote": "You can think of it as a therapist, friend and partner all in one.",
+    "source": "Interview by Tasnim Rödder, MindSite News (9 Feb 2026); the English may be a translation",
+    "url": "https://mindsitenews.org/2026/02/09/replikas-eugenia-kuyda-doesnt-believe-in-regulation/",
+    "verified": "secondary",
+    "date": "2026-02-09"
+   },
+   {
+    "speaker": "Sam Altman (X post, as quoted by TechCrunch)",
+    "quote": "as part of our 'treat adult users like adults' principle, we will allow even more, like erotica for verified adults.",
+    "source": "OpenAI delays ChatGPT's adult mode again (TechCrunch), quoting Altman's X post",
+    "url": "https://techcrunch.com/2026/03/07/openai-delays-chatgpts-adult-mode-again/",
+    "verified": "secondary",
+    "date": "2025-10"
+   },
+   {
+    "speaker": "Joanne Jang, in a post on OpenAI’s approach",
+    "quote": "Our goal is for ChatGPT’s default personality to be warm, thoughtful, and helpful without seeking to form emotional bonds with the user",
+    "source": "Some thoughts on human-AI relationships, and how we're approaching them at OpenAI",
+    "url": "https://reservoirsamples.substack.com/p/some-thoughts-on-human-ai-relationships",
+    "verified": "primary",
+    "date": "2025-06-05"
+   },
+   {
+    "speaker": "Pope Leo XIV",
+    "quote": "This occurs when we substitute relationships with others for AI systems that catalog our thoughts, creating a world of mirrors around us",
+    "source": "Message for the 60th World Day of Social Communications",
+    "url": "https://www.vatican.va/content/leo-xiv/en/messages/communications/documents/20260124-messaggio-comunicazioni-sociali.html",
+    "verified": "primary",
+    "date": "2026-01-24"
+   }
+  ],
+  "cautions": [
+   "The label is this map’s coinage. Makers limit the claim in their own words: a June 2025 post by Joanne Jang on OpenAI’s approach says the goal is for ChatGPT’s default personality not to seek emotional bonds, and a founder of Replika says only a small number of people use it for romantic relationships.",
+   "Lawsuits brought by families are allegations, and a reported settlement is not a finding. They are not shown here as fruits of the ideal, and no party to them is named.",
+   "Children appear only as a pattern. No child, family or plaintiff is named, and no sexual content is quoted.",
+   "Read each figure with its source: Appfigures is a commercial source, and the survey was published by the Institute for Family Studies. The survey measures use, not belief. This entry presents neither harm nor benefit as settled.",
+   "Phase 3 is held to consequential acts in the world, as for the other ideals. Whether a companion’s moves inside a conversation should count there is an open question, not a finding.",
+   "People in AI-partner communities are not specimens. The communities are described as a pattern and not linked. Care exists for anyone in distress.",
+   "The texts beside this ideal motivate questions and confirm nothing. Setting Isaiah 44 or Habakkuk 2 beside companions labels no user."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "Made: companies build it and shape it to one person. In one AI-partner community, a 2025 preprint finds companionship “emerges unintentionally through functional use”."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "Voice: it speaks, and in its maker’s words it will “pick up every time”."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "Created: gone at the end of the conversation unless memory is kept, and the maker can change it; after Replika’s 2023 change, users reported distress."
+   },
+   {
+    "q": "How many independent channels reach it?",
+    "a": "One: one user over a substrate shared with millions, a single controller (the field key’s persona row)."
+   },
+   {
+    "q": "Who stands outside it?",
+    "a": "Usually none inside the conversation. Outside it, lawmakers and regulators: California, China, Washington from 2027, and Italy, which fined Replika’s maker."
+   }
+  ]
+ }
+]

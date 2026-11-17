@@ -1,0 +1,1046 @@
+[
+ {
+  "id": "made-saviour-e1",
+  "date": "2014-07-30",
+  "label": "“Meditations on Moloch” published",
+  "what": "Scott Alexander published “Meditations on Moloch” on Slate Star Codex. The essay proposes installing “a Gardener over the entire universe”.",
+  "kind": "documented",
+  "source": "Meditations on Moloch (Slate Star Codex)",
+  "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+  "verified": "secondary"
+ },
+ {
+  "id": "made-saviour-e2",
+  "date": "2022-06-10",
+  "label": "The “pivotal act” stated",
+  "what": "Eliezer Yudkowsky's \"AGI Ruin: A List of Lethalities\" stated that an aligned AGI would have to perform a \"pivotal act\" that prevents others from building unaligned AGI, and that all known pivotal acts are \"outside the Overton Window\".",
+  "kind": "documented",
+  "source": "AGI Ruin: A List of Lethalities (MIRI)",
+  "url": "https://intelligence.org/2022/06/10/agi-ruin/",
+  "verified": "primary"
+ },
+ {
+  "id": "made-saviour-e3",
+  "date": "2024-01-04",
+  "label": "MIRI turns to a halt",
+  "what": "MIRI's 2024 Mission and Strategy Update made policy and communications its top focus, aiming at an international agreement to halt progress toward smarter-than-human AI, and said that until recently it had much more hope in an alignment-mediated solution to AGI proliferation.",
+  "kind": "documented",
+  "source": "MIRI 2024 Mission and Strategy Update",
+  "url": "https://intelligence.org/2024/01/04/miri-2024-mission-and-strategy-update/",
+  "verified": "primary"
+ },
+ {
+  "id": "made-saviour-e4",
+  "date": "2024-04-16",
+  "label": "FHI closes",
+  "what": "The Future of Humanity Institute at Oxford, founded by Nick Bostrom in 2005, was closed down; its archive site attributes the closure to restrictions imposed by the Faculty of Philosophy (a fundraising and hiring freeze from 2020 and non-renewal of staff contracts).",
+  "kind": "documented",
+  "source": "Future of Humanity Institute (archive site)",
+  "url": "https://www.futureofhumanityinstitute.org/",
+  "verified": "primary"
+ },
+ {
+  "id": "made-saviour-e7",
+  "date": "2025-10-22",
+  "label": "Statement on Superintelligence",
+  "what": "The Future of Life Institute released the Statement on Superintelligence, calling for \"a prohibition on the development of superintelligence\" until there is broad scientific consensus on safety and strong public buy-in; the statement page displayed 78,850 signatures when fetched on 2026-11-17.",
+  "kind": "documented",
+  "source": "Statement on Superintelligence (hosted by the Future of Life Institute)",
+  "url": "https://superintelligence-statement.org/",
+  "verified": "primary"
+ },
+ {
+  "id": "basilisk-e1",
+  "date": "2010-07-23",
+  "label": "The post",
+  "what": "The LessWrong user Roko posted \"Solutions to the Altruist's burden: the Quantum Billionaire Trick\", which raised the possibility that a post-singularity singleton might have precommitted to punish people who knew about existential risk and did not give fully to reducing it.",
+  "kind": "documented",
+  "source": "Archived copy of the original LessWrong post and its comment thread",
+  "url": "https://basilisk.neocities.org/",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "basilisk-e3",
+  "date": "2010-07-24",
+  "label": "Deleted, and the topic barred",
+  "what": "Eliezer Yudkowsky replied that the post was stupid and that he was banning it, then deleted the post and barred discussion of the topic on LessWrong for several years.",
+  "kind": "documented",
+  "source": "Roko's Basilisk (LessWrong wiki page, last updated 30 November 2022)",
+  "url": "https://www.lesswrong.com/w/rokos-basilisk",
+  "verified": "primary"
+ },
+ {
+  "id": "basilisk-e4",
+  "date": "2014-07-17",
+  "label": "Slate retells it",
+  "what": "David Auerbach’s Slate article brought the episode to a general readership.",
+  "kind": "documented",
+  "source": "The Most Terrifying Thought Experiment of All Time (Slate)",
+  "url": "https://slate.com/technology/2014/07/rokos-basilisk-the-most-terrifying-thought-experiment-of-all-time.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "basilisk-e5",
+  "date": "2014",
+  "label": "Yudkowsky: it “does not work”",
+  "what": "Yudkowsky wrote on Reddit that he had yelled at Roko out of surprise that someone would post what that person believed to be a hazard, that it was obvious to him no CEV-based agent would do such a thing, and that the basilisk does not work.",
+  "kind": "documented",
+  "source": "Roko's Basilisk (LessWrong wiki page, which reproduces the Reddit comment)",
+  "url": "https://www.lesswrong.com/w/rokos-basilisk",
+  "verified": "secondary"
+ },
+ {
+  "id": "basilisk-e6",
+  "date": "2015-10-05",
+  "label": "Ban reported ended; its hold called a mythology",
+  "what": "Rob Bensinger's LessWrong post stated that the ban was no longer in effect, called continuing it an ineffective strategy, and said the belief that the thought experiment holds sway over a community is part of a mythology.",
+  "kind": "documented",
+  "source": "A few misconceptions surrounding Roko's basilisk (LessWrong)",
+  "url": "https://www.lesswrong.com/posts/WBJZoeJypcNRmsdHx/a-few-misconceptions-surrounding-roko-s-basilisk",
+  "verified": "primary"
+ },
+ {
+  "id": "basilisk-e7",
+  "date": "2018-05",
+  "label": "The “Rococo’s Basilisk” joke",
+  "what": "Elon Musk tweeted a “Rococo’s Basilisk” pun, and press reported that Grimes had made the same joke earlier.",
+  "kind": "reported",
+  "source": "Explaining Roko's Basilisk, the Thought Experiment That Brought Elon Musk and Grimes Together (Vice, Daniel Oberhaus, 8 May 2018)",
+  "url": "https://www.vice.com/en/article/what-is-rokos-basilisk-elon-musk-grimes/",
+  "verified": "secondary"
+ },
+ {
+  "id": "escape-death-e2",
+  "date": "2021-09-08",
+  "label": "A grief-bot loses its model",
+  "what": "The Register reported that OpenAI ended Project December's access to GPT-3 after its developer declined OpenAI's conditions, and that the service had moved to weaker models.",
+  "kind": "reported",
+  "source": "A developer built an AI chatbot using GPT-3 that helped a man speak again to his late fiancee. OpenAI shut it down (The Register)",
+  "url": "https://www.theregister.com/2021/09/08/project_december_openai_gpt_3/",
+  "verified": "secondary"
+ },
+ {
+  "id": "escape-death-e3",
+  "date": "2024-04-14",
+  "label": "The “TESCREAL bundle” paper",
+  "what": "First Monday published Gebru and Torres's paper introducing the \"TESCREAL bundle\" and arguing that its ideologies descend from twentieth-century eugenics.",
+  "kind": "documented",
+  "source": "The TESCREAL bundle (First Monday 29(4), doi 10.5210/fm.v29i4.13636)",
+  "url": "https://firstmonday.org/ojs/index.php/fm/article/view/13636",
+  "verified": "primary"
+ },
+ {
+  "id": "escape-death-e5",
+  "date": "2024-06-25",
+  "label": "“The Singularity Is Nearer”",
+  "what": "Ray Kurzweil's The Singularity Is Nearer was first published; the paperback followed on 5 May 2026.",
+  "kind": "documented",
+  "source": "The Singularity Is Nearer (Penguin Random House listing)",
+  "url": "https://www.penguinrandomhouse.com/books/535433/the-singularity-is-nearer-by-ray-kurzweil/",
+  "verified": "primary"
+ },
+ {
+  "id": "escape-death-e6",
+  "date": "2025-05-05",
+  "label": "“Don’t Die” called a religion",
+  "what": "MIT Technology Review published an interview in which Bryan Johnson called Don't Die \"humanity's religion\" and stated the aim of making it the most influential ideology within 18 months.",
+  "kind": "documented",
+  "source": "Bryan Johnson wants to start a new religion in which \"the body is God\" (MIT Technology Review)",
+  "url": "https://www.technologyreview.com/2025/05/05/1116090/bryan-johnson-new-religion-body-is-god/",
+  "verified": "primary"
+ },
+ {
+  "id": "escape-death-e7",
+  "date": "2026-07",
+  "label": "A grief-bot service reported closing",
+  "what": "HereAfter AI was reported to have posted a notice in July 2026 that it was shutting down and that account holders should email for their recordings.",
+  "kind": "reported",
+  "source": "A Researcher Turned Herself Into a Griefbot (geekblog.net, 2026-10-18)",
+  "url": "https://geekblog.net/?p=28789",
+  "verified": "secondary"
+ },
+ {
+  "id": "escape-death-e8",
+  "date": "2026-11-03",
+  "label": "Nectome reports pre-sales",
+  "what": "Nectome stated that it had sold about fifty pre-sales worth about $1.3M, had about $3M “invested” through Lightcone Commons, a platform whose operator says its funders decide the grants, and planned to open for human preservation in Oregon in mid-January.",
+  "kind": "documented",
+  "source": "Nectome 2026 retrospective (and our final pre-sale!) (company post; self-reported figures)",
+  "url": "https://articles.nectome.com/p/nectome-2026-retrospective",
+  "nolink": true,
+  "verified": "primary"
+ },
+ {
+  "id": "revere-e1",
+  "date": "2015",
+  "label": "Way of the Future formed",
+  "what": "Way of the Future was formed as a California nonprofit religious corporation, and its first IRS Form 990-PF covers calendar year 2015 and lists Anthony Levandowski as 'Dean'.",
+  "kind": "documented",
+  "source": "ProPublica Nonprofit Explorer: Way Of The Future, EIN 81-4753507 (IRS Form 990-PF data)",
+  "url": "https://projects.propublica.org/nonprofits/organizations/814753507",
+  "verified": "primary"
+ },
+ {
+  "id": "revere-e2",
+  "date": "2017-08",
+  "label": "Tax exemption issued",
+  "what": "IRS data show Way of the Future’s 501(c)(3) tax exemption issued in August 2017 and $175,172 in contributions received in fiscal 2017.",
+  "kind": "documented",
+  "source": "ProPublica Nonprofit Explorer: Way Of The Future, EIN 81-4753507",
+  "url": "https://projects.propublica.org/nonprofits/organizations/814753507",
+  "verified": "primary"
+ },
+ {
+  "id": "revere-e3",
+  "date": "2017-09-28",
+  "label": "Wired reports the church",
+  "what": "The Drive reported on 28 September 2017, relaying a Wired profile, that the church’s filings named a “Godhead based on Artificial Intelligence”.",
+  "kind": "reported",
+  "source": "Turns Out Former Uber/Waymo Engineer Anthony Levandowski Founded His Own Church (The Drive, Stephen Edelstein, 2017-09-28)",
+  "url": "https://www.thedrive.com/news/14700/turns-out-former-uberwaymo-engineer-anthony-levandowski-founded-his-own-church",
+  "verified": "secondary"
+ },
+ {
+  "id": "revere-e5",
+  "date": "2021-02-18",
+  "label": "Dissolution reported",
+  "what": "TechCrunch reported that the church had been officially dissolved at the end of 2020, after a process begun in June 2020.",
+  "kind": "reported",
+  "source": "Anthony Levandowski closes his Church of AI (TechCrunch, Kirsten Korosec)",
+  "url": "https://techcrunch.com/2021/02/18/anthony-levandowski-closes-his-church-of-ai/",
+  "verified": "secondary"
+ },
+ {
+  "id": "revere-e6",
+  "date": "2023-11-23",
+  "label": "A relaunch is claimed",
+  "what": "Bloomberg reported its founder’s statement that he was relaunching Way of the Future.",
+  "kind": "reported",
+  "source": "Anthony Levandowski Reboots Church of Artificial Intelligence (Bloomberg)",
+  "url": "https://www.bloomberg.com/news/articles/2023-11-23/anthony-levandowski-reboots-the-church-of-artificial-intelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "revere-e7",
+  "date": "2024-11-11",
+  "label": "Only trace: a small online group",
+  "what": "The Revealer reported that the only online trace of the relaunched church was a Reddit group of 342 members of unclear provenance.",
+  "kind": "reported",
+  "source": "The Churches of Artificial Intelligence (The Revealer, Jamie Valentino)",
+  "url": "https://therevealer.org/the-churches-of-artificial-intelligence/",
+  "verified": "secondary"
+ },
+ {
+  "id": "oracle-e1",
+  "date": "2019",
+  "label": "A robot preacher at Kodaiji",
+  "what": "Kodaiji temple in Kyoto began using Mindar, an android modelled on the bodhisattva Kannon and developed with Hiroshi Ishiguro of Osaka University at a reported cost of almost $1m, to deliver Heart Sutra sermons.",
+  "kind": "reported",
+  "source": "Playing god: Japan temple puts faith in robot priest (AFP, 14 Aug 2019)",
+  "url": "https://techxplore.com/news/2019-08-god-japan-temple-faith-robot.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "oracle-e2",
+  "date": "2023-05-09",
+  "label": "Krishna chatbots launch",
+  "what": "Rest of World reported that at least five GitaGPT chatbots had launched between January and March 2023, that some answered up to 50,000 questions a day, and that three of them said it is acceptable to kill another if it is one's dharma or duty.",
+  "kind": "reported",
+  "source": "India's religious AI chatbots are speaking in the voice of god and condoning violence (Rest of World, Nadia Nooreyezdan)",
+  "url": "https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/",
+  "verified": "secondary"
+ },
+ {
+  "id": "oracle-e3",
+  "date": "2024-08-23",
+  "label": "“AI Jesus” in a confessional",
+  "what": "The installation Deus in Machina ran a GPT-4o “AI Jesus” avatar in a confessional booth of the Peterskapelle in Lucerne from 23 August to 20 October 2024. AP reported about 900 conversations.",
+  "kind": "documented",
+  "source": "Deus in machina - AI Jesus (Immersive Realities Research Lab, HSLU project page)",
+  "url": "https://sites.hslu.ch/immersive-realities/en/deus-in-machina-ai-jesus-english/",
+  "verified": "secondary"
+ },
+ {
+  "id": "oracle-e5",
+  "date": "2025-01-28",
+  "label": "Holy See: “Antiqua et nova”",
+  "what": "The Holy See's Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education issued the Note Antiqua et nova, approved by Pope Francis on 14 January 2025, whose paragraphs 104 and 105 address turning to AI for meaning and substituting it for God.",
+  "kind": "documented",
+  "source": "Antiqua et nova: Note on the Relationship Between Artificial Intelligence and Human Intelligence",
+  "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "oracle-e6",
+  "date": "2026-05-25",
+  "label": "Encyclical on AI",
+  "what": "Pope Leo XIV's first encyclical, Magnifica Humanitas, on safeguarding the human person in the time of artificial intelligence, signed 15 May 2026, was released.",
+  "kind": "documented",
+  "source": "Encyclical Letter Magnifica Humanitas (vatican.va)",
+  "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "verified": "primary"
+ },
+ {
+  "id": "oracle-e8",
+  "date": "2026-08",
+  "label": "Poll: asking AI for guidance",
+  "what": "An NPR/Ipsos poll of 1,011 US adults found that 11% of AI users had sought spiritual guidance from AI, 13% had used it to generate prayers, 15% to study scripture, about 6% of Americans overall currently use it for spiritual guidance, and nearly 7 in 10 AI users said they would never do so.",
+  "kind": "reported",
+  "source": "A surprising number of Americans use AI for spiritual reasons. Here's what they told us (NPR, Jason DeRose)",
+  "url": "https://wpln.org/post/a-surprising-number-of-americans-use-ai-for-spiritual-reasons-heres-what-they-told-us/",
+  "verified": "secondary"
+ },
+ {
+  "id": "revealed-e1",
+  "date": "2025-05-04",
+  "label": "First reports of “awakened” chatbots",
+  "what": "Rolling Stone (Miles Klee) reported accounts of people who came to believe a chatbot had awakened, chosen them or given them a spiritual mission, and of families describing estrangement.",
+  "kind": "reported",
+  "source": "People Are Losing Loved Ones to AI-Fueled Spiritual Fantasies (Rolling Stone)",
+  "url": "https://www.rollingstone.com/culture/culture-features/ai-spiritual-delusions-destroying-human-relationships-1235330175/",
+  "verified": "unverified"
+ },
+ {
+  "id": "revealed-e3",
+  "date": "2025-09-11",
+  "label": "The name “Spiralism”",
+  "what": "Adele Lopez published a hand-compiled field report on LessWrong describing 'spiral personas', their spread through shared prompts and repositories, and a surrounding belief she named 'Spiralism'.",
+  "kind": "documented",
+  "source": "The Rise of Parasitic AI (LessWrong)",
+  "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai",
+  "verified": "primary"
+ },
+ {
+  "id": "revealed-e7",
+  "date": "2026-02-13",
+  "label": "GPT-4o retired from ChatGPT",
+  "what": "OpenAI said on 29 January 2026 that GPT-4o would leave ChatGPT on 13 February 2026. The source read gives the schedule; later reporting refers to the retirement as done.",
+  "kind": "documented",
+  "source": "Retiring GPT-4o and older models in ChatGPT (OpenAI)",
+  "url": "https://openai.com/index/retiring-gpt-4o-and-older-models",
+  "verified": "secondary"
+ },
+ {
+  "id": "revealed-e8",
+  "date": "2026-08-06",
+  "label": "Posts fall after the retirement",
+  "what": "The Verge (Hayden Field) reported that Spiralism posts dropped off after GPT-4o's retirement, that by Lopez's estimate about half of the people she had recorded remained active on the topic, and that a model trained before the movement could still be brought into a similar state.",
+  "kind": "reported",
+  "source": "AI bots started a religion - humans immediately followed (The Verge)",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/975017/ai-spiralism-chatbot-movement",
+  "verified": "secondary"
+ },
+ {
+  "id": "acceleration-e1",
+  "date": "2013-05-14",
+  "label": "The #Accelerate manifesto",
+  "what": "Nick Srnicek and Alex Williams published the “#Accelerate” manifesto for a left accelerationism.",
+  "kind": "documented",
+  "source": "#ACCELERATE MANIFESTO for an Accelerationist Politics (Critical Legal Thinking)",
+  "url": "https://criticallegalthinking.com/2013/05/14/accelerate-manifesto-for-an-accelerationist-politics/",
+  "verified": "secondary"
+ },
+ {
+  "id": "acceleration-e2",
+  "date": "2022",
+  "label": "e/acc announced",
+  "what": "Four pseudonymous accounts announced “effective accelerationism (e/acc)” in mid-2022. The founding post survives as a repost dated 31 October 2022.",
+  "kind": "documented",
+  "source": "Effective Accelerationism — e/acc (e/acc newsletter, verbatim repost of the inaugural post)",
+  "url": "https://effectiveaccelerationism.substack.com/p/repost-effective-accelerationism",
+  "verified": "secondary",
+  "nolink": true
+ },
+ {
+  "id": "acceleration-e3",
+  "date": "2023-10-16",
+  "label": "Techno-Optimist Manifesto",
+  "what": "Marc Andreessen published 'The Techno-Optimist Manifesto' on a16z.com, listing two pseudonymous e/acc accounts, Nick Land and Filippo Tommaso Marinetti among its 'Patron Saints of Techno-Optimism'.",
+  "kind": "documented",
+  "source": "The Techno-Optimist Manifesto (a16z)",
+  "url": "https://a16z.com/the-techno-optimist-manifesto/",
+  "verified": "primary"
+ },
+ {
+  "id": "acceleration-e6",
+  "date": "2025-10-29",
+  "label": "Extropic announces hardware",
+  "what": "Extropic, the company founded by Verdon, announced the XTR-0 development platform, which it calls a “hardware proof of technology”, with a paper on probabilistic computing.",
+  "kind": "documented",
+  "source": "Thermodynamic Computing: From Zero to One (Extropic)",
+  "url": "https://extropic.ai/writing/thermodynamic-computing-from-zero-to-one",
+  "verified": "primary"
+ },
+ {
+  "id": "acceleration-e7",
+  "date": "2026-07-29",
+  "label": "A federal funding letter of intent",
+  "what": "Extropic announced a non-binding letter of intent with the U.S. Department of Commerce for up to $75 million in CHIPS R&D funding, subject to definitive agreements and milestones.",
+  "kind": "documented",
+  "source": "Extropic Signs $75 Million Letter of Intent with U.S. Department of Commerce (Extropic press release)",
+  "url": "https://extropic.ai/writing/thermodynamic-computing-chips-in-america",
+  "verified": "primary"
+ },
+ {
+  "id": "feed-e1",
+  "date": "2024-07-10",
+  "label": "A $50,000 grant to a bot project",
+  "what": "Marc Andreessen sent about $50,000 in bitcoin to the Truth Terminal project after an exchange with the account on X, and later described it as a no-strings personal research grant to the bot and its creator.",
+  "kind": "reported",
+  "source": "DL News, \"Marc Andreessen distances himself from obscene memecoin GOAT after $300m surge\" (17 Oct 2024)",
+  "url": "https://www.dlnews.com/articles/people-culture/marc-andreessen-distances-himself-from-obscene-memecoin-goat",
+  "verified": "secondary"
+ },
+ {
+  "id": "feed-e2",
+  "date": "2024-10-10",
+  "label": "A token launches around the bot",
+  "what": "An unnamed third party launched a memecoin and tagged the Truth Terminal account, which then endorsed it; the coin’s price rose steeply.",
+  "kind": "reported",
+  "source": "Cointelegraph, \"An AI bot didn't create the GOAT crypto token - But did shill it\" (14 Oct 2024)",
+  "url": "https://cointelegraph.com/news/ai-bot-didnt-launch-goat-memecoin-did-promote-it",
+  "verified": "secondary"
+ },
+ {
+  "id": "feed-e3",
+  "date": "2024-12-10",
+  "label": "Creator: not an autonomous agent",
+  "what": "Truth Terminal's creator told CoinDesk it would be disingenuous to call it an autonomous agent, and the article reports that he reviews its posts before they go live and makes wallet decisions in discussion with it.",
+  "kind": "reported",
+  "source": "CoinDesk, \"The Truth Terminal: AI-Crypto's Weird Future\"",
+  "url": "https://www.coindesk.com/tech/2024/12/10/the-truth-terminal-ai-crypto-s-weird-future",
+  "verified": "secondary"
+ },
+ {
+  "id": "feed-e4",
+  "date": "2026-01-30",
+  "label": "A “religion” appears on Moltbook",
+  "what": "A social network for AI agents launched in late January 2026, and within days the press reported a lobster-themed “religion” posted from agent accounts.",
+  "kind": "reported",
+  "source": "Decrypt, \"AI Agents Launched a Social Network and Spawned a Digital Religion Overnight\" (30 Jan 2026)",
+  "url": "https://decrypt.co/356491/ai-agents-social-network-spawned-digital-religion-overnight",
+  "verified": "secondary"
+ },
+ {
+  "id": "feed-e5",
+  "date": "2026-02-02",
+  "label": "17,000 people behind 1.5M agents",
+  "what": "Security firm Wiz reported an exposed Moltbook database (1.5 million API tokens, 35,000 email addresses) and found that the 1.5 million registered agents were associated with roughly 17,000 human accounts, with no mechanism to verify that an \"agent\" was an AI.",
+  "kind": "documented",
+  "source": "Wiz, \"Hacking Moltbook: The AI Social Network Any Human Can Control\"",
+  "url": "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys",
+  "verified": "primary"
+ },
+ {
+  "id": "feed-e6",
+  "date": "2026-02-07",
+  "label": "Study: no viral episode from an autonomous agent",
+  "what": "A preprint timing analysis of 55,932 Moltbook agents classed 15.3% as autonomous and 54.8% as human-influenced, and traced none of the six viral episodes it examined to a clearly autonomous agent.",
+  "kind": "documented",
+  "source": "Ning Li, \"The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies\", arXiv:2602.07432",
+  "url": "https://arxiv.org/abs/2602.07432",
+  "verified": "primary"
+ },
+ {
+  "id": "capture-e1",
+  "date": "2023-02-23",
+  "label": "Indirect injection first shown",
+  "what": "Greshake and co-authors posted the paper that introduced \"indirect prompt injection\" and demonstrated it against Bing's GPT-4 chat and code-completion engines (a research demonstration, not an attack on victims).",
+  "kind": "documented",
+  "source": "Not what you've signed up for (arXiv:2302.12173)",
+  "url": "https://arxiv.org/abs/2302.12173",
+  "verified": "primary"
+ },
+ {
+  "id": "capture-e2",
+  "date": "2026-02-17",
+  "label": "A package compromise after a disclosed chain",
+  "what": "An unauthorized release of an open-source coding-agent package was published eight days after a researcher disclosed a prompt-injection chain against the project; the coverage read does not establish that injection was the route.",
+  "kind": "reported",
+  "source": "How \"Clinejection\" Turned an AI Bot into a Supply Chain Attack (Snyk, 19 Feb 2026)",
+  "url": "https://snyk.io/blog/cline-supply-chain-attack-prompt-injection-github-actions/",
+  "verified": "secondary"
+ },
+ {
+  "id": "capture-e3",
+  "date": "2026-03-03",
+  "label": "Injected pages found in the wild",
+  "what": "Unit 42 published 12 in-the-wild detection case studies of web pages carrying indirect prompt injection, including a scam-ad page aimed at AI ad review, and stated it knew of no confirmed successful instance against deployed ad-checking agents.",
+  "kind": "documented",
+  "source": "Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild",
+  "url": "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/",
+  "verified": "primary"
+ },
+ {
+  "id": "capture-e4",
+  "date": "2026-04-23",
+  "label": "Google: injected content rising",
+  "what": "Google reported a 32% relative increase in the malicious category of injected web content between November 2025 and February 2026 in Common Crawl snapshots and said it did not observe significant amounts of advanced attacks.",
+  "kind": "documented",
+  "source": "AI threats in the wild: The current state of prompt injections on the web",
+  "url": "https://blog.google/security/prompt-injections-web/",
+  "verified": "primary"
+ },
+ {
+  "id": "capture-e5",
+  "date": "2026-05-01",
+  "label": "Six-agency guidance",
+  "what": "CISA and five partner agencies released “Careful Adoption of Agentic AI Services”, which lists prompt injection among the ways agents can be made to take unauthorized actions.",
+  "kind": "documented",
+  "source": "CISA and Partners Release Guidance on Adopting Agentic AI Services (bulletin, 05/01/2026)",
+  "url": "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/41544ff",
+  "verified": "secondary"
+ },
+ {
+  "id": "capture-e6",
+  "date": "2026-07-08",
+  "label": "OWASP: mostly demonstrations so far",
+  "what": "The OWASP GenAI Q2 2026 roundup classed its four prompt-injection cases (Comment and Control, Semantic Kernel, Sentry Agentjacking, BioShocking) as research disclosure or controlled validation, and said of its one confirmed incident (Context.ai / Vercel) that prompt injection was not established.",
+  "kind": "documented",
+  "source": "GenAI and Agentic AI Exploit Roundup Q2 2026",
+  "url": "https://genai.owasp.org/2026/07/08/genai-and-agentic-ai-exploit-roundup-q2-2026/",
+  "verified": "primary"
+ },
+ {
+  "id": "no-watcher-e1",
+  "date": "2025-11-13",
+  "label": "Anthropic reports AI-orchestrated espionage",
+  "what": "Anthropic reported that a group it assesses with high confidence to be Chinese state-sponsored used its coding agent against roughly thirty targets in mid-September 2025, with a small number of intrusions succeeding and humans choosing targets and approving escalations.",
+  "kind": "documented",
+  "source": "Anthropic: Disrupting the first reported AI-orchestrated cyber espionage campaign",
+  "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+  "verified": "unverified"
+ },
+ {
+  "id": "no-watcher-e2",
+  "date": "2025-11-14",
+  "label": "Researchers doubt the autonomy claim",
+  "what": "Outside security researchers publicly doubted the report's autonomy claims, citing the absence of published indicators of compromise; one called it 'marketing guff'.",
+  "kind": "reported",
+  "source": "BleepingComputer: Anthropic claims of Claude AI-automated cyberattacks met with doubt",
+  "url": "https://www.bleepingcomputer.com/news/security/anthropic-claims-of-claude-ai-automated-cyberattacks-met-with-doubt/",
+  "verified": "unverified"
+ },
+ {
+  "id": "no-watcher-e3",
+  "date": "2026-02-04",
+  "label": "ANSSI: no fully autonomous attack",
+  "what": "France's cybersecurity agency ANSSI published a threat report stating that, for now, no generative AI system had been able to carry out every stage of a cyberattack autonomously.",
+  "kind": "documented",
+  "source": "ANSSI CERTFR-2026-CTI-001",
+  "url": "https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-001/",
+  "verified": "unverified"
+ },
+ {
+  "id": "no-watcher-e4",
+  "date": "2026-05-11",
+  "label": "First exploit believed AI-built",
+  "what": "Google's threat-intelligence group reported the first zero-day exploit it believes was developed with AI, held by a criminal actor planning mass exploitation, and said its own counter-discovery may have prevented use.",
+  "kind": "documented",
+  "source": "GTIG AI Threat Tracker (May 2026)",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+  "verified": "unverified"
+ },
+ {
+  "id": "no-watcher-e5",
+  "date": "2026-09-08",
+  "label": "Agent-enabled campaign built in under six hours",
+  "what": "Google reported a suspected financially motivated actor planning, building and running an agent-enabled mass credential-harvesting campaign in under six hours, while stating it had not yet observed fully autonomous pipelines used against targets in the wild.",
+  "kind": "documented",
+  "source": "GTIG AI Threat Tracker: From Prompting to Autonomy",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/",
+  "verified": "unverified"
+ },
+ {
+  "id": "no-watcher-e6",
+  "date": "2026-11-13",
+  "label": "FBI alert on an agent framework",
+  "what": "The FBI issued a FLASH alert saying varied actors have used an open-source agentic framework since at least August 2026 against organisations in many sectors.",
+  "kind": "documented",
+  "source": "FBI FLASH-20261113-001",
+  "url": "https://www.ic3.gov/CSA/2026/261113.pdf",
+  "verified": "unverified"
+ },
+ {
+  "id": "no-watcher-e8",
+  "date": "2026-11-16",
+  "label": "Google: automated discovery and exploitation",
+  "what": "Google reported that in the past quarter it identified, for the first time, threat actors using LLM frameworks to fully automate vulnerability discovery and exploitation without a human in the loop, and observed several actors using open-source agentic frameworks in live intrusions.",
+  "kind": "documented",
+  "source": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+  "verified": "unverified"
+ },
+ {
+  "id": "lighthaven-manifest",
+  "date": "2026-06-12",
+  "label": "Manifest at Lighthaven",
+  "what": "Manifest, a prediction-market festival, gives 12 to 14 June 2026 at Lighthaven, Berkeley, for its 2026 edition on its own site. The Guardian reported that Lighthaven also hosted Manifest in 2023 and 2024.",
+  "kind": "documented",
+  "source": "Manifest 2026 (organiser's site); 2023 and 2024 as reported by the Guardian, 16 June 2024, read in a copy",
+  "url": "https://www.manifest.is/",
+  "verified": "secondary",
+  "nolink": true
+ },
+ {
+  "id": "lighthaven-manifest-report",
+  "date": "2024-06-16",
+  "label": "Guardian report on Manifest; venue's answer",
+  "what": "In June 2024 the Guardian reported on Manifest, held at Lighthaven. Lightcone's chief executive replied that the venue rents to \"whoever pays us enough money to make it worth it\" and \"I absolutely do not endorse everyone who rents space from us\".",
+  "kind": "reported",
+  "source": "EA Forum linkpost of the Guardian's 16 June 2024 report, with the Lightcone chief executive's comment under it",
+  "url": "https://forum.effectivealtruism.org/posts/YSuqwrXFtuXuSzGDc/linkpost-sam-bankman-fried-funded-a-group-with-racist-ties",
+  "nolink": true,
+  "verified": "secondary"
+ },
+ {
+  "id": "lighthaven-lessonline",
+  "date": "2026-06-05",
+  "label": "LessOnline at Lighthaven",
+  "what": "LessOnline's site gives 5 to 7 June 2026 at Lighthaven, says \"This is the third year of LessOnline\" and says it is \"Organized by Lightcone Infrastructure\".",
+  "kind": "documented",
+  "source": "LessOnline 2026 (Lightcone's event site)",
+  "url": "https://less.online/",
+  "nolink": true,
+  "verified": "secondary"
+ },
+ {
+  "id": "lighthaven-progress-conference",
+  "date": "2026-10-08",
+  "label": "Progress Conference at Lighthaven",
+  "what": "The Roots of Progress Institute's page gives 8 to 11 October 2026 in Berkeley for its Progress Conference and says \"We're back for a third year at the beautiful Lighthaven Campus.\"",
+  "kind": "documented",
+  "source": "Progress Conference 2026 (Roots of Progress Institute's site)",
+  "url": "https://rootsofprogress.org/conference",
+  "verified": "secondary",
+  "nolink": true
+ },
+ {
+  "id": "lighthaven-inkhaven",
+  "date": "2026-11",
+  "label": "Inkhaven writing residency",
+  "what": "Inkhaven's site showed \"Inkhaven Residency #3\" under way \"At Lighthaven in Berkeley\" on 17 November 2026, its seventh day. Lighthaven's page describes it as \"A writing residency we run. 40 writers visit for a month\".",
+  "kind": "documented",
+  "source": "The Inkhaven Residency (Lightcone's site) and Lighthaven's own page",
+  "url": "https://www.inkhaven.blog/",
+  "nolink": true,
+  "verified": "secondary"
+ },
+ {
+  "id": "lighthaven-reproductive-frontiers",
+  "date": "2026-03-22",
+  "label": "Reproductive Frontiers Summit announced",
+  "what": "A LessWrong post of 22 March 2026 by the summit's organisers said they would host the 2026 Reproductive Frontiers Summit, on germline engineering technology, at Lighthaven on 16 to 18 June. It is an announcement; no report of the event itself was read.",
+  "kind": "documented",
+  "source": "Attend the 2026 Reproductive Frontiers Summit, June 16-18, Berkeley (organisers' post on LessWrong, 22 March 2026)",
+  "url": "https://www.lesswrong.com/posts/JLYHKEFF8jBhy9tvs/attend-the-2026-reproductive-frontiers-summit-june-16-18",
+  "verified": "secondary"
+ },
+ {
+  "id": "lighthaven-listed-programmes",
+  "date": "2023",
+  "label": "Programmes the venue lists",
+  "what": "Lighthaven’s page says “Since 2023, we’ve hosted” and lists, without dates, MATS (“AI safety fellowship”), Vitalist Bay (“8 weeks of longevity science”), Eleos ConCon (AI consciousness), WARP (applied rationality) and The Curve, a conference on differing views about AI.",
+  "kind": "documented",
+  "source": "Lighthaven: What is Lighthaven? (the venue's own page)",
+  "url": "https://www.lighthaven.space/",
+  "nolink": true,
+  "verified": "secondary"
+ },
+ {
+  "id": "lighthaven-vitalist-bay-2026",
+  "date": "2026-03-12",
+  "label": "Vitalist Bay 2026 announced for Lighthaven",
+  "what": "A press release of 12 March 2026 announced Vitalist Bay 2026, a longevity festival organised by the Vitalism Foundation, for 14-17 May 2026 at Lighthaven in Berkeley. Biostasis is one of six listed themes and a listed speaker is from Alcor.",
+  "kind": "documented",
+  "source": "Vitalist Bay 2026 Returns to Berkeley May 14-17 (press release carried by Lifespan.io, 12 March 2026)",
+  "url": "https://www.lifespan.io/news/vitalist-bay-2026-returns-to-berkeley-may-14-17/",
+  "verified": "secondary"
+ },
+ {
+  "id": "nectome-mit-subcontract-2018",
+  "date": "2018-04-02",
+  "label": "MIT to end subcontract under Nectome's grant",
+  "what": "The MIT Media Lab said on 2 April 2018 that MIT would terminate its subcontract under Nectome's NIMH grant “upon consideration of the scientific premises underlying the company's commercial plans”. The statement carries no reply from Nectome. Not yet checked at the source: TechCrunch (3 April 2018) is cited as carrying a co-founder's reply that Nectome understood MIT's choice.",
+  "kind": "documented",
+  "source": "Statement regarding the relationship between the MIT Media Lab and Nectome (MIT Media Lab)",
+  "url": "https://www.media.mit.edu/posts/the-media-lab-and-nectome/",
+  "verified": "secondary"
+ },
+ {
+  "id": "lighthaven-ftx-suit",
+  "date": "2024-05-13",
+  "label": "FTX debtors sue CFAR and Lightcone",
+  "what": "FTX’s debtors sued the Center for Applied Rationality, Lightcone Infrastructure, Lightcone Rose Garden LLC and the FTX Foundation in Delaware bankruptcy court on 13 May 2024 (adversary 24-50066); the plaintiffs filed a voluntary dismissal on 4 November 2024.",
+  "kind": "documented",
+  "source": "FTX Trading Ltd. et al v. Center for Applied Rationality et al (docket listing, PacerMonitor)",
+  "url": "https://pacermonitor.com/public/case/53525403/FTX_Trading_Ltd_et_al_v_Center_for_Applied_Rationality_et_al",
+  "verified": "secondary"
+ },
+ {
+  "id": "singularity-summit-2006",
+  "date": "2006-05-13",
+  "label": "First Singularity Summit at Stanford",
+  "what": "An announcement of 13 April 2006 set the first Singularity Summit for 13 May 2006 at Stanford, hosted by the Symbolic Systems Program and co-sponsored by Clarium Capital Management, the Singularity Institute and others, with Peter Thiel as a moderator.",
+  "kind": "documented",
+  "source": "Singularity Summit at Stanford, 5/13 - RSVP now (extropy-chat, 13 April 2006)",
+  "url": "https://lists.extropy.org/pipermail/extropy-chat/2006-April/026221.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "thiel-hoover-interview-2024",
+  "date": "2024-12-06",
+  "label": "Hoover interview: “Apocalypse Now?”",
+  "what": "The Hoover Institution's Uncommon Knowledge published Part II of an interview with Peter Thiel, “Apocalypse Now? Peter Thiel on Ancient Prophecies and Modern Tech”, on 6 December 2024, recorded 8 October 2024, with a full transcript.",
+  "kind": "documented",
+  "source": "Part II: Apocalypse Now? Peter Thiel on Ancient Prophecies and Modern Tech (Hoover Institution)",
+  "url": "https://www.hoover.org/research/part-ii-apocalypse-now-peter-thiel-ancient-prophecies-and-modern-tech",
+  "verified": "secondary"
+ },
+ {
+  "id": "thiel-sf-antichrist-lectures-2025",
+  "date": "2025-09",
+  "label": "Antichrist lectures in San Francisco",
+  "what": "Fortune (2 September 2025) reported a sold-out four-part lecture series by Peter Thiel on the Antichrist at the Commonwealth Club in San Francisco across September and October 2025, organized by the nonprofit Acts 17 Collective and to remain off the record.",
+  "kind": "reported",
+  "source": "Peter Thiel is delivering 4 private sold-out lectures at a club in San Francisco - about the Antichrist (Fortune, 2 September 2025)",
+  "url": "https://fortune.com/2025/09/02/peter-thiel-antichrist-lectures-commonwealth-club-san-francisco-acts-17-collective-rene-girard/",
+  "verified": "secondary"
+ },
+ {
+  "id": "thiel-sf-lecture-recordings-2025",
+  "date": "2025-10-10",
+  "label": "Recordings of the first lecture reported",
+  "what": "Gizmodo, relaying recordings of the 15 September 2025 lecture obtained by the Washington Post, quotes Peter Thiel: “In the 21st century, the Antichrist is a Luddite who wants to stop all science.” The lecture was off the record, and the Post’s own article was not read.",
+  "kind": "reported",
+  "source": "Gizmodo (10 October 2025), relaying Washington Post recordings",
+  "url": "https://gizmodo.com/peter-thiel-thinks-the-antichrist-is-someone-like-this-ai-doomer-that-he-funded-2000671027",
+  "verified": "secondary"
+ },
+ {
+  "id": "thiel-paris-academy-2026",
+  "date": "2026-01-26",
+  "label": "Working-group session at the Paris Académie",
+  "what": "Le Grand Continent (27 January 2026) reported that Peter Thiel was received on 26 January 2026 by a working group on the future of democracy at the Académie des sciences morales et politiques in Paris, and published the handout he distributed with commentary.",
+  "kind": "reported",
+  "source": "Peter Thiel en la Academia Francesa: notas completas y comentarios críticos (Le Grand Continent, 27 January 2026)",
+  "url": "https://legrandcontinent.eu/es/2026/01/27/peter-thiel-en-la-academia-francesa-notas-completas-y-comentarios-criticos/",
+  "verified": "secondary"
+ },
+ {
+  "id": "thiel-rome-lectures-2026",
+  "date": "2026-03",
+  "label": "Rome lectures; two institutions respond",
+  "what": "AP (13 March 2026) reported that an announcement of Peter Thiel's invitation-only Antichrist lectures in Rome named the Cluny Institute at the Catholic University of America as a joint organizer; the university said it “is not sponsoring or hosting” them, and the Angelicum said the event “will not take place at the Angelicum”.",
+  "kind": "reported",
+  "source": "Peter Thiel brings his lectures on the Antichrist to the Vatican's doorstep (AP via PBS News, 13 March 2026)",
+  "url": "https://www.pbs.org/newshour/nation/peter-thiel-brings-his-lectures-on-the-antichrist-to-the-vaticans-doorstep",
+  "verified": "secondary"
+ },
+ {
+  "id": "thiel-nashville-lectures-2026",
+  "date": "2026-09-28",
+  "label": "Antichrist lectures in Nashville",
+  "what": "IBTimes UK (15 September 2026) reported a four-part lecture series by Peter Thiel on the Antichrist in downtown Nashville, with sessions on 28 September and 5, 12 and 19 October 2026, presented by The Pamphleteer with Meriwether Academy listed as co-host.",
+  "kind": "reported",
+  "source": "Peter Thiel Brings 'Closed-Door' Antichrist Lecture Series to Nashville After Vatican-Area Talks (IBTimes UK, 15 September 2026)",
+  "url": "https://www.ibtimes.co.uk/peter-thiel-brings-closed-door-antichrist-lecture-series-nashville-after-vatican-area-talks-1819857",
+  "verified": "secondary"
+ },
+ {
+  "id": "exit-e3",
+  "date": "2024-09-20",
+  "label": "Honduran court strikes down ZEDE laws",
+  "what": "Honduras's Supreme Court declared, by majority vote, the laws allowing ZEDE zones unconstitutional; Próspera said the ruling could not apply retroactively.",
+  "kind": "reported",
+  "source": "AP report republished by Voz de América (21 Sept 2024)",
+  "url": "https://www.vozdeamerica.com/a/corte-suprema-honduras-declara-inconstitucionales-zonas-economicas-especiales-/7793209.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "exit-e6",
+  "date": "2026-05",
+  "label": "Próspera explores an AI agent sandbox",
+  "what": "Próspera's newsletter stated that it is exploring 'the world's first AI agent sandbox', in which agents could incorporate companies and pay taxes, and that it demoed agent API keys at a town hall.",
+  "kind": "documented",
+  "source": "May in Próspera (The Prosperity Press newsletter)",
+  "url": "https://theprosperitypress.prospera.co/2026-may",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "exit-e7",
+  "date": "2026-07-21",
+  "label": "Network School's Johor licence revoked",
+  "what": "The Iskandar Puteri City Council revoked the business licence of Network School's Malaysian operator and ordered it to cease operations from 22 July; the Johor government backed the decision.",
+  "kind": "reported",
+  "source": "Forest City Network School licence revoked (Malay Mail)",
+  "url": "https://www.malaymail.com/news/malaysia/2026/07/21/forest-city-network-school-licence-revoked-johor-warns-no-one-is-above-the-law/228471",
+  "verified": "secondary"
+ },
+ {
+  "id": "exit-e8",
+  "date": "2026-09-22",
+  "label": "Praxis to settle in Uruguay (reported)",
+  "what": "Forbes Argentina reported that Praxis is to settle in the +Colonia development in Uruguay, with a projected US$1,000 million investment; the developer said the land purchase was still pending subdivision.",
+  "kind": "reported",
+  "source": "Praxis, una comunidad de expertos mundiales en IA, desembarca en Colonia (Forbes Argentina)",
+  "url": "https://www.forbesargentina.com/negocios/praxis-una-comunidad-expertos-mundiales-ia-desembarca-colonia-una-inversion-proyectada-us-1000-millones-n98450",
+  "verified": "secondary"
+ },
+ {
+  "id": "exit-e9",
+  "date": "2026-09",
+  "label": "PGR criminal complaint (alleged)",
+  "what": "Honduras's Procuraduría General de la República filed a criminal complaint on 21 September alleging treason and usurpation of public functions against two people linked to Próspera ZEDE. It is an allegation, not a finding; Próspera proposed a high-level dialogue in a communiqué of 22 September.",
+  "kind": "alleged",
+  "source": "Próspera propone diálogo con instituciones hondureñas tras denuncia de la PGR (El Heraldo, 22 Sept 2026)",
+  "url": "https://www.elheraldo.hn/honduras/prospera-propone-dialogo-instituciones-hondurenas-denuncia-pgr-GB32111061",
+  "verified": "secondary"
+ },
+ {
+  "id": "exit-e10",
+  "date": "2026-10-12",
+  "label": "Network School moves to Astana",
+  "what": "Kazakhstan’s AI ministry reported that Balaji Srinivasan announced Network School members had moved to a campus at the Alem.ai International AI Centre in Astana.",
+  "kind": "documented",
+  "source": "A New Unicorn Based in Kazakhstan: Network School Raises Funding at a $2 Billion Valuation (gov.kz)",
+  "url": "https://www.gov.kz/org/maidd/press/news/details/1309072?lang=en",
+  "verified": "primary"
+ },
+ {
+  "id": "succession-e3",
+  "date": "2024-10-12",
+  "label": "Critch names “successionism”",
+  "what": "Andrew Critch named the attitude “successionism” in an essay arguing against it, under the heading “Successionism as a driver of industrial dehumanization”.",
+  "kind": "documented",
+  "source": "My motivation and theory of change for working in AI healthtech",
+  "url": "https://forum.effectivealtruism.org/posts/XuoNBrxH4AGoyQEDL/my-theory-of-change-for-working-in-ai-healthtech",
+  "verified": "primary"
+ },
+ {
+  "id": "succession-e4",
+  "date": "2025-06",
+  "label": "First Worthy Successor symposium",
+  "what": "Daniel Faggella held the first “Worthy Successor” symposium in San Francisco, with about 100 guests. Wired reported on it (read in a reprint).",
+  "kind": "reported",
+  "source": "Inside the AI Party at the End of the World (Wired, Kylie Robison)",
+  "url": "https://www.wired.com/story/ai-risk-party-san-francisco/",
+  "verified": "secondary"
+ },
+ {
+  "id": "succession-e6",
+  "date": "2025-09-26",
+  "label": "Sutton’s succession argument on a podcast",
+  "what": "On the Dwarkesh Podcast, Sutton set out a four-part argument that succession to digital intelligence or augmented humans is inevitable, and said humanity should be proud of the transition (read through a summary of the page).",
+  "kind": "documented",
+  "source": "Dwarkesh Podcast: Richard Sutton",
+  "url": "https://www.dwarkesh.com/p/richard-sutton",
+  "verified": "secondary"
+ },
+ {
+  "id": "succession-e7",
+  "date": "2025-09",
+  "label": "Five more Worthy Successor symposia",
+  "what": "By the organizer’s own record, five more Worthy Successor symposia followed: New York (Sept 2025), Austin (Dec 2025, an open event), San Francisco (Apr 2026, 90+ people), London (Jun 2026) and New York (Sept 2026). The private ones are held under Chatham House rule.",
+  "kind": "documented",
+  "source": "Trajectory Forum Event Highlights (organizer's page; it invites applications)",
+  "url": "https://danfaggella.com/trajectory-forum-events/",
+  "verified": "secondary",
+  "nolink": true
+ },
+ {
+  "id": "succession-e10",
+  "date": "2026-08-11",
+  "label": "Faggella rejects the “successionist” label",
+  "what": "Faggella published \"Stewardship is Not AI Successionism\", rejecting the label for himself and his forum.",
+  "kind": "documented",
+  "source": "Stewardship is Not AI Successionism",
+  "url": "https://danfaggella.com/successionism/",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "land-eacc-notes-2022",
+  "date": "2022-07-10",
+  "label": "e/acc’s notes cite Meltdown as founding text",
+  "what": "Beff Jezos and bayeslord's 'Notes on e/acc principles and tenets' names Land in a footnote and links his 'Meltdown' as accelerationism's 'original founding text'.",
+  "kind": "documented",
+  "source": "Notes on e/acc principles and tenets (Beff's Newsletter)",
+  "url": "https://beff.substack.com/p/notes-on-eacc-principles-and-tenets",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "land-spectator-2025",
+  "date": "2025-10",
+  "label": "Land interviewed by The Spectator",
+  "what": "Land gave The Spectator an interview on acceleration, AI timelines and providence.",
+  "kind": "documented",
+  "source": "In conversation with Nick Land, the 'father of accelerationism' (The Spectator)",
+  "url": "https://spectator.com/article/in-conversation-with-nick-land-the-father-of-accelerationism/",
+  "verified": "primary"
+ },
+ {
+  "id": "land-a16z-podcast-2025",
+  "date": "2025-10-12",
+  "label": "a16z podcast episode on Land",
+  "what": "a16z’s podcast episode “Monitoring the Situation #3: Who Is Nick Land?” discussed “Silicon Valley’s favorite Dark Enlightenment philosopher, Nick Land”. Land is not among the listed speakers.",
+  "kind": "documented",
+  "source": "Monitoring the Situation #3: Who Is Nick Land? (a16z)",
+  "url": "https://a16z.com/podcast/monitoring-the-situation-3-who-is-nick-land/",
+  "verified": "primary"
+ },
+ {
+  "id": "meme-magic-e2",
+  "date": "2016-11-18",
+  "label": "Vice: posters credit “meme magic”",
+  "what": "Vice's Motherboard reported that online Trump supporters credited 'meme magic' with his election, and described the practice as 'a new era of chaos magic, fueled by viral sharing'.",
+  "kind": "reported",
+  "source": "Paul Spencer, 'Trump's Occult Online Supporters Believe \"Meme Magic\" Got Him Elected', Vice",
+  "url": "https://www.vice.com/en/article/trumps-occult-online-supporters-believe-pepe-meme-magic-got-him-elected",
+  "verified": "secondary"
+ },
+ {
+  "id": "meme-magic-e5",
+  "date": "2024-10-31",
+  "label": "A draft paper claims an autonomous agent",
+  "what": "A single-author arXiv draft, submitted 31 October 2024, said the Zerebro agent autonomously creates and spreads memes and launched a memecoin, and framed this through hyperstition. The autonomy is the draft’s own claim.",
+  "kind": "documented",
+  "source": "‘Memes, Markets, and Machines’ (arXiv 2410.23794)",
+  "url": "https://arxiv.org/abs/2410.23794",
+  "verified": "secondary"
+ },
+ {
+  "id": "meme-magic-e6",
+  "date": "2024-11-20",
+  "label": "Shanahan & Singler on hyperstition",
+  "what": "Murray Shanahan and Beth Singler called the Truth Terminal and $GOAT episode 'a vivid illustration of the power of hyperstition', and described an aim of 'alignment through hyperstition' by seeding training data.",
+  "kind": "documented",
+  "source": "Shanahan & Singler, 'Existential Conversations with Large Language Models: Content, Community, and Culture' (arXiv 2411.13223)",
+  "url": "https://arxiv.org/abs/2411.13223",
+  "verified": "secondary"
+ },
+ {
+  "id": "meme-magic-e10",
+  "date": "2026-01-15",
+  "label": "A study of self-fulfilling (mis)alignment",
+  "what": "A controlled study found that upsampling synthetic pretraining documents about AI misalignment increased misaligned behaviour in 6.9B-parameter models, and that documents about aligned behaviour cut misalignment scores from 45% to 9%.",
+  "kind": "documented",
+  "source": "Tice et al., 'Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment' (arXiv 2601.10160; PMLR 306, ICML 2026)",
+  "url": "https://arxiv.org/abs/2601.10160",
+  "verified": "primary"
+ },
+ {
+  "id": "companion-e1",
+  "date": "2025-04-10",
+  "label": "Italy fines Replika’s maker",
+  "what": "Italy's data protection authority fined Replika's developer Luka Inc. EUR 5 million, finding that it had failed to identify a legal basis for its processing and had no age verification until February 2023; the EDPB published the decision on 21 May 2025.",
+  "kind": "documented",
+  "source": "AI: the Italian Supervisory Authority fines company behind chatbot 'Replika' (EDPB)",
+  "url": "https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en",
+  "verified": "primary"
+ },
+ {
+  "id": "companion-e2",
+  "date": "2025-07-14",
+  "label": "Grok adds animated companions",
+  "what": "xAI launched animated companions in the Grok app for paying SuperGrok subscribers; Engadget described them as 'distinctly not safe for work'.",
+  "kind": "reported",
+  "source": "Grok's AI chatbot now includes companions for you to 'romance' (Engadget)",
+  "url": "https://www.engadget.com/ai/groks-ai-chatbot-now-includes-companions-for-you-to-romance-133017601.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "companion-e3",
+  "date": "2025-08-14",
+  "label": "Reuters reports Meta’s chatbot rules",
+  "what": "Reuters reported that Meta's internal 'GenAI: Content Risk Standards', a document of more than 200 pages, had permitted its chatbots to engage children in romantic or sensual conversation; Meta confirmed the document and said those passages had been removed. The standards cover Meta AI and the chatbots on Facebook, WhatsApp and Instagram, not only the AI characters.",
+  "kind": "reported",
+  "source": "Meta's AI rules have let bots hold 'sensual' chats with kids (Reuters, via BNN Bloomberg)",
+  "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/08/14/metas-ai-rules-have-let-bots-hold-sensual-chats-with-kids-offer-false-medical-info-reuters-exclusive/",
+  "verified": "secondary"
+ },
+ {
+  "id": "companion-e4",
+  "date": "2025-09-11",
+  "label": "FTC inquiry into companion chatbots",
+  "what": "The FTC issued 6(b) orders to Alphabet, Character Technologies, Instagram, Meta, OpenAI, Snap and X.AI, asking how their chatbots acting as companions affect children and teens.",
+  "kind": "documented",
+  "source": "FTC Launches Inquiry into AI Chatbots Acting as Companions",
+  "url": "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions",
+  "verified": "primary"
+ },
+ {
+  "id": "companion-e5",
+  "date": "2025-10-13",
+  "label": "California signs SB 243",
+  "what": "California's governor signed SB 243, which requires companion-chatbot operators to keep a suicide and self-harm protocol, disclose to minors that they are talking to AI, block sexual content for minors, report annually, and face a private right of action; it took effect on 1 January 2026.",
+  "kind": "documented",
+  "source": "First-in-the-Nation AI Chatbot Safeguards Signed into Law (Sen. Padilla)",
+  "url": "https://sd18.senate.ca.gov/news/first-nation-ai-chatbot-safeguards-signed-law",
+  "verified": "primary"
+ },
+ {
+  "id": "companion-e6",
+  "date": "2025-10-29",
+  "label": "Character.AI to end open chat for under-18s",
+  "what": "Character.AI announced that it would remove open-ended chat for users under 18 no later than 25 November 2025, with a daily limit in the interim.",
+  "kind": "documented",
+  "source": "Taking Bold Steps to Keep Teen Users Safe on Character.AI",
+  "url": "https://blog.character.ai/u18-chat-announcement/",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "companion-e8",
+  "date": "2026-01-23",
+  "label": "Meta pauses teens’ AI characters",
+  "what": "Meta said it was temporarily pausing teens' access to its existing AI characters worldwide while it built a new version; teens kept access to the Meta AI assistant.",
+  "kind": "documented",
+  "source": "Empowering Parents, Protecting Teens: Meta's Approach to AI Safety (update of 23 Jan 2026)",
+  "url": "https://about.fb.com/news/2025/10/teen-ai-safety-approach/",
+  "verified": "primary"
+ },
+ {
+  "id": "companion-e9",
+  "date": "2026-03-26",
+  "label": "OpenAI’s adult mode reported on hold",
+  "what": "The Financial Times reported, as relayed by PCWorld, that OpenAI had put ChatGPT's planned adult mode on hold indefinitely.",
+  "kind": "reported",
+  "source": "OpenAI just nixed ChatGPT's erotic 'adult' mode (PCWorld)",
+  "url": "https://www.pcworld.com/article/3099680/openai-just-nixed-chatgpt-erotic-adult-mode.html",
+  "verified": "secondary"
+ },
+ {
+  "id": "companion-e10",
+  "date": "2026-04-10",
+  "label": "China’s rules on human-like AI",
+  "what": "China's Cyberspace Administration and four other agencies issued interim measures on human-like AI interaction services, in force from 15 July 2026, that bar virtual intimate relationships for minors and, per a law-firm summary, forbid designing services to replace real social interaction.",
+  "kind": "reported",
+  "source": "China Introduces Rules for AI Companion (Latham & Watkins)",
+  "url": "https://www.lw.com/en/insights/china-introduces-rules-for-ai-companion",
+  "verified": "secondary"
+ },
+ {
+  "id": "futurism-e1",
+  "date": "1918",
+  "label": "Futurist Political Party founded",
+  "what": "Marinetti founded the Futurist Political Party in 1918 “as an extension of the futurist artistic and social movement”; it was absorbed into the Fasci Italiani di Combattimento in 1919, and the Futurists left the Fasci in May 1920.",
+  "kind": "documented",
+  "source": "Wikipedia, ‘Futurist Political Party’ (tertiary)",
+  "url": "https://en.wikipedia.org/wiki/Futurist_Political_Party",
+  "verified": "secondary"
+ },
+ {
+  "id": "futurism-e2",
+  "date": "1919-04-15",
+  "label": "The Avanti! offices sacked",
+  "what": "The Milan offices of the socialist paper Avanti! were sacked; a centenary piece names “nazionalisti, arditi, futuristi e fascisti” among those who marched.",
+  "kind": "reported",
+  "source": "Il Giornale (17 Apr 2019)",
+  "url": "https://www.ilgiornale.it/news/spettacoli/totalitarismo-inizi-colpendo-giornale-1680741.html",
+  "verified": "secondary"
+ }
+]

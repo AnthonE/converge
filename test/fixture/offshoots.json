@@ -1,0 +1,61 @@
+[
+ {
+  "id": "offshoot-0",
+  "label": "\u201cSample Offshoot 0\u201d",
+  "status": "Cases pending (fixture)",
+  "note": "Synthetic.",
+  "why_not": "No program it states.",
+  "cautions": [
+   "Synthetic fixture."
+  ],
+  "record": [
+   {
+    "date": "2024-05",
+    "what": "A synthetic charge.",
+    "kind": "alleged",
+    "status": "pending",
+    "source": "Sample Outlet",
+    "url": "https://example.org/record",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "offshoot-1",
+  "label": "\u201cSample Offshoot 1\u201d",
+  "status": "Cases pending (fixture)",
+  "note": "Synthetic.",
+  "why_not": "No program it states.",
+  "cautions": [
+   "Synthetic fixture."
+  ],
+  "record": [
+   {
+    "date": "2024-05",
+    "what": "A synthetic charge.",
+    "kind": "alleged",
+    "status": "pending",
+    "source": "Sample Outlet",
+    "url": "https://example.org/record",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "offshoot-2",
+  "label": "Sample Offshoot From A Forum",
+  "status": "Historical (fixture)",
+  "why_not": "No program it states.",
+  "record": [
+   {
+    "date": "2020",
+    "what": "A synthetic historical record.",
+    "kind": "documented",
+    "status": "historical",
+    "source": "Sample Archive",
+    "url": "https://example.org/archive",
+    "verified": "secondary"
+   }
+  ]
+ }
+]

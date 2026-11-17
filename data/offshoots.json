@@ -1,0 +1,91 @@
+[
+ {
+  "id": "zizians",
+  "label": "“Zizians” (a press name)",
+  "status": "Charged in CA, PA, MD and VT; no trial outcome found in the sources read. One 2026 misdemeanour plea is decided.",
+  "note": "A small network that coverage places in the rationalist milieu. Asterisk (Aug 2025) lists it among “rationalist-adjacent groups”. The Press Democrat (Apr 2026) calls it “a group that was later linked to six killings across the country”; no court has decided any of them.",
+  "why_not": "No program stated by the group was found in any source read; the aims reported in coverage rest on Wired, which could not be checked. The violent matters are charged, not decided, and the DOJ release on the Vermont case names no group.",
+  "cautions": [
+   "The name is the press’s. AP (PBS NewsHour, 24 Jun 2026) reports that in court filings the alleged leader’s attorneys said she “eschews the term Zizian” and denies that she and her friends “have formed a cult”. The words are AP’s.",
+   "The line to LessWrong says where the group came out of, not that the community caused anything. LessWrong stands in for the rationalist community, which has no carrier here. Responses from that milieu are on the record: a MIRI co-founder, declining to read a defendant’s letter, told the SF Chronicle “Audience should not be a reward for crime” (SFist, 11 Feb 2025), and a LessWrong thread opened after the January 2025 killings asked readers to keep themselves safe first.",
+   "It is drawn under no ideal. The community it came out of has no carrier on the map, and no checked record ties the group to any ideal. It is listed on the overview.",
+   "Every violent matter in the sources read is charged or pending (the latest read is VTDigger, 29 Sep 2026). No verdict ties any death to the group: the count of six is coverage’s, and the Justice Department’s release on the Vermont case names no group. The 2026 misdemeanour plea is the only conviction the research found.",
+   "The AI link in coverage is the press’s frame and writings quoted by Wired, which could not be checked. The map draws no line from the group to any AI ideal.",
+   "Not found in the sources read: the outcome of the Maryland state trial set for June 2026, and of the 2019 matter for the other three protesters. A Vermont status hearing is set for 23 Nov 2026."
+  ],
+  "record": [
+   {
+    "date": "2019-11",
+    "what": "Four people in robes and masks, the alleged leader among them, held a standoff at a CFAR event; about 50 people, 18 of them children, were evacuated. Of the four, one was later shot dead by the landlord in the 2022 Vallejo attack and one was charged over it.",
+    "kind": "reported",
+    "source": "The Press Democrat, 23 Apr 2026",
+    "url": "https://www.pressdemocrat.com/2026/04/23/sonoma-county-woman-sentenced-for-2019-standoff-zizians/",
+    "verified": "secondary",
+    "status": "unknown"
+   },
+   {
+    "date": "2026-04-17",
+    "what": "One of the four 2019 protesters pleaded no contest to four misdemeanours (criminal conspiracy, obstructing police, trespassing, wearing a mask for an unlawful purpose) and was sentenced to 150 days in jail.",
+    "kind": "reported",
+    "source": "The Press Democrat, 23 Apr 2026",
+    "url": "https://www.pressdemocrat.com/2026/04/23/sonoma-county-woman-sentenced-for-2019-standoff-zizians/",
+    "verified": "secondary",
+    "status": "decided"
+   },
+   {
+    "date": "2025-01-17",
+    "what": "The landlord from the 2022 Vallejo attack was killed. A suspect was arrested shortly afterwards and is accused of the killing. The source reports no plea and no hearing dates.",
+    "kind": "reported",
+    "source": "SFist, 11 Feb 2025",
+    "url": "https://sfist.com/2025/02/11/suspect-in-vallejo-murder-distances-himself-from-zizian-cult-suggests-he-is-primarily-motivated-by-veganism",
+    "verified": "secondary",
+    "status": "pending"
+   },
+   {
+    "date": "2025-08-14",
+    "what": "A Vermont federal grand jury indicted one defendant on four counts: murder of a US Border Patrol agent after a 20 Jan 2025 traffic stop in Coventry, assault of two other agents, and firearms offences. The government will seek death. The release names no group.",
+    "kind": "documented",
+    "source": "US Department of Justice press release, 14 Aug 2025",
+    "url": "https://www.justice.gov/opa/pr/seattle-woman-indicted-murder-us-border-patrol-agent-vermont",
+    "verified": "secondary",
+    "status": "pending"
+   },
+   {
+    "date": "2026-09-29",
+    "what": "In the Vermont federal capital case, the judge said discovery would not be left unsupervised and set regular status hearings, the next on 23 November 2026. No trial date is reported.",
+    "kind": "reported",
+    "source": "VTDigger, 29 Sep 2026",
+    "url": "https://vtdigger.org/2026/09/29/if-you-cant-do-it-ill-do-it-judge-seeks-to-settle-disputes-in-case-of-fatal-shooting-of-border-agent/",
+    "verified": "secondary",
+    "status": "pending"
+   },
+   {
+    "date": "2025-02-16",
+    "what": "Three people, the alleged leader among them, were arrested in Allegany County, Maryland, in Feb 2025 on state charges of trespassing, gun violations, LSD possession and hindering police. The trial was delayed to June 2026 (AP, Feb 2026); no outcome was found.",
+    "kind": "reported",
+    "source": "AP on WHYY, 14 Feb 2026",
+    "url": "https://whyy.org/articles/border-agent-killing-zizian-criminal-charges-california-pennsylvania-vermont",
+    "verified": "secondary",
+    "status": "unknown"
+   },
+   {
+    "date": "2025-06",
+    "what": "A federal grand jury in Maryland indicted the alleged leader on a charge of being a fugitive from justice in possession of firearms and ammunition.",
+    "kind": "reported",
+    "source": "VTDigger, 20 Jun 2025",
+    "url": "https://vtdigger.org/2025/06/20/federal-authorities-bring-firearms-charge-against-alleged-leader-of-zizians/",
+    "verified": "secondary",
+    "status": "pending"
+   },
+   {
+    "date": "2026-06-24",
+    "what": "A Pennsylvania district attorney charged a member, jailed in Maryland since February 2025, with murder, burglary and conspiracy in the deaths of her parents, and said she did not act alone.",
+    "kind": "reported",
+    "source": "AP on PBS NewsHour, 24 Jun 2026",
+    "url": "https://www.pbs.org/newshour/nation/a-member-of-the-cultlike-zizians-group-is-charged-in-the-killings-of-her-parents-in-pennsylvania",
+    "verified": "secondary",
+    "status": "pending"
+   }
+  ]
+ }
+]

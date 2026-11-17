@@ -1,0 +1,70 @@
+[
+ {
+  "id": "mechanism-0",
+  "label": "Sample mechanism 0",
+  "definition": "A synthetic definition.",
+  "scholarship": [
+   {
+    "author": "Sample Author",
+    "title": "Sample Study",
+    "year": "2020",
+    "url": "https://example.org/study",
+    "claim": "Synthetic.",
+    "verified": "secondary"
+   }
+  ],
+  "pushback": [
+   {
+    "sentence": "A sample record against the mechanism.",
+    "source": "Sample Ruling",
+    "url": "https://example.org/ruling",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "mechanism-1",
+  "label": "Sample mechanism 1",
+  "definition": "A synthetic definition.",
+  "scholarship": [
+   {
+    "author": "Sample Author",
+    "title": "Sample Study",
+    "year": "2020",
+    "url": "https://example.org/study",
+    "claim": "Synthetic.",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "mechanism-2",
+  "label": "Sample mechanism 2",
+  "definition": "A synthetic definition.",
+  "scholarship": [
+   {
+    "author": "Sample Author",
+    "title": "Sample Study",
+    "year": "2020",
+    "url": "https://example.org/study",
+    "claim": "Synthetic.",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "mechanism-3",
+  "label": "Sample mechanism 3",
+  "definition": "A synthetic definition.",
+  "scholarship": [
+   {
+    "author": "Sample Author",
+    "title": "Sample Study",
+    "year": "2020",
+    "url": "https://example.org/study",
+    "claim": "Synthetic.",
+    "verified": "secondary"
+   }
+  ]
+ }
+]

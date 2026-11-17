@@ -1,0 +1,201 @@
+/* Ideals Map. Colours are roles; light and dark values swap here only.
+   Categorical hues are the first three slots of the validated palette (blue, orange, aqua),
+   which pass the all-pairs colour-vision checks in both modes. Carriers and texts are neutral
+   and are told apart by shape. */
+.viz-root {
+  color-scheme: light;
+  --plane: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --hair: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.10);
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --carrier: #d9d8d0;
+  --wash: rgba(11, 11, 11, 0.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --plane: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --hair: #2c2c2a; --axis: #383835; --border: rgba(255, 255, 255, 0.10);
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+    --carrier: #4a4a46; --wash: rgba(255, 255, 255, 0.06);
+  }
+}
+:root[data-theme="dark"] .viz-root {
+  color-scheme: dark;
+  --plane: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --hair: #2c2c2a; --axis: #383835; --border: rgba(255, 255, 255, 0.10);
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+  --carrier: #4a4a46; --wash: rgba(255, 255, 255, 0.06);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: #f9f9f7; }
+.viz-root {
+  min-height: 100vh; background: var(--plane); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; padding: 16px;
+}
+h1 { font-size: 20px; margin: 0; font-weight: 650; }
+h2 { font-size: 19px; margin: 2px 0 8px; line-height: 1.25; }
+h3 { font-size: 13px; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-2); }
+h4 { font-size: 14px; margin: 0; }
+p { margin: 0 0 10px; }
+a { color: inherit; text-underline-offset: 2px; }
+button { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+button:hover { background: var(--wash); }
+:focus-visible { outline: 2px solid var(--series-1); outline-offset: 2px; }
+
+.top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+.sub { color: var(--ink-2); margin: 2px 0 0; }
+.tag { font-size: 11px; font-weight: 500; color: var(--ink-2); border: 1px solid var(--axis); border-radius: 10px; padding: 1px 8px; vertical-align: middle; margin-left: 6px; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.views { display: inline-flex; }
+.views[hidden] { display: none; }
+.views button { border-radius: 0; }
+.views button:first-child { border-radius: 6px 0 0 6px; }
+.views button:last-child, .views button.last-visible { border-radius: 0 6px 6px 0; margin-left: -1px; }
+.views button[hidden] { display: none; }
+.views button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+
+.legend { list-style: none; margin: 12px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--ink-2); font-size: 13px; }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.legend li[hidden] { display: none; }
+/* In the ancients view the kind of line is the point, so even the quiet lines must be told apart. */
+.stage[data-view='ancients'] .edge-faint { stroke: var(--muted); }
+.legend[hidden] { display: none; }
+
+.layout[hidden], .watch[hidden] { display: none; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 14px; align-items: start; }
+.stage { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+#map { display: block; width: 100%; height: auto; }
+.more { position: absolute; left: 12px; bottom: 6px; margin: 0; font-size: 12px; color: var(--ink-2); }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; max-height: calc(100vh - 150px); overflow: auto; position: sticky; top: 12px; }
+
+/* Marks */
+.ring { fill: var(--surface); }
+.mark-ideal { fill: var(--series-1); }
+.mark-carrier { fill: var(--carrier); stroke: var(--ink-2); stroke-width: 1.5; }
+.mark-vehicle { fill: var(--series-3); }
+.mark-fruit { fill: var(--series-2); }
+.mark-text { fill: var(--surface); stroke: var(--ink-2); stroke-width: 1.5; }
+/* The money view's three kinds are neutral and told apart by shape, like carriers. */
+.mark-funder, .mark-evaluator, .mark-lab { fill: var(--carrier); stroke: var(--ink-2); stroke-width: 1.5; stroke-linejoin: round; }
+.mark-lab-core { fill: var(--ink-2); }
+/* The ancients view and offshoots: neutral fills, told apart by shape. An offshoot is drawn
+   in heavy dashed ink so it comes forward without a warning colour. */
+.mark-pattern { fill: var(--surface); stroke: var(--ink); stroke-width: 1.6; stroke-linejoin: round; }
+.mark-pattern-core { fill: var(--ink); }
+.mark-mechanism { fill: var(--carrier); stroke: var(--ink-2); stroke-width: 1.5; }
+.mark-offshoot { fill: var(--surface); stroke: var(--ink); stroke-width: 2.6; stroke-dasharray: 5 3; }
+.mark-offshoot-cross { stroke: var(--ink); stroke-width: 2; fill: none; }
+.hit { fill: transparent; }
+.node { cursor: pointer; }
+.node:hover .mark, .node:focus-visible .mark { stroke: var(--ink); stroke-width: 2.5; }
+.node:focus:not(:focus-visible) { outline: none; }
+.node.is-selected .mark { stroke: var(--ink); stroke-width: 3; }
+.role-rim .mark-ideal { opacity: 0.85; }
+
+/* Labels wear text tokens, never a series colour. */
+.lbl { fill: var(--ink); font-size: 15px; pointer-events: none; paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
+.lbl-ideal { font-size: 17px; font-weight: 600; }
+.lbl-centre { font-size: 20px; font-weight: 650; }
+.lbl-small { font-size: 15px; fill: var(--ink-2); }
+.lbl-muted { font-size: 14px; fill: var(--ink-2); }
+.lbl-offshoot { font-size: 14px; fill: var(--ink); font-weight: 600; }
+.lbl-text { font-size: 14.5px; fill: var(--ink); }
+
+.pip { fill: none; stroke: var(--ink); stroke-width: 1.2; }
+.pip-met { fill: var(--ink); }
+.pip-half { fill: var(--ink); }
+.pip-unknown { stroke: var(--muted); stroke-dasharray: 2 2; }
+
+.edge { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.edge-opposes { stroke-dasharray: 7 5; }
+.edge-evaluates { stroke-dasharray: 9 4 2 4; }
+.edge-reads_as { stroke-dasharray: 2 4; }
+.edge-uses { stroke-dasharray: 10 4; }
+.edge-breaks_from { stroke: var(--ink-2); stroke-width: 1.8; stroke-dasharray: 5 3; }
+.fieldkey { margin: 0; font-size: 14px; }
+.fieldkey dt { font-weight: 600; margin-top: 6px; }
+.fieldkey dd { margin: 0 0 0 0; color: var(--ink-2); }
+.source { margin-bottom: 10px; }
+.edge-hosts { stroke-dasharray: 14 6; }
+.edge-lens { stroke-dasharray: 2 4; stroke: var(--ink-2); stroke-width: 1.4; fill: none; }
+.edge-faint { stroke: var(--hair); }
+.edge-quiet { opacity: 0; }
+.edge.is-near { stroke: var(--ink-2); stroke-width: 1.8; opacity: 1; }
+.edge.is-selected { stroke: var(--ink); stroke-width: 2.4; opacity: 1; }
+.cap { fill: var(--ink-2); font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+.pipicon { vertical-align: -1px; }
+.edge-hit { fill: none; stroke: transparent; stroke-width: 16; cursor: pointer; }
+.edge-hit:hover { stroke: var(--wash); }
+
+.tip { position: absolute; max-width: 300px; background: var(--ink); color: var(--surface); font-size: 12.5px; line-height: 1.35; padding: 6px 9px; border-radius: 6px; pointer-events: none; z-index: 2; }
+
+/* Panel */
+.kicker { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); margin: 0; }
+.statement { font-size: 16px; font-weight: 550; }
+.note { color: var(--ink-2); font-size: 13px; }
+.sec { border-top: 1px solid var(--hair); padding-top: 12px; margin-top: 14px; }
+.phase { margin-bottom: 10px; }
+.phase .note { margin: 0 0 4px; }
+.conds, .links { list-style: none; margin: 0; padding: 0; }
+.cond { padding-left: 22px; position: relative; margin-bottom: 4px; font-size: 14px; }
+.cond .glyph { position: absolute; left: 0; top: 0; }
+.cond-unknown, .cond-not_met { color: var(--ink-2); }
+.evidence { color: var(--ink-2); font-size: 13px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+blockquote { margin: 0 0 4px; padding-left: 10px; border-left: 3px solid var(--axis); }
+.cite { font-size: 12.5px; color: var(--ink-2); }
+.badge { display: inline-block; font-size: 11px; border: 1px solid var(--axis); border-radius: 9px; padding: 0 7px; white-space: nowrap; }
+.badge-primary { border-color: var(--ink); color: var(--ink); }
+.badge-unverified { border-style: dashed; }
+.lane { font-size: 11px; border: 1px dashed var(--ink-2); border-radius: 9px; padding: 0 7px; margin-left: 6px; color: var(--ink-2); }
+.links li { margin-bottom: 4px; }
+.linkbtn { text-align: left; border: 0; background: none; padding: 2px 0; text-decoration: underline; text-decoration-color: var(--axis); text-underline-offset: 3px; }
+.back { margin-bottom: 10px; }
+.flow, .dispute, .happened { margin-bottom: 9px; font-size: 14px; }
+.flow .linkbtn { font-weight: 600; }
+.loop { border: 1px solid var(--axis); border-left: 3px solid var(--ink); border-radius: 6px; padding: 8px 10px; font-size: 13.5px; }
+.more-btn { font-size: 13.5px; }
+
+/* List view */
+.listview { margin-top: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; }
+.listview summary { cursor: pointer; font-weight: 600; }
+.tbl { margin-top: 14px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; vertical-align: top; padding: 5px 8px; border-bottom: 1px solid var(--hair); }
+th { color: var(--ink-2); font-weight: 600; }
+.foot { color: var(--ink-2); font-size: 12.5px; margin-top: 14px; max-width: 900px; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .panel { position: static; max-height: none; }
+  .stage { overflow-x: auto; }
+  #map { min-width: 760px; }
+}
+@media (forced-colors: active) {
+  .mark-ideal, .mark-vehicle, .mark-fruit { stroke: CanvasText; stroke-width: 2; }
+}
+
+/* The Watch: a timeline of claims, not a drawing. */
+.watch { max-width: 860px; margin: 8px 0 24px; }
+.watch-intro h2 { margin: 0 0 6px; }
+.claim { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); padding: 14px 16px; margin: 12px 0; }
+.claim:focus { outline: 2px solid var(--ink); outline-offset: 2px; }
+.claim-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: var(--ink-2); }
+.claim > h3 { margin: 6px 0; font-size: 17px; }
+.claim-said q { font-style: italic; }
+.claim-status { border: 1px solid var(--ink-2); border-radius: 10px; padding: 0 8px; }
+.status-not-checked, .status-source-not-found { border-style: dashed; }
+.claim .check { margin: 4px 0; }
+.claim-on { font-size: 14px; color: var(--ink-2); }
+.claim > h3 { text-transform: none; letter-spacing: normal; color: var(--ink); }
+.claim-standing { font-size: 14px; color: var(--ink-2); margin: 2px 0 8px; }

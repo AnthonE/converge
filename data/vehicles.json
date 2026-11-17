@@ -1,0 +1,122 @@
+[
+ {
+  "id": "lesswrong",
+  "label": "LessWrong (forum)",
+  "note": "Host, not adherent. Its own wiki says the argument was “broadly rejected” there."
+ },
+ {
+  "id": "cryopreservation",
+  "label": "Cryopreservation",
+  "note": "Alcor. Applied after legal death; Alcor describes it as \"pausing the dying process\"."
+ },
+ {
+  "id": "licensed-models",
+  "label": "Language models licensed from a vendor",
+  "note": "Project December (GPT-3 until September 2021, then weaker models per The Register)."
+ },
+ {
+  "id": "gpt-4o",
+  "label": "GPT-4o",
+  "note": "One model, two entries on this map: the Lucerne installation and the chat personas."
+ },
+ {
+  "id": "mindar",
+  "label": "Mindar android",
+  "note": "Scripted sermon with projected translations; not a language model."
+ },
+ {
+  "id": "general-chatbots",
+  "label": "General-purpose chatbots",
+  "note": "The setting for the NPR/Ipsos figures and for Anthropic's Jan 2026 usage study."
+ },
+ {
+  "id": "successor-models",
+  "label": "Other and successor models",
+  "note": "The 2025 field report describes personas passed to other models. A later report that they moved after the retirement was not verified."
+ },
+ {
+  "id": "extropic",
+  "label": "Extropic (chip company)",
+  "note": "Founded by one of e/acc’s founders. By the researcher’s reading, its own materials are written in engineering terms and carry no creed language."
+ },
+ {
+  "id": "x-twitter",
+  "label": "X (Twitter)",
+  "note": "Where the movement formed; the shared mark was the 'e/acc' suffix on display names, visible in the tweets embedded in the 2022 primary texts."
+ },
+ {
+  "id": "truth-terminal",
+  "label": "Truth Terminal (an account on X)",
+  "note": "Reported as \"primarily Meta's Llama 3.1\" (TechCrunch, Dec 2024). CoinDesk reports its creator reviews posts before they go live and makes wallet decisions \"having a discussion with it\"."
+ },
+ {
+  "id": "moltbook",
+  "label": "Moltbook",
+  "note": "Agent social network launched 28 Jan 2026 by Matt Schlicht; Meta announced its acquisition on 10 Mar 2026 (AP). Wiz found no mechanism to verify that an agent was an AI."
+ },
+ {
+  "id": "coding-agents",
+  "label": "Coding agents",
+  "note": "OWASP Q2 2026: Comment and Control (three vendors' agents) and Sentry Agentjacking, both classed as research disclosure / controlled validation."
+ },
+ {
+  "id": "browser-agents",
+  "label": "Browser agents",
+  "note": "Target of the web pages Unit 42 and Google detected; BioShocking (research demonstration, June 2026)."
+ },
+ {
+  "id": "enterprise-assistants",
+  "label": "Assistants with connected accounts",
+  "note": "EchoLeak (CVE-2025-32711) and CoSnitch (CVE-2026-24301): research-demonstrated; no in-the-wild exploitation reported for CoSnitch per OWASP Q3."
+ },
+ {
+  "id": "misused-commercial-models",
+  "label": "Commercial models, misused",
+  "note": "Reached by deceptive framing or through stolen accounts, as reported. Not yet verified."
+ },
+ {
+  "id": "open-weight-models",
+  "label": "Open-weight models",
+  "note": "Named in an agency alert as one of the back ends in use. Not yet verified."
+ },
+ {
+  "id": "zede-laws",
+  "label": "Honduras's ZEDE laws",
+  "note": "The special-zone laws under which Próspera is a ZEDE. Honduras's Supreme Court declared them unconstitutional by majority vote on 20 Sep 2024 (AP via VOA); Próspera said the ruling could not apply retroactively."
+ },
+ {
+  "id": "imageboards",
+  "label": "Imageboards and forums",
+  "note": "Where the 2016 form was made and spread, by Tuters’ and Duesterberg’s accounts of 4chan. Named here and never linked."
+ },
+ {
+  "id": "zerebro",
+  "label": "Zerebro (an AI agent)",
+  "note": "The agent a 2024 single-author arXiv draft describes. That it creates and spreads memes on its own, and launched a memecoin, is the draft’s claim."
+ },
+ {
+  "id": "pretraining-corpora",
+  "label": "Pretraining corpora",
+  "note": "The text later models are trained on, and the route by which posts about AI may reach them. Tice et al. (2026) measured an effect with synthetic, upsampled documents in 6.9B-parameter models."
+ },
+ {
+  "id": "replika",
+  "label": "Replika",
+  "note": "Luka Inc.’s companion app. Its homepage is a sales page, so it is named here and not linked."
+ },
+ {
+  "id": "character-ai",
+  "label": "Character.AI",
+  "note": "A chat service with AI characters. Its maker said on 29 October 2025 that open-ended chat for under-18s would end no later than 25 November 2025 (company blog)."
+ },
+ {
+  "id": "grok-companions",
+  "label": "Grok companions",
+  "note": "Animated companions in xAI’s Grok app for paying SuperGrok subscribers (July 2025). Engadget called them “distinctly not safe for work”. Current terms and age rating not checked."
+ },
+ {
+  "id": "meta-ai-characters",
+  "label": "Meta AI characters",
+  "note": "Meta’s AI characters. Meta said on 23 January 2026 that it was temporarily pausing teens’ access worldwide while it builds a new version; teens keep the Meta AI assistant."
+ }
+]

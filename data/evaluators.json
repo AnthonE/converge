@@ -1,0 +1,276 @@
+[
+ {
+  "id": "metr",
+  "label": "METR",
+  "note": "Its about page says “METR has not accepted funding from AI companies, though we make use of significant free tokens”, and that companies have also provided access. METR says that in the six months to 14 August 2026 it raised commitments of around $71 million; the donors of those commitments are not itemised.",
+  "policy": {
+   "speaker": "METR",
+   "quote": "to date we have chosen not to accept payment or donations from frontier AI companies",
+   "source": "METR: Our approach to working with AI companies",
+   "url": "https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/",
+   "date": "2026-10-14",
+   "verified": "primary"
+  },
+  "words": [
+   {
+    "speaker": "METR",
+    "quote": "We remain dependent on the companies we work with to voluntarily engage, provide access, and permit us to publish.",
+    "source": "METR: Our approach to working with AI companies",
+    "url": "https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/",
+    "date": "2026-10-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "METR",
+    "quote": "frontier AI companies currently provide a significant amount of free tokens for our evaluations",
+    "source": "Funding update (METR blog)",
+    "url": "https://metr.org/blog/2026-08-14-funding-update/",
+    "date": "2026-08-14",
+    "verified": "primary"
+   }
+  ],
+  "disputes": [
+   {
+    "date": "2026-09-17",
+    "what": "A Washington Examiner review, relayed by Colorado Politics on 17 September 2026, said METR is “connected to Moskovitz, Tallinn”, both early Anthropic investors, and that Dustin Moskovitz donated in 2022 to the Alignment Research Center, “a precursor to METR”.",
+    "response": "METR’s president Chris Painter said: “We do not accept donations by frontier AI companies or their employees”. The article also reports that the 2022 donation was restricted from benefiting METR directly, and that Anthropic did not respond.",
+    "kind": "reported",
+    "source": "Washington Examiner review, as relayed by Colorado Politics, 17 September 2026",
+    "url": "https://www.coloradopolitics.com/2026/09/17/anthropic-allies-are-behind-independent-groups-ringing-alarm-bells-about-ai/",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "apollo-research",
+  "label": "Apollo Research",
+  "note": "Apollo Research announced on 20 January 2026 that it is spinning off from its fiscal sponsor into a public benefit corporation and has raised a seed round for its product work. It is a governing member of the AI Evaluator Forum. Apollo Research's first-year review (29 May 2024) counts 'two commercial contracts' among its operational highlights. The checked record does not say with whom.",
+  "policy": {
+   "speaker": "Apollo Research",
+   "quote": "we generally request that the parties for whom we conduct work compensate us at a fair market value for the work",
+   "source": "Apollo Research: Our Norms on Security, Science Communication and Conflicts of Interest",
+   "url": "https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication",
+   "date": "2025-11-26",
+   "verified": "primary"
+  },
+  "words": [
+   {
+    "speaker": "Apollo Research",
+    "quote": "We do not accept work where compensation is contingent upon the outcome of our work.",
+    "source": "Apollo Research: Our Norms on Security, Science Communication and Conflicts of Interest",
+    "url": "https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication",
+    "date": "2025-11-26",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "redwood-research",
+  "label": "Redwood Research",
+  "note": "Redwood Research's home page says it collaborates with governments and advises AI companies including Google DeepMind and Anthropic, and describes a collaboration with Anthropic on alignment faking.",
+  "words": [
+   {
+    "speaker": "Redwood Research",
+    "quote": "We collaborate with governments and advise AI companies including Google DeepMind and Anthropic",
+    "source": "Redwood Research: home page",
+    "url": "https://www.redwoodresearch.org/",
+    "date": "2026",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "palisade-research",
+  "label": "Palisade Research",
+  "note": "Palisade Research's 2026 fundraiser post (18 December 2025) says SFF matching grants will double every donation up to $1,133,000. The same post says Palisade helped RAND build biosecurity evaluations.",
+  "disputes": [
+   {
+    "date": "2025-07-14",
+    "what": "14 July 2025: two Google DeepMind interpretability researchers wrote that shutdown resistance in Palisade Research's test environment comes mainly from ambiguous instructions and 'vanishes' when the prompt states that complying with shutdown takes priority.",
+    "response": "Palisade's research page reports follow-up experiments with clarified prompts, in which it says resistance was reduced but continued in some OpenAI models, and a longer paper published in TMLR in January 2026.",
+    "kind": "documented",
+    "source": "Alignment Forum: Self-preservation or Instruction Ambiguity? Examining the Causes of Shutdown Resistance",
+    "url": "https://www.alignmentforum.org/posts/wnzkjSmrgWZaBa2aC/self-preservation-or-instruction-ambiguity-examining-the",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "epoch-ai",
+  "label": "Epoch AI",
+  "note": "Epoch AI's transparency page lists general-support grants from Coefficient Giving, more than are drawn here, and its collaborations and consultations with AI companies, without amounts. One is a 2024 'Small pilot for new benchmark' with Anthropic.",
+  "policy": {
+   "speaker": "Epoch AI",
+   "quote": "We are committed to disclosing any research sponsorship and data access agreements with industry.",
+   "source": "Epoch AI: Transparency",
+   "url": "https://epoch.ai/about/transparency",
+   "date": "2026",
+   "verified": "primary"
+  },
+  "words": [
+   {
+    "speaker": "Epoch AI",
+    "quote": "we recognize we have not communicated clearly enough about the relationship between FrontierMath and OpenAI",
+    "source": "Epoch AI: Clarifying the creation and use of the FrontierMath benchmark",
+    "url": "https://epoch.ai/blog/openai-and-frontiermath",
+    "date": "2025-01-23",
+    "verified": "primary"
+   }
+  ],
+  "disputes": [
+   {
+    "date": "2025-01",
+    "what": "January 2025: FrontierMath contributors complained that Epoch AI had not told them OpenAI commissioned the benchmark and could see most problems and solutions. The complaints were read only as Epoch's own post acknowledges them, not at their source.",
+    "response": "Epoch's post of 23 January 2025 confirmed that OpenAI commissioned and owns 300 problems with access to all but a holdout set, said disclosure had needed OpenAI's permission, said its communication should have been 'more systematic and transparent', and committed to disclose sponsorship and data access from the outset.",
+    "kind": "documented",
+    "source": "Epoch AI: Clarifying the creation and use of the FrontierMath benchmark",
+    "url": "https://epoch.ai/blog/openai-and-frontiermath",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "transluce",
+  "label": "Transluce",
+  "note": "Transluce describes itself as a 501(c)(3) nonprofit. For fiscal 2025 it reports 6% of revenue from the personal holdings of OpenAI employees and 32% from Anthropic employees, as unrestricted donations, and none directly from AI developers as organizations. The AI Evaluator Forum, of which Transluce is a governing member, lists Transluce's August 2026 mental-health evaluation of 77 model variants with the AEF-1 checklist. Transluce's policy, as updated 3 November 2026, says it has carried out no paid evaluations. The policy line quoted here opens a sentence that goes on to state limits; the rest of that sentence is not recorded here word for word.",
+  "policy": {
+   "speaker": "Transluce",
+   "quote": "Transluce may accept funding from AI developers or developer employees",
+   "source": "Transluce: Independence and Transparency Policy (opening words of a longer sentence)",
+   "url": "https://transluce.org/independence-and-transparency-policy",
+   "date": "2026-11-03",
+   "verified": "primary"
+  }
+ },
+ {
+  "id": "uk-aisi",
+  "label": "UK AI Security Institute",
+  "note": "UK government body that tests frontier AI models; its own site names it the AI Security Institute. Its undated About page reports '£66m in funding per financial year'. Some of its evaluations are published jointly with the US center.",
+  "policy": {
+   "speaker": "UK AI Security Institute",
+   "quote": "close collaborations with AI companies that give us privileged access to their development approaches",
+   "source": "About | AI Security Institute (aisi.gov.uk)",
+   "url": "https://www.aisi.gov.uk/about",
+   "verified": "primary"
+  },
+  "disputes": [
+   {
+    "date": "2026-09-09",
+    "what": "ITPro, citing the Financial Times, reported on 9 September 2026 that Anthropic declined to submit Claude Mythos 5.1 to the UK AI Security Institute for testing while granting access to similar US organisations.",
+    "response": "Anthropic had not replied to ITPro at publication. A Cabinet Office spokesperson said the institute 'continues to collaborate closely with industry partners, including Anthropic'. Reuters reported on 12 October 2026 that the institute said Anthropic had made clear no organisation outside the US had access to the model.",
+    "kind": "reported",
+    "source": "Anthropic reportedly withholds access to Mythos 5.1 from UK safety testing body (ITPro)",
+    "url": "https://www.itpro.com/technology/artificial-intelligence/anthropic-reportedly-withholds-access-to-mythos-5-1-from-uk-safety-testing-body",
+    "verified": "secondary"
+   },
+   {
+    "date": "2026-09-25",
+    "what": "The Decoder, citing Politico, reported on 25 September 2026 that the White House Office of the National Cyber Director asked OpenAI and Anthropic to hold new models back from the UK institute until US agencies had reviewed them.",
+    "response": "On 12 October 2026 the UK AI minister said the institute had been given access to the latest models, Reuters reported; Reuters added that ministers never confirmed access had been lost on a wider basis.",
+    "kind": "reported",
+    "source": "White House tells OpenAI and Anthropic to let U.S. review new models before sharing them with British testers (The Decoder, 2026-09-25)",
+    "url": "https://the-decoder.com/white-house-tells-openai-and-anthropic-to-let-u-s-review-new-models-before-sharing-them-with-british-testers/",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "us-caisi",
+  "label": "US Center for AI Standards and Innovation (CAISI)",
+  "note": "US government testing center whose agreements and evaluations NIST publishes: the US AI Safety Institute in NIST's 2024 releases, CAISI in 2025-26. NIST's May 2026 release, as reprinted by HPCwire, says it has completed more than 40 evaluations.",
+  "policy": {
+   "speaker": "NIST, announcing the US AI Safety Institute’s agreements",
+   "quote": "receive access to major new models from each company prior to and following their public release",
+   "source": "U.S. AI Safety Institute Signs Agreements Regarding AI Safety Research, Testing and Evaluation With Anthropic and OpenAI (NIST)",
+   "url": "https://www.nist.gov/news-events/news/2024/08/us-ai-safety-institute-signs-agreements-regarding-ai-safety-research",
+   "date": "2024-08-29",
+   "verified": "primary"
+  },
+  "words": [
+   {
+    "speaker": "Chris Fall, CAISI director",
+    "quote": "Independent, rigorous measurement science is essential to understanding frontier AI",
+    "source": "NIST's CAISI Announces New Frontier AI Testing Agreements with Google DeepMind, Microsoft, xAI (NIST release, HPCwire copy)",
+    "url": "https://www.hpcwire.com/off-the-wire/nists-caisi-announces-new-frontier-ai-testing-agreements-with-google-deepmind-microsoft-xai/",
+    "date": "2026-05-05",
+    "verified": "secondary"
+   }
+  ],
+  "disputes": [
+   {
+    "date": "2026-06-10",
+    "what": "The Wall Street Journal reported, as summarised by the Benton Institute on 10 June 2026, that officials told CAISI to halt publication of its model assessments while an executive order was implemented. On 30 June 2026 Senator Ted Budd asked, in a press release on his Senate site, that its research be published to the extent possible.",
+    "response": "",
+    "kind": "reported",
+    "source": "White House Reins In AI-Testing Unit as National-Security Concerns Grow (Benton Institute summary of the Wall Street Journal)",
+    "url": "https://www.benton.org/headlines/white-house-reins-ai-testing-unit-national-security-concerns-grow",
+    "verified": "secondary"
+   },
+   {
+    "date": "2026-11-08",
+    "what": "TechTimes, relaying an Associated Press report of 8 November 2026 that cites two former officials speaking anonymously, said staff at the US center were recently asked to report informally to a White House office. It reports no response from Commerce or NIST.",
+    "response": "TechTimes carries a White House statement about a Super Intelligence Force; the checker could not tell whether it answers this report.",
+    "kind": "reported",
+    "source": "Federal AI Testing Unit CAISSI: Staff Asked to Report Informally to White House, AP Says (TechTimes, 2026-11-09)",
+    "url": "https://www.techtimes.com/articles/330292/20261109/federal-ai-testing-unit-caissi-staff-asked-report-informally-white-house-ap-says.htm",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "lmarena",
+  "label": "Arena (formerly LMArena)",
+  "note": "Free public model leaderboard, earlier called Chatbot Arena and LMArena. Venture-funded since its May 2025 seed round; since 16 September 2025 it also sells an evaluation product to 'enterprises, model labs, and developers'; the announcement names no customers.",
+  "policy": {
+   "speaker": "Arena (formerly LMArena)",
+   "quote": "evaluated using the same community-driven methodology, with no preferential treatment",
+   "source": "New Product: AI Evaluations (company blog)",
+   "url": "https://arena.ai/blog/ai-evaluations",
+   "date": "2025-09-16",
+   "verified": "secondary"
+  },
+  "words": [
+   {
+    "speaker": "Arena (formerly LMArena)",
+    "quote": "The world needs a neutral third party to measure how safe and aligned AI actually is",
+    "source": "Measuring the AI Frontier for Real-World Alignment: Arena's $200 Million Series B (company blog)",
+    "url": "https://arena.ai/blog/series-b",
+    "date": "2026-10-08",
+    "verified": "secondary"
+   }
+  ],
+  "disputes": [
+   {
+    "date": "2025-04-29",
+    "what": "The paper 'The Leaderboard Illusion' (arXiv, 29 April 2025) said undisclosed private testing on Chatbot Arena benefits a handful of providers, who can test many variants and publish selectively; it cites 27 private variants tested by Meta before the Llama 4 release.",
+    "response": "LMArena replied on 9 May 2025 that its pre-release testing policy had been public since 1 March 2024, that any provider can submit public and private variants, and that the paper made 'several incorrect claims'; it committed to marking retired models and provisional scores.",
+    "kind": "documented",
+    "source": "The Leaderboard Illusion (arXiv 2504.20879)",
+    "url": "https://arxiv.org/abs/2504.20879",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "scale-ai",
+  "label": "Scale AI (public leaderboards)",
+  "note": "Company that publishes model leaderboards as Scale Labs. Its announcement of 12 June 2025 says Meta's investment values it at over $29 billion and that Meta holds a minority of its equity."
+ },
+ {
+  "id": "ai-lab-watch",
+  "label": "AI Lab Watch",
+  "note": "A public scorecard of AI companies' safety practices; it does not test models. Its About page says \"AI Lab Watch is funded by SFF and me\", thanks Lightcone for designing the site, and says \"I stopped maintaining this website in September 2025.\""
+ },
+ {
+  "id": "brain-preservation-foundation",
+  "label": "Brain Preservation Foundation",
+  "note": "It judges brain-preservation methods and does not test AI models. Its site carries draft standards for accrediting preservation providers. The undated page says the process “is designed to be revenue-neutral”, names no accredited provider, and does not say who assesses or whether providers pay.",
+  "policy": {
+   "speaker": "Brain Preservation Foundation",
+   "quote": "We endorse no provider and hold no commercial stake",
+   "source": "The Brain Preservation Foundation (home page)",
+   "url": "https://www.brainpreservation.org/",
+   "verified": "primary"
+  }
+ }
+]

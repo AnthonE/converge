@@ -1,0 +1,146 @@
+[
+ {
+  "id": "funder-0",
+  "label": "Sample Funder 0 with a fairly long name",
+  "kind": "person",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-1",
+  "label": "Sample Funder 1 with a fairly long name",
+  "kind": "foundation",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-2",
+  "label": "Sample Funder 2 with a fairly long name",
+  "kind": "fund",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-3",
+  "label": "Sample Funder 3 with a fairly long name",
+  "kind": "firm",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-4",
+  "label": "Sample Funder 4 with a fairly long name",
+  "kind": "company",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-5",
+  "label": "Sample Funder 5 with a fairly long name",
+  "kind": "government",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-6",
+  "label": "Sample Funder 6 with a fairly long name",
+  "kind": "nonprofit",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-7",
+  "label": "Sample Funder 7 with a fairly long name",
+  "kind": "person",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-8",
+  "label": "Sample Funder 8 with a fairly long name",
+  "kind": "foundation",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-9",
+  "label": "Sample Funder 9 with a fairly long name",
+  "kind": "fund",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-10",
+  "label": "Sample Funder 10 with a fairly long name",
+  "kind": "firm",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-11",
+  "label": "Sample Funder 11 with a fairly long name",
+  "kind": "company",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-12",
+  "label": "Sample Funder 12 with a fairly long name",
+  "kind": "government",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-13",
+  "label": "Sample Funder 13 with a fairly long name",
+  "kind": "nonprofit",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-14",
+  "label": "Sample Funder 14 with a fairly long name",
+  "kind": "person",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-15",
+  "label": "Sample Funder 15 with a fairly long name",
+  "kind": "foundation",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-16",
+  "label": "Sample Funder 16 with a fairly long name",
+  "kind": "fund",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-17",
+  "label": "Sample Funder 17 with a fairly long name",
+  "kind": "firm",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-18",
+  "label": "Sample Funder 18 with a fairly long name",
+  "kind": "company",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-19",
+  "label": "Sample Funder 19 with a fairly long name",
+  "kind": "government",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-20",
+  "label": "Sample Funder 20 with a fairly long name",
+  "kind": "nonprofit",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-21",
+  "label": "Sample Funder 21 with a fairly long name",
+  "kind": "person",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-22",
+  "label": "Sample Funder 22 with a fairly long name",
+  "kind": "foundation",
+  "note": "Synthetic."
+ },
+ {
+  "id": "funder-23",
+  "label": "Sample Funder 23 with a fairly long name",
+  "kind": "fund",
+  "note": "Synthetic."
+ }
+]

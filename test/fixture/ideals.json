@@ -1,0 +1,944 @@
+[
+ {
+  "id": "ideal-0",
+  "label": "Sample ideal number 0 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 0.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 0",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 0",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 0",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 0",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 0",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 0",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 0",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 0",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ],
+  "field_key": [
+   {
+    "q": "How did it come?",
+    "a": "A sample answer."
+   },
+   {
+    "q": "Does it speak?",
+    "a": "A sample answer."
+   },
+   {
+    "q": "Does it survive your silence?",
+    "a": "A sample answer."
+   },
+   {
+    "q": "How many independent channels?",
+    "a": "A sample answer."
+   },
+   {
+    "q": "Who stands outside?",
+    "a": "A sample answer."
+   }
+  ]
+ },
+ {
+  "id": "ideal-1",
+  "label": "Sample ideal number 1 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 1.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 1",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 1",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 1",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 1",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 1",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 1",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 1",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 1",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 1",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 1",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "secondary"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-2",
+  "label": "Sample ideal number 2 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 2.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 2",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 2",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 2",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 2",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 2",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 2",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 2",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 2",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 2",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 2",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "unverified"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-3",
+  "label": "Sample ideal number 3 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 3.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 3",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 3",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 3",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 3",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 3",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 3",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 3",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 3",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 3",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 3",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-4",
+  "label": "Sample ideal number 4 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 4.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 4",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 4",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 4",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 4",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 4",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 4",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 4",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 4",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 4",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 4",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "secondary"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-5",
+  "label": "Sample ideal number 5 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 5.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 5",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 5",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 5",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 5",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 5",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 5",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 5",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 5",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "unverified"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-6",
+  "label": "Sample ideal number 6 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 6.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 6",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 6",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 6",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 6",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 6",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 6",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 6",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 6",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 6",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 6",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "primary"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-7",
+  "label": "Sample ideal number 7 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 7.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 7",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 7",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 7",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 7",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 2,
+    "conditions": [
+     {
+      "text": "Observable condition 2.0 for ideal 7",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 2.1 for ideal 7",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 7",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 7",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 7",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 7",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "secondary"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ },
+ {
+  "id": "ideal-8",
+  "label": "Sample ideal number 8 with a longish name",
+  "ideal": "Placeholder statement of sample ideal 8.",
+  "summary": "Synthetic test data, not a claim.",
+  "phases": [
+   {
+    "phase": 0,
+    "conditions": [
+     {
+      "text": "Observable condition 0.0 for ideal 8",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 0.1 for ideal 8",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 1,
+    "conditions": [
+     {
+      "text": "Observable condition 1.0 for ideal 8",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 1.1 for ideal 8",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 3,
+    "conditions": [
+     {
+      "text": "Observable condition 3.0 for ideal 8",
+      "status": "unknown",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 3.1 for ideal 8",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 4,
+    "conditions": [
+     {
+      "text": "Observable condition 4.0 for ideal 8",
+      "status": "met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 4.1 for ideal 8",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   },
+   {
+    "phase": 5,
+    "conditions": [
+     {
+      "text": "Observable condition 5.0 for ideal 8",
+      "status": "partly",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     },
+     {
+      "text": "Observable condition 5.1 for ideal 8",
+      "status": "not_met",
+      "evidence": "fixture evidence",
+      "url": "https://example.org/evidence"
+     }
+    ]
+   }
+  ],
+  "words": [
+   {
+    "speaker": "Sample Speaker",
+    "quote": "A short sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/source",
+    "date": "2020-01-01",
+    "verified": "unverified"
+   }
+  ],
+  "cautions": [
+   "Synthetic fixture."
+  ]
+ }
+]
