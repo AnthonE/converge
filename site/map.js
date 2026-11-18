@@ -352,6 +352,7 @@
   function paintPage() {
     var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people', rec = state.view === 'record';
     var meth = state.view === 'methods', door = state.view === 'door';
+    box.classList.toggle('is-wide', meth);
     document.getElementById('doors').hidden = true;
     document.getElementById('tab-methods').setAttribute('aria-pressed', meth ? 'true' : 'false');
     document.getElementById('layout').hidden = true;

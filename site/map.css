@@ -342,3 +342,5 @@ th { color: var(--ink-2); font-weight: 600; }
   .mk-table td::before { content: attr(data-q); display: block; font-size: 12px; color: var(--ink-2); font-weight: 600; }
   .mk-wrap { overflow: visible; }
 }
+.watch.is-wide { max-width: none; }
+.is-wide .watch-intro { max-width: 860px; }
