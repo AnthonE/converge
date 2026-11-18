@@ -28,5 +28,7 @@
    "note": "Reports of outages at a brokerage and on the NSA's classified network, and remarks on the outages by the President and a senator. They are on the Watch because they circulated on the same day as the AI claims beside them. The FAA and Microsoft said they saw no sign of malicious activity behind the earlier troubles, and Chase said its problems were not the result of a cyberattack (as reported by AP, 15 November 2026). No record found links the outages to each other or to AI, and their place here implies no link."
   }
  },
+ "site_url": "https://converge-olive-theta.vercel.app",
+ "repo": "AnthonE/converge",
  "made_with": "These records were gathered, checked and worded with AI models made by Anthropic, which is itself on this map. The readings are this project’s. A person has not yet re-read the sources."
 }

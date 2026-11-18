@@ -3,6 +3,8 @@
 
   python3 tools/precheck.py              fetch every page that has quoted words -> dist/precheck.json
   python3 tools/precheck.py --all        fetch every cited page, quoted words or not
+  python3 tools/precheck.py --save       also keep the result in data/precheck.json, where the published phone
+                                         re-read page (site/reread.html) shows it beside each page
 
 A match is not a reading. It cannot tell whether the words are in context, whether the page is the speaker's
 own, or whether a statement without quotation marks is true. It only sorts the queue: where every quoted word
@@ -137,6 +139,7 @@ def main():
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--timeout', type=float, default=25)
     ap.add_argument('--workers', type=int, default=10)
+    ap.add_argument('--save', action='store_true', help='also write data/precheck.json for the phone re-read page')
     a = ap.parse_args()
     pages = S.collect()
     todo = {}
@@ -152,6 +155,8 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     json.dump({'checked': stamp, 'pages': dict(sorted(res.items()))}, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    if a.save:
+        json.dump({'checked': stamp, 'pages': dict(sorted(res.items()))}, open(os.path.join(S.DATA, 'precheck.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     st, qr = {}, {}
     for r in res.values():
         st[r['status']] = st.get(r['status'], 0) + 1

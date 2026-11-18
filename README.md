@@ -42,7 +42,16 @@ locally: `python3 tools/export_data.py` (into `dist/data/`).
 
 ## Check it
 
-No person has yet re-read the sources; models did every step. Two tools make that debt something to work down:
+No person has yet re-read the sources; models did every step. These tools make that debt something to work down.
+
+- **On a phone: `/reread.html` on the published site** (for example
+  https://converge-olive-theta.vercel.app/reread.html). It shows one cited page at a time, Watch and allegations
+  first: what the map takes from the page, a button to open it, and the automatic pre-check's result. Tap "It
+  holds", "Doesn't hold" (with a note) or "Can't read". Answers are kept on the phone. "Save to the map" opens
+  GitHub's new-file page with them filled in, into `data/reread-inbox/`; tap Commit changes, and the next deploy
+  merges them into the ledger (`tools/sources.py`) and shows them as re-read by a person. A broken file there is
+  skipped with a warning, never a failed deploy. The page needs `repo` in `data/meta.json`; the pre-check it shows
+  is `data/precheck.json` (refresh with `python3 tools/precheck.py --save`).
 
 - `python3 tools/reread.py` writes `dist/reread.md`: every cited page (373 now) in the order to read it, the
   Watch first, then allegations, then anything no model checked, then relays, then pages read at the source.
@@ -87,7 +96,8 @@ No person has yet re-read the sources; models did every step. Two tools make tha
 - **An ideal's card** shows its first quotation. Where that is not a voice for the ideal (a critic, say), set `lead`
   to the index of the one to show instead; the speaker is always named.
 - **Test the viewer**: `python3 test/make_fixture.py && python3 build.py --data test/fixture --no-site --out
-  dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright).
+  dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright). The phone re-read page:
+  `python3 tools/package.py && node test/reread.js dist/site`.
 
 ## Publish it
 
