@@ -32,7 +32,7 @@
     var intro = ui.h('div', 'watch-intro');
     ui.add(intro, ui.h('h2', null, 'Alignment methods, side by side'),
       ui.h('p', null, 'The ways people propose to make AI do what it should. Each is asked the same five questions, so you can see what it takes for granted. When someone is pushing a method, these are the beliefs that come with it.'),
-      ui.h('p', 'note', 'Answers in quotation marks are the method’s proponents’ own words, with the source. The rest are this project’s reading, marked as such. Nothing here ranks the methods.'));
+      ui.h('p', 'note', 'An answer marked “their words” is backed by the method’s proponents’ own words, quoted with the source when you open the method. An unmarked answer is this project’s reading. Nothing here ranks the methods.'));
     ui.add(box, intro);
     var wrap = ui.h('div', 'mk-wrap'), t = ui.h('table', 'mk-table'), thead = ui.h('thead'), hr = ui.h('tr');
     ui.add(hr, ui.h('th', null, 'Method'));
@@ -49,13 +49,12 @@
       KEY.forEach(function (k) {
         var x = (m.key || []).filter(function (y) { return y.q === k[0]; })[0];
         var td = ui.h('td'); td.setAttribute('data-q', k[1]);
-        if (x) ui.add(td, ui.h('span', null, x.a), x.kind === 'own words' ? ui.h('span', 'mk-mark', ' “”') : null);
+        if (x) ui.add(td, ui.h('span', null, x.a), x.kind === 'own words' ? ui.h('span', 'mk-mark', 'their words') : null);
         ui.add(tr, td);
       });
       ui.add(tb, tr);
     });
     ui.add(t, tb); ui.add(wrap, t); ui.add(box, wrap);
-    ui.add(box, ui.h('p', 'note', 'A “” after an answer means the method’s own words back it; open the method to read them.'));
   };
 
   /* A method's own record. */

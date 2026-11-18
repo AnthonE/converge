@@ -76,7 +76,7 @@ LABEL_BAN = re.compile(r'\b(cult|cults|cultists?|brainwash\w*|idolaters?|possess
 # Working notes that must not reach a reader: research ids, file paths, instructions to curators.
 INTERNAL = re.compile(r'\b(primary-s\d+|invoked-i\d+|mechanisms-[a-z-]+-[sx]\d+|map flag|do not link|name it, never|'
                       r'string-check|research record|map quotation|not yet in the corpus|in this pass|alt URL|not opened here|'
-                      r'Describe, never prescribe|fetch tool|returned 403)\b|(?-i:\bEXP-[A-Z]+)|\(Adapted\.\)|\.json\b|\bops/(ideals-map|lab)/|'
+                      r'Describe, never prescribe|fetch tool|returned 403|dossiers?|per the checker)\b|(?-i:\bTODO\b)|(?-i:\bEXP-[A-Z]+)|\(Adapted\.\)|\.json\b|\bops/(ideals-map|lab)/|'
                       r'/data/[a-z]', re.I)
 RELAYED = re.compile(r'\b(as quoted|quoted by|quoted in|as reported|reported by|in a release by|relayed? (by|on|through)|via(?! X\b))\b', re.I)
 # A page the speaker did not publish: an interview, a transcript, an encyclopedia.
@@ -409,6 +409,10 @@ def validate(g):
         walk(w, f'watch/{wid}')
     if g.get('patterns') and not (g.get('meta') or {}).get('made_with'):
         err('meta.json needs "made_with" (who made the records) once the ancient layer is shown')
+    # The notes in meta.json are shown to every reader on the opening panels.
+    for k in ('note', 'money_note', 'made_with', 'disclosure'):
+        if INTERNAL.search(str((g.get('meta') or {}).get(k, ''))):
+            err(f'meta.json "{k}": a working note reaches the reader')
 
     for i, e in enumerate(g['edges']):
         for k in ('from', 'to', 'type', 'sentence'):

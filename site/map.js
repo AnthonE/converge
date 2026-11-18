@@ -267,12 +267,22 @@
     if (again) again.focus();
     else if (ours) { panel.setAttribute('tabindex', '-1'); panel.focus(); }
   }
+  /* On a narrow screen the map is wider than the page and scrolls sideways: bring what the reader opened into view. */
+  function centreOnPhone() {
+    if (stage.scrollWidth <= stage.clientWidth + 1) return;
+    var focal = (state.selected && svg.querySelector('[data-id="' + state.selected + '"]')) ||
+      svg.querySelector('.node.role-centre, .node.role-money-centre');
+    var s = svg.getBoundingClientRect(), x = s.width / 2;
+    if (focal) { var b = focal.getBoundingClientRect(); x = b.left - s.left + b.width / 2; }
+    stage.scrollLeft = Math.max(0, x - stage.clientWidth / 2);
+  }
   function paint() {
     var money = state.view === 'money', anc = state.view === 'ancients';
     var layout = money ? ns.money(ix, state.selected) : anc ? ns.ancients(ix, state.selected) : state.view === 'focus' ? ns.focus(ix, state.ideal) : ns.overview(ix);
     var drawn = layout.edges.map(function (e) { return e.edge; });
     ns.draw(svg, layout, ix, state, { node: onNode, edge: onEdge, tip: showTip, untip: hideTip });
     stage.setAttribute('data-view', state.view);
+    centreOnPhone();
     document.getElementById('more').textContent = layout.dropped
       ? layout.dropped + ' more linked items are in the list below.' : '';
     while (panel.firstChild) panel.removeChild(panel.firstChild);
