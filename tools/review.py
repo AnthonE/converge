@@ -3,6 +3,8 @@
 
   python3 tools/review.py               then open http://127.0.0.1:8777
   python3 tools/review.py --port 9000   (--host 0.0.0.0 only on a machine you trust; it has no login)
+  python3 tools/review.py --autocommit  commit data/reread.json after every answer and push it (for a machine
+                                        that may not last, such as a cloud session)
 
 It shows the next cited page in the queue (the Watch first), what the map takes from it, and what the automatic
 pre-check found (run python3 tools/precheck.py first for that; without it the page still works). Open the page,
@@ -12,7 +14,7 @@ compare, press a button: the reading goes straight into data/reread.json, the sa
 It runs on this machine only and serves nothing from the public site. Writes need a custom header that a page on
 another site cannot send without asking first, so another tab cannot mark pages for you.
 """
-import argparse, datetime, json, os, sys
+import argparse, datetime, json, os, subprocess, sys, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -21,6 +23,21 @@ import sources as S
 HERE = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(S.ROOT, 'dist')
 GATE = 2   # tiers 1 and 2 (the Watch, allegations) are read before anything goes public
+AUTOCOMMIT = False
+_git = threading.Lock()
+
+
+def commit(message):
+    """Commit the ledger and push, in the background, one at a time. A failed push is retried by the next one."""
+    def run():
+        with _git:
+            git = ['git', '-C', S.ROOT]
+            subprocess.run(git + ['add', 'data/reread.json'], capture_output=True)
+            r = subprocess.run(git + ['commit', '-q', '-m', message], capture_output=True, text=True)
+            if r.returncode == 0:
+                p = subprocess.run(git + ['push', '-q'], capture_output=True, text=True)
+                sys.stderr.write('committed and pushed\n' if p.returncode == 0 else 'committed; push failed: ' + p.stderr[-200:] + '\n')
+    threading.Thread(target=run, daemon=True).start()
 
 
 def state():
@@ -98,6 +115,8 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path != '/api/undo':
             return self._send(404, {'error': 'not found'})
         write_ledger(led)
+        if AUTOCOMMIT:
+            commit(('Re-read: ' + body.get('result', '') if self.path == '/api/mark' else 'Re-read: cleared') + ' ' + url)
         self._send(200, state())
 
     def log_message(self, fmt, *args):
@@ -109,7 +128,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--host', default='127.0.0.1')
     ap.add_argument('--port', type=int, default=8777)
+    ap.add_argument('--autocommit', action='store_true')
     a = ap.parse_args()
+    global AUTOCOMMIT
+    AUTOCOMMIT = a.autocommit
     srv = ThreadingHTTPServer((a.host, a.port), Handler)
     s = state()['counts']
     print(f'Re-read: {s["done"]} of {s["total"]} pages done; before going public: {s["gate_done"]} of {s["gate_total"]}.')
