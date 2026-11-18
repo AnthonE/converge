@@ -83,23 +83,20 @@ log, which points to the account's billing or Actions minutes. The workflows bel
 The build command validates the data first (`python3 tools/package.py` runs `build.py`), so a record that breaks
 a guardrail stops the deploy.
 
-**Cloudflare Pages (recommended).** Free for a static site with no bandwidth cap, it applies the `_headers` file
-the package writes (the security headers), and Cloudflare Access can put an email login in front of the site
-while it is private. One-time setup:
+**Vercel (connected).** The repository is connected to Vercel, which builds from `vercel.json`: every push to
+`main` publishes the site and every pull request gets a preview address (behind a Vercel login, so only the
+account sees it). Vercel's build is also the check that runs on every push while Actions cannot: a record that
+breaks a guardrail fails the deploy. To let search engines in, add the environment variable `PUBLIC` = `true` in
+the project's settings and redeploy. A password on the production site is a paid feature there.
 
-1. Workers & Pages → Create → Pages → Connect to Git, and choose this repository (Cloudflare asks to install its
-   GitHub app on it).
-2. Build command `python3 tools/package.py`, build output directory `dist/site`, production branch `main`. No
-   framework preset.
-3. To keep it private: Zero Trust → Access → Applications → add a self-hosted application for the site's
-   address, with a policy that lets in only the emails you choose.
+**Cloudflare Pages (an alternative).** Free with no bandwidth cap, it applies the `_headers` file, and Cloudflare
+Access can put a free email login in front of the production site. Workers & Pages → Create → Pages → Connect to
+Git, choose this repository, build command `python3 tools/package.py`, output directory `dist/site`, production
+branch `main`, no framework preset. For a login: Zero Trust → Access → Applications → a self-hosted application
+for the site's address, letting in only the emails you choose.
 
-Every push to `main` then publishes the site, and every pull request gets its own preview address. To let search
-engines in, add the environment variable `PUBLIC` = `true` in the project's settings and redeploy.
-
-**Vercel** builds the same way from `vercel.json` (import the repository at vercel.com/new); a password on the
-site is a paid feature there. **GitHub Pages** needs Actions and, on a private repository, a paid plan; it also
-ignores `_headers`. **Any static host:** run `python3 tools/package.py` and upload `dist/site/`.
+**GitHub Pages** needs Actions and, on a private repository, a paid plan; it also ignores `_headers`. **Any static
+host:** run `python3 tools/package.py` and upload `dist/site/`.
 
 **From GitHub Actions instead** (once Actions can run): `.github/workflows/pages.yml` also drives the viewer in a
 browser on every push and pull request, and can upload to Cloudflare Pages itself. Set the variable `CLOUDFLARE` =
