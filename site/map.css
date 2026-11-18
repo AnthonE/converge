@@ -288,3 +288,26 @@ th { color: var(--ink-2); font-weight: 600; }
 .who-card .who-actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 0; font-size: 13px; }
 .people dt { padding-top: 6px; }
 .people dd { padding-top: 6px; }
+
+/* The record: one page shape for everything. */
+.rec-head { padding-bottom: 6px; margin-bottom: 4px; }
+.rec-head .kicker { margin: 0 0 2px; }
+.rec-title { font-size: 26px; margin: 0 0 8px; line-height: 1.2; }
+.rec-who { font-size: 16px; margin: 0 0 8px; }
+.rec-lede { font-size: 17px; line-height: 1.55; margin: 0 0 10px; }
+.rec-actions { display: flex; gap: 16px; flex-wrap: wrap; margin: 10px 0 0; font-size: 14px; }
+.rec-sub { margin: 14px 0 4px; font-size: 14px; color: var(--ink); }
+.rec-list li { margin: 6px 0; }
+.rec-date { color: var(--ink-2); font-variant-numeric: tabular-nums; font-size: 13px; }
+.rec-phases { margin: 0; padding-left: 22px; }
+.rec-phases li { margin: 4px 0; }
+.rec-phases .ph-met .lane, .rec-phases .ph-partly .lane { border-style: solid; color: var(--ink); }
+.trail { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
+.trail-step { display: flex; align-items: baseline; gap: 6px; }
+.trail-dot { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--ink-2); flex: none; transform: translateY(1px); }
+.trail-step.is-done .trail-dot { background: var(--ink); border-color: var(--ink); }
+.trail-step.is-part .trail-dot { background: linear-gradient(90deg, var(--ink) 50%, transparent 50%); border-color: var(--ink); }
+.trail-step b { color: var(--ink); font-weight: 600; }
+.as-page { display: block; margin: 0 0 10px; padding: 2px 0; font-size: 14px; font-weight: 600; background: none; border: 0; text-decoration: underline; text-decoration-color: var(--axis); text-underline-offset: 3px; }
+.kept { margin: 0 0 8px; padding-left: 22px; }
+.kept li { margin: 4px 0; }

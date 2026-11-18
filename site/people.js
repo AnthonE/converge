@@ -27,7 +27,7 @@
     return ix.who;
   }
 
-  var SKIP = /^(A|BUTTON|INPUT|SELECT|TEXTAREA|SCRIPT|STYLE|H1|H2|H3|TIME|LABEL|OPTION)$/;
+  var SKIP = /^(A|BUTTON|INPUT|SELECT|TEXTAREA|SCRIPT|STYLE|H1|H2|H3|H4|TIME|LABEL|OPTION)$/;
   function annotateBlock(block, w) {
     var test = new RegExp(w.src), nodes = [], done = {};
     var walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, null);
@@ -87,11 +87,9 @@
     else s.textContent = p.source || '';
     c.appendChild(h); c.appendChild(t); c.appendChild(s);
     var row = document.createElement('p'); row.className = 'who-actions';
-    if (p.node && IX.byId[p.node]) {
-      var o = document.createElement('button'); o.type = 'button'; o.className = 'linkbtn'; o.textContent = 'Open on the map';
-      o.addEventListener('click', function () { c.hidden = true; NAV.openNode(p.node); });
-      row.appendChild(o);
-    }
+    var o = document.createElement('button'); o.type = 'button'; o.className = 'linkbtn'; o.textContent = 'Everything about ' + p.name;
+    o.addEventListener('click', function () { c.hidden = true; NAV.goRecord(p.id); });
+    row.appendChild(o);
     var all = document.createElement('button'); all.type = 'button'; all.className = 'linkbtn'; all.textContent = "Everyone in who's who";
     all.addEventListener('click', function () { c.hidden = true; NAV.goPeople(p.id); });
     row.appendChild(all);
@@ -140,11 +138,9 @@
       var sec = ui.section(g[1] + ' (' + mine.length + ')'), dl = ui.h('dl', 'glossary people');
       mine.forEach(function (p) {
         var dt = ui.h('dt'); dt.id = 'who-' + p.id;
-        if (p.node && ix.byId[p.node]) {
-          var b = ui.h('button', 'linkbtn', p.name); b.type = 'button';
-          b.addEventListener('click', function () { nav.openNode(p.node); });
-          ui.add(dt, b);
-        } else dt.textContent = p.name;
+        var b = ui.h('button', 'linkbtn', p.name); b.type = 'button';
+        b.addEventListener('click', function () { nav.goRecord(p.id); });
+        ui.add(dt, b);
         var dd = ui.h('dd');
         ui.add(dd, ui.h('span', null, p.who + ' '), ui.link(p.url, p.source || 'source', p.nolink), ui.h('span', null, ' '), ui.badge(p.verified, p.url));
         ui.add(dl, dt, dd);
