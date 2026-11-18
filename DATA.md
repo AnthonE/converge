@@ -39,7 +39,7 @@ words belong to their authors and are not covered.
 | `people.csv` | public figure named on the map, in one plain sentence (who's who) |
 | `methods.csv`, `method_key.csv` | alignment method; its answer to each of the five questions |
 | `doors.csv` | stop on a way in (a door), in order |
-| `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked |
+| `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked, the Watch's threads (`watch_threads`: id, `title`, `note`), and, once set, `contribute` (where to send a correction) and `site_url` (the published address) |
 
 ## Fields that recur
 
@@ -59,7 +59,8 @@ words belong to their authors and are not covered.
 
 **ideals**: `label` (the map's own short name), `ideal` (the end, stated as its carriers state it), `summary`,
 `field_key` (five questions answered: how did it come, does it speak, does it survive your silence, how many
-independent channels, who stands outside), `cautions`.
+independent channels, who stands outside), `cautions`, `lead` (optional: which quotation, counted from 0, the
+ideal's card shows; the first when absent).
 
 **phase_conditions**: `phase` 0 to 5 (spoken, gathered, voiced, acting, housed, gated; see `graph.json` →
 `phases`), `text` (the condition), `status` (`met`, `partly`, `not_met`, `unknown`), `evidence`, `url`. A phase
@@ -109,7 +110,8 @@ likeness stops), and for records `kind`, `amount`, `date`, `source`, `url`, `ver
 **watch**: `date`, `title` (neutral), `claimed_by`, `standing` (how the speaker stands to the matter), `claim`
 (their words), `source`, `url`, `kind` (claimed, reported, alleged, documented, first-person), `status` (not
 checked, partly checked, checked, not supported, source not found), `why` (why it is on the Watch), `open`,
-`cautions`, `touches` (ids on the map), `travelled_summary`. **watch_travelled**: `step` (1 = oldest), `date`,
+`cautions`, `touches` (ids on the map), `travelled_summary`, `thread` (optional: the id of a thread in
+`meta.json`'s `watch_threads`, for claims shown together). **watch_travelled**: `step` (1 = oldest), `date`,
 `who`, `said` (their exact words), `source`, `url`, `verified`, `cites` (what that step gave as its source),
 `changed` (what changed from the step before), `scores` (hedges, attribution and label, as coded; JSON).
 **watch_checks**: `what` (what was looked for and what the page said), `result` (supports, partly supports, does

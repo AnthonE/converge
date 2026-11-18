@@ -9,7 +9,7 @@ The validator is the guardrail: it fails the build on a broken link, an unknown 
 status, a missing source, a quotation that is too long, or a label that calls a group a
 cult. It cannot check that a claim is true. That is what the `verified` flag is for.
 """
-import argparse, json, os, re, sys
+import argparse, json, os, re, subprocess, sys
 import glob
 from urllib.parse import urlparse
 
@@ -76,7 +76,7 @@ LABEL_BAN = re.compile(r'\b(cult|cults|cultists?|brainwash\w*|idolaters?|possess
 # Working notes that must not reach a reader: research ids, file paths, instructions to curators.
 INTERNAL = re.compile(r'\b(primary-s\d+|invoked-i\d+|mechanisms-[a-z-]+-[sx]\d+|map flag|do not link|name it, never|'
                       r'string-check|research record|map quotation|not yet in the corpus|in this pass|alt URL|not opened here|'
-                      r'Describe, never prescribe|fetch tool|returned 403)\b|(?-i:\bEXP-[A-Z]+)|\(Adapted\.\)|\.json\b|\bops/(ideals-map|lab)/|'
+                      r'Describe, never prescribe|fetch tool|returned 403|dossiers?|per the checker)\b|(?-i:\bTODO\b)|(?-i:\bEXP-[A-Z]+)|\(Adapted\.\)|\.json\b|\bops/(ideals-map|lab)/|'
                       r'/data/[a-z]', re.I)
 RELAYED = re.compile(r'\b(as quoted|quoted by|quoted in|as reported|reported by|in a release by|relayed? (by|on|through)|via(?! X\b))\b', re.I)
 # A page the speaker did not publish: an interview, a transcript, an encyclopedia.
@@ -174,7 +174,7 @@ def validate(g):
                     err(f'{name}/{nid}: missing "{k}"')
             if not ID.match(str(nid)):
                 err(f'{name}/{nid}: id must be lower-case letters, digits and hyphens')
-            if nid in ('money', 'ancients'):
+            if nid in ('money', 'ancients', 'drawing'):
                 err(f'{name}/{nid}: "{nid}" is the address of a view (#{nid}); use another id')
             if nid in ids:
                 err(f'{name}/{nid}: duplicate id (also in {ids[nid]})')
@@ -183,6 +183,9 @@ def validate(g):
                 if LABEL_BAN.search(QUOTED.sub('', str(n.get(field, '')))):
                     err(f'{name}/{nid}: "{field}" labels a group (guardrail 1): {n[field][:60]}')
             check_words(f'{name}/{nid}', n.get('words'))
+            # The card's quotation: an index into the ideal's own words (default the first).
+            if 'lead' in n and not (isinstance(n['lead'], int) and 0 <= n['lead'] < len(n.get('words') or [])):
+                err(f'{name}/{nid}: "lead" must be the index of one of its quotations')
             for x in n.get('field_key') or []:
                 if LABEL_BAN.search(QUOTED.sub('', str(x.get('a', '')))) or INTERNAL.search(str(x.get('a', ''))):
                     err(f'{name}/{nid}: a field-key answer labels a party or leaks a working note: {str(x.get("a"))[:60]}')
@@ -409,6 +412,34 @@ def validate(g):
         walk(w, f'watch/{wid}')
     if g.get('patterns') and not (g.get('meta') or {}).get('made_with'):
         err('meta.json needs "made_with" (who made the records) once the ancient layer is shown')
+    # The notes in meta.json are shown to every reader on the opening panels.
+    for k in ('note', 'money_note', 'made_with', 'disclosure'):
+        if INTERNAL.search(str((g.get('meta') or {}).get(k, ''))):
+            err(f'meta.json "{k}": a working note reaches the reader')
+    # Threads on the Watch: claims shown together under one neutral heading that says why they are here.
+    threads = (g.get('meta') or {}).get('watch_threads') or {}
+    if not isinstance(threads, dict):
+        err('meta.json "watch_threads" must map a thread id to its title and note')
+        threads = {}
+    used = set()
+    for w in g.get('watch') or []:
+        t = w.get('thread')
+        if t is None:
+            continue
+        if t not in threads:
+            err(f'watch/{w.get("id")}: thread "{t}" is not described in meta.json "watch_threads"')
+        used.add(t)
+    for tid, t in threads.items():
+        if not ID.match(str(tid)):
+            err(f'watch thread {tid}: id must be lower-case letters, digits and hyphens')
+        for k in ('title', 'note'):
+            text = str((t or {}).get(k) or '')
+            if not text.strip():
+                err(f'watch thread {tid}: missing "{k}"')
+            if LABEL_BAN.search(QUOTED.sub('', text)) or INTERNAL.search(text):
+                err(f'watch thread {tid}: "{k}" labels someone or carries a working note')
+        if tid not in used:
+            err(f'watch thread {tid}: no Watch entry is in it')
 
     for i, e in enumerate(g['edges']):
         for k in ('from', 'to', 'type', 'sentence'):
@@ -635,13 +666,26 @@ def validate(g):
     return errs
 
 
+def updated(data_dir, g):
+    """The date the record last changed: the last commit that touched the data, or, where there is no git history
+    (a copied folder, a shallow clone that misses it), the newest date the records carry."""
+    try:
+        out = subprocess.run(['git', 'log', '-1', '--format=%cs', '--', '.'], cwd=data_dir, capture_output=True, text=True, timeout=10)
+        if out.returncode == 0 and re.match(r'^\d{4}-\d{2}-\d{2}$', out.stdout.strip()):
+            return out.stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        pass
+    dates = [str(x.get('date', '')) for x in g.get('watch', []) + g.get('fruits', []) + g.get('reread', [])]
+    return max([d[:10] for d in dates if re.match(r'^\d{4}-\d{2}-\d{2}', d)] or [''])
+
+
 def standalone(site_dir, graph):
     html = open(os.path.join(site_dir, 'index.html'), encoding='utf-8').read()
     css = open(os.path.join(site_dir, 'map.css'), encoding='utf-8').read()
     html = html.replace('<link rel="stylesheet" href="map.css">', '<style>\n' + css + '</style>')
     data = json.dumps(graph, ensure_ascii=False).replace('<', '\\u003c')
     scripts = '<script type="application/json" id="graph-data">' + data + '</script>\n'
-    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'methods.js', 'map.js'):
+    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'ideals.js', 'people.js', 'record.js', 'methods.js', 'map.js'):
         js = open(os.path.join(site_dir, name), encoding='utf-8').read()
         tag = f'<script src="{name}"></script>'
         assert tag in html, tag
@@ -677,6 +721,7 @@ def main():
     cited = cited_urls(g)
     done = {r['url'] for r in g['reread'] if r.get('result') in ('holds', 'corrected')}
     g['sources'] = {'pages': len(cited), 'reread': len(done & cited)}
+    g['updated'] = updated(a.data, g)
     print(f'sources: {len(cited)} pages cited, {len(done & cited)} re-read by a person (tools/reread.py)')
     if a.check:
         return

@@ -1,6 +1,6 @@
 {
  "title": "The Ideals Map",
- "note": "Private prototype, bootstrapped 2026-11-17 from researched dossiers. Each quotation under an ideal and each event carries a checking flag. Notes on carriers and vehicles, summaries and link sentences were not checked. Nothing here is a forecast.",
+ "note": "Private prototype, first assembled on 17 November 2026 from researched records. Each quotation under an ideal and each event carries a checking flag. Notes on carriers and vehicles, summaries and link sentences were not checked. Nothing here is a forecast.",
  "disclosure": "The author of this map is an independent researcher who has drafted funding applications or outreach addressed to bodies shown here or to bodies of the same kind, among them Open Philanthropy (now Coefficient Giving), the Survival and Flourishing Fund, Apollo Research, METR, Vitalik Buterin and the founder of Extropic. The author’s planning notes also list fellowship programmes at Anthropic and OpenAI and the UK AI Security Institute’s Alignment Project as possible applications. This line is a draft: before publication the author must state what was sent and what came of it. The author also publishes an AI evaluation tool and an agent meter of their own, and so is a peer of the evaluators shown here as well as an applicant to their funders. The records were gathered, checked and worded with AI models made by Anthropic, which appears on this map as a company whose models are evaluated, as a funder and as a party to a reported dispute over access.",
  "money_note": "Records were gathered on 17 November 2026 from public pages. A second model, not a person, checked most of them, and each record’s flag says whether it was read at the source, read on a relay or not checked. Notes on funders, companies and evaluators were written from those records and carry no flag. Amounts are as each source states them and are never added up. The search went topic by topic (AI-safety funders, evaluators, the Lightcone and Thiel circles, campaign money and longevity money) and is not a full account of who funds any name here: the largest investors in the AI companies are not shown, and some rows that were seen were left out by a row limit or because no page could be read. Most private funding is not public either. So the absence of a line means only that this search drew no record, not that none exists.",
  "nolink_hosts": [
@@ -22,5 +22,11 @@
   "urbanomic.com",
   "x.ai"
  ],
+ "watch_threads": {
+  "outages-2026-11": {
+   "title": "The outages of mid-November 2026",
+   "note": "Reports of outages at a brokerage and on the NSA's classified network, and remarks on the outages by the President and a senator. They are on the Watch because they circulated on the same day as the AI claims beside them. The FAA and Microsoft said they saw no sign of malicious activity behind the earlier troubles, and Chase said its problems were not the result of a cyberattack (as reported by AP, 15 November 2026). No record found links the outages to each other or to AI, and their place here implies no link."
+  }
+ },
  "made_with": "These records were gathered, checked and worded with AI models made by Anthropic, which is itself on this map. The readings are this project’s. A person has not yet re-read the sources."
 }
