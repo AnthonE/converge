@@ -21,6 +21,7 @@
       </div>
       <span class="views" id="views" role="group" aria-label="Which map to show" hidden>
         <button type="button" id="tab-ideals" aria-pressed="true">Ideals</button>
+        <button type="button" id="tab-methods" aria-pressed="false" hidden>Alignment methods</button>
         <button type="button" id="tab-money" aria-pressed="false">Money and evaluators</button>
         <button type="button" id="tab-ancients" aria-pressed="false" hidden>The ancients</button>
         <button type="button" id="tab-timeline" aria-pressed="false">Timeline</button>
@@ -30,6 +31,8 @@
       <button type="button" id="theme" aria-label="Switch between light and dark">Light / dark</button>
     </div>
   </header>
+
+  <nav class="doors" id="doors" aria-label="Ways in, by where you are coming from" hidden></nav>
 
   <ul class="legend" id="legend-ideals" aria-label="Legend">
     <li><svg width="18" height="18" aria-hidden="true"><circle cx="9" cy="9" r="8" class="mark-ideal"/></svg> Ideal: the end being served</li>
@@ -92,6 +95,7 @@
 <script src="guide.js"></script>
 <script src="people.js"></script>
 <script src="record.js"></script>
+<script src="methods.js"></script>
 <script src="map.js"></script>
 </body>
 </html>

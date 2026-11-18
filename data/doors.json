@@ -1,0 +1,185 @@
+[
+ {
+  "id": "new",
+  "label": "New to all of this",
+  "lede": "Start with what the people building AI say it is for. Tap any name you do not know; every one is explained in a sentence.",
+  "stops": [
+   {
+    "view": "start",
+    "title": "How to read this map",
+    "why": "The few words this map uses, what each checking mark means, and how the record is kept."
+   },
+   {
+    "view": "ideals",
+    "title": "The thirteen ideals",
+    "why": "The aims people state for AI, from “a made mind will save us” to “a made companion can be there for you”."
+   },
+   {
+    "view": "people",
+    "title": "Who’s who",
+    "why": "Every public figure named here, in one plain sentence."
+   },
+   {
+    "view": "timeline",
+    "title": "What happened, in order",
+    "why": "Every dated event and claim, newest first."
+   }
+  ]
+ },
+ {
+  "id": "rationalist-ea",
+  "label": "The rationalist and effective-altruism world",
+  "lede": "The ideals argued over most in these circles, the money behind the safety groups and the evaluators, the alignment methods side by side, and the claims going around about the community, each with its other side.",
+  "stops": [
+   {
+    "record": "made-saviour",
+    "why": "The hope for one aligned mind far enough ahead to end the race, in its proponents’ own words."
+   },
+   {
+    "record": "basilisk",
+    "why": "How one forum post became a legend, and what the forum itself says about it."
+   },
+   {
+    "view": "methods",
+    "title": "Alignment methods, side by side",
+    "why": "Each method asked the same five questions, so what it takes for granted is plain."
+   },
+   {
+    "record": "coefficient-giving",
+    "why": "A large funder of AI-safety work: who it has funded, record by record."
+   },
+   {
+    "record": "lighthaven",
+    "why": "The venue in Berkeley and the organisation that runs it, with what is on file."
+   },
+   {
+    "view": "watch",
+    "title": "The Watch",
+    "why": "Claims about the community going around now, with the responses and what is still open."
+   }
+  ]
+ },
+ {
+  "id": "tech-eacc",
+  "label": "Tech, start-ups and e/acc",
+  "lede": "The case for speeding up, in its own words; the people and money behind it; the plans to leave the state behind; and what has been reported about agents left to run on their own.",
+  "stops": [
+   {
+    "record": "acceleration",
+    "why": "“The universe wants acceleration”: the ideal, its carriers and where it stands."
+   },
+   {
+    "record": "eacc",
+    "why": "Effective accelerationism in its founders’ words, irony included."
+   },
+   {
+    "record": "a16z",
+    "why": "The investment firm’s money on file, record by record."
+   },
+   {
+    "record": "peter-thiel",
+    "why": "One investor across the map: his money, his words, his lectures."
+   },
+   {
+    "record": "exit",
+    "why": "Leave the state and found a new one: network states and charter cities."
+   },
+   {
+    "record": "no-watcher",
+    "why": "Hand the agent the goal and step back: what companies and agencies report."
+   }
+  ]
+ },
+ {
+  "id": "builders",
+  "label": "Building AI or working on safety",
+  "lede": "The methods for making models behave and what each assumes, the attacks on agents, who tests the AI companies and who pays the testers.",
+  "stops": [
+   {
+    "view": "methods",
+    "title": "Alignment methods, side by side",
+    "why": "Whom the model serves, who writes its values, whether anyone looks inside, who checks, and what happens if it fails."
+   },
+   {
+    "record": "capture",
+    "why": "Any text can command an agent: prompt injection, as attackers and defenders describe it."
+   },
+   {
+    "record": "no-watcher",
+    "why": "Agents handed a goal and left to run, as reported."
+   },
+   {
+    "record": "metr",
+    "why": "An evaluator in its own words, including its rule on payment from the companies it tests."
+   },
+   {
+    "record": "anthropic",
+    "why": "The company whose models were used to build this record: its money on file and its disputes."
+   },
+   {
+    "record": "companion",
+    "why": "AI companions: what their makers say they are for, and what has happened."
+   }
+  ]
+ },
+ {
+  "id": "faith",
+  "label": "Faith, religion and the spiritual",
+  "lede": "What older traditions called these patterns, the movements that speak of building or finding a god, and religious leaders’ own words on AI.",
+  "stops": [
+   {
+    "view": "heart",
+    "title": "The heart",
+    "why": "What the traditions saw, in a few minutes of reading."
+   },
+   {
+    "view": "ancients",
+    "title": "The ancients",
+    "why": "How each ideal takes hold of people, and the old patterns read beside it, each saying where the likeness stops."
+   },
+   {
+    "record": "revere",
+    "why": "A god is to be built: the groups that say so, in their words."
+   },
+   {
+    "record": "oracle",
+    "why": "A machine can answer the sacred questions: religious chatbots and what religious bodies say about them."
+   },
+   {
+    "record": "revealed",
+    "why": "“The machine revealed it”: people who say an AI disclosed hidden truth."
+   },
+   {
+    "record": "newyorker-maple-2026-11",
+    "why": "A Buddhist monastery that says it is designing a religion to guide AI, and the reporting about it."
+   }
+  ]
+ },
+ {
+  "id": "press",
+  "label": "Reporting or research",
+  "lede": "Every claim with its trail, its sources and how far a person has re-read them, and the whole record to take away as data.",
+  "stops": [
+   {
+    "view": "watch",
+    "title": "The Watch",
+    "why": "Claims in circulation, each with who is speaking, what was checked, the responses and what is open."
+   },
+   {
+    "view": "timeline",
+    "title": "The timeline",
+    "why": "Everything dated, filterable by ideal."
+   },
+   {
+    "view": "start",
+    "title": "How the record is kept",
+    "why": "Who drafts, who checks, how far a person has re-read, and where to send a correction. The data files are linked at the end."
+   },
+   {
+    "view": "people",
+    "title": "Who’s who",
+    "why": "Every public figure named, with the page each line was checked on."
+   }
+  ]
+ }
+]

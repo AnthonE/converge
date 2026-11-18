@@ -37,6 +37,8 @@ words belong to their authors and are not covered.
 | `watch_travelled.csv` | step in how a claim was passed along, oldest first |
 | `sources.csv` | cited page (URL), with its re-read and link status |
 | `people.csv` | public figure named on the map, in one plain sentence (who's who) |
+| `methods.csv`, `method_key.csv` | alignment method; its answer to each of the five questions |
+| `doors.csv` | stop on a way in (a door), in order |
 | `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked |
 
 ## Fields that recur
@@ -123,6 +125,15 @@ it with the map: `holds`, `does not hold` (to be fixed), `corrected`, `removed`,
 **people** (who's who): `name`, `who` (one or two plain sentences: who they are and why they come up), `group`
 (builders, thinkers, faith, press, officials, past), `match` (the forms of the name the viewer marks), `node` (their
 own entry on the map, if any), `source`, `url`, `verified`, `nolink`. Public figures only.
+
+**methods**: `label`, `plain` (what it does, in plain words), `bet` (its core belief in its proponents' words; JSON),
+`pushed_by`, `pushback`, `happened`, `cautions` (JSON). **method_key**: one row per method and question. `q` is
+`serves` (whom the model serves), `values` (who writes down what it should value), `inside` (whether it relies on
+seeing inside the model), `checks` (who checks it worked, and whether they are independent of the builder) or
+`fails` (what happens if it fails). `kind` is `own words` (with `quote`, `speaker`, `source`, `url`, `verified`)
+or `reading` (this project's reading, no quotation). `a` is the short answer. Nothing ranks the methods.
+
+**doors**: ways in by viewpoint. `door_id`, `door`, `step`, `record` (an id) or `view`, and `why`.
 
 ## What is not here
 

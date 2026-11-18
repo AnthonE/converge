@@ -254,12 +254,14 @@
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
     if (state.view === 'watch') { paintWatch(); return; }
-    if (state.view === 'start' || state.view === 'timeline' || state.view === 'people' || state.view === 'record') { paintPage(); return; }
+    if (/^(start|timeline|people|record|methods|door)$/.test(state.view)) { paintPage(); return; }
     document.getElementById('the-watch').hidden = true;
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
+    document.getElementById('tab-methods').setAttribute('aria-pressed', 'false');
     document.getElementById('layout').hidden = false;
     document.getElementById('tab-watch').setAttribute('aria-pressed', 'false');
+    document.getElementById('doors').hidden = state.view !== 'overview' || !ns.hasDoors(ix);
     paint();
     var again = id && svg.querySelector('[data-id="' + id + '"]');
     if (again) again.focus();
@@ -334,6 +336,8 @@
     document.getElementById('layout').hidden = true;
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
+    document.getElementById('tab-methods').setAttribute('aria-pressed', 'false');
+    document.getElementById('doors').hidden = true;
     box.hidden = false;
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
@@ -347,6 +351,10 @@
   /* The guide and the timeline are pages, like the Watch: no drawing. */
   function paintPage() {
     var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people', rec = state.view === 'record';
+    var meth = state.view === 'methods', door = state.view === 'door';
+    box.classList.toggle('is-wide', meth);
+    document.getElementById('doors').hidden = true;
+    document.getElementById('tab-methods').setAttribute('aria-pressed', meth ? 'true' : 'false');
     document.getElementById('layout').hidden = true;
     document.getElementById('the-watch').hidden = true;
     box.hidden = false;
@@ -354,19 +362,29 @@
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
     ['tab-ideals', 'tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
-    document.getElementById('tab-timeline').setAttribute('aria-pressed', start || people || rec ? 'false' : 'true');
+    document.getElementById('tab-timeline').setAttribute('aria-pressed', state.view === 'timeline' ? 'true' : 'false');
     window.scrollTo(0, 0);
     if (people) { ns.renderPeople(box, ix, ui, nav, state.selected); return; }
     if (rec) { ns.renderRecord(box, ix, ui, nav, state.selected); ns.annotate(box, ix, '.rec-head, section'); return; }
+    if (meth) { ns.renderMethods(box, ix, ui, nav); ns.annotate(box, ix, 'tr'); return; }
+    if (door) { ns.renderDoor(box, ix, ui, nav, state.selected); return; }
     if (start) { ns.renderStart(box, ix, ui, nav); ns.annotate(box, ix); }
     else { ns.renderTimeline(box, ix, ui, nav); ns.annotate(box, ix, 'li.tl-item'); }
   }
   function goStart() { state.view = 'start'; state.ideal = null; state.selected = null; state.edge = null; setHash('#start'); render(); }
   function goTimeline() { state.view = 'timeline'; state.ideal = null; state.selected = null; state.edge = null; setHash('#timeline'); render(); }
   /* A record: one page for anything on the map, at a link that can be shared. */
+  function goMethods() { state.view = 'methods'; state.ideal = null; state.edge = null; state.selected = null; setHash('#methods'); render(); }
+  function goDoor(id) { state.view = 'door'; state.ideal = null; state.edge = null; state.selected = id; setHash('#door/' + id); render(); }
+  function goView(v) {
+    if (v === 'heart') { location.href = 'heart.html'; return; }
+    ({ ideals: function () { go(null); }, methods: goMethods, money: function () { goMoney(null); }, ancients: function () { goAncients(null); },
+      timeline: goTimeline, watch: function () { goWatch(null); }, people: function () { goPeople(null); }, start: goStart }[v] || function () { go(null); })();
+  }
   function goRecord(id) { state.view = 'record'; state.ideal = null; state.edge = null; state.selected = id; setHash('#r/' + id); render(); }
   function goPeople(id) { state.view = 'people'; state.ideal = null; state.edge = null; state.selected = id || null; setHash(id ? '#people/' + id : '#people'); render(); }
-  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goRecord: function (id) { goRecord(id); } };
+  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goRecord: function (id) { goRecord(id); },
+    goMethods: function () { goMethods(); }, goDoor: function (id) { goDoor(id); }, goView: function (v) { goView(v); } };
   function goWatch(id) {
     state.view = 'watch'; state.ideal = null; state.edge = null;
     state.selected = id && (ix.g.watch || []).some(function (w) { return w.id === id; }) ? id : null;
@@ -416,6 +434,8 @@
     if (hash === 'start') { goStart(); return; }
     if (hash === 'timeline') { goTimeline(); return; }
     if (hash.indexOf('r/') === 0 && hash.length > 2) { goRecord(hash.slice(2)); return; }
+    if (hash === 'methods' && ns.hasMethods(ix)) { goMethods(); return; }
+    if (hash.indexOf('door/') === 0) { goDoor(hash.slice(5)); return; }
     if (ns.hasPeople(ix) && (hash === 'people' || hash.indexOf('people/') === 0)) { goPeople(hash.slice(7) || null); return; }
     if (hash === 'ancients' || hash.indexOf('ancients/') === 0) { goAncients(hash.slice(9) || null); return; }
     if (hash === 'money' || hash.indexOf('money/') === 0) { goMoney(hash.slice(6) || null); return; }
@@ -510,6 +530,9 @@
     document.getElementById('tab-timeline').hidden = !(g.fruits || []).length && !ns.hasWatch(ix);
     document.getElementById('to-start').addEventListener('click', function () { goStart(); });
     document.getElementById('to-people').hidden = !ns.hasPeople(ix);
+    document.getElementById('tab-methods').hidden = !ns.hasMethods(ix);
+    document.getElementById('tab-methods').addEventListener('click', function () { goMethods(); });
+    ns.renderDoorStrip(document.getElementById('doors'), ix, ui, nav);
     document.getElementById('to-people').addEventListener('click', function () { goPeople(null); });
     ns.initWho(ix, nav);
     ns.initSearch(document.getElementById('search'), document.getElementById('search-hits'), ix, nav);

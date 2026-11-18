@@ -1,0 +1,22 @@
+[
+ {
+  "id": "sample-door",
+  "label": "A sample viewpoint",
+  "lede": "What this door shows.",
+  "stops": [
+   {
+    "record": "ideal-0",
+    "why": "The first ideal."
+   },
+   {
+    "view": "methods",
+    "title": "Methods",
+    "why": "Side by side."
+   },
+   {
+    "record": "sample-method",
+    "why": "One method."
+   }
+  ]
+ }
+]

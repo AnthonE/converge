@@ -491,6 +491,23 @@ const path = require('path');
   await page.keyboard.press('Enter');
   await page.waitForFunction(() => location.hash === '#watch/claim-1');
 
+  // Ways in: the door strip on the front opens a door; its stops lead to records and views.
+  await page.evaluate(() => { location.hash = ''; });
+  await page.waitForSelector('#doors:not([hidden]) .door-chip');
+  if ((await page.locator('#doors .door-chip').count()) !== graph.doors.length) fail('the front does not show one chip per door');
+  await page.locator('#doors .door-chip').first().click();
+  await page.waitForFunction(() => location.hash === '#door/sample-door');
+  if ((await page.locator('#the-page .door-stops li').count()) !== graph.doors[0].stops.length) fail('a door does not list its stops');
+  await page.locator('#the-page .door-go').nth(1).click();
+  await page.waitForFunction(() => location.hash === '#methods');
+  // Alignment methods side by side, and a method's own record with its five questions.
+  if ((await page.locator('#the-page .mk-table tbody tr').count()) !== graph.methods.length) fail('the methods table does not list every method');
+  await page.locator('#the-page .mk-name .linkbtn').first().click();
+  await page.waitForFunction(() => location.hash === '#r/sample-method');
+  if ((await page.locator('#the-page .mk-key dt').count()) !== 5) fail('a method record does not answer the five questions');
+  await page.evaluate(() => { location.hash = '#r/lab-0'; });
+  await page.waitForFunction(() => /Alignment methods it pushes/.test(document.getElementById('the-page').textContent));
+
   // A record: one page shape for anything. An ideal's page says where it stands; a person with an entry opens it.
   await page.evaluate(() => { location.hash = '#r/ideal-0'; });
   await page.waitForSelector('#the-page .rec-phases li');

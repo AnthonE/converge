@@ -19,7 +19,7 @@ import argparse, os, shutil, subprocess, sys, zipfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SITE = os.path.join(ROOT, 'site')
-FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'map.js', 'graph.json']
+FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'methods.js', 'map.js', 'graph.json']
 
 CSP = ("default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; "
        "frame-ancestors 'none'; base-uri 'none'; form-action 'none'; object-src 'none'")

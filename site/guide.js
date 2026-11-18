@@ -181,6 +181,9 @@
       items.push({ id: id, name: name, rank: n.type === 'fruit' || n.type === 'text' ? 1 : 0, word: ns.typeWord[n.type] || n.type,
         hay: (name + ' ' + (n.what || '') + ' ' + (n.quote || '')).toLowerCase() });
     });
+    (ix.g.methods || []).forEach(function (m) {
+      items.push({ id: m.id, name: m.label, rank: 0, word: 'Alignment method', hay: (m.label + ' ' + m.plain).toLowerCase() });
+    });
     (ix.g.people || []).forEach(function (p) {
       items.push({ id: p.id, person: true, name: p.name, rank: 0, word: 'Who\u2019s who', hay: (p.name + ' ' + (p.match || []).join(' ') + ' ' + p.who).toLowerCase() });
     });

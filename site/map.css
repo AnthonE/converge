@@ -311,3 +311,36 @@ th { color: var(--ink-2); font-weight: 600; }
 .as-page { display: block; margin: 0 0 10px; padding: 2px 0; font-size: 14px; font-weight: 600; background: none; border: 0; text-decoration: underline; text-decoration-color: var(--axis); text-underline-offset: 3px; }
 .kept { margin: 0 0 8px; padding-left: 22px; }
 .kept li { margin: 4px 0; }
+
+/* Ways in: the door strip on the front, and a door's page. */
+.doors { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 12px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+.doors[hidden] { display: none; }
+.doors-q { font-weight: 650; margin-right: 6px; }
+.door-chip { border-radius: 999px; padding: 6px 14px; background: var(--plane); }
+.door-chip:hover { background: var(--wash); }
+.door-stops { margin: 8px 0 16px; padding-left: 24px; max-width: 760px; }
+.door-stops li { margin: 0 0 14px; }
+.door-go { font-size: 17px; font-weight: 600; }
+.door-why { margin: 2px 0 0; color: var(--ink-2); }
+
+/* Alignment methods side by side. */
+.mk-wrap { overflow-x: auto; margin: 8px 0; }
+.mk-table { border-collapse: collapse; min-width: 960px; font-size: 14px; }
+.mk-table th, .mk-table td { border-bottom: 1px solid var(--hair); padding: 10px 10px; vertical-align: top; text-align: left; }
+.mk-table thead th { font-size: 12px; color: var(--ink-2); font-weight: 600; max-width: 170px; }
+.mk-name { width: 220px; }
+.mk-name .linkbtn { font-weight: 650; font-size: 15px; }
+.mk-plain { font-weight: 400; color: var(--ink-2); margin: 4px 0 0; font-size: 13px; }
+.mk-mark { color: var(--ink-2); font-weight: 700; }
+.mk-key dd { margin-bottom: 8px; }
+.mk-src { display: block; color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+@media (max-width: 900px) {
+  .mk-table, .mk-table tbody, .mk-table tr, .mk-table th, .mk-table td { display: block; min-width: 0; width: auto; }
+  .mk-table thead { display: none; }
+  .mk-table tr { border: 1px solid var(--border); border-radius: 8px; margin: 0 0 12px; padding: 4px 10px; background: var(--surface); }
+  .mk-table td { border: 0; padding: 4px 0; }
+  .mk-table td::before { content: attr(data-q); display: block; font-size: 12px; color: var(--ink-2); font-weight: 600; }
+  .mk-wrap { overflow: visible; }
+}
+.watch.is-wide { max-width: none; }
+.is-wide .watch-intro { max-width: 860px; }

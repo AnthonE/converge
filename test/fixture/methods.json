@@ -1,0 +1,70 @@
+[
+ {
+  "id": "sample-method",
+  "label": "A sample method",
+  "plain": "A sample method, in plain words.",
+  "bet": {
+   "speaker": "Sample Model Company 0",
+   "quote": "Sample words on what it bets on.",
+   "source": "Sample Paper",
+   "url": "https://example.org/paper",
+   "verified": "primary",
+   "date": "2024"
+  },
+  "key": [
+   {
+    "q": "serves",
+    "kind": "own words",
+    "a": "A sample answer to serves.",
+    "speaker": "Sample Model Company 0",
+    "quote": "Sample words that answer it.",
+    "source": "Sample Paper",
+    "url": "https://example.org/paper",
+    "verified": "primary"
+   },
+   {
+    "q": "values",
+    "kind": "reading",
+    "a": "A sample answer to values."
+   },
+   {
+    "q": "inside",
+    "kind": "reading",
+    "a": "A sample answer to inside."
+   },
+   {
+    "q": "checks",
+    "kind": "reading",
+    "a": "A sample answer to checks."
+   },
+   {
+    "q": "fails",
+    "kind": "reading",
+    "a": "A sample answer to fails."
+   }
+  ],
+  "pushed_by": [
+   {
+    "name": "Sample Model Company 0",
+    "node": "lab-0",
+    "how": "Uses it in training.",
+    "source": "Sample Paper",
+    "url": "https://example.org/paper",
+    "verified": "primary"
+   }
+  ],
+  "pushback": [
+   {
+    "speaker": "A sample critic",
+    "quote": "Sample critical words.",
+    "source": "Sample Reply",
+    "url": "https://example.org/reply",
+    "verified": "primary",
+    "date": "2025"
+   }
+  ],
+  "cautions": [
+   "A sample caution."
+  ]
+ }
+]
