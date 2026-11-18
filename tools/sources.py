@@ -3,7 +3,7 @@
 Shared by tools/reread.py (the queue a person works through) and tools/links.py (the link check).
 A page is keyed by its URL: one reading of a page covers every item that cites it.
 """
-import json, os, re
+import glob, json, os, re
 from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -109,6 +109,33 @@ def collect(data_dir=DATA):
     return pages
 
 
-def ledger(data_dir=DATA):
-    fp = os.path.join(data_dir, 'reread.json')
-    return json.load(open(fp, encoding='utf-8')) if os.path.exists(fp) else []
+INBOX = 'reread-inbox'
+DONE_DATE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+
+
+def ledger(data_dir=DATA, warn=None):
+    """Every reading a person has recorded, one per page: data/reread.json (written by tools/reread.py and
+    tools/review.py) and the files the phone page (site/reread.html) saves into data/reread-inbox/. The latest date
+    wins; on the same day a reading with a time ("at") beats one without, and a later file beats an earlier one.
+    A malformed file or row is skipped with a warning, never fatal: a reading saved from a phone must not stop a deploy."""
+    say = warn or (lambda m: None)
+    files = [os.path.join(data_dir, 'reread.json')] + sorted(glob.glob(os.path.join(data_dir, INBOX, '*.json')))
+    best = {}
+    for order, fp in enumerate(files):
+        if not os.path.exists(fp):
+            continue
+        rel = os.path.relpath(fp, data_dir)
+        try:
+            rows = json.load(open(fp, encoding='utf-8'))
+        except ValueError as e:
+            say(f'{rel} is not readable JSON ({e}); skipped')
+            continue
+        for r in rows if isinstance(rows, list) else [rows]:
+            if not (isinstance(r, dict) and isinstance(r.get('url'), str) and re.match(r'^https?://', r['url'])
+                    and r.get('result') in RESULTS and DONE_DATE.match(str(r.get('date', '')))):
+                say(f'{rel}: a malformed reading was skipped: {str(r)[:100]}')
+                continue
+            key = (r['date'], str(r.get('at') or ''), order)
+            if r['url'] not in best or key >= best[r['url']][0]:
+                best[r['url']] = (key, {k: v for k, v in r.items() if k in ('url', 'date', 'result', 'note', 'at')})
+    return sorted((v[1] for v in best.values()), key=lambda r: (r['date'], r['url']))

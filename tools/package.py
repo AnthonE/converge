@@ -13,6 +13,7 @@ Added files:
   _headers     security headers (Netlify and Cloudflare Pages read this file as is; on other hosts, set them yourself)
   robots.txt   keeps crawlers out unless --public
   README.txt   how to deploy
+  reread.html  the re-read, on a phone: answers are kept on the phone and saved to the repository as a commit
   feed.xml     an Atom feed of the newest claims on the Watch and events on the map (tools/feed.py)
 """
 import argparse, os, shutil, subprocess, sys, zipfile
@@ -20,7 +21,8 @@ import argparse, os, shutil, subprocess, sys, zipfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SITE = os.path.join(ROOT, 'site')
-FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'ideals.js', 'people.js', 'record.js', 'methods.js', 'map.js', 'graph.json']
+FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'ideals.js', 'people.js', 'record.js', 'methods.js', 'map.js', 'graph.json',
+         'reread.html', 'reread.js', 'reread.css']
 
 CSP = ("default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; "
        "frame-ancestors 'none'; base-uri 'none'; form-action 'none'; object-src 'none'")
@@ -100,6 +102,10 @@ def main():
     open(index, 'w', encoding='utf-8').write(html)
     # The data for researchers: graph.json, CSV tables, DATA.md and a zip, under data/.
     r = subprocess.run([sys.executable, os.path.join(HERE, 'export_data.py'), '--out', os.path.join(a.out, 'data')], capture_output=True, text=True)
+    if r.returncode:
+        sys.exit(r.stdout + r.stderr)
+    # The phone re-read page's queue: every cited page, what the map takes from it, and the readings so far.
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'phone_queue.py'), '--out', os.path.join(a.out, 'reread-queue.json')], capture_output=True, text=True)
     if r.returncode:
         sys.exit(r.stdout + r.stderr)
     # A feed of the newest claims and events, for readers who want to hear of new entries.

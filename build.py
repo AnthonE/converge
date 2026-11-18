@@ -104,9 +104,11 @@ def load(data_dir):
     g['watch'] = json.load(open(wpath, encoding='utf-8')) if os.path.exists(wpath) else []
     meta = os.path.join(data_dir, 'meta.json')
     g['meta'] = json.load(open(meta, encoding='utf-8')) if os.path.exists(meta) else {}
-    # Pages a person has re-read (tools/reread.py writes it). Optional.
-    rpath = os.path.join(data_dir, 'reread.json')
-    g['reread'] = json.load(open(rpath, encoding='utf-8')) if os.path.exists(rpath) else []
+    # Pages a person has re-read: data/reread.json and the phone page's data/reread-inbox/ (tools/sources.py merges
+    # them, one reading per page). A reading of a page the map no longer cites is dropped with a warning.
+    sys.path.insert(0, os.path.join(HERE, 'tools'))
+    import sources
+    g['reread'] = sources.ledger(data_dir, warn=lambda m: print('warning:', m))
     # Who's who: one plain line on each public figure the map names (optional).
     ppath = os.path.join(data_dir, 'people.json')
     g['people'] = json.load(open(ppath, encoding='utf-8')) if os.path.exists(ppath) else []
@@ -655,7 +657,7 @@ def validate(g):
     for i, r in enumerate(g.get('reread') or []):
         who = f'reread[{i}] ({r.get("url")})'
         if r.get('url') not in cited:
-            err(f'{who}: this page is not cited anywhere on the map')
+            continue   # dropped in main() with a warning
         if r.get('url') in seen:
             err(f'{who}: listed twice')
         seen.add(r.get('url'))
@@ -719,6 +721,9 @@ def main():
     counts = {k: len(g[k]) for k in NODE_FILES + ['edges']}
     print('valid:', counts)
     cited = cited_urls(g)
+    for r in [r for r in g['reread'] if r['url'] not in cited]:
+        print(f'warning: a reading of {r["url"]} is kept out: the map no longer cites that page')
+    g['reread'] = [r for r in g['reread'] if r['url'] in cited]
     done = {r['url'] for r in g['reread'] if r.get('result') in ('holds', 'corrected')}
     g['sources'] = {'pages': len(cited), 'reread': len(done & cited)}
     g['updated'] = updated(a.data, g)

@@ -120,7 +120,8 @@ not support, not found, could not read), `source`, `url`, `verified`. **watch_re
 
 **sources**: `url`, `host`, `items` (how many rows cite it), `cited_by` (`file:id` list), `tier` (1 = on the
 Watch, 2 = allegations and court matters, 3 = no model checked, 4 = a model read it on a relay only, 5 = a model
-read it at the source), `machine_flags`, `reread_result` and `reread_date` (a person opened the page and compared
+read it at the source), `machine_flags`, `reread_result` and `reread_date` (from `data/reread.json` and the phone
+page's `data/reread-inbox/`, one reading per page, the latest winning: a person opened the page and compared
 it with the map: `holds`, `does not hold` (to be fixed), `corrected`, `removed`, `could not read`; empty = not yet), `link_status` (`ok`, `gone`,
 `refused` = the site turned away an automated check, `error`) and `link_code`, as of the last link check.
 

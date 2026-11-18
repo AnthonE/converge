@@ -33,6 +33,7 @@ jobs:
       - run: python test/make_fixture.py && python build.py --data test/fixture --no-site --out dist/fixture.html && node test/smoke.js dist/fixture.html
       # The site. Kept out of search engines unless the repository variable PUBLIC is set to true.
       - run: python tools/package.py ${{ vars.PUBLIC == 'true' && '--public' || '' }}
+      - run: node test/reread.js dist/site
       # Cloudflare Pages: on when the repository variable CLOUDFLARE is true and the two secrets are set.
       # main publishes the site; a pull request gets its own preview address.
       - name: Publish to Cloudflare Pages
