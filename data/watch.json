@@ -98,11 +98,14 @@
    }
   ],
   "open": [
-   "How many attendees work in AI, and where: the article says it is “hard to know” and that the filings “suggest” a “substantial” overlap (its three 2023 managers are AI researchers); no count was found.",
    "Whether any account, report or case exists beyond this one incident, which three women say affected them.",
-   "Responses from OpenAI, the business and its cofounder: none found by 17 Nov 2026 (X could not be searched directly)."
+   "Responses from OpenAI, the business and its cofounder: none found by 17 Nov 2026 (X could not be searched directly).",
+   "How many attendees work in AI, and where: the article says it is “hard to know”, that filings “suggest” a “substantial” overlap, and, with no source given, “disproportionate”; the 30 Sep commenter later put the overlap with rationalists at “probably closer to 25% than 50%”. No count was found.",
+   "A New York Times piece of 21 Sep 2026 on an AI party house and networking could not be read (blocked); whether it bears on this is unchecked.",
+   "No Wikipedia article was found citing the story as of 18 Nov 2026."
   ],
   "cautions": [
+   "The article says both that it is “hard to know” what share of attendees work in AI and, later and with no source given, that the parties “have been known to attract a disproportionate number of employees at Anthropic and OpenAI”. Relays carried the second sentence (see How it travelled).",
    "The lede says he “runs a business”; the subhead and body say he is “listed as manager”. The filings name managers and do not say who runs the events. The lede's “allegations” rests, in the body, on “at least one woman”, whose account also describes the organizers acting on it.",
    "The women affected by the one incident the article rests on say the reporter did not contact them, that the organizers removed the man and offered to support them in going to the police, and that the article could have given their perspective.",
    "The researcher the article quotes on careers publicly withdrew that view five weeks before it ran, on the word of an organizer he says he is dating; he calls it his median guess.",
@@ -110,7 +113,118 @@
    "This map is made with AI models made by Anthropic, and Anthropic is a party here. A person independent of Anthropic should re-read these sources.",
    "People who are not public figures are named here by role only."
   ],
-  "standing": "A reporter at the Washington Free Beacon, a conservative national outlet, writing under his own name."
+  "standing": "A reporter at the Washington Free Beacon, a conservative national outlet, writing under his own name.",
+  "why": "Not for anyone's private life. It is here for a claim about careers at AI labs, an alleged assault and how it was handled, and how the claim changed as it was passed along.",
+  "travelled": [
+   {
+    "date": "2026-06-01",
+    "who": "The Asterisk (Ivy Astrix), Substack",
+    "said": "The same LessWrong discussion also included claims that some attendees view RMN as a networking opportunity within the AI ecosystem, and that a significant fraction of women attending are not primarily interested in CNC itself.",
+    "source": "The Asterisk, “Further Notes on Rape Culture in AI Social Circles”, 1 Jun 2026",
+    "verified": "primary",
+    "cites": "a LessWrong discussion, shown as screenshots, not linked",
+    "url": "https://theasterisk.substack.com/p/further-notes-on-rape-culture-in"
+   },
+   {
+    "date": "2026-09-30",
+    "who": "Thing of Things (Ozy Brennan), Substack",
+    "said": "There are some people who work in AI safety who attend Red Means No, but almost everyone who attends Red Means No doesn't work in AI safety.",
+    "source": "Thing of Things, “Some thoughts on sexual harassment”, 30 Sep 2026",
+    "url": "https://thingofthings.substack.com/p/some-thoughts-on-sexual-harassment",
+    "verified": "primary",
+    "cites": "the author's own view; the same post reports “many claims” of “ambient social pressure”",
+    "changed": "A different estimate: few attendees work in AI safety. Not drawn from the step before."
+   },
+   {
+    "date": "2026-09-30",
+    "who": "John Wentworth, an alignment researcher, in a comment on that post",
+    "said": "I have been to RMN more than once, and I think it is mostly rationalists actually. But it's close enough to 50/50 that I'm not confident.",
+    "source": "comment on Thing of Things, 30 Sep 2026",
+    "url": "https://thingofthings.substack.com/p/some-thoughts-on-sexual-harassment/comment/349574346",
+    "verified": "primary",
+    "cites": "his own attendance",
+    "changed": "A first-hand estimate (about half rationalists), and in the same comment: “I personally absolutely do upgrade my assessment of someone's AI alignment qualifications if I find out they go to RMN”."
+   },
+   {
+    "date": "2026-09-30",
+    "who": "A commentator on X (not linked)",
+    "said": "I personally do upgrade my assessment of someone's AI alignment qualifications if I find out they go to [Red Means No].",
+    "source": "a post on X, read as a screenshot in The Asterisk, 1 Oct 2026",
+    "verified": "secondary",
+    "cites": "the 30 Sep comment",
+    "changed": "Drops “absolutely” and the 50/50 estimate."
+   },
+   {
+    "date": "2026-10-01",
+    "who": "The Asterisk (Ivy Astrix), Substack",
+    "said": "Want To Get Ahead In Your AI Career? Go To The Rape Orgy",
+    "source": "The Asterisk, 1 Oct 2026 (its headline)",
+    "url": "https://theasterisk.substack.com/p/want-to-get-ahead-in-your-ai-career",
+    "verified": "primary",
+    "cites": "the post on X",
+    "changed": "The headline states the career claim. The body adds: “There are some who are contesting the assertion that it functions as an AI networking event”."
+   },
+   {
+    "date": "2026-10-08",
+    "who": "John Wentworth, LessWrong",
+    "said": "Actually, there have been zero cases where attending RMN resulted in someone getting an AI Safety job or getting into an AI Safety professional program or whatever who would not have otherwise.",
+    "source": "“On Kink & Status in the Rationalist Community”, 8 Oct 2026",
+    "url": "https://www.lesswrong.com/posts/dHGjqpbfmdEN7TssX/on-kink-and-status-in-the-rationalist-community",
+    "verified": "primary",
+    "cites": "an organizer who checked with the other organizers",
+    "changed": "The 30 Sep commenter revises his own claims, as “median guesses”: no career benefit, and an overlap with rationalists “probably closer to 25% than 50%”."
+   },
+   {
+    "date": "2026-11-16",
+    "who": "The Washington Free Beacon (Aaron Sibarium)",
+    "said": "While it's hard to know what percentage of attendees work in AI, Red Means No's business records suggest that the overlap is substantial. … The orgies have been known to attract a disproportionate number of employees at Anthropic and OpenAI, a dynamic critics say creates professional pressure for women in AI to attend.",
+    "source": "Washington Free Beacon, 16 Nov 2026",
+    "url": "https://freebeacon.com/america/horrifying-meet-the-anthropic-researcher-behind-silicon-valleys-consensual-non-consent-orgies/",
+    "verified": "primary",
+    "cites": "business filings (for “substantial”); none given for “disproportionate”; the 30 Sep comment, a Substack, a Bluesky post and a 2024 post on X for the pressure",
+    "changed": "Adds “disproportionate” and names Anthropic and OpenAI, beside its own hedge. Quotes the 30 Sep comment, not the 8 Oct revision or the Thing of Things estimate."
+   },
+   {
+    "date": "2026-11-16",
+    "who": "Daring Fireball (John Gruber)",
+    "said": "The orgies have been known to attract a disproportionate number of employees at Anthropic and OpenAI, a dynamic critics say creates professional pressure for women in AI to attend.",
+    "source": "Daring Fireball, 16 Nov 2026",
+    "url": "https://daringfireball.net/linked/2026/11/16/anthropic-red-means-no-parties",
+    "verified": "primary",
+    "cites": "the Free Beacon",
+    "changed": "Quotes the “disproportionate” sentence word for word; the “hard to know” sentence is not quoted."
+   },
+   {
+    "date": "2026-11-17",
+    "who": "Liberty One News (no byline found)",
+    "said": "The Free Beacon report found that a disproportionate number of attendees work at Anthropic and OpenAI, and critics say this has created pressure on women in the industry to show up to advance their careers.",
+    "source": "Liberty One News, 17 Nov 2026",
+    "verified": "primary",
+    "cites": "the Free Beacon",
+    "changed": "“have been known to attract” becomes “found”; adds “to advance their careers”.",
+    "url": "https://libertyonenews.com/anthropic-researcher-tied-to-consensual-non-consent-sex-parties-frequented-by-ai-industry-insiders/"
+   },
+   {
+    "date": "2026-11-17",
+    "who": "New York Post (Marc Vartabedian)",
+    "said": "A disproportionate number of the party's participants have been employees at Anthropic and OpenAI, which critics say has created unhealthy professional pressure for women in AI to attend in order to advance their careers, according to the Free Beacon report.",
+    "source": "New York Post, 17 Nov 2026 (also on Yahoo News)",
+    "url": "https://nypost.com/2026/11/17/business/anthropic-researcher-is-hosting-wild-silicon-valley-orgies-with-consensual-non-consent-as-the-theme-report/",
+    "verified": "primary",
+    "cites": "the Free Beacon",
+    "changed": "“have been known to attract a disproportionate number of employees” becomes “A disproportionate number of the party's participants have been employees”; adds “unhealthy” and “in order to advance their careers”."
+   },
+   {
+    "date": "2026-11-17",
+    "who": "Tech Times UK (Thea Felicity)",
+    "said": "The report, however, does not establish that Anthropic or OpenAI formally expected attendance at the parties, or that women faced career penalties for refusing to go.",
+    "source": "Tech Times UK, 17 Nov 2026",
+    "url": "https://www.techtimes.co.uk/women-ai-pressure-private-sex-parties-networking-1810030",
+    "verified": "primary",
+    "cites": "the Free Beacon",
+    "changed": "Keeps the pressure claim as “reportedly”, and adds what the report does not establish."
+   }
+  ]
  },
  {
   "id": "gtig-autonomous-2026-11",
