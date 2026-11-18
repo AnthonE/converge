@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Source Re-read</title>
+<style>
+:root { color-scheme: light; --bg: #f9f9f7; --card: #fff; --ink: #111; --ink2: #55544f; --line: #e2e1da; --axis: #c3c2b7;
+  --ok: #1a7f52; --okbg: #e8f5ee; --bad: #b4341c; --badbg: #fbece8; --warn: #8a6a00; --warnbg: #fbf4dc; --accent: #2a78d6; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --bg: #0e0e0d; --card: #1a1a19; --ink: #f0efec; --ink2: #b9b8b0;
+  --line: #2e2e2b; --axis: #45453f; --ok: #4cc28b; --okbg: #12271d; --bad: #f08a72; --badbg: #2c1611; --warn: #e3c35a; --warnbg: #29230e; --accent: #5b9df0; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; }
+header { grid-column: 1 / -1; }
+h1 { font-size: 20px; margin: 0 0 4px; }
+.sub { color: var(--ink2); margin: 0 0 12px; }
+.bars { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.bar { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
+.bar b { font-size: 18px; }
+.track { height: 6px; background: var(--line); border-radius: 3px; margin-top: 6px; overflow: hidden; }
+.fill { height: 100%; background: var(--ok); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.kicker { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink2); margin: 0 0 4px; }
+.url { font-size: 16px; word-break: break-all; margin: 0 0 10px; }
+.open { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; border-radius: 6px; padding: 8px 14px; font-weight: 600; }
+.verdict { border-radius: 8px; padding: 8px 12px; margin: 12px 0; }
+.v-ok { background: var(--okbg); color: var(--ok); } .v-bad { background: var(--badbg); color: var(--bad); } .v-warn { background: var(--warnbg); color: var(--warn); }
+.items { list-style: none; padding: 0; margin: 0; }
+.items > li { border-top: 1px solid var(--line); padding: 10px 0; }
+.where { font-size: 12px; color: var(--ink2); }
+.q { margin: 6px 0 0 0; padding: 6px 10px; border-left: 3px solid var(--axis); }
+.q.found { border-color: var(--ok); } .q.missing { border-color: var(--bad); }
+.chip { font-size: 11px; border-radius: 9px; padding: 0 7px; border: 1px solid currentColor; white-space: nowrap; }
+.found .chip { color: var(--ok); } .missing .chip { color: var(--bad); }
+.ctx { font-size: 13px; color: var(--ink2); margin-top: 4px; }
+.actions { position: sticky; bottom: 0; background: var(--card); border-top: 1px solid var(--line); margin: 12px -16px -16px; padding: 12px 16px; border-radius: 0 0 10px 10px; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+button { font: inherit; border-radius: 6px; padding: 8px 14px; border: 1px solid var(--axis); background: var(--card); color: var(--ink); cursor: pointer; }
+button.holds { background: var(--ok); color: #fff; border-color: var(--ok); font-weight: 600; }
+button.nothold { color: var(--bad); border-color: var(--bad); }
+textarea { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--axis); border-radius: 6px; padding: 6px 8px; min-height: 52px; }
+kbd { font-size: 11px; border: 1px solid var(--axis); border-radius: 4px; padding: 0 4px; margin-left: 4px; opacity: .7; }
+aside .card { padding: 10px; max-height: calc(100vh - 140px); overflow: auto; position: sticky; top: 12px; }
+aside select { width: 100%; font: inherit; padding: 4px; margin-bottom: 8px; background: var(--card); color: var(--ink); border: 1px solid var(--axis); border-radius: 6px; }
+.list { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.list li { padding: 4px 6px; border-radius: 6px; cursor: pointer; display: flex; gap: 6px; align-items: baseline; }
+.list li:hover, .list li.cur { background: var(--line); }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex: none; border: 1.5px solid var(--axis); }
+.d-holds, .d-corrected, .d-removed { background: var(--ok); border-color: var(--ok); }
+.d-does-not-hold { background: var(--bad); border-color: var(--bad); } .d-could-not-read { background: var(--warn); border-color: var(--warn); }
+.toast { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); background: var(--ink); color: var(--bg); border-radius: 8px; padding: 8px 14px; display: flex; gap: 12px; align-items: center; }
+.toast button { padding: 2px 10px; }
+.toast[hidden] { display: none; }
+.empty { color: var(--ink2); }
+@media (max-width: 820px) { .wrap { grid-template-columns: 1fr; } aside .card { position: static; max-height: 260px; } kbd { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Re-read the sources</h1>
+    <p class="sub">One cited page at a time. Open it, find what the map takes from it, and say whether it holds. Each answer is saved to <code>data/reread.json</code> as you go.</p>
+    <div class="bars" id="bars"></div>
+  </header>
+  <main id="main"><div class="card empty">Loading…</div></main>
+  <aside><div class="card">
+    <select id="filter" aria-label="Which pages to list">
+      <option value="gate">Before going public (Watch and allegations)</option>
+      <option value="todo">Everything not yet read</option>
+      <option value="flagged">Marked “does not hold”</option>
+      <option value="all">All pages</option>
+    </select>
+    <ul class="list" id="list"></ul>
+  </div></aside>
+</div>
+<div class="toast" id="toast" hidden></div>
+<script>
+'use strict';
+var S = null, cur = null, filterEl = document.getElementById('filter');
+try { filterEl.value = localStorage.getItem('review-filter') || 'gate'; } catch (e) {}
+function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function add(p) { for (var i = 1; i < arguments.length; i++) if (arguments[i]) p.appendChild(arguments[i]); return p; }
+function done(p) { return p.reread && /^(holds|corrected|removed)$/.test(p.reread.result); }
+function visible() {
+  var f = filterEl.value;
+  return S.pages.filter(function (p) {
+    if (f === 'gate') return p.tier <= 2;
+    if (f === 'todo') return !p.reread;
+    if (f === 'flagged') return p.reread && p.reread.result === 'does not hold';
+    return true;
+  });
+}
+function next() { var v = visible(); return (v.filter(function (p) { return !p.reread; })[0] || v[0] || null); }
+function api(path, body) {
+  return fetch(path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Review': '1' }, body: JSON.stringify(body) } : {})
+    .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || r.status); return j; }); });
+}
+function bar(label, n, of) {
+  var b = el('div', 'bar'), t = el('div', 'track'), f = el('div', 'fill');
+  f.style.width = (of ? Math.round(100 * n / of) : 0) + '%';
+  return add(b, add(el('div'), el('b', null, n + ' of ' + of), el('span', null, ' ' + label)), add(t, f));
+}
+function verdict(p) {
+  var pc = p.precheck, d = el('div', 'verdict');
+  if (!pc) { d.className += ' v-warn'; d.textContent = 'No automatic check for this page (nothing quoted, or the pre-check has not run). Read it yourself.'; return d; }
+  if (pc.status !== 'text') { d.className += ' v-warn'; d.textContent = 'The script could not read this page (' + pc.status + (pc.code ? ' ' + pc.code : '') + '). Read it yourself.'; return d; }
+  var miss = pc.quotes.filter(function (q) { return q.result === 'not found'; }).length;
+  if (!miss) { d.className += ' v-ok'; d.textContent = 'The script found every quoted word on this page. Check that they are in context and said by who the map says.'; }
+  else { d.className += ' v-bad'; d.textContent = 'The script could not find ' + miss + ' of ' + pc.quotes.length + ' quoted passages. Read carefully: the words may be elsewhere, load late, or not be there.'; }
+  return d;
+}
+function show(p) {
+  cur = p;
+  var main = document.getElementById('main'); main.textContent = '';
+  if (!p) { add(main, el('div', 'card empty', 'Nothing in this list. Choose another on the right.')); paintList(); return; }
+  var c = el('div', 'card'), pre = {};
+  ((p.precheck && p.precheck.quotes) || []).forEach(function (q) { pre[q.quote] = q; });
+  add(c, el('p', 'kicker', p.tier_name), el('p', 'url', p.url));
+  var a = el('a', 'open', 'Open the page ↗'); a.href = p.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+  add(c, a);
+  if (p.items.some(function (x) { return x.nolink; })) add(c, el('p', 'where', 'The map names this page but does not link it (a carrier’s own site). Open it to check anyway.'));
+  if (p.link && p.link.status !== 'ok') add(c, el('p', 'where', 'Last link check: ' + p.link.status + (p.link.code ? ' (' + p.link.code + ')' : '')));
+  add(c, verdict(p), el('p', 'kicker', 'What the map takes from it (' + p.items.length + ')'));
+  var ul = el('ul', 'items');
+  p.items.forEach(function (x) {
+    var li = el('li');
+    add(li, el('div', 'where', x.file + ' · ' + x.owner + ' · ' + x.where + ' · machine flag: ' + x.flag), el('div', null, x.text));
+    x.quotes.forEach(function (q) {
+      var r = pre[q], box = el('div', 'q' + (r ? (r.result === 'not found' ? ' missing' : ' found') : ''));
+      add(box, el('span', null, '“' + q + '” '), r ? el('span', 'chip', r.result) : null);
+      if (r && r.context) add(box, el('div', 'ctx', '…' + r.context + '…'));
+      add(li, box);
+    });
+    add(ul, li);
+  });
+  add(c, ul);
+  var act = el('div', 'actions');
+  if (p.reread) add(act, el('p', 'where', 'Already marked: ' + p.reread.result + ' on ' + p.reread.date + (p.reread.note ? ' (' + p.reread.note + ')' : '')));
+  var note = el('textarea'); note.id = 'note'; note.placeholder = 'Note (needed for “does not hold”: what does the page actually say?)';
+  if (p.reread && p.reread.note) note.value = p.reread.note;
+  var btns = el('div', 'btns');
+  [['holds', 'It holds', 'holds', 'h'], ['does not hold', 'Does not hold', 'nothold', 'n'], ['could not read', 'Can’t read it', '', 'c']].forEach(function (b) {
+    var k = add(el('button', b[2], b[1]), el('kbd', null, b[3])); k.type = 'button';
+    k.addEventListener('click', function () { mark(b[0]); }); add(btns, k);
+  });
+  var skip = add(el('button', null, 'Skip'), el('kbd', null, 's')); skip.type = 'button';
+  skip.addEventListener('click', function () { var v = visible(), i = v.indexOf(p); show(v[i + 1] || v[0]); });
+  add(btns, skip);
+  if (p.reread) { var u = el('button', null, 'Clear my answer'); u.type = 'button'; u.addEventListener('click', function () { undo(p.url); }); add(btns, u); }
+  add(c, add(act, note, btns));
+  add(main, c);
+  paintList();
+  window.scrollTo(0, 0);
+}
+function paintList() {
+  var ul = document.getElementById('list'); ul.textContent = '';
+  visible().forEach(function (p) {
+    var li = el('li', p === cur ? 'cur' : null);
+    add(li, el('span', 'dot' + (p.reread ? ' d-' + p.reread.result.replace(/ /g, '-') : '')), el('span', null, p.host + ' · ' + p.items.length));
+    li.title = p.url;
+    li.addEventListener('click', function () { show(p); });
+    add(ul, li);
+  });
+  var b = document.getElementById('bars'), n = S.counts; b.textContent = '';
+  add(b, bar('before going public', n.gate_done, n.gate_total), bar('all cited pages', n.done, n.total));
+  if (n.flagged) add(b, add(el('div', 'bar'), el('b', null, String(n.flagged)), el('span', null, ' marked “does not hold”, to fix')));
+}
+function load(s, keep) {
+  S = s;
+  var again = keep && S.pages.filter(function (p) { return p.url === keep; })[0];
+  return again;
+}
+function toast(msg, url) {
+  var t = document.getElementById('toast'); t.textContent = '';
+  add(t, el('span', null, msg));
+  if (url) { var u = el('button', null, 'Undo'); u.type = 'button'; u.addEventListener('click', function () { undo(url); }); add(t, u); }
+  t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(function () { t.hidden = true; }, 5000);
+}
+function mark(result) {
+  var note = document.getElementById('note').value.trim(), url = cur.url;
+  if (result === 'does not hold' && !note) { document.getElementById('note').focus(); toast('Say what the page actually says, then press again.'); return; }
+  api('/api/mark', { url: url, result: result, note: note }).then(function (s) {
+    load(s); toast('Saved: ' + result, url); show(next());
+  }).catch(function (e) { toast('Not saved: ' + e.message); });
+}
+function undo(url) {
+  api('/api/undo', { url: url }).then(function (s) { show(load(s, url)); toast('Cleared'); }).catch(function (e) { toast('Not cleared: ' + e.message); });
+}
+filterEl.addEventListener('change', function () { try { localStorage.setItem('review-filter', filterEl.value); } catch (e) {} show(next()); });
+document.addEventListener('keydown', function (ev) {
+  if (!cur || /TEXTAREA|SELECT|INPUT/.test(document.activeElement.tagName) || ev.metaKey || ev.ctrlKey) return;
+  var k = { h: 'holds', n: 'does not hold', c: 'could not read' }[ev.key];
+  if (k) { mark(k); ev.preventDefault(); }
+  if (ev.key === 's') { var v = visible(); show(v[v.indexOf(cur) + 1] || v[0]); }
+  if (ev.key === 'o') window.open(cur.url, '_blank', 'noopener');
+});
+api('/api/state').then(function (s) { load(s); show(next()); }).catch(function (e) {
+  document.getElementById('main').textContent = 'Could not reach the review server: ' + e.message;
+});
+</script>
+</body>
+</html>

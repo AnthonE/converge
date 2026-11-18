@@ -1,4 +1,4 @@
-name: Validate and publish
+name: Validate, test and publish
 
 on:
   push:
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: publish-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -25,9 +25,24 @@ jobs:
           python-version: '3.12'
       # Validation: refuses labels in the map's own voice, working notes, unattributed claims, bad links.
       - run: python build.py --check
+      # The viewer, driven in a real browser: every view, the guide, the timeline, search, phone width.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --no-package-lock playwright@1.63.0 && npx playwright install --with-deps chromium
+      - run: python test/make_fixture.py && python build.py --data test/fixture --no-site --out dist/fixture.html && node test/smoke.js dist/fixture.html
       # The site. Kept out of search engines unless the repository variable PUBLIC is set to true.
       - run: python tools/package.py ${{ vars.PUBLIC == 'true' && '--public' || '' }}
-      # Publishing to GitHub Pages is off unless the repository variable PAGES is true (Vercel hosts it otherwise).
+      # Cloudflare Pages: on when the repository variable CLOUDFLARE is true and the two secrets are set.
+      # main publishes the site; a pull request gets its own preview address.
+      - name: Publish to Cloudflare Pages
+        if: vars.CLOUDFLARE == 'true' && (github.ref == 'refs/heads/main' || github.event_name == 'pull_request')
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist/site --project-name=${{ vars.CLOUDFLARE_PROJECT || 'ideals-map' }} --branch=${{ github.head_ref || github.ref_name }}
+      # GitHub Pages instead: on only if the repository variable PAGES is true.
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main' && vars.PAGES == 'true'
         with:

@@ -25,7 +25,39 @@ python3 -m http.server -d site 8000
 
 Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file with everything inside.
 
+**For a newcomer:** "New here? Start here" under the title explains the map in plain words, the five ways in,
+the words it uses and what each checking mark means. **Timeline** lists every dated event and Watch claim, newest
+first. The search box finds any name, event or claim and opens it where it lives.
+
+**For researchers:** the published site carries the data under `data/`: `graph.json`, one CSV per table (with
+quotations, phase conditions and the Watch's checks broken out), `sources.csv` (every cited page with its
+re-read and link status) and `ideals-map-data.zip`. [DATA.md](DATA.md) documents every field. To write it
+locally: `python3 tools/export_data.py` (into `dist/data/`).
+
+## Check it
+
+No person has yet re-read the sources; models did every step. Two tools make that debt something to work down:
+
+- `python3 tools/reread.py` writes `dist/reread.md`: every cited page (373 now) in the order to read it, the
+  Watch first, then allegations, then anything no model checked, then relays, then pages read at the source.
+  One reading covers every item that cites the page. After opening a page and comparing it with the map, record
+  it: `python3 tools/reread.py mark URL holds` (or `corrected`, `removed`, `"could not read"`). This writes
+  `data/reread.json`; the viewer then shows "re-read by a person" beside the machine's flag, and Start here
+  shows the count.
+- `python3 tools/review.py` does the same in a browser, one page at a time: it shows what the map takes from the
+  page and what the automatic pre-check found, and saves each answer (`holds`, `does not hold` with a note,
+  `could not read`) to `data/reread.json`. Run `python3 tools/precheck.py` first: it looks for every quoted
+  passage on its page, so a reading where every word was found is a quick look at the context. A match is never
+  counted as a person's reading.
+- `python3 tools/links.py` checks that every cited page still answers and writes `dist/links.md` (read-only;
+  `gone` means 404, 410 or no such host; `refused` means the site turned away an automated check). Archiving the
+  live pages in the Wayback Machine is left to the operator, because it sends each address to the Internet Archive.
+
 ## Change it
+
+- **Claims and corrections** come in as issues: the forms in `.github/ISSUE_TEMPLATE/` ask for the exact words,
+  who said them, a link and the date, and refuse private names. Set `contribute` in `data/meta.json` to the
+  repository's new-issue page once it is public, and Start here will offer it.
 
 - **The data** is in `data/`: ideals, carriers, vehicles, events (`fruits.json`), texts, funders, labs, evaluators,
   patterns, mechanisms, offshoots, links (`edges.json`) and the Watch (`watch.json`).
@@ -45,19 +77,37 @@ Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file w
 
 ## Publish it
 
-**Vercel.** Import the repository at vercel.com/new. `vercel.json` sets the build (`python3 tools/package.py`),
-the output folder (`dist/site`) and the security headers; there is nothing to choose. Every push to `main` redeploys,
-and every pull request gets its own preview link. To let search engines in, add the environment variable
-`PUBLIC` = `true` in the project's settings and redeploy. The workflow still validates every push and
-pull request; it publishes to GitHub Pages only if you ask it to (below), so there is one copy online.
+The host builds the site itself from this repository, so publishing does not depend on GitHub Actions. (Actions
+cannot start jobs on this repository at the moment: every run, even a one-line test, fails within seconds with no
+log, which points to the account's billing or Actions minutes. The workflows below are ready for when it can.)
+The build command validates the data first (`python3 tools/package.py` runs `build.py`), so a record that breaks
+a guardrail stops the deploy.
 
-**GitHub Pages** (instead of Vercel). Set the repository variable `PAGES` to `true` and choose Settings → Pages →
-Source: GitHub Actions. Pushing to `main` then runs the workflow in `.github/workflows/pages.yml`: it validates the data, builds the site and
-publishes it to GitHub Pages. The site is kept out of search engines until you set the repository variable
-`PUBLIC` to `true` (Settings → Secrets and variables → Actions → Variables). Elsewhere, run
-`python3 tools/package.py` and upload `dist/site/` to any static host (Netlify and Cloudflare Pages read its
-`_headers` file).
+**Vercel (connected).** The repository is connected to Vercel, which builds from `vercel.json`: every push to
+`main` publishes the site and every pull request gets a preview address (behind a Vercel login, so only the
+account sees it). Vercel's build is also the check that runs on every push while Actions cannot: a record that
+breaks a guardrail fails the deploy. To let search engines in, add the environment variable `PUBLIC` = `true` in
+the project's settings and redeploy. A password on the production site is a paid feature there.
+
+**Cloudflare Pages (an alternative).** Free with no bandwidth cap, it applies the `_headers` file, and Cloudflare
+Access can put a free email login in front of the production site. Workers & Pages → Create → Pages → Connect to
+Git, choose this repository, build command `python3 tools/package.py`, output directory `dist/site`, production
+branch `main`, no framework preset. For a login: Zero Trust → Access → Applications → a self-hosted application
+for the site's address, letting in only the emails you choose.
+
+**GitHub Pages** needs Actions and, on a private repository, a paid plan; it also ignores `_headers`. **Any static
+host:** run `python3 tools/package.py` and upload `dist/site/`.
+
+**From GitHub Actions instead** (once Actions can run): `.github/workflows/pages.yml` also drives the viewer in a
+browser on every push and pull request, and can upload to Cloudflare Pages itself. Set the variable `CLOUDFLARE` =
+`true` and the secrets `CLOUDFLARE_API_TOKEN` (permission: Account → Cloudflare Pages → Edit) and
+`CLOUDFLARE_ACCOUNT_ID`, and use a project made with "upload directly" rather than "Connect to Git".
+
+**Checked every week.** `.github/workflows/sources.yml` runs the link check and the quote pre-check each Monday,
+keeps the reports as a download on the run's page, and fails (so GitHub emails the owner) when a cited page is
+gone. Until Actions can run, run `python3 tools/links.py` and `python3 tools/precheck.py` by hand or from a session.
 
 ## Licence
 
-Not yet chosen.
+Code: MIT (`LICENSE`). Data and the map's own text: CC BY 4.0 (`LICENSE-DATA.md`). Quoted words belong to their
+authors and are not covered.

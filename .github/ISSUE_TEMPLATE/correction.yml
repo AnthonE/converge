@@ -1,0 +1,53 @@
+name: A correction
+description: Something on the map that a source does not support, is out of date, or is missing the other side.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Corrections are how this map gets better. Say which record, what it says, and what the source
+        actually says, with a link. If you are a party to a record and want your response on it, say so here.
+        **Do not name private people**; describe them by role.
+  - type: input
+    id: record
+    attributes:
+      label: Which record
+      description: The name, event or Watch claim as it appears on the map, or its id from the data (for example `made-saviour-e1`).
+    validations:
+      required: true
+  - type: textarea
+    id: map-says
+    attributes:
+      label: What the map says
+    validations:
+      required: true
+  - type: textarea
+    id: source-says
+    attributes:
+      label: What the source says
+      description: Quote it exactly, or say what is missing (a reply, a retraction, a later ruling).
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Source link
+    validations:
+      required: true
+  - type: dropdown
+    id: standing
+    attributes:
+      label: How you stand to it
+      options:
+        - A reader
+        - A party to the record, or speaking for one
+        - A researcher or journalist
+        - Rather not say
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you send
+      options:
+        - label: I have not named anyone who is not a public figure.
+          required: true

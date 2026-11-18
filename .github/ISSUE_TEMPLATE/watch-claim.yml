@@ -1,0 +1,52 @@
+name: A claim for the Watch
+description: Something being said about AI or the people building it that should be checked and put on the record.
+title: "Watch: "
+labels: ["watch"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The Watch records claims in circulation and what checking finds. It is a record, not a verdict: a claim
+        there is not a finding, and an unchecked claim is not false. Please give the words exactly and a link.
+        **Do not name private people** (members, accusers, victims, defendants who are not public figures):
+        describe them by role, for example "a former employee".
+  - type: textarea
+    id: claim
+    attributes:
+      label: The words
+      description: Copy them exactly as they were said or posted. Do not paraphrase inside quotation marks.
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who said it
+      description: The outlet, account or public figure, and how they stand to the matter (reporter, party, relay, observer).
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where (link)
+      description: The page where you read it. If you saw it in a screenshot or a repost, say so.
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date it was said or posted
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: known
+    attributes:
+      label: What you already know
+      description: Any primary source (filing, paper, the speaker's own post), any reply from the people concerned, or anything that contradicts it.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you send
+      options:
+        - label: I have not named anyone who is not a public figure.
+          required: true
+        - label: The words above are copied exactly.
+          required: true

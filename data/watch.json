@@ -984,5 +984,97 @@
   "touches": [
    "anthropic"
   ]
+ },
+ {
+  "id": "newyorker-maple-2026-11",
+  "date": "2026-11-16",
+  "title": "A New Yorker feature on MAPLE, a Buddhist monastery in Vermont that works on AI, and the monastery's reply",
+  "claimed_by": "The New Yorker (Sam Kriss)",
+  "standing": "A magazine writer who visited the monastery and interviewed its head teacher, Soryu Forall. The piece ran under “Annals of Religion”.",
+  "claim": "The Buddhist A.I. Sect That Wants to Take Over Silicon Valley. MAPLE promises to teach us how to live in the age of A.I. Its secret mission is much stranger.",
+  "source": "The New Yorker, 16 Nov 2026 (headline and subheading, read on a screenshot of the page)",
+  "url": "https://www.newyorker.com/magazine/2026/11/23/the-buddhist-ai-sect-that-wants-to-take-over-silicon-valley",
+  "kind": "reported",
+  "status": "partly checked",
+  "why": "A monastery that says it is “designing a religion capable of correctly guiding AI systems”, reported on by a national magazine, with the monastery's public reply beside it.",
+  "checks": [
+   {
+    "what": "The feature itself was not read here. The New Yorker's site refuses the tools this project uses, and copies reposted on other sites were not used. A person needs to read it.",
+    "result": "could not read",
+    "source": "The New Yorker",
+    "url": "https://www.newyorker.com/magazine/2026/11/23/the-buddhist-ai-sect-that-wants-to-take-over-silicon-valley"
+   },
+   {
+    "what": "The headline and subheading quoted above, on a screenshot of the article page in a reader's post on X, 17 Nov 2026. The address is the one MAPLE's reply links to.",
+    "result": "supports",
+    "source": "a post on X, 17 Nov 2026, seen in a screenshot",
+    "verified": "secondary"
+   },
+   {
+    "what": "What MAPLE says it does: “we are striving to care for life on Earth by designing a religion capable of correctly guiding AI systems.” Of the phrase the feature quotes from its website, “Designing Religion for the Age of A.I.”, MAPLE writes: “This is indeed what we believe, and what we are doing about it.”",
+    "result": "supports",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker",
+    "verified": "primary"
+   },
+   {
+    "what": "On the “secret mission”: MAPLE writes that its secret doctrine “does exist, and it relates to the solution to the AI problem, not to the definition of the problem”, that it shares it only with people in its training, and that “we disagree with his characterization of our secret doctrine.”",
+    "result": "partly supports",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker",
+    "verified": "primary"
+   }
+  ],
+  "responses": [
+   {
+    "who": "MAPLE (the Monastic Academy for the Preservation of Life on Earth)",
+    "what": "says it wants to “correct some inaccuracies in the article”. “The article says that our main focus is to stop AI. It is not.” “We do not aim to stop AI, but to guide its development in such a way that it makes our society less destructive rather than more destructive.”",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker"
+   },
+   {
+    "who": "MAPLE",
+    "what": "“Does this mean we’re trying to build an AI guru, some kind of AI sage, a programmed messiah? The article says we are. However, we are not.”",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker"
+   },
+   {
+    "who": "MAPLE",
+    "what": "on its head teacher's childhood, which the feature recounts: he describes “overcoming the view that humanity “has to go”, or deserves to die, due to the destruction it has wrought on the natural world. We must emphasize that this is a view that Forall overcame as a teenager.”",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker"
+   },
+   {
+    "who": "MAPLE",
+    "what": "on residents not talking to the reporter: the community was “in noble silence” during the visit and chose “to have a chaperone in organized one-on-ones with Sam”.",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker"
+   },
+   {
+    "who": "MAPLE",
+    "what": "on a former resident the feature quotes (a private person, not named here): it calls his claims “not merely a mischaracterization but part of a deliberate project by a group that is competing with us to influence the ethics of AI systems”, and says “self-harm is not acceptable or part of spiritual practice.”",
+    "source": "MAPLE's reply to the feature, on its own site (undated; online by 18 Nov 2026)",
+    "url": "https://www.monasticacademy.org/newyorker"
+   },
+   {
+    "who": "A trainee at MAPLE (a private person, not named here)",
+    "what": "published a reply to the former resident's account the day before the feature appeared. Not read here beyond its title and date.",
+    "source": "“The Case for MAPLE”, LessWrong, 15 Nov 2026",
+    "url": "https://www.lesswrong.com/posts/hhKp7iwJFvTMocH4s/the-case-for-maple"
+   }
+  ],
+  "open": [
+   "The feature's own words on the “secret mission”, an AI guru, taking over Silicon Valley and the former resident's account. A person should read it and set it against MAPLE's reply, point by point.",
+   "Former residents have published their own accounts of life at MAPLE on LessWrong: an open letter (16 Dec 2021), a post on MAPLE and the wider community (19 Aug 2025) and a long account of “high-control dynamics” (29 Jul 2026). None has been read here yet, and the map draws nothing from them.",
+   "The interview recordings MAPLE links from its reply have not been listened to here."
+  ],
+  "cautions": [
+   "“Sect” is the magazine's headline word, not this map's.",
+   "As MAPLE quotes it, the feature ends: “It’s a shame that MAPLE is so secretive about its secret doctrine, because, in a way, I think the group is closer to the truth than anyone else I’d encountered.” Those are the feature's words as MAPLE relays them, not read in the feature itself.",
+   "The former resident and the trainee are private persons and are named here by role only. Both the feature and MAPLE's reply name the former resident, who has also published his own account of MAPLE under his name; because he went public on this matter himself, both pages are linked.",
+   "MAPLE's reply mentions a self-harm account from the feature; this record does not repeat it. If you or someone you know is struggling, call or text 988 (the Suicide and Crisis Lifeline, US).",
+   "These records were made with AI models made by Anthropic. No source read here makes Anthropic a party to this matter."
+  ],
+  "touches": []
  }
 ]
