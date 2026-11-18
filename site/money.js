@@ -147,7 +147,7 @@
     ui.add(li, ui.h('span', null, facts ? ' — ' + facts + '. ' : '. '), ui.h('span', null, e.sentence + ' '));
     if (e.source) ui.add(li, ui.link(e.url, e.source, e.nolink), ui.h('span', null, ' '));
     if (e.kind) ui.add(li, ui.h('span', 'lane', e.kind), ui.h('span', null, ' '));
-    if (e.verified) ui.add(li, ui.badge(e.verified));
+    if (e.verified) ui.add(li, ui.badge(e.verified, e.url));
     return li;
   }
   function newestFirst(a, b) { return String(b.date || '').localeCompare(String(a.date || '')); }
@@ -188,7 +188,7 @@
         var li = ui.h('li', 'dispute');
         ui.add(li, ui.h('span', null, d.date + ': ' + d.what + ' '),
           ui.h('span', null, d.response ? 'Response: ' + d.response + ' ' : d.kind === 'documented' ? '' : 'No response is recorded here. '),
-          ui.link(d.url, d.source), ui.h('span', null, ' '), ui.h('span', 'lane', d.kind), ui.h('span', null, ' '), ui.badge(d.verified));
+          ui.link(d.url, d.source), ui.h('span', null, ' '), ui.h('span', 'lane', d.kind), ui.h('span', null, ' '), ui.badge(d.verified, d.url));
         ui.add(dl, li);
       });
       ui.add(root, ui.add(ds, dl));
@@ -212,7 +212,7 @@
         var li = ui.h('li', 'dispute');
         li.setAttribute('data-event', f.id);
         ui.add(li, ui.h('span', null, f.date + ': ' + f.what + ' '), ui.link(f.url, f.source || 'source', f.nolink), ui.h('span', null, ' '),
-          ui.h('span', 'lane', f.kind), ui.h('span', null, ' '), ui.badge(f.verified));
+          ui.h('span', 'lane', f.kind), ui.h('span', null, ' '), ui.badge(f.verified, f.url));
         ui.add(hl, li);
       });
       ui.add(root, ui.add(hs, hl));

@@ -35,7 +35,7 @@
       w.checks.forEach(function (c) {
         var li = ui.h('li', 'check');
         ui.add(li, ui.h('span', 'lane result-' + c.result.replace(/ /g, '-'), RESULT[c.result] || c.result), ui.h('span', null, ' ' + c.what + ' '),
-          c.url ? ui.link(c.url, c.source, c.nolink) : ui.h('span', 'cite', '(' + (c.source || '') + ')'), ui.h('span', null, ' '), c.verified ? ui.badge(c.verified) : null);
+          c.url ? ui.link(c.url, c.source, c.nolink) : ui.h('span', 'cite', '(' + (c.source || '') + ')'), ui.h('span', null, ' '), c.verified ? ui.badge(c.verified, c.url) : null);
         ui.add(ul, li);
       });
       ui.add(art, ui.add(s, ul));

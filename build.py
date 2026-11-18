@@ -47,6 +47,7 @@ FUNDER_KIND = {'person', 'individuals', 'foundation', 'fund', 'firm', 'company',
 DATE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
 STATUS = {'met', 'partly', 'not_met', 'unknown'}
 VERIFIED = {'primary', 'secondary', 'unverified'}
+REREAD_RESULTS = {'holds', 'corrected', 'removed', 'could not read'}
 FRUIT_KIND = {'documented', 'reported', 'alleged'}
 CARRIER_KIND = {'movement', 'organization', 'community', 'public figure', 'discourse', 'product', 'venue'}
 REQUIRED = {
@@ -99,7 +100,29 @@ def load(data_dir):
     g['watch'] = json.load(open(wpath, encoding='utf-8')) if os.path.exists(wpath) else []
     meta = os.path.join(data_dir, 'meta.json')
     g['meta'] = json.load(open(meta, encoding='utf-8')) if os.path.exists(meta) else {}
+    # Pages a person has re-read (tools/reread.py writes it). Optional.
+    rpath = os.path.join(data_dir, 'reread.json')
+    g['reread'] = json.load(open(rpath, encoding='utf-8')) if os.path.exists(rpath) else []
     return g
+
+
+def cited_urls(g):
+    """Every http(s) URL the data cites, anywhere."""
+    found = set()
+
+    def walk(o):
+        if isinstance(o, dict):
+            if isinstance(o.get('url'), str) and URL.match(o['url']):
+                found.add(o['url'])
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    for k, v in g.items():
+        if k not in ('reread', 'meta', 'phases'):
+            walk(v)
+    return found
 
 
 def validate(g):
@@ -453,6 +476,19 @@ def validate(g):
         err('meta.json needs a "disclosure" line once the map shows money: say what ties the author has to the bodies shown')
     if [p.get('phase') for p in g['phases']] != list(range(6)):
         err('phases.json must define phases 0-5 in order')
+    # The re-read ledger: one line per page a person has opened and compared with the map.
+    cited, seen = cited_urls(g), set()
+    for i, r in enumerate(g.get('reread') or []):
+        who = f'reread[{i}] ({r.get("url")})'
+        if r.get('url') not in cited:
+            err(f'{who}: this page is not cited anywhere on the map')
+        if r.get('url') in seen:
+            err(f'{who}: listed twice')
+        seen.add(r.get('url'))
+        if r.get('result') not in REREAD_RESULTS:
+            err(f'{who}: result must be one of {sorted(REREAD_RESULTS)}')
+        if not DATE.match(str(r.get('date', ''))) or len(str(r.get('date', ''))) != 10:
+            err(f'{who}: date must be YYYY-MM-DD')
     return errs
 
 
@@ -495,6 +531,10 @@ def main():
         sys.exit(1)
     counts = {k: len(g[k]) for k in NODE_FILES + ['edges']}
     print('valid:', counts)
+    cited = cited_urls(g)
+    done = {r['url'] for r in g['reread'] if r.get('result') in ('holds', 'corrected')}
+    g['sources'] = {'pages': len(cited), 'reread': len(done & cited)}
+    print(f'sources: {len(cited)} pages cited, {len(done & cited)} re-read by a person (tools/reread.py)')
     if a.check:
         return
     site = os.path.join(HERE, 'site')

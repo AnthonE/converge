@@ -22,7 +22,13 @@
     a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
     return a;
   }
-  function badge(v) { return h('span', 'badge badge-' + (v || 'unverified'), VERIFIED[v] || VERIFIED.unverified); }
+  /* The machine's flag, and, once a person has opened the page and compared it with the map, that too. */
+  function badge(v, url) {
+    var r = url && ix.reread[url];
+    if (r && (r.result === 'holds' || r.result === 'corrected'))
+      return h('span', 'badge badge-reread', (VERIFIED[v] || VERIFIED.unverified) + ' · re-read by a person, ' + r.date);
+    return h('span', 'badge badge-' + (v || 'unverified'), VERIFIED[v] || VERIFIED.unverified);
+  }
   function section(title, note) {
     var s = h('section', 'sec');
     add(s, h('h3', null, title));
@@ -49,7 +55,7 @@
     (words || []).forEach(function (w) {
       var q = h('blockquote', null, '“' + w.quote + '”');
       var c = h('p', 'cite');
-      add(c, h('span', null, w.speaker + ', '), link(w.url, w.source, w.nolink), h('span', null, w.date ? ' (' + w.date + ') ' : ' '), badge(w.verified));
+      add(c, h('span', null, w.speaker + ', '), link(w.url, w.source, w.nolink), h('span', null, w.date ? ' (' + w.date + ') ' : ' '), badge(w.verified, w.url));
       add(box, q, c);
     });
     return box;
@@ -129,7 +135,7 @@
     if (n.type === 'fruit') {
       add(root, h('p', 'statement', n.what));
       var p = h('p', 'cite');
-      add(p, h('span', null, n.date + ' · ' + (KIND[n.kind] || n.kind) + ' · '), link(n.url, n.source || 'source', n.nolink), h('span', null, ' '), badge(n.verified));
+      add(p, h('span', null, n.date + ' · ' + (KIND[n.kind] || n.kind) + ' · '), link(n.url, n.source || 'source', n.nolink), h('span', null, ' '), badge(n.verified, n.url));
       add(root, p);
     } else if (n.type === 'offshoot') {
       add(root, h('p', 'cite', n.status));
@@ -140,7 +146,7 @@
         var cs2 = section('Where it came from', 'The record of lineage. It says where the group came from, not that the community or any ideal caused what followed.'), cl = h('ul', 'links');
         came.forEach(function (l) {
           var li = h('li', 'flow'), e = l.edge;
-          add(li, h('span', null, e.sentence + ' '), link(e.url, e.source || 'source', e.nolink), h('span', null, ' '), h('span', 'lane', KIND[e.kind] || e.kind), h('span', null, ' '), badge(e.verified));
+          add(li, h('span', null, e.sentence + ' '), link(e.url, e.source || 'source', e.nolink), h('span', null, ' '), h('span', 'lane', KIND[e.kind] || e.kind), h('span', null, ' '), badge(e.verified, e.url));
           add(cl, li);
         });
         add(root, add(cs2, cl));
@@ -150,7 +156,7 @@
         n.record.forEach(function (r) {
           var li = h('li', 'happened');
           add(li, h('span', null, r.date + ': ' + r.what + ' '), r.status ? h('span', 'lane', r.status) : null, h('span', null, ' '),
-            link(r.url, r.source || 'source', r.nolink), h('span', null, ' '), h('span', 'lane', KIND[r.kind] || r.kind), h('span', null, ' '), badge(r.verified));
+            link(r.url, r.source || 'source', r.nolink), h('span', null, ' '), h('span', 'lane', KIND[r.kind] || r.kind), h('span', null, ' '), badge(r.verified, r.url));
           add(rl, li);
         });
         add(root, add(rs, rl));
@@ -161,7 +167,7 @@
         other.forEach(function (l) {
           var li = h('li', 'flow'), e = l.edge;
           add(li, h('span', null, e.sentence + ' '), e.source ? link(e.url, e.source, e.nolink) : null, h('span', null, ' '),
-            e.kind ? h('span', 'lane', KIND[e.kind] || e.kind) : null, h('span', null, ' '), e.verified ? badge(e.verified) : null);
+            e.kind ? h('span', 'lane', KIND[e.kind] || e.kind) : null, h('span', null, ' '), e.verified ? badge(e.verified, e.url) : null);
           add(ox, li);
         });
         add(root, add(os2, ox));
@@ -185,7 +191,7 @@
         var li = h('li', 'happened');
         li.setAttribute('data-event', f.id);
         add(li, h('span', null, f.date + ': ' + f.what + ' '), link(f.url, f.source || 'source', f.nolink), h('span', null, ' '),
-          h('span', 'lane', KIND[f.kind] || f.kind), h('span', null, ' '), badge(f.verified));
+          h('span', 'lane', KIND[f.kind] || f.kind), h('span', null, ' '), badge(f.verified, f.url));
         add(el, li);
       });
       add(root, add(es, el));
@@ -444,6 +450,8 @@
 
   function boot(g) {
     ix = ns.index(g);
+    ix.reread = {};
+    (g.reread || []).forEach(function (r) { ix.reread[r.url] = r; });
     svg = document.getElementById('map'); panel = document.getElementById('panel');
     tip = document.getElementById('tip'); stage = document.getElementById('stage');
     document.getElementById('to-overview').addEventListener('click', function () { go(null); });

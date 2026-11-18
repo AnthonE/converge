@@ -112,7 +112,7 @@
     var c = ui.h('p', 'cite');
     var cite = [s.tradition, s.work + (s.passage ? ' ' + s.passage : ''), s.translation].filter(Boolean).join(' · ');
     ui.add(c, ui.h('span', null, cite + (/[.!?]$/.test(cite) ? ' ' : '. ')),
-      ui.link(s.url, 'source', s.nolink), ui.h('span', null, ' '), ui.badge(s.verified));
+      ui.link(s.url, 'source', s.nolink), ui.h('span', null, ' '), ui.badge(s.verified, s.url));
     ui.add(li, c);
     if (s.says) ui.add(li, ui.h('p', 'note', s.says));
     return li;
@@ -133,7 +133,7 @@
     if (e.type === 'invokes') {
       ui.add(li, ui.h('span', null, (e.speaker || name(ix.byId[e.from])) + ': '), ui.h('q', null, e.quote), ui.h('span', null, ' '),
         ui.link(e.url, e.source || 'source', e.nolink), ui.h('span', null, e.date ? ' (' + e.date + ') ' : ' '),
-        ui.h('span', 'lane', 'own words, ' + e.sense), ui.h('span', null, ' '), ui.badge(e.verified));
+        ui.h('span', 'lane', 'own words, ' + e.sense), ui.h('span', null, ' '), ui.badge(e.verified, e.url));
     } else if (e.type === 'reads_as') {
       ui.add(li, ui.h('span', null, e.sentence + ' '), ui.h('span', 'lane', 'this project’s reading'));
       if (e.limit) ui.add(li, ui.h('p', 'note', 'Where it does not fit: ' + e.limit));
@@ -141,7 +141,7 @@
       ui.add(li, ui.h('span', null, e.sentence + ' '));
       if (e.source) ui.add(li, ui.link(e.url, e.source, e.nolink), ui.h('span', null, ' '));
       if (e.kind) ui.add(li, ui.h('span', 'lane', e.kind), ui.h('span', null, ' '));
-      if (e.verified) ui.add(li, ui.badge(e.verified));
+      if (e.verified) ui.add(li, ui.badge(e.verified, e.url));
     }
     return li;
   }
@@ -187,13 +187,13 @@
         list(ui, 'Named in scholarship', null, (n.scholarship || []).map(function (s) {
           var li = ui.h('li', 'source');
           ui.add(li, ui.h('span', null, s.author + ', '), ui.link(s.url, s.title, s.nolink), ui.h('span', null, ' (' + s.year + '). ' + (s.claim || '') + ' '));
-          if (s.verified) ui.add(li, ui.badge(s.verified));
+          if (s.verified) ui.add(li, ui.badge(s.verified, s.url));
           return li;
         })),
         list(ui, 'Seen in', 'Documented, reported or alleged uses, each with its source.', recs(function (e) { return e.type === 'uses'; })),
         list(ui, 'Pushback on the record', 'Records against it, each with its source. They are not drawn as lines.', (n.pushback || []).map(function (b) {
           var li = ui.h('li', 'source');
-          ui.add(li, ui.h('span', null, b.sentence + ' '), ui.link(b.url, b.source, b.nolink), ui.h('span', null, ' '), ui.badge(b.verified));
+          ui.add(li, ui.h('span', null, b.sentence + ' '), ui.link(b.url, b.source, b.nolink), ui.h('span', null, ' '), ui.badge(b.verified, b.url));
           return li;
         })),
         list(ui, 'Its ancient names', 'This project’s readings.', recs(function (e) { return e.type === 'reads_as'; })));
