@@ -835,5 +835,100 @@
    "given-over.md",
    "the-made-saviour.md"
   ]
+ },
+ {
+  "id": "bowing-serving",
+  "label": "Bowing and serving",
+  "summary": "The second commandment defines worship by two acts: “Thou shalt not bow down thyself to them, nor serve them.” Paul names the error as worshipping and serving “the creature more than the Creator”. When a man bows to Peter, Peter refuses: “Stand up; I myself also am a man”; an angel refuses John the same way. And of rule itself: the princes of the nations “exercise dominion over them … But it shall not be so among you.”",
+  "sources": [
+   {
+    "tradition": "Hellenistic Jewish (Apocrypha)",
+    "work": "Wisdom of Solomon",
+    "passage": "14:23-24, 27",
+    "translation": "King James Version Apocrypha (1611). Public domain.",
+    "quote": "or used secret ceremonies, or made revellings of strange rites; They kept neither lives nor marriages any longer undefiled … For the worshipping of idols not to be named is the beginning",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Wisdom_of_Solomon",
+    "verified": "primary",
+    "says": "The text joins the worship of idols to secret rites and to broken marriages, and calls that worship the beginning and end of evil. It is a polemic against Gentile worship, written to be hostile."
+   }
+  ],
+  "texts": [
+   "text-exodus-20-5",
+   "text-romans-1-25",
+   "text-acts-10-26",
+   "text-revelation-19-10",
+   "text-matthew-20-25-26"
+  ],
+  "counter": [
+   {
+    "ref": "Ephesians 5:21 (KJV)",
+    "text": "The texts do not forbid submission: “Submitting yourselves one to another in the fear of God.” What they refuse is one-way worship of a creature, not service between people."
+   },
+   {
+    "ref": "Matthew 20:26 (KJV)",
+    "text": "The same passage keeps greatness and service together: “whosoever will be great among you, let him be your minister.” Rule is turned into service, not abolished."
+   }
+  ],
+  "corpus": [
+   "idolatry.md",
+   "the-made-saviour.md"
+  ]
+ },
+ {
+  "id": "binding-vow",
+  "label": "Binding the heart: the vow and the charm",
+  "summary": "The texts command binding the heart: “Bind them continually upon thine heart” (Hebrew qāshar, to tie); a vow is “an oath to bind his soul with a bond”. They forbid the “charmer” (Deuteronomy 18:11), in Hebrew ḥōvēr ḥever, from a root meaning to join or tie: a binder of spells. One act, two objects: the heart tied to the commandment, or tied by a spell or to a creature. This project reads the question as what the binding is bound to.",
+  "sources": [],
+  "texts": [
+   "text-proverbs-6-21",
+   "text-deuteronomy-6-6-8",
+   "text-numbers-30-2",
+   "text-deuteronomy-18-11",
+   "text-psalm-58-5"
+  ],
+  "counter": [
+   {
+    "ref": "Song of Solomon 8:6 (KJV)",
+    "text": "Two hearts may be bound to each other: “Set me as a seal upon thine heart … for love is strong as death.” The texts honour that binding; they do not treat every tie between people as a charm."
+   },
+   {
+    "ref": "Hebrew roots",
+    "text": "Qāshar (to tie) and ḥāvar (to join; the charmer's word) are different verbs. The likeness is in the act of tying, which English “bind” covers; the texts do not use one word for both."
+   }
+  ],
+  "corpus": [
+   "vow.md",
+   "the-binding-test.md",
+   "self-executing-oath.md",
+   "ade-loyalty-oath.md",
+   "binding-of-fenrir.md",
+   "invulnerability-charm.md",
+   "curse-and-blessing.md"
+  ]
+ },
+ {
+  "id": "weighing-heart",
+  "label": "The weighing of the heart",
+  "summary": "No one sees the heart from outside: “man looketh on the outward appearance, but the LORD looketh on the heart.” Proverbs uses the scale: a man's ways are right “in his own eyes: but the LORD pondereth the hearts”, “weigheth the spirits”. In the Egyptian hall of judgment the dead declare their innocence, and the heart is weighed separately against the feather of Ma'at, because the declaration knows it is being judged. A spell cut on a stone scarab and laid over the heart (Book of the Dead, Spell 30B) speaks to the heart itself and asks it not to stand as a witness against the dead: an attempt on the witness, not a plea to the judge.",
+  "sources": [],
+  "texts": [
+   "text-1-samuel-16-7",
+   "text-proverbs-21-2",
+   "text-proverbs-16-2",
+   "text-jeremiah-17-9-10",
+   "text-proverbs-4-23"
+  ],
+  "counter": [
+   {
+    "ref": "Matthew 7:16 (KJV)",
+    "text": "The texts also give a test from outside: “Ye shall know them by their fruits.” The heart is hidden, but over time it is not without signs."
+   }
+  ],
+  "corpus": [
+   "weighing-of-the-heart.md",
+   "judgment-of-solomon.md",
+   "loci-of-y.md",
+   "deuteronomy-13.md"
+  ]
  }
 ]
