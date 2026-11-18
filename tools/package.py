@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Package the Ideals Map as a small static site for any host.
 
-  python3 ops/ideals-map/tools/package.py            -> dist/site/ and dist/ideals-map-site.zip (kept out of search engines)
-  python3 ops/ideals-map/tools/package.py --public   -> the same, indexable, with the 'private prototype' tag changed to 'draft'
+  python3 tools/package.py            -> dist/site/ and dist/ideals-map-site.zip (kept out of search engines)
+  python3 tools/package.py --public   -> the same, indexable, with the 'private prototype' tag changed to 'draft'
                                                         (or set the environment variable PUBLIC=true)
 
 It validates the data first (build.py; any problem stops it), then copies the viewer and its data. The folder needs
@@ -37,8 +37,8 @@ ideals-map.html (one file, everything inside).
 
 {visibility}
 
-To update: edit ops/ideals-map/data/ (or add Watch entries to data/watch.json), run
-  python3 ops/ideals-map/tools/package.py{flag}
+To update: edit data/ (or add Watch entries to data/watch.json), run
+  python3 tools/package.py{flag}
 and upload the new folder over the old one.
 """
 
@@ -74,13 +74,18 @@ def main():
         visibility = ('This copy is kept out of search engines (noindex). Anyone with the link can still open it. '
                       'Run with --public when the sources have been re-read by a person and you want it found.')
     open(index, 'w', encoding='utf-8').write(html)
+    # The data for researchers: graph.json, CSV tables, DATA.md and a zip, under data/.
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'export_data.py'), '--out', os.path.join(a.out, 'data')], capture_output=True, text=True)
+    if r.returncode:
+        sys.exit(r.stdout + r.stderr)
     open(os.path.join(a.out, '_headers'), 'w').write('\n'.join(headers) + '\n')
     open(os.path.join(a.out, 'robots.txt'), 'w').write(robots)
     open(os.path.join(a.out, 'README.txt'), 'w').write(README.format(visibility=visibility, flag=' --public' if a.public else ''))
     z = os.path.join(os.path.dirname(a.out), 'ideals-map-site.zip')
     with zipfile.ZipFile(z, 'w', zipfile.ZIP_DEFLATED) as fh:
-        for f in sorted(os.listdir(a.out)):
-            fh.write(os.path.join(a.out, f), f)
+        for d, _, fs in sorted(os.walk(a.out)):
+            for f in sorted(fs):
+                fh.write(os.path.join(d, f), os.path.relpath(os.path.join(d, f), a.out))
     print(f'site: {a.out}  ({len(os.listdir(a.out))} files)\nzip:  {z}')
 
 
