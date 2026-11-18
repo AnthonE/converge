@@ -68,6 +68,8 @@
 
   ns.renderRecord = function (box, ix, ui, nav, id) {
     while (box.firstChild) box.removeChild(box.firstChild);
+    var method = ns.methodById && ns.methodById(ix, id);
+    if (method) { ns.renderMethodRecord(box, ix, ui, nav, method, trail(ix, ui, ownSources(method), method)); return; }
     var person = personById(ix, id);
     if (person && person.node && ix.byId[person.node]) { id = person.node; }
     var n = ix.byId[id];
@@ -100,6 +102,11 @@
     if (n && (n.words || []).length) ui.add(box, ui.add(ui.section('In their own words'), ui.quoteList(n.words)));
     if (n && n.policy) ui.add(box, ui.add(ui.section('Its own rule on funding'), ui.quoteList([n.policy])));
 
+    var pushes = n && ns.methodsPushedBy ? ns.methodsPushedBy(ix, id) : [];
+    ui.add(box, list(ui, 'Alignment methods it pushes or uses', 'Each method is asked the same five questions; open one to see what it takes for granted.', pushes.map(function (m) {
+      var how = (m.pushed_by || []).filter(function (p) { return p.node === id; })[0];
+      return ui.add(ui.h('li'), recBtn(ui, nav, m.id, m.label), ui.h('span', null, how ? ' \u2014 ' + how.how : ''));
+    })));
     var adj = n ? ix.adj[id] || [] : [];
     /* Events: an ideal's come from its whole neighbourhood, as on the map; anything else's from its own links. */
     var evIds = {};

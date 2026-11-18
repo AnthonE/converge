@@ -49,6 +49,8 @@ STATUS = {'met', 'partly', 'not_met', 'unknown'}
 VERIFIED = {'primary', 'secondary', 'unverified'}
 REREAD_RESULTS = {'holds', 'corrected', 'removed', 'does not hold', 'could not read'}
 PEOPLE_GROUPS = {'builders', 'thinkers', 'faith', 'press', 'officials', 'past'}
+METHOD_KEY = ['serves', 'values', 'inside', 'checks', 'fails']
+DOOR_VIEWS = {'ideals', 'methods', 'money', 'ancients', 'timeline', 'watch', 'people', 'start', 'heart'}
 MAX_WHO = 240
 FRUIT_KIND = {'documented', 'reported', 'alleged'}
 CARRIER_KIND = {'movement', 'organization', 'community', 'public figure', 'discourse', 'product', 'venue'}
@@ -108,6 +110,10 @@ def load(data_dir):
     # Who's who: one plain line on each public figure the map names (optional).
     ppath = os.path.join(data_dir, 'people.json')
     g['people'] = json.load(open(ppath, encoding='utf-8')) if os.path.exists(ppath) else []
+    # Alignment methods, each with the same five questions answered; and the doors, ways in by viewpoint (optional).
+    for name in ('methods', 'doors'):
+        fp = os.path.join(data_dir, name + '.json')
+        g[name] = json.load(open(fp, encoding='utf-8')) if os.path.exists(fp) else []
     return g
 
 
@@ -125,7 +131,7 @@ def cited_urls(g):
             for v in o:
                 walk(v)
     for k, v in g.items():
-        if k not in ('reread', 'meta', 'phases'):
+        if k not in ('reread', 'meta', 'phases', 'doors'):
             walk(v)
     return found
 
@@ -531,6 +537,88 @@ def validate(g):
             if m in forms and forms[m] != p.get('id'):
                 err(f'{who}: "{m}" already marks {forms[m]}')
             forms[m] = p.get('id')
+    # Alignment methods: what each does in plain words, its bet in its proponents' words, the same five questions.
+    def plain_text_ok(where, text):
+        t = QUOTED.sub('', str(text or ''))
+        if LABEL_BAN.search(t) or MOTIVE_BAN.search(t) or INTERNAL.search(t):
+            err(f'{where}: labels someone, asserts a motive or carries a working note')
+
+    def quote_ok(where, q, need=('speaker', 'quote', 'source', 'url', 'verified')):
+        for k in need:
+            if not str((q or {}).get(k) or '').strip():
+                err(f'{where}: missing "{k}"')
+        if len(str((q or {}).get('quote', ''))) > MAX_QUOTE:
+            err(f'{where}: a quotation is longer than {MAX_QUOTE} characters')
+        if (q or {}).get('verified') and q['verified'] not in VERIFIED:
+            err(f'{where}: bad verified flag')
+        if (q or {}).get('url') and not URL.match(q['url']):
+            err(f'{where}: bad url')
+    people_ids = {p.get('id') for p in g.get('people') or []}
+    method_ids = set()
+    for i, m in enumerate(g.get('methods') or []):
+        who = f'methods[{i}] ({m.get("id")})'
+        if not ID.match(str(m.get('id', ''))) or m.get('id') in method_ids or m.get('id') in ids or m.get('id') in people_ids:
+            err(f'{who}: id must be unique across the map, lower-case letters, digits and hyphens')
+        method_ids.add(m.get('id'))
+        for k in ('label', 'plain'):
+            if not str(m.get(k) or '').strip():
+                err(f'{who}: missing "{k}"')
+        plain_text_ok(who, m.get('plain'))
+        quote_ok(f'{who} bet', m.get('bet'))
+        if [x.get('q') for x in m.get('key') or []] != METHOD_KEY:
+            err(f'{who}: "key" must answer {METHOD_KEY} in that order')
+        for x in m.get('key') or []:
+            if x.get('kind') == 'own words':
+                quote_ok(f'{who} key {x.get("q")}', x)
+            elif x.get('kind') == 'reading':
+                if x.get('quote'):
+                    err(f'{who} key {x.get("q")}: a reading carries no quotation')
+            else:
+                err(f'{who} key {x.get("q")}: kind must be "own words" or "reading"')
+            if not str(x.get('a') or '').strip():
+                err(f'{who} key {x.get("q")}: missing the short answer "a"')
+            plain_text_ok(f'{who} key {x.get("q")}', x.get('a'))
+        for x in m.get('pushed_by') or []:
+            if not x.get('name') or not x.get('how'):
+                err(f'{who}: each "pushed_by" needs name and how')
+            if x.get('node') and x['node'] not in ids:
+                err(f'{who}: pushed_by node {x["node"]} is not on the map')
+            if x.get('url') and not URL.match(x['url']):
+                err(f'{who}: pushed_by has a bad url')
+            plain_text_ok(f'{who} pushed_by', x.get('how'))
+        for x in m.get('pushback') or []:
+            quote_ok(f'{who} pushback', x)
+        for x in m.get('happened') or []:
+            for k in ('date', 'what', 'source', 'url', 'verified', 'kind'):
+                if not str(x.get(k) or '').strip():
+                    err(f'{who} happened: missing "{k}"')
+            if x.get('kind') not in FRUIT_KIND or not DATE.match(str(x.get('date', ''))):
+                err(f'{who} happened: bad kind or date')
+            plain_text_ok(f'{who} happened', x.get('what'))
+        for c in m.get('cautions') or []:
+            plain_text_ok(f'{who} caution', c)
+    # Doors: a way in for each viewpoint, every stop a record or a view that exists.
+    watch_ids = {w.get('id') for w in g.get('watch') or []}
+    door_ids = set()
+    for i, d in enumerate(g.get('doors') or []):
+        who = f'doors[{i}] ({d.get("id")})'
+        if not ID.match(str(d.get('id', ''))) or d.get('id') in door_ids:
+            err(f'{who}: id must be unique, lower-case letters, digits and hyphens')
+        door_ids.add(d.get('id'))
+        for k in ('label', 'lede'):
+            if not str(d.get(k) or '').strip():
+                err(f'{who}: missing "{k}"')
+        plain_text_ok(who, str(d.get('label')) + ' ' + str(d.get('lede')))
+        if not d.get('stops'):
+            err(f'{who}: a door needs stops')
+        for s in d.get('stops') or []:
+            if s.get('record') and s['record'] not in ids and s['record'] not in people_ids and s['record'] not in method_ids and s['record'] not in watch_ids:
+                err(f'{who}: stop {s["record"]} is not on the map')
+            if s.get('view') and s['view'] not in DOOR_VIEWS:
+                err(f'{who}: view must be one of {sorted(DOOR_VIEWS)}')
+            if not (s.get('record') or s.get('view')) or not s.get('why'):
+                err(f'{who}: each stop needs a record or a view, and a "why"')
+            plain_text_ok(f'{who} stop', s.get('why'))
     # The re-read ledger: one line per page a person has opened and compared with the map.
     cited, seen = cited_urls(g), set()
     for i, r in enumerate(g.get('reread') or []):
@@ -553,7 +641,7 @@ def standalone(site_dir, graph):
     html = html.replace('<link rel="stylesheet" href="map.css">', '<style>\n' + css + '</style>')
     data = json.dumps(graph, ensure_ascii=False).replace('<', '\\u003c')
     scripts = '<script type="application/json" id="graph-data">' + data + '</script>\n'
-    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'map.js'):
+    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'methods.js', 'map.js'):
         js = open(os.path.join(site_dir, name), encoding='utf-8').read()
         tag = f'<script src="{name}"></script>'
         assert tag in html, tag

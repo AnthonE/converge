@@ -154,6 +154,21 @@ json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 
 json.dump([{'id': 'sample-speaker', 'name': 'Sample Speaker', 'who': 'A sample public figure, described in one plain sentence.', 'group': 'thinkers',
             'source': 'Sample Encyclopedia', 'url': 'https://example.org/sample-speaker', 'verified': 'secondary', 'sort': 'Speaker', 'node': 'carrier-0-0'}],
           open(os.path.join(OUT, 'people.json'), 'w'), indent=1)
+# An alignment method with the five questions, and a door with three stops.
+def ans(q, own=False):
+    d = {'q': q, 'kind': 'own words' if own else 'reading', 'a': f'A sample answer to {q}.'}
+    if own:
+        d.update({'speaker': 'Sample Model Company 0', 'quote': 'Sample words that answer it.', 'source': 'Sample Paper', 'url': 'https://example.org/paper', 'verified': 'primary'})
+    return d
+json.dump([{'id': 'sample-method', 'label': 'A sample method', 'plain': 'A sample method, in plain words.',
+            'bet': {'speaker': 'Sample Model Company 0', 'quote': 'Sample words on what it bets on.', 'source': 'Sample Paper', 'url': 'https://example.org/paper', 'verified': 'primary', 'date': '2024'},
+            'key': [ans('serves', True), ans('values'), ans('inside'), ans('checks'), ans('fails')],
+            'pushed_by': [{'name': 'Sample Model Company 0', 'node': 'lab-0', 'how': 'Uses it in training.', 'source': 'Sample Paper', 'url': 'https://example.org/paper', 'verified': 'primary'}],
+            'pushback': [{'speaker': 'A sample critic', 'quote': 'Sample critical words.', 'source': 'Sample Reply', 'url': 'https://example.org/reply', 'verified': 'primary', 'date': '2025'}],
+            'cautions': ['A sample caution.']}], open(os.path.join(OUT, 'methods.json'), 'w'), indent=1)
+json.dump([{'id': 'sample-door', 'label': 'A sample viewpoint', 'lede': 'What this door shows.',
+            'stops': [{'record': 'ideal-0', 'why': 'The first ideal.'}, {'view': 'methods', 'title': 'Methods', 'why': 'Side by side.'},
+                      {'record': 'sample-method', 'why': 'One method.'}]}], open(os.path.join(OUT, 'doors.json'), 'w'), indent=1)
 # One page a person has re-read: the viewer shows it beside the machine's flag.
 json.dump([{'url': fruits[0]['url'], 'date': '2026-01-10', 'result': 'holds'}], open(os.path.join(OUT, 'reread.json'), 'w'), indent=1)
 print('fixture written')
