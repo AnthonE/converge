@@ -11,6 +11,10 @@ DATA = os.path.join(ROOT, 'data')
 FILES = ['watch', 'offshoots', 'ideals', 'fruits', 'carriers', 'vehicles', 'edges', 'funders', 'labs', 'evaluators',
          'mechanisms', 'patterns']
 TEXT_KEYS = ('quote', 'claim', 'what', 'sentence', 'evidence', 'title', 'label', 'summary')
+# Words the map presents as the source's own: a quotation field, a Watch claim, and anything in curly quotes
+# inside the map's statements. These can be looked for on the page automatically (tools/precheck.py).
+CURLY = re.compile(r'\u201c([^\u201d]+)\u201d')
+STATEMENT_KEYS = ('what', 'sentence', 'evidence', 'claim')
 
 # Lower tier = read sooner. A page takes the most urgent tier of any item that cites it.
 TIERS = {
@@ -24,6 +28,7 @@ RESULTS = {
     'holds': 'the page says what the map says',
     'corrected': 'the map was corrected to match the page',
     'removed': 'the item was taken off the map',
+    'does not hold': 'the page does not say what the map says: to be fixed, then marked corrected or removed',
     'could not read': 'the page could not be read',
 }
 DONE = {'holds', 'corrected', 'removed'}
@@ -39,6 +44,19 @@ def _text(d):
         if isinstance(d.get(k), str) and d[k].strip():
             return d[k].strip()
     return ''
+
+
+def _quotes(fname, d, path, labels=frozenset()):
+    out = []
+    if isinstance(d.get('quote'), str) and d['quote'].strip():
+        out.append(d['quote'].strip())
+    if fname == 'watch' and not path and isinstance(d.get('claim'), str):
+        out.append(d['claim'].strip())
+    for k in STATEMENT_KEYS:
+        if isinstance(d.get(k), str) and not (fname == 'watch' and not path and k == 'claim'):
+            # A name on the map in quotation marks (a pattern's label in a reading) is not the source's words.
+            out += [q.strip() for q in CURLY.findall(d[k]) if len(q.split()) >= 3 and q.strip().lower() not in labels]
+    return out
 
 
 def _tier(fname, d, inherited_kind):
@@ -66,13 +84,19 @@ def collect(data_dir=DATA):
                 p['tier'] = min(p['tier'], t)
                 p['items'].append({'file': fname, 'owner': owner, 'where': '.'.join(path) or 'record',
                                    'text': _text(o), 'source': o.get('source') or o.get('work') or o.get('title') or '',
-                                   'flag': o.get('verified') or 'none', 'tier': t, 'nolink': bool(o.get('nolink'))})
+                                   'flag': o.get('verified') or 'none', 'tier': t, 'nolink': bool(o.get('nolink')),
+                                   'quotes': _quotes(fname, o, path, labels)})
             for k, v in o.items():
                 walk(v, fname, owner, path + [k], kind)
         elif isinstance(o, list):
             for i, v in enumerate(o):
                 walk(v, fname, owner, path, kind)
 
+    labels = set()
+    for fname in FILES + ['texts']:
+        fp = os.path.join(data_dir, fname + '.json')
+        if os.path.exists(fp):
+            labels.update(str(r.get('label', '')).strip().lower() for r in json.load(open(fp, encoding='utf-8')) if r.get('label'))
     for fname in FILES:
         fp = os.path.join(data_dir, fname + '.json')
         if not os.path.exists(fp):

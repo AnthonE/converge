@@ -6,15 +6,16 @@ that can be counted and worked down, one page at a time. One reading of a page c
 
   python3 tools/reread.py                      write dist/reread.md and dist/reread.csv, print progress
   python3 tools/reread.py mark URL RESULT      record a reading in data/reread.json
-        RESULT: holds | corrected | removed | "could not read"     [--note TEXT] [--date YYYY-MM-DD]
+        RESULT: holds | "does not hold" | corrected | removed | "could not read"   [--note TEXT] [--date YYYY-MM-DD]
+  python3 tools/review.py                      the same, one page at a time, in a browser
 
 Order: the Watch first (claims about named people), then allegations and court matters, then anything no model
 checked, then items a model read only on a relay, then items a model read at the source. Within each, the pages
 cited most often come first, because one reading clears the most.
 
 What a reading means: open the page yourself, find the words the map quotes or the fact it states, and record
-'holds' if they are there as the map has them. If not, fix the record first, then mark 'corrected' (or
-'removed'). Run python3 build.py --check after.
+'holds' if they are there as the map has them. If not, mark 'does not hold' with a note saying what the page
+says; whoever fixes the record then marks it 'corrected' (or 'removed'). Run python3 build.py --check after.
 """
 import argparse, csv, datetime, json, os, sys
 
@@ -32,7 +33,7 @@ def queue(pages, done):
 
 def write(pages, led):
     done = {r['url']: r for r in led if r.get('result') in S.DONE}
-    rows = queue(pages, done)
+    rows = queue(pages, {r["url"] for r in led})   # anything a person has looked at leaves the queue
     os.makedirs(OUT, exist_ok=True)
     total, n = len(pages), len([u for u in pages if u in done])
     items = sum(len(p['items']) for p in pages.values())
@@ -55,6 +56,9 @@ def write(pages, led):
             md.append(f'  - `{x["file"]}:{x["owner"]}` ({x["where"]}, flag: {x["flag"]}): {text}')
         if len(p['items']) > 6:
             md.append(f'  - and {len(p["items"]) - 6} more')
+    bad = [r for r in led if r.get('result') == 'does not hold']
+    if bad:
+        md += ['', '## Pages that do not hold: fix these records', ''] + [f'- {r["url"]} ({r.get("date", "")}) {r.get("note", "")}' for r in bad]
     unread = [r for r in led if r.get('result') == 'could not read']
     if unread:
         md += ['', '## Pages a person could not read', ''] + [f'- {r["url"]} ({r.get("date", "")}) {r.get("note", "")}' for r in unread]
@@ -66,6 +70,8 @@ def write(pages, led):
             w.writerow([i, p['tier'], S.TIERS[p['tier']], url, S.host(url), len(p['items']),
                         ' '.join(sorted({x['file'] for x in p['items']})), ' '.join(sorted({x['flag'] for x in p['items']}))])
     print(f'{n} of {total} pages re-read ({covered} of {items} items). Queue: dist/reread.md, dist/reread.csv')
+    if bad:
+        print(f'  {len(bad)} page(s) marked "does not hold": their records need fixing (listed in dist/reread.md)')
     for t in S.TIERS:
         k = sum(1 for _, q in rows if q['tier'] == t)
         if k:
