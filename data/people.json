@@ -1,0 +1,610 @@
+[
+ {
+  "id": "peter-thiel",
+  "name": "Peter Thiel",
+  "who": "A German-American investor who co-founded PayPal, Palantir and Founders Fund and was the first outside investor in Facebook. He comes up here for his money and his lectures on the Antichrist.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Peter_Thiel",
+  "verified": "secondary",
+  "sort": "Thiel",
+  "match": [
+   "Peter Thiel",
+   "Thiel"
+  ],
+  "node": "peter-thiel"
+ },
+ {
+  "id": "marc-andreessen",
+  "name": "Marc Andreessen",
+  "who": "An American venture capitalist: co-author of Mosaic, an early web browser, co-founder of Netscape and of the investment firm Andreessen Horowitz. He wrote “The Techno-Optimist Manifesto” (2023).",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Marc_Andreessen",
+  "verified": "secondary",
+  "sort": "Andreessen",
+  "node": "marc-andreessen"
+ },
+ {
+  "id": "ben-horowitz",
+  "name": "Ben Horowitz",
+  "who": "An American investor who co-founded the venture capital firm Andreessen Horowitz with Marc Andreessen.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Ben_Horowitz",
+  "verified": "secondary",
+  "sort": "Horowitz",
+  "node": "ben-horowitz"
+ },
+ {
+  "id": "elon-musk",
+  "name": "Elon Musk",
+  "who": "The chief executive and largest shareholder of Tesla and SpaceX, and the world’s richest person since 2025.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Elon_Musk",
+  "verified": "secondary",
+  "sort": "Musk",
+  "node": "elon-musk"
+ },
+ {
+  "id": "sam-altman",
+  "name": "Sam Altman",
+  "who": "The chief executive of the AI company OpenAI since 2019.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Sam_Altman",
+  "verified": "secondary",
+  "sort": "Altman",
+  "node": "sam-altman"
+ },
+ {
+  "id": "greg-brockman",
+  "name": "Greg Brockman",
+  "who": "A co-founder and the president of OpenAI. Before that he was chief technology officer of the payments company Stripe.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Greg_Brockman",
+  "verified": "secondary",
+  "sort": "Brockman",
+  "node": "greg-brockman"
+ },
+ {
+  "id": "dustin-moskovitz",
+  "name": "Dustin Moskovitz",
+  "who": "A co-founder of Facebook who left in 2008 to co-found the software company Asana. His giving appears in the money view.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Dustin_Moskovitz",
+  "verified": "secondary",
+  "sort": "Moskovitz",
+  "node": "dustin-moskovitz"
+ },
+ {
+  "id": "jaan-tallinn",
+  "name": "Jaan Tallinn",
+  "who": "An Estonian programmer and investor who helped build Skype and the file-sharing program Kazaa. His grants appear throughout the money view.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Jaan_Tallinn",
+  "verified": "secondary",
+  "sort": "Tallinn",
+  "node": "jaan-tallinn"
+ },
+ {
+  "id": "vitalik-buterin",
+  "name": "Vitalik Buterin",
+  "who": "A Russian-Canadian programmer who co-founded Ethereum, the cryptocurrency platform.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Vitalik_Buterin",
+  "verified": "secondary",
+  "sort": "Buterin",
+  "node": "vitalik-buterin"
+ },
+ {
+  "id": "balaji-srinivasan",
+  "name": "Balaji Srinivasan",
+  "who": "An American-born investor, author of The Network State: How to Start a New Country, and founder of the Network School.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Balaji_Srinivasan",
+  "verified": "secondary",
+  "sort": "Srinivasan",
+  "node": "balaji-srinivasan"
+ },
+ {
+  "id": "guillaume-verdon",
+  "name": "Guillaume Verdon",
+  "who": "A Canadian physicist and quantum-computing researcher. Online, as “Beff Jezos”, he co-founded e/acc (effective accelerationism).",
+  "group": "builders",
+  "source": "Wikipedia; this map’s e/acc records",
+  "url": "https://en.wikipedia.org/wiki/Guillaume_Verdon",
+  "verified": "secondary",
+  "sort": "Verdon",
+  "match": [
+   "Guillaume Verdon",
+   "Based Beff Jezos",
+   "Beff Jezos"
+  ]
+ },
+ {
+  "id": "anthony-levandowski",
+  "name": "Anthony Levandowski",
+  "who": "An engineer who co-founded Google’s self-driving car program (now Waymo). He led Way of the Future, a religious nonprofit centred on AI, from 2015 to 2021.",
+  "group": "builders",
+  "source": "Wikipedia; this map’s Way of the Future records",
+  "url": "https://en.wikipedia.org/wiki/Anthony_Levandowski",
+  "verified": "secondary",
+  "sort": "Levandowski"
+ },
+ {
+  "id": "sam-bankman-fried",
+  "name": "Sam Bankman-Fried",
+  "who": "The founder of the FTX cryptocurrency exchange, convicted of fraud. FTX’s foundation appears in the money view.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried",
+  "verified": "secondary",
+  "sort": "Bankman-Fried",
+  "match": [
+   "Sam Bankman-Fried",
+   "Bankman-Fried"
+  ]
+ },
+ {
+  "id": "holden-karnofsky",
+  "name": "Holden Karnofsky",
+  "who": "Co-founder of the charity evaluator GiveWell and of Open Philanthropy (now Coefficient Giving), which he led until 2023. He joined Anthropic, the maker of the models used to build this map, in 2025.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Holden_Karnofsky",
+  "verified": "secondary",
+  "sort": "Karnofsky"
+ },
+ {
+  "id": "oliver-habryka",
+  "name": "Oliver Habryka",
+  "who": "Runs Lightcone Infrastructure, the nonprofit behind the LessWrong forum and the Lighthaven venue in Berkeley.",
+  "group": "builders",
+  "source": "Lightcone Infrastructure’s own site",
+  "url": "https://www.lightconeinfrastructure.com/",
+  "verified": "primary",
+  "sort": "Habryka"
+ },
+ {
+  "id": "andy-ayrey",
+  "name": "Andy Ayrey",
+  "who": "The creator of Truth Terminal, an AI bot that posted on X and endorsed a meme coin in 2024.",
+  "group": "builders",
+  "source": "Decrypt",
+  "url": "https://decrypt.co/286478/ai-bot-pumps-meme-coin-7000-following-50000-gift-from-billionaire-marc-andreessen",
+  "verified": "secondary",
+  "sort": "Ayrey"
+ },
+ {
+  "id": "joanne-jang",
+  "name": "Joanne Jang",
+  "who": "By her own account (June 2025), she leads model behavior and policy at OpenAI.",
+  "group": "builders",
+  "source": "her own post",
+  "url": "https://reservoirsamples.substack.com/p/some-thoughts-on-human-ai-relationships",
+  "verified": "primary",
+  "sort": "Jang"
+ },
+ {
+  "id": "aubrey-de-grey",
+  "name": "Aubrey de Grey",
+  "who": "An English biomedical gerontologist who argues that medicine may let people alive today avoid dying of old age.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Aubrey_de_Grey",
+  "verified": "secondary",
+  "sort": "Grey",
+  "node": "aubrey-de-grey"
+ },
+ {
+  "id": "nick-land",
+  "name": "Nick Land",
+  "who": "An English philosopher best known for popularising accelerationism. With Curtis Yarvin he is credited with founding the movement called the Dark Enlightenment.",
+  "group": "thinkers",
+  "source": "Wikipedia (Nick Land; Curtis Yarvin)",
+  "url": "https://en.wikipedia.org/wiki/Nick_Land",
+  "verified": "secondary",
+  "sort": "Land",
+  "node": "land-ccru"
+ },
+ {
+  "id": "curtis-yarvin",
+  "name": "Curtis Yarvin",
+  "who": "An American software developer and blogger who, as Mencius Moldbug, argued against democracy. With Nick Land he is credited with founding the Dark Enlightenment, or neoreaction.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Curtis_Yarvin",
+  "verified": "secondary",
+  "sort": "Yarvin",
+  "match": [
+   "Curtis Yarvin",
+   "Mencius Moldbug",
+   "Moldbug"
+  ],
+  "node": "curtis-yarvin"
+ },
+ {
+  "id": "eliezer-yudkowsky",
+  "name": "Eliezer Yudkowsky",
+  "who": "An American AI researcher and writer who founded the Machine Intelligence Research Institute (MIRI) and popularised the idea of “friendly” AI.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Eliezer_Yudkowsky",
+  "verified": "secondary",
+  "sort": "Yudkowsky",
+  "match": [
+   "Eliezer Yudkowsky",
+   "Yudkowsky"
+  ]
+ },
+ {
+  "id": "scott-alexander",
+  "name": "Scott Alexander",
+  "who": "A doctor working in mental health care who writes the blog Astral Codex Ten (formerly Slate Star Codex) for the online “rationalist community”. His 2014 essay “Meditations on Moloch” comes up here.",
+  "group": "thinkers",
+  "source": "his own blog",
+  "url": "https://www.astralcodexten.com/about",
+  "verified": "primary",
+  "sort": "Alexander"
+ },
+ {
+  "id": "nick-bostrom",
+  "name": "Nick Bostrom",
+  "who": "A Swedish philosopher known for his work on existential risk and the risks of superintelligence. He led Oxford’s Future of Humanity Institute, since closed.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Nick_Bostrom",
+  "verified": "secondary",
+  "sort": "Bostrom"
+ },
+ {
+  "id": "richard-sutton",
+  "name": "Richard Sutton",
+  "who": "An American-Canadian computer scientist who shared the 2024 Turing Award for work on reinforcement learning, a way of training AI by reward.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Richard_S._Sutton",
+  "verified": "secondary",
+  "sort": "Sutton",
+  "node": "richard-sutton"
+ },
+ {
+  "id": "ray-kurzweil",
+  "name": "Ray Kurzweil",
+  "who": "An American inventor and futurist, known for early text-reading and speech technology and for his books on the “Singularity”, most recently The Singularity Is Nearer.",
+  "group": "thinkers",
+  "source": "Wikipedia; this map’s records",
+  "url": "https://en.wikipedia.org/wiki/Ray_Kurzweil",
+  "verified": "secondary",
+  "sort": "Kurzweil"
+ },
+ {
+  "id": "andrew-critch",
+  "name": "Andrew Critch",
+  "who": "An AI researcher (PhD in mathematics, UC Berkeley) who co-founded the Center for Applied Rationality. In 2024 he named and argued against “successionism”.",
+  "group": "thinkers",
+  "source": "his own site; Wikipedia (CFAR)",
+  "url": "https://acritch.com/",
+  "verified": "primary",
+  "sort": "Critch"
+ },
+ {
+  "id": "rob-bensinger",
+  "name": "Rob Bensinger",
+  "who": "Works in communications at MIRI, the Machine Intelligence Research Institute. His 2015 post corrected stories about Roko’s basilisk.",
+  "group": "thinkers",
+  "source": "MIRI’s team page",
+  "url": "https://intelligence.org/team/",
+  "verified": "primary",
+  "sort": "Bensinger"
+ },
+ {
+  "id": "nick-srnicek",
+  "name": "Nick Srnicek",
+  "who": "A Canadian writer and lecturer in digital economy at King’s College London. With Alex Williams he wrote the 2013 “#Accelerate” manifesto for a left-wing accelerationism.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Nick_Srnicek",
+  "verified": "secondary",
+  "sort": "Srnicek"
+ },
+ {
+  "id": "simon-willison",
+  "name": "Simon Willison",
+  "who": "A British programmer, co-creator of the Django web framework, who writes about the security of AI tools. He is quoted here on prompt injection.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Simon_Willison",
+  "verified": "secondary",
+  "sort": "Willison"
+ },
+ {
+  "id": "david-auerbach",
+  "name": "David Auerbach",
+  "who": "An American writer and former Microsoft and Google software engineer. His 2014 Slate article brought Roko’s basilisk to a general readership.",
+  "group": "press",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/David_Auerbach",
+  "verified": "secondary",
+  "sort": "Auerbach"
+ },
+ {
+  "id": "lex-fridman",
+  "name": "Lex Fridman",
+  "who": "An American computer scientist who hosts the Lex Fridman Podcast, interviewing people from tech, science and politics.",
+  "group": "press",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Lex_Fridman",
+  "verified": "secondary",
+  "sort": "Fridman"
+ },
+ {
+  "id": "grimes",
+  "name": "Grimes",
+  "who": "A Canadian singer and producer. In 2018 the press reported that she had made a pun on Roko’s basilisk before Elon Musk did.",
+  "group": "press",
+  "source": "Wikipedia; Vice, 2018",
+  "url": "https://en.wikipedia.org/wiki/Grimes",
+  "verified": "secondary",
+  "sort": "Grimes"
+ },
+ {
+  "id": "ozy-brennan",
+  "name": "Ozy Brennan",
+  "who": "Writes the blog Thing of Things, mostly about effective altruism.",
+  "group": "press",
+  "source": "their own blog",
+  "url": "https://thingofthings.substack.com/about",
+  "verified": "primary",
+  "sort": "Brennan"
+ },
+ {
+  "id": "sam-kriss",
+  "name": "Sam Kriss",
+  "who": "A writer whose newsletter is Numb at the Lodge. He wrote the New Yorker’s November 2026 feature on MAPLE.",
+  "group": "press",
+  "source": "his own newsletter",
+  "url": "https://samkriss.substack.com/about",
+  "verified": "primary",
+  "sort": "Kriss"
+ },
+ {
+  "id": "charlotte-alter",
+  "name": "Charlotte Alter",
+  "who": "A writer at TIME magazine. Her February 2023 article is the first step traced in one Watch claim.",
+  "group": "press",
+  "source": "TIME",
+  "url": "https://time.com/author/charlotte-alter/",
+  "verified": "primary",
+  "sort": "Alter"
+ },
+ {
+  "id": "aaron-sibarium",
+  "name": "Aaron Sibarium",
+  "who": "A staff writer at the Washington Free Beacon. He wrote the 16 November 2026 report on the Watch.",
+  "group": "press",
+  "source": "the Washington Free Beacon",
+  "url": "https://freebeacon.com/author/aaron-sibarium/",
+  "verified": "primary",
+  "sort": "Sibarium"
+ },
+ {
+  "id": "pope-leo-xiv",
+  "name": "Pope Leo XIV",
+  "who": "The head of the Catholic Church and sovereign of Vatican City.",
+  "group": "faith",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pope_Leo_XIV",
+  "verified": "secondary",
+  "sort": "Leo",
+  "match": [
+   "Pope Leo XIV",
+   "Leo XIV"
+  ]
+ },
+ {
+  "id": "soryu-forall",
+  "name": "Soryu Forall",
+  "who": "The head teacher of MAPLE, a Buddhist monastery in Vermont. By the monastery’s account he trained in Zen and was ordained under Shodo Harada Roshi.",
+  "group": "faith",
+  "source": "MAPLE’s own site",
+  "url": "https://www.monasticacademy.org/teacher",
+  "verified": "primary",
+  "sort": "Forall"
+ },
+ {
+  "id": "donald-trump",
+  "name": "Donald Trump",
+  "who": "The 47th president of the United States; he was also the 45th, from 2017 to 2021.",
+  "group": "officials",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Donald_Trump",
+  "verified": "secondary",
+  "sort": "Trump",
+  "match": [
+   "Donald Trump",
+   "Trump"
+  ]
+ },
+ {
+  "id": "josh-hawley",
+  "name": "Josh Hawley",
+  "who": "A Republican senator from Missouri since 2019.",
+  "group": "officials",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Josh_Hawley",
+  "verified": "secondary",
+  "sort": "Hawley",
+  "match": [
+   "Josh Hawley",
+   "Hawley"
+  ]
+ },
+ {
+  "id": "xiomara-castro",
+  "name": "Xiomara Castro",
+  "who": "President of Honduras from 2022 to 2026, the country’s first woman president.",
+  "group": "officials",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Xiomara_Castro",
+  "verified": "secondary",
+  "sort": "Castro"
+ },
+ {
+  "id": "plato",
+  "name": "Plato",
+  "who": "The ancient Greek philosopher of Athens, usually counted the founder of Western philosophy.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Plato",
+  "verified": "secondary",
+  "sort": "Plato"
+ },
+ {
+  "id": "lucian",
+  "name": "Lucian of Samosata",
+  "who": "A Syrian-born satirist of the Roman era who wrote in Greek and ridiculed philosophers, priests and religious practices.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Lucian",
+  "verified": "secondary",
+  "sort": "Lucian",
+  "match": [
+   "Lucian of Samosata",
+   "Lucian"
+  ]
+ },
+ {
+  "id": "wallis-budge",
+  "name": "E. A. Wallis Budge",
+  "who": "An English Egyptologist at the British Museum whose translations of Egyptian texts are quoted here.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/E._A._Wallis_Budge",
+  "verified": "secondary",
+  "sort": "Budge",
+  "match": [
+   "Wallis Budge",
+   "Budge"
+  ]
+ },
+ {
+  "id": "rabbah",
+  "name": "Rabbah",
+  "who": "A Jewish teacher of the Talmud in Babylonia (Rabbah bar Nahmani). A Talmud passage quoted here tells that he “created a man”.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Rabbah_bar_Nahmani",
+  "verified": "secondary",
+  "sort": "Rabbah"
+ },
+ {
+  "id": "roko",
+  "name": "Roko",
+  "who": "The LessWrong user whose 2010 post raised the thought experiment now called Roko’s basilisk: a future AI that would punish people who knew it might exist and did not help build it.",
+  "group": "thinkers",
+  "source": "Wikipedia (Roko’s basilisk); this map’s records",
+  "url": "https://en.wikipedia.org/wiki/Roko%27s_basilisk",
+  "verified": "secondary",
+  "sort": "Roko"
+ },
+ {
+  "id": "bryan-johnson",
+  "name": "Bryan Johnson",
+  "who": "An American entrepreneur who founded Kernel, a company making devices that record brain activity, and the OS Fund. He calls his longevity project, Don’t Die, “humanity’s religion”.",
+  "group": "builders",
+  "source": "Wikipedia; MIT Technology Review, 2025",
+  "url": "https://en.wikipedia.org/wiki/Bryan_Johnson",
+  "verified": "secondary",
+  "sort": "Johnson"
+ },
+ {
+  "id": "robin-hanson",
+  "name": "Robin Hanson",
+  "who": "An American economist at George Mason University, known for work on prediction markets. He calls future AIs “our descendants, not co-existing rivals”.",
+  "group": "thinkers",
+  "source": "Wikipedia; this map’s records",
+  "url": "https://en.wikipedia.org/wiki/Robin_Hanson",
+  "verified": "secondary",
+  "sort": "Hanson",
+  "node": "robin-hanson"
+ },
+ {
+  "id": "daniel-faggella",
+  "name": "Daniel Faggella",
+  "who": "A writer and podcast host who defined a “worthy successor” to humanity in 2023 and has held symposia under that name since 2025. He rejects the label “AI successionist”.",
+  "group": "thinkers",
+  "source": "his own site (named, not linked)",
+  "url": "https://danfaggella.com/trajectory-forum-events/",
+  "verified": "primary",
+  "sort": "Faggella",
+  "node": "daniel-faggella",
+  "nolink": true
+ },
+ {
+  "id": "giulio-prisco",
+  "name": "Giulio Prisco",
+  "who": "An Italian technology consultant and writer, a transhumanist and advocate of cryonics, whose online project is Turing Church.",
+  "group": "faith",
+  "source": "Wikipedia; this map’s records",
+  "url": "https://en.wikipedia.org/wiki/Giulio_Prisco",
+  "verified": "secondary",
+  "sort": "Prisco"
+ },
+ {
+  "id": "william-sims-bainbridge",
+  "name": "William Sims Bainbridge",
+  "who": "An American sociologist, co-director of Cyber-Human Systems at the US National Science Foundation. His profile of Turing Church is quoted here.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/William_Sims_Bainbridge",
+  "verified": "secondary",
+  "sort": "Bainbridge",
+  "match": [
+   "William Sims Bainbridge",
+   "W. S. Bainbridge",
+   "Bainbridge"
+  ]
+ },
+ {
+  "id": "cari-tuna",
+  "name": "Cari Tuna",
+  "who": "An American philanthropist and former Wall Street Journal reporter who co-founded and chairs Good Ventures and Coefficient Giving (formerly Open Philanthropy). She is married to Dustin Moskovitz.",
+  "group": "builders",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Cari_Tuna",
+  "verified": "secondary",
+  "sort": "Tuna"
+ },
+ {
+  "id": "marinetti",
+  "name": "Filippo Tommaso Marinetti",
+  "who": "An Italian poet who founded Futurism and wrote its 1909 manifesto. Andreessen’s 2023 manifesto lists him among its “Patron Saints of Techno-Optimism”.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Filippo_Tommaso_Marinetti",
+  "verified": "secondary",
+  "sort": "Marinetti",
+  "match": [
+   "Filippo Tommaso Marinetti",
+   "Marinetti"
+  ]
+ },
+ {
+  "id": "hesiod",
+  "name": "Hesiod",
+  "who": "An ancient Greek poet, active around 700 BC. His Theogony, quoted here, tells how the god Cronos was overthrown by his son.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Hesiod",
+  "verified": "secondary",
+  "sort": "Hesiod"
+ }
+]

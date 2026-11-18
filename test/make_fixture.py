@@ -150,6 +150,10 @@ json.dump([{'id': 'claim-1', 'date': '2026-01-02', 'title': 'A <b>sample</b> cla
             'source': 'Sample Account, 5 Jan 2026', 'kind': 'claimed', 'status': 'not checked'}], open(os.path.join(OUT, 'watch.json'), 'w'))
 json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 'disclosure': 'Synthetic fixture: no ties.',
            'made_with': 'Synthetic fixture, made by a script.', 'nolink_hosts': ['example.net']}, open(os.path.join(OUT, 'meta.json'), 'w'))
+# Who's who: a public figure named in the sample quotations.
+json.dump([{'id': 'sample-speaker', 'name': 'Sample Speaker', 'who': 'A sample public figure, described in one plain sentence.', 'group': 'thinkers',
+            'source': 'Sample Encyclopedia', 'url': 'https://example.org/sample-speaker', 'verified': 'secondary', 'sort': 'Speaker', 'node': 'carrier-0-0'}],
+          open(os.path.join(OUT, 'people.json'), 'w'), indent=1)
 # One page a person has re-read: the viewer shows it beside the machine's flag.
 json.dump([{'url': fruits[0]['url'], 'date': '2026-01-10', 'result': 'holds'}], open(os.path.join(OUT, 'reread.json'), 'w'), indent=1)
 print('fixture written')

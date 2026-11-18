@@ -1,0 +1,13 @@
+[
+ {
+  "id": "sample-speaker",
+  "name": "Sample Speaker",
+  "who": "A sample public figure, described in one plain sentence.",
+  "group": "thinkers",
+  "source": "Sample Encyclopedia",
+  "url": "https://example.org/sample-speaker",
+  "verified": "secondary",
+  "sort": "Speaker",
+  "node": "carrier-0-0"
+ }
+]

@@ -92,10 +92,12 @@ def main():
                     'reread_result': r.get('result', ''), 'reread_date': r.get('date', ''),
                     'link_status': lk.get('status', ''), 'link_code': lk.get('code', '')})
     made.append(write_table(a.out, 'sources', src, first=('url',)))
+    made.append(write_table(a.out, 'people', load('people'), first=('id', 'name', 'group', 'who')))
     shutil.copy(os.path.join(S.DATA, 'meta.json'), os.path.join(a.out, 'meta.json'))
     graph = {n: load(n) for n in NODE_FILES + ['edges', 'phases', 'watch']}
     graph['meta'] = json.load(open(os.path.join(S.DATA, 'meta.json'), encoding='utf-8'))
     graph['reread'] = S.ledger()
+    graph['people'] = load('people')
     json.dump(graph, open(os.path.join(a.out, 'graph.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
     shutil.copy(os.path.join(S.ROOT, 'DATA.md'), os.path.join(a.out, 'DATA.md'))
     shutil.copy(os.path.join(S.ROOT, 'LICENSE-DATA.md'), os.path.join(a.out, 'LICENSE-DATA.md'))

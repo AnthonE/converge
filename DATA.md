@@ -36,6 +36,7 @@ words belong to their authors and are not covered.
 | `watch.csv`, `watch_checks.csv`, `watch_responses.csv` | claim in circulation; each check made on it; each response on the record |
 | `watch_travelled.csv` | step in how a claim was passed along, oldest first |
 | `sources.csv` | cited page (URL), with its re-read and link status |
+| `people.csv` | public figure named on the map, in one plain sentence (who's who) |
 | `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked |
 
 ## Fields that recur
@@ -118,6 +119,10 @@ Watch, 2 = allegations and court matters, 3 = no model checked, 4 = a model read
 read it at the source), `machine_flags`, `reread_result` and `reread_date` (a person opened the page and compared
 it with the map: `holds`, `does not hold` (to be fixed), `corrected`, `removed`, `could not read`; empty = not yet), `link_status` (`ok`, `gone`,
 `refused` = the site turned away an automated check, `error`) and `link_code`, as of the last link check.
+
+**people** (who's who): `name`, `who` (one or two plain sentences: who they are and why they come up), `group`
+(builders, thinkers, faith, press, officials, past), `match` (the forms of the name the viewer marks), `node` (their
+own entry on the map, if any), `source`, `url`, `verified`, `nolink`. Public figures only.
 
 ## What is not here
 
