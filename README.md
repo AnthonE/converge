@@ -25,7 +25,34 @@ python3 -m http.server -d site 8000
 
 Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file with everything inside.
 
+**For a newcomer:** "New here? Start here" under the title explains the map in plain words, the five ways in,
+the words it uses and what each checking mark means. **Timeline** lists every dated event and Watch claim, newest
+first. The search box finds any name, event or claim and opens it where it lives.
+
+**For researchers:** the published site carries the data under `data/`: `graph.json`, one CSV per table (with
+quotations, phase conditions and the Watch's checks broken out), `sources.csv` (every cited page with its
+re-read and link status) and `ideals-map-data.zip`. [DATA.md](DATA.md) documents every field. To write it
+locally: `python3 tools/export_data.py` (into `dist/data/`).
+
+## Check it
+
+No person has yet re-read the sources; models did every step. Two tools make that debt something to work down:
+
+- `python3 tools/reread.py` writes `dist/reread.md`: every cited page (373 now) in the order to read it, the
+  Watch first, then allegations, then anything no model checked, then relays, then pages read at the source.
+  One reading covers every item that cites the page. After opening a page and comparing it with the map, record
+  it: `python3 tools/reread.py mark URL holds` (or `corrected`, `removed`, `"could not read"`). This writes
+  `data/reread.json`; the viewer then shows "re-read by a person" beside the machine's flag, and Start here
+  shows the count.
+- `python3 tools/links.py` checks that every cited page still answers and writes `dist/links.md` (read-only;
+  `gone` means 404, 410 or no such host; `refused` means the site turned away an automated check). Archiving the
+  live pages in the Wayback Machine is left to the operator, because it sends each address to the Internet Archive.
+
 ## Change it
+
+- **Claims and corrections** come in as issues: the forms in `.github/ISSUE_TEMPLATE/` ask for the exact words,
+  who said them, a link and the date, and refuse private names. Set `contribute` in `data/meta.json` to the
+  repository's new-issue page once it is public, and Start here will offer it.
 
 - **The data** is in `data/`: ideals, carriers, vehicles, events (`fruits.json`), texts, funders, labs, evaluators,
   patterns, mechanisms, offshoots, links (`edges.json`) and the Watch (`watch.json`).
