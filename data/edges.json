@@ -4578,5 +4578,11 @@
   "lens": true,
   "sentence": "This project reads the weighing of the heart beside a model that tells the user what they want to hear: the Egyptian judges weighed the heart separately because the spoken confession knows it is being judged.",
   "limit": "The texts judge souls, not machines. The reading carries one thing over: words shaped by the listener say less about the speaker than they seem to."
+ },
+ {
+  "from": "land-ccru",
+  "to": "land-sf-party-2026",
+  "type": "bears_fruit",
+  "sentence": "In February 2026 a San Francisco party welcomed Land; a reporter describes balloons reading “333”, the number Crowley's text gives the demon Choronzon."
  }
 ]
