@@ -134,7 +134,8 @@
     var fd = ui.h('dl', 'glossary');
     FLAGS.forEach(function (f) { ui.add(fd, ui.add(ui.h('dt'), ui.h('span', 'badge', f[0])), ui.h('dd', null, f[1])); });
     ui.add(fl, fd);
-    if (s.pages) ui.add(fl, ui.h('p', 'progress', 'A person has re-read ' + (s.reread || 0) + ' of the ' + s.pages + ' pages this map cites.'));
+    if (s.pages) ui.add(fl, ui.h('p', 'progress', 'A person has re-read ' + (s.reread || 0) + ' of the ' + s.pages + ' pages this map cites.' +
+      (s.gate ? ' The first to read are the ' + s.gate + ' behind the Watch and the allegations: ' + (s.gate_reread || 0) + ' done.' : '')));
     ui.add(box, fl);
 
     var not = ui.section('What this map does not do');

@@ -197,6 +197,8 @@ th { color: var(--ink-2); font-weight: 600; }
 .claim > h3 { margin: 6px 0; font-size: 17px; }
 .claim-said q { font-style: italic; }
 .claim-status { border: 1px solid var(--ink-2); border-radius: 10px; padding: 0 8px; }
+.reread-mark { border-color: var(--series-2); color: var(--ink); }
+.reread-mark.is-done { border-style: solid; border-color: var(--ink-2); }
 .status-not-checked, .status-source-not-found { border-style: dashed; }
 .claim .check { margin: 4px 0; }
 .claim-on { font-size: 14px; color: var(--ink-2); }
@@ -355,6 +357,9 @@ th { color: var(--ink-2); font-weight: 600; }
 .start-btn:hover { background: var(--ink-2); border-color: var(--ink-2); }
 .updated { color: var(--ink-2); font-size: 13px; }
 .updated[hidden] { display: none; }
+.draft-note { font-size: 13.5px; color: var(--ink); background: var(--wash); border-left: 3px solid var(--series-2); border-radius: 4px; padding: 6px 10px; margin: 0 0 10px; }
+.draft-note[hidden] { display: none; }
+.draft-note a, .draft-note .linkbtn { font-weight: 600; }
 .theme-btn { font-size: 13px; padding: 2px 10px; color: var(--ink-2); }
 .card-nm { white-space: nowrap; }
 .card-names .card-nm .linkbtn { white-space: normal; }

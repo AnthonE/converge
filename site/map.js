@@ -557,6 +557,15 @@
     document.getElementById('mode-drawing').addEventListener('click', function () { idealsMode = 'drawing'; go(null); });
     /* The date the record last changed, from the build. */
     if (g.updated) { var up = document.getElementById('updated'); up.textContent = 'Updated ' + ns.longDate(g.updated); up.hidden = false; }
+    /* Said plainly while it is true: the map went out before a person had re-read its riskiest sources. */
+    var s = g.sources || {}, dn = document.getElementById('draft-note'), m = g.meta || {};
+    if (s.gate && s.gate_reread < s.gate) {
+      add(dn, h('span', null, 'Published early, as a draft. AI models gathered and checked these records; a person is now re-reading the sources, starting with the ' +
+        s.gate + ' pages behind the Watch and the allegations (' + s.gate_reread + ' done so far). Spot a mistake or a missing side? '));
+      if (m.contribute) add(dn, link(m.contribute, 'Tell us'), h('span', null, '.'));
+      else { var tb = h('button', 'linkbtn', 'See how to send it'); tb.type = 'button'; tb.addEventListener('click', goStart); add(dn, tb); }
+      dn.hidden = false;
+    }
     ns.initWho(ix, nav);
     ns.initSearch(document.getElementById('search'), document.getElementById('search-hits'), ix, nav);
     document.getElementById('tab-watch').hidden = !ns.hasWatch(ix);

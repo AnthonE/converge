@@ -107,6 +107,11 @@ log, which points to the account's billing or Actions minutes. The workflows bel
 The build command validates the data first (`python3 tools/package.py` runs `build.py`), so a record that breaks
 a guardrail stops the deploy.
 
+**Public now, as a draft.** `"public": true` in `data/meta.json` makes every build indexable and labels the map a
+draft, with no host setting to change; set it to `false` to go back to noindex. While a person has not finished
+re-reading the pages behind the Watch and the allegations, the header says so and gives the count, and each Watch
+claim says whether its sources have been re-read. Feedback goes to the issue forms (`contribute`).
+
 **Vercel (connected).** The repository is connected to Vercel, which builds from `vercel.json`: every push to
 `main` publishes the site and every pull request gets a preview address (behind a Vercel login, so only the
 account sees it). Vercel's build is also the check that runs on every push while Actions cannot: a record that
