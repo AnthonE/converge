@@ -204,3 +204,25 @@ th { color: var(--ink-2); font-weight: 600; }
 .claim .travelled .step { margin: 6px 0; }
 .claim .travelled time { font-variant-numeric: tabular-nums; color: var(--ink-2); }
 .claim .step-note { font-size: 13px; color: var(--ink-2); margin: 2px 0 0; }
+
+/* The heart: a readable page, one column. */
+.essay { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; color: var(--ink); line-height: 1.6; }
+.essay h1 { font-size: 30px; margin: 8px 0 4px; }
+.essay h2 { font-size: 20px; margin: 32px 0 8px; text-transform: none; letter-spacing: normal; color: var(--ink); }
+.essay h3 { font-size: 16px; margin: 24px 0 8px; color: var(--ink); }
+.essay .lede { font-size: 17px; color: var(--ink-2); }
+.essay blockquote { margin: 12px 0; padding: 4px 0 4px 14px; border-left: 3px solid var(--border); font-style: italic; }
+.essay blockquote cite { display: block; font-style: normal; font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+.essay .essay-nav { font-size: 14px; color: var(--ink-2); }
+.essay a { color: inherit; }
+.essay .note { font-size: 13px; color: var(--ink-2); }
+.who-serves { width: 100%; border-collapse: collapse; font-size: 14px; }
+.who-serves th, .who-serves td { text-align: left; vertical-align: top; padding: 8px 6px; border-top: 1px solid var(--border); }
+.who-serves td:first-child { font-weight: 600; width: 22%; }
+.who-serves td:last-child { color: var(--ink-2); width: 30%; }
+@media (max-width: 560px) {
+  .who-serves thead { display: none; }
+  .who-serves tr, .who-serves td { display: block; width: auto !important; }
+  .who-serves td { border-top: none; padding: 2px 0; }
+  .who-serves tr { border-top: 1px solid var(--border); padding: 8px 0; }
+}
