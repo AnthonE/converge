@@ -29,6 +29,21 @@
       ui.link(w.url, w.source, w.nolink));
     ui.add(art, said);
     if (w.standing) ui.add(art, ui.h('p', 'claim-standing', 'Who is speaking: ' + w.standing));
+    if (w.why) ui.add(art, ui.h('p', 'claim-why', 'Why this is here: ' + w.why));
+    if ((w.travelled || []).length) {
+      var ts = ui.section('How it travelled (' + w.travelled.length + ' steps)',
+        'Each step in date order: who said it, their words, where they got it, and what changed from the step before. This does not say which version is right.');
+      var tl = ui.h('ol', 'links travelled');
+      w.travelled.forEach(function (t) {
+        var li = ui.h('li', 'step');
+        ui.add(li, ui.h('time', null, t.date), ui.h('span', null, ' ' + t.who + ': '), ui.h('q', null, t.said), ui.h('span', null, ' '),
+          t.url ? ui.link(t.url, t.source, t.nolink) : ui.h('span', 'cite', '(' + t.source + ')'), ui.h('span', null, ' '), t.verified ? ui.badge(t.verified) : null);
+        if (t.cites) ui.add(li, ui.h('div', 'step-note', 'Gives as its source: ' + t.cites));
+        if (t.changed) ui.add(li, ui.h('div', 'step-note step-changed', 'What changed: ' + t.changed));
+        ui.add(tl, li);
+      });
+      ui.add(art, ui.add(ts, tl));
+    }
     if ((w.checks || []).length) {
       var s = ui.section('What has been checked (' + w.checks.length + ')', 'Each line says what was looked for, where, and what the page said.');
       var ul = ui.h('ul', 'links');

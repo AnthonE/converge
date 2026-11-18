@@ -27,6 +27,9 @@ attributed. An unchecked claim is not false, and a claim on the Watch is not a f
   wording against the source and record a mismatch in `cautions` (the Red Means No entry shows how).
 - Search for the other side and record it under `responses`: the subject's reply, a correction, a retraction, the
   account of the people affected. Record what is still unknown under `open`.
+- Where a claim has been passed along, trace it under `travelled`: each step's exact words and what it gives as its
+  source, oldest first, and what changed from the step before (a hedge dropped, a number added). Say what changed;
+  do not say who is right. Anonymous posts can be a step, by role, unlinked; never use one as evidence.
 - A tradition's text beside a movement is this project's reading, labelled as such. It never proves anything about
   the movement, and nothing here says any text foretold anyone.
 

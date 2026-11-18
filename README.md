@@ -36,7 +36,10 @@ Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file w
 - **A Watch entry** needs: `id`, `date`, `title` (neutral), `claimed_by`, `standing` (how the speaker stands to the
   matter), `claim` (their words), `source`, `url`, `kind` (claimed / reported / alleged / documented /
   first-person) and `status` (not checked / partly checked / checked / not supported / source not found). Then
-  `checks` (what was looked for, where, the result, the flag), `responses`, `open` and `cautions`.
+  `checks` (what was looked for, where, the result, the flag), `responses`, `open` and `cautions`. Optional: `why`
+  (one line on why the entry is on the map) and `travelled`, the claim's path from source to source, oldest first:
+  each step has `date`, `who`, `said` (their exact words), `source`, and where it can `url`, `verified` and `cites`
+  (what it gives as its source); every step after the first says in `changed`, neutrally, what it added or dropped.
 - **Test the viewer**: `python3 test/make_fixture.py && python3 build.py --data test/fixture --no-site --out
   dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright).
 
