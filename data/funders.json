@@ -9,7 +9,7 @@
   "id": "sff",
   "label": "Survival and Flourishing Fund (SFF)",
   "kind": "fund",
-  "note": "SFF publishes recommendations made for its funders. The lines drawn from SFF on this map are those recommendations, except the line to MIRI, which shows the figure MIRI’s own contributors page lists for SFF. The recommendations are not payments out of a fund of its own, and the record does not show what was paid on them. Its table gives each row a round, an amount and a named funder: Jaan Tallinn on the rows where the funder was checked, and in 2026 also Dustin Moskovitz. An amount marked ‡ is a matching pledge, which SFF’s 2026 page says depends on the recipient raising outside funds."
+  "note": "SFF publishes recommendations made for its funders. The lines drawn from SFF on this map are those recommendations, except the line to MIRI, which shows the figure MIRI’s own contributors page lists for SFF. The recommendations are not payments out of a fund of its own, and the record does not show what was paid on them. Its table gives each row a round, an amount and a named funder: Jaan Tallinn on the rows where the funder was checked, and in 2026 also Dustin Moskovitz. An amount marked ‡ is a matching pledge, which SFF’s 2026 page says depends on the recipient raising outside funds. Its 2026 page lists Scott Alexander among the recommenders who agreed to be named."
  },
  {
   "id": "dustin-moskovitz",
@@ -21,7 +21,7 @@
   "id": "coefficient-giving",
   "label": "Coefficient Giving (formerly Open Philanthropy)",
   "kind": "foundation",
-  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement.",
+  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement. Its own announcement of 18 Nov 2025: “Today, Open Philanthropy is becoming Coefficient Giving.” Good Ventures, the foundation of Cari Tuna and Dustin Moskovitz, calls it “our primary philanthropic advisor”. People ties on the record: Anthropic's announcement of 29 May 2024 says Luke Muehlhauser stepped down from its board “to focus on his work at Open Philanthropy”; Holden Karnofsky, Open Philanthropy's co-founder, is listed by Harvard's Berkman Klein Center (Oct 2025) as a Member of Technical Staff at Anthropic.",
   "words": [
    {
     "speaker": "Open Philanthropy (grant record)",
@@ -388,5 +388,11 @@
   "label": "Employees of Anthropic and OpenAI (personal donations)",
   "kind": "individuals",
   "note": "A group, not one person: staff of AI companies giving from their own holdings, as the recipient reports it. By the recipient’s account it received no revenue directly from AI developers as organisations."
+ },
+ {
+  "id": "ftx-alameda",
+  "label": "FTX and Alameda (Sam Bankman-Fried)",
+  "kind": "company",
+  "note": "Anthropic's own announcement says its 2022 Series B was led by Sam Bankman-Fried, then FTX's chief executive. After FTX failed, its bankruptcy estate sold the Anthropic shares in 2024 (reported by The Block from court documents)."
  }
 ]

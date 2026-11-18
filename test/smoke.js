@@ -152,7 +152,7 @@ const path = require('path');
       }
       if (shots) await page.screenshot({ path: path.join(shots, 'money-focus-light.png'), fullPage: true });
       // Choosing the line between them lists the records in both directions.
-      await page.locator('#map .edge-hit').first().click({ force: true });
+      await page.locator('#map .edge-hit').first().dispatchEvent('click');  // the line itself, not whatever lies over its midpoint
       const k = await page.locator('#panel .kicker').first().textContent();
       if (k !== 'Between two names') fail(`choosing a money line shows "${k}"`);
       else {
@@ -235,6 +235,11 @@ const path = require('path');
       const changed = await page.locator(`#watch-${w.id} .travelled .step-changed`).count();
       if (changed !== w.travelled.filter(t => t.changed).length) fail(`${w.id}: a travelled step hides what changed`);
       if (await page.locator(`#watch-${w.id} .travelled i`).count()) fail(`${w.id}: travelled data was inserted as markup`);
+      if (w.travelled.some(t => t.scores)) {
+        const dots = await page.locator(`#watch-${w.id} .chain-chart .cc-dot`).count();
+        const want = w.travelled.reduce((n, t) => n + ['hedges', 'attribution', 'label'].filter(k => t.scores && t.scores[k] !== null && t.scores[k] !== undefined).length, 0);
+        if (dots !== want) fail(`${w.id}: the chain chart shows ${dots} of ${want} scores`);
+      }
       const scored = await page.locator(`#watch-${w.id} .travelled .step-scores`).count();
       if (scored !== w.travelled.filter(t => t.scores).length) fail(`${w.id}: a step hides its scores`);
       if (w.travelled_summary && !(await page.locator(`#watch-${w.id} .step-summary`).textContent().catch(() => '')).includes(w.travelled_summary)) fail(`${w.id}: the score summary does not show`);
@@ -284,7 +289,7 @@ const path = require('path');
     const lost = want.filter(q => !got.includes(q));
     if (lost.length) fail(`a pattern panel misses ${lost.length} invocation(s): ${lost[0]}`);
     if (graph.edges.some(e => e.type === 'invokes') && !(await page.locator('#map .edge-invokes').count())) fail('no solid line for an invocation');
-    await page.locator('#map .edge-hit').first().click({ force: true });
+    await page.locator('#map .edge-hit').first().dispatchEvent('click');  // the line itself, not whatever lies over its midpoint
     const lk = await page.locator('#panel .kicker').first().textContent();
     if (!['In their own words', 'How it takes hold', 'This project\u2019s reading'].includes(lk)) fail(`choosing an ancients line shows "${lk}"`);
     if (!(await page.locator('#panel .flow').count())) fail('an ancients line panel lists no records');
