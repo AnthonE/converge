@@ -24,6 +24,13 @@ const path = require('path');
   if (await page.locator('#key').isVisible()) fail('the key to the drawing shows with no drawing');
   if ((await page.locator('#tab-ideals').getAttribute('aria-pressed')) !== 'true') fail('the Ideals tab is not pressed on the front');
   if (!/^Updated \d{1,2} [A-Z][a-z]+ \d{4}$/.test(await page.locator('#updated').textContent())) fail('the header does not say when the record was updated');
+  // While the pages behind the Watch and the allegations are not all re-read, the header says so, with the count.
+  const src = graph.sources || {};
+  if (src.gate && src.gate_reread < src.gate) {
+    const dn = await page.locator('#draft-note').textContent().catch(() => '');
+    if (!dn.includes(src.gate + ' pages') || !dn.includes('(' + src.gate_reread + ' done so far)')) fail(`the draft notice reads "${dn}"`);
+    if ((graph.meta || {}).contribute && !(await page.locator('#draft-note a').count())) fail('the draft notice gives no way to send feedback');
+  }
   if ((await page.locator('#the-page .card').first().locator('.card-phases li').count()) !== 6) fail('a card does not name its six phases');
   if ((await page.locator('#the-page .card-quote').count()) !== graph.ideals.filter(d => (d.words || []).length).length) fail('a card with quotations shows none');
   const led = graph.ideals.find(d => typeof d.lead === 'number');
@@ -259,6 +266,8 @@ const path = require('path');
     const units = await page.evaluate(() => [...document.querySelectorAll('#the-watch > .claim, #the-watch > .w-thread')].map(u => u.querySelector('.claim-head time').textContent));
     if (units.join() !== units.slice().sort().reverse().join()) fail('the Watch is not newest first');
     if ((await page.locator('#the-watch .claim-status').count()) !== graph.watch.length) fail('a Watch claim shows no status');
+    const cited = graph.watch.filter(w => /"url":"https?:/.test(JSON.stringify(w))).length;
+    if ((await page.locator('#the-watch .reread-mark').count()) !== cited) fail('a Watch claim with sources does not say whether a person has re-read them');
     // A thread is folded, with its note, and holds every claim in it; a filter narrows the list and says how many.
     const threads = (graph.meta || {}).watch_threads || {};
     for (const tid of Object.keys(threads)) {

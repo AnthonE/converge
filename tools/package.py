@@ -16,7 +16,7 @@ Added files:
   reread.html  the re-read, on a phone: answers are kept on the phone and saved to the repository as a commit
   feed.xml     an Atom feed of the newest claims on the Watch and events on the map (tools/feed.py)
 """
-import argparse, os, shutil, subprocess, sys, zipfile
+import argparse, json, os, shutil, subprocess, sys, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -73,6 +73,8 @@ def main():
     ap.add_argument('--out', default=os.path.join(ROOT, 'dist', 'site'))
     a = ap.parse_args()
     a.public = a.public or os.environ.get('PUBLIC', '').lower() == 'true'   # hosts with no flags (Vercel): set PUBLIC=true
+    # Or say so in the data: "public": true in data/meta.json publishes every build, with no host setting to change.
+    a.public = a.public or json.load(open(os.path.join(ROOT, 'data', 'meta.json'), encoding='utf-8')).get('public') is True
     r = subprocess.run([sys.executable, os.path.join(ROOT, 'build.py')], capture_output=True, text=True)
     print(r.stdout.strip().splitlines()[-1] if r.stdout.strip() else '')
     if r.returncode:
@@ -90,8 +92,14 @@ def main():
     if a.public:
         html = html.replace('<meta name="robots" content="noindex, nofollow">\n', '')
         heart = os.path.join(a.out, 'heart.html')
-        open(heart, 'w', encoding='utf-8').write(open(heart, encoding='utf-8').read().replace('<meta name="robots" content="noindex, nofollow">\n', ''))
+        text = open(heart, encoding='utf-8').read()   # read before opening for writing, which empties the file
+        with open(heart, 'w', encoding='utf-8') as fh:
+            fh.write(text.replace('<meta name="robots" content="noindex, nofollow">\n', ''))
         html = html.replace('<span class="tag">private prototype</span>', '<span class="tag">draft</span>')
+        single = os.path.join(a.out, 'ideals-map.html')
+        text = open(single, encoding='utf-8').read()
+        with open(single, 'w', encoding='utf-8') as fh:
+            fh.write(text.replace('<meta name="robots" content="noindex, nofollow">\n', '').replace('<span class="tag">private prototype</span>', '<span class="tag">draft</span>'))
         robots = 'User-agent: *\nAllow: /\n'
         visibility = 'This copy is public: search engines may index it.'
     else:

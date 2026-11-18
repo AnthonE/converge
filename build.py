@@ -726,6 +726,10 @@ def main():
     g['reread'] = [r for r in g['reread'] if r['url'] in cited]
     done = {r['url'] for r in g['reread'] if r.get('result') in ('holds', 'corrected')}
     g['sources'] = {'pages': len(cited), 'reread': len(done & cited)}
+    # The pages to read before going public: everything behind the Watch and the allegations (tools/sources.py).
+    import sources
+    gate = {u for u, p in sources.collect(a.data).items() if p['tier'] <= 2}
+    g['sources'].update({'gate': len(gate), 'gate_reread': len(done & gate)})
     g['updated'] = updated(a.data, g)
     print(f'sources: {len(cited)} pages cited, {len(done & cited)} re-read by a person (tools/reread.py)')
     if a.check:

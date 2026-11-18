@@ -61,12 +61,27 @@
     return svg;
   }
 
+  /* How far a person has re-read the pages this claim cites; until then the claim says so. */
+  function rereadMark(ui, ix, w) {
+    var urls = {};
+    (function walk(o) {
+      if (Array.isArray(o)) { o.forEach(walk); return; }
+      if (!o || typeof o !== 'object') return;
+      if (typeof o.url === 'string' && /^https?:\/\//.test(o.url)) urls[o.url] = true;
+      Object.keys(o).forEach(function (k) { if (k !== 'url') walk(o[k]); });
+    })(w);
+    var all = Object.keys(urls), done = all.filter(function (u) { var r = (ix.reread || {})[u]; return r && /^(holds|corrected)$/.test(r.result); }).length;
+    if (!all.length) return null;
+    return ui.h('span', 'lane reread-mark' + (done === all.length ? ' is-done' : ''),
+      done === all.length ? 're-read by a person' : done ? 're-read by a person: ' + done + ' of ' + all.length + ' sources' : 'not yet re-read by a person');
+  }
+
   function item(ui, w, ix, onNode) {
     var art = ui.h('article', 'claim');
     art.id = 'watch-' + w.id;
     var head = ui.h('header', 'claim-head');
     ui.add(head, ui.h('time', null, w.date), ui.h('span', 'claim-status status-' + w.status.replace(/ /g, '-'), STATUS[w.status] || w.status),
-      ui.h('span', 'lane', w.kind));
+      ui.h('span', 'lane', w.kind), rereadMark(ui, ix, w));
     ui.add(art, head, ui.h('h3', null, w.title));
     var said = ui.h('p', 'claim-said');
     ui.add(said, ui.h('span', null, w.claimed_by + ': '), ui.h('q', null, w.claim), ui.h('span', null, ' '),
