@@ -28,6 +28,8 @@ NOT_LINKED = re.compile(r'\bnot linked\b(?! to)|do not link|never link', re.I)
 EDGE_TYPES = {'carries', 'descends_from', 'runs_on', 'bears_fruit', 'fed_by', 'starved_by',
               'speaks_for', 'captures', 'parallels', 'opposes', 'resembles',
               'funds', 'evaluates', 'hosts', 'invokes', 'reads_as', 'uses', 'breaks_from'}
+# What kind of money a funds link is: a stake or loan, a gift, public money, paid work, or political spending.
+MONEY_KINDS = {'investment', 'grant', 'government', 'commission', 'political'}
 # The ancient layer: who may stand at each end of a link.
 ANCIENT_ENDS = {
     'invokes': ({'carriers', 'vehicles', 'ideals', 'funders', 'labs'}, {'patterns'}),
@@ -418,6 +420,11 @@ def validate(g):
             err(f'edges[{i}]: "sentence" labels a group (guardrail 1): {str(e.get("sentence"))[:60]}')
         if e.get('type') not in EDGE_TYPES:
             err(f'edges[{i}]: unknown type {e.get("type")}')
+        # Every record of money says what kind of money it is, so investment and charity are never counted as one.
+        if e.get('type') == 'funds' and e.get('money') not in MONEY_KINDS:
+            err(f'edges[{i}] ({e.get("from")} funds {e.get("to")}): "money" must be one of {sorted(MONEY_KINDS)}')
+        if e.get('money') and e.get('type') != 'funds':
+            err(f'edges[{i}]: only a "funds" link carries "money"')
         if e.get('url') and not e.get('nolink') and NOT_LINKED.search(str(e.get('source', '')) + ' ' + str(e.get('sentence', ''))):
             err(f'edges[{i}] ({e.get("from")} {e.get("type")} {e.get("to")}): it says the source is not linked, so it needs "nolink": true')
         for end in ('from', 'to'):

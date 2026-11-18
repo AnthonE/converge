@@ -334,6 +334,10 @@ th { color: var(--ink-2); font-weight: 600; }
 .mk-mark { color: var(--ink-2); font-weight: 700; }
 .mk-key dd { margin-bottom: 8px; }
 .mk-src { display: block; color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+.mk-money-intro { margin-top: 28px; }
+.mk-none { color: var(--ink-2); }
+.mk-item { display: block; }
+.mk-payee { margin: 12px 0 4px; font-size: 14px; }
 @media (max-width: 900px) {
   .mk-table, .mk-table tbody, .mk-table tr, .mk-table th, .mk-table td { display: block; min-width: 0; width: auto; }
   .mk-table thead { display: none; }
