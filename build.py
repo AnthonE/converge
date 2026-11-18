@@ -28,8 +28,9 @@ NOT_LINKED = re.compile(r'\bnot linked\b(?! to)|do not link|never link', re.I)
 EDGE_TYPES = {'carries', 'descends_from', 'runs_on', 'bears_fruit', 'fed_by', 'starved_by',
               'speaks_for', 'captures', 'parallels', 'opposes', 'resembles',
               'funds', 'evaluates', 'hosts', 'invokes', 'reads_as', 'uses', 'breaks_from'}
-# What kind of money a funds link is: a stake or loan, a gift, public money, paid work, or political spending.
-MONEY_KINDS = {'investment', 'grant', 'government', 'commission', 'political'}
+# What kind of money a funds link is: a stake or loan, a gift, public money, paid work, political spending, or a
+# purchase of goods or services (compute, leases), which is money paid but not funding.
+MONEY_KINDS = {'investment', 'grant', 'government', 'commission', 'political', 'purchase'}
 # The ancient layer: who may stand at each end of a link.
 ANCIENT_ENDS = {
     'invokes': ({'carriers', 'vehicles', 'ideals', 'funders', 'labs'}, {'patterns'}),

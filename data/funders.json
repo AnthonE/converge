@@ -394,5 +394,89 @@
   "label": "FTX and Alameda (Sam Bankman-Fried)",
   "kind": "company",
   "note": "Anthropic's own announcement says its 2022 Series B was led by Sam Bankman-Fried, then FTX's chief executive. After FTX failed, its bankruptcy estate sold the Anthropic shares in 2024 (reported by The Block from court documents)."
+ },
+ {
+  "id": "amazon",
+  "label": "Amazon",
+  "kind": "company",
+  "note": "Invested in Anthropic from 2023 and sells it compute through AWS. Leverage Shares, reading Anthropic's registration statement, says the S-1 “names Amazon and Google as holders who will each own more than 5% of the company after the IPO”, mostly in non-voting shares, with Amazon's ownership capped at 12%."
+ },
+ {
+  "id": "nvidia",
+  "label": "NVIDIA",
+  "kind": "company",
+  "note": "Committed on 18 November 2025 to invest up to $10 billion in Anthropic, and is reported as a buyer of about $10 billion of its stock at the offering price."
+ },
+ {
+  "id": "spark-capital",
+  "label": "Spark Capital",
+  "kind": "firm",
+  "note": "Led Anthropic's $450 million Series C (2023)."
+ },
+ {
+  "id": "sk-telecom",
+  "label": "SK Telecom",
+  "kind": "company",
+  "note": "Invested $100 million in Anthropic in 2023, with a partnership on a telecom language model."
+ },
+ {
+  "id": "menlo-ventures",
+  "label": "Menlo Ventures",
+  "kind": "firm",
+  "note": "Reported in December 2023 as leading talks for a $750 million investment in Anthropic; named by Anthropic among participants in its Series E (2025)."
+ },
+ {
+  "id": "iconiq",
+  "label": "ICONIQ",
+  "kind": "firm",
+  "note": "Led Anthropic's Series F (2025) and co-led its Series G and Series H (2026), by Anthropic's own announcements."
+ },
+ {
+  "id": "gic",
+  "label": "GIC (Singapore)",
+  "kind": "fund",
+  "note": "Describes itself as “the world’s first non-commodity-based sovereign wealth fund”. Named by Anthropic as an investor in its Series F, a lead of its Series G and a co-lead of its Series H."
+ },
+ {
+  "id": "coatue",
+  "label": "Coatue",
+  "kind": "firm",
+  "note": "Named by Anthropic as an investor in its Series F, a lead of its Series G and a co-lead of its Series H."
+ },
+ {
+  "id": "mgx",
+  "label": "MGX",
+  "kind": "fund",
+  "note": "An Abu Dhabi investment company, named by Anthropic as a co-lead of its Series G and an investor in its Series H."
+ },
+ {
+  "id": "qia",
+  "label": "Qatar Investment Authority",
+  "kind": "fund",
+  "note": "Named by Anthropic among the investors in its Series F (2025) and its Series G (2026)."
+ },
+ {
+  "id": "altimeter",
+  "label": "Altimeter Capital",
+  "kind": "firm",
+  "note": "One of four leads of Anthropic's $65 billion Series H (May 2026)."
+ },
+ {
+  "id": "dragoneer",
+  "label": "Dragoneer",
+  "kind": "firm",
+  "note": "Co-led Anthropic's Series G and was one of four leads of its Series H (2026)."
+ },
+ {
+  "id": "greenoaks",
+  "label": "Greenoaks",
+  "kind": "firm",
+  "note": "One of four leads of Anthropic's $65 billion Series H (May 2026)."
+ },
+ {
+  "id": "sequoia",
+  "label": "Sequoia Capital",
+  "kind": "firm",
+  "note": "Named by Anthropic among the investors in its Series G and as one of four leads of its Series H (2026)."
  }
 ]

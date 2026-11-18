@@ -25,7 +25,8 @@
     ['grant', 'Grants and gifts', 'a grant, donation or pledge to give'],
     ['government', 'Public money', 'given or appropriated by a state body'],
     ['commission', 'Paid work', 'a contract or commissioned work'],
-    ['political', 'Political money', 'to or between political groups']
+    ['political', 'Political money', 'to or between political groups'],
+    ['purchase', 'Purchases', 'buying goods or services, such as compute']
   ];
   ns.moneyKinds = MONEY_KIND;
   ns.moneyWord = function (k) { var r = MONEY_KIND.filter(function (x) { return x[0] === k; })[0]; return r ? r[1] : k; };
@@ -36,7 +37,7 @@
       if (seen[p.node]) return;
       seen[p.node] = true;
       var flows = (ix.adj[p.node] || []).filter(function (l) {
-        return l.edge.type === 'funds' && l.edge.to === p.node && l.edge.kind !== 'alleged' && ix.byId[l.edge.from];
+        return l.edge.type === 'funds' && l.edge.to === p.node && l.edge.kind !== 'alleged' && l.edge.money !== 'purchase' && ix.byId[l.edge.from];
       }).map(function (l) { return l.edge; });
       out.push({ node: ix.byId[p.node], flows: flows });
     });
@@ -94,7 +95,7 @@
     var intro = ui.h('div', 'watch-intro mk-money-intro');
     ui.add(intro, ui.h('h2', null, 'Who pays for the bodies that push each method'),
       ui.h('p', null, 'For each method, the companies and groups on this map that push it, and the money on record flowing into them, sorted by kind of money. Open a name for the amounts, dates and sources.'),
-      ui.h('p', 'note', 'Paying a body that pushes a method does not make the payer a backer of that method, and most of these bodies do other work too. A name appears once per column however many payments are on file. An empty cell means no record was found here, not that no money exists. Allegations are not counted.'));
+      ui.h('p', 'note', 'Paying a body that pushes a method does not make the payer a backer of that method, and most of these bodies do other work too. A name appears once per column however many payments are on file. An empty cell means no record was found here, not that no money exists. Allegations are not counted, and neither are purchases of goods or services such as compute, which are money paid, not funding; the money view shows them.'));
     ui.add(box, intro);
     var wrap = ui.h('div', 'mk-wrap'), t = ui.h('table', 'mk-table mk-money'), thead = ui.h('thead'), hr = ui.h('tr');
     ui.add(hr, ui.h('th', null, 'Method'), ui.h('th', null, 'Pushed by (on the map)'));
@@ -165,7 +166,7 @@
     }
     var mb = ns.moneyBehind(ix, m);
     if (mb.pushers.length) {
-      var ms = ui.section('Money behind those who push it', 'Records of money into the bodies above. Paying a body that pushes a method does not make the payer a backer of the method. Allegations are left out.');
+      var ms = ui.section('Money behind those who push it', 'Records of money into the bodies above. Paying a body that pushes a method does not make the payer a backer of the method. Allegations and purchases of goods or services are left out.');
       mb.pushers.forEach(function (p) {
         ui.add(ms, ui.add(ui.h('h4', 'mk-payee'), nameButton(ui, nav, p.node)));
         if (!p.flows.length) { ui.add(ms, ui.h('p', 'note', 'No record of money into it was found here.')); return; }

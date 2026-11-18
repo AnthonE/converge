@@ -504,7 +504,7 @@ const path = require('path');
   if ((await page.locator('#the-page .mk-table:not(.mk-money) tbody tr').count()) !== graph.methods.length) fail('the methods table does not list every method');
   // Who pays for the bodies that push each method: one row per method, money sorted by kind, allegations left out.
   if ((await page.locator('#the-page .mk-money tbody tr').count()) !== graph.methods.length) fail('the money-behind-methods table does not list every method');
-  const payTo = (id) => graph.edges.filter((e) => e.type === 'funds' && e.to === id && e.kind !== 'alleged');
+  const payTo = (id) => graph.edges.filter((e) => e.type === 'funds' && e.to === id && e.kind !== 'alleged' && e.money !== 'purchase');
   const pushers = graph.methods[0].pushed_by.map((p) => p.node).filter(Boolean);
   const paid = pushers.flatMap(payTo);
   const moneyText = await page.locator('#the-page .mk-money').textContent();
