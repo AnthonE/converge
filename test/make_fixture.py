@@ -20,6 +20,11 @@ for i in range(N):
                    'url': 'https://example.org/source', 'date': '2020-01-01', 'verified': ['primary', 'secondary', 'unverified'][i % 3]}],
         'cautions': ['Synthetic fixture.'],
     })
+    # One ideal names a lead quotation for its card that is not its first.
+    if i == 1:
+        ideals[-1]['words'].append({'speaker': 'Sample Speaker', 'quote': 'The lead sample quotation.', 'source': 'Sample Source',
+                                    'url': 'https://example.org/lead', 'date': '2021-01-01', 'verified': 'primary'})
+        ideals[-1]['lead'] = 1
     crowd = i == 0
     for c in range(10 if crowd else 1 + i % 3):
         cid = f'carrier-{i}-{c}'
@@ -147,9 +152,17 @@ json.dump([{'id': 'claim-1', 'date': '2026-01-02', 'title': 'A <b>sample</b> cla
                            'cites': 'Sample Outlet', 'changed': 'The hedge is dropped.', 'scores': {'hedges': 0, 'attribution': 3, 'label': None}}],
             'travelled_summary': 'A sample summary of the scores.'},
            {'id': 'claim-2', 'date': '2026-01-05', 'title': 'A second sample claim', 'claimed_by': 'Sample Account', 'standing': 'A sample account.', 'claim': 'Something else.',
-            'source': 'Sample Account, 5 Jan 2026', 'kind': 'claimed', 'status': 'not checked'}], open(os.path.join(OUT, 'watch.json'), 'w'))
+            'source': 'Sample Account, 5 Jan 2026', 'kind': 'claimed', 'status': 'not checked'},
+           # Two claims in one thread: shown together, folded, under the thread's note.
+           {'id': 'claim-3', 'date': '2026-01-04', 'title': 'A threaded sample claim', 'claimed_by': 'Sample Relay', 'standing': 'A sample relay.', 'claim': 'A third thing.',
+            'source': 'Sample Relay, 4 Jan 2026', 'kind': 'reported', 'status': 'checked', 'thread': 'sample-thread'},
+           {'id': 'claim-4', 'date': '2026-01-03', 'title': 'Another threaded sample claim', 'claimed_by': 'Sample Relay', 'standing': 'A sample relay.', 'claim': 'A fourth thing.',
+            'source': 'Sample Relay, 3 Jan 2026', 'kind': 'reported', 'status': 'partly checked', 'thread': 'sample-thread'}], open(os.path.join(OUT, 'watch.json'), 'w'))
 json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 'disclosure': 'Synthetic fixture: no ties.',
-           'made_with': 'Synthetic fixture, made by a script.', 'nolink_hosts': ['example.net']}, open(os.path.join(OUT, 'meta.json'), 'w'))
+           'made_with': 'Synthetic fixture, made by a script.', 'nolink_hosts': ['example.net'],
+           'contribute': 'https://github.com/example/ideals-map/issues/new/choose', 'site_url': 'https://example.org/map/',
+           'watch_threads': {'sample-thread': {'title': 'A sample thread', 'note': 'Why these sample claims are shown together.'}}},
+          open(os.path.join(OUT, 'meta.json'), 'w'))
 # Who's who: a public figure named in the sample quotations.
 json.dump([{'id': 'sample-speaker', 'name': 'Sample Speaker', 'who': 'A sample public figure, described in one plain sentence.', 'group': 'thinkers',
             'source': 'Sample Encyclopedia', 'url': 'https://example.org/sample-speaker', 'verified': 'secondary', 'sort': 'Speaker', 'node': 'carrier-0-0'}],

@@ -4,7 +4,9 @@
 
   var VERIFIED = { primary: 'machine-checked at the source', secondary: 'machine-checked on a relay or coverage', unverified: 'not yet checked' };
   var KIND = { documented: 'documented', reported: 'reported', alleged: 'alleged' };
-  var ix, state = { view: 'overview', ideal: null, selected: null, edge: null };
+  var ix, state = { view: 'cards', ideal: null, selected: null, edge: null };
+  /* The ideals open as cards; a reader who picks the drawing keeps it until they pick cards again. */
+  var idealsMode = 'cards';
   var svg, panel, tip, stage;
 
   function h(tag, cls, text) {
@@ -254,14 +256,14 @@
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
     if (state.view === 'watch') { paintWatch(); return; }
-    if (/^(start|timeline|people|record|methods|door)$/.test(state.view)) { paintPage(); return; }
+    if (/^(cards|start|timeline|people|record|methods|door)$/.test(state.view)) { paintPage(); return; }
     document.getElementById('the-watch').hidden = true;
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
     document.getElementById('tab-methods').setAttribute('aria-pressed', 'false');
     document.getElementById('layout').hidden = false;
     document.getElementById('tab-watch').setAttribute('aria-pressed', 'false');
-    document.getElementById('doors').hidden = state.view !== 'overview' || !ns.hasDoors(ix);
+    showChrome(state.view === 'overview', true);
     paint();
     var again = id && svg.querySelector('[data-id="' + id + '"]');
     if (again) again.focus();
@@ -347,13 +349,13 @@
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
     document.getElementById('tab-methods').setAttribute('aria-pressed', 'false');
-    document.getElementById('doors').hidden = true;
+    showChrome(false, false);
     box.hidden = false;
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
     ['tab-ideals', 'tab-money', 'tab-ancients'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
     document.getElementById('tab-watch').setAttribute('aria-pressed', 'true');
-    ns.renderWatch(box, ix, ui, openNode);
+    ns.renderWatch(box, ix, ui, openNode, null, state.selected);
     ns.annotate(box, ix, 'article.claim');
     var target = state.selected && document.getElementById('watch-' + state.selected);
     if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
@@ -362,24 +364,33 @@
   function paintPage() {
     var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people', rec = state.view === 'record';
     var meth = state.view === 'methods', door = state.view === 'door';
-    box.classList.toggle('is-wide', meth);
-    document.getElementById('doors').hidden = true;
+    box.classList.toggle('is-wide', meth || state.view === 'cards');
+    showChrome(state.view === 'cards', false);
     document.getElementById('tab-methods').setAttribute('aria-pressed', meth ? 'true' : 'false');
     document.getElementById('layout').hidden = true;
     document.getElementById('the-watch').hidden = true;
     box.hidden = false;
-    box.setAttribute('aria-label', start ? 'How to read this map' : people ? 'Who\u2019s who' : rec ? 'A record' : 'Timeline: everything dated, newest first');
+    box.setAttribute('aria-label', start ? 'Start here: how to read this map' : people ? 'Who\u2019s who' : rec ? 'A record' : state.view === 'cards' ? 'The ideals, as cards' : meth ? 'Alignment methods, side by side' : door ? 'A way in' : 'Timeline: everything dated, newest first');
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
-    ['tab-ideals', 'tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
+    ['tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
+    document.getElementById('tab-ideals').setAttribute('aria-pressed', state.view === 'cards' ? 'true' : 'false');
     document.getElementById('tab-timeline').setAttribute('aria-pressed', state.view === 'timeline' ? 'true' : 'false');
     window.scrollTo(0, 0);
+    if (state.view === 'cards') { ns.renderCards(box, ix, ui, nav); ns.annotate(box, ix, '.card'); return; }
     if (people) { ns.renderPeople(box, ix, ui, nav, state.selected); return; }
     if (rec) { ns.renderRecord(box, ix, ui, nav, state.selected); ns.annotate(box, ix, '.rec-head, section'); return; }
     if (meth) { ns.renderMethods(box, ix, ui, nav); ns.annotate(box, ix, 'tr'); return; }
     if (door) { ns.renderDoor(box, ix, ui, nav, state.selected); return; }
     if (start) { ns.renderStart(box, ix, ui, nav); ns.annotate(box, ix); }
     else { ns.renderTimeline(box, ix, ui, nav); ns.annotate(box, ix, 'li.tl-item'); }
+  }
+  /* The cards/drawing switch shows on the ideals' opening view; the key, on any drawing. */
+  function showChrome(modebar, key) {
+    document.getElementById('modebar').hidden = !modebar;
+    document.getElementById('mode-cards').setAttribute('aria-pressed', state.view === 'cards' ? 'true' : 'false');
+    document.getElementById('mode-drawing').setAttribute('aria-pressed', state.view === 'overview' ? 'true' : 'false');
+    document.getElementById('key').hidden = !key;
   }
   function goStart() { state.view = 'start'; state.ideal = null; state.selected = null; state.edge = null; setHash('#start'); render(); }
   function goTimeline() { state.view = 'timeline'; state.ideal = null; state.selected = null; state.edge = null; setHash('#timeline'); render(); }
@@ -412,16 +423,16 @@
     if (home) { go(home.id); state.selected = id; render(); return; }
     if (ns.hasAncientLinks(ix, id)) { goAncients(id); return; }
     if (ns.hasMoney(ix, id)) { goMoney(id); return; }
-    go(null); state.selected = id; render();
+    goRecord(id);
   }
 
   function setHash(want) {
     if (location.hash !== want) { try { history.replaceState(null, '', want || location.pathname + location.search); } catch (err) { /* file:// */ } }
   }
   function go(idealId) {
-    state.view = idealId ? 'focus' : 'overview';
+    state.view = idealId ? 'focus' : idealsMode === 'drawing' ? 'overview' : 'cards';
     state.ideal = idealId || null; state.selected = null; state.edge = null;
-    setHash(idealId ? '#' + idealId : '');
+    setHash(idealId ? '#' + idealId : idealsMode === 'drawing' ? '#drawing' : '');
     render();
   }
   /* The money view. With an id it turns to that name alone. */
@@ -443,6 +454,7 @@
     var hash = location.hash.slice(1);
     if (hash === 'start') { goStart(); return; }
     if (hash === 'timeline') { goTimeline(); return; }
+    if (hash === 'drawing') { idealsMode = 'drawing'; go(null); return; }
     if (hash.indexOf('r/') === 0 && hash.length > 2) { goRecord(hash.slice(2)); return; }
     if (hash === 'methods' && ns.hasMethods(ix)) { goMethods(); return; }
     if (hash.indexOf('door/') === 0) { goDoor(hash.slice(5)); return; }
@@ -539,11 +551,12 @@
     document.getElementById('tab-timeline').addEventListener('click', function () { goTimeline(); });
     document.getElementById('tab-timeline').hidden = !(g.fruits || []).length && !ns.hasWatch(ix);
     document.getElementById('to-start').addEventListener('click', function () { goStart(); });
-    document.getElementById('to-people').hidden = !ns.hasPeople(ix);
     document.getElementById('tab-methods').hidden = !ns.hasMethods(ix);
     document.getElementById('tab-methods').addEventListener('click', function () { goMethods(); });
-    ns.renderDoorStrip(document.getElementById('doors'), ix, ui, nav);
-    document.getElementById('to-people').addEventListener('click', function () { goPeople(null); });
+    document.getElementById('mode-cards').addEventListener('click', function () { idealsMode = 'cards'; go(null); });
+    document.getElementById('mode-drawing').addEventListener('click', function () { idealsMode = 'drawing'; go(null); });
+    /* The date the record last changed, from the build. */
+    if (g.updated) { var up = document.getElementById('updated'); up.textContent = 'Updated ' + ns.longDate(g.updated); up.hidden = false; }
     ns.initWho(ix, nav);
     ns.initSearch(document.getElementById('search'), document.getElementById('search-hits'), ix, nav);
     document.getElementById('tab-watch').hidden = !ns.hasWatch(ix);

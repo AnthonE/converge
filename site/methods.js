@@ -97,6 +97,7 @@
       m.cautions.forEach(function (c) { ui.add(cl, ui.h('li', null, c)); });
       ui.add(box, ui.add(cs, cl));
     }
+    ui.add(box, ns.recordFoot(ix, ui, { id: m.id, title: m.label, hash: '#r/' + m.id }));
   };
 
   /* Doors: where are you coming from? */

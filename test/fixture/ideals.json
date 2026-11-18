@@ -210,11 +210,20 @@
     "url": "https://example.org/source",
     "date": "2020-01-01",
     "verified": "secondary"
+   },
+   {
+    "speaker": "Sample Speaker",
+    "quote": "The lead sample quotation.",
+    "source": "Sample Source",
+    "url": "https://example.org/lead",
+    "date": "2021-01-01",
+    "verified": "primary"
    }
   ],
   "cautions": [
    "Synthetic fixture."
-  ]
+  ],
+  "lead": 1
  },
  {
   "id": "ideal-2",

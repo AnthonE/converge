@@ -23,12 +23,49 @@
     ['re-read by a person', 'A person opened the page and compared it with the map, on the date shown.']
   ];
   var VIEWS = [
-    ['Ideals', 'tab-ideals', 'The stated aims, and who carries each. Pick any circle.'],
+    ['Ideals', 'tab-ideals', 'The stated aims, one card each: who carries it, one voice from its record, and where it stands.'],
+    ['Alignment methods', 'tab-methods', 'The ways people propose to make AI behave, each asked the same five questions.'],
     ['Money and evaluators', 'tab-money', 'Who funds whom, and who tests the AI companies, with who pays the testers. A record of money is not a finding about motive.'],
     ['The ancients', 'tab-ancients', 'How each ideal takes hold of people, and what older traditions called the same pattern. This project’s reading, labelled as such.'],
     ['Timeline', 'tab-timeline', 'Everything with a date, in order, newest first.'],
     ['The Watch', 'tab-watch', 'Claims going around now, and what checking has found so far. A claim there is not a finding.']
   ];
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  /* 2026-11-18 -> 18 November 2026; a year or a month alone stays as it is given. */
+  ns.longDate = function (d) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(d || ''));
+    return m ? (+m[3]) + ' ' + MONTHS[+m[2] - 1] + ' ' + m[1] : String(d || '');
+  };
+
+  /* Under every record and every claim: how to cite it and, once the map takes issues (meta.contribute), how to
+     answer it. A GitHub new-issue address opens the correction form with the record filled in. */
+  function replyUrl(base, o) {
+    var gh = /^(https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/new)/.exec(base);
+    if (!gh) return base;
+    return gh[1] + '?template=correction.yml&title=' + encodeURIComponent('Correction: ' + o.title) + '&record=' + encodeURIComponent(o.id + ' (' + o.title + ')');
+  }
+  ns.citeText = function (ix, o) {
+    var m = ix.g.meta || {};
+    var base = m.site_url ? String(m.site_url).replace(/\/?$/, '/') : /^https?:$/.test(location.protocol) ? location.origin + location.pathname : '';
+    return '“' + o.title + '”. The Ideals Map, record ' + o.id + (ix.g.updated ? ', as of ' + ns.longDate(ix.g.updated) : '') + '.' +
+      (base ? ' ' + base + o.hash : '');
+  };
+  ns.recordFoot = function (ix, ui, o) {
+    var m = ix.g.meta || {}, foot = ui.h('div', 'rec-foot');
+    var text = ns.citeText(ix, o), p = ui.h('p', 'cite-line');
+    ui.add(p, ui.h('span', 'card-k', 'Cite: '), ui.h('span', 'cite-text', text));
+    if (navigator.clipboard && window.isSecureContext) {
+      var b = ui.h('button', 'linkbtn copy-cite', 'Copy'); b.type = 'button';
+      b.addEventListener('click', function () {
+        navigator.clipboard.writeText(text + ' Accessed ' + new Date().toISOString().slice(0, 10) + '.').then(function () { b.textContent = 'Copied'; }, function () { b.textContent = 'Could not copy'; });
+      });
+      ui.add(p, ui.h('span', null, ' '), b);
+    }
+    ui.add(foot, p);
+    if (m.contribute) ui.add(foot, ui.add(ui.h('p', 'reply-line'), ui.link(replyUrl(m.contribute, o), 'Reply to this record or correct it'),
+      ui.h('span', null, ': a party’s response, a missing side, or a source that does not say what the map says. Do not name private people.')));
+    return foot;
+  };
 
   /* A page or file that ships with the site (ui.link draws only http(s) addresses as links). */
   function local(ui, href, text) { var a = ui.h('a', 'src', text); a.href = href; return a; }
@@ -48,11 +85,19 @@
     var m = ix.g.meta || {}, s = ix.g.sources || {};
     var intro = ui.h('div', 'watch-intro');
     ui.add(intro, ui.h('h2', null, 'How to read this map'),
-      ui.h('p', 'lede', 'The people building and promoting AI often say what it is for: to save us, to end death, to build a god, to be a friend, to carry life on after us. This map gathers those stated aims, who states them, what has happened, who pays, who checks the machines, and what older traditions called the same patterns.'),
+      ui.h('p', 'lede', 'The map holds ' + (ix.g.ideals || []).length + ' stated aims for AI, from \u201ca made mind will save us\u201d to \u201ca made companion can be there for you\u201d, with the people and groups who carry them, what has happened, who pays, who checks the machines, and what older traditions called the same patterns. Pick the way in that fits where you are coming from, or go straight to any part below.'),
       ui.h('p', null, 'It is a record, not a verdict. Every item says who is speaking, quotes them, links the source and says how it was checked. Where something is only claimed or alleged, it says so. Read the sources and come to your own conclusion.'));
     ui.add(box, intro);
 
-    var ways = ui.section('The ways in');
+    /* Where are you coming from: a short path through the map for each kind of reader. */
+    if (ns.hasDoors(ix)) {
+      var doors = ui.h('nav', 'doors');
+      doors.setAttribute('aria-label', 'Ways in, by where you are coming from');
+      ns.renderDoorStrip(doors, ix, ui, nav);
+      ui.add(box, doors);
+    }
+
+    var ways = ui.section('Everything on the map');
     var wl = ui.h('ul', 'links guide-ways');
     /* The heart is a page of its own; the single-file copy does not carry it. */
     if (!document.getElementById('graph-data')) ui.add(wl, ui.add(ui.h('li'), local(ui, 'heart.html', 'The heart'),
@@ -65,6 +110,11 @@
       b.addEventListener('click', function () { tab.click(); });
       ui.add(wl, ui.add(ui.h('li'), b, ui.h('span', null, ': ' + v[2])));
     });
+    if (ns.hasPeople(ix)) {
+      var wb = ui.h('button', 'linkbtn', 'Who\u2019s who'); wb.type = 'button';
+      wb.addEventListener('click', function () { nav.goPeople(null); });
+      ui.add(wl, ui.add(ui.h('li'), wb, ui.h('span', null, ': every public figure named here, in one plain sentence. Any underlined name anywhere opens the same sentence.')));
+    }
     ui.add(box, ui.add(ways, wl));
 
     var kept = ui.section('How this record is kept');

@@ -5,11 +5,6 @@
   "lede": "Start with what the people building AI say it is for. Tap any name you do not know; every one is explained in a sentence.",
   "stops": [
    {
-    "view": "start",
-    "title": "How to read this map",
-    "why": "The few words this map uses, what each checking mark means, and how the record is kept."
-   },
-   {
     "view": "ideals",
     "title": "The thirteen ideals",
     "why": "The aims people state for AI, from “a made mind will save us” to “a made companion can be there for you”."

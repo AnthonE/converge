@@ -176,5 +176,7 @@
     ui.add(box, list(ui, 'Sources (' + srcs.length + ')', 'Every page this record cites, with how it was checked.', srcs.map(function (s) {
       return ui.add(ui.h('li'), ui.link(s.url, s.source, s.nolink), ui.h('span', null, ' '), s.flag ? ui.badge(s.flag, s.url) : ui.h('span', 'lane', 'a reading or summary'));
     })));
+    var rid = n ? id : person.id;
+    ui.add(box, ns.recordFoot(ix, ui, { id: rid, title: n ? nameOf(n) : person.name, hash: '#r/' + rid }));
   };
 })(window.IdealsMap = window.IdealsMap || {});
