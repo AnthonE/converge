@@ -12,13 +12,18 @@
   <header class="top">
     <div>
       <h1>The Ideals Map <span class="tag">private prototype</span></h1>
-      <p class="sub">What the movements around made minds say they serve, how they link, and which conditions are met.</p>
+      <p class="sub">What the movements around made minds say they serve, how they link, and which conditions are met. <button type="button" id="to-start" class="linkbtn">New here? Start here</button></p>
     </div>
     <div class="controls">
+      <div class="search">
+        <input type="search" id="search" placeholder="Search names, events, claims" aria-label="Search the map" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-hits" autocomplete="off">
+        <ul id="search-hits" role="listbox" aria-label="Matches" hidden></ul>
+      </div>
       <span class="views" id="views" role="group" aria-label="Which map to show" hidden>
         <button type="button" id="tab-ideals" aria-pressed="true">Ideals</button>
         <button type="button" id="tab-money" aria-pressed="false">Money and evaluators</button>
         <button type="button" id="tab-ancients" aria-pressed="false" hidden>The ancients</button>
+        <button type="button" id="tab-timeline" aria-pressed="false">Timeline</button>
         <button type="button" id="tab-watch" aria-pressed="false" hidden>The Watch</button>
       </span>
       <button type="button" id="to-overview" hidden>&larr; All ideals</button>
@@ -59,6 +64,7 @@
   </ul>
 
   <section class="watch" id="the-watch" aria-label="The Watch: claims and what has been checked" hidden></section>
+  <section class="watch" id="the-page" aria-live="polite" hidden></section>
 
   <main class="layout" id="layout">
     <div class="stage" id="stage" data-view="overview">
@@ -83,6 +89,7 @@
 <script src="money.js"></script>
 <script src="watch.js"></script>
 <script src="ancients.js"></script>
+<script src="guide.js"></script>
 <script src="map.js"></script>
 </body>
 </html>

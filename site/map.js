@@ -254,7 +254,10 @@
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
     if (state.view === 'watch') { paintWatch(); return; }
+    if (state.view === 'start' || state.view === 'timeline') { paintPage(); return; }
     document.getElementById('the-watch').hidden = true;
+    document.getElementById('the-page').hidden = true;
+    document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
     document.getElementById('layout').hidden = false;
     document.getElementById('tab-watch').setAttribute('aria-pressed', 'false');
     paint();
@@ -321,6 +324,8 @@
   function paintWatch() {
     var box = document.getElementById('the-watch');
     document.getElementById('layout').hidden = true;
+    document.getElementById('the-page').hidden = true;
+    document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
     box.hidden = false;
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
@@ -330,6 +335,23 @@
     var target = state.selected && document.getElementById('watch-' + state.selected);
     if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
   }
+  /* The guide and the timeline are pages, like the Watch: no drawing. */
+  function paintPage() {
+    var box = document.getElementById('the-page'), start = state.view === 'start';
+    document.getElementById('layout').hidden = true;
+    document.getElementById('the-watch').hidden = true;
+    box.hidden = false;
+    box.setAttribute('aria-label', start ? 'Start here: what this map is and how to read it' : 'Timeline: everything dated, newest first');
+    ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
+    document.getElementById('to-overview').hidden = true;
+    ['tab-ideals', 'tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
+    document.getElementById('tab-timeline').setAttribute('aria-pressed', start ? 'false' : 'true');
+    if (start) ns.renderStart(box, ix, ui, nav); else ns.renderTimeline(box, ix, ui, nav);
+    window.scrollTo(0, 0);
+  }
+  function goStart() { state.view = 'start'; state.ideal = null; state.selected = null; state.edge = null; setHash('#start'); render(); }
+  function goTimeline() { state.view = 'timeline'; state.ideal = null; state.selected = null; state.edge = null; setHash('#timeline'); render(); }
+  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); } };
   function goWatch(id) {
     state.view = 'watch'; state.ideal = null; state.edge = null;
     state.selected = id && (ix.g.watch || []).some(function (w) { return w.id === id; }) ? id : null;
@@ -376,6 +398,8 @@
   }
   function route() {
     var hash = location.hash.slice(1);
+    if (hash === 'start') { goStart(); return; }
+    if (hash === 'timeline') { goTimeline(); return; }
     if (hash === 'ancients' || hash.indexOf('ancients/') === 0) { goAncients(hash.slice(9) || null); return; }
     if (hash === 'money' || hash.indexOf('money/') === 0) { goMoney(hash.slice(6) || null); return; }
     if (ns.hasWatch(ix) && (hash === 'watch' || hash.indexOf('watch/') === 0)) { goWatch(hash.slice(6) || null); return; }
@@ -465,6 +489,10 @@
     document.getElementById('tab-ancients').addEventListener('click', function () { goAncients(null); });
     document.getElementById('tab-ancients').hidden = !ns.hasAncients(ix);
     document.getElementById('tab-watch').addEventListener('click', function () { goWatch(null); });
+    document.getElementById('tab-timeline').addEventListener('click', function () { goTimeline(); });
+    document.getElementById('tab-timeline').hidden = !(g.fruits || []).length && !ns.hasWatch(ix);
+    document.getElementById('to-start').addEventListener('click', function () { goStart(); });
+    ns.initSearch(document.getElementById('search'), document.getElementById('search-hits'), ix, nav);
     document.getElementById('tab-watch').hidden = !ns.hasWatch(ix);
     document.getElementById('tab-money').hidden = !ix.g.edges.some(ns.isMoney);
     /* The offshoot mark is drawn only where an offshoot came out of a carrier. */

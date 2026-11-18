@@ -431,6 +431,38 @@ const path = require('path');
     (flows.length ? moneyNodes.length : 0);
   if (rows !== want) fail(`list view has ${rows} rows, expected ${want}`);
 
+  // The way in: the guide, the timeline, and search.
+  await page.locator('#to-start').click();
+  await page.waitForFunction(() => location.hash === '#start' && !document.getElementById('the-page').hidden);
+  if (!(await page.locator('#the-page .glossary dt').count())) fail('Start here shows no glossary');
+  if (!(await page.locator('#layout').isHidden())) fail('the map stays visible under Start here');
+  const prog = await page.locator('#the-page .progress').textContent();
+  if (!/re-read 1 of the \d+ pages/.test(prog || '')) fail(`Start here progress line reads "${prog}"`);
+  await page.locator('#tab-timeline').click();
+  await page.waitForFunction(() => location.hash === '#timeline');
+  const tl = await page.locator('#the-page .tl-item').count();
+  const dated = graph.fruits.length + (graph.watch || []).length;
+  if (tl !== dated) fail(`timeline shows ${tl} items, data has ${dated} dated events and claims`);
+  await page.locator('#the-page .tl-filters select').first().selectOption('claim');
+  const claims = await page.locator('#the-page .tl-item').count();
+  if (claims !== (graph.watch || []).length) fail(`timeline filtered to claims shows ${claims}, Watch has ${(graph.watch || []).length}`);
+  if ((await page.locator('#the-page .badge-reread').count()) !== 0) fail('a claim carries a person re-read badge it was not given');
+  await page.locator('#the-page .tl-filters select').first().selectOption('event');
+  if (!(await page.locator('#the-page .badge-reread').count())) fail('the re-read page shows no person re-read badge on the timeline');
+  await page.locator('#the-page .tl-title').first().click();
+  if (await page.locator('#the-page').isVisible()) fail('choosing an event on the timeline does not open it on the map');
+  const target = graph.carriers[0];
+  await page.locator('#search').fill(target.label.slice(0, 12));
+  await page.waitForSelector('#search-hits:not([hidden]) li');
+  await page.keyboard.press('Enter');
+  await page.waitForTimeout(200);
+  const opened = await page.locator('#panel').textContent();
+  if (!(opened || '').includes(target.label)) fail(`search for "${target.label}" did not open its panel`);
+  await page.locator('#search').fill('claim in circ');
+  await page.waitForSelector('#search-hits:not([hidden]) li');
+  await page.keyboard.press('Enter');
+  await page.waitForFunction(() => location.hash === '#watch/claim-1');
+
   // Narrow screen: no page-level horizontal scroll.
   await page.setViewportSize({ width: 390, height: 800 });
   const scroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
