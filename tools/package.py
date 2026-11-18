@@ -19,7 +19,7 @@ import argparse, os, shutil, subprocess, sys, zipfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SITE = os.path.join(ROOT, 'site')
-FILES = ['index.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'map.js', 'graph.json']
+FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'map.js', 'graph.json']
 
 CSP = ("default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; "
        "frame-ancestors 'none'; base-uri 'none'; form-action 'none'; object-src 'none'")
@@ -86,6 +86,8 @@ def main():
                '  Permissions-Policy: camera=(), microphone=(), geolocation=()']
     if a.public:
         html = html.replace('<meta name="robots" content="noindex, nofollow">\n', '')
+        heart = os.path.join(a.out, 'heart.html')
+        open(heart, 'w', encoding='utf-8').write(open(heart, encoding='utf-8').read().replace('<meta name="robots" content="noindex, nofollow">\n', ''))
         html = html.replace('<span class="tag">private prototype</span>', '<span class="tag">draft</span>')
         robots = 'User-agent: *\nAllow: /\n'
         visibility = 'This copy is public: search engines may index it.'

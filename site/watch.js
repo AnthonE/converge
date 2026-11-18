@@ -17,6 +17,50 @@
   ns.watchStatus = STATUS;
   ns.hasWatch = function (ix) { return (ix.g.watch || []).length > 0; };
 
+  /* Small multiples for a scored chain: one row per measure, steps in date order, each row on its own scale.
+     A dot per step (hover shows the step); a gap where a step has no score. */
+  var SVG = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs, text) {
+    var e = document.createElementNS(SVG, tag);
+    Object.keys(attrs || {}).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+  function chainChart(steps) {
+    var rows = [['hedges', 'Hedges', null], ['attribution', 'Attribution (0–4)', 4], ['label', 'Label (0–3)', 3]];
+    var n = steps.length, left = 118, right = 12, rowH = 46, top = 8, W = 640, H = top + rows.length * rowH + 26;
+    var hmax = Math.max(1, Math.max.apply(null, steps.map(function (s) { return (s.scores || {}).hedges || 0; })));
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, class: 'chain-chart', role: 'img', 'aria-label': 'Scores along the chain, in date order' });
+    var x = function (i) { return left + (n === 1 ? 0 : i * (W - left - right) / (n - 1)); };
+    rows.forEach(function (r, ri) {
+      var max = r[2] || hmax, y0 = top + ri * rowH + rowH - 10, y1 = top + ri * rowH + 6;
+      var y = function (v) { return y0 - (v / max) * (y0 - y1); };
+      svg.appendChild(el('text', { x: 0, y: y0 - 4, class: 'cc-label' }, r[1]));
+      svg.appendChild(el('line', { x1: left, x2: W - right, y1: y0, y2: y0, class: 'cc-base' }));
+      var d = '', pen = false;
+      steps.forEach(function (s, i) {
+        var v = (s.scores || {})[r[0]];
+        if (v === null || v === undefined) { pen = false; return; }
+        d += (pen ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1); pen = true;
+      });
+      if (d) svg.appendChild(el('path', { d: d, class: 'cc-line' }));
+      steps.forEach(function (s, i) {
+        var v = (s.scores || {})[r[0]];
+        if (v === null || v === undefined) return;
+        var g = el('g', { class: 'cc-dot' });
+        g.appendChild(el('circle', { cx: x(i), cy: y(v), r: 9, class: 'cc-hit' }));
+        g.appendChild(el('circle', { cx: x(i), cy: y(v), r: 4 }));
+        g.appendChild(el('title', {}, s.date + ', ' + s.who + ': ' + r[1].replace(/ \(.*/, '').toLowerCase() + ' ' + v));
+        svg.appendChild(g);
+      });
+    });
+    var yb = H - 8;
+    svg.appendChild(el('text', { x: left, y: yb, class: 'cc-axis' }, steps[0].date.slice(0, 7)));
+    svg.appendChild(el('text', { x: W - right, y: yb, class: 'cc-axis', 'text-anchor': 'end' }, steps[n - 1].date.slice(0, 7)));
+    svg.appendChild(el('text', { x: (left + W - right) / 2, y: yb, class: 'cc-axis', 'text-anchor': 'middle' }, 'steps in date order (not to time scale)'));
+    return svg;
+  }
+
   function item(ui, w, ix, onNode) {
     var art = ui.h('article', 'claim');
     art.id = 'watch-' + w.id;
@@ -29,6 +73,27 @@
       ui.link(w.url, w.source, w.nolink));
     ui.add(art, said);
     if (w.standing) ui.add(art, ui.h('p', 'claim-standing', 'Who is speaking: ' + w.standing));
+    if (w.why) ui.add(art, ui.h('p', 'claim-why', 'Why this is here: ' + w.why));
+    if ((w.travelled || []).length) {
+      var ts = ui.section('How it travelled (' + w.travelled.length + ' steps)',
+        'Each step in date order: who said it, their words, where they got it, and what changed from the step before. This does not say which version is right.');
+      if (w.travelled_summary) ui.add(ts, ui.h('p', 'note step-summary', w.travelled_summary));
+      if (w.travelled.some(function (t) { return t.scores; })) ui.add(ts, ui.add(ui.h('figure', 'chain-fig'), chainChart(w.travelled)));
+      var tl = ui.h('ol', 'links travelled');
+      w.travelled.forEach(function (t) {
+        var li = ui.h('li', 'step');
+        ui.add(li, ui.h('time', null, t.date), ui.h('span', null, ' ' + t.who + ': '), ui.h('q', null, t.said), ui.h('span', null, ' '),
+          t.url ? ui.link(t.url, t.source, t.nolink) : ui.h('span', 'cite', '(' + t.source + ')'), ui.h('span', null, ' '), t.verified ? ui.badge(t.verified) : null);
+        if (t.scores) {
+          var sc = t.scores, f = function (v, max) { return v === null || v === undefined ? 'n/a' : v + (max ? ' of ' + max : ''); };
+          ui.add(li, ui.h('div', 'step-note step-scores', 'Hedges ' + f(sc.hedges) + ' · attribution ' + f(sc.attribution, 4) + ' · label ' + f(sc.label, 3)));
+        }
+        if (t.cites) ui.add(li, ui.h('div', 'step-note', 'Gives as its source: ' + t.cites));
+        if (t.changed) ui.add(li, ui.h('div', 'step-note step-changed', 'What changed: ' + t.changed));
+        ui.add(tl, li);
+      });
+      ui.add(art, ui.add(ts, tl));
+    }
     if ((w.checks || []).length) {
       var s = ui.section('What has been checked (' + w.checks.length + ')', 'Each line says what was looked for, where, and what the page said.');
       var ul = ui.h('ul', 'links');

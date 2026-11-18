@@ -72,7 +72,10 @@ def main():
     edges = [dict({'edge_index': i}, **e) for i, e in enumerate(load('edges'))]
     made.append(write_table(a.out, 'edges', edges, first=('edge_index', 'from', 'type', 'to', 'sentence')))
     watch = load('watch')
-    made.append(write_table(a.out, 'watch', [{k: v for k, v in w.items() if k not in ('checks', 'responses')} for w in watch]))
+    made.append(write_table(a.out, 'watch', [{k: v for k, v in w.items() if k not in ('checks', 'responses', 'travelled')} for w in watch]))
+    made.append(write_table(a.out, 'watch_travelled', [dict({'watch_id': w['id'], 'step': i + 1}, **s) for w in watch
+                                                       for i, s in enumerate(w.get('travelled') or [])],
+                            first=('watch_id', 'step', 'date', 'who', 'said')))
     made.append(write_table(a.out, 'watch_checks', [dict({'watch_id': w['id']}, **c) for w in watch for c in w.get('checks') or []],
                             first=('watch_id', 'result', 'what')))
     made.append(write_table(a.out, 'watch_responses', [dict({'watch_id': w['id']}, **r) for w in watch for r in w.get('responses') or []],

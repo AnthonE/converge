@@ -10,7 +10,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 FILES = ['watch', 'offshoots', 'ideals', 'fruits', 'carriers', 'vehicles', 'edges', 'funders', 'labs', 'evaluators',
          'mechanisms', 'patterns']
-TEXT_KEYS = ('quote', 'claim', 'what', 'sentence', 'evidence', 'title', 'label', 'summary')
+TEXT_KEYS = ('quote', 'said', 'claim', 'what', 'sentence', 'evidence', 'title', 'label', 'summary')
 # Words the map presents as the source's own: a quotation field, a Watch claim, and anything in curly quotes
 # inside the map's statements. These can be looked for on the page automatically (tools/precheck.py).
 CURLY = re.compile(r'\u201c([^\u201d]+)\u201d')
@@ -50,6 +50,8 @@ def _quotes(fname, d, path, labels=frozenset()):
     out = []
     if isinstance(d.get('quote'), str) and d['quote'].strip():
         out.append(d['quote'].strip())
+    if fname == 'watch' and isinstance(d.get('said'), str) and d['said'].strip():   # a step in how a claim travelled
+        out.append(d['said'].strip())
     if fname == 'watch' and not path and isinstance(d.get('claim'), str):
         out.append(d['claim'].strip())
     for k in STATEMENT_KEYS:

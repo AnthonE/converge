@@ -4538,5 +4538,75 @@
   "to": "futurism-e2",
   "type": "bears_fruit",
   "sentence": "The press names futurists among those who marched on the Avanti! offices in April 1919, not the party as such."
+ },
+ {
+  "from": "revere",
+  "to": "bowing-serving",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the commandment's two acts, to bow down and to serve, beside a church that aimed at “the realization, acceptance, and worship of a Godhead based on Artificial Intelligence (AI)” (its filing, as reported by Wired in 2017).",
+  "limit": "The texts are about worship given to gods and people, not about software. This is a reading, labelled as one; it says nothing about any person's beliefs. The church's founder also said it was “not a god in the sense that it makes lightning”."
+ },
+ {
+  "from": "succession",
+  "to": "bowing-serving",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the question of who bows to whom beside Richard Sutton's slides of 2023: “We should not resist succession, but embrace and prepare for it / Why would we want greater beings kept subservient?” His 2026 address tells humans they will “perhaps” be “revered” as “the creator species”.",
+  "limit": "The texts are about worship given to gods and people, not about software. This is a reading, labelled as one; it says nothing about any person's beliefs. Sutton argues against keeping made minds subservient; he does not ask anyone to worship them."
+ },
+ {
+  "from": "companion",
+  "to": "binding-vow",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the binding of the heart beside companions sold to be a friend or partner: the texts ask what a heart is tied to, and here the other end of the tie is a product.",
+  "limit": "The texts honour hearts bound to each other (Song of Solomon 8:6). A user's attachment is not a charm; the reading concerns what the binding is bound to, not the user."
+ },
+ {
+  "from": "engineered-attachment",
+  "to": "binding-vow",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the charmer of Deuteronomy 18:11, in Hebrew a binder of ties, beside attachment engineered by design: the tie is made on purpose by the side that profits from it.",
+  "limit": "The Hebrew charmer is a ritual specialist; product design is not a rite. The likeness is the deliberate tie, not the method."
+ },
+ {
+  "from": "machine-flattery",
+  "to": "weighing-heart",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the weighing of the heart beside a model that tells the user what they want to hear: the Egyptian judges weighed the heart separately because the spoken confession knows it is being judged.",
+  "limit": "The texts judge souls, not machines. The reading carries one thing over: words shaped by the listener say less about the speaker than they seem to."
+ },
+ {
+  "from": "land-ccru",
+  "to": "land-sf-party-2026",
+  "type": "bears_fruit",
+  "sentence": "In February 2026 a San Francisco party welcomed Land; a reporter describes balloons reading “333”, the number Crowley's text gives the demon Choronzon."
+ },
+ {
+  "from": "ftx-alameda",
+  "to": "anthropic",
+  "type": "funds",
+  "sentence": "Anthropic announced on 29 April 2022 a $580 million Series B, “led by Sam Bankman-Fried, CEO of FTX”. The figure is the round total. FTX's bankruptcy estate later sold the stake: 29.5 million shares to 24 buyers in March 2024, and the remaining 15 million shares for about $30 each in June 2024 (The Block, from court filings).",
+  "amount": "$580 million (Series B round total)",
+  "date": "2022-04-29",
+  "source": "Anthropic raises Series B to build safe, reliable AI",
+  "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "coefficient-giving",
+  "to": "openai",
+  "type": "funds",
+  "sentence": "Open Philanthropy's 2017 grant record, as relayed by the Donations List Website: $30 million to OpenAI, accompanied by Holden Karnofsky joining OpenAI's board. The grant page says “OpenAI initially approached Open Philanthropy about potential funding for safety research, and we responded with the proposal for this grant.”",
+  "amount": "$30,000,000",
+  "date": "2017-03",
+  "source": "Open Philanthropy grant record, relayed by the Donations List Website",
+  "url": "https://donations.vipulnaik.com/donee.php?donee=OpenAI",
+  "verified": "secondary",
+  "kind": "documented"
  }
 ]

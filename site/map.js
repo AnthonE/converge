@@ -341,7 +341,7 @@
     document.getElementById('layout').hidden = true;
     document.getElementById('the-watch').hidden = true;
     box.hidden = false;
-    box.setAttribute('aria-label', start ? 'Start here: what this map is and how to read it' : 'Timeline: everything dated, newest first');
+    box.setAttribute('aria-label', start ? 'How to read this map' : 'Timeline: everything dated, newest first');
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
     ['tab-ideals', 'tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });

@@ -29,6 +29,9 @@
     ['The Watch', 'tab-watch', 'Claims going around now, and what checking has found so far. A claim there is not a finding.']
   ];
 
+  /* A page or file that ships with the site (ui.link draws only http(s) addresses as links). */
+  function local(ui, href, text) { var a = ui.h('a', 'src', text); a.href = href; return a; }
+
   function homeIdeals(ix) {
     if (ix.homes) return ix.homes;
     var homes = {};
@@ -43,13 +46,16 @@
     while (box.firstChild) box.removeChild(box.firstChild);
     var m = ix.g.meta || {}, s = ix.g.sources || {};
     var intro = ui.h('div', 'watch-intro');
-    ui.add(intro, ui.h('h2', null, 'Start here'),
+    ui.add(intro, ui.h('h2', null, 'How to read this map'),
       ui.h('p', 'lede', 'The people building and promoting AI often say what it is for: to save us, to end death, to build a god, to be a friend, to carry life on after us. This map gathers those stated aims, who states them, what has happened, who pays, who checks the machines, and what older traditions called the same patterns.'),
       ui.h('p', null, 'It is a record, not a verdict. Every item says who is speaking, quotes them, links the source and says how it was checked. Where something is only claimed or alleged, it says so. Read the sources and come to your own conclusion.'));
     ui.add(box, intro);
 
-    var ways = ui.section('Five ways in');
+    var ways = ui.section('The ways in');
     var wl = ui.h('ul', 'links guide-ways');
+    /* The heart is a page of its own; the single-file copy does not carry it. */
+    if (!document.getElementById('graph-data')) ui.add(wl, ui.add(ui.h('li'), local(ui, 'heart.html', 'The heart'),
+      ui.h('span', null, ': what the traditions saw, in a few minutes of reading. Start here if you want the why before the records.')));
     VIEWS.forEach(function (v) {
       var tab = document.getElementById(v[1]);
       if (tab && tab.hidden) return;
@@ -83,8 +89,8 @@
     if (m.contribute) ui.add(more, ui.add(ui.h('p'), ui.h('span', null, 'Seen a claim going around, or found a mistake? '),
       ui.link(m.contribute, 'Open an issue'), ui.h('span', null, ' with the words, who said them, and a link. Do not name private people.')));
     if (!document.getElementById('graph-data')) ui.add(more, ui.add(ui.h('p'), ui.h('span', null, 'Researchers: every record is published as '),
-      ui.link('data/graph.json', 'one JSON file'), ui.h('span', null, ' and as '), ui.link('data/ideals-map-data.zip', 'CSV tables'),
-      ui.h('span', null, ', with '), ui.link('data/DATA.md', 'a guide to every field'), ui.h('span', null, '.')));
+      local(ui, 'data/graph.json', 'one JSON file'), ui.h('span', null, ' and as '), local(ui, 'data/ideals-map-data.zip', 'CSV tables'),
+      ui.h('span', null, ', with '), local(ui, 'data/DATA.md', 'a guide to every field'), ui.h('span', null, '.')));
     if (m.made_with) ui.add(more, ui.h('p', 'note', m.made_with));
     if (more.children.length > 1) ui.add(box, more);
   };

@@ -34,6 +34,7 @@ words belong to their authors and are not covered.
 | `quotes.csv` | quotation in a speaker's own words, under its owner |
 | `edges.csv` | link between two ids |
 | `watch.csv`, `watch_checks.csv`, `watch_responses.csv` | claim in circulation; each check made on it; each response on the record |
+| `watch_travelled.csv` | step in how a claim was passed along, oldest first |
 | `sources.csv` | cited page (URL), with its re-read and link status |
 | `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked |
 
@@ -104,7 +105,10 @@ likeness stops), and for records `kind`, `amount`, `date`, `source`, `url`, `ver
 
 **watch**: `date`, `title` (neutral), `claimed_by`, `standing` (how the speaker stands to the matter), `claim`
 (their words), `source`, `url`, `kind` (claimed, reported, alleged, documented, first-person), `status` (not
-checked, partly checked, checked, not supported, source not found), `open`, `cautions`, `touches` (ids on the map).
+checked, partly checked, checked, not supported, source not found), `why` (why it is on the Watch), `open`,
+`cautions`, `touches` (ids on the map), `travelled_summary`. **watch_travelled**: `step` (1 = oldest), `date`,
+`who`, `said` (their exact words), `source`, `url`, `verified`, `cites` (what that step gave as its source),
+`changed` (what changed from the step before), `scores` (hedges, attribution and label, as coded; JSON).
 **watch_checks**: `what` (what was looked for and what the page said), `result` (supports, partly supports, does
 not support, not found, could not read), `source`, `url`, `verified`. **watch_responses**: `who`, `what`,
 `source`, `url`.
