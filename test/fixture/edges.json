@@ -690,7 +690,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "grant",
+  "money": "purchase",
   "amount": "$6 million",
   "date": "2015"
  },
@@ -703,7 +703,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "investment",
+  "money": "grant",
   "amount": "$7 million",
   "date": "2016"
  },
@@ -716,7 +716,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "investment",
+  "money": "grant",
   "amount": "$250,000",
   "date": "2024-03"
  },
@@ -729,7 +729,7 @@
   "url": "https://example.org/register",
   "verified": "secondary",
   "kind": "reported",
-  "money": "government",
+  "money": "investment",
   "amount": "$8 million",
   "date": "2017"
  },
@@ -742,7 +742,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "commission",
+  "money": "government",
   "amount": "$9 million",
   "date": "2018"
  },
@@ -755,7 +755,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "political",
+  "money": "commission",
   "amount": "$10 million",
   "date": "2019"
  },
@@ -768,7 +768,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "political",
+  "money": "commission",
   "amount": "$250,000",
   "date": "2024-03"
  },
@@ -781,7 +781,7 @@
   "url": "https://example.org/register",
   "verified": "secondary",
   "kind": "reported",
-  "money": "grant",
+  "money": "political",
   "amount": "$11 million",
   "date": "2020"
  },
@@ -794,7 +794,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "investment",
+  "money": "purchase",
   "amount": "$12 million",
   "date": "2021"
  },
@@ -807,7 +807,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "government",
+  "money": "grant",
   "amount": "$13 million",
   "date": "2022"
  },
@@ -820,7 +820,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "government",
+  "money": "grant",
   "amount": "$250,000",
   "date": "2024-03"
  },
@@ -833,7 +833,7 @@
   "url": "https://example.org/register",
   "verified": "secondary",
   "kind": "reported",
-  "money": "commission",
+  "money": "investment",
   "amount": "$14 million",
   "date": "2023"
  },
@@ -846,7 +846,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "political",
+  "money": "government",
   "amount": "$15 million",
   "date": "2024"
  },
@@ -859,7 +859,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "grant",
+  "money": "commission",
   "amount": "$16 million",
   "date": "2025"
  },
@@ -872,7 +872,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "grant",
+  "money": "commission",
   "amount": "$250,000",
   "date": "2024-03"
  },
@@ -885,7 +885,7 @@
   "url": "https://example.org/register",
   "verified": "secondary",
   "kind": "reported",
-  "money": "investment",
+  "money": "political",
   "amount": "$17 million",
   "date": "2010"
  },
@@ -898,7 +898,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "government",
+  "money": "purchase",
   "amount": "$18 million",
   "date": "2011"
  },
@@ -911,7 +911,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "commission",
+  "money": "grant",
   "amount": "$19 million",
   "date": "2012"
  },
@@ -924,7 +924,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "commission",
+  "money": "grant",
   "amount": "$250,000",
   "date": "2024-03"
  },
@@ -937,7 +937,7 @@
   "url": "https://example.org/register",
   "verified": "secondary",
   "kind": "reported",
-  "money": "political",
+  "money": "investment",
   "amount": "$20 million",
   "date": "2013"
  },
@@ -950,7 +950,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "grant",
+  "money": "government",
   "amount": "$21 million",
   "date": "2014"
  },
@@ -963,7 +963,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "investment",
+  "money": "commission",
   "amount": "$22 million",
   "date": "2015"
  },
@@ -976,7 +976,7 @@
   "url": "https://example.org/register",
   "verified": "primary",
   "kind": "documented",
-  "money": "investment",
+  "money": "commission",
   "amount": "$250,000",
   "date": "2024-03"
  },
@@ -989,7 +989,7 @@
   "url": "https://example.org/register",
   "verified": "secondary",
   "kind": "reported",
-  "money": "government",
+  "money": "political",
   "amount": "$23 million",
   "date": "2016"
  },
@@ -1002,7 +1002,7 @@
   "url": "https://example.org/register",
   "verified": "unverified",
   "kind": "alleged",
-  "money": "commission",
+  "money": "purchase",
   "amount": "$24 million",
   "date": "2017"
  },
