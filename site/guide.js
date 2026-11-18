@@ -13,7 +13,8 @@
     ['How it takes hold', 'A mechanism named in published scholarship, such as a self-fulfilling prophecy or engineered attachment, with recorded uses.'],
     ['Ancient pattern', 'What older traditions called a similar thing: the image made to speak, the oracle, the tower. Quoted from named translations.'],
     ['Offshoot', 'A group that came out of a community on the map but states no program the map records as an ideal. Shown with its public record only.'],
-    ['Dotted line', 'A way of reading, not a finding. A solid line is a record.']
+    ['Dotted line', 'A way of reading, not a finding. A solid line is a record.'],
+    ['Record', 'One page for anything on the map: what it says, who says it, what happened, who pays, the other side, what is open, and every thread to the rest. Pick anything and choose \u201cRead it as a page\u201d.']
   ];
   var FLAGS = [
     ['machine-checked at the source', 'A model opened the speaker’s own page and found the words.'],
@@ -65,6 +66,15 @@
       ui.add(wl, ui.add(ui.h('li'), b, ui.h('span', null, ': ' + v[2])));
     });
     ui.add(box, ui.add(ways, wl));
+
+    var kept = ui.section('How this record is kept');
+    var kl = ui.h('ol', 'kept');
+    ['AI agents do the first pass. Every week one searches for new claims and events about the names here, opens the sources and drafts records. Nothing it drafts goes on the map until a person decides.',
+      'A second model checks each draft against its sources and marks how: at the speaker\u2019s own page, only on a relay, or not at all.',
+      'A person re-reads the sources, page by page, starting with claims about named people. Each record shows how far that has got.',
+      'Anyone can point out a mistake or a missing side. The record changes; the change is kept.'].forEach(function (t) { ui.add(kl, ui.h('li', null, t)); });
+    ui.add(kept, kl, ui.h('p', 'note', 'Every record carries this as its trail: drafted \u2192 checked by a model \u2192 re-read by a person. It is not a wiki: the map does not speak in one smoothed-over voice. Every line says who is speaking and where it was checked.'));
+    ui.add(box, kept);
 
     var gl = ui.section('The words this map uses'), dl = ui.h('dl', 'glossary');
     GLOSSARY.forEach(function (g) { ui.add(dl, ui.h('dt', null, g[0]), ui.h('dd', null, g[1])); });
@@ -142,7 +152,7 @@
         ui.h('span', 'lane', r.kind === 'claim' ? 'claim · ' + ((ns.watchStatus || {})[n.status] || n.status) : n.kind));
       var title = ui.h('button', 'linkbtn tl-title', r.kind === 'claim' ? n.title : (n.label || n.what));
       title.type = 'button';
-      title.addEventListener('click', function () { if (r.kind === 'claim') nav.goWatch(n.id); else nav.openNode(n.id); });
+      title.addEventListener('click', function () { if (r.kind === 'claim') nav.goWatch(n.id); else nav.goRecord(n.id); });
       ui.add(li, head, title);
       if (r.kind === 'event' && n.what && n.what !== n.label) ui.add(li, ui.h('p', 'tl-what', n.what));
       if (r.kind === 'claim') ui.add(li, ui.h('p', 'tl-what', n.claimed_by + ': “' + n.claim + '”'));
@@ -181,7 +191,7 @@
     function close() { list.hidden = true; input.setAttribute('aria-expanded', 'false'); at = -1; }
     function choose(it) {
       close(); input.value = ''; input.blur();
-      if (it.watch) nav.goWatch(it.id); else if (it.person) nav.goPeople(it.id); else nav.openNode(it.id);
+      if (it.watch) nav.goWatch(it.id); else nav.goRecord(it.id);
     }
     function mark() {
       [].forEach.call(list.children, function (li, i) { li.setAttribute('aria-selected', i === at ? 'true' : 'false'); });

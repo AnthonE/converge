@@ -553,7 +553,7 @@ def standalone(site_dir, graph):
     html = html.replace('<link rel="stylesheet" href="map.css">', '<style>\n' + css + '</style>')
     data = json.dumps(graph, ensure_ascii=False).replace('<', '\\u003c')
     scripts = '<script type="application/json" id="graph-data">' + data + '</script>\n'
-    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'map.js'):
+    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'map.js'):
         js = open(os.path.join(site_dir, name), encoding='utf-8').read()
         tag = f'<script src="{name}"></script>'
         assert tag in html, tag

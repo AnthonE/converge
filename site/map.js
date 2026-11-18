@@ -254,7 +254,7 @@
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
     if (state.view === 'watch') { paintWatch(); return; }
-    if (state.view === 'start' || state.view === 'timeline' || state.view === 'people') { paintPage(); return; }
+    if (state.view === 'start' || state.view === 'timeline' || state.view === 'people' || state.view === 'record') { paintPage(); return; }
     document.getElementById('the-watch').hidden = true;
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
@@ -308,6 +308,13 @@
       }
     }
     if (back) { back.type = 'button'; add(panel, back); }
+    /* Anything picked on a drawing can also be read as a page of its own. */
+    var picked = state.edge === null && (state.selected || state.ideal);
+    if (picked && ix.byId[picked]) {
+      var asPage = h('button', 'as-page', 'Read it as a page \u2192'); asPage.type = 'button';
+      asPage.addEventListener('click', function () { goRecord(picked); });
+      add(panel, asPage);
+    }
     add(panel, body);
     ns.annotate(panel, ix);
     panel.scrollTop = 0;
@@ -339,24 +346,27 @@
   }
   /* The guide and the timeline are pages, like the Watch: no drawing. */
   function paintPage() {
-    var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people';
+    var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people', rec = state.view === 'record';
     document.getElementById('layout').hidden = true;
     document.getElementById('the-watch').hidden = true;
     box.hidden = false;
-    box.setAttribute('aria-label', start ? 'How to read this map' : people ? 'Who\u2019s who' : 'Timeline: everything dated, newest first');
+    box.setAttribute('aria-label', start ? 'How to read this map' : people ? 'Who\u2019s who' : rec ? 'A record' : 'Timeline: everything dated, newest first');
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
     ['tab-ideals', 'tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
-    document.getElementById('tab-timeline').setAttribute('aria-pressed', start || people ? 'false' : 'true');
+    document.getElementById('tab-timeline').setAttribute('aria-pressed', start || people || rec ? 'false' : 'true');
     window.scrollTo(0, 0);
     if (people) { ns.renderPeople(box, ix, ui, nav, state.selected); return; }
+    if (rec) { ns.renderRecord(box, ix, ui, nav, state.selected); ns.annotate(box, ix, '.rec-head, section'); return; }
     if (start) { ns.renderStart(box, ix, ui, nav); ns.annotate(box, ix); }
     else { ns.renderTimeline(box, ix, ui, nav); ns.annotate(box, ix, 'li.tl-item'); }
   }
   function goStart() { state.view = 'start'; state.ideal = null; state.selected = null; state.edge = null; setHash('#start'); render(); }
   function goTimeline() { state.view = 'timeline'; state.ideal = null; state.selected = null; state.edge = null; setHash('#timeline'); render(); }
+  /* A record: one page for anything on the map, at a link that can be shared. */
+  function goRecord(id) { state.view = 'record'; state.ideal = null; state.edge = null; state.selected = id; setHash('#r/' + id); render(); }
   function goPeople(id) { state.view = 'people'; state.ideal = null; state.edge = null; state.selected = id || null; setHash(id ? '#people/' + id : '#people'); render(); }
-  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); } };
+  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goRecord: function (id) { goRecord(id); } };
   function goWatch(id) {
     state.view = 'watch'; state.ideal = null; state.edge = null;
     state.selected = id && (ix.g.watch || []).some(function (w) { return w.id === id; }) ? id : null;
@@ -405,6 +415,7 @@
     var hash = location.hash.slice(1);
     if (hash === 'start') { goStart(); return; }
     if (hash === 'timeline') { goTimeline(); return; }
+    if (hash.indexOf('r/') === 0 && hash.length > 2) { goRecord(hash.slice(2)); return; }
     if (ns.hasPeople(ix) && (hash === 'people' || hash.indexOf('people/') === 0)) { goPeople(hash.slice(7) || null); return; }
     if (hash === 'ancients' || hash.indexOf('ancients/') === 0) { goAncients(hash.slice(9) || null); return; }
     if (hash === 'money' || hash.indexOf('money/') === 0) { goMoney(hash.slice(6) || null); return; }

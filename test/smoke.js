@@ -471,19 +471,39 @@ const path = require('path');
   if ((await page.locator('#the-page .badge-reread').count()) !== 0) fail('a claim carries a person re-read badge it was not given');
   await page.locator('#the-page .tl-filters select').first().selectOption('event');
   if (!(await page.locator('#the-page .badge-reread').count())) fail('the re-read page shows no person re-read badge on the timeline');
+  const tlFirst = await page.locator('#the-page .tl-title').first().textContent();
   await page.locator('#the-page .tl-title').first().click();
-  if (await page.locator('#the-page').isVisible()) fail('choosing an event on the timeline does not open it on the map');
+  await page.waitForFunction(() => location.hash.indexOf('#r/') === 0);
+  const recTitle = await page.locator('#the-page .rec-title').textContent();
+  if (recTitle !== tlFirst) fail(`choosing "${tlFirst}" on the timeline opened the record "${recTitle}"`);
+  if (!(await page.locator('#the-page .trail .trail-step').count())) fail('a record shows no trail');
+  await page.locator('#the-page .rec-actions button').first().click();
+  if (await page.locator('#the-page').isVisible()) fail('"See it on the map" does not leave the record for the map');
   const target = graph.carriers[0];
   await page.locator('#search').fill(target.label.slice(0, 12));
   await page.waitForSelector('#search-hits:not([hidden]) li');
   await page.keyboard.press('Enter');
   await page.waitForTimeout(200);
-  const opened = await page.locator('#panel').textContent();
-  if (!(opened || '').includes(target.label)) fail(`search for "${target.label}" did not open its panel`);
+  const opened = await page.locator('#the-page .rec-title').textContent();
+  if (opened !== target.label) fail(`search for "${target.label}" opened the record "${opened}"`);
   await page.locator('#search').fill('claim in circ');
   await page.waitForSelector('#search-hits:not([hidden]) li');
   await page.keyboard.press('Enter');
   await page.waitForFunction(() => location.hash === '#watch/claim-1');
+
+  // A record: one page shape for anything. An ideal's page says where it stands; a person with an entry opens it.
+  await page.evaluate(() => { location.hash = '#r/ideal-0'; });
+  await page.waitForSelector('#the-page .rec-phases li');
+  if ((await page.locator('#the-page .rec-phases li').count()) !== 6) fail('an ideal record does not list its six phases');
+  if (!(await page.locator('#the-page .rec-list li').count())) fail('an ideal record lists nothing it links to');
+  await page.evaluate(() => { location.hash = '#r/sample-speaker'; });
+  await page.waitForFunction(() => (document.querySelector('#the-page .rec-who') || {}).textContent);
+  const pr = await page.locator('#the-page .rec-title').textContent();
+  if (pr !== graph.carriers[0].label) fail(`a person with an entry opened "${pr}", not their entry`);
+  await page.evaluate(() => { location.hash = '#ideal-0'; });
+  await page.waitForSelector('#panel .as-page');
+  await page.locator('#panel .as-page').click();
+  await page.waitForFunction(() => location.hash === '#r/ideal-0');
 
   // Who's who: a named person is marked where the name appears, and the mark opens a plain card.
   await page.evaluate(() => { location.hash = '#ideal-0'; });
