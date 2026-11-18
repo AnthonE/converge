@@ -6,19 +6,43 @@
 
 Sources disappear; a record whose source is gone can no longer be checked by anyone. Many sites refuse automated
 fetches (403, 429), so 'refused' means only that this script could not tell, not that the page is gone. 'Gone'
-means the server said 404 or 410, or the name no longer resolves.
+means the server said 404 or 410 while its own home page answers, or the name no longer resolves. Some sites
+answer 404 to every automated request (ftc.gov does); when the home page is refused too, the page counts as
+'refused', not 'gone'.
 
 Archiving: for each page that still answers, the Wayback Machine can keep a copy
 (https://web.archive.org/save/<url>). That sends the address to the Internet Archive, so it is left for the
 operator to run by hand; this script does not do it.
 """
-import argparse, concurrent.futures as cf, datetime, json, os, socket, ssl, sys, urllib.error, urllib.request
+import argparse, concurrent.futures as cf, datetime, json, os, socket, ssl, sys, threading, urllib.error, urllib.parse, urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sources as S
 
 OUT = os.path.join(S.ROOT, 'dist')
 UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36 link-check'
+
+
+_roots = {}
+_roots_lock = threading.Lock()
+
+
+def root_answers(url, timeout):
+    """Does the site's home page answer this script? Asked once per host."""
+    p = urllib.parse.urlparse(url)
+    root = f'{p.scheme}://{p.netloc}/'
+    with _roots_lock:
+        if root in _roots:
+            return _roots[root]
+    try:
+        req = urllib.request.Request(root, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as r:
+            ok = r.status < 400
+    except Exception:
+        ok = False
+    with _roots_lock:
+        _roots[root] = ok
+    return ok
 
 
 def fetch(url, timeout):
@@ -30,7 +54,9 @@ def fetch(url, timeout):
             return {'status': 'ok', 'code': r.status, 'final': final if final != url else None}
     except urllib.error.HTTPError as e:
         if e.code in (404, 410):
-            return {'status': 'gone', 'code': e.code}
+            if root_answers(url, timeout):
+                return {'status': 'gone', 'code': e.code}
+            return {'status': 'refused', 'code': e.code, 'error': 'the site refuses this script everywhere'}
         return {'status': 'refused', 'code': e.code}
     except urllib.error.URLError as e:
         reason = e.reason

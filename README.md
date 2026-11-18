@@ -77,28 +77,38 @@ No person has yet re-read the sources; models did every step. Two tools make tha
 
 ## Publish it
 
-**Cloudflare Pages (recommended).** Free for a static site with no bandwidth cap, it reads the `_headers` file the
-package writes (the security headers), and Cloudflare Access can put an email login in front of the site while
-it is private. The workflow builds, tests and uploads; nothing is built on Cloudflare's side. One-time setup:
+The host builds the site itself from this repository, so publishing does not depend on GitHub Actions. (Actions
+cannot start jobs on this repository at the moment: every run, even a one-line test, fails within seconds with no
+log, which points to the account's billing or Actions minutes. The workflows below are ready for when it can.)
+The build command validates the data first (`python3 tools/package.py` runs `build.py`), so a record that breaks
+a guardrail stops the deploy.
 
-1. In Cloudflare: Workers & Pages → Create → Pages → upload directly, and name the project `ideals-map`
-   (production branch `main`). Note the account ID.
-2. My Profile → API Tokens → Create Token, with the permission Account → Cloudflare Pages → Edit.
-3. In this repository: Settings → Secrets and variables → Actions. Add the secrets `CLOUDFLARE_API_TOKEN` and
-   `CLOUDFLARE_ACCOUNT_ID`, and the variable `CLOUDFLARE` = `true` (and `CLOUDFLARE_PROJECT` if the project has
-   another name).
+**Cloudflare Pages (recommended).** Free for a static site with no bandwidth cap, it applies the `_headers` file
+the package writes (the security headers), and Cloudflare Access can put an email login in front of the site
+while it is private. One-time setup:
 
-Every push to `main` then publishes the site, and every pull request gets its own preview address. To keep it
-private, add a Cloudflare Access application for the site's address with a policy that lets in only the emails
-you choose. To let search engines in, set the variable `PUBLIC` = `true`.
+1. Workers & Pages → Create → Pages → Connect to Git, and choose this repository (Cloudflare asks to install its
+   GitHub app on it).
+2. Build command `python3 tools/package.py`, build output directory `dist/site`, production branch `main`. No
+   framework preset.
+3. To keep it private: Zero Trust → Access → Applications → add a self-hosted application for the site's
+   address, with a policy that lets in only the emails you choose.
 
-**Elsewhere.** Vercel reads `vercel.json` (import the repository at vercel.com/new). GitHub Pages: set the
-variable `PAGES` = `true` and choose Settings → Pages → Source: GitHub Actions (on a private repository this needs
-a paid GitHub plan, and GitHub Pages ignores `_headers`). Any static host: run `python3 tools/package.py` and
-upload `dist/site/`.
+Every push to `main` then publishes the site, and every pull request gets its own preview address. To let search
+engines in, add the environment variable `PUBLIC` = `true` in the project's settings and redeploy.
+
+**Vercel** builds the same way from `vercel.json` (import the repository at vercel.com/new); a password on the
+site is a paid feature there. **GitHub Pages** needs Actions and, on a private repository, a paid plan; it also
+ignores `_headers`. **Any static host:** run `python3 tools/package.py` and upload `dist/site/`.
+
+**From GitHub Actions instead** (once Actions can run): `.github/workflows/pages.yml` also drives the viewer in a
+browser on every push and pull request, and can upload to Cloudflare Pages itself. Set the variable `CLOUDFLARE` =
+`true` and the secrets `CLOUDFLARE_API_TOKEN` (permission: Account → Cloudflare Pages → Edit) and
+`CLOUDFLARE_ACCOUNT_ID`, and use a project made with "upload directly" rather than "Connect to Git".
 
 **Checked every week.** `.github/workflows/sources.yml` runs the link check and the quote pre-check each Monday,
-keeps the reports as a download on the run's page, and fails (so GitHub emails the owner) when a cited page is gone.
+keeps the reports as a download on the run's page, and fails (so GitHub emails the owner) when a cited page is
+gone. Until Actions can run, run `python3 tools/links.py` and `python3 tools/precheck.py` by hand or from a session.
 
 ## Licence
 
