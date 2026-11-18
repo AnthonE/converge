@@ -692,5 +692,47 @@
   "kind": "organization",
   "status": "operations reported disrupted by an AI company in 2024–26",
   "note": "Known only through the reporting company’s own attribution, relayed by the press. Carries no ideal on this map."
+ },
+ {
+  "id": "cais",
+  "label": "Center for AI Safety (CAIS)",
+  "kind": "organization",
+  "status": "active; read November 2026",
+  "note": "A San Francisco research and advocacy nonprofit, with a 501(c)(4) arm, the Center for AI Safety Action Fund. It issued the press release for the MisAnthropic Statement (18 November 2026). Its executive director, Dan Hendrycks, says on his own site that he “has been an advisor to xAI, Scale AI, and Meta.” Its tax returns do not name donors."
+ },
+ {
+  "id": "controlai",
+  "label": "ControlAI",
+  "kind": "organization",
+  "status": "active; read November 2026",
+  "note": "A UK company, with a US arm, whose founder and chief executive Andrea Miotti and US director Connor Leahy signed the MisAnthropic Statement. Companies House lists its previous name as SECURE FUTURE RESEARCH LTD (22 August 2023 to 10 September 2026). It publishes no list of funders."
+ },
+ {
+  "id": "pauseai",
+  "label": "PauseAI (Global and US)",
+  "kind": "organization",
+  "status": "active; read November 2026",
+  "note": "Campaigns for a pause on training the most powerful AI systems. Stichting PauseAI (the Netherlands) runs PauseAI Global; PauseAI US is separate. Their founders signed the MisAnthropic Statement."
+ },
+ {
+  "id": "midas-project",
+  "label": "The Midas Project",
+  "kind": "organization",
+  "status": "active; read November 2026",
+  "note": "Its founder, Tyler Johnston, signed the MisAnthropic Statement. Its site lists no funders, and no tax return was found."
+ },
+ {
+  "id": "encode",
+  "label": "Encode",
+  "kind": "organization",
+  "status": "active; read November 2026",
+  "note": "A youth-led AI policy group, formerly Encode Justice. Its site names funders without amounts, among them FLI and SFF."
+ },
+ {
+  "id": "cht",
+  "label": "Center for Humane Technology",
+  "kind": "organization",
+  "status": "active; read November 2026",
+  "note": "Co-founded by Tristan Harris, who signed the MisAnthropic Statement. Its tax returns do not name donors."
  }
 ]

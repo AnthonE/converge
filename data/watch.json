@@ -1070,10 +1070,17 @@
    "The release says Anthropic was “fully abandoning its unilateral commitments to pause”. The RSP it cites drops the earlier unconditional commitment, by the company's own account, and keeps conditional commitments to delay (Appendix A).",
    "The statement says the pledges were weakened “quietly”. The RSP change was announced in a post on Anthropic's site on 24 Feb 2026, with the reasons quoted under Responses.",
    "The list is changing: 92 names when read at 18:17 UTC; one outlet's headline earlier gave 89. On the page, three names run together on one line (Joseph Jacks, Joe Allen, Dylan Hadfield-Menell). Titles are as the page lists them; a listed affiliation is not that institution's endorsement.",
-   "That some signatories lead or co-founded companies in the same market, and that CAIS's director signs, says who is speaking; it does not make the charge true or false."
+   "That some signatories lead or co-founded companies in the same market, and that CAIS's director signs, says who is speaking; it does not make the charge true or false.",
+   "Who pays: on the money view, several signatories' organisations (CAIS, ControlAI, PauseAI, the Midas Project, Encode, CHT) receive grants from Jaan Tallinn, from Dustin Moskovitz through SFF, or from FLI. Tallinn led Anthropic's 2021 Series A, in which Moskovitz also took part. This says who is speaking; it does not make the charge true or false."
   ],
   "touches": [
    "anthropic",
+   "cais",
+   "controlai",
+   "pauseai",
+   "midas-project",
+   "encode",
+   "cht",
    "fli",
    "miri",
    "extropic"
