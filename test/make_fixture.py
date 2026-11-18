@@ -144,7 +144,8 @@ json.dump([{'id': 'claim-1', 'date': '2026-01-02', 'title': 'A <b>sample</b> cla
                           {'date': '2026-01-02', 'who': 'Sample Outlet', 'said': 'It is hard to know; records suggest some do.', 'source': 'Sample Outlet',
                            'url': 'https://example.org/claim', 'verified': 'primary', 'cites': 'filings', 'changed': '“Many” becomes “some”, hedged.'},
                           {'date': '2026-01-03', 'who': 'Second <i>Outlet</i>', 'said': 'A disproportionate number have been.', 'source': 'Second Outlet',
-                           'cites': 'Sample Outlet', 'changed': 'The hedge is dropped.'}]},
+                           'cites': 'Sample Outlet', 'changed': 'The hedge is dropped.', 'scores': {'hedges': 0, 'attribution': 3, 'label': None}}],
+            'travelled_summary': 'A sample summary of the scores.'},
            {'id': 'claim-2', 'date': '2026-01-05', 'title': 'A second sample claim', 'claimed_by': 'Sample Account', 'standing': 'A sample account.', 'claim': 'Something else.',
             'source': 'Sample Account, 5 Jan 2026', 'kind': 'claimed', 'status': 'not checked'}], open(os.path.join(OUT, 'watch.json'), 'w'))
 json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 'disclosure': 'Synthetic fixture: no ties.',

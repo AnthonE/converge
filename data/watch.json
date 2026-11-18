@@ -172,7 +172,12 @@
     "source": "TIME, 3 Feb 2023",
     "url": "https://time.com/6252617/effective-altruism-sexual-harassment/",
     "verified": "primary",
-    "cites": "interviews with seven women"
+    "cites": "interviews with seven women",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 2.0,
+     "label": 3.0
+    }
    },
    {
     "date": "2023-03-07",
@@ -181,7 +186,12 @@
     "source": "Bloomberg Businessweek, 7 Mar 2023 (read in a linkpost; Bloomberg's page did not load)",
     "verified": "secondary",
     "cites": "interviews with eight women",
-    "changed": "From effective altruism to “rationalists, EAs and AI safety researchers”."
+    "changed": "From effective altruism to “rationalists, EAs and AI safety researchers”.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 2.0,
+     "label": 3.0
+    }
    },
    {
     "date": "2024-05-17",
@@ -191,7 +201,12 @@
     "url": "https://x.com/soniajoseph_/status/1791604177581310234",
     "verified": "secondary",
     "cites": "her own experience; no event or host named",
-    "changed": "First mention of the CNC parties, tied to “some elite AI researchers”. No event named."
+    "changed": "First mention of the CNC parties, tied to “some elite AI researchers”. No event named.",
+    "scores": {
+     "hedges": 1.5,
+     "attribution": 3.0,
+     "label": 1.0
+    }
    },
    {
     "date": "2024-05-19",
@@ -201,7 +216,12 @@
     "url": "https://futurism.com/researcher-openai-sex-drug-parties",
     "verified": "primary",
     "cites": "the 17 May post",
-    "changed": "“sex parties” becomes “drug-fueled orgies”, hedged (“is claiming”, “appears to be”). The same piece calls the post a “vague and anecdotal diatribe”."
+    "changed": "“sex parties” becomes “drug-fueled orgies”, hedged (“is claiming”, “appears to be”). The same piece calls the post a “vague and anecdotal diatribe”.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 1.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-06-01",
@@ -211,7 +231,12 @@
     "verified": "primary",
     "cites": "a LessWrong discussion, shown as screenshots, not linked",
     "url": "https://theasterisk.substack.com/p/further-notes-on-rape-culture-in",
-    "changed": "Moves to a named event and to careers: “a networking opportunity within the AI ecosystem”. Source: screenshots, not linked."
+    "changed": "Moves to a named event and to careers: “a networking opportunity within the AI ecosystem”. Source: screenshots, not linked.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 1.0,
+     "label": 0.0
+    }
    },
    {
     "date": "2026-09-30",
@@ -221,7 +246,12 @@
     "url": "https://thingofthings.substack.com/p/some-thoughts-on-sexual-harassment",
     "verified": "primary",
     "cites": "the author's own view; the same post reports “many claims” of “ambient social pressure”",
-    "changed": "A different estimate: few attendees work in AI safety. Not drawn from the step before."
+    "changed": "A different estimate: few attendees work in AI safety. Not drawn from the step before.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": null
+    }
    },
    {
     "date": "2026-09-30",
@@ -231,7 +261,12 @@
     "url": "https://thingofthings.substack.com/p/some-thoughts-on-sexual-harassment/comment/349574346",
     "verified": "primary",
     "cites": "his own attendance",
-    "changed": "A first-hand estimate (about half rationalists), and in the same comment: “I personally absolutely do upgrade my assessment of someone's AI alignment qualifications if I find out they go to RMN”."
+    "changed": "A first-hand estimate (about half rationalists), and in the same comment: “I personally absolutely do upgrade my assessment of someone's AI alignment qualifications if I find out they go to RMN”.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 0.0,
+     "label": null
+    }
    },
    {
     "date": "2026-09-30",
@@ -240,7 +275,12 @@
     "source": "a post on X, read as a screenshot in The Asterisk, 1 Oct 2026",
     "verified": "secondary",
     "cites": "the 30 Sep comment",
-    "changed": "Drops “absolutely” and the 50/50 estimate."
+    "changed": "Drops “absolutely” and the 50/50 estimate.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": null
+    }
    },
    {
     "date": "2026-10-01",
@@ -250,7 +290,12 @@
     "url": "https://theasterisk.substack.com/p/want-to-get-ahead-in-your-ai-career",
     "verified": "primary",
     "cites": "the post on X",
-    "changed": "The headline states the career claim. The body adds: “There are some who are contesting the assertion that it functions as an AI networking event”."
+    "changed": "The headline states the career claim. The body adds: “There are some who are contesting the assertion that it functions as an AI networking event”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 3.0
+    }
    },
    {
     "date": "2026-10-08",
@@ -260,7 +305,12 @@
     "url": "https://www.lesswrong.com/posts/dHGjqpbfmdEN7TssX/on-kink-and-status-in-the-rationalist-community",
     "verified": "primary",
     "cites": "an organizer who checked with the other organizers",
-    "changed": "The 30 Sep commenter revises his own claims, as “median guesses”: no career benefit, and an overlap with rationalists “probably closer to 25% than 50%”."
+    "changed": "The 30 Sep commenter revises his own claims, as “median guesses”: no career benefit, and an overlap with rationalists “probably closer to 25% than 50%”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": null
+    }
    },
    {
     "date": "2026-10-23",
@@ -269,7 +319,12 @@
     "source": "verysane.ai, 23 Oct 2026 (named, not linked: the post names private persons)",
     "verified": "primary",
     "cites": "the 30 Sep comment (as a screenshot), the business's filing and site, an organizer's own site, and posts on X shown as screenshots",
-    "changed": "Reads the 30 Sep comment as a sign that attendance was “a de facto career requirement”. Does not mention the 8 Oct revision or the Thing of Things estimate. Says an earlier version of the post was withdrawn. The Free Beacon does not cite it."
+    "changed": "Reads the 30 Sep comment as a sign that attendance was “a de facto career requirement”. Does not mention the 8 Oct revision or the Thing of Things estimate. Says an earlier version of the post was withdrawn. The Free Beacon does not cite it.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-16",
@@ -279,7 +334,12 @@
     "url": "https://freebeacon.com/america/horrifying-meet-the-anthropic-researcher-behind-silicon-valleys-consensual-non-consent-orgies/",
     "verified": "primary",
     "cites": "business filings (for “substantial”); none given for “disproportionate”; the 30 Sep comment, a Substack, a Bluesky post and a 2024 post on X for the pressure",
-    "changed": "Adds “disproportionate” and names Anthropic and OpenAI, beside its own hedge. Quotes the 30 Sep comment, not the 8 Oct revision or the Thing of Things estimate."
+    "changed": "Adds “disproportionate” and names Anthropic and OpenAI, beside its own hedge. Quotes the 30 Sep comment, not the 8 Oct revision or the Thing of Things estimate.",
+    "scores": {
+     "hedges": 3.0,
+     "attribution": 2.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-16",
@@ -289,7 +349,12 @@
     "url": "https://daringfireball.net/linked/2026/11/16/anthropic-red-means-no-parties",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "Quotes the “disproportionate” sentence word for word; the “hard to know” sentence is not quoted."
+    "changed": "Quotes the “disproportionate” sentence word for word; the “hard to know” sentence is not quoted.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-17",
@@ -299,7 +364,12 @@
     "verified": "primary",
     "cites": "the Free Beacon",
     "changed": "“have been known to attract” becomes “found”; adds “to advance their careers”.",
-    "url": "https://libertyonenews.com/anthropic-researcher-tied-to-consensual-non-consent-sex-parties-frequented-by-ai-industry-insiders/"
+    "url": "https://libertyonenews.com/anthropic-researcher-tied-to-consensual-non-consent-sex-parties-frequented-by-ai-industry-insiders/",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 4.0,
+     "label": null
+    }
    },
    {
     "date": "2026-11-17",
@@ -309,7 +379,12 @@
     "url": "https://nypost.com/2026/11/17/business/anthropic-researcher-is-hosting-wild-silicon-valley-orgies-with-consensual-non-consent-as-the-theme-report/",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "“have been known to attract a disproportionate number of employees” becomes “A disproportionate number of the party's participants have been employees”; adds “unhealthy” and “in order to advance their careers”."
+    "changed": "“have been known to attract a disproportionate number of employees” becomes “A disproportionate number of the party's participants have been employees”; adds “unhealthy” and “in order to advance their careers”.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 2.0,
+     "label": 1.0
+    }
    },
    {
     "date": "2026-11-17",
@@ -319,7 +394,12 @@
     "url": "https://www.techtimes.co.uk/women-ai-pressure-private-sex-parties-networking-1810030",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "Keeps the pressure claim as “reportedly”, and adds what the report does not establish."
+    "changed": "Keeps the pressure claim as “reportedly”, and adds what the report does not establish.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.5,
+     "label": 1.0
+    }
    },
    {
     "date": "2026-11-17",
@@ -329,7 +409,12 @@
     "url": "https://www.indiatoday.in/technology/news/story/anthropic-cybersecurity-researcher-managed-sex-party-business-for-ai-whos-who-report-says-3040641-2026-11-17",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "“claims to have been sexually assaulted” becomes “facing sexual assault charges”. The body says a woman “complained” and that the report does not accuse the employee."
+    "changed": "“claims to have been sexually assaulted” becomes “facing sexual assault charges”. The body says a woman “complained” and that the report does not accuse the employee.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": 3.0
+    }
    },
    {
     "date": "2026-11-17",
@@ -339,7 +424,12 @@
     "url": "https://x.com/nypost/status/2122806224705945837",
     "verified": "secondary",
     "cites": "its own article",
-    "changed": "Adds “sadistic” and “no means yes”. The business's own term, “consensual non-consent”, is dropped."
+    "changed": "Adds “sadistic” and “no means yes”. The business's own term, “consensual non-consent”, is dropped.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-18",
@@ -349,7 +439,12 @@
     "url": "https://nypost.com/2026/11/17/tech/silicon-valley-consensual-non-consent-sex-parties-tied-to-ai/",
     "verified": "primary",
     "cites": "the Free Beacon and the first New York Post article",
-    "changed": "“reportedly have hailed from” becomes “many of whom work for”. A later sentence keeps “reportedly”."
+    "changed": "“reportedly have hailed from” becomes “many of whom work for”. A later sentence keeps “reportedly”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-18",
@@ -359,12 +454,18 @@
     "url": "https://x.com/nypost/status/2122859558943048103",
     "verified": "secondary",
     "cites": "its second article",
-    "changed": "“consensual non-consent” becomes “non-consensual”; adds “brutal”."
+    "changed": "“consensual non-consent” becomes “non-consensual”; adds “brutal”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 3.0
+    }
    }
   ],
   "touches": [
    "anthropic"
-  ]
+  ],
+  "travelled_summary": "Scored by two coders who saw only the words, shuffled, without dates or outlets, under rules written down first. Across 24 statements (these 20 and four replies on X), hedges fell as the dates got later (Spearman −0.36) and attribution moved from “critics say” toward plain assertion and “the report found” (+0.53). Labels did not grow (+0.11): the 2023 pieces already used “sexual assault” and “abuse”. Agreement between coders was high (weighted kappa 0.97 and 1.00), but both were the same AI model, and the statements were gathered by people who expected the claim to harden."
  },
  {
   "id": "gtig-autonomous-2026-11",

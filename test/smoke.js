@@ -235,6 +235,9 @@ const path = require('path');
       const changed = await page.locator(`#watch-${w.id} .travelled .step-changed`).count();
       if (changed !== w.travelled.filter(t => t.changed).length) fail(`${w.id}: a travelled step hides what changed`);
       if (await page.locator(`#watch-${w.id} .travelled i`).count()) fail(`${w.id}: travelled data was inserted as markup`);
+      const scored = await page.locator(`#watch-${w.id} .travelled .step-scores`).count();
+      if (scored !== w.travelled.filter(t => t.scores).length) fail(`${w.id}: a step hides its scores`);
+      if (w.travelled_summary && !(await page.locator(`#watch-${w.id} .step-summary`).textContent().catch(() => '')).includes(w.travelled_summary)) fail(`${w.id}: the score summary does not show`);
     }
     for (const w of graph.watch.filter(x => x.why)) {
       const why = await page.locator(`#watch-${w.id} .claim-why`).textContent().catch(() => '');
