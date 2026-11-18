@@ -118,21 +118,43 @@
     "what": "“I'm usually very supportive of your journalism Aaron but this is uncalled for. It is one thing to find the sex stuff distasteful, another to put a random Anthropic employee on blast because of his extra-curricular activities.”",
     "source": "her post on X, read through a mirror (secondary)",
     "url": "https://x.com/SarahTheHaider/status/2122409923619496176"
+   },
+   {
+    "who": "Aella, the business's cofounder, on X (30 Oct 2026, before the article)",
+    "what": "“We generally don't allow people working on building AIs into our orgies … It's true that one of our organizers recently began working at anthropic in a role unrelated to shaping-AI research. … I think no more than 5? Out of a total of ~200 people who've ever attended a RMN?”",
+    "source": "her post on X, read through a mirror (secondary)",
+    "url": "https://x.com/Aella_Girl/status/2116042626524975585"
+   },
+   {
+    "who": "Aella, on how the organizers handled the incident (2 Jun 2026)",
+    "what": "“We sat down with the ladies affected, offered to report this to the police, give them the funding to pursue any legal action they might want to take, and also provided emotional support. … This is to my knowledge the only instance of anything approaching sexual assault at our parties in all the years it's been running.”",
+    "source": "her post on X, read through a mirror (secondary; not linked, because it quotes a private person)"
+   },
+   {
+    "who": "Aella, replying to the New York Post (17 Nov, evening)",
+    "what": "“hey that's me! at least you know I'm dedicated to having a good time irl as well as online.” (The reply goes on to point to her paid site; not quoted.) Asked if she ran the parties: “Sadism is a small-ish part of it, and largely targeted towards me cause im masochistic, but i'm on the organizer team and was the one who basically started it yes”.",
+    "source": "her replies on X, read through a mirror (secondary)",
+    "url": "https://x.com/Aella_Girl/status/2122856577636114869"
+   },
+   {
+    "who": "The same woman who says she was affected, replying to the reporter (16 Nov)",
+    "what": "“Which specific women are claiming they feel “pressured to attend the orgies in order to advance their careers”? Did you talk to any of them? I think that claim is bogus.” And: “Why did you cite my blog post so out of context?”",
+    "source": "her post on X, read through a mirror (secondary; not linked, to keep her unnamed)"
    }
   ],
   "open": [
    "Whether any account, report or case exists beyond this one incident, which three women say affected them.",
-   "How many attendees work in AI, and where: the article says it is “hard to know”, that filings “suggest” a “substantial” overlap, and, with no source given, “disproportionate”; the 30 Sep commenter later put the overlap with rationalists at “probably closer to 25% than 50%”. No count was found.",
+   "How many attendees work in AI, and where: the article says it is “hard to know”, that filings “suggest” a “substantial” overlap, and, with no source given, “disproportionate”; the 30 Sep commenter later put the overlap with rationalists at “probably closer to 25% than 50%”. No count was found. The cofounder, before the article, put AI-lab attendees at “no more than 5? Out of a total of ~200”, none in roles building AI.",
    "A New York Times piece of 21 Sep 2026 on an AI party house and networking could not be read (blocked); whether it bears on this is unchecked.",
    "No Wikipedia article was found citing the story as of 18 Nov 2026.",
-   "Responses from OpenAI, the business and its cofounder: none found by 18 Nov 2026. No correction or follow-up from the Free Beacon or the New York Post was found; nothing on LessWrong or the EA Forum.",
-   "An aggregator's summary of an India Today piece (17 Nov) says the business “faces sexual assault charges”. The piece itself was not found, and no source for any charge was found.",
+   "Responses from OpenAI and the listed managers: none found by 18 Nov 2026. The cofounder's replies are under Responses. No correction from the Free Beacon (its page was modified seven hours after publication; what changed is not shown) or the New York Post, which ran a second article.",
    "No Community Note on the reporter's post on X was seen through a mirror (18 Nov); X itself did not load."
   ],
   "cautions": [
    "The article says both that it is “hard to know” what share of attendees work in AI and, later and with no source given, that the parties “have been known to attract a disproportionate number of employees at Anthropic and OpenAI”. Relays carried the second sentence (see How it travelled).",
    "The lede says he “runs a business”; the subhead and body say he is “listed as manager”. The filings name managers and do not say who runs the events. The lede's “allegations” rests, in the body, on “at least one woman”, whose account also describes the organizers acting on it.",
    "Anthropic's response differs by outlet: the company “does not comment on individual employees” (Free Beacon) and “declined to comment” (New York Post).",
+   "India Today's kicker says the business is “facing sexual assault charges”; its own body says a woman “complained” and that the report does not accuse the employee. No source for any charge was found.",
    "The women affected by the one incident the article rests on say the reporter did not contact them, that the organizers removed the man and offered to support them in going to the police, and that the article could have given their perspective.",
    "The researcher the article quotes on careers publicly withdrew that view five weeks before it ran, on the word of an organizer he says he is dating; he calls it his median guess.",
    "An employee's outside business is not the employer's act. No source found ties Anthropic or OpenAI as companies to the business.",
@@ -144,13 +166,77 @@
   "why": "Not for anyone's private life. It is here for a claim about careers at AI labs, an alleged assault and how it was handled, and how the claim changed as it was passed along.",
   "travelled": [
    {
+    "date": "2023-02-03",
+    "who": "TIME (Charlotte Alter)",
+    "said": "one of seven women connected to effective altruism who tell TIME they experienced misconduct ranging from harassment and coercion to sexual assault within the community.",
+    "source": "TIME, 3 Feb 2023",
+    "url": "https://time.com/6252617/effective-altruism-sexual-harassment/",
+    "verified": "primary",
+    "cites": "interviews with seven women",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 2.0,
+     "label": 3.0
+    }
+   },
+   {
+    "date": "2023-03-07",
+    "who": "Bloomberg Businessweek (Ellen Huet)",
+    "said": "Within the subculture of rationalists, EAs and AI safety researchers, sexual harassment and abuse are distressingly common, according to interviews with eight women at all levels of the community.",
+    "source": "Bloomberg Businessweek, 7 Mar 2023 (read in a linkpost; Bloomberg's page did not load)",
+    "verified": "secondary",
+    "cites": "interviews with eight women",
+    "changed": "From effective altruism to “rationalists, EAs and AI safety researchers”.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 2.0,
+     "label": 3.0
+    }
+   },
+   {
+    "date": "2024-05-17",
+    "who": "Sonia Joseph, an AI researcher, on X",
+    "said": "I don't think events like the consensual non-consensual (cnc) sex parties and heavy LSD use of some elite AI researchers have been good for women.",
+    "source": "her post on X, 17 May 2024 (read through a mirror)",
+    "url": "https://x.com/soniajoseph_/status/1791604177581310234",
+    "verified": "secondary",
+    "cites": "her own experience; no event or host named",
+    "changed": "First mention of the CNC parties, tied to “some elite AI researchers”. No event named.",
+    "scores": {
+     "hedges": 1.5,
+     "attribution": 3.0,
+     "label": 1.0
+    }
+   },
+   {
+    "date": "2024-05-19",
+    "who": "Futurism (Noor Al-Sibai)",
+    "said": "A machine learning researcher is claiming to have knowledge of kinky drug-fueled orgies in Silicon Valley’s storied hacker houses — and appears to be linking those parties, and the culture surrounding them, to OpenAI.",
+    "source": "Futurism, 19 May 2024",
+    "url": "https://futurism.com/researcher-openai-sex-drug-parties",
+    "verified": "primary",
+    "cites": "the 17 May post",
+    "changed": "“sex parties” becomes “drug-fueled orgies”, hedged (“is claiming”, “appears to be”). The same piece calls the post a “vague and anecdotal diatribe”.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 1.0,
+     "label": 2.0
+    }
+   },
+   {
     "date": "2026-06-01",
     "who": "The Asterisk (Ivy Astrix), Substack",
     "said": "The same LessWrong discussion also included claims that some attendees view RMN as a networking opportunity within the AI ecosystem, and that a significant fraction of women attending are not primarily interested in CNC itself.",
     "source": "The Asterisk, “Further Notes on Rape Culture in AI Social Circles”, 1 Jun 2026",
     "verified": "primary",
     "cites": "a LessWrong discussion, shown as screenshots, not linked",
-    "url": "https://theasterisk.substack.com/p/further-notes-on-rape-culture-in"
+    "url": "https://theasterisk.substack.com/p/further-notes-on-rape-culture-in",
+    "changed": "Moves to a named event and to careers: “a networking opportunity within the AI ecosystem”. Source: screenshots, not linked.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 1.0,
+     "label": 0.0
+    }
    },
    {
     "date": "2026-09-30",
@@ -160,7 +246,12 @@
     "url": "https://thingofthings.substack.com/p/some-thoughts-on-sexual-harassment",
     "verified": "primary",
     "cites": "the author's own view; the same post reports “many claims” of “ambient social pressure”",
-    "changed": "A different estimate: few attendees work in AI safety. Not drawn from the step before."
+    "changed": "A different estimate: few attendees work in AI safety. Not drawn from the step before.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": null
+    }
    },
    {
     "date": "2026-09-30",
@@ -170,7 +261,12 @@
     "url": "https://thingofthings.substack.com/p/some-thoughts-on-sexual-harassment/comment/349574346",
     "verified": "primary",
     "cites": "his own attendance",
-    "changed": "A first-hand estimate (about half rationalists), and in the same comment: “I personally absolutely do upgrade my assessment of someone's AI alignment qualifications if I find out they go to RMN”."
+    "changed": "A first-hand estimate (about half rationalists), and in the same comment: “I personally absolutely do upgrade my assessment of someone's AI alignment qualifications if I find out they go to RMN”.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 0.0,
+     "label": null
+    }
    },
    {
     "date": "2026-09-30",
@@ -179,7 +275,12 @@
     "source": "a post on X, read as a screenshot in The Asterisk, 1 Oct 2026",
     "verified": "secondary",
     "cites": "the 30 Sep comment",
-    "changed": "Drops “absolutely” and the 50/50 estimate."
+    "changed": "Drops “absolutely” and the 50/50 estimate.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": null
+    }
    },
    {
     "date": "2026-10-01",
@@ -189,7 +290,12 @@
     "url": "https://theasterisk.substack.com/p/want-to-get-ahead-in-your-ai-career",
     "verified": "primary",
     "cites": "the post on X",
-    "changed": "The headline states the career claim. The body adds: “There are some who are contesting the assertion that it functions as an AI networking event”."
+    "changed": "The headline states the career claim. The body adds: “There are some who are contesting the assertion that it functions as an AI networking event”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 3.0
+    }
    },
    {
     "date": "2026-10-08",
@@ -199,7 +305,12 @@
     "url": "https://www.lesswrong.com/posts/dHGjqpbfmdEN7TssX/on-kink-and-status-in-the-rationalist-community",
     "verified": "primary",
     "cites": "an organizer who checked with the other organizers",
-    "changed": "The 30 Sep commenter revises his own claims, as “median guesses”: no career benefit, and an overlap with rationalists “probably closer to 25% than 50%”."
+    "changed": "The 30 Sep commenter revises his own claims, as “median guesses”: no career benefit, and an overlap with rationalists “probably closer to 25% than 50%”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": null
+    }
    },
    {
     "date": "2026-10-23",
@@ -208,7 +319,12 @@
     "source": "verysane.ai, 23 Oct 2026 (named, not linked: the post names private persons)",
     "verified": "primary",
     "cites": "the 30 Sep comment (as a screenshot), the business's filing and site, an organizer's own site, and posts on X shown as screenshots",
-    "changed": "Reads the 30 Sep comment as a sign that attendance was “a de facto career requirement”. Does not mention the 8 Oct revision or the Thing of Things estimate. Says an earlier version of the post was withdrawn. The Free Beacon does not cite it."
+    "changed": "Reads the 30 Sep comment as a sign that attendance was “a de facto career requirement”. Does not mention the 8 Oct revision or the Thing of Things estimate. Says an earlier version of the post was withdrawn. The Free Beacon does not cite it.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-16",
@@ -218,7 +334,12 @@
     "url": "https://freebeacon.com/america/horrifying-meet-the-anthropic-researcher-behind-silicon-valleys-consensual-non-consent-orgies/",
     "verified": "primary",
     "cites": "business filings (for “substantial”); none given for “disproportionate”; the 30 Sep comment, a Substack, a Bluesky post and a 2024 post on X for the pressure",
-    "changed": "Adds “disproportionate” and names Anthropic and OpenAI, beside its own hedge. Quotes the 30 Sep comment, not the 8 Oct revision or the Thing of Things estimate."
+    "changed": "Adds “disproportionate” and names Anthropic and OpenAI, beside its own hedge. Quotes the 30 Sep comment, not the 8 Oct revision or the Thing of Things estimate.",
+    "scores": {
+     "hedges": 3.0,
+     "attribution": 2.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-16",
@@ -228,7 +349,12 @@
     "url": "https://daringfireball.net/linked/2026/11/16/anthropic-red-means-no-parties",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "Quotes the “disproportionate” sentence word for word; the “hard to know” sentence is not quoted."
+    "changed": "Quotes the “disproportionate” sentence word for word; the “hard to know” sentence is not quoted.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
    },
    {
     "date": "2026-11-17",
@@ -238,7 +364,12 @@
     "verified": "primary",
     "cites": "the Free Beacon",
     "changed": "“have been known to attract” becomes “found”; adds “to advance their careers”.",
-    "url": "https://libertyonenews.com/anthropic-researcher-tied-to-consensual-non-consent-sex-parties-frequented-by-ai-industry-insiders/"
+    "url": "https://libertyonenews.com/anthropic-researcher-tied-to-consensual-non-consent-sex-parties-frequented-by-ai-industry-insiders/",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 4.0,
+     "label": null
+    }
    },
    {
     "date": "2026-11-17",
@@ -248,7 +379,12 @@
     "url": "https://nypost.com/2026/11/17/business/anthropic-researcher-is-hosting-wild-silicon-valley-orgies-with-consensual-non-consent-as-the-theme-report/",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "“have been known to attract a disproportionate number of employees” becomes “A disproportionate number of the party's participants have been employees”; adds “unhealthy” and “in order to advance their careers”."
+    "changed": "“have been known to attract a disproportionate number of employees” becomes “A disproportionate number of the party's participants have been employees”; adds “unhealthy” and “in order to advance their careers”.",
+    "scores": {
+     "hedges": 2.0,
+     "attribution": 2.0,
+     "label": 1.0
+    }
    },
    {
     "date": "2026-11-17",
@@ -258,12 +394,78 @@
     "url": "https://www.techtimes.co.uk/women-ai-pressure-private-sex-parties-networking-1810030",
     "verified": "primary",
     "cites": "the Free Beacon",
-    "changed": "Keeps the pressure claim as “reportedly”, and adds what the report does not establish."
+    "changed": "Keeps the pressure claim as “reportedly”, and adds what the report does not establish.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.5,
+     "label": 1.0
+    }
+   },
+   {
+    "date": "2026-11-17",
+    "who": "India Today (Divya Bhati)",
+    "said": "What makes the matter more concerning is that this business is also facing sexual assault charges from a woman who presumably attended on of their parties.",
+    "source": "India Today, 17 Nov 2026 (the kicker above the article)",
+    "url": "https://www.indiatoday.in/technology/news/story/anthropic-cybersecurity-researcher-managed-sex-party-business-for-ai-whos-who-report-says-3040641-2026-11-17",
+    "verified": "primary",
+    "cites": "the Free Beacon",
+    "changed": "“claims to have been sexually assaulted” becomes “facing sexual assault charges”. The body says a woman “complained” and that the report does not accuse the employee.",
+    "scores": {
+     "hedges": 1.0,
+     "attribution": 3.0,
+     "label": 3.0
+    }
+   },
+   {
+    "date": "2026-11-17",
+    "who": "New York Post, on X",
+    "said": "Inside AI researcher's sadistic orgies where no means yes and 'moderate beatings,' 'light electricity' are on the menu",
+    "source": "the New York Post's post on X, 17 Nov 2026 (read through a mirror)",
+    "url": "https://x.com/nypost/status/2122806224705945837",
+    "verified": "secondary",
+    "cites": "its own article",
+    "changed": "Adds “sadistic” and “no means yes”. The business's own term, “consensual non-consent”, is dropped.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
+   },
+   {
+    "date": "2026-11-18",
+    "who": "New York Post (Titus Wu), a second article",
+    "said": "Participants, many of whom work for AI juggernauts such as Anthropic and OpenAI, give “default consent” to “spanking,” “wrestling,” “light pain” and other sexual acts by entering the orgy",
+    "source": "New York Post, 18 Nov 2026 (dated 17 Nov on the page)",
+    "url": "https://nypost.com/2026/11/17/tech/silicon-valley-consensual-non-consent-sex-parties-tied-to-ai/",
+    "verified": "primary",
+    "cites": "the Free Beacon and the first New York Post article",
+    "changed": "“reportedly have hailed from” becomes “many of whom work for”. A later sentence keeps “reportedly”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 2.0
+    }
+   },
+   {
+    "date": "2026-11-18",
+    "who": "New York Post, on X",
+    "said": "Silicon Valley tech nerd and OnlyFans star behind California's brutal non-consensual sex parties",
+    "source": "the New York Post's post on X, 18 Nov 2026 (read through a mirror)",
+    "url": "https://x.com/nypost/status/2122859558943048103",
+    "verified": "secondary",
+    "cites": "its second article",
+    "changed": "“consensual non-consent” becomes “non-consensual”; adds “brutal”.",
+    "scores": {
+     "hedges": 0.0,
+     "attribution": 3.0,
+     "label": 3.0
+    }
    }
   ],
   "touches": [
    "anthropic"
-  ]
+  ],
+  "travelled_summary": "Scored by two coders who saw only the words, shuffled, without dates or outlets, under rules written down first. Across 24 statements (these 20 and four replies on X), hedges fell as the dates got later (Spearman −0.36) and attribution moved from “critics say” toward plain assertion and “the report found” (+0.53). Labels did not grow (+0.11): the 2023 pieces already used “sexual assault” and “abuse”. Agreement between coders was high (weighted kappa 0.97 and 1.00), but both were the same AI model, and the statements were gathered by people who expected the claim to harden."
  },
  {
   "id": "gtig-autonomous-2026-11",
@@ -748,6 +950,13 @@
     "verified": "primary"
    },
    {
+    "what": "The company's IPO website, filed with the SEC: “Subject to regulatory clearance, the final IPO share price is expected to be set on November 18th (EST), and shares are expected to begin publicly trading on November 19th (EST).”",
+    "result": "supports",
+    "source": "Free-writing prospectus, filed 11 Nov 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072949/anthropicpbc-fwpipowebsi.htm",
+    "verified": "primary"
+   },
+   {
     "what": "The timing: “The IPO is expected to price the evening of Nov. 18, and begin trading on the Nasdaq on Thursday, Nov. 19.” The same report: “At the current range, the offering would bring in more than $64 billion, giving the company a valuation of $1.405 trillion.”",
     "result": "supports",
     "source": "CNBC (Caleigh Keating), 16 Nov 2026",
@@ -761,7 +970,7 @@
    }
   ],
   "open": [
-   "The final price and the amount raised: not known until pricing (expected 18 Nov)."
+   "The final price and the amount raised. Not priced as of the early hours of 18 Nov (UTC); no final prospectus on EDGAR. Reports on 17 Nov (relaying CNBC and Bloomberg) said it would likely price above the range."
   ],
   "cautions": [
    "This map is made with AI models made by Anthropic, which is now offering shares to the public. Weigh every record that touches Anthropic with that in mind.",

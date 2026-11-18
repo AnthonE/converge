@@ -33,11 +33,16 @@
     if ((w.travelled || []).length) {
       var ts = ui.section('How it travelled (' + w.travelled.length + ' steps)',
         'Each step in date order: who said it, their words, where they got it, and what changed from the step before. This does not say which version is right.');
+      if (w.travelled_summary) ui.add(ts, ui.h('p', 'note step-summary', w.travelled_summary));
       var tl = ui.h('ol', 'links travelled');
       w.travelled.forEach(function (t) {
         var li = ui.h('li', 'step');
         ui.add(li, ui.h('time', null, t.date), ui.h('span', null, ' ' + t.who + ': '), ui.h('q', null, t.said), ui.h('span', null, ' '),
           t.url ? ui.link(t.url, t.source, t.nolink) : ui.h('span', 'cite', '(' + t.source + ')'), ui.h('span', null, ' '), t.verified ? ui.badge(t.verified) : null);
+        if (t.scores) {
+          var sc = t.scores, f = function (v, max) { return v === null || v === undefined ? 'n/a' : v + (max ? ' of ' + max : ''); };
+          ui.add(li, ui.h('div', 'step-note step-scores', 'Hedges ' + f(sc.hedges) + ' · attribution ' + f(sc.attribution, 4) + ' · label ' + f(sc.label, 3)));
+        }
         if (t.cites) ui.add(li, ui.h('div', 'step-note', 'Gives as its source: ' + t.cites));
         if (t.changed) ui.add(li, ui.h('div', 'step-note step-changed', 'What changed: ' + t.changed));
         ui.add(tl, li);

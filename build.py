@@ -348,6 +348,10 @@ def validate(g):
                 err(f'watch/{wid}: a travelled step has a bad verified flag')
             if t.get('url') and not URL.match(t['url']):
                 err(f'watch/{wid}: a travelled step has a bad url')
+            sc = t.get('scores')
+            if sc is not None and (not isinstance(sc, dict) or any(sc.get(k) is not None and not (isinstance(sc.get(k), (int, float)) and 0 <= sc[k] <= lim)
+                                                            for k, lim in (('hedges', 20), ('attribution', 4), ('label', 3)))):
+                err(f'watch/{wid}: a travelled step has bad scores')
         voice = [w.get('title', ''), w.get('standing', ''), w.get('claimed_by', ''), w.get('why', '')] + \
             [t.get(k, '') for t in w.get('travelled') or [] if isinstance(t, dict) for k in ('who', 'cites', 'changed')] + [c.get('what', '') for c in w.get('checks') or [] if isinstance(c, dict)] + \
             [r.get(k, '') for r in w.get('responses') or [] if isinstance(r, dict) for k in ('who', 'what')] + list(w.get('cautions') or []) + list(w.get('open') or [])
