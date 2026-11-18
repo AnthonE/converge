@@ -171,6 +171,9 @@
       items.push({ id: id, name: name, rank: n.type === 'fruit' || n.type === 'text' ? 1 : 0, word: ns.typeWord[n.type] || n.type,
         hay: (name + ' ' + (n.what || '') + ' ' + (n.quote || '')).toLowerCase() });
     });
+    (ix.g.people || []).forEach(function (p) {
+      items.push({ id: p.id, person: true, name: p.name, rank: 0, word: 'Who\u2019s who', hay: (p.name + ' ' + (p.match || []).join(' ') + ' ' + p.who).toLowerCase() });
+    });
     (ix.g.watch || []).forEach(function (w) {
       items.push({ id: w.id, watch: true, name: w.title, rank: 1, word: 'Claim on the Watch', hay: (w.title + ' ' + w.claimed_by + ' ' + w.claim + ' ' + (w.source || '')).toLowerCase() });
     });
@@ -178,7 +181,7 @@
     function close() { list.hidden = true; input.setAttribute('aria-expanded', 'false'); at = -1; }
     function choose(it) {
       close(); input.value = ''; input.blur();
-      if (it.watch) nav.goWatch(it.id); else nav.openNode(it.id);
+      if (it.watch) nav.goWatch(it.id); else if (it.person) nav.goPeople(it.id); else nav.openNode(it.id);
     }
     function mark() {
       [].forEach.call(list.children, function (li, i) { li.setAttribute('aria-selected', i === at ? 'true' : 'false'); });

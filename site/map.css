@@ -276,3 +276,15 @@ th { color: var(--ink-2); font-weight: 600; }
 .chain-chart .cc-dot circle:not(.cc-hit) { fill: var(--ink); stroke: var(--surface); stroke-width: 2; }
 .chain-chart .cc-hit { fill: transparent; }
 .chain-chart .cc-dot:hover circle:not(.cc-hit) { r: 6; }
+
+/* Who's who: a name you can tap, and the card it opens. */
+.who { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted; text-decoration-color: var(--ink-2); text-underline-offset: 3px; border-radius: 3px; }
+.who:hover { background: var(--wash); }
+.who-card { position: absolute; z-index: 30; background: var(--surface); color: var(--ink); border: 1px solid var(--axis); border-radius: 10px; padding: 12px 14px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18); font-size: 14px; line-height: 1.45; }
+.who-card[hidden] { display: none; }
+.who-card .who-name { font-weight: 650; font-size: 15px; margin: 0 0 4px; }
+.who-card .who-line { margin: 0 0 6px; }
+.who-card .who-src { font-size: 12px; color: var(--ink-2); margin: 0 0 6px; }
+.who-card .who-actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 0; font-size: 13px; }
+.people dt { padding-top: 6px; }
+.people dd { padding-top: 6px; }

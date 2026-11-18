@@ -254,7 +254,7 @@
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
     if (state.view === 'watch') { paintWatch(); return; }
-    if (state.view === 'start' || state.view === 'timeline') { paintPage(); return; }
+    if (state.view === 'start' || state.view === 'timeline' || state.view === 'people') { paintPage(); return; }
     document.getElementById('the-watch').hidden = true;
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
@@ -309,6 +309,7 @@
     }
     if (back) { back.type = 'button'; add(panel, back); }
     add(panel, body);
+    ns.annotate(panel, ix);
     panel.scrollTop = 0;
     document.getElementById('to-overview').hidden = state.view !== 'focus';
     document.getElementById('tab-ideals').setAttribute('aria-pressed', money || anc ? 'false' : 'true');
@@ -332,26 +333,30 @@
     ['tab-ideals', 'tab-money', 'tab-ancients'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
     document.getElementById('tab-watch').setAttribute('aria-pressed', 'true');
     ns.renderWatch(box, ix, ui, openNode);
+    ns.annotate(box, ix, 'article.claim');
     var target = state.selected && document.getElementById('watch-' + state.selected);
     if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
   }
   /* The guide and the timeline are pages, like the Watch: no drawing. */
   function paintPage() {
-    var box = document.getElementById('the-page'), start = state.view === 'start';
+    var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people';
     document.getElementById('layout').hidden = true;
     document.getElementById('the-watch').hidden = true;
     box.hidden = false;
-    box.setAttribute('aria-label', start ? 'How to read this map' : 'Timeline: everything dated, newest first');
+    box.setAttribute('aria-label', start ? 'How to read this map' : people ? 'Who\u2019s who' : 'Timeline: everything dated, newest first');
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
     ['tab-ideals', 'tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
-    document.getElementById('tab-timeline').setAttribute('aria-pressed', start ? 'false' : 'true');
-    if (start) ns.renderStart(box, ix, ui, nav); else ns.renderTimeline(box, ix, ui, nav);
+    document.getElementById('tab-timeline').setAttribute('aria-pressed', start || people ? 'false' : 'true');
     window.scrollTo(0, 0);
+    if (people) { ns.renderPeople(box, ix, ui, nav, state.selected); return; }
+    if (start) { ns.renderStart(box, ix, ui, nav); ns.annotate(box, ix); }
+    else { ns.renderTimeline(box, ix, ui, nav); ns.annotate(box, ix, 'li.tl-item'); }
   }
   function goStart() { state.view = 'start'; state.ideal = null; state.selected = null; state.edge = null; setHash('#start'); render(); }
   function goTimeline() { state.view = 'timeline'; state.ideal = null; state.selected = null; state.edge = null; setHash('#timeline'); render(); }
-  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); } };
+  function goPeople(id) { state.view = 'people'; state.ideal = null; state.edge = null; state.selected = id || null; setHash(id ? '#people/' + id : '#people'); render(); }
+  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); } };
   function goWatch(id) {
     state.view = 'watch'; state.ideal = null; state.edge = null;
     state.selected = id && (ix.g.watch || []).some(function (w) { return w.id === id; }) ? id : null;
@@ -400,6 +405,7 @@
     var hash = location.hash.slice(1);
     if (hash === 'start') { goStart(); return; }
     if (hash === 'timeline') { goTimeline(); return; }
+    if (ns.hasPeople(ix) && (hash === 'people' || hash.indexOf('people/') === 0)) { goPeople(hash.slice(7) || null); return; }
     if (hash === 'ancients' || hash.indexOf('ancients/') === 0) { goAncients(hash.slice(9) || null); return; }
     if (hash === 'money' || hash.indexOf('money/') === 0) { goMoney(hash.slice(6) || null); return; }
     if (ns.hasWatch(ix) && (hash === 'watch' || hash.indexOf('watch/') === 0)) { goWatch(hash.slice(6) || null); return; }
@@ -492,6 +498,9 @@
     document.getElementById('tab-timeline').addEventListener('click', function () { goTimeline(); });
     document.getElementById('tab-timeline').hidden = !(g.fruits || []).length && !ns.hasWatch(ix);
     document.getElementById('to-start').addEventListener('click', function () { goStart(); });
+    document.getElementById('to-people').hidden = !ns.hasPeople(ix);
+    document.getElementById('to-people').addEventListener('click', function () { goPeople(null); });
+    ns.initWho(ix, nav);
     ns.initSearch(document.getElementById('search'), document.getElementById('search-hits'), ix, nav);
     document.getElementById('tab-watch').hidden = !ns.hasWatch(ix);
     document.getElementById('tab-money').hidden = !ix.g.edges.some(ns.isMoney);

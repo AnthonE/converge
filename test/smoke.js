@@ -485,6 +485,20 @@ const path = require('path');
   await page.keyboard.press('Enter');
   await page.waitForFunction(() => location.hash === '#watch/claim-1');
 
+  // Who's who: a named person is marked where the name appears, and the mark opens a plain card.
+  await page.evaluate(() => { location.hash = '#ideal-0'; });
+  await page.waitForSelector('#panel .who[data-who="sample-speaker"]');
+  await page.locator('#panel .who[data-who="sample-speaker"]').first().click();
+  await page.waitForSelector('#who-card:not([hidden])');
+  const card = await page.locator('#who-card').textContent();
+  if (!/A sample public figure/.test(card || '')) fail(`who card reads "${card}"`);
+  await page.keyboard.press('Escape');
+  if (await page.locator('#who-card').isVisible()) fail('Escape does not close the who card');
+  if (!(await page.locator('#to-people').isVisible())) fail("the Who's who link is not shown");
+  await page.locator('#to-people').click();
+  await page.waitForFunction(() => location.hash === '#people');
+  if ((await page.locator('#the-page .people dt').count()) !== 1) fail("Who's who does not list the fixture's one person");
+
   // Narrow screen: no page-level horizontal scroll.
   await page.setViewportSize({ width: 390, height: 800 });
   const scroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);

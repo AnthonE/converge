@@ -48,6 +48,8 @@ DATE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
 STATUS = {'met', 'partly', 'not_met', 'unknown'}
 VERIFIED = {'primary', 'secondary', 'unverified'}
 REREAD_RESULTS = {'holds', 'corrected', 'removed', 'does not hold', 'could not read'}
+PEOPLE_GROUPS = {'builders', 'thinkers', 'faith', 'press', 'officials', 'past'}
+MAX_WHO = 240
 FRUIT_KIND = {'documented', 'reported', 'alleged'}
 CARRIER_KIND = {'movement', 'organization', 'community', 'public figure', 'discourse', 'product', 'venue'}
 REQUIRED = {
@@ -103,6 +105,9 @@ def load(data_dir):
     # Pages a person has re-read (tools/reread.py writes it). Optional.
     rpath = os.path.join(data_dir, 'reread.json')
     g['reread'] = json.load(open(rpath, encoding='utf-8')) if os.path.exists(rpath) else []
+    # Who's who: one plain line on each public figure the map names (optional).
+    ppath = os.path.join(data_dir, 'people.json')
+    g['people'] = json.load(open(ppath, encoding='utf-8')) if os.path.exists(ppath) else []
     return g
 
 
@@ -497,6 +502,35 @@ def validate(g):
         err('meta.json needs a "disclosure" line once the map shows money: say what ties the author has to the bodies shown')
     if [p.get('phase') for p in g['phases']] != list(range(6)):
         err('phases.json must define phases 0-5 in order')
+    # Who's who: public figures only, each in one plain, sourced sentence that labels no one.
+    seen_p, forms = set(), {}
+    for i, p in enumerate(g.get('people') or []):
+        who = f'people[{i}] ({p.get("id")})'
+        for k in ('id', 'name', 'who', 'group', 'source', 'url', 'verified', 'sort'):
+            if not str(p.get(k) or '').strip():
+                err(f'{who}: missing "{k}"')
+        if not ID.match(str(p.get('id', ''))) or p.get('id') in seen_p:
+            err(f'{who}: id must be unique, lower-case letters, digits and hyphens')
+        seen_p.add(p.get('id'))
+        if p.get('group') not in PEOPLE_GROUPS:
+            err(f'{who}: group must be one of {sorted(PEOPLE_GROUPS)}')
+        if p.get('verified') not in VERIFIED:
+            err(f'{who}: verified must be one of {sorted(VERIFIED)}')
+        if p.get('url') and not URL.match(p['url']):
+            err(f'{who}: bad url')
+        if len(str(p.get('who', ''))) > MAX_WHO:
+            err(f'{who}: "who" is longer than {MAX_WHO} characters; one plain sentence or two')
+        text = QUOTED.sub('', str(p.get('who', '')))
+        if LABEL_BAN.search(text) or MOTIVE_BAN.search(text) or INTERNAL.search(text):
+            err(f'{who}: "who" labels someone, asserts a motive or carries a working note')
+        if p.get('node') and p['node'] not in ids:
+            err(f'{who}: node {p["node"]} is not on the map')
+        if not isinstance(p.get('match', []), list):
+            err(f'{who}: "match" must be a list of the forms of the name to mark')
+        for m in p.get('match') or [p.get('name')]:
+            if m in forms and forms[m] != p.get('id'):
+                err(f'{who}: "{m}" already marks {forms[m]}')
+            forms[m] = p.get('id')
     # The re-read ledger: one line per page a person has opened and compared with the map.
     cited, seen = cited_urls(g), set()
     for i, r in enumerate(g.get('reread') or []):
@@ -519,7 +553,7 @@ def standalone(site_dir, graph):
     html = html.replace('<link rel="stylesheet" href="map.css">', '<style>\n' + css + '</style>')
     data = json.dumps(graph, ensure_ascii=False).replace('<', '\\u003c')
     scripts = '<script type="application/json" id="graph-data">' + data + '</script>\n'
-    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'map.js'):
+    for name in ('layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'map.js'):
         js = open(os.path.join(site_dir, name), encoding='utf-8').read()
         tag = f'<script src="{name}"></script>'
         assert tag in html, tag
