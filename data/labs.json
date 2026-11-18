@@ -12,7 +12,8 @@
     "url": "https://techcrunch.com/2023/05/17/elon-musk-used-to-say-he-put-100m-in-openai-but-now-its-50m-here-are-the-receipts",
     "verified": "secondary"
    }
-  ]
+  ],
+  "note": "After its October 2025 restructuring, Microsoft said: “Microsoft holds an investment in OpenAI Group PBC valued at approximately $135 billion, representing roughly 27 percent”; AP reports the nonprofit OpenAI Foundation's stake at about $130 billion. These are valuations, not money paid. OpenAI's own site refused automated reading, so its own figures are not quoted here."
  },
  {
   "id": "anthropic",
@@ -59,7 +60,7 @@
  {
   "id": "google-deepmind",
   "label": "Google (Google DeepMind)",
-  "note": "One entry for Google, as some records name the company, for Google DeepMind, and for DeepMind before Google owned it. Each record says which it means."
+  "note": "One entry for Google, as some records name the company, for Google DeepMind, and for DeepMind before Google owned it. Each record says which it means. Alphabet funds it from its own revenue: “our 2026 CapEx investments are anticipated to be in the range of $175 to $185 billion” (February 2026; the range was raised later in the year, as reported), and “Alphabet-level activities primarily reflect expenses related to our shared AI research and development” (October 2026). Google acquired DeepMind in 2014; TechCrunch reported “the acquisition price was more than $500 million”, as reported at the time."
  },
  {
   "id": "meta",
@@ -74,15 +75,18 @@
     "url": "https://www.thedailybeast.com/meta-pulls-back-25-million-of-its-65-million-midterm-war-chest",
     "verified": "secondary"
    }
-  ]
+  ],
+  "note": "It funds its AI mainly from its own revenue. Its 2026 capital spending outlook is “in the range of $135-145 billion, narrowed from our prior outlook of $130-145 billion” (Meta, 21 October 2026). For its Hyperion data center, “The funds managed by Blue Owl Capital made a cash contribution of approximately $7 billion to the joint venture” (Meta, 21 October 2025)."
  },
  {
   "id": "microsoft",
-  "label": "Microsoft"
+  "label": "Microsoft",
+  "note": "It funds its AI mainly from its own revenue. Its chief financial officer said on 28 October 2026 that “for the calendar year, spend should be approximately $170 billion”."
  },
  {
   "id": "xai",
-  "label": "xAI"
+  "label": "xAI",
+  "note": "Since February 2026 a subsidiary of SpaceX, as reported. SpaceX's own offering “raised $75.0 billion by offering 555.6 million shares at $135” (Renaissance Capital); how much of that reaches xAI is not stated."
  },
  {
   "id": "cognition",
@@ -91,6 +95,6 @@
  {
   "id": "prc-developers",
   "label": "DeepSeek, Moonshot AI or Z.ai",
-  "note": "Three separate developers shown as one entry. Each record names the one it concerns; no record here covers all three."
+  "note": "Three separate developers shown as one entry. Each record names the one it concerns; no record here covers all three. Reported funding in 2025 and 2026: for DeepSeek, a round of about 50 billion yuan in which “Founder Liang Wenfeng is committing 20 billion yuan of his own money, a controlling share of the raise” (TNW, citing Reuters); Zhipu AI “has secured 1 billion yuan ($140 million) in fresh funding from Shanghai's state-backed investors” (Caixin, July 2025); Moonshot AI “has reportedly closed a funding round that raised about $3.5 billion” (TechNode, July 2026)."
  }
 ]

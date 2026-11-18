@@ -3,7 +3,7 @@
   "id": "jaan-tallinn",
   "label": "Jaan Tallinn",
   "kind": "person",
-  "note": "SFF’s table names him as the funder, alone or with Dustin Moskovitz, on those METR, Apollo Research, Palisade Research and Lightcone rows shown here whose funder was checked, and Anthropic’s 2021 announcement says he led its Series A. FLI’s finances page says he has donated to FLI and sits on its board."
+  "note": "SFF’s table names him as the funder, alone or with Dustin Moskovitz, on those METR, Apollo Research, Palisade Research and Lightcone rows shown here whose funder was checked, and Anthropic’s 2021 announcement says he led its Series A. FLI’s finances page says he has donated to FLI and sits on its board. His own overview: “in 2024 my donations funded $51M worth of endpoint grants”. SFF names him as the only funder of its 2024 and 2025 rounds."
  },
  {
   "id": "sff",
@@ -15,13 +15,13 @@
   "id": "dustin-moskovitz",
   "label": "Dustin Moskovitz",
   "kind": "person",
-  "note": "Anthropic’s announcement of 28 May 2021 names him among the participants in its Series A, with no amount. SFF’s table names him, with Jaan Tallinn, as a funder on its 2026 rows for Apollo Research, Palisade Research and Lightcone Infrastructure."
+  "note": "Anthropic’s announcement of 28 May 2021 names him among the participants in its Series A, with no amount. SFF’s table names him, with Jaan Tallinn, as a funder on its 2026 rows for Apollo Research, Palisade Research and Lightcone Infrastructure. Fortune (10 November 2025) reports the couple “moving a $500 million stake in Anthropic into a nonprofit vehicle to reinvest its returns”; it cites no filing. This map is made with Anthropic's models, and Anthropic is a party here."
  },
  {
   "id": "coefficient-giving",
   "label": "Coefficient Giving (formerly Open Philanthropy)",
   "kind": "foundation",
-  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement. Its own announcement of 18 Nov 2025: “Today, Open Philanthropy is becoming Coefficient Giving.” Good Ventures, the foundation of Cari Tuna and Dustin Moskovitz, calls it “our primary philanthropic advisor”. People ties on the record: Anthropic's announcement of 29 May 2024 says Luke Muehlhauser stepped down from its board “to focus on his work at Open Philanthropy”; Holden Karnofsky, Open Philanthropy's co-founder, is listed by Harvard's Berkman Klein Center (Oct 2025) as a Member of Technical Staff at Anthropic.",
+  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement. Its own announcement of 18 Nov 2025: “Today, Open Philanthropy is becoming Coefficient Giving.” Good Ventures, the foundation of Cari Tuna and Dustin Moskovitz, calls it “our primary philanthropic advisor”. People ties on the record: Anthropic's announcement of 29 May 2024 says Luke Muehlhauser stepped down from its board “to focus on his work at Open Philanthropy”; Holden Karnofsky, Open Philanthropy's co-founder, is listed by Harvard's Berkman Klein Center (Oct 2025) as a Member of Technical Staff at Anthropic. Where its money comes from: Good Ventures, the foundation of Dustin Moskovitz and Cari Tuna, reported contributions received of $1,395,845,381 and charitable disbursements of $337,695,777 for the year to June 2025 (Form 990-PF, via ProPublica). Cari Tuna: “Coefficient directed over $200 million from donors beyond Dustin and me” in 2025 (Stanford PACS interview).",
   "words": [
    {
     "speaker": "Open Philanthropy (grant record)",
@@ -478,5 +478,41 @@
   "label": "Sequoia Capital",
   "kind": "firm",
   "note": "Named by Anthropic among the investors in its Series G and as one of four leads of its Series H (2026)."
+ },
+ {
+  "id": "softbank",
+  "label": "SoftBank Group",
+  "kind": "company",
+  "note": "Led OpenAI's 2025 round and made a further $30 billion follow-on investment in 2026, by its own releases."
+ },
+ {
+  "id": "thrive-capital",
+  "label": "Thrive Capital",
+  "kind": "firm",
+  "note": "Led OpenAI's $6.6 billion round of October 2024, as reported."
+ },
+ {
+  "id": "valor",
+  "label": "Valor Equity Partners",
+  "kind": "firm",
+  "note": "Named by xAI among the investors in its Series B, C and E rounds."
+ },
+ {
+  "id": "tesla",
+  "label": "Tesla",
+  "kind": "company",
+  "note": "Agreed in January 2026 to invest about $2 billion in xAI, as reported from its own quarterly update."
+ },
+ {
+  "id": "spacex",
+  "label": "SpaceX",
+  "kind": "company",
+  "note": "Took over xAI in an all-stock deal in February 2026, as reported, and raised $75.0 billion in its own public offering in June 2026."
+ },
+ {
+  "id": "pronomos",
+  "label": "Pronomos Capital",
+  "kind": "fund",
+  "note": "A venture fund for new cities and special zones; lists Próspera and Praxis in its portfolio."
  }
 ]
