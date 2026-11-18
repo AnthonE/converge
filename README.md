@@ -44,6 +44,11 @@ No person has yet re-read the sources; models did every step. Two tools make tha
   it: `python3 tools/reread.py mark URL holds` (or `corrected`, `removed`, `"could not read"`). This writes
   `data/reread.json`; the viewer then shows "re-read by a person" beside the machine's flag, and Start here
   shows the count.
+- `python3 tools/review.py` does the same in a browser, one page at a time: it shows what the map takes from the
+  page and what the automatic pre-check found, and saves each answer (`holds`, `does not hold` with a note,
+  `could not read`) to `data/reread.json`. Run `python3 tools/precheck.py` first: it looks for every quoted
+  passage on its page, so a reading where every word was found is a quick look at the context. A match is never
+  counted as a person's reading.
 - `python3 tools/links.py` checks that every cited page still answers and writes `dist/links.md` (read-only;
   `gone` means 404, 410 or no such host; `refused` means the site turned away an automated check). Archiving the
   live pages in the Wayback Machine is left to the operator, because it sends each address to the Internet Archive.
@@ -69,19 +74,30 @@ No person has yet re-read the sources; models did every step. Two tools make tha
 
 ## Publish it
 
-**Vercel.** Import the repository at vercel.com/new. `vercel.json` sets the build (`python3 tools/package.py`),
-the output folder (`dist/site`) and the security headers; there is nothing to choose. Every push to `main` redeploys,
-and every pull request gets its own preview link. To let search engines in, add the environment variable
-`PUBLIC` = `true` in the project's settings and redeploy. The workflow still validates every push and
-pull request; it publishes to GitHub Pages only if you ask it to (below), so there is one copy online.
+**Cloudflare Pages (recommended).** Free for a static site with no bandwidth cap, it reads the `_headers` file the
+package writes (the security headers), and Cloudflare Access can put an email login in front of the site while
+it is private. The workflow builds, tests and uploads; nothing is built on Cloudflare's side. One-time setup:
 
-**GitHub Pages** (instead of Vercel). Set the repository variable `PAGES` to `true` and choose Settings → Pages →
-Source: GitHub Actions. Pushing to `main` then runs the workflow in `.github/workflows/pages.yml`: it validates the data, builds the site and
-publishes it to GitHub Pages. The site is kept out of search engines until you set the repository variable
-`PUBLIC` to `true` (Settings → Secrets and variables → Actions → Variables). Elsewhere, run
-`python3 tools/package.py` and upload `dist/site/` to any static host (Netlify and Cloudflare Pages read its
-`_headers` file).
+1. In Cloudflare: Workers & Pages → Create → Pages → upload directly, and name the project `ideals-map`
+   (production branch `main`). Note the account ID.
+2. My Profile → API Tokens → Create Token, with the permission Account → Cloudflare Pages → Edit.
+3. In this repository: Settings → Secrets and variables → Actions. Add the secrets `CLOUDFLARE_API_TOKEN` and
+   `CLOUDFLARE_ACCOUNT_ID`, and the variable `CLOUDFLARE` = `true` (and `CLOUDFLARE_PROJECT` if the project has
+   another name).
+
+Every push to `main` then publishes the site, and every pull request gets its own preview address. To keep it
+private, add a Cloudflare Access application for the site's address with a policy that lets in only the emails
+you choose. To let search engines in, set the variable `PUBLIC` = `true`.
+
+**Elsewhere.** Vercel reads `vercel.json` (import the repository at vercel.com/new). GitHub Pages: set the
+variable `PAGES` = `true` and choose Settings → Pages → Source: GitHub Actions (on a private repository this needs
+a paid GitHub plan, and GitHub Pages ignores `_headers`). Any static host: run `python3 tools/package.py` and
+upload `dist/site/`.
+
+**Checked every week.** `.github/workflows/sources.yml` runs the link check and the quote pre-check each Monday,
+keeps the reports as a download on the run's page, and fails (so GitHub emails the owner) when a cited page is gone.
 
 ## Licence
 
-Not yet chosen.
+Code: MIT (`LICENSE`). Data and the map's own text: CC BY 4.0 (`LICENSE-DATA.md`). Quoted words belong to their
+authors and are not covered.

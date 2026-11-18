@@ -95,6 +95,7 @@ def main():
     graph['reread'] = S.ledger()
     json.dump(graph, open(os.path.join(a.out, 'graph.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
     shutil.copy(os.path.join(S.ROOT, 'DATA.md'), os.path.join(a.out, 'DATA.md'))
+    shutil.copy(os.path.join(S.ROOT, 'LICENSE-DATA.md'), os.path.join(a.out, 'LICENSE-DATA.md'))
     zp = os.path.join(a.out, 'ideals-map-data.zip')
     with zipfile.ZipFile(zp, 'w', zipfile.ZIP_DEFLATED) as z:
         for f in sorted(os.listdir(a.out)):

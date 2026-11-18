@@ -43,6 +43,27 @@ and upload the new folder over the old one.
 """
 
 
+# For AI systems and their users: where the machine-readable record is, and how to read it.
+LLMS = """# The Ideals Map
+
+> A public record of what the movements around AI say they serve: who carries each ideal, what has happened, who
+> pays and who evaluates, how each ideal takes hold, what older traditions called it, and claims in circulation
+> with the evidence for each. A record, not a verdict.
+
+Every quotation and event carries its source and a checking flag. A claim on the Watch is not a finding; an
+unchecked claim is not false; a dotted link is the project's reading. The records were gathered and checked with
+AI models made by Anthropic, which is itself on the map; data/sources.csv says which cited pages a person has
+re-read so far.
+
+## Data
+
+- [Guide to every table and field](data/DATA.md)
+- [The whole map as one JSON file](data/graph.json)
+- [CSV tables, zipped](data/ideals-map-data.zip)
+- [Licence: CC BY 4.0 for the data; quoted words belong to their authors](data/LICENSE-DATA.md)
+"""
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--public', action='store_true', help='let search engines index it and drop the "private prototype" tag')
@@ -80,6 +101,7 @@ def main():
         sys.exit(r.stdout + r.stderr)
     open(os.path.join(a.out, '_headers'), 'w').write('\n'.join(headers) + '\n')
     open(os.path.join(a.out, 'robots.txt'), 'w').write(robots)
+    open(os.path.join(a.out, 'llms.txt'), 'w').write(LLMS)
     open(os.path.join(a.out, 'README.txt'), 'w').write(README.format(visibility=visibility, flag=' --public' if a.public else ''))
     z = os.path.join(os.path.dirname(a.out), 'ideals-map-site.zip')
     with zipfile.ZipFile(z, 'w', zipfile.ZIP_DEFLATED) as fh:

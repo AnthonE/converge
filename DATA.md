@@ -13,7 +13,8 @@ them; do not add them up, because some are pledges, recommendations or totals ov
 itself on the map (as an evaluated company, a funder and a party to a reported dispute). `sources.csv` shows, for
 every cited page, whether a person has re-read it yet. Until that count is high, treat every row as a lead.
 
-**Licence.** Not yet chosen. Ask before reusing beyond quotation.
+**Licence.** CC BY 4.0 for the data and the map's own text (see `LICENSE-DATA.md` in the repository). Quoted
+words belong to their authors and are not covered.
 
 ## Files
 

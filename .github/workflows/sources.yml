@@ -1,0 +1,43 @@
+name: Check the sources
+
+# Every Monday: is every cited page still there, and are the quoted words still on it?
+# The reports are kept as a download on the run's page. The run fails (and GitHub emails the owner)
+# when a cited page is gone, so a dead source is noticed within a week.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get install -y poppler-utils
+      - run: python tools/links.py
+      - run: python tools/precheck.py
+      - run: python tools/reread.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-reports
+          path: |
+            dist/links.md
+            dist/links.json
+            dist/precheck.json
+            dist/reread.md
+            dist/reread.csv
+      - name: Fail if a cited page is gone
+        run: |
+          python - <<'EOF'
+          import json, sys
+          gone = [u for u, r in json.load(open('dist/links.json'))['pages'].items() if r['status'] == 'gone']
+          for u in gone:
+              print('gone:', u)
+          sys.exit(1 if gone else 0)
+          EOF
