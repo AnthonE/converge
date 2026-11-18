@@ -226,3 +226,13 @@ th { color: var(--ink-2); font-weight: 600; }
   .who-serves td { border-top: none; padding: 2px 0; }
   .who-serves tr { border-top: 1px solid var(--border); padding: 8px 0; }
 }
+
+/* The scored chain: three small rows, one scale each. Ink only; text stays in text tokens. */
+.chain-fig { margin: 8px 0 12px; }
+.chain-chart { width: 100%; height: auto; display: block; color: var(--ink); }
+.chain-chart .cc-label, .chain-chart .cc-axis { font-size: 12px; fill: var(--ink-2); }
+.chain-chart .cc-base { stroke: var(--border); stroke-width: 1; }
+.chain-chart .cc-line { fill: none; stroke: var(--ink-2); stroke-width: 2; stroke-linejoin: round; }
+.chain-chart .cc-dot circle:not(.cc-hit) { fill: var(--ink); stroke: var(--surface); stroke-width: 2; }
+.chain-chart .cc-hit { fill: transparent; }
+.chain-chart .cc-dot:hover circle:not(.cc-hit) { r: 6; }

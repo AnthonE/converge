@@ -4584,5 +4584,29 @@
   "to": "land-sf-party-2026",
   "type": "bears_fruit",
   "sentence": "In February 2026 a San Francisco party welcomed Land; a reporter describes balloons reading “333”, the number Crowley's text gives the demon Choronzon."
+ },
+ {
+  "from": "ftx-alameda",
+  "to": "anthropic",
+  "type": "funds",
+  "sentence": "Anthropic announced on 29 April 2022 a $580 million Series B, “led by Sam Bankman-Fried, CEO of FTX”. The figure is the round total. FTX's bankruptcy estate later sold the stake: 29.5 million shares to 24 buyers in March 2024, and the remaining 15 million shares for about $30 each in June 2024 (The Block, from court filings).",
+  "amount": "$580 million (Series B round total)",
+  "date": "2022-04-29",
+  "source": "Anthropic raises Series B to build safe, reliable AI",
+  "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "coefficient-giving",
+  "to": "openai",
+  "type": "funds",
+  "sentence": "Open Philanthropy's 2017 grant record, as relayed by the Donations List Website: $30 million to OpenAI, accompanied by Holden Karnofsky joining OpenAI's board. The grant page says “OpenAI initially approached Open Philanthropy about potential funding for safety research, and we responded with the proposal for this grant.”",
+  "amount": "$30,000,000",
+  "date": "2017-03",
+  "source": "Open Philanthropy grant record, relayed by the Donations List Website",
+  "url": "https://donations.vipulnaik.com/donee.php?donee=OpenAI",
+  "verified": "secondary",
+  "kind": "documented"
  }
 ]
