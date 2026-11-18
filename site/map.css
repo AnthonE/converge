@@ -199,3 +199,8 @@ th { color: var(--ink-2); font-weight: 600; }
 .claim-on { font-size: 14px; color: var(--ink-2); }
 .claim > h3 { text-transform: none; letter-spacing: normal; color: var(--ink); }
 .claim-standing { font-size: 14px; color: var(--ink-2); margin: 2px 0 8px; }
+.claim-why { font-size: 14px; color: var(--ink-2); margin: 2px 0 8px; }
+.claim .travelled { padding-left: 22px; }
+.claim .travelled .step { margin: 6px 0; }
+.claim .travelled time { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.claim .step-note { font-size: 13px; color: var(--ink-2); margin: 2px 0 0; }

@@ -222,10 +222,24 @@ const path = require('path');
     const said = await page.locator('#the-watch .claim-said q').allTextContents();
     const want = graph.watch.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.title.localeCompare(b.title)).map(w => w.claim);
     if (said.join('|') !== want.join('|')) fail('a Watch claim does not show its words');
-    const dates = await page.locator('#the-watch .claim time').allTextContents();
+    const dates = await page.locator('#the-watch .claim-head time').allTextContents();
     if (dates.length !== graph.watch.length) fail(`the Watch lists ${dates.length} of ${graph.watch.length} claims`);
     if (dates.join() !== dates.slice().sort().reverse().join()) fail('the Watch is not newest first');
     if ((await page.locator('#the-watch .claim-status').count()) !== graph.watch.length) fail('a Watch claim shows no status');
+    // How it travelled: every step shows, in date order, with what changed; a reason shows where one is given.
+    for (const w of graph.watch.filter(x => (x.travelled || []).length)) {
+      const steps = await page.locator(`#watch-${w.id} .travelled .step`).count();
+      if (steps !== w.travelled.length) fail(`${w.id}: ${steps} of ${w.travelled.length} travelled steps show`);
+      const words = await page.locator(`#watch-${w.id} .travelled .step q`).allTextContents();
+      if (words.join('|') !== w.travelled.map(t => t.said).join('|')) fail(`${w.id}: a travelled step does not show its words`);
+      const changed = await page.locator(`#watch-${w.id} .travelled .step-changed`).count();
+      if (changed !== w.travelled.filter(t => t.changed).length) fail(`${w.id}: a travelled step hides what changed`);
+      if (await page.locator(`#watch-${w.id} .travelled i`).count()) fail(`${w.id}: travelled data was inserted as markup`);
+    }
+    for (const w of graph.watch.filter(x => x.why)) {
+      const why = await page.locator(`#watch-${w.id} .claim-why`).textContent().catch(() => '');
+      if (!why.includes(w.why)) fail(`${w.id}: the reason it is here does not show`);
+    }
     const w0 = graph.watch[0];
     await page.evaluate(x => { location.hash = '#watch/' + x; }, w0.id);
     await page.waitForFunction(x => document.activeElement && document.activeElement.id === 'watch-' + x, w0.id);

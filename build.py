@@ -303,7 +303,7 @@ def validate(g):
         if not ID.match(str(wid)):
             err(f'watch/{wid}: id must be lower-case letters, digits and hyphens')
         bad_list = False
-        for k in ('checks', 'responses', 'open', 'cautions', 'touches'):
+        for k in ('checks', 'responses', 'open', 'cautions', 'touches', 'travelled'):
             if k in w and not isinstance(w[k], list):
                 err(f'watch/{wid}: "{k}" must be a list')
                 bad_list = True
@@ -332,7 +332,24 @@ def validate(g):
         for t in w.get('touches') or []:
             if t not in ids:
                 err(f'watch/{wid}: touches unknown id {t}')
-        voice = [w.get('title', ''), w.get('standing', ''), w.get('claimed_by', '')] + [c.get('what', '') for c in w.get('checks') or [] if isinstance(c, dict)] + \
+        # How it travelled: each step in date order, with who said it, their exact words and where; every step after
+        # the first says, neutrally, what changed from the step it cites. The map does not say which version is right.
+        last = ''
+        for i, t in enumerate(w.get('travelled') or []):
+            if not isinstance(t, dict) or not all(str(t.get(k) or '').strip() for k in ('date', 'who', 'said', 'source')):
+                err(f'watch/{wid}: a travelled step needs date, who, said and source')
+                continue
+            if not DATE.match(str(t['date'])) or str(t['date']) < last:
+                err(f'watch/{wid}: travelled steps need valid dates, oldest first')
+            last = str(t['date'])
+            if i and not str(t.get('changed') or '').strip():
+                err(f'watch/{wid}: a travelled step after the first must say what changed')
+            if t.get('verified') and t['verified'] not in VERIFIED:
+                err(f'watch/{wid}: a travelled step has a bad verified flag')
+            if t.get('url') and not URL.match(t['url']):
+                err(f'watch/{wid}: a travelled step has a bad url')
+        voice = [w.get('title', ''), w.get('standing', ''), w.get('claimed_by', ''), w.get('why', '')] + \
+            [t.get(k, '') for t in w.get('travelled') or [] if isinstance(t, dict) for k in ('who', 'cites', 'changed')] + [c.get('what', '') for c in w.get('checks') or [] if isinstance(c, dict)] + \
             [r.get(k, '') for r in w.get('responses') or [] if isinstance(r, dict) for k in ('who', 'what')] + list(w.get('cautions') or []) + list(w.get('open') or [])
         for text in voice:
             if LABEL_BAN.search(QUOTED.sub('', str(text))):
