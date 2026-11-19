@@ -734,5 +734,54 @@
   "kind": "organization",
   "status": "active; read November 2026",
   "note": "Co-founded by Tristan Harris, who signed the MisAnthropic Statement. Its tax returns do not name donors."
+ },
+ {
+  "id": "silent-consensus-essay",
+  "label": "The essay that named the silent consensus",
+  "kind": "discourse",
+  "status": "published 18 November 2026",
+  "note": "Dean Ball named “the silent consensus” in an essay on OpenAI’s site and argued against it: the view that the forfeiture of human primacy is inevitable, held both by some who think that future good and by some who oppose it. The view is wider than this map’s succession ideal. The essay names no person, company or movement as holding it; it says “many of my colleagues” think that future likely. A note on the page calls the views his own, not OpenAI’s.",
+  "words": [
+   {
+    "speaker": "Dean Ball",
+    "quote": "the common thread that constitutes the silent consensus is the termination of human primacy in the world as we know it",
+    "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
+    "url": "https://openai.com/index/the-silent-consensus/",
+    "verified": "secondary",
+    "date": "2026-11-18"
+   },
+   {
+    "speaker": "Dean Ball",
+    "quote": "I despise the silent consensus. I reject the forfeiture of human primacy.",
+    "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
+    "url": "https://openai.com/index/the-silent-consensus/",
+    "verified": "secondary",
+    "date": "2026-11-18"
+   },
+   {
+    "speaker": "Dean Ball",
+    "quote": "The easy answer is because I am a human being, and I am indeed an unapologetic human chauvinist.",
+    "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
+    "url": "https://openai.com/index/the-silent-consensus/",
+    "verified": "secondary",
+    "date": "2026-11-18"
+   },
+   {
+    "speaker": "Dean Ball",
+    "quote": "a person who has read every letter in your family’s attic does not somehow become a member of your family",
+    "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
+    "url": "https://openai.com/index/the-silent-consensus/",
+    "verified": "secondary",
+    "date": "2026-11-18"
+   },
+   {
+    "speaker": "Dean Ball",
+    "quote": "We can build agents whose permissions are intelligible and limited, whose actions can be audited, and whose authority users can withdraw.",
+    "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
+    "url": "https://openai.com/index/the-silent-consensus/",
+    "verified": "secondary",
+    "date": "2026-11-18"
+   }
+  ]
  }
 ]

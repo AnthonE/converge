@@ -1052,5 +1052,15 @@
   "source": "VICE (Nick Dove), 13 Feb 2026, read in a syndicated copy; the hosts' event listing; The New Yorker, 18 Feb 2026; Crowley, The Vision and the Voice (1909)",
   "url": "https://www.newyorker.com/culture/the-lede/silicon-valleys-favorite-doomsaying-philosopher",
   "verified": "secondary"
+ },
+ {
+  "id": "silent-consensus-2026-11",
+  "date": "2026-11-18",
+  "label": "Dean Ball names “the silent consensus” in an essay on OpenAI’s site and argues against it",
+  "what": "The essay, adapted (its note says) from a lecture in the Vik-Bailey Lecture series at Harvard, defines the silent consensus as the view that “the forfeiture of human primacy over world affairs is inevitable”, held by some who think it good and by others “resigned to its inevitability”. Ball calls himself “an unapologetic human chauvinist” and rests human primacy on “our past”. Of the claim that machines are heirs he writes “in some sense, they are”, and denies that this makes them family. He asks that people be “tied to the actions of their agents”, and that any ability for agents to form corporations, own property or litigate be granted “with extraordinary caution, if at all”. The note says the post reflects his own views, “not necessarily the views of OpenAI or any of its other employees”.",
+  "kind": "documented",
+  "source": "The Silent Consensus (OpenAI, Intelligence Age), 18 Nov 2026, read in a copy of the page; an automated fetch of the page was refused",
+  "url": "https://openai.com/index/the-silent-consensus/",
+  "verified": "secondary"
  }
 ]
