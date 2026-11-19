@@ -1,0 +1,58 @@
+{
+ "acceleration": {
+  "file": "acceleration.png",
+  "hash": "4a12be2b82d6e023"
+ },
+ "basilisk": {
+  "file": "basilisk.png",
+  "hash": "8f08582d61390937"
+ },
+ "capture": {
+  "file": "capture.png",
+  "hash": "462da6a54914dd65"
+ },
+ "companion": {
+  "file": "companion.png",
+  "hash": "ab58f138d0e42068"
+ },
+ "escape-death": {
+  "file": "escape-death.png",
+  "hash": "b3e8f6fb088aeeba"
+ },
+ "exit": {
+  "file": "exit.png",
+  "hash": "0968f08c46bf46c1"
+ },
+ "feed": {
+  "file": "feed.png",
+  "hash": "3827974750cb8271"
+ },
+ "home": {
+  "file": "home.png",
+  "hash": "93f1085feb0216f6"
+ },
+ "made-saviour": {
+  "file": "made-saviour.png",
+  "hash": "639eed210e4363b2"
+ },
+ "no-watcher": {
+  "file": "no-watcher.png",
+  "hash": "470a408c614eadfb"
+ },
+ "oracle": {
+  "file": "oracle.png",
+  "hash": "89cf486792ef8816"
+ },
+ "revealed": {
+  "file": "revealed.png",
+  "hash": "8bd4ef601770fb43"
+ },
+ "revere": {
+  "file": "revere.png",
+  "hash": "9f7b5dde6a37d0f9"
+ },
+ "succession": {
+  "file": "succession.png",
+  "hash": "2006193c86d9f466"
+ }
+}

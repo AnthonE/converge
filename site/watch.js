@@ -15,6 +15,7 @@
     'not found': 'not found', 'could not read': 'could not be read'
   };
   ns.watchStatus = STATUS;
+  ns.rereadMark = function (ui, ix, w) { return rereadMark(ui, ix, w); };
   ns.hasWatch = function (ix) { return (ix.g.watch || []).length > 0; };
 
   /* Small multiples for a scored chain: one row per measure, steps in date order, each row on its own scale.

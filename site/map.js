@@ -570,7 +570,18 @@
     document.getElementById('mode-cards').addEventListener('click', function () { idealsMode = 'cards'; go(null); });
     document.getElementById('mode-drawing').addEventListener('click', function () { idealsMode = 'drawing'; go(null); });
     /* The date the record last changed, from the build. */
-    if (g.updated) { var up = document.getElementById('updated'); up.textContent = 'Updated ' + ns.longDate(g.updated); up.hidden = false; }
+    if (g.updated) {
+      var up = document.getElementById('updated'); up.textContent = 'Updated ' + ns.longDate(g.updated); up.hidden = false;
+      /* What's new: the cards view's newest claims and events. */
+      var wn = h('button', 'linkbtn whats-new', 'What’s new'); wn.type = 'button';
+      wn.addEventListener('click', function () {
+        if (state.view !== 'cards') { idealsMode = 'cards'; go(null); }
+        var el = document.getElementById('newest');
+        if (el) { el.scrollIntoView({ block: 'start' }); el.focus({ preventScroll: true }); }
+      });
+      up.parentNode.insertBefore(wn, up.nextSibling);
+      up.parentNode.insertBefore(document.createTextNode(' '), wn);
+    }
     /* Said plainly while it is true: the map went out before a person had re-read its riskiest sources. */
     var s = g.sources || {}, dn = document.getElementById('draft-note'), m = g.meta || {};
     if (s.gate && s.gate_reread < s.gate) {
@@ -599,7 +610,8 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     var inline = document.getElementById('graph-data');
-    if (inline) { boot(JSON.parse(inline.textContent)); return; }
+    /* The single-file copy carries no plain pages, feed or data folder: their links go. */
+    if (inline) { Array.prototype.forEach.call(document.querySelectorAll('.site-only'), function (e) { e.hidden = true; }); boot(JSON.parse(inline.textContent)); return; }
     fetch('graph.json').then(function (r) { return r.json(); }).then(boot).catch(function (err) {
       document.getElementById('panel').textContent = 'Could not load graph.json: ' + err.message;
     });
