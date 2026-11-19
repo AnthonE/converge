@@ -16,7 +16,12 @@ attributed. An unchecked claim is not false, and a claim on the Watch is not a f
 - Run `python3 build.py --check`. It must pass. It refuses labels in the map's own voice, working notes in reader
   text (TODO, "per the checker", "dossier" and the like), relayed words flagged as primary, Watch entries without
   who is speaking and a status, duplicate ids and links to a carrier's own sales or recruitment site.
-- If you touched `site/`, also run the browser test (README, "Test the viewer").
+- If you touched `site/` or `tools/pages.py`, also run the browser test and the plain-pages test (README, "Test the
+  viewer"). If you changed an ideal's name, statement or lead quotation, redraw the preview images
+  (`python3 tools/cards.py`); a stale image is left unused, never shown.
+- Plain pages, previews and `llms-full.txt` take every word from the data or from fixed sentences in
+  `tools/pages.py`; never write a description, title or preview text by hand. A Watch claim, an allegation or an
+  offshoot stays out of search and AI text until a person has re-read its sources: do not loosen that gate.
 - Commit and push to `main` only when the operator asks; otherwise use a branch and a pull request.
 
 ## Checking and flags

@@ -1,0 +1,56 @@
+name: A reply from someone on the map
+description: You are named on the map, or speak for a group, company or body that is. Your reply goes on the record in your own words.
+title: "Reply: "
+labels: ["reply"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every record on this map says who is speaking, quotes them and links the source. If a record is about you or
+        a body you speak for, your reply belongs beside it. It is quoted exactly as you write it, under your name or
+        your body's, and shown with the record it answers. It does not have to agree with anything here.
+
+        Before it goes on the map, it is confirmed to come from you: the easiest way is to post the same words on a
+        page or account that is already known to be yours and link it below. Otherwise the person who keeps the map will
+        ask you to confirm it another way.
+        **Do not name private people**; describe them by role.
+  - type: input
+    id: record
+    attributes:
+      label: Which record
+      description: The name, event or Watch claim as it appears on the map, or its id (for example `made-saviour-e1`).
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who is replying
+      description: Your name and, if you speak for one, the group, company or body, as you want them shown.
+    validations:
+      required: true
+  - type: textarea
+    id: reply
+    attributes:
+      label: Your reply
+      description: These words are quoted exactly. A correction, the other side, context, or a statement you have already made elsewhere.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where you published it (optional, but it confirms the words are yours)
+      description: A link to the same words on your own site, account or filing.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources the record should cite (optional)
+      description: Any page that shows what the record says is wrong or missing.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you send
+      options:
+        - label: I am the person named, or I speak for the group or body named.
+          required: true
+        - label: I have not named anyone who is not a public figure.
+          required: true

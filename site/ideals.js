@@ -84,6 +84,34 @@
     return art;
   }
 
+  /* The newest on the record: the latest claims on the Watch and dated events, so a returning reader sees what moved.
+     Search engines are asked to take no snippet from it: claims wait for a person's re-read before they are indexed. */
+  function newest(ix, ui, nav) {
+    var items = [];
+    (ix.g.watch || []).forEach(function (w) { if (w.date) items.push({ date: String(w.date), w: w }); });
+    (ix.g.fruits || []).forEach(function (f) { if (f.date) items.push({ date: String(f.date), f: f }); });
+    if (!items.length) return null;
+    items.sort(function (a, b) { return b.date.localeCompare(a.date); });
+    var s = ui.section('Newest on the record', 'The latest claims on the Watch and dated events. A claim on the Watch is not a finding.');
+    s.classList.add('newest');
+    s.setAttribute('data-nosnippet', '');
+    var ul = ui.h('ul', 'links rec-list');
+    items.slice(0, 4).forEach(function (it) {
+      var li = ui.h('li'), x = it.w || it.f;
+      var b = ui.h('button', 'linkbtn', it.w ? it.w.title : (x.label || x.what)); b.type = 'button';
+      b.addEventListener('click', function () { if (it.w) nav.goWatch(x.id); else nav.goRecord(x.id); });
+      /* One quiet line of when and how it stands, then the title. */
+      var mark = it.w ? (ns.rereadMark ? ns.rereadMark(ui, ix, x) : null) : ui.badge(x.verified, x.url);
+      var meta = [it.date].concat(it.w ? ['claim on the Watch', (ns.watchStatus || {})[x.status] || x.status] : [x.kind]);
+      if (mark) meta.push(mark.textContent);
+      ui.add(li, ui.h('span', 'newest-meta', meta.join(' · ')), b);
+      ui.add(ul, li);
+    });
+    var more = ui.h('button', 'linkbtn', 'The whole timeline →'); more.type = 'button';
+    more.addEventListener('click', function () { nav.goView('timeline'); });
+    return ui.add(s, ul, ui.add(ui.h('p'), more));
+  }
+
   ns.renderCards = function (box, ix, ui, nav) {
     while (box.firstChild) box.removeChild(box.firstChild);
     var m = ix.g.meta || {}, ideals = ix.g.ideals || [];
@@ -95,6 +123,9 @@
     var grid = ui.h('div', 'cards');
     ideals.forEach(function (d) { ui.add(grid, card(ui, nav, ix, d)); });
     ui.add(box, grid);
+    /* Below the cards, so a phone still opens on them; "What's new" in the header jumps here. */
+    var nw = newest(ix, ui, nav);
+    if (nw) { nw.id = 'newest'; nw.tabIndex = -1; ui.add(box, nw); }
 
     var off = (ix.g.offshoots || []).slice().sort(function (a, b) { return a.label.localeCompare(b.label); });
     if (off.length) {

@@ -32,6 +32,20 @@ by where you are coming from, every part of the map, the words it uses and what 
 **Timeline** lists every dated event and Watch claim, newest first. The search box finds any name, event or claim
 and opens it where it lives. Every record and every Watch claim ends with a line to cite it.
 
+**Every record has a page of its own.** A published copy carries `r/<id>/` for every ideal, person, group, event,
+funder, company, evaluator, method, older text and Watch claim, and `r/` lists them all. Each page is
+plain HTML with no script: the record's words, sources, flags and threads, a line to cite it, a way to reply, and a
+link into the map. It is what a search, a shared link or an AI system reaches: its title, description and preview
+image come from the record's own words (a page about someone leads with their own words where the map has them),
+and it carries citation markup (schema.org, with no rating of any claim). `sitemap.xml` lists the pages search
+engines may index and `llms-full.txt` gives the same records as plain text, every quotation with its speaker, source
+and flag. `tools/pages.py` writes all of it; `tools/package.py` runs it.
+
+**The re-read gate.** A claim on the Watch, an allegation or an offshoot stays out of search engines (noindex), out
+of the sitemap and out of `llms-full.txt` until a person has re-read every page it cites; then it goes in on the
+next build, by itself. Until then its page is published, can be shared and answered, and says it is waiting. Other
+pages list it with no search snippet (`data-nosnippet`) and a `nofollow` link. `tools/package.py` prints how many wait.
+
 **To follow it:** a published copy carries `feed.xml`, an Atom feed of the newest Watch claims and events
 (`tools/feed.py`, run by `tools/package.py`). The header says when the data last changed.
 
@@ -70,6 +84,11 @@ No person has yet re-read the sources; models did every step. These tools make t
 
 ## Change it
 
+- **Replies from the people on the map.** Every record about a party (everything but the old texts, patterns and
+  mechanisms) and every Watch claim asks "Is this about you, or a group you speak for?" and links the reply form
+  (`.github/ISSUE_TEMPLATE/reply.yml`) with the record filled in. A reply goes under the record's `responses` (or
+  `words`) in the replier's own words once it is confirmed to come from them: `primary` when the same words are on
+  their own page, otherwise `secondary` with a caution saying how it was confirmed.
 - **Claims and corrections** come in as issues: the forms in `.github/ISSUE_TEMPLATE/` ask for the exact words,
   who said them, a link and the date, and refuse private names. Set `contribute` in `data/meta.json` to the
   repository's new-issue page once it is public (for example `https://github.com/OWNER/REPO/issues/new/choose`):
@@ -95,8 +114,13 @@ No person has yet re-read the sources; models did every step. These tools make t
   Watch shows them together, folded, under that note.
 - **An ideal's card** shows its first quotation. Where that is not a voice for the ideal (a critic, say), set `lead`
   to the index of the one to show instead; the speaker is always named.
+- **Preview images** (`site/cards/`): one for the site and one per ideal, drawn by `python3 tools/cards.py` (needs
+  Node and Playwright, so the images are kept in the repository). `cards.json` records the words each was drawn from;
+  when an ideal's name, statement or lead quotation changes, its image stops being used (the site's image stands in)
+  until you run `tools/cards.py` again.
 - **Test the viewer**: `python3 test/make_fixture.py && python3 build.py --data test/fixture --no-site --out
-  dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright). The phone re-read page:
+  dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright), then
+  `python3 test/pages.py dist/fixture.html` for the plain pages (Python only). The phone re-read page:
   `python3 tools/package.py && node test/reread.js dist/site`.
 
 ## Publish it
@@ -135,6 +159,16 @@ browser on every push and pull request, and can upload to Cloudflare Pages itsel
 **Checked every week.** `.github/workflows/sources.yml` runs the link check and the quote pre-check each Monday,
 keeps the reports as a download on the run's page, and fails (so GitHub emails the owner) when a cited page is
 gone. Until Actions can run, run `python3 tools/links.py` and `python3 tools/precheck.py` by hand or from a session.
+
+## Tell the people on it
+
+`python3 tools/notify.py` writes `dist/notify.md` (not published): for each public figure, group, company, funder
+and evaluator with a page, those that Watch claims touch first, the page's address and a short draft note inviting a
+reply, with the disclosure from `data/meta.json`. It sends nothing; contact addresses are not in the data. Sending
+is outreach to bodies on the map, so update the disclosure when the first note goes out.
+
+**A domain.** Every absolute address (canonical links, preview images, the sitemap, the feed, citations) comes from
+`site_url` in `data/meta.json`. To move to a domain of your own, point it at the host and change that one line.
 
 ## Licence
 

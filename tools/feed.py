@@ -4,9 +4,9 @@
   python3 tools/feed.py                  -> dist/feed.xml, from site/graph.json (run build.py first)
   python3 tools/feed.py --out PATH       -> PATH
 
-tools/package.py calls it, so a published copy carries feed.xml beside index.html. Each entry links to the claim
-or the record in the viewer. Links are absolute when meta.json gives the site's address as "site_url"; otherwise
-they are relative to the feed, which feed readers resolve against the feed's own address.
+tools/package.py calls it, so a published copy carries feed.xml beside index.html. Each entry links to the claim's or
+the record's own page (r/<id>/, tools/pages.py). Links are absolute when meta.json gives the site's address as
+"site_url"; otherwise they are relative to the feed, which feed readers resolve against the feed's own address.
 """
 import argparse, json, os, re
 from xml.sax.saxutils import escape
@@ -61,7 +61,8 @@ def feed(g):
              f'  <updated>{updated}</updated>',
              f'  <author><name>{escape(title)}</name></author>']
     for s, kind, rid, name, summary, frag in entries(g):
-        link = home + frag
+        # The entry opens the record's own page (tools/pages.py), which a shared link previews; the id stays as it was.
+        link = home + 'r/' + rid + '/'
         rec_id = base + '/' + frag if base else f'urn:ideals-map:{kind}:{rid}'
         lines += ['  <entry>',
                   f'    <title>{escape(name)}</title>',

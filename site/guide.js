@@ -39,11 +39,14 @@
 
   /* Under every record and every claim: how to cite it and, once the map takes issues (meta.contribute), how to
      answer it. A GitHub new-issue address opens the correction form with the record filled in. */
-  function replyUrl(base, o) {
+  function replyUrl(base, o, form) {
     var gh = /^(https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/new)/.exec(base);
     if (!gh) return base;
-    return gh[1] + '?template=correction.yml&title=' + encodeURIComponent('Correction: ' + o.title) + '&record=' + encodeURIComponent(o.id + ' (' + o.title + ')');
+    var lead = form === 'reply.yml' ? 'Reply: ' : 'Correction: ';
+    return gh[1] + '?template=' + (form || 'correction.yml') + '&title=' + encodeURIComponent(lead + o.title) + '&record=' + encodeURIComponent(o.id + ' (' + o.title + ')');
   }
+  /* Records about a party, who may want to answer: everything but the old texts, the patterns and the mechanisms. */
+  var NOT_A_PARTY = { text: true, pattern: true, mechanism: true };
   ns.citeText = function (ix, o) {
     var m = ix.g.meta || {};
     var base = m.site_url ? String(m.site_url).replace(/\/?$/, '/') : /^https?:$/.test(location.protocol) ? location.origin + location.pathname : '';
@@ -62,8 +65,15 @@
       ui.add(p, ui.h('span', null, ' '), b);
     }
     ui.add(foot, p);
-    if (m.contribute) ui.add(foot, ui.add(ui.h('p', 'reply-line'), ui.link(replyUrl(m.contribute, o), 'Reply to this record or correct it'),
-      ui.h('span', null, ': a party’s response, a missing side, or a source that does not say what the map says. Do not name private people.')));
+    if (m.contribute) {
+      var n = ix.byId[o.id];
+      /* Everyone on the map can answer it: their reply goes on the record in their own words. */
+      if (!(n && NOT_A_PARTY[n.type])) ui.add(foot, ui.add(ui.h('p', 'reply-line reply-party'), ui.h('span', 'reply-ask', 'Is this about you, or a group you speak for? '),
+        ui.link(replyUrl(m.contribute, o, 'reply.yml'), 'Send your reply'),
+        ui.h('span', null, '. It goes on the record beside this, in your own words and under your name, once it is confirmed to come from you.')));
+      ui.add(foot, ui.add(ui.h('p', 'reply-line'), ui.link(replyUrl(m.contribute, o, 'correction.yml'), 'Correct this record'),
+        ui.h('span', null, ': a missing side, or a source that does not say what the map says. Do not name private people.')));
+    }
     return foot;
   };
 

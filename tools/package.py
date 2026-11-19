@@ -15,8 +15,12 @@ Added files:
   README.txt   how to deploy
   reread.html  the re-read, on a phone: answers are kept on the phone and saved to the repository as a commit
   feed.xml     an Atom feed of the newest claims on the Watch and events on the map (tools/feed.py)
+  r/           every record as a plain page of its own, for search, shared links and AI systems (tools/pages.py)
+  sitemap.xml  the pages search engines may index (public copies with site_url only)
+  llms-full.txt  the same records as plain text, each quotation with its source and flag
+  cards/       the preview images shared links show (tools/cards.py draws them)
 """
-import argparse, json, os, shutil, subprocess, sys, zipfile
+import argparse, html as html_mod, json, os, shutil, subprocess, sys, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -58,6 +62,12 @@ unchecked claim is not false; a dotted link is the project's reading. The record
 AI models made by Anthropic, which is itself on the map; data/sources.csv says which cited pages a person has
 re-read so far.
 
+## Records
+
+- [Every record as a plain page](r/): one page per ideal, person, group, event, funder, evaluator, method and claim
+- [Every record as plain text](llms-full.txt): each quotation with its speaker, source and checking flag. Claims on
+  the Watch and allegations are added once a person has re-read their sources.
+
 ## Data
 
 - [Guide to every table and field](data/DATA.md)
@@ -65,6 +75,47 @@ re-read so far.
 - [CSV tables, zipped](data/ideals-map-data.zip)
 - [Licence: CC BY 4.0 for the data; quoted words belong to their authors](data/LICENSE-DATA.md)
 """
+
+
+HOME_DESC = ('What the people building and promoting AI say it is for, who says it, what has happened and who pays, with the '
+             'source and how it was checked on every line. A record, not a verdict.')
+HEART_DESC = ('What the traditions saw, and why it bears on AI: no one sees the heart, and behaviour alone does not certify what '
+              'an agent is bound to. The reading of the person who keeps the Ideals Map; texts and builders are quoted in their own words.')
+
+
+def preview(meta, path, title, desc, img):
+    """What a shared link shows, and the page's own address. Absolute addresses need site_url."""
+    site = (meta.get('site_url') or '').rstrip('/')
+    t = [f'<meta property="og:site_name" content="The Ideals Map">', '<meta property="og:type" content="website">',
+         f'<meta property="og:title" content="{html_mod.escape(title)}">', f'<meta property="og:description" content="{html_mod.escape(desc)}">',
+         f'<meta name="twitter:card" content="{"summary_large_image" if img else "summary"}">']
+    if site:
+        t += [f'<link rel="canonical" href="{site}/{path}">', f'<meta property="og:url" content="{site}/{path}">']
+        if img:
+            t += [f'<meta property="og:image" content="{site}/{img}">', '<meta property="og:image:width" content="1200">',
+                  '<meta property="og:image:height" content="630">', f'<meta property="og:image:alt" content="{html_mod.escape(title)}">']
+    return '\n'.join(t) + '\n'
+
+
+def site_ld(meta, updated):
+    """What the site is, for search engines, including Dataset Search: the data, its licence and where to get it."""
+    site = (meta.get('site_url') or '').rstrip('/')
+    if not site:
+        return ''
+    desc = ('A public record of what the movements around AI say they serve: the ideals, who carries them, events, funders, '
+            'AI companies, evaluators, alignment methods, older texts read beside them, and claims in circulation, each '
+            'quotation with its source and a flag for how it was checked.')
+    d = {'@context': 'https://schema.org', '@graph': [
+        {'@type': 'WebSite', 'name': 'The Ideals Map', 'url': site + '/', 'description': desc, 'inLanguage': 'en'},
+        {'@type': 'Dataset', 'name': 'The Ideals Map: data', 'description': desc, 'url': site + '/',
+         'license': 'https://creativecommons.org/licenses/by/4.0/', 'isAccessibleForFree': True,
+         **({'dateModified': updated} if updated else {}),
+         'keywords': ['artificial intelligence', 'AI movements', 'AI funding', 'AI evaluation', 'religion and technology',
+                      'claims and sources'],
+         'distribution': [
+             {'@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': site + '/data/graph.json'},
+             {'@type': 'DataDownload', 'encodingFormat': 'application/zip', 'contentUrl': site + '/data/ideals-map-data.zip'}]}]}
+    return '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False).replace('</', '<\\/') + '</script>\n'
 
 
 def main():
@@ -87,6 +138,24 @@ def main():
     shutil.copy(os.path.join(ROOT, 'dist', 'ideals-map.html'), os.path.join(a.out, 'ideals-map.html'))
     index = os.path.join(a.out, 'index.html')
     html = open(index, encoding='utf-8').read()
+    # What a shared link shows: the title, a description and a preview image drawn from the data (tools/cards.py).
+    g = json.load(open(os.path.join(SITE, 'graph.json'), encoding='utf-8'))
+    meta = g.get('meta') or {}
+    sys.path.insert(0, HERE)
+    import pages
+    cards = pages.fresh_cards(g, os.path.join(SITE, 'cards'))
+    if cards:
+        os.makedirs(os.path.join(a.out, 'cards'))
+        for rel in cards.values():
+            shutil.copy(os.path.join(SITE, rel), os.path.join(a.out, rel))
+    css = '<link rel="stylesheet" href="map.css">'
+    html = html.replace(css, preview(meta, '', 'The Ideals Map', HOME_DESC, cards.get('home')) + site_ld(meta, g.get('updated')) + css, 1)
+    heart = os.path.join(a.out, 'heart.html')
+    text = open(heart, encoding='utf-8').read()   # read before opening for writing, which empties the file
+    text = text.replace(css, f'<meta name="description" content="{html_mod.escape(HEART_DESC)}">\n' +
+                        preview(meta, 'heart.html', 'The heart · The Ideals Map', HEART_DESC, cards.get('home')) + css, 1)
+    with open(heart, 'w', encoding='utf-8') as fh:
+        fh.write(text)
     headers = ['/*', f'  Content-Security-Policy: {CSP}', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: no-referrer',
                '  Permissions-Policy: camera=(), microphone=(), geolocation=()']
     if a.public:
@@ -101,6 +170,8 @@ def main():
         with open(single, 'w', encoding='utf-8') as fh:
             fh.write(text.replace('<meta name="robots" content="noindex, nofollow">\n', '').replace('<span class="tag">private prototype</span>', '<span class="tag">draft</span>'))
         robots = 'User-agent: *\nAllow: /\n'
+        if meta.get('site_url'):
+            robots += f'Sitemap: {meta["site_url"].rstrip("/")}/sitemap.xml\n'
         visibility = 'This copy is public: search engines may index it.'
     else:
         headers.append('  X-Robots-Tag: noindex, nofollow')
@@ -120,6 +191,12 @@ def main():
     r = subprocess.run([sys.executable, os.path.join(HERE, 'feed.py'), '--graph', os.path.join(SITE, 'graph.json'), '--out', os.path.join(a.out, 'feed.xml')], capture_output=True, text=True)
     if r.returncode:
         sys.exit(r.stdout + r.stderr)
+    # Every record as a plain page, the sitemap and llms-full.txt (tools/pages.py).
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'pages.py'), '--graph', os.path.join(SITE, 'graph.json'), '--out', a.out]
+                       + (['--public'] if a.public else []), capture_output=True, text=True)
+    if r.returncode:
+        sys.exit(r.stdout + r.stderr)
+    print(r.stdout.strip())
     open(os.path.join(a.out, '_headers'), 'w').write('\n'.join(headers) + '\n')
     open(os.path.join(a.out, 'robots.txt'), 'w').write(robots)
     open(os.path.join(a.out, 'llms.txt'), 'w').write(LLMS)

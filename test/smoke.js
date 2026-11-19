@@ -19,6 +19,11 @@ const path = require('path');
   await page.waitForSelector('#the-page .card');
   const graph = await page.evaluate(() => JSON.parse(document.getElementById('graph-data').textContent));
   if ((await page.locator('#the-page .card').count()) !== graph.ideals.length) fail('the front does not show one card per ideal');
+  // The newest on the record: the latest dated claims and events, newest first, with no search snippet taken.
+  const newest = await page.locator('#the-page .newest .newest-meta').allTextContents();
+  const newestDates = (graph.watch || []).map(w => w.date).concat((graph.fruits || []).map(f => f.date)).filter(Boolean).sort().reverse();
+  if (newestDates.length && (!newest.length || !newest[0].startsWith(newestDates[0]))) fail(`the newest strip opens on "${newest[0]}", not ${newestDates[0]}`);
+  if (newestDates.length && (await page.locator('#the-page .newest[data-nosnippet]').count()) !== 1) fail('the newest strip lets search engines take a snippet');
   if (await page.locator('#layout').isVisible()) fail('the drawing shows under the cards');
   if (!(await page.locator('#modebar').isVisible())) fail('the cards/drawing switch does not show on the front');
   if (await page.locator('#key').isVisible()) fail('the key to the drawing shows with no drawing');
@@ -292,8 +297,11 @@ const path = require('path');
     // Every claim says how to cite it, and where the map takes replies, how to answer it, with the record filled in.
     if ((await page.locator('#the-watch .claim .cite-line').count()) !== graph.watch.length) fail('a Watch claim has no citation');
     if ((graph.meta || {}).contribute) {
-      const href = await page.locator(`#watch-${graph.watch[0].id} .reply-line a`).getAttribute('href');
-      if (!href || !href.includes('template=correction.yml') || !href.includes('record=' + encodeURIComponent(graph.watch[0].id))) fail(`the reply link does not name the claim: ${href}`);
+      const href = await page.locator(`#watch-${graph.watch[0].id} .reply-line:not(.reply-party) a`).getAttribute('href');
+      if (!href || !href.includes('template=correction.yml') || !href.includes('record=' + encodeURIComponent(graph.watch[0].id))) fail(`the correction link does not name the claim: ${href}`);
+      // Whoever a claim is about can answer it: the reply form, with the claim filled in.
+      const rep = await page.locator(`#watch-${graph.watch[0].id} .reply-party a`).getAttribute('href').catch(() => null);
+      if (!rep || !rep.includes('template=reply.yml') || !rep.includes('record=' + encodeURIComponent(graph.watch[0].id))) fail(`the reply invitation does not name the claim: ${rep}`);
     }
     // How it travelled: every step shows, in date order, with what changed; a reason shows where one is given.
     for (const w of graph.watch.filter(x => (x.travelled || []).length)) {
