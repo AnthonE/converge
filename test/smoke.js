@@ -111,8 +111,16 @@ const path = require('path');
     if (loose.length) fail(`focus ${d.id}: drawn with no link: ${loose.join(', ')}`);
     // Whatever is linked to the ideal itself is drawn, or the view says it left some out.
     const direct = new Set(); graph.edges.forEach(e => { if (e.from === d.id) direct.add(e.to); if (e.to === d.id) direct.add(e.from); });
-    // Ancient patterns and mechanisms live in the ancients view; the ideal's panel links there.
-    const elsewhere = new Set([...(graph.patterns || []), ...(graph.mechanisms || [])].map(n => n.id));
+    // Ancient patterns and mechanisms live in the ancients view; the ideal's panel links there. Older texts are not
+    // drawn on an ideal's map: they are listed in its panel, below the record, each with its tradition.
+    const elsewhere = new Set([...(graph.patterns || []), ...(graph.mechanisms || []), ...(graph.texts || [])].map(n => n.id));
+    const own = (graph.texts || []).filter(t => direct.has(t.id));
+    if (own.some(t => v.ids.includes(t.id))) fail(`focus ${d.id}: an older text is drawn on the ideal's map`);
+    if (own.length) {
+      const listed = await page.evaluate(() => document.getElementById('panel').textContent);
+      const unlisted = own.filter(t => !listed.includes(t.quote));
+      if (unlisted.length) fail(`focus ${d.id}: linked text not listed in the panel: ${unlisted.map(t => t.id).join(', ')}`);
+    }
     const gone = [...direct].filter(x => !v.ids.includes(x) && !elsewhere.has(x));
     if (gone.length && !v.more) fail(`focus ${d.id}: linked to the ideal but not drawn and not counted: ${gone.join(', ')}`);
   }
@@ -461,7 +469,7 @@ const path = require('path');
     // ancients view (drawn there or listed on a pattern's or a mechanism's panel).
     const ancientOnly = id => (graph.edges.filter(e => e.from === id || e.to === id)).every(e => ['invokes', 'uses', 'reads_as'].includes(e.type));
     const histEv = new Set(graph.edges.filter(e => e.type === 'bears_fruit' && graph.carriers.some(c => c.historical && c.id === e.from)).map(e => e.to));
-    const all = [...graph.ideals, ...graph.carriers, ...graph.vehicles, ...graph.fruits.filter(f => f.kind !== 'alleged' && !histEv.has(f.id)), ...graph.texts, ...moneyNodes]
+    const all = [...graph.ideals, ...graph.carriers, ...graph.vehicles, ...graph.fruits.filter(f => f.kind !== 'alleged' && !histEv.has(f.id)), ...moneyNodes]
       .map(n => n.id).filter(id => !ancientOnly(id));
     const missing = all.filter(x => !everDrawn.has(x));
     if (missing.length) fail(`never drawn in any focus view: ${missing.join(', ')}`);

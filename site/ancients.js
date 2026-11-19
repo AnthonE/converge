@@ -171,11 +171,20 @@
     }
     if (n.type === 'pattern') {
       if (n.summary) ui.add(root, ui.h('p', 'statement', n.summary));
-      var texts = (n.texts || []).map(function (t) { return ix.byId[t]; }).filter(Boolean).map(function (t) {
-        return ui.add(ui.h('li', 'source'), ui.h('blockquote', null, '“' + t.quote + '”'), ui.h('p', 'cite', t.ref + ' (King James Version)'));
-      });
+      /* Sources and texts together, grouped by tradition, so no one tradition leads by default. */
+      var all = (n.sources || []).map(function (s) { return { k: ns.traditionFamily(s.tradition), li: sourceItem(ui, s) }; })
+        .concat((n.texts || []).map(function (t) { return ix.byId[t]; }).filter(Boolean).map(function (t) {
+          var c = ui.h('p', 'cite');
+          ui.add(c, ui.h('span', null, ns.textCite(t) + (t.url ? (/[.!?]$/.test(ns.textCite(t)) ? ' ' : '. ') : '')));
+          if (t.url) ui.add(c, ui.link(t.url, 'source'), ui.h('span', null, ' '), ui.badge(t.verified, t.url));
+          return { k: ns.traditionFamily(ns.tradition(t)), li: ui.add(ui.h('li', 'source'), ui.h('blockquote', null, '“' + t.quote + '”'), c) };
+        }));
+      all = ns.byTradition(all, function (o) { return o.k; });
+      var fams = [];
+      all.forEach(function (o) { if (fams.indexOf(o.k) < 0) fams.push(o.k); });
+      if (fams.length) ui.add(root, ui.h('p', 'note', 'Traditions quoted here: ' + fams.join(', ') + '.'));
       ui.add(root,
-        list(ui, 'The ancient sources', 'Each in a named translation, checked at the page cited.', (n.sources || []).map(function (s) { return sourceItem(ui, s); }).concat(texts)),
+        list(ui, 'Older sources', 'Each in a named translation, grouped by tradition.', all.map(function (o) { return o.li; })),
         list(ui, 'Invoked in their own words', 'Names on the map who use this name themselves.', recs(function (e) { return e.type === 'invokes'; })),
         list(ui, 'Read beside it', 'This project’s readings. Each says where the likeness stops.', recs(function (e) { return e.type === 'reads_as'; })));
       if ((n.counter || []).length) ui.add(root, list(ui, 'Where the tradition pushes back', null, n.counter.map(function (c) {
@@ -239,12 +248,26 @@
     return root;
   };
 
+  /* How many quoted passages each tradition has on the map, largest first, said plainly. */
+  function spread(ix, ui) {
+    var count = {};
+    (ix.g.texts || []).forEach(function (t) { var k = ns.traditionFamily(ns.tradition(t)); count[k] = (count[k] || 0) + 1; });
+    (ix.g.patterns || []).forEach(function (p) { (p.sources || []).forEach(function (s) { var k = ns.traditionFamily(s.tradition); count[k] = (count[k] || 0) + 1; }); });
+    var keys = Object.keys(count).sort(function (a, b) { return count[b] - count[a] || a.localeCompare(b); });
+    if (!keys.length) return null;
+    var box = ui.h('div', 'spread');
+    ui.add(box, ui.h('p', 'note', 'Quoted from ' + keys.length + ' traditions: ' + keys.map(function (k) { return k + ' ' + count[k]; }).join(', ') +
+      '. The project’s corpus began with the Bible, so it is still the largest share; passages from other traditions are being added, each from a named translation.'));
+    return box;
+  }
+
   ns.ancientsIntro = function (ix, ui) {
     var root = ui.h('div');
     ui.add(root, ui.h('p', 'kicker', 'How to read this'), ui.h('h2', null, 'What the ancients called it'),
-      ui.h('p', null, 'On the left, what the movements serve. In the middle, how each takes hold of people. On the right, the patterns the ancient world already named: the image made to speak, calling up the dead, the tower, the merchant city, and others, each with its sources.'),
+      ui.h('p', null, 'On the left, what the movements serve. In the middle, how each takes hold of people. On the right, the patterns older traditions already named, from the ancient world to the modern philosophers: the image made to speak, calling up the dead, the tower, the merchant city, and others, each with its sources.'),
       ui.h('p', null, 'A solid line means a carrier of that ideal uses the ancient name itself, in its own words. A dotted line is this project’s reading: it says what the likeness is and where it stops. A dashed line is a documented or reported use of a mechanism, with its source; alleged uses are listed in the panels and not drawn.'),
       ui.h('p', 'note', 'The traditions are the subject here, quoted in their own words. A text can motivate a question. It never confirms a mechanism or a source, and nothing here says a text foretold anyone.'),
+      spread(ix, ui),
       ui.h('p', 'note', ((ix.g.meta || {}).made_with) || ''));
     return root;
   };

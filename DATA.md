@@ -26,7 +26,7 @@ words belong to their authors and are not covered.
 | `carriers.csv` | movement, organisation, community, product, venue or public figure |
 | `vehicles.csv` | made thing an ideal runs on (a model, an app, a forum, a token) |
 | `fruits.csv` | event, with date and source |
-| `texts.csv` | older text (KJV unless said otherwise) |
+| `texts.csv` | older text, with its tradition and translation |
 | `funders.csv`, `labs.csv`, `evaluators.csv` | funder; AI company; body that tests, ranks or scores |
 | `patterns.csv` | ancient pattern (what older traditions called it) |
 | `mechanisms.csv` | mechanism named in scholarship (how an ideal takes hold) |
@@ -71,6 +71,10 @@ turns on conditions, never on a date. None of this is a forecast.
 (`true` for a forebear whose own events are not drawn under today's carriers).
 
 **fruits** (events): `label`, `what`, `kind`, `source`, `url`, `verified`.
+
+**texts** (older texts): `ref`, `quote` (exact, at most 160 characters; `…` marks words left out), `tradition` (Hebrew Bible,
+New Testament, Greek and Roman, Daoist, Confucian, Hindu, Buddhist, Islamic, Egyptian, Mesopotamian, Norse, Maya (K’iche’), Modern philosophy, Modern literature),
+`translation` (named, with its date), and for texts outside the King James Bible `url` and `verified`.
 
 **funders / labs / evaluators**: `kind` (funders), `note`, `policy` (an evaluator's stated rule on funding, in its
 words), `disputes` (reported disputes, each with date, what, source and status; JSON).

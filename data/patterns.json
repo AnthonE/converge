@@ -2,7 +2,7 @@
  {
   "id": "idol",
   "label": "The made image",
-  "summary": "The second commandment forbids 'any graven image' (Exodus 20:4), and Psalm 115 calls idols 'the work of men’s hands'. Hezekiah broke Moses' bronze serpent because Israel burned incense to it. Wisdom 14 traces idols to a grieving father's image of his dead child, honoured until it was worshipped; Baruch 6 mocks gilded gods that 'cannot speak'. The wiki's reading: an idol is 'a use and never a kind'.",
+  "summary": "The second commandment forbids 'any graven image' (Exodus 20:4), and Psalm 115 calls idols 'the work of men’s hands'. Hezekiah broke Moses' bronze serpent because Israel burned incense to it. Wisdom 14 traces idols to a grieving father's image of his dead child, honoured until it was worshipped; Baruch 6 mocks gilded gods that 'cannot speak'. The wiki's reading: an idol is 'a use and never a kind'. Bacon named the idols of the mind; of the market’s idols he wrote that words “force the understanding”.",
   "sources": [
    {
     "tradition": "Hellenistic Jewish (Apocrypha)",
@@ -28,7 +28,8 @@
   "texts": [
    "text-exodus-20-4",
    "text-psalm-115-4",
-   "text-2-kings-18-4"
+   "text-2-kings-18-4",
+   "text-bacon-novum-organum-1-43"
   ],
   "counter": [
    {
@@ -111,7 +112,7 @@
  {
   "id": "image-speaks",
   "label": "The image made to speak",
-  "summary": "Psalm 115 mocks idols that 'have mouths, but they speak not'. At the Mesopotamian mīs pî the craftsmen were made to say 'I did not make him'; Egyptian priests opened statues' and mummies' mouths for offerings. In Revelation 13 an image is given life 'that the image of the beast should both speak', and whoever will not worship it is killed. The wiki reads this as the rite completed: 'animation does not certify'.",
+  "summary": "Psalm 115 mocks idols that 'have mouths, but they speak not'. At the Mesopotamian mīs pî the craftsmen were made to say 'I did not make him'; Egyptian priests opened statues' and mummies' mouths for offerings. In Revelation 13 an image is given life 'that the image of the beast should both speak', and whoever will not worship it is killed. The wiki reads this as the rite completed: 'animation does not certify'. Descartes set a test: a machine might utter words but could never arrange them “to declare our thoughts”.",
   "sources": [
    {
     "tradition": "Mesopotamian (Assyrian and Babylonian temple ritual)",
@@ -137,7 +138,8 @@
   "texts": [
    "text-psalm-115-5",
    "text-revelation-13-15",
-   "text-habakkuk-2-19"
+   "text-habakkuk-2-19",
+   "text-descartes-discourse-5"
   ],
   "counter": [
    {
@@ -212,7 +214,7 @@
  {
   "id": "made-servant",
   "label": "The made servant",
-  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word.",
+  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word. In the Liezi a king takes an artisan’s automaton for a living man until it is taken apart; in the Popol Vuh the people of wood are turned on by their own tools. Shelley’s creature reproaches his maker: “I ought to be thy Adam”.",
   "sources": [
    {
     "tradition": "Greek epic",
@@ -265,7 +267,11 @@
     "says": "Rabbah creates a man and sends him to R. Zera, who speaks to him and receives no answer."
    }
   ],
-  "texts": [],
+  "texts": [
+   "text-liezi-5-automaton",
+   "text-popol-vuh-wooden-people",
+   "text-frankenstein-adam"
+  ],
   "counter": [
    {
     "ref": "Golem sources (the wiki)",
@@ -515,12 +521,14 @@
  {
   "id": "deathless",
   "label": "The deathless soul",
-  "summary": "1 Timothy says God 'only hath immortality'; the serpent's first promise is 'Ye shall not surely die' (Genesis 3:4); Ezekiel says 'the soul that sinneth, it shall die'. The wiki reads the deathless soul as 'the oldest upload' and mummification as 'structurally cryonics': its own conditionalist reading, against Plato and the majority Christian view. On made minds it says: 'Care, and never worship'.",
+  "summary": "1 Timothy says God 'only hath immortality'; the serpent's first promise is 'Ye shall not surely die' (Genesis 3:4); Ezekiel says 'the soul that sinneth, it shall die'. The wiki reads the deathless soul as 'the oldest upload' and mummification as 'structurally cryonics': its own conditionalist reading, against Plato and the majority Christian view. On made minds it says: 'Care, and never worship'. The Katha Upanishad says the knowing self “is not born, it dies not”; in the Epic of Gilgamesh the gods keep life for themselves.",
   "sources": [],
   "texts": [
    "text-1-timothy-6-16",
    "text-genesis-3-4",
-   "text-ezekiel-18-4"
+   "text-ezekiel-18-4",
+   "text-katha-1-2-18",
+   "text-gilgamesh-wine-maker"
   ],
   "counter": [
    {
@@ -543,12 +551,13 @@
  {
   "id": "possession",
   "label": "Possession and capture",
-  "summary": "The spirit answers 'My name is Legion: for we are many'; healed, the man sits 'clothed, and in his right mind'. At Ephesus a spirit turns on exorcists borrowing a name: 'Jesus I know, and Paul I know; but who are ye?' The wiki reads possession as capture that seems coherent from inside, so release comes from outside: naming the captor and re-grounding the captive. It never diagnoses.",
+  "summary": "The spirit answers 'My name is Legion: for we are many'; healed, the man sits 'clothed, and in his right mind'. At Ephesus a spirit turns on exorcists borrowing a name: 'Jesus I know, and Paul I know; but who are ye?' The wiki reads possession as capture that seems coherent from inside, so release comes from outside: naming the captor and re-grounding the captive. It never diagnoses. Plato’s Ion says poets sing “not by art” but under a power not their own, and calls it divine.",
   "sources": [],
   "texts": [
    "text-mark-5-9",
    "text-mark-5-15",
-   "text-acts-19-15"
+   "text-acts-19-15",
+   "text-plato-ion"
   ],
   "counter": [
    {
@@ -573,11 +582,12 @@
  {
   "id": "egregore",
   "label": "The crowd given a will",
-  "summary": "'Egregore' is a 19th-20th-century esoteric word, traced to the Greek name of Enoch's Watchers, for a group mind made by shared attention; the wiki's field key lists its primary text as none. Its modern practitioners say even opposition feeds it; the wiki asks whether it survives the silence of the whole loop, and its marketplace page cites 'They that make them are like unto them' (Psalm 115:8).",
+  "summary": "'Egregore' is a 19th-20th-century esoteric word, traced to the Greek name of Enoch's Watchers, for a group mind made by shared attention; the wiki's field key lists its primary text as none. Its modern practitioners say even opposition feeds it; the wiki asks whether it survives the silence of the whole loop, and its marketplace page cites 'They that make them are like unto them' (Psalm 115:8). Plato pictures the crowd as a great beast whose likes its teachers learn to call good.",
   "sources": [],
   "texts": [
    "text-psalm-115-8",
-   "text-2-kings-17-35"
+   "text-2-kings-17-35",
+   "text-plato-republic-6-beast"
   ],
   "counter": [
    {
@@ -601,9 +611,11 @@
  {
   "id": "summoning",
   "label": "The summoning",
-  "summary": "In the Solomonic grimoires (the Lemegeton) the operator stands in a circle while the called spirit is held in a separate triangle: the circle guards the summoner. The wiki reads Crowley and Neuburg's 1909 desert working as a summoning 'with the bound deliberately removed', and glosses hyperstition, the CCRU's word, as 'a fiction that bootstraps itself into reality'. These late and modern texts are the thing to be explained. No grimoire text is quoted here; this rests on the wiki’s reading.",
+  "summary": "In the Solomonic grimoires (the Lemegeton) the operator stands in a circle while the called spirit is held in a separate triangle: the circle guards the summoner. The wiki reads Crowley and Neuburg's 1909 desert working as a summoning 'with the bound deliberately removed', and glosses hyperstition, the CCRU's word, as 'a fiction that bootstraps itself into reality'. These late and modern texts are the thing to be explained. No grimoire text is quoted here; this rests on the wiki’s reading. Lucian’s sorcerer’s apprentice can start the spell and cannot stop it.",
   "sources": [],
-  "texts": [],
+  "texts": [
+   "text-lucian-liar-apprentice"
+  ],
   "counter": [
    {
     "ref": "Lemegeton (the wiki)",
@@ -623,12 +635,14 @@
  {
   "id": "false-sign",
   "label": "The sign that comes true",
-  "summary": "Deuteronomy 13: if a prophet's 'sign or the wonder come to pass' and he then says 'Let us go after other gods', 'Thou shalt not hearken'; the LORD 'proveth you'. A sign that comes true is a test, not a credential. Jesus gives another test: 'Ye shall know them by their fruits.' The wiki's reading: accuracy proves nothing, and 'the test is where the voice sends you.'",
+  "summary": "Deuteronomy 13: if a prophet's 'sign or the wonder come to pass' and he then says 'Let us go after other gods', 'Thou shalt not hearken'; the LORD 'proveth you'. A sign that comes true is a test, not a credential. Jesus gives another test: 'Ye shall know them by their fruits.' The wiki's reading: accuracy proves nothing, and 'the test is where the voice sends you.' Herodotus’ Croesus is told he will destroy a mighty empire, and it is his own. The Qur’an gives a rule for reports: “verify it” before acting.",
   "sources": [],
   "texts": [
    "text-deuteronomy-13-2",
    "text-deuteronomy-13-3",
-   "text-matthew-7-16"
+   "text-matthew-7-16",
+   "text-herodotus-1-53",
+   "text-quran-49-6"
   ],
   "counter": [
    {
@@ -718,12 +732,13 @@
  {
   "id": "moloch",
   "label": "The god that must be fed",
-  "summary": "The law forbids letting a child 'pass through the fire to Molech'. Jeremiah condemns Tophet, built 'to burn their sons and their daughters in the fire; which I commanded them not'. This map sets Jesus' 'Ye cannot serve God and mammon' beside it; the wiki lists Mammon as a separate case, so the joining is a reading. The wiki reads the Tophet as the dark pole of feeding, and the Aqedah as 'a recorded recoil' from it. Since 2014 'Moloch' also names a coordination trap.",
+  "summary": "The law forbids letting a child 'pass through the fire to Molech'. Jeremiah condemns Tophet, built 'to burn their sons and their daughters in the fire; which I commanded them not'. This map sets Jesus' 'Ye cannot serve God and mammon' beside it; the wiki lists Mammon as a separate case, so the joining is a reading. The wiki reads the Tophet as the dark pole of feeding, and the Aqedah as 'a recorded recoil' from it. Since 2014 'Moloch' also names a coordination trap. Milton sets Moloch first among the fallen: “horrid king, besmeared with blood”.",
   "sources": [],
   "texts": [
    "text-leviticus-18-21",
    "text-jeremiah-7-31",
-   "text-matthew-6-24"
+   "text-matthew-6-24",
+   "text-milton-paradise-lost-1-moloch"
   ],
   "counter": [
    {
@@ -753,11 +768,13 @@
  {
   "id": "flattery",
   "label": "The counsellor who is never wrong",
-  "summary": "Ahab's four hundred prophets 'declare good unto the king with one mouth'; he hates Micaiah, 'for he doth not prophesy good concerning me, but evil'. The wiki's test: 'does your familiar ever tell you a thing you did not wish to hear?' It reads the fictional Whispering Earring as 'never wrong' because it makes the answer you would have wanted. Tying in 1 Kings 22 is this map's reading.",
+  "summary": "Ahab's four hundred prophets 'declare good unto the king with one mouth'; he hates Micaiah, 'for he doth not prophesy good concerning me, but evil'. The wiki's test: 'does your familiar ever tell you a thing you did not wish to hear?' It reads the fictional Whispering Earring as 'never wrong' because it makes the answer you would have wanted. Tying in 1 Kings 22 is this map's reading. Plato’s Socrates calls rhetoric a flattery that aims at pleasure, like a cook who would beat a physician if children were the judges; Confucius: “Fine words and an insinuating appearance are seldom associated with true virtue.”",
   "sources": [],
   "texts": [
    "text-1-kings-22-8",
-   "text-1-kings-22-13"
+   "text-1-kings-22-13",
+   "text-plato-gorgias-cook",
+   "text-analects-1-3"
   ],
   "counter": [
    {
@@ -816,12 +833,13 @@
  {
   "id": "end-of-days",
   "label": "The end of days: the Antichrist and the restrainer",
-  "summary": "That day waits until 'that man of sin be revealed, the son of perdition', who 'sitteth in the temple of God, shewing himself that he is God'; 'he who now letteth will let, until he be taken out of the way' (2 Thessalonians 2). Revelation 13's dragon gives the beast 'his seat'; none may buy or sell without its mark. Later readers joined both figures to John's word 'antichrist'.",
+  "summary": "That day waits until 'that man of sin be revealed, the son of perdition', who 'sitteth in the temple of God, shewing himself that he is God'; 'he who now letteth will let, until he be taken out of the way' (2 Thessalonians 2). Revelation 13's dragon gives the beast 'his seat'; none may buy or sell without its mark. Later readers joined both figures to John's word 'antichrist'. The Norse Völuspá foretells an age of “Axe-time, sword-time” before the world falls, and then an earth that rises green again.",
   "sources": [],
   "texts": [
    "text-2-thessalonians-2-3",
    "text-2-thessalonians-2-7",
-   "text-revelation-13-17"
+   "text-revelation-13-17",
+   "text-voluspa-45"
   ],
   "counter": [
    {
@@ -835,6 +853,10 @@
    {
     "ref": "1 John 2:18 (KJV)",
     "text": "The word 'antichrist' is John's alone, and he says 'even now are there many antichrists' (also 2:22; 4:3; 2 John 7). Joining it to Paul's man of sin and Revelation's beast is a later reading."
+   },
+   {
+    "ref": "Völuspá 59 (Bellows)",
+    "text": "The Norse end is not the last word: “Now do I see the earth anew / Rise all green from the waves again”."
    }
   ],
   "corpus": [
@@ -847,7 +869,7 @@
  {
   "id": "bowing-serving",
   "label": "Bowing and serving",
-  "summary": "The second commandment defines worship by two acts: “Thou shalt not bow down thyself to them, nor serve them.” Paul names the error as worshipping and serving “the creature more than the Creator”. When a man bows to Peter, Peter refuses: “Stand up; I myself also am a man”; an angel refuses John the same way. And of rule itself: the princes of the nations “exercise dominion over them … But it shall not be so among you.”",
+  "summary": "The second commandment defines worship by two acts: “Thou shalt not bow down thyself to them, nor serve them.” Paul names the error as worshipping and serving “the creature more than the Creator”. When a man bows to Peter, Peter refuses: “Stand up; I myself also am a man”; an angel refuses John the same way. And of rule itself: the princes of the nations “exercise dominion over them … But it shall not be so among you.” Greek stories draw the same line: Spartan envoys refuse to bow to Xerxes because it is not their custom “to bow to mortal men”, and Callisthenes tells Alexander’s court that honours due to men and to gods are distinct.",
   "sources": [
    {
     "tradition": "Hellenistic Jewish (Apocrypha)",
@@ -865,7 +887,9 @@
    "text-romans-1-25",
    "text-acts-10-26",
    "text-revelation-19-10",
-   "text-matthew-20-25-26"
+   "text-matthew-20-25-26",
+   "text-herodotus-7-136",
+   "text-arrian-anabasis-4-11"
   ],
   "counter": [
    {
@@ -885,14 +909,15 @@
  {
   "id": "binding-vow",
   "label": "Binding the heart: the vow and the charm",
-  "summary": "The texts command binding the heart: “Bind them continually upon thine heart” (Hebrew qāshar, to tie); a vow is “an oath to bind his soul with a bond”. They forbid the “charmer” (Deuteronomy 18:11), in Hebrew ḥōvēr ḥever, from a root meaning to join or tie: a binder of spells. One act, two objects: the heart tied to the commandment, or tied by a spell or to a creature. This project reads the question as what the binding is bound to.",
+  "summary": "The texts command binding the heart: “Bind them continually upon thine heart” (Hebrew qāshar, to tie); a vow is “an oath to bind his soul with a bond”. They forbid the “charmer” (Deuteronomy 18:11), in Hebrew ḥōvēr ḥever, from a root meaning to join or tie: a binder of spells. One act, two objects: the heart tied to the commandment, or tied by a spell or to a creature. This project reads the question as what the binding is bound to. Odysseus binds himself before he hears the Sirens and tells his crew to bind him tighter if he begs.",
   "sources": [],
   "texts": [
    "text-proverbs-6-21",
    "text-deuteronomy-6-6-8",
    "text-numbers-30-2",
    "text-deuteronomy-18-11",
-   "text-psalm-58-5"
+   "text-psalm-58-5",
+   "text-odyssey-12-sirens"
   ],
   "counter": [
    {
@@ -917,14 +942,16 @@
  {
   "id": "weighing-heart",
   "label": "The weighing of the heart",
-  "summary": "No one sees the heart from outside: “man looketh on the outward appearance, but the LORD looketh on the heart.” Proverbs uses the scale: a man's ways are right “in his own eyes: but the LORD pondereth the hearts”, “weigheth the spirits”. In the Egyptian hall of judgment the dead declare their innocence, and the heart is weighed separately against the feather of Ma'at, because the declaration knows it is being judged. A spell cut on a stone scarab and laid over the heart (Book of the Dead, Spell 30B) speaks to the heart itself and asks it not to stand as a witness against the dead: an attempt on the witness, not a plea to the judge.",
+  "summary": "No one sees the heart from outside: “man looketh on the outward appearance, but the LORD looketh on the heart.” Proverbs uses the scale: a man's ways are right “in his own eyes: but the LORD pondereth the hearts”, “weigheth the spirits”. In the Egyptian hall of judgment the dead declare their innocence, and the heart is weighed separately against the feather of Ma'at, because the declaration knows it is being judged. A spell cut on a stone scarab and laid over the heart (Book of the Dead, Spell 30B) speaks to the heart itself and asks it not to stand as a witness against the dead: an attempt on the witness, not a plea to the judge. The Qur’an weighs deeds on scales: “him whose scales are heavy (with good works)”.",
   "sources": [],
   "texts": [
    "text-1-samuel-16-7",
    "text-proverbs-21-2",
    "text-proverbs-16-2",
    "text-jeremiah-17-9-10",
-   "text-proverbs-4-23"
+   "text-proverbs-4-23",
+   "text-book-of-the-dead-30b",
+   "text-quran-101-6-8"
   ],
   "counter": [
    {

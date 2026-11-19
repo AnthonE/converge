@@ -120,17 +120,17 @@
  {
   "id": "faith",
   "label": "Faith, religion and the spiritual",
-  "lede": "What older traditions called these patterns, the movements that speak of building or finding a god, and religious leaders’ own words on AI.",
+  "lede": "What older traditions called these patterns, from the Bible to the Daodejing, the Upanishads, the Qur’an and the Greeks; the movements that speak of building or finding a god; and religious leaders’ own words on AI.",
   "stops": [
-   {
-    "view": "heart",
-    "title": "The heart",
-    "why": "What the traditions saw, in a few minutes of reading."
-   },
    {
     "view": "ancients",
     "title": "The ancients",
-    "why": "How each ideal takes hold of people, and the old patterns read beside it, each saying where the likeness stops."
+    "why": "How each ideal takes hold of people, and the old patterns read beside it from many traditions, each saying where the likeness stops."
+   },
+   {
+    "view": "heart",
+    "title": "The heart",
+    "why": "The reading of the person who keeps the map: what the traditions saw, in a few minutes. Mostly the Bible, with other traditions beside it."
    },
    {
     "record": "revere",
