@@ -5948,5 +5948,28 @@
   "type": "parallels",
   "lens": true,
   "sentence": "This project reads Laplace beside it: an intelligence so vast that “nothing would be uncertain and the future, as the past, would be present to its eyes”. The argument needs a future mind that knows who helped; Laplace offered his intelligence as a figure for what human knowledge lacks, which is why he needed probability, not as a being to fear."
+ },
+ {
+  "from": "silent-consensus-essay",
+  "to": "succession",
+  "type": "opposes",
+  "sentence": "Dean Ball named “the silent consensus” in November 2026, in an essay arguing against it. To the claim that machines are heirs he answers “in some sense, they are”, but that reading every letter in a family’s attic does not make one a member of the family."
+ },
+ {
+  "from": "silent-consensus-essay",
+  "to": "silent-consensus-2026-11",
+  "type": "bears_fruit",
+  "sentence": "Dean Ball named the view in an essay arguing against it."
+ },
+ {
+  "from": "openai",
+  "to": "silent-consensus-essay",
+  "type": "hosts",
+  "sentence": "OpenAI published the essay on its own site, in its Intelligence Age series, with a note that it reflects the author’s own views and “not necessarily the views of OpenAI or any of its other employees”.",
+  "kind": "documented",
+  "date": "2026-11-18",
+  "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
+  "url": "https://openai.com/index/the-silent-consensus/",
+  "verified": "secondary"
  }
 ]
