@@ -19,6 +19,26 @@ const path = require('path');
   await page.waitForSelector('#the-page .card');
   const graph = await page.evaluate(() => JSON.parse(document.getElementById('graph-data').textContent));
   if ((await page.locator('#the-page .card').count()) !== graph.ideals.length) fail('the front does not show one card per ideal');
+  // Start with a name you know: one chip per name in meta.front_names; each opens a record that begins at a glance.
+  const fronts = (graph.meta || {}).front_names || [];
+  if ((await page.locator('#the-page .front-names .name-chip').count()) !== fronts.length) fail('the front does not offer each name in front_names');
+  if (fronts.length) {
+    await page.locator(`#the-page .name-chip[data-name="${fronts[0]}"]`).click();
+    await page.waitForFunction(id => location.hash === '#r/' + id, fronts[0]);
+    await page.evaluate(() => { location.hash = ''; });
+    await page.waitForSelector('#the-page .card');
+  }
+  // Every card says where its ideal stands in one plain sentence.
+  if ((await page.locator('#the-page .card .stand-text').count()) !== graph.ideals.length) fail('a card does not say in words where its ideal stands');
+  // A checking mark is short, says its full words to a screen reader, and shows them on a tap.
+  const mark = page.locator('#the-page .card-quote button.badge').first();
+  if (await mark.count()) {
+    const short = await mark.textContent(), label = await mark.getAttribute('aria-label');
+    if (!label || !label.startsWith('How it was checked: ') || label.length <= short.length + 20) fail(`a checking mark's full words are missing: ${label}`);
+    await mark.click();
+    if ((await mark.textContent()) !== label.replace('How it was checked: ', '')) fail('a tapped checking mark does not show its full words');
+    await mark.click();
+  }
   // The newest on the record: the latest dated claims and events, newest first, with no search snippet taken.
   const newest = await page.locator('#the-page .newest .newest-meta').allTextContents();
   const newestDates = (graph.watch || []).map(w => w.date).concat((graph.fruits || []).map(f => f.date)).filter(Boolean).sort().reverse();
@@ -614,6 +634,12 @@ const path = require('path');
   const site = ((graph.meta || {}).site_url || '').replace(/\/?$/, '/');
   if (!cite.includes('record ideal-0') || (site !== '/' && !cite.includes(site + '#r/ideal-0'))) fail(`a record's citation reads "${cite}"`);
   if ((graph.meta || {}).contribute && !(await page.locator('#the-page .reply-line a').count())) fail('a record offers no way to reply');
+  // A person or a body opens at a glance: their own words, money, events and claims, before the full record.
+  await page.evaluate(() => { location.hash = '#r/lab-0'; });
+  await page.waitForSelector('#the-page .glance');
+  if (!(await page.locator('#the-page .glance .glance-block').count())) fail('a name from the front opens with nothing at a glance');
+  if ((await page.locator('#the-page .glance').evaluate(el => el.getBoundingClientRect().top)) > 900) fail('the glance is not near the top of the record');
+  if (await page.locator('#the-page .glance b').count()) fail('glance data was inserted as markup');
   await page.evaluate(() => { location.hash = '#r/sample-speaker'; });
   await page.waitForFunction(() => (document.querySelector('#the-page .rec-who') || {}).textContent);
   const pr = await page.locator('#the-page .rec-title').textContent();

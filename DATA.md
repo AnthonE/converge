@@ -39,7 +39,7 @@ words belong to their authors and are not covered.
 | `people.csv` | public figure named on the map, in one plain sentence (who's who) |
 | `methods.csv`, `method_key.csv` | alignment method; its answer to each of the five questions |
 | `doors.csv` | stop on a way in (a door), in order |
-| `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked, the Watch's threads (`watch_threads`: id, `title`, `note`), and, once set, `contribute` (where to send a correction) and `site_url` (the published address) |
+| `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked, the Watch's threads (`watch_threads`: id, `title`, `note`), the names the front offers first (`front_names`: ids of records or of people in Who's who), and, once set, `contribute` (where to send a correction) and `site_url` (the published address) |
 
 ## Fields that recur
 
@@ -63,7 +63,7 @@ independent channels, who stands outside), `cautions`, `lead` (optional: which q
 ideal's card shows; the first when absent).
 
 **phase_conditions**: `phase` 0 to 5 (spoken, gathered, voiced, acting, housed, gated; see `graph.json` →
-`phases`), `text` (the condition), `status` (`met`, `partly`, `not_met`, `unknown`), `evidence`, `url`. A phase
+`phases`, where each phase also has `plain`, the words the cards use to say where an ideal stands), `text` (the condition), `status` (`met`, `partly`, `not_met`, `unknown`), `evidence`, `url`. A phase
 turns on conditions, never on a date. None of this is a forecast.
 
 **carriers**: `kind` (movement, organization, community, public figure, discourse, product, venue), `status`

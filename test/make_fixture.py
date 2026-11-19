@@ -163,7 +163,7 @@ json.dump([{'id': 'claim-1', 'date': '2026-01-02', 'title': 'A <b>sample</b> cla
 json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 'disclosure': 'Synthetic fixture: no ties.',
            'made_with': 'Synthetic fixture, made by a script.', 'nolink_hosts': ['example.net'],
            'contribute': 'https://github.com/example/ideals-map/issues/new/choose', 'site_url': 'https://example.org/map/',
-           'repo': 'example/ideals-map',
+           'repo': 'example/ideals-map', 'front_names': ['lab-0', 'sample-speaker'],
            'watch_threads': {'sample-thread': {'title': 'A sample thread', 'note': 'Why these sample claims are shown together.'}}},
           open(os.path.join(OUT, 'meta.json'), 'w'))
 # Who's who: a public figure named in the sample quotations.

@@ -549,6 +549,11 @@ def validate(g):
         err('meta.json needs a "disclosure" line once the map shows money: say what ties the author has to the bodies shown')
     if [p.get('phase') for p in g['phases']] != list(range(6)):
         err('phases.json must define phases 0-5 in order')
+    # The front's "Start with a name you know": each must open a record (a node or a person in Who's who).
+    person_ids = {p.get('id') for p in g.get('people') or []}
+    for fid in (g.get('meta') or {}).get('front_names') or []:
+        if fid not in ids and fid not in person_ids:
+            err(f'meta.json front_names: {fid!r} is not a record or a person on the map')
     # Who's who: public figures only, each in one plain, sourced sentence that labels no one.
     seen_p, forms = set(), {}
     for i, p in enumerate(g.get('people') or []):

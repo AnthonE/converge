@@ -43,11 +43,39 @@
     ul.setAttribute('aria-label', 'Where it stands, phase by phase');
     (ix.g.phases || []).forEach(function (p, i) {
       var li = ui.h('li', 'cp cp-' + sum[i]);
-      li.title = p.name + ': ' + p.what + ' (' + STAND[sum[i]] + ')';
-      ui.add(li, ns.pipIcon(sum[i]), ui.h('span', null, p.name), ui.h('span', 'sr', ': ' + STAND[sum[i]]));
+      li.title = p.what + ' (' + STAND[sum[i]] + ')';
+      ui.add(li, ns.pipIcon(sum[i]), ui.h('span', 'sr', p.what + ': ' + STAND[sum[i]]));
       ui.add(ul, li);
     });
     return ul;
+  }
+
+  /* Where an ideal stands, in one plain sentence: what has happened so far, partly, and not yet. */
+  ns.standSentence = function (ix, d) {
+    var sum = ns.phaseSummary(d), g = { met: [], partly: [], not_met: [], unknown: [] };
+    (ix.g.phases || []).forEach(function (p, i) { g[sum[i]].push(p.plain || p.what); });
+    return [['met', 'So far: '], ['partly', 'Partly: '], ['not_met', 'Not yet: '], ['unknown', 'Not known: ']]
+      .filter(function (k) { return g[k[0]].length; })
+      .map(function (k) { var t = g[k[0]].join('; '); return k[1] + t + '.'; }).join(' ');
+  };
+
+  /* Start with a name you know: people and companies most readers have heard of (meta.front_names). */
+  function frontNames(ix, ui, nav) {
+    var people = {};
+    (ix.g.people || []).forEach(function (p) { people[p.id] = p; });
+    var ids = ((ix.g.meta || {}).front_names || []).filter(function (id) { return ix.byId[id] || people[id]; });
+    if (!ids.length) return null;
+    var box = ui.h('nav', 'front-names');
+    box.setAttribute('aria-label', 'Start with a name you know');
+    ui.add(box, ui.h('p', 'front-names-k', 'Start with a name you know'));
+    var row = ui.h('div', 'name-row');
+    ids.forEach(function (id) {
+      var b = ui.h('button', 'name-chip', people[id] ? people[id].name : ix.byId[id].label); b.type = 'button';
+      b.setAttribute('data-name', id);
+      b.addEventListener('click', function () { nav.goRecord(id); });
+      ui.add(row, b);
+    });
+    return ui.add(box, row);
   }
 
   function card(ui, nav, ix, d) {
@@ -66,8 +94,9 @@
       ui.add(art, ui.add(fig, cap));
     }
     var s = sides(ix, d);
-    ui.add(art, nameRow(ui, nav, ix, 'Carried by', s.carry), nameRow(ui, nav, ix, 'Answered or opposed by', s.answer));
-    ui.add(art, ui.add(ui.h('div', 'card-stand'), ui.h('span', 'card-k', 'Where it stands'), standing(ui, ix, d)));
+    ui.add(art, nameRow(ui, nav, ix, 'Held by', s.carry), nameRow(ui, nav, ix, 'Answered or opposed by', s.answer));
+    ui.add(art, ui.add(ui.h('div', 'card-stand'), ui.h('span', 'card-k', 'Where it stands'), standing(ui, ix, d),
+      ui.h('p', 'stand-text', ns.standSentence(ix, d))));
     /* Counts as on the drawing, and the newest dated event. */
     var mem = ns.members(ix, d.id), c = { carrier: 0, fruit: 0 }, newest = '';
     Object.keys(mem).forEach(function (m) {
@@ -76,7 +105,7 @@
       if (t === 'fruit' && String(ix.byId[m].date || '') > newest) newest = String(ix.byId[m].date);
     });
     var foot = ui.h('p', 'card-foot');
-    ui.add(foot, ui.h('span', null, c.carrier + (c.carrier === 1 ? ' carrier' : ' carriers') + ' · ' + c.fruit + (c.fruit === 1 ? ' event' : ' events') +
+    ui.add(foot, ui.h('span', null, 'held by ' + c.carrier + ' · ' + c.fruit + (c.fruit === 1 ? ' event' : ' events') +
       (newest ? ' · newest ' + newest : '') + ' '));
     var open = ui.h('button', 'linkbtn card-open', 'Open it →'); open.type = 'button';
     open.addEventListener('click', function () { nav.go(d.id); });
@@ -115,10 +144,11 @@
   ns.renderCards = function (box, ix, ui, nav) {
     while (box.firstChild) box.removeChild(box.firstChild);
     var m = ix.g.meta || {}, ideals = ix.g.ideals || [];
+    ui.add(box, frontNames(ix, ui, nav));
     var intro = ui.h('div', 'watch-intro');
     ui.add(intro, ui.h('h2', null, ideals.length + ' stated aims for AI'),
-      ui.h('p', null, 'Each card is one ideal: an end that a movement, company or community says AI serves, with one voice from its record, named. Open a card for who carries it, what has happened, who pays, and the other side.'),
-      ui.h('p', 'note', 'The ideals’ names are this map’s short labels. Where it stands: six phases, each turning on conditions you could observe. Filled means met, half partly, hollow not met, dotted unknown. Nothing here is a forecast.'));
+      ui.h('p', null, 'Each card is one ideal: an end that a movement, company or community says AI serves, with one voice from its record, named. Open a card for who holds it, what has happened, who pays, and the other side.'),
+      ui.h('p', 'note', 'The ideals’ names are this map’s short labels. Where it stands turns on things you could observe; nothing here is a forecast.'));
     ui.add(box, intro);
     var grid = ui.h('div', 'cards');
     ideals.forEach(function (d) { ui.add(grid, card(ui, nav, ix, d)); });

@@ -66,6 +66,92 @@
     return ui.add(s, ul);
   }
 
+  /* At a glance: one screen on a person or a body before the full record. Their own words from anywhere on the map,
+     money in and out, what has happened and claims on the Watch, a few lines each, every line with its source and
+     flag, and a way to the rest. Amounts are never added up. */
+  function esc(x) { return x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  ns.speakerForms = function (ix, id, person) {
+    var n = ix.byId[id], f = person ? [person.name].concat(person.match || []) : [];
+    if (n && n.label && !person) {
+      f.push(n.label.replace(/\s*\([^)]*\)\s*$/, ''));
+      var m = /\(([^)]+)\)/.exec(n.label);
+      if (m) f.push(m[1]);
+    }
+    return f.filter(function (x) { return x && x.length > 2; });
+  };
+  ns.ownWords = function (ix, id, person) {
+    var forms = ns.speakerForms(ix, id, person);
+    if (!forms.length) return [];
+    var re = new RegExp('(^|[^A-Za-z])(' + forms.map(esc).join('|') + ')(?![A-Za-z])');
+    var out = [], seen = {};
+    function take(w, at) {
+      if (!w || !w.quote || !re.test(w.speaker || '') || seen[w.quote]) return;
+      seen[w.quote] = true; out.push({ w: w, at: at });
+    }
+    Object.keys(ix.byId).forEach(function (k) { (ix.byId[k].words || []).forEach(function (w) { take(w, k); }); });
+    (ix.g.edges || []).forEach(function (e) { if (e.quote) take(e, e.from === id ? e.to : e.from); });
+    return out.sort(function (a, b) { return String(b.w.date || '').localeCompare(String(a.w.date || '')); });
+  };
+  var GLANCE_TYPES = { lab: true, funder: true, evaluator: true };
+  function glance(ix, ui, nav, id, n, person) {
+    if (!person && !(n && GLANCE_TYPES[n.type])) return null;
+    var box = ui.h('section', 'glance'), cols = ui.h('div', 'glance-cols'), any = false;
+    box.setAttribute('aria-label', 'At a glance');
+    ui.add(box, ui.h('h3', null, 'At a glance'));
+    function block(title, total, items, more) {
+      if (!total) return;
+      any = true;
+      var b = ui.h('div', 'glance-block'), ul = ui.h('ul', 'links rec-list');
+      ui.add(b, ui.h('h4', 'rec-sub', title + ' (' + total + ')'));
+      items.forEach(function (li) { ui.add(ul, li); });
+      ui.add(b, ul);
+      if (more && total > items.length) ui.add(b, more);
+      ui.add(cols, b);
+    }
+    var words = ns.ownWords(ix, id, person);
+    block(person ? 'In their own words' : 'In its own words and its people’s', words.length, words.slice(0, 3).map(function (o) {
+      var w = o.w, li = ui.h('li', 'glance-quote');
+      ui.add(li, ui.h('q', null, w.quote));
+      var c = ui.h('span', 'cite');
+      ui.add(c, ui.h('span', null, ' ' + w.speaker + ', '), ui.link(w.url, w.source || 'source', w.nolink), ui.h('span', null, w.date ? ' (' + w.date + ') ' : ' '), ui.badge(w.verified, w.url));
+      if (o.at && o.at !== id && ix.byId[o.at]) ui.add(c, ui.h('span', null, ' · on '), recBtn(ui, nav, o.at, nameOf(ix.byId[o.at])));
+      return ui.add(li, c);
+    }), null);
+    var money = n ? (ix.adj[id] || []).filter(function (l) { return ns.isMoney(l.edge); })
+      .sort(function (a, b) { return String(b.edge.date || '').localeCompare(String(a.edge.date || '')); }) : [];
+    var mm = ui.h('button', 'linkbtn', 'All ' + money.length + ' on the money view →'); mm.type = 'button';
+    mm.addEventListener('click', function () { nav.goMoney(id); });
+    /* One line each: when, from or to whom, how much, the source and its mark. The full sentence is in the record. */
+    var VERB = { funds: ['to', 'from'], evaluates: ['evaluates', 'evaluated by'], hosts: ['hosts', 'hosted by'] };
+    block('Money, hosting and evaluation', money.length, money.slice(0, 5).map(function (l) {
+      var e = l.edge, v = (VERB[e.type] || [e.type, e.type])[e.to === id ? 1 : 0];
+      return ui.add(ui.h('li'), e.date ? ui.h('span', 'rec-date', e.date + ' ') : null, ui.h('span', null, v + ' '),
+        recBtn(ui, nav, l.other, nameOf(ix.byId[l.other])), e.amount ? ui.h('span', 'lane', e.amount) : null, ui.h('span', null, ' '),
+        e.url ? ui.link(e.url, 'source', e.nolink) : null, ui.h('span', null, ' '), e.verified ? ui.badge(e.verified, e.url) : null);
+    }), ui.add(ui.h('p', 'glance-more'), mm));
+    var evIds = {};
+    if (n) (ix.adj[id] || []).forEach(function (l) { if (ix.byId[l.other].type === 'fruit' && !ns.isMoney(l.edge)) evIds[l.other] = true; });
+    var evs = Object.keys(evIds).map(function (k) { return ix.byId[k]; }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
+    block('What has happened', evs.length, evs.slice(0, 3).map(function (f) {
+      return ui.add(ui.h('li'), ui.h('span', 'rec-date', f.date + ' '), recBtn(ui, nav, f.id, f.label || f.what), ui.h('span', 'lane', f.kind));
+    }), null);
+    var re = null;
+    if (person) {
+      var forms = person.match && person.match.length ? person.match : [person.name];
+      re = new RegExp('(^|[^A-Za-z])(' + forms.map(esc).join('|') + ')(?![A-Za-z])');
+    }
+    var claims = (ix.g.watch || []).filter(function (w) { return (w.touches || []).indexOf(id) >= 0 || (re && re.test(JSON.stringify(w))); })
+      .sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
+    block('Claims on the Watch', claims.length, claims.slice(0, 3).map(function (w) {
+      var b = ui.h('button', 'linkbtn', w.title); b.type = 'button';
+      b.addEventListener('click', function () { nav.goWatch(w.id); });
+      return ui.add(ui.h('li'), ui.h('span', 'rec-date', w.date + ' '), b, ui.h('span', 'lane', (ns.watchStatus || {})[w.status] || w.status));
+    }), null);
+    if (!any) return null;
+    ui.add(box, cols, ui.h('p', 'note', 'A few lines of each, newest first; the full record follows. A claim on the Watch is not a finding, and a record of money is not a finding about motive.'));
+    return box;
+  }
+
   ns.renderRecord = function (box, ix, ui, nav, id) {
     while (box.firstChild) box.removeChild(box.firstChild);
     var method = ns.methodById && ns.methodById(ix, id);
@@ -79,7 +165,10 @@
     ui.add(head, ui.h('p', 'kicker', n ? ns.nodeWord(n) : 'Who’s who'), ui.h('h2', 'rec-title', n ? nameOf(n) : person.name));
     var lede = n ? (n[LEDE[n.type]] || n.note || n.status || '') : '';
     if (person) ui.add(head, ui.add(ui.h('p', 'rec-who'), ui.h('span', null, person.who + ' '), ui.link(person.url, person.source, person.nolink)));
-    if (lede && !(person && lede === person.who)) ui.add(head, ui.h('p', 'rec-lede', (n.type === 'text' ? '“' + lede + '” ' + n.ref : lede)));
+    /* A person or a body opens on its glance; the longer note follows it. */
+    var gl = glance(ix, ui, nav, id, n, person), ledeEl = null;
+    if (lede && !(person && lede === person.who)) ledeEl = ui.h('p', 'rec-lede', (n.type === 'text' ? '“' + lede + '” ' + n.ref : lede));
+    if (ledeEl && !gl) ui.add(head, ledeEl);
     if (n && n.type === 'text') {
       var tc = ui.h('p', 'cite');
       ui.add(tc, ui.h('span', null, ns.tradition(n) + ' · ' + (n.translation || 'King James Version') + (n.url ? (/[.!?]$/.test(n.translation || '') ? ' ' : '. ') : '')));
@@ -94,6 +183,8 @@
     if (person) { var w = ui.h('button', 'linkbtn', 'Who’s who'); w.type = 'button'; w.addEventListener('click', function () { nav.goPeople(person.id); }); ui.add(acts, w); }
     ui.add(head, acts);
     ui.add(box, head);
+    ui.add(box, gl);
+    if (ledeEl && gl) ui.add(box, ui.add(ui.section('About'), ledeEl));
 
     if (n && n.type === 'ideal') {
       var ph = ui.section('Where it stands', 'Six steps an ideal can pass through. Each turns when its conditions are met, never on a date. Nothing here is a forecast.');
