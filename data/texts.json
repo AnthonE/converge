@@ -734,5 +734,50 @@
   "translation": "Lewis Spence (1908), an English retelling by way of Brasseur de Bourbourg’s French. Public domain.",
   "url": "https://archive.org/details/popolvuhmythica00spengoog",
   "verified": "primary"
+ },
+ {
+  "id": "text-1-corinthians-15-26",
+  "ref": "1 Corinthians 15:26",
+  "quote": "The last enemy that shall be destroyed is death.",
+  "tradition": "New Testament",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Corinthians",
+  "verified": "primary"
+ },
+ {
+  "id": "text-genesis-1-28",
+  "ref": "Genesis 1:28",
+  "quote": "Be fruitful, and multiply, and replenish the earth, and subdue it: and have dominion over the fish of the sea, and over the fowl of the air",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+  "verified": "primary"
+ },
+ {
+  "id": "text-genesis-12-1",
+  "ref": "Genesis 12:1",
+  "quote": "Get thee out of thy country, and from thy kindred, and from thy father’s house, unto a land that I will shew thee",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+  "verified": "primary"
+ },
+ {
+  "id": "text-matthew-25-14",
+  "ref": "Matthew 25:14",
+  "quote": "For the kingdom of heaven is as a man travelling into a far country, who called his own servants, and delivered unto them his goods.",
+  "tradition": "New Testament",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Matthew",
+  "verified": "primary"
+ },
+ {
+  "id": "text-ecclesiastes-4-10",
+  "ref": "Ecclesiastes 4:10",
+  "quote": "woe to him that is alone when he falleth; for he hath not another to help him up.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+  "verified": "primary"
  }
 ]

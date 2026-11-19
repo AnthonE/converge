@@ -5787,5 +5787,40 @@
   "type": "parallels",
   "lens": true,
   "sentence": "This project reads Aristotle beside it, on the side of the need: “without friends no one would choose to live”. In the same book he sets friendships of use and of pleasure apart from friendship between good people who wish each other well; which of these a made companion could be is an open question, and the text cannot settle it."
+ },
+ {
+  "from": "escape-death",
+  "to": "text-1-corinthians-15-26",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads 1 Corinthians 15:26 beside it, on the aim’s side: Paul too calls death an enemy, “the last enemy that shall be destroyed”. Where they part is the means: in the text death is destroyed by God at the resurrection, not by medicine or engineering."
+ },
+ {
+  "from": "acceleration",
+  "to": "text-genesis-1-28",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Genesis 1:28 beside it, on the ideal’s side: the first command given to humankind is to multiply, fill the earth and “subdue it”. Readings of dominion differ, from rule to stewardship, and the text gives the command to people under God, not to a direction in the universe."
+ },
+ {
+  "from": "exit",
+  "to": "text-genesis-12-1",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Genesis 12:1 beside it, on the ideal’s side: the call of Abraham is a call to leave the land of one’s birth. Where it differs: Abraham leaves at God’s word to found a people, not to choose a government by moving, and Jeremiah 29:7, also read here, counsels staying."
+ },
+ {
+  "from": "no-watcher",
+  "to": "text-matthew-25-14",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the parable of the talents beside it, on the ideal’s side: a master hands his goods to his servants and goes away, and those who put the goods to work while he is gone are praised. Where it differs: the servants are persons, and the master returns to settle accounts with each."
+ },
+ {
+  "from": "companion",
+  "to": "text-ecclesiastes-4-10",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Ecclesiastes 4:10 beside it, on the side of the need: “woe to him that is alone when he falleth”. The text speaks of two people; whether a made companion can be the other one is the question this ideal raises, and the text does not answer it."
  }
 ]
