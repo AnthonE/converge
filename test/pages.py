@@ -108,6 +108,11 @@ def check(g, out):
             fail(f'{rid}: {"no reply invitation" if party else "a reply invitation on a text, pattern or mechanism"}')
         if 'template=correction.yml' not in page:
             fail(f'{rid}: no way to correct it')
+        has_money = kind == 'node' and any(e.get('type') in pages.MONEY for e, _ in ix.adj.get(rid, []))
+        if (kind == 'person' or (kind == 'node' and x['type'] in ('lab', 'funder', 'evaluator'))) and has_money and 'class="glance"' not in page:
+            fail(f'{rid}: a person or body with money records has nothing at a glance')
+        if kind == 'node' and x['type'] in ('text', 'pattern', 'mechanism', 'fruit') and 'class="glance"' in page:
+            fail(f'{rid}: a {x["type"]} page carries a glance meant for people and bodies')
         if f'href="{rid}/"' not in listing:
             fail(f'{rid}: not in the list of every record')
     if not held:

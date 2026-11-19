@@ -25,8 +25,16 @@ python3 -m http.server -d site 8000
 
 Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file with everything inside.
 
-**For a newcomer:** the page opens on the ideals as cards: each gives the ideal's name, one voice from its record
-(named, with its source and flag), who carries it and who answers it, and its six phases in words. "Show the ideals
+**For a newcomer:** the page opens with "Start with a name you know": a row of people and companies most readers
+have heard of (`front_names` in `data/meta.json`; the check refuses a name that is not on the map). Each opens its
+record **at a glance**: their own words from anywhere on the map, money in and out (one line each: when, from or to
+whom, how much, never added up), what has happened and claims on the Watch, a few lines of each before the full
+record. The plain page `r/<id>/` carries the same glance. Below come the ideals as cards: each gives the ideal's
+name, one voice from its record (named, with its source and flag), who holds it and who answers it, and where it
+stands in one plain sentence ("So far: … Partly: … Not yet: …", from each phase's `plain` words in
+`data/phases.json`). **Checking marks** are short: a filled dot for checked at the source, half for checked on a
+relay, a dashed ring for not checked, a ringed dot for re-read by a person. A tap shows the full words, screen
+readers always hear them, and the plain record pages spell them out. "Show the ideals
 as a drawing" switches to the linked map, with its key folded under "Key". "New here? Start here" holds the ways in
 by where you are coming from, every part of the map, the words it uses and what each checking mark means.
 **Timeline** lists every dated event and Watch claim, newest first. The search box finds any name, event or claim

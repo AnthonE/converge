@@ -362,6 +362,76 @@ class Writer:
         return '<div class="rec-foot">' + ''.join(out) + '</div>'
 
     # One record ----------------------------------------------------------------------------------------------
+    def own_words(self, rid, person):
+        """Quotations anywhere on the map whose speaker is this person or body (as record.js ownWords)."""
+        n = self.ix.by.get(rid)
+        forms = ([person['name']] + list(person.get('match') or [])) if person else []
+        if n and n.get('label') and not person:
+            forms.append(re.sub(r'\s*\([^)]*\)\s*$', '', n['label']))
+            forms += re.findall(r'\(([^)]+)\)', n['label'])[:1]
+        forms = [f for f in forms if f and len(f) > 2]
+        if not forms:
+            return []
+        rx = re.compile(r'(^|[^A-Za-z])(' + '|'.join(re.escape(f) for f in forms) + r')(?![A-Za-z])')
+        out, seen = [], set()
+
+        def take(w, at):
+            if w.get('quote') and rx.search(str(w.get('speaker') or '')) and w['quote'] not in seen:
+                seen.add(w['quote'])
+                out.append((w, at))
+        for k, x in self.ix.by.items():
+            for w in x.get('words') or []:
+                take(w, k)
+        for e in self.ix.g.get('edges') or []:
+            if e.get('quote'):
+                take(e, e['to'] if e.get('from') == rid else e.get('from'))
+        return sorted(out, key=lambda o: str(o[0].get('date') or ''), reverse=True)
+
+    def glance(self, rid, n, person):
+        """At a glance: a person's or a body's own words, money in and out, events and Watch claims, a few lines each."""
+        ix = self.ix
+        if not person and not (n and n['type'] in ('lab', 'funder', 'evaluator')):
+            return ''
+        blocks = []
+
+        def block(title, total, items):
+            if total:
+                blocks.append(f'<div class="glance-block"><h3 class="rec-sub">{E(title)} ({total})</h3>{self.ul(items)}</div>')
+        words = self.own_words(rid, person)
+        block('In their own words' if person else 'In its own words and its people’s', len(words), [
+            f'<li class="glance-quote"><q>{E(w["quote"])}</q><span class="cite"> {E(w.get("speaker"))}, '
+            f'{self.link(w.get("url"), w.get("source") or "source", w.get("nolink"))}{" (" + E(w["date"]) + ")" if w.get("date") else ""} '
+            f'{self.badge(w.get("verified"), w.get("url"))}'
+            + (f' · on {self.rec(at, name(ix.by[at]))}' if at and at != rid and at in ix.by else '') + '</span></li>'
+            for w, at in words[:3]])
+        verb = {'funds': ('to', 'from'), 'evaluates': ('evaluates', 'evaluated by'), 'hosts': ('hosts', 'hosted by')}
+        money = sorted(((e, o) for e, o in ix.adj.get(rid, []) if e.get('type') in MONEY), key=lambda l: str(l[0].get('date') or ''), reverse=True)
+        block('Money, hosting and evaluation', len(money), [self.item(
+            (f'<span class="rec-date">{E(e["date"])} </span>' if e.get('date') else '') +
+            f'<span>{E(verb.get(e["type"], (e["type"], e["type"]))[1 if e.get("to") == rid else 0])} </span>{self.rec(o, name(ix.by[o]))}' +
+            (f'<span class="lane">{E(e["amount"])}</span>' if e.get('amount') else '') +
+            (f' {self.link(e["url"], "source", e.get("nolink"))}' if e.get('url') else '') +
+            (f' {self.badge(e["verified"], e.get("url"))}' if e.get('verified') else ''), is_gated(ix, 'edge', e)) for e, o in money[:5]])
+        evs = sorted({o for e, o in ix.adj.get(rid, []) if ix.by[o]['type'] == 'fruit' and e.get('type') not in MONEY},
+                     key=lambda k: str(ix.by[k].get('date')), reverse=True)
+        block('What has happened', len(evs), [self.item(
+            f'<span class="rec-date">{E(ix.by[k].get("date"))} </span>{self.rec(k, ix.by[k].get("label") or ix.by[k].get("what"), is_gated(ix, "node", ix.by[k]))}'
+            f'<span class="lane">{E(ix.by[k].get("kind"))}</span>', is_gated(ix, 'node', ix.by[k])) for k in evs[:3]])
+        rx = None
+        if person:
+            forms = person.get('match') or [person['name']]
+            rx = re.compile(r'(^|[^A-Za-z])(' + '|'.join(re.escape(f) for f in forms) + r')(?![A-Za-z])')
+        claims = sorted((w for w in ix.watch.values() if rid in (w.get('touches') or [])
+                         or (rx and rx.search(json.dumps(w, ensure_ascii=False)))), key=lambda w: str(w['date']), reverse=True)
+        block('Claims on the Watch', len(claims), [self.item(
+            f'<span class="rec-date">{E(w["date"])} </span>{self.rec(w["id"], w["title"], is_gated(ix, "watch", w))}'
+            f'<span class="lane">{E(STATUS.get(w["status"], w["status"]))}</span>', is_gated(ix, 'watch', w)) for w in claims[:3]])
+        if not blocks:
+            return ''
+        return ('<section class="glance" aria-label="At a glance"><h2 class="sec-h">At a glance</h2>'
+                f'<div class="glance-cols">{"".join(blocks)}</div><p class="note">A few lines of each, newest first; the full record '
+                'follows. A claim on the Watch is not a finding, and a record of money is not a finding about motive.</p></section>\n')
+
     def node_body(self, rid, n):
         ix, out = self.ix, []
         p = ix.person_of.get(rid)
@@ -369,8 +439,12 @@ class Writer:
         if p:
             head.append(f'<p class="rec-who"><span>{E(p["who"])} </span>{self.link(p.get("url"), p.get("source"), p.get("nolink"))}</p>')
         lede = n.get(LEDE.get(n['type'], '')) or n.get('note') or n.get('status') or ''
+        gl = self.glance(rid, n, p)
+        lede_html = ''
         if lede and not (p and lede == p.get('who')):
-            head.append(f'<p class="rec-lede">{E("“" + lede + "” " + n.get("ref", "") if n["type"] == "text" else lede)}</p>')
+            lede_html = f'<p class="rec-lede">{E("“" + lede + "” " + n.get("ref", "") if n["type"] == "text" else lede)}</p>'
+            if not gl:
+                head.append(lede_html)
         if n['type'] == 'text':
             tr = n.get('tradition') or 'Hebrew Bible'
             src = f' {self.link(n["url"], "source")} {self.badge(n.get("verified"), n["url"])}' if n.get('url') else ''
@@ -383,6 +457,8 @@ class Writer:
         srcs = own_sources(dict(n, **({'_person': p} if p else {})))
         head.append(self.trail(srcs))
         out.append('<header class="rec-head">' + ''.join(head) + '</header>')
+        if gl:
+            out.append(gl + (self.section('About', None, lede_html) if lede_html else ''))
         if n['type'] == 'ideal':
             phases, summ = ix.g.get('phases') or [], phase_summary(n)
             items = [f'<li class="ph-{s}"><b>{E(ph.get("name"))}: </b><span>{E(ph.get("what"))} </span><span class="lane">{E(PHASE[s])}</span></li>'
@@ -457,7 +533,7 @@ class Writer:
         srcs = own_sources(p)
         head = (f'<header class="rec-head"><p class="kicker">Who’s who</p><h1 class="rec-title">{E(p["name"])}</h1>'
                 f'<p class="rec-who"><span>{E(p.get("who"))} </span>{self.link(p.get("url"), p.get("source"), p.get("nolink"))}</p>'
-                f'{self.trail(srcs)}</header>')
+                f'{self.trail(srcs)}</header>') + self.glance(rid, None, p)
         body = self.mentions(rid, p, [])
         return head + self.section('Threads', 'Where this name appears on the map.', body) + self.sources(srcs), srcs
 

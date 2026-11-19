@@ -17,10 +17,10 @@
     ['Record', 'One page for anything on the map: what it says, who says it, what happened, who pays, the other side, what is open, and every thread to the rest. Pick anything and choose \u201cRead it as a page\u201d.']
   ];
   var FLAGS = [
-    ['machine-checked at the source', 'A model opened the speaker’s own page and found the words.'],
-    ['machine-checked on a relay or coverage', 'A model found the words only in an interview, a transcript, a news story or a repost.'],
-    ['not yet checked', 'Nobody has checked it. That does not make it false.'],
-    ['re-read by a person', 'A person opened the page and compared it with the map, on the date shown.']
+    ['at the source', 'Machine-checked at the source: a model opened the speaker’s own page and found the words.', 'primary'],
+    ['on a relay', 'Machine-checked on a relay or coverage: a model found the words only in an interview, a transcript, a news story or a repost.', 'secondary'],
+    ['not checked', 'Not yet checked: nobody has checked it. That does not make it false.', 'unverified'],
+    ['re-read by a person', 'A person opened the page and compared it with the map, on the date shown. Tap any mark on the map for its full words.', 'reread']
   ];
   var VIEWS = [
     ['Ideals', 'tab-ideals', 'The stated aims, one card each: who carries it, one voice from its record, and where it stands.'],
@@ -142,7 +142,7 @@
 
     var fl = ui.section('How far the checking has got', 'Models made by Anthropic gathered and checked these records; Anthropic is itself on the map. Each source carries one of these marks.');
     var fd = ui.h('dl', 'glossary');
-    FLAGS.forEach(function (f) { ui.add(fd, ui.add(ui.h('dt'), ui.h('span', 'badge', f[0])), ui.h('dd', null, f[1])); });
+    FLAGS.forEach(function (f) { ui.add(fd, ui.add(ui.h('dt'), ui.h('span', 'badge badge-mark badge-' + f[2], f[0])), ui.h('dd', null, f[1])); });
     ui.add(fl, fd);
     if (s.pages) ui.add(fl, ui.h('p', 'progress', 'A person has re-read ' + (s.reread || 0) + ' of the ' + s.pages + ' pages this map cites.' +
       (s.gate ? ' The first to read are the ' + s.gate + ' behind the Watch and the allegations: ' + (s.gate_reread || 0) + ' done.' : '')));

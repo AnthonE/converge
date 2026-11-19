@@ -24,12 +24,21 @@
     a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
     return a;
   }
-  /* The machine's flag, and, once a person has opened the page and compared it with the map, that too. */
+  /* The machine's flag, and, once a person has opened the page and compared it with the map, that too. It shows as a
+     short mark; a tap shows the full words, which screen readers always hear. Record pages (r/) spell it out. */
+  var SHORT = { primary: 'at the source', secondary: 'on a relay', unverified: 'not checked' };
   function badge(v, url) {
-    var r = url && ix.reread[url];
-    if (r && (r.result === 'holds' || r.result === 'corrected'))
-      return h('span', 'badge badge-reread', (VERIFIED[v] || VERIFIED.unverified) + ' · re-read by a person, ' + r.date);
-    return h('span', 'badge badge-' + (v || 'unverified'), VERIFIED[v] || VERIFIED.unverified);
+    var r = url && ix.reread[url], full, short, cls;
+    if (r && (r.result === 'holds' || r.result === 'corrected')) {
+      full = (VERIFIED[v] || VERIFIED.unverified) + ' · re-read by a person, ' + r.date; short = 're-read by a person'; cls = 'badge badge-reread';
+    } else {
+      full = VERIFIED[v] || VERIFIED.unverified; short = SHORT[v] || SHORT.unverified; cls = 'badge badge-' + (v || 'unverified');
+    }
+    var b = h('button', cls, short);
+    b.type = 'button'; b.title = full;
+    b.setAttribute('aria-label', 'How it was checked: ' + full);
+    b.addEventListener('click', function (ev) { ev.stopPropagation(); b.textContent = b.textContent === short ? full : short; });
+    return b;
   }
   function section(title, note) {
     var s = h('section', 'sec');
@@ -264,6 +273,8 @@
 
   /* Redrawing destroys the focused element, so put keyboard focus back where it was. */
   function render() {
+    /* The page says which view is open; on a phone the header's long sentence shows on the front only. */
+    document.documentElement.setAttribute('data-view', state.view);
     var act = document.activeElement, kb = act && act.matches && act.matches(':focus-visible');
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
@@ -416,7 +427,7 @@
   }
   function goRecord(id) { state.view = 'record'; state.ideal = null; state.edge = null; state.selected = id; setHash('#r/' + id); render(); }
   function goPeople(id) { state.view = 'people'; state.ideal = null; state.edge = null; state.selected = id || null; setHash(id ? '#people/' + id : '#people'); render(); }
-  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goRecord: function (id) { goRecord(id); },
+  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goRecord: function (id) { goRecord(id); }, goMoney: function (id) { goMoney(id); },
     goMethods: function () { goMethods(); }, goDoor: function (id) { goDoor(id); }, goView: function (v) { goView(v); } };
   function goWatch(id) {
     state.view = 'watch'; state.ideal = null; state.edge = null;

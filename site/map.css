@@ -457,3 +457,40 @@ th { color: var(--ink-2); font-weight: 600; }
 .newest .rec-list li { margin: 4px 0; }
 .static-page a, .static-page .src, .static-page .cite-text { overflow-wrap: anywhere; }
 .newest-meta { display: block; font-size: 12.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* Checking marks: a short, quiet mark; a tap shows the full words. A person's re-read stands out. */
+button.badge { font: inherit; font-size: 11.5px; line-height: 1.45; background: none; border: 0; border-radius: 4px; padding: 0 3px; color: var(--ink-2); cursor: pointer; white-space: normal; text-align: left; }
+button.badge:hover { background: var(--wash); }
+button.badge.badge-primary { color: var(--ink); }
+button.badge.badge-reread { border: 1.5px solid var(--ink); border-radius: 9px; padding: 0 6px; color: var(--ink); }
+
+/* Start with a name you know (the front), and At a glance (a person's or a body's record). */
+.front-names { margin: 4px 0 14px; }
+.front-names-k { font-size: 13.5px; color: var(--ink-2); margin: 0 0 6px; }
+.name-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.name-chip { border-radius: 16px; padding: 4px 12px; font-size: 14px; }
+@media (max-width: 560px) {
+  .name-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+  .name-chip { flex: none; }
+}
+.glance { border: 1px solid var(--border); background: var(--surface); border-radius: 8px; padding: 12px 14px; margin: 10px 0 6px; }
+.glance > h3 { margin-bottom: 2px; }
+.glance-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 24px; }
+.glance-quote q { font-style: italic; }
+.glance-quote .cite { display: block; margin-top: 2px; }
+.glance-more { margin: 2px 0 6px; font-size: 13px; }
+.glance > .note { margin: 6px 0 0; }
+.stand-text { font-size: 13px; color: var(--ink-2); margin: 4px 0 0; }
+@media (max-width: 560px) {
+  [data-view]:not([data-view="cards"]) .top .sub { display: none; }
+}
+/* The mark before each check: filled at the source, half on a relay, hollow (dashed) not checked, ringed re-read. */
+button.badge::before, .badge-mark::before { content: ''; display: inline-block; width: 0.72em; height: 0.72em; margin-right: 0.35em; border-radius: 50%; border: 1.5px solid currentColor; vertical-align: -0.06em; box-sizing: border-box; }
+button.badge-primary::before, .badge-mark.badge-primary::before { background: currentColor; }
+button.badge-secondary::before, .badge-mark.badge-secondary::before { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+button.badge-unverified::before, .badge-mark.badge-unverified::before { border-style: dashed; }
+button.badge-reread::before, .badge-mark.badge-reread::before { background: currentColor; box-shadow: 0 0 0 1.5px var(--plane), 0 0 0 3px currentColor; }
+.theme-btn { width: 34px; height: 30px; padding: 0; display: inline-flex; align-items: center; justify-content: center; }
+.theme-btn::before { content: ''; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid currentColor; background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+button.badge-reread::before, .badge-mark.badge-reread::before { margin: 0 0.5em 0 0.2em; }
+.glance .rec-sub { text-transform: none; letter-spacing: normal; color: var(--ink); font-size: 14px; margin: 12px 0 4px; }

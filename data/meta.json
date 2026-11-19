@@ -29,6 +29,7 @@
   }
  },
  "site_url": "https://converge-olive-theta.vercel.app",
+ "front_names": ["openai", "anthropic", "google-deepmind", "meta", "xai", "elon-musk", "sam-altman", "peter-thiel", "marc-andreessen", "eliezer-yudkowsky", "vitalik-buterin", "pope-leo-xiv"],
  "public": true,
  "contribute": "https://github.com/AnthonE/converge/issues/new/choose",
  "repo": "AnthonE/converge",
