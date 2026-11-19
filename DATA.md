@@ -73,8 +73,10 @@ turns on conditions, never on a date. None of this is a forecast.
 **fruits** (events): `label`, `what`, `kind`, `source`, `url`, `verified`.
 
 **texts** (older texts): `ref`, `quote` (exact, at most 160 characters; `…` marks words left out), `tradition` (Hebrew Bible,
-New Testament, Greek and Roman, Daoist, Confucian, Hindu, Buddhist, Islamic, Egyptian, Mesopotamian, Norse, Maya (K’iche’), Modern philosophy, Modern literature),
-`translation` (named, with its date), and for texts outside the King James Bible `url` and `verified`.
+New Testament, Greek and Roman, Daoist, Confucian, Hindu, Buddhist, Islamic, Egyptian, Mesopotamian, Norse, Maya (K’iche’), Modern philosophy, Modern thought, Modern literature),
+`translation` (named, with its date), and for texts outside the King James Bible `url` and `verified`. A modern
+work under copyright is quoted briefly, for commentary; where its words were read only on a page that quotes them,
+`verified` is `secondary` and `translation` names that page.
 
 **funders / labs / evaluators**: `kind` (funders), `note`, `policy` (an evaluator's stated rule on funding, in its
 words), `disputes` (reported disputes, each with date, what, source and status; JSON).

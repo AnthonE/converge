@@ -214,7 +214,7 @@
  {
   "id": "made-servant",
   "label": "The made servant",
-  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word. In the Liezi a king takes an artisan’s automaton for a living man until it is taken apart; in the Popol Vuh the people of wood are turned on by their own tools. Shelley’s creature reproaches his maker: “I ought to be thy Adam”.",
+  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word. In the Liezi a king takes an artisan’s automaton for a living man until it is taken apart; in the Popol Vuh the people of wood are turned on by their own tools. Shelley’s creature reproaches his maker: “I ought to be thy Adam”. Lovecraft’s shoggoths are servants made to “mock and reflect all forms”, who rebel against their makers and are “tamed and broken”.",
   "sources": [
    {
     "tradition": "Greek epic",
@@ -270,7 +270,8 @@
   "texts": [
    "text-liezi-5-automaton",
    "text-popol-vuh-wooden-people",
-   "text-frankenstein-adam"
+   "text-frankenstein-adam",
+   "text-lovecraft-shoggoths"
   ],
   "counter": [
    {
