@@ -5948,5 +5948,61 @@
   "type": "parallels",
   "lens": true,
   "sentence": "This project reads Laplace beside it: an intelligence so vast that “nothing would be uncertain and the future, as the past, would be present to its eyes”. The argument needs a future mind that knows who helped; Laplace offered his intelligence as a figure for what human knowledge lacks, which is why he needed probability, not as a being to fear."
+ },
+ {
+  "from": "acceleration",
+  "to": "text-chesterton-fence",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Chesterton’s fence beside it: do not clear away a fence until you know why it was put up. It is a rule for reformers of any kind, not a ruling against speed, and Chesterton lets the fence come down once its use is understood."
+ },
+ {
+  "from": "capture",
+  "to": "text-lovecraft-shoggoths",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Lovecraft’s shoggoths beside it: made servants “able to mock and reflect all forms”, “slaves of suggestion”. Wikipedia reports that AI engineers took the shoggoth up in 2023 as an image of a language model behind a friendly mask. It is a horror story and a meme, not a finding about any model."
+ },
+ {
+  "from": "basilisk",
+  "to": "text-pascal-wager",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Pascal’s wager beside it: an infinite stake makes any cost look worth paying. Where it differs: Pascal weighs the hope of God’s reward, the argument here a made mind’s punishment, and Pascal’s own reader answers him in the next line, “I may perhaps wager too much”."
+ },
+ {
+  "from": "revealed",
+  "to": "text-korzybski-map",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Korzybski beside it: “the map is not the territory”. Whatever a model discloses comes as words, a map, and whether it matches the territory has to be checked outside the conversation. Korzybski wrote about language and science, not about machines."
+ },
+ {
+  "from": "feed",
+  "to": "text-girard-mimetic-desire",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Girard beside it: people learn what to want from one another. A fiction that spreads by imitation needs no will of its own to look as if it had one; Girard’s is a theory of persons, and that it fits a feed is this project’s reading."
+ },
+ {
+  "from": "feed",
+  "to": "text-borges-tlon",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Borges’s Tlön beside it: an invented world, spread by a secret society, that seeps into this one, and in which forgotten things “grow vague or sketchy and lose detail”. Wikipedia’s article reads the story as a comment on the power of ideas over reality; it is fiction, and proves nothing about memes or markets."
+ },
+ {
+  "from": "no-watcher",
+  "to": "text-goodhart-1975",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Goodhart’s law beside it: a measure pressed into service as a target stops measuring. An agent left alone with a goal it can only see as a number is the case engineers call specification gaming; Goodhart wrote about monetary policy, not machines."
+ },
+ {
+  "from": "exit",
+  "to": "text-rao-legibility",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Venkatesh Rao’s summary of James C. Scott beside it: the planner who finds an old city confusing and draws a blank slate. Where it differs: Scott’s schemes were imposed on people who could not leave, while this ideal’s holders say new jurisdictions are joined by choice; the test the text sets is whether residents can still reshape what was designed for them."
  }
 ]
