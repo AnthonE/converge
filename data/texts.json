@@ -892,7 +892,7 @@
   "id": "text-frankenstein-adam",
   "ref": "Mary Shelley, Frankenstein, the creature to his maker",
   "quote": "Remember, that I am thy creature; I ought to be thy Adam; but I am rather the fallen angel, whom thou drivest from joy for no misdeed.",
-  "tradition": "Modern fiction",
+  "tradition": "Modern literature",
   "translation": "The 1831 edition. Public domain.",
   "url": "https://archive.org/details/frankensteinorth42324gut",
   "verified": "primary"
@@ -901,9 +901,72 @@
   "id": "text-erewhon-machines",
   "ref": "Samuel Butler, Erewhon, “The Book of the Machines” (1872)",
   "quote": "There is no security … against the ultimate development of mechanical consciousness, in the fact of machines possessing little consciousness now.",
-  "tradition": "Modern fiction",
+  "tradition": "Modern literature",
   "translation": "Written in English. Public domain.",
   "url": "https://archive.org/details/erewhon01906gut",
+  "verified": "primary"
+ },
+ {
+  "id": "text-zhuangzi-2-butterfly",
+  "ref": "Zhuangzi 2 (the butterfly dream)",
+  "quote": "Now I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly dreaming I am a man.",
+  "tradition": "Daoist",
+  "translation": "Herbert A. Giles (1889). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_2",
+  "verified": "primary"
+ },
+ {
+  "id": "text-zhuangzi-1-useless-tree",
+  "ref": "Zhuangzi 1 (the useless tree)",
+  "quote": "There it would be safe from the axe and from all other injury; for being of no use to others, itself would be free from harm.",
+  "tradition": "Daoist",
+  "translation": "Herbert A. Giles (1889). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_1",
+  "verified": "primary"
+ },
+ {
+  "id": "text-plutarch-theseus-23",
+  "ref": "Plutarch, Life of Theseus 23 (the ship of Theseus)",
+  "quote": "one side holding that the ship remained the same, and the other contending that it was not the same",
+  "tradition": "Greek and Roman",
+  "translation": "Translated by John Dryden, as the page credits it. Public domain.",
+  "url": "http://classics.mit.edu/Plutarch/theseus.html",
+  "verified": "primary"
+ },
+ {
+  "id": "text-diogenes-laertius-6-38",
+  "ref": "Diogenes Laertius, Lives VI.38 (Diogenes and Alexander)",
+  "quote": "Alexander came and stood over him and said, “Ask of me any boon you like.” To which he replied, “Stand out of my light.”",
+  "tradition": "Greek and Roman",
+  "translation": "R. D. Hicks (1925). Public domain.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0258%3Abook%3D6%3Achapter%3D2",
+  "verified": "primary"
+ },
+ {
+  "id": "text-pliny-natural-history-8-33",
+  "ref": "Pliny, Natural History VIII.33 (the basilisk)",
+  "quote": "so true is it that it has pleased Nature that there should be nothing without its antidote",
+  "tradition": "Greek and Roman",
+  "translation": "John Bostock and H. T. Riley (1855). Public domain.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D8%3Achapter%3D33",
+  "verified": "primary"
+ },
+ {
+  "id": "text-laplace-essay-intelligence",
+  "ref": "Laplace, A Philosophical Essay on Probabilities, II (the vast intelligence)",
+  "quote": "for it, nothing would be uncertain and the future, as the past, would be present to its eyes",
+  "tradition": "Modern philosophy",
+  "translation": "Frederick Wilson Truscott and Frederick Lincoln Emory (1902). Public domain.",
+  "url": "https://archive.org/details/philosophicaless00lapluoft",
+  "verified": "primary"
+ },
+ {
+  "id": "text-milton-paradise-lost-1-moloch",
+  "ref": "Milton, Paradise Lost I.392–393 (Moloch)",
+  "quote": "First, Moloch, horrid king, besmeared with blood Of human sacrifice, and parents’ tears",
+  "tradition": "Modern literature",
+  "translation": "Written in English (1667); modernised spelling of Project Gutenberg EBook #26. Public domain.",
+  "url": "https://archive.org/details/paradiselost00026gut",
   "verified": "primary"
  }
 ]

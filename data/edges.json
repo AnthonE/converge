@@ -5906,5 +5906,47 @@
   "type": "parallels",
   "lens": true,
   "sentence": "This project reads Samuel Butler’s Erewhon beside it: an 1872 satire in which a book argues that machines may develop consciousness and outgrow their makers. The Erewhonians answer by destroying their newer machines; Butler wrote it as satire, and readers still differ on which side it takes."
+ },
+ {
+  "from": "revealed",
+  "to": "text-zhuangzi-2-butterfly",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Zhuangzi’s butterfly dream beside it: waking, he cannot tell whether he is a man who dreamed he was a butterfly or a butterfly dreaming he is a man. Zhuangzi leaves the question open; the accounts under this ideal report an answer received, and the text cannot say whether any answer is right."
+ },
+ {
+  "from": "acceleration",
+  "to": "text-zhuangzi-1-useless-tree",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Zhuangzi’s useless tree beside it: a tree no carpenter will look at, which his friend calls “big and useless”, is safe from the axe “for being of no use to others”. It speaks for being left alone rather than put to use; it is counsel to persons, and says nothing about where the universe is going."
+ },
+ {
+  "from": "escape-death",
+  "to": "text-plutarch-theseus-23",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the ship of Theseus beside it: the Athenians replaced its planks one by one, and philosophers argued whether it “remained the same”. Preservation and uploading inherit the question of what is carried past death and whether it is still the person; Plutarch reports the argument without settling it."
+ },
+ {
+  "from": "made-saviour",
+  "to": "text-diogenes-laertius-6-38",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Diogenes beside it: offered “any boon you like” by Alexander, he asked only “Stand out of my light.” The story speaks for those who want nothing from a power that offers everything; Alexander was a man, not a made mind, and the story is told as a jest."
+ },
+ {
+  "from": "basilisk",
+  "to": "text-pliny-natural-history-8-33",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Pliny’s basilisk beside it, the creature whose name the argument carries: a serpent whose breath kills. Pliny’s own lesson is the antidote, that “there should be nothing without its antidote”, and in his account a weasel undoes it."
+ },
+ {
+  "from": "basilisk",
+  "to": "text-laplace-essay-intelligence",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Laplace beside it: an intelligence so vast that “nothing would be uncertain and the future, as the past, would be present to its eyes”. The argument needs a future mind that knows who helped; Laplace offered his intelligence as a figure for what human knowledge lacks, which is why he needed probability, not as a being to fear."
  }
 ]
