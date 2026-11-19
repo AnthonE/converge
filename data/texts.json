@@ -779,5 +779,23 @@
   "translation": "King James Version (1611). Public domain.",
   "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
   "verified": "primary"
+ },
+ {
+  "id": "text-herodotus-7-136",
+  "ref": "Herodotus, Histories VII.136 (the Spartan envoys before Xerxes)",
+  "quote": "it was not their custom, said they, to bow to mortal men",
+  "tradition": "Greek and Roman",
+  "translation": "A. D. Godley (1922). Public domain.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D7%3Achapter%3D136",
+  "verified": "primary"
+ },
+ {
+  "id": "text-arrian-anabasis-4-11",
+  "ref": "Arrian, Anabasis IV.11 (Callisthenes on prostration)",
+  "quote": "men have made distinctions between those honours which are due to men, and those due to gods",
+  "tradition": "Greek and Roman",
+  "translation": "E. J. Chinnock (1884). Public domain.",
+  "url": "https://archive.org/details/theanabasisofale46976gut",
+  "verified": "primary"
  }
 ]
