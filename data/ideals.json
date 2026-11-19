@@ -777,6 +777,7 @@
  },
  {
   "id": "oracle",
+  "lead": 5,
   "label": "A machine can answer the sacred questions",
   "ideal": "That the questions once brought to God, a priest or a guru (what is true, what should I do, what does the text mean for me) can be put to a made thing that answers at any hour, in any language, without judgment.",
   "summary": "Since 2019, temples, churches, start-ups and solo developers have built machines that answer religious questions: a sermon-reciting android at Kodaiji (Mindar), scripture chatbots voiced as Krishna (GitaGPT), and a GPT-4o \"AI Jesus\" art installation in a Lucerne confessional (2024, about 900 conversations). Outside institutions, some people put spiritual questions to general-purpose chatbots; an August 2026 NPR/Ipsos poll put current use at 6% of US adults. Religious bodies have answered in their own words: the Holy See (Antiqua et Nova, 2025; Magnifica Humanitas, 2026), Egypt's Dar al-Ifta and Austria's bishops allow AI as support and reject it as a substitute. Most deployers describe the machine as a tool, not the deity.",

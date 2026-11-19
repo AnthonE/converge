@@ -61,12 +61,27 @@
     return svg;
   }
 
+  /* How far a person has re-read the pages this claim cites; until then the claim says so. */
+  function rereadMark(ui, ix, w) {
+    var urls = {};
+    (function walk(o) {
+      if (Array.isArray(o)) { o.forEach(walk); return; }
+      if (!o || typeof o !== 'object') return;
+      if (typeof o.url === 'string' && /^https?:\/\//.test(o.url)) urls[o.url] = true;
+      Object.keys(o).forEach(function (k) { if (k !== 'url') walk(o[k]); });
+    })(w);
+    var all = Object.keys(urls), done = all.filter(function (u) { var r = (ix.reread || {})[u]; return r && /^(holds|corrected)$/.test(r.result); }).length;
+    if (!all.length) return null;
+    return ui.h('span', 'lane reread-mark' + (done === all.length ? ' is-done' : ''),
+      done === all.length ? 're-read by a person' : done ? 're-read by a person: ' + done + ' of ' + all.length + ' sources' : 'not yet re-read by a person');
+  }
+
   function item(ui, w, ix, onNode) {
     var art = ui.h('article', 'claim');
     art.id = 'watch-' + w.id;
     var head = ui.h('header', 'claim-head');
     ui.add(head, ui.h('time', null, w.date), ui.h('span', 'claim-status status-' + w.status.replace(/ /g, '-'), STATUS[w.status] || w.status),
-      ui.h('span', 'lane', w.kind));
+      ui.h('span', 'lane', w.kind), rereadMark(ui, ix, w));
     ui.add(art, head, ui.h('h3', null, w.title));
     var said = ui.h('p', 'claim-said');
     ui.add(said, ui.h('span', null, w.claimed_by + ': '), ui.h('q', null, w.claim), ui.h('span', null, ' '),
@@ -134,18 +149,73 @@
       });
       ui.add(art, p);
     }
+    ui.add(art, ns.recordFoot(ix, ui, { id: w.id, title: w.title, hash: '#watch/' + w.id }));
     return art;
   }
 
-  /* The whole Watch, newest first. */
-  ns.renderWatch = function (box, ix, ui, onNode) {
+  function count(list, key) {
+    var c = {};
+    list.forEach(function (w) { [].concat(key(w)).forEach(function (k) { if (k) c[k] = (c[k] || 0) + 1; }); });
+    return c;
+  }
+  function select(ui, label, first, options, value, onChange) {
+    var s = ui.h('select'); s.setAttribute('aria-label', label);
+    var any = ui.h('option', null, first); any.value = ''; ui.add(s, any);
+    options.forEach(function (o) { var op = ui.h('option', null, o[1]); op.value = o[0]; if (value === o[0]) op.selected = true; ui.add(s, op); });
+    s.addEventListener('change', onChange);
+    return s;
+  }
+
+  /* The whole Watch, newest first. Claims in one thread are shown together, folded, under a note that says why
+     they are here; a filter narrows by status or by the name on the map a claim touches. */
+  ns.renderWatch = function (box, ix, ui, onNode, filter, focusId) {
     while (box.firstChild) box.removeChild(box.firstChild);
+    filter = filter || { status: '', on: '' };
+    var m = ix.g.meta || {}, threads = m.watch_threads || {}, all = ix.g.watch || [];
     var intro = ui.h('div', 'watch-intro');
     ui.add(intro, ui.h('h2', null, 'The Watch'),
-      ui.h('p', null, 'Claims being passed around about AI and the people building it, dated, each with who made it and what has been checked so far. This is a timeline of claims and evidence, not a verdict. A claim here is not a finding, and an unchecked claim is not false. Follow the sources and come to your own conclusion.'),
-      ui.h('p', 'note', 'A claim moves onto the map only once its sources are checked. People who are not public figures are not named. ' + (((ix.g.meta || {}).made_with) || '')));
+      ui.h('p', null, 'Claims in circulation about AI, the people building it and the events around them, each dated, with who is speaking and what has been checked so far. This is a timeline of claims and evidence, not a verdict. A claim here is not a finding, and an unchecked claim is not false. Follow the sources and come to your own conclusion.'),
+      ui.h('p', 'note', 'Being on the Watch does not put a claim on the map: it joins the map’s records only once its sources are checked. People who are not public figures are not named. ' + (m.made_with || '')));
+    if (!document.getElementById('graph-data')) {
+      var a = ui.h('a', 'src', 'a feed of new claims and events'); a.href = 'feed.xml';
+      ui.add(intro, ui.add(ui.h('p', 'note'), ui.h('span', null, 'To hear of new entries, follow '), a, ui.h('span', null, ' in any feed reader.')));
+    }
+
+    var byStatus = count(all, function (w) { return w.status; });
+    var byOn = count(all, function (w) { return (w.touches || []).filter(function (id) { return ix.byId[id]; }); });
+    function again() { ns.renderWatch(box, ix, ui, onNode, { status: st.value, on: on.value }); }
+    var st = select(ui, 'Status', 'Every status', Object.keys(STATUS).filter(function (k) { return byStatus[k]; }).map(function (k) {
+      return [k, STATUS[k] + ' (' + byStatus[k] + ')']; }), filter.status, again);
+    var on = select(ui, 'On the map', 'Every claim', Object.keys(byOn).sort(function (x, y) { return byOn[y] - byOn[x]; }).map(function (k) {
+      return [k, 'Touches ' + (ix.byId[k].label || ix.byId[k].ref) + ' (' + byOn[k] + ')']; }), filter.on, again);
+    var shown = all.filter(function (w) {
+      return (!filter.status || w.status === filter.status) && (!filter.on || (w.touches || []).indexOf(filter.on) >= 0);
+    }).sort(function (x, y) {
+      /* Newest first; on the same day a single claim comes before a thread, then by title. */
+      return String(y.date).localeCompare(String(x.date)) || (x.thread ? 1 : 0) - (y.thread ? 1 : 0) || x.title.localeCompare(y.title);
+    });
+    ui.add(intro, ui.add(ui.h('div', 'tl-filters'), st, on, ui.h('span', 'note', shown.length + ' of ' + all.length + ' shown')));
     ui.add(box, intro);
-    (ix.g.watch || []).slice().sort(function (a, b) { return String(b.date).localeCompare(String(a.date)) || a.title.localeCompare(b.title); })
-      .forEach(function (w) { ui.add(box, item(ui, w, ix, onNode)); });
+
+    var done = {};
+    shown.forEach(function (w) {
+      var t = w.thread && threads[w.thread];
+      if (!t) { ui.add(box, item(ui, w, ix, onNode)); return; }
+      if (done[w.thread]) return;
+      done[w.thread] = true;
+      var members = shown.filter(function (x) { return x.thread === w.thread; });
+      var sec = ui.h('details', 'w-thread');
+      sec.id = 'thread-' + w.thread;
+      if (focusId && members.some(function (x) { return x.id === focusId; })) sec.open = true;
+      var sum = ui.h('summary');
+      var st2 = count(members, function (x) { return STATUS[x.status] || x.status; });
+      ui.add(sum, ui.h('span', 'w-thread-k', 'A thread of ' + members.length + (members.length === 1 ? ' claim' : ' claims')),
+        ui.h('span', 'w-thread-t', t.title), ui.h('time', null, members[members.length - 1].date + (members.length > 1 && members[0].date !== members[members.length - 1].date ? ' to ' + members[0].date : '')),
+        ui.h('span', 'w-thread-s', Object.keys(st2).map(function (k) { return k + ': ' + st2[k]; }).join(' · ')));
+      ui.add(sec, sum, ui.h('p', 'w-thread-note', t.note));
+      members.forEach(function (x) { ui.add(sec, item(ui, x, ix, onNode)); });
+      ui.add(box, sec);
+    });
+    if (!shown.length) ui.add(box, ui.h('p', 'note', 'No claim on the Watch matches both filters.'));
   };
 })(window.IdealsMap = window.IdealsMap || {});

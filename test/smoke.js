@@ -15,10 +15,39 @@ const path = require('path');
   const fail = msg => { errors.push(msg); };
 
   await page.goto('file://' + file);
-  await page.waitForSelector('#map .node');
+  // The front: the ideals as cards, one per ideal, each with a voice from its record and its six phases in words.
+  await page.waitForSelector('#the-page .card');
   const graph = await page.evaluate(() => JSON.parse(document.getElementById('graph-data').textContent));
+  if ((await page.locator('#the-page .card').count()) !== graph.ideals.length) fail('the front does not show one card per ideal');
+  if (await page.locator('#layout').isVisible()) fail('the drawing shows under the cards');
+  if (!(await page.locator('#modebar').isVisible())) fail('the cards/drawing switch does not show on the front');
+  if (await page.locator('#key').isVisible()) fail('the key to the drawing shows with no drawing');
+  if ((await page.locator('#tab-ideals').getAttribute('aria-pressed')) !== 'true') fail('the Ideals tab is not pressed on the front');
+  if (!/^Updated \d{1,2} [A-Z][a-z]+ \d{4}$/.test(await page.locator('#updated').textContent())) fail('the header does not say when the record was updated');
+  // While the pages behind the Watch and the allegations are not all re-read, the header says so, with the count.
+  const src = graph.sources || {};
+  if (src.gate && src.gate_reread < src.gate) {
+    const dn = await page.locator('#draft-note').textContent().catch(() => '');
+    if (!dn.includes(src.gate + ' pages') || !dn.includes('(' + src.gate_reread + ' done so far)')) fail(`the draft notice reads "${dn}"`);
+    if ((graph.meta || {}).contribute && !(await page.locator('#draft-note a').count())) fail('the draft notice gives no way to send feedback');
+  }
+  if ((await page.locator('#the-page .card').first().locator('.card-phases li').count()) !== 6) fail('a card does not name its six phases');
+  if ((await page.locator('#the-page .card-quote').count()) !== graph.ideals.filter(d => (d.words || []).length).length) fail('a card with quotations shows none');
+  const led = graph.ideals.find(d => typeof d.lead === 'number');
+  if (led && !(await page.locator(`#the-page .card[data-ideal="${led.id}"] blockquote`).textContent()).includes(led.words[led.lead].quote)) fail(`${led.id}: the card does not show its lead quotation`);
+  if (await page.locator('#the-page .card b').count()) fail('card data was inserted as markup');
+  if (shots) await page.screenshot({ path: path.join(shots, 'cards-light.png'), fullPage: true });
+  // A card's title opens its ideal on the drawing; back on the front, the switch turns to the drawing and keeps it.
+  await page.locator('#the-page .card-title').first().click();
+  await page.waitForFunction(id => document.querySelector('.role-centre')?.dataset.id === id, graph.ideals[0].id);
+  await page.locator('#to-overview').click();
+  await page.waitForFunction(() => location.hash === '' && !document.getElementById('the-page').hidden && document.querySelector('#the-page .card'));
+  await page.locator('#mode-drawing').click();
+  await page.waitForFunction(() => location.hash === '#drawing' && document.querySelector('#stage').dataset.view === 'overview');
+  if (!(await page.locator('#key').isVisible())) fail('the key does not show over the drawing');
+  if (await page.locator('#legend-ideals').isVisible()) fail('the key is open before anyone asks for it');
 
-  // Overview: one node per ideal.
+  // Overview: one node per ideal; an ideal's name opens it, as its mark does.
   const nIdeals = await page.locator('#map .node-ideal').count();
   if (nIdeals !== graph.ideals.length) fail(`overview shows ${nIdeals} ideals, data has ${graph.ideals.length}`);
   if (shots) await page.screenshot({ path: path.join(shots, 'overview-light.png'), fullPage: true });
@@ -37,6 +66,14 @@ const path = require('path');
   });
   const ov = await overlaps();
   if (ov > 0) fail(`overview: ${ov} overlapping label pair(s)`);
+  {
+    const g0 = page.locator('#map .node-ideal').nth(1), want = await g0.getAttribute('data-id');
+    const box = await g0.locator('.lbl').first().boundingBox();
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+    await page.waitForFunction(id => document.querySelector('.role-centre')?.dataset.id === id, want, { timeout: 5000 }).catch(() => fail(`clicking the name of ${want} does not open it`));
+    await page.evaluate(() => { location.hash = '#drawing'; });
+    await page.waitForFunction(() => document.querySelector('#stage').dataset.view === 'overview');
+  }
 
   // Focus each ideal: the panel names it, the hash updates, nothing overlaps, nothing is off-canvas.
   let worst = 0;
@@ -95,7 +132,8 @@ const path = require('path');
     await page.locator('#tab-money').click();
     await page.waitForFunction(() => document.querySelector('#stage').dataset.view === 'money');
     if ((await page.locator('#tab-money').getAttribute('aria-pressed')) !== 'true') fail('money tab is not marked pressed');
-    if (!(await page.locator('#legend-money').isVisible()) || (await page.locator('#legend-ideals').isVisible())) fail('money view shows the wrong legend');
+    const shownLegend = () => page.evaluate(() => ['legend-ideals', 'legend-money', 'legend-ancients'].filter(x => !document.getElementById(x).hidden).join());
+    if (!(await page.locator('#key').isVisible()) || (await shownLegend()) !== 'legend-money') fail('money view shows the wrong legend');
     if (!(await page.locator('#panel .loop').count())) fail('money view shows no disclosure line');
     let o = await overlaps(); if (o > 0) fail(`money overview: ${o} overlapping label pair(s)`);
     let off = await offCanvas(); if (off > 0) fail(`money overview: ${off} label(s) outside the canvas`);
@@ -215,17 +253,40 @@ const path = require('path');
     await page.waitForFunction(() => !document.getElementById('the-watch').hidden && document.getElementById('layout').hidden);
     // What is on screen, not attributes: the map, its legends and the overview button are gone; the tab is pressed.
     if (await page.locator('#layout').isVisible()) fail('the map still shows under the Watch');
-    for (const s of ['#legend-ideals', '#legend-money', '#legend-ancients', '#to-overview']) if (await page.locator(s).isVisible()) fail(`${s} shows in the Watch`);
+    for (const s of ['#key', '#modebar', '#to-overview']) if (await page.locator(s).isVisible()) fail(`${s} shows in the Watch`);
     if (await page.locator('#tab-watch').getAttribute('aria-pressed') !== 'true') fail('the Watch tab is not pressed');
-    // Data is text, never markup; each claim shows its words.
+    // Data is text, never markup; each claim shows its words, newest first, a thread's claims together where its newest stands.
     if (await page.locator('#the-watch .claim b').count()) fail('Watch data was inserted as markup');
     const said = await page.locator('#the-watch .claim-said q').allTextContents();
-    const want = graph.watch.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.title.localeCompare(b.title)).map(w => w.claim);
-    if (said.join('|') !== want.join('|')) fail('a Watch claim does not show its words');
+    const sorted = graph.watch.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)) || (a.thread ? 1 : 0) - (b.thread ? 1 : 0) || a.title.localeCompare(b.title));
+    const order = []; sorted.forEach(w => { if (!w.thread) order.push(w); else if (!order.includes(w)) sorted.filter(x => x.thread === w.thread).forEach(x => order.push(x)); });
+    if (said.join('|') !== order.map(w => w.claim).join('|')) fail('a Watch claim does not show its words, or the order is wrong');
     const dates = await page.locator('#the-watch .claim-head time').allTextContents();
     if (dates.length !== graph.watch.length) fail(`the Watch lists ${dates.length} of ${graph.watch.length} claims`);
-    if (dates.join() !== dates.slice().sort().reverse().join()) fail('the Watch is not newest first');
+    const units = await page.evaluate(() => [...document.querySelectorAll('#the-watch > .claim, #the-watch > .w-thread')].map(u => u.querySelector('.claim-head time').textContent));
+    if (units.join() !== units.slice().sort().reverse().join()) fail('the Watch is not newest first');
     if ((await page.locator('#the-watch .claim-status').count()) !== graph.watch.length) fail('a Watch claim shows no status');
+    const cited = graph.watch.filter(w => /"url":"https?:/.test(JSON.stringify(w))).length;
+    if ((await page.locator('#the-watch .reread-mark').count()) !== cited) fail('a Watch claim with sources does not say whether a person has re-read them');
+    // A thread is folded, with its note, and holds every claim in it; a filter narrows the list and says how many.
+    const threads = (graph.meta || {}).watch_threads || {};
+    for (const tid of Object.keys(threads)) {
+      const t = page.locator(`#thread-${tid}`);
+      if (!(await t.count())) { fail(`thread ${tid} is not shown`); continue; }
+      if (await t.evaluate(e => e.open)) fail(`thread ${tid} is open before anyone asks`);
+      if (!(await t.locator('.w-thread-note').textContent()).includes(threads[tid].note)) fail(`thread ${tid} does not show its note`);
+      if ((await t.locator('.claim').count()) !== graph.watch.filter(w => w.thread === tid).length) fail(`thread ${tid} does not hold its claims`);
+    }
+    await page.locator('#the-watch .tl-filters select').first().selectOption('not checked');
+    const narrowed = await page.locator('#the-watch .claim').count();
+    if (narrowed !== graph.watch.filter(w => w.status === 'not checked').length) fail(`filtered to "not checked", the Watch shows ${narrowed} claims`);
+    await page.locator('#the-watch .tl-filters select').first().selectOption('');
+    // Every claim says how to cite it, and where the map takes replies, how to answer it, with the record filled in.
+    if ((await page.locator('#the-watch .claim .cite-line').count()) !== graph.watch.length) fail('a Watch claim has no citation');
+    if ((graph.meta || {}).contribute) {
+      const href = await page.locator(`#watch-${graph.watch[0].id} .reply-line a`).getAttribute('href');
+      if (!href || !href.includes('template=correction.yml') || !href.includes('record=' + encodeURIComponent(graph.watch[0].id))) fail(`the reply link does not name the claim: ${href}`);
+    }
     // How it travelled: every step shows, in date order, with what changed; a reason shows where one is given.
     for (const w of graph.watch.filter(x => (x.travelled || []).length)) {
       const steps = await page.locator(`#watch-${w.id} .travelled .step`).count();
@@ -253,6 +314,7 @@ const path = require('path');
     await page.waitForFunction(x => document.activeElement && document.activeElement.id === 'watch-' + x, w0.id);
     const touch = graph.watch.find(w => (w.touches || []).length);
     if (touch) {
+      await page.evaluate(x => { const d = document.getElementById('watch-' + x).closest('details'); if (d) d.open = true; }, touch.id);
       await page.locator(`#watch-${touch.id} .claim-on .linkbtn`).first().click();
       await page.waitForFunction(() => document.getElementById('the-watch').hidden && !document.getElementById('layout').hidden);
       const first = touch.touches[0];
@@ -269,7 +331,7 @@ const path = require('path');
   if ((graph.patterns || []).length) {
     await page.locator('#tab-ancients').click();
     await page.waitForFunction(() => document.querySelector('#stage').dataset.view === 'ancients');
-    if (!(await page.locator('#legend-ancients').isVisible())) fail('ancients view shows the wrong legend');
+    if (!(await page.locator('#key').isVisible()) || (await page.evaluate(() => ['legend-ideals', 'legend-money', 'legend-ancients'].filter(x => !document.getElementById(x).hidden).join())) !== 'legend-ancients') fail('ancients view shows the wrong legend');
     let o = await overlaps(); if (o > 0) fail(`ancients view: ${o} overlapping label pair(s)`);
     let off = await offCanvas(); if (off > 0) fail(`ancients view: ${off} label(s) outside the canvas`);
     if (shots) await page.screenshot({ path: path.join(shots, 'ancients-light.png'), fullPage: true });
@@ -491,17 +553,19 @@ const path = require('path');
   await page.keyboard.press('Enter');
   await page.waitForFunction(() => location.hash === '#watch/claim-1');
 
-  // Ways in: the door strip on the front opens a door; its stops lead to records and views.
-  await page.evaluate(() => { location.hash = ''; });
-  await page.waitForSelector('#doors:not([hidden]) .door-chip');
-  if ((await page.locator('#doors .door-chip').count()) !== graph.doors.length) fail('the front does not show one chip per door');
-  await page.locator('#doors .door-chip').first().click();
+  // Ways in: Start here holds one chip per door; a door's stops lead to records and views.
+  await page.evaluate(() => { location.hash = '#start'; });
+  await page.waitForSelector('#the-page .doors .door-chip');
+  if ((await page.locator('#the-page .doors .door-chip').count()) !== graph.doors.length) fail('Start here does not show one chip per door');
+  await page.locator('#the-page .doors .door-chip').first().click();
   await page.waitForFunction(() => location.hash === '#door/sample-door');
   if ((await page.locator('#the-page .door-stops li').count()) !== graph.doors[0].stops.length) fail('a door does not list its stops');
   await page.locator('#the-page .door-go').nth(1).click();
   await page.waitForFunction(() => location.hash === '#methods');
   // Alignment methods side by side, and a method's own record with its five questions.
   if ((await page.locator('#the-page .mk-table:not(.mk-money) tbody tr').count()) !== graph.methods.length) fail('the methods table does not list every method');
+  const own = graph.methods.reduce((n, m) => n + (m.key || []).filter(x => x.kind === 'own words').length, 0);
+  if ((await page.locator('#the-page .mk-mark').allTextContents()).filter(t => t === 'their words').length !== own) fail('an answer in its proponents’ words is not marked "their words"');
   // Who pays for the bodies that push each method: one row per method, money sorted by kind, allegations left out.
   if ((await page.locator('#the-page .mk-money tbody tr').count()) !== graph.methods.length) fail('the money-behind-methods table does not list every method');
   const payTo = (id) => graph.edges.filter((e) => e.type === 'funds' && e.to === id && e.kind !== 'alleged' && e.money !== 'purchase');
@@ -530,6 +594,10 @@ const path = require('path');
   await page.waitForSelector('#the-page .rec-phases li');
   if ((await page.locator('#the-page .rec-phases li').count()) !== 6) fail('an ideal record does not list its six phases');
   if (!(await page.locator('#the-page .rec-list li').count())) fail('an ideal record lists nothing it links to');
+  const cite = await page.locator('#the-page .cite-text').textContent().catch(() => '');
+  const site = ((graph.meta || {}).site_url || '').replace(/\/?$/, '/');
+  if (!cite.includes('record ideal-0') || (site !== '/' && !cite.includes(site + '#r/ideal-0'))) fail(`a record's citation reads "${cite}"`);
+  if ((graph.meta || {}).contribute && !(await page.locator('#the-page .reply-line a').count())) fail('a record offers no way to reply');
   await page.evaluate(() => { location.hash = '#r/sample-speaker'; });
   await page.waitForFunction(() => (document.querySelector('#the-page .rec-who') || {}).textContent);
   const pr = await page.locator('#the-page .rec-title').textContent();
@@ -548,15 +616,26 @@ const path = require('path');
   if (!/A sample public figure/.test(card || '')) fail(`who card reads "${card}"`);
   await page.keyboard.press('Escape');
   if (await page.locator('#who-card').isVisible()) fail('Escape does not close the who card');
-  if (!(await page.locator('#to-people').isVisible())) fail("the Who's who link is not shown");
-  await page.locator('#to-people').click();
+  await page.evaluate(() => { location.hash = '#start'; });
+  const whoBtn = page.locator('#the-page .guide-ways .linkbtn', { hasText: 'Who’s who' });
+  if (!(await whoBtn.count())) fail("Start here does not list Who's who");
+  else await whoBtn.click();
   await page.waitForFunction(() => location.hash === '#people');
   if ((await page.locator('#the-page .people dt').count()) !== 1) fail("Who's who does not list the fixture's one person");
 
-  // Narrow screen: no page-level horizontal scroll.
-  await page.setViewportSize({ width: 390, height: 800 });
+  // Narrow screen: no page-level horizontal scroll, on a page or on the front; on the front, a card starts on the first screen.
+  await page.setViewportSize({ width: 390, height: 844 });
   const scroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   if (scroll > 1) fail(`page scrolls sideways by ${scroll}px at 390px wide`);
+  await page.evaluate(() => { location.hash = '#drawing'; });
+  await page.waitForFunction(() => document.querySelector('#stage').dataset.view === 'overview');
+  await page.locator('#mode-cards').click();
+  await page.waitForSelector('#the-page .card');
+  await page.evaluate(() => window.scrollTo(0, 0));
+  const front = await page.evaluate(() => ({ side: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    card: document.querySelector('#the-page .card').getBoundingClientRect().top }));
+  if (front.side > 1) fail(`the front scrolls sideways by ${front.side}px at 390px wide`);
+  if (front.card > 844) fail(`on a phone the first card starts ${Math.round(front.card)}px down, below the first screen`);
   if (shots) await page.screenshot({ path: path.join(shots, 'narrow.png') });
 
   await browser.close();

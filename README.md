@@ -25,9 +25,15 @@ python3 -m http.server -d site 8000
 
 Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file with everything inside.
 
-**For a newcomer:** "New here? Start here" under the title explains the map in plain words, the five ways in,
-the words it uses and what each checking mark means. **Timeline** lists every dated event and Watch claim, newest
-first. The search box finds any name, event or claim and opens it where it lives.
+**For a newcomer:** the page opens on the ideals as cards: each gives the ideal's name, one voice from its record
+(named, with its source and flag), who carries it and who answers it, and its six phases in words. "Show the ideals
+as a drawing" switches to the linked map, with its key folded under "Key". "New here? Start here" holds the ways in
+by where you are coming from, every part of the map, the words it uses and what each checking mark means.
+**Timeline** lists every dated event and Watch claim, newest first. The search box finds any name, event or claim
+and opens it where it lives. Every record and every Watch claim ends with a line to cite it.
+
+**To follow it:** a published copy carries `feed.xml`, an Atom feed of the newest Watch claims and events
+(`tools/feed.py`, run by `tools/package.py`). The header says when the data last changed.
 
 **For researchers:** the published site carries the data under `data/`: `graph.json`, one CSV per table (with
 quotations, phase conditions and the Watch's checks broken out), `sources.csv` (every cited page with its
@@ -36,7 +42,16 @@ locally: `python3 tools/export_data.py` (into `dist/data/`).
 
 ## Check it
 
-No person has yet re-read the sources; models did every step. Two tools make that debt something to work down:
+No person has yet re-read the sources; models did every step. These tools make that debt something to work down.
+
+- **On a phone: `/reread.html` on the published site** (for example
+  https://converge-olive-theta.vercel.app/reread.html). It shows one cited page at a time, Watch and allegations
+  first: what the map takes from the page, a button to open it, and the automatic pre-check's result. Tap "It
+  holds", "Doesn't hold" (with a note) or "Can't read". Answers are kept on the phone. "Save to the map" opens
+  GitHub's new-file page with them filled in, into `data/reread-inbox/`; tap Commit changes, and the next deploy
+  merges them into the ledger (`tools/sources.py`) and shows them as re-read by a person. A broken file there is
+  skipped with a warning, never a failed deploy. The page needs `repo` in `data/meta.json`; the pre-check it shows
+  is `data/precheck.json` (refresh with `python3 tools/precheck.py --save`).
 
 - `python3 tools/reread.py` writes `dist/reread.md`: every cited page (373 now) in the order to read it, the
   Watch first, then allegations, then anything no model checked, then relays, then pages read at the source.
@@ -57,7 +72,10 @@ No person has yet re-read the sources; models did every step. Two tools make tha
 
 - **Claims and corrections** come in as issues: the forms in `.github/ISSUE_TEMPLATE/` ask for the exact words,
   who said them, a link and the date, and refuse private names. Set `contribute` in `data/meta.json` to the
-  repository's new-issue page once it is public, and Start here will offer it.
+  repository's new-issue page once it is public (for example `https://github.com/OWNER/REPO/issues/new/choose`):
+  Start here will offer it, and every record and Watch claim gets a "Reply to this record or correct it" link that
+  opens the correction form with the record filled in. Set `site_url` to the published address so citations and
+  the feed carry full links.
 
 - **The data** is in `data/`: ideals, carriers, vehicles, events (`fruits.json`), texts, funders, labs, evaluators,
   patterns, mechanisms, offshoots, links (`edges.json`) and the Watch (`watch.json`).
@@ -72,8 +90,14 @@ No person has yet re-read the sources; models did every step. Two tools make tha
   (one line on why the entry is on the map) and `travelled`, the claim's path from source to source, oldest first:
   each step has `date`, `who`, `said` (their exact words), `source`, and where it can `url`, `verified` and `cites`
   (what it gives as its source); every step after the first says in `changed`, neutrally, what it added or dropped.
+  Claims that belong together (one day's outage reports, say) can share a `thread`: describe it once in
+  `data/meta.json` under `watch_threads` with a neutral `title` and a `note` on why the claims are here, and the
+  Watch shows them together, folded, under that note.
+- **An ideal's card** shows its first quotation. Where that is not a voice for the ideal (a critic, say), set `lead`
+  to the index of the one to show instead; the speaker is always named.
 - **Test the viewer**: `python3 test/make_fixture.py && python3 build.py --data test/fixture --no-site --out
-  dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright).
+  dist/fixture.html && node test/smoke.js dist/fixture.html` (needs Node and Playwright). The phone re-read page:
+  `python3 tools/package.py && node test/reread.js dist/site`.
 
 ## Publish it
 
@@ -82,6 +106,11 @@ cannot start jobs on this repository at the moment: every run, even a one-line t
 log, which points to the account's billing or Actions minutes. The workflows below are ready for when it can.)
 The build command validates the data first (`python3 tools/package.py` runs `build.py`), so a record that breaks
 a guardrail stops the deploy.
+
+**Public now, as a draft.** `"public": true` in `data/meta.json` makes every build indexable and labels the map a
+draft, with no host setting to change; set it to `false` to go back to noindex. While a person has not finished
+re-reading the pages behind the Watch and the allegations, the header says so and gives the count, and each Watch
+claim says whether its sources have been re-read. Feedback goes to the issue forms (`contribute`).
 
 **Vercel (connected).** The repository is connected to Vercel, which builds from `vercel.json`: every push to
 `main` publishes the site and every pull request gets a preview address (behind a Vercel login, so only the

@@ -1,0 +1,39 @@
+name: Feedback on the map
+description: Anything else, such as a framing that seems unfair, something hard to find or use, or a missing ideal, group or source.
+title: "Feedback: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. The map was published early, as a draft, and is meant to change with what readers find.
+        Say what you noticed and, where you can, which page or record and a link.
+        **Do not name private people** (members, accusers, victims, defendants who are not public figures):
+        describe them by role.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What you noticed
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where on the map
+      description: A record's name, a page (the Watch, the money view), or a link from the address bar. Optional.
+  - type: dropdown
+    id: standing
+    attributes:
+      label: How you stand to it
+      options:
+        - A reader
+        - A party to a record, or speaking for one
+        - A researcher or journalist
+        - Rather not say
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you send
+      options:
+        - label: I have not named anyone who is not a public figure.
+          required: true

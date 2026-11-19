@@ -47,7 +47,15 @@ attributed. An unchecked claim is not false, and a claim on the Watch is not a f
 
 The records were gathered and worded with AI models made by Anthropic, which is itself on the map. Say so wherever
 Anthropic or its models are a party, and do not soften results about them. The disclosure line in `data/meta.json`
-is a draft until the operator writes it.
+states the operator's own ties as the operator gave them (2026-11-18: applications drafted, none sent). Change it
+only on the operator's word, and keep it current when anything is sent or comes of it.
+
+## Published early
+
+The operator published the map on 2026-11-18, before a person had re-read the sources, and chose to say so openly:
+`"public": true` in `data/meta.json` makes every build indexable and labels it a draft; the header says how far the
+re-read has got, and each Watch claim says whether a person has re-read its sources. Feedback comes in through the
+issue forms (`contribute`). The re-read continues on the phone page (`/reread.html`).
 
 ## Where the research lives
 

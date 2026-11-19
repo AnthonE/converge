@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Re-read the sources</title>
+<link rel="stylesheet" href="reread.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="back"><a href="./">&larr; The Ideals Map</a></p>
+    <h1>Re-read the sources</h1>
+    <p class="sub">Open each page, compare it with what the map takes from it, and say whether it holds. Answers stay on this phone until you save them to the map.</p>
+    <div class="bars" id="bars"></div>
+    <div class="save" id="save" hidden></div>
+  </header>
+  <main id="main"><div class="card empty">Loading…</div></main>
+  <section class="card listcard">
+    <label for="filter" class="kicker">Which pages</label>
+    <select id="filter">
+      <option value="gate">Before going public (the Watch and allegations)</option>
+      <option value="todo">Everything not yet answered</option>
+      <option value="flagged">Answered “does not hold”</option>
+      <option value="all">All cited pages</option>
+    </select>
+    <ul class="list" id="list"></ul>
+  </section>
+  <section class="card help">
+    <h2>How saving works</h2>
+    <p>Each answer is kept on this phone as soon as you tap it. “Save to the map” opens GitHub with your answers written into a new file; tap the green <b>Commit changes</b> button, and again in the box that opens. The site rebuilds in a few minutes and shows the pages as re-read by a person. Answers leave this phone’s list once the site has them.</p>
+    <p>If GitHub opens in its app instead of the browser, press and hold “Save to the map” and choose to open it in the browser. Or tap “Copy my answers” and paste them to Claude.</p>
+  </section>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="reread.js"></script>
+</body>
+</html>

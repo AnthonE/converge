@@ -13,13 +13,16 @@ Added files:
   _headers     security headers (Netlify and Cloudflare Pages read this file as is; on other hosts, set them yourself)
   robots.txt   keeps crawlers out unless --public
   README.txt   how to deploy
+  reread.html  the re-read, on a phone: answers are kept on the phone and saved to the repository as a commit
+  feed.xml     an Atom feed of the newest claims on the Watch and events on the map (tools/feed.py)
 """
-import argparse, os, shutil, subprocess, sys, zipfile
+import argparse, json, os, shutil, subprocess, sys, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SITE = os.path.join(ROOT, 'site')
-FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'people.js', 'record.js', 'methods.js', 'map.js', 'graph.json']
+FILES = ['index.html', 'heart.html', 'map.css', 'layout.js', 'render.js', 'money.js', 'watch.js', 'ancients.js', 'guide.js', 'ideals.js', 'people.js', 'record.js', 'methods.js', 'map.js', 'graph.json',
+         'reread.html', 'reread.js', 'reread.css']
 
 CSP = ("default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; "
        "frame-ancestors 'none'; base-uri 'none'; form-action 'none'; object-src 'none'")
@@ -70,6 +73,8 @@ def main():
     ap.add_argument('--out', default=os.path.join(ROOT, 'dist', 'site'))
     a = ap.parse_args()
     a.public = a.public or os.environ.get('PUBLIC', '').lower() == 'true'   # hosts with no flags (Vercel): set PUBLIC=true
+    # Or say so in the data: "public": true in data/meta.json publishes every build, with no host setting to change.
+    a.public = a.public or json.load(open(os.path.join(ROOT, 'data', 'meta.json'), encoding='utf-8')).get('public') is True
     r = subprocess.run([sys.executable, os.path.join(ROOT, 'build.py')], capture_output=True, text=True)
     print(r.stdout.strip().splitlines()[-1] if r.stdout.strip() else '')
     if r.returncode:
@@ -87,8 +92,14 @@ def main():
     if a.public:
         html = html.replace('<meta name="robots" content="noindex, nofollow">\n', '')
         heart = os.path.join(a.out, 'heart.html')
-        open(heart, 'w', encoding='utf-8').write(open(heart, encoding='utf-8').read().replace('<meta name="robots" content="noindex, nofollow">\n', ''))
+        text = open(heart, encoding='utf-8').read()   # read before opening for writing, which empties the file
+        with open(heart, 'w', encoding='utf-8') as fh:
+            fh.write(text.replace('<meta name="robots" content="noindex, nofollow">\n', ''))
         html = html.replace('<span class="tag">private prototype</span>', '<span class="tag">draft</span>')
+        single = os.path.join(a.out, 'ideals-map.html')
+        text = open(single, encoding='utf-8').read()
+        with open(single, 'w', encoding='utf-8') as fh:
+            fh.write(text.replace('<meta name="robots" content="noindex, nofollow">\n', '').replace('<span class="tag">private prototype</span>', '<span class="tag">draft</span>'))
         robots = 'User-agent: *\nAllow: /\n'
         visibility = 'This copy is public: search engines may index it.'
     else:
@@ -99,6 +110,14 @@ def main():
     open(index, 'w', encoding='utf-8').write(html)
     # The data for researchers: graph.json, CSV tables, DATA.md and a zip, under data/.
     r = subprocess.run([sys.executable, os.path.join(HERE, 'export_data.py'), '--out', os.path.join(a.out, 'data')], capture_output=True, text=True)
+    if r.returncode:
+        sys.exit(r.stdout + r.stderr)
+    # The phone re-read page's queue: every cited page, what the map takes from it, and the readings so far.
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'phone_queue.py'), '--out', os.path.join(a.out, 'reread-queue.json')], capture_output=True, text=True)
+    if r.returncode:
+        sys.exit(r.stdout + r.stderr)
+    # A feed of the newest claims and events, for readers who want to hear of new entries.
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'feed.py'), '--graph', os.path.join(SITE, 'graph.json'), '--out', os.path.join(a.out, 'feed.xml')], capture_output=True, text=True)
     if r.returncode:
         sys.exit(r.stdout + r.stderr)
     open(os.path.join(a.out, '_headers'), 'w').write('\n'.join(headers) + '\n')

@@ -593,6 +593,7 @@
  },
  {
   "id": "schwab-outage-2026-11",
+  "thread": "outages-2026-11",
   "date": "2026-11-17",
   "title": "Users report problems reaching Charles Schwab",
   "claimed_by": "@Kalshi (X)",
@@ -616,6 +617,7 @@
  },
  {
   "id": "nsa-network-2026-11",
+  "thread": "outages-2026-11",
   "date": "2026-11-17",
   "title": "Reports of an outage on the NSA's classified communications network",
   "claimed_by": "@InsiderWire (X)",
@@ -683,6 +685,7 @@
  },
  {
   "id": "trump-outages-2026-11",
+  "thread": "outages-2026-11",
   "date": "2026-11-17",
   "title": "The President on the outages: “It's life”",
   "claimed_by": "@Polymarket (X)",
@@ -706,6 +709,7 @@
  },
  {
   "id": "hawley-coincidence-2026-11",
+  "thread": "outages-2026-11",
   "date": "2026-11-17",
   "title": "A senator doubts the outages are a coincidence",
   "claimed_by": "@disclosetv (X)",
