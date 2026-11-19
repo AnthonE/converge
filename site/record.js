@@ -80,6 +80,12 @@
     var lede = n ? (n[LEDE[n.type]] || n.note || n.status || '') : '';
     if (person) ui.add(head, ui.add(ui.h('p', 'rec-who'), ui.h('span', null, person.who + ' '), ui.link(person.url, person.source, person.nolink)));
     if (lede && !(person && lede === person.who)) ui.add(head, ui.h('p', 'rec-lede', (n.type === 'text' ? '“' + lede + '” ' + n.ref : lede)));
+    if (n && n.type === 'text') {
+      var tc = ui.h('p', 'cite');
+      ui.add(tc, ui.h('span', null, ns.tradition(n) + ' · ' + (n.translation || 'King James Version') + (n.url ? (/[.!?]$/.test(n.translation || '') ? ' ' : '. ') : '')));
+      if (n.url) ui.add(tc, ui.link(n.url, 'source'), ui.h('span', null, ' '), ui.badge(n.verified, n.url));
+      ui.add(head, tc);
+    }
     if (n && n.type === 'fruit') ui.add(head, ui.add(ui.h('p', 'cite'), ui.h('span', null, n.date + ' · ' + n.kind + ' · '), ui.link(n.url, n.source || 'source', n.nolink), ui.h('span', null, ' '), ui.badge(n.verified, n.url)));
     var srcs = ownSources(n || person);
     ui.add(head, trail(ix, ui, srcs, n || person));
@@ -125,9 +131,14 @@
     })));
 
     var anc = adj.filter(function (l) { return l.edge.type === 'invokes' || l.edge.type === 'reads_as' || l.edge.type === 'parallels'; });
+    /* Own words first, then readings, each group by the tradition of the text it names. */
+    anc = anc.filter(function (l) { return l.edge.type === 'invokes'; }).concat(ns.byTradition(anc.filter(function (l) { return l.edge.type !== 'invokes'; }), function (l) {
+      var o = ix.byId[l.other]; return o && o.type === 'text' ? ns.tradition(o) : 'zz';
+    }));
     ui.add(box, list(ui, 'What older traditions called it', 'Own words are a speaker’s; a reading is this project’s and says where the likeness stops. A reading never proves anything.', anc.map(function (l) {
       var e = l.edge, own = e.type === 'invokes';
-      return ui.add(ui.h('li'), ui.h('span', 'lane', own ? 'own words' : 'this project’s reading'), ui.h('span', null, ' ' + (e.sentence || '') + (e.limit ? ' Where it stops: ' + e.limit : '') + ' '), recBtn(ui, nav, l.other, '→ ' + nameOf(ix.byId[l.other])));
+      var o = ix.byId[l.other], trad = o && o.type === 'text' ? ' · ' + ns.tradition(o) : '';
+      return ui.add(ui.h('li'), ui.h('span', 'lane', (own ? 'own words' : 'this project’s reading') + trad), ui.h('span', null, ' ' + (e.sentence || '') + (e.limit ? ' Where it stops: ' + e.limit : '') + ' '), recBtn(ui, nav, l.other, '→ ' + nameOf(o)));
     })));
 
     /* Threads: everything else it links to, grouped by kind, each with the sentence that says how. */

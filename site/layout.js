@@ -28,6 +28,30 @@
     return { g: g, byId: byId, adj: adj };
   };
 
+  /* An older text's tradition, and the broad family a pattern source's tradition belongs to, so texts from
+     many traditions can be sorted and counted together. A text with no tradition is from the King James Bible. */
+  ns.tradition = function (t) { return (t && t.tradition) || 'Hebrew Bible'; };
+  ns.traditionFamily = function (s) {
+    s = String(s || '');
+    if (/^Hebrew Bible|^New Testament/.test(s)) return s.replace(/ \(.*$/, '');
+    if (/Hermetic/.test(s)) return 'Hermetic';
+    if (/Hellenistic Jewish|Rabbinic|Jewish/.test(s)) return 'Jewish, beyond the Hebrew Bible';
+    if (/Greek|Roman/.test(s)) return 'Greek and Roman';
+    if (/Mesopotamian/.test(s)) return 'Mesopotamian';
+    if (/Egyptian/.test(s)) return 'Egyptian';
+    return s.replace(/ \(.*$/, '');
+  };
+  /* "Tradition · translation", for the line under a quoted text. */
+  ns.textCite = function (t) {
+    return [t.ref, ns.tradition(t), t.translation || 'King James Version'].join(' · ');
+  };
+  /* Texts in a steady order: by tradition, then as the data lists them. No tradition goes first by default. */
+  ns.byTradition = function (list, get) {
+    get = get || ns.tradition;
+    return list.map(function (x, i) { return { x: x, i: i, k: ns.traditionFamily(get(x)) }; })
+      .sort(function (a, b) { return a.k.localeCompare(b.k) || a.i - b.i; }).map(function (o) { return o.x; });
+  };
+
   /* One status per phase 0..5 for an ideal: met | partly | not_met | unknown. */
   ns.phaseSummary = function (ideal) {
     var out = [];
@@ -126,7 +150,7 @@
   var CARRIER_SLOTS = [[470, 235], [930, 235], [470, 400], [930, 400], [285, 318], [1115, 318],
     [285, 178], [1115, 178], [285, 458], [1115, 458]];
 
-  /* Focus: one ideal in the centre; texts above, carriers beside, vehicles below,
+  /* Focus: one ideal in the centre; carriers beside, vehicles below,
      fruits along the bottom in date order, other ideals on the left and right rims. */
   ns.focus = function (ix, id) {
     var seen = ns.members(ix, id), pos = {}, nodes = [], edges = [], dropped = 0;
@@ -137,12 +161,8 @@
     function put(n, x, y, role) { pos[n.id] = { x: x, y: y }; nodes.push({ node: n, x: x, y: y, role: role }); }
 
     put(ix.byId[id], W / 2, 310, 'centre');
-
-    var texts = byType('text');
-    dropped += Math.max(0, texts.length - 6);
-    texts = texts.slice(0, 6);
-    spread(texts.length, texts.length > 3 ? 300 : 480, texts.length > 3 ? 1100 : 920)
-      .forEach(function (x, i) { put(texts[i], x, 72, 'text'); });
+    /* Older texts are not drawn here. The drawing shows who carries the ideal and what has happened; the texts
+       this project reads beside it are listed lower in the panel and in the ancients view, each with its tradition. */
 
     /* A funder, company or evaluator linked to this ideal directly stands with its carriers. */
     var carriers = byType('carrier').concat(byType('funder'), byType('lab'), byType('evaluator'));
@@ -213,7 +233,6 @@
     nodes = nodes.filter(function (n) { return n.role === 'centre' || tied[n.node.id] === true; });
     dropped += before - nodes.length;
     var captions = [];
-    if (texts.length) captions.push({ text: 'Texts', x: 40, y: 76 });
     if (carriers.length) captions.push({ text: 'Carried or opposed by', x: 235, y: 132 });
     if (others.length) captions.push({ text: 'Linked ideals', x: 22, y: 150 });
     if (vehicles.length) captions.push(off.length ? { text: 'Runs on', x: W / 2 - vw / 2 - 30, y: 515 } : { text: 'Runs on', x: 40, y: 600 });

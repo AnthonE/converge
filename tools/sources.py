@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 FILES = ['watch', 'offshoots', 'ideals', 'fruits', 'carriers', 'vehicles', 'edges', 'funders', 'labs', 'evaluators',
-         'mechanisms', 'patterns', 'people', 'methods']
+         'mechanisms', 'patterns', 'people', 'methods', 'texts']
 TEXT_KEYS = ('quote', 'said', 'claim', 'what', 'sentence', 'evidence', 'title', 'label', 'summary')
 # Words the map presents as the source's own: a quotation field, a Watch claim, and anything in curly quotes
 # inside the map's statements. These can be looked for on the page automatically (tools/precheck.py).

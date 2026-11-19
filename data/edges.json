@@ -5668,5 +5668,124 @@
   "url": "https://forms.irs.gov/app/pod/basicSearch/downloadFile?formId=169283&formType=e8872",
   "verified": "primary",
   "kind": "documented"
+ },
+ {
+  "from": "made-saviour",
+  "to": "text-aristotle-poetics-15",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Aristotle’s Poetics beside it: the knot of a plot should be untied from inside the plot, not by a god lowered onto the stage by the crane, the deus ex machina. Aristotle writes about tragedy, not about history or engineering, and he allows the device for events outside the drama."
+ },
+ {
+  "from": "basilisk",
+  "to": "text-epictetus-enchiridion-5",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Epictetus beside it: what disturbs people is their judgement about a thing, not the thing. It is counsel about fear, not a ruling on the argument, and Epictetus wrote about death, not about future minds."
+ },
+ {
+  "from": "escape-death",
+  "to": "text-hymn-aphrodite-tithonus",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Homeric Hymn to Aphrodite beside it: Eos won deathlessness for Tithonus and forgot to ask for youth, so he aged without end. The longevity projects here aim at youth itself, the thing Eos forgot, so the story marks a way the aim could fail, not the aim."
+ },
+ {
+  "from": "escape-death",
+  "to": "text-gilgamesh-wine-maker",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Epic of Gilgamesh beside it: the oldest surviving story of a search for life without death, answered with “life they retain’d in their keeping”. In the epic the limit is the gods’ decree; here the question is put to medicine and engineering, which the epic did not know."
+ },
+ {
+  "from": "escape-death",
+  "to": "text-katha-1-1-26",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Katha Upanishad beside it: offered long life and wealth by Death himself, the boy Nachiketas turns them down and asks instead what death is. The text sets knowing above a longer life; it is a choice offered to one person, not a ruling on medicine."
+ },
+ {
+  "from": "revere",
+  "to": "text-liezi-5-automaton",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Liezi beside it: a king, shown an artisan’s lifelike automaton, asks whether human skill is “on a par with that of the Creator”. The king asks in wonder, not in worship, and the figure turns out to be leather, wood, glue and paint."
+ },
+ {
+  "from": "oracle",
+  "to": "text-herodotus-1-53",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Herodotus beside it: Croesus asked the oracle whether to attack Persia and was told he “would destroy a mighty empire”; the empire was his own. The answer was true and misread. Herodotus tells of a temple oracle, and nothing here says a model’s answer works the same way."
+ },
+ {
+  "from": "revealed",
+  "to": "text-kalama-sutta",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Buddha’s advice to the Kalamas beside it: do not accept a teaching on report, on scripture or on a teacher’s standing, but by what it does when it is carried out. The sutta gives a test for any teaching, from any source; it does not single out this one."
+ },
+ {
+  "from": "acceleration",
+  "to": "text-zhuangzi-12-well-sweep",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Zhuangzi beside it: a gardener refuses a labour-saving well-sweep, saying cunning implements make cunning hearts. In the same chapter Confucius answers that the gardener “knows something, but not much”, so the text holds both sides; it speaks of the user’s heart, not of where the universe is going."
+ },
+ {
+  "from": "acceleration",
+  "to": "text-quran-102-1-2",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Surah 102 beside it: “Rivalry in worldly increase” distracts people until the grave. The surah speaks to persons piling up goods; this ideal speaks of a direction in the universe, so the likeness lies in the word “increase” and no further."
+ },
+ {
+  "from": "feed",
+  "to": "text-plato-republic-6-beast",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Plato’s Republic beside it: the crowd as “a mighty strong beast” whose moods a teacher learns until he calls good whatever it likes. Plato’s beast is the crowd itself, not a fiction it feeds, and his charge falls on the teachers of Athens, not on the crowd."
+ },
+ {
+  "from": "capture",
+  "to": "text-odyssey-12-sirens",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Odyssey beside it: wanting to hear the Sirens, Odysseus has himself bound to the mast and orders his crew to bind him tighter if he begs. It is a defence set before the voice is heard, like an agent told in advance which later words to refuse. The Sirens kill; no record here says an injected text has."
+ },
+ {
+  "from": "no-watcher",
+  "to": "text-plato-republic-2-gyges",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the ring of Gyges beside it: Glaucon’s claim that anyone who could act unseen would act unjustly, so that “the actions of the just would be as the actions of the unjust”. Plato raises the claim in order to answer it, and the rest of the Republic argues against it."
+ },
+ {
+  "from": "no-watcher",
+  "to": "text-lucian-liar-apprentice",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Lucian’s sorcerer’s apprentice beside it: a borrowed spell sets a pestle carrying water, and nothing the apprentice says will stop it; cutting it in two makes two carriers. Lucian tells it as a tall tale among people who believe too easily, and the master’s return ends it."
+ },
+ {
+  "from": "exit",
+  "to": "text-daodejing-80",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Daodejing beside it: a little state with few people, who keep their boats and carriages unused and never visit the neighbouring state. Where it does not fit: Laozi’s small state turns away from tools and trade, while the new jurisdictions here are built on both."
+ },
+ {
+  "from": "succession",
+  "to": "text-popol-vuh-wooden-people",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Popol Vuh beside it: the makers’ first people, carved from wood, are unmade, and their own tools and animals turn on them. The likeness runs the other way: there the makers replace a made people, while this ideal asks the makers to hand on to what they made."
+ },
+ {
+  "from": "companion",
+  "to": "text-aristotle-ethics-8-1",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Aristotle beside it, on the side of the need: “without friends no one would choose to live”. In the same book he sets friendships of use and of pleasure apart from friendship between good people who wish each other well; which of these a made companion could be is an open question, and the text cannot settle it."
  }
 ]

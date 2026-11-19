@@ -95,12 +95,6 @@
     var rest = drawn.filter(function (e) { return e.from !== d.id && e.to !== d.id; });
     add(root, add(section('How it links', 'Each line is one link on the map, read as a sentence.'), linkList(own.concat(rest))));
 
-    var texts = Object.keys(mem).map(function (m) { return ix.byId[m]; }).filter(function (n) { return n.type === 'text'; });
-    if (texts.length) {
-      var ts = section('Texts', 'A tradition’s own words for the pattern. A text can motivate a question. It never confirms a mechanism or a source.');
-      texts.forEach(function (t) { add(ts, h('blockquote', null, '“' + t.quote + '”'), h('p', 'cite', t.ref + (t.proposed ? ' (proposed parallel)' : ''))); });
-      add(root, ts);
-    }
     /* Names under this ideal that have a money record. The detail is in the money view. */
     var paid = Object.keys(mem).map(function (m) { return ix.byId[m]; }).filter(function (n) {
       return n.type !== 'ideal' && ns.hasMoney(ix, n.id);
@@ -116,6 +110,21 @@
         add(ml, add(li, b));
       });
       add(root, add(ms, ml));
+    }
+    /* Older texts this project reads beside the ideal: after the record of who and what, never before it.
+       Each names its tradition and translation and carries the reading, which says where the likeness stops. */
+    var texts = ns.byTradition(Object.keys(mem).map(function (m) { return ix.byId[m]; }).filter(function (n) { return n.type === 'text'; }));
+    if (texts.length) {
+      var trads = [];
+      texts.forEach(function (t) { var k = ns.tradition(t); if (trads.indexOf(k) < 0) trads.push(k); });
+      var ts = section('Older texts read beside it (' + texts.length + ')', 'This project’s readings, from ' + trads.join(', ') +
+        '. A text can motivate a question. It never confirms a mechanism or a source, and nothing here says a text foretold anyone.');
+      texts.forEach(function (t) {
+        var read = (ix.adj[t.id] || []).filter(function (l) { return l.other === d.id && l.edge.type === 'parallels'; })[0];
+        add(ts, h('blockquote', null, '“' + t.quote + '”'), h('p', 'cite', ns.textCite(t) + (t.proposed ? ' (proposed parallel)' : '')));
+        if (read && read.edge.sentence) add(ts, h('p', 'note', read.edge.sentence));
+      });
+      add(root, ts);
     }
     if (ns.hasAncients(ix) && ns.ancientLines(ix).some(function (l) { return l.from === d.id; })) {
       var an = h('button', 'more-btn', 'Line it up with the ancients');
@@ -176,7 +185,10 @@
       }
       if ((n.cautions || []).length) { var oc = section('Cautions'), ol = h('ul'); n.cautions.forEach(function (c) { add(ol, h('li', null, c)); }); add(root, add(oc, ol)); }
     } else if (n.type === 'text') {
-      add(root, h('blockquote', null, '“' + n.quote + '”'),
+      var tc = h('p', 'cite');
+      add(tc, h('span', null, ns.tradition(n) + ' · ' + (n.translation || 'King James Version') + ' '));
+      if (n.url) add(tc, link(n.url, 'source'), h('span', null, ' '), badge(n.verified, n.url));
+      add(root, h('blockquote', null, '“' + n.quote + '”'), tc,
         h('p', 'note', 'A text can motivate a question. It never confirms a mechanism or a source.'));
     } else {
       if (n.kind || n.status) add(root, h('p', 'cite', [n.kind, n.status].filter(Boolean).join(' · ')));
@@ -418,6 +430,8 @@
     if (!n) return;
     if (n.type === 'ideal') { go(id); return; }
     if (/^(pattern|mechanism)$/.test(n.type)) { goAncients(id); return; }
+    /* An older text is not drawn on an ideal's map; its own page shows it with every reading that cites it. */
+    if (n.type === 'text') { goRecord(id); return; }
     if (/^(funder|lab|evaluator)$/.test(n.type) && ns.hasMoney(ix, id)) { goMoney(id); return; }
     var home = (ix.g.ideals || []).find(function (d) { return ns.members(ix, d.id)[id]; });
     if (home) { go(home.id); state.selected = id; render(); return; }
@@ -506,14 +520,14 @@
       table('Vehicles', ['Name', 'Note'], g.vehicles.map(function (v) { return [v.label, v.note]; })),
       table('Events', ['Date', 'What', 'Kind', 'Source', 'Checked'], g.fruits.map(function (f) {
         return [f.date, f.what, f.kind, link(f.url, f.source || 'source', f.nolink), VERIFIED[f.verified] || VERIFIED.unverified]; })),
-      table('Texts', ['Reference', 'Words'], g.texts.map(function (t) { return [t.ref, t.quote]; })),
+      table('Texts', ['Reference', 'Tradition', 'Words', 'Translation'], g.texts.map(function (t) { return [t.ref, ns.tradition(t), t.quote, t.translation || 'King James Version']; })),
       table('Links', ['Sentence', 'Type', 'Lens'], g.edges.filter(function (e) { return !ns.isMoney(e) && !ANCIENT_LINK[e.type]; }).map(function (e) {
         return [e.sentence, e.type.replace(/_/g, ' '), e.lens ? 'yes' : '']; })));
     function nm0(id) { return ix.byId[id] ? (ix.byId[id].label || ix.byId[id].ref) : id; }
     if ((g.patterns || []).length || (g.offshoots || []).length) add(box,
       table('Ancient patterns', ['Pattern', 'What the tradition saw', 'Sources'], (g.patterns || []).map(function (p) {
         return [p.label, p.summary, (p.sources || []).map(function (s) { return s.work + (s.passage ? ' ' + s.passage : ''); })
-          .concat((p.texts || []).map(function (t) { return ix.byId[t] ? ix.byId[t].ref + ' (KJV)' : t; })).join('; ')]; })),
+          .concat((p.texts || []).map(function (t) { return ix.byId[t] ? ix.byId[t].ref + ' (' + ns.tradition(ix.byId[t]) + ')' : t; })).join('; ')]; })),
       table('Ancient links', ['From', 'Link', 'To', 'Words or reading', 'Where it stops', 'Source', 'Checked'],
         g.edges.filter(function (e) { return ANCIENT_LINK[e.type]; }).map(function (e) {
           return [nm0(e.from), ANCIENT_LINK[e.type], nm0(e.to), e.type === 'invokes' ? e.speaker + ': “' + e.quote + '” (' + e.sense + ')' : e.sentence,
