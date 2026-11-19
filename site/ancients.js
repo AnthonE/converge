@@ -184,7 +184,7 @@
       all.forEach(function (o) { if (fams.indexOf(o.k) < 0) fams.push(o.k); });
       if (fams.length) ui.add(root, ui.h('p', 'note', 'Traditions quoted here: ' + fams.join(', ') + '.'));
       ui.add(root,
-        list(ui, 'The ancient sources', 'Each in a named translation, grouped by tradition.', all.map(function (o) { return o.li; })),
+        list(ui, 'Older sources', 'Each in a named translation, grouped by tradition.', all.map(function (o) { return o.li; })),
         list(ui, 'Invoked in their own words', 'Names on the map who use this name themselves.', recs(function (e) { return e.type === 'invokes'; })),
         list(ui, 'Read beside it', 'This project’s readings. Each says where the likeness stops.', recs(function (e) { return e.type === 'reads_as'; })));
       if ((n.counter || []).length) ui.add(root, list(ui, 'Where the tradition pushes back', null, n.counter.map(function (c) {
@@ -264,7 +264,7 @@
   ns.ancientsIntro = function (ix, ui) {
     var root = ui.h('div');
     ui.add(root, ui.h('p', 'kicker', 'How to read this'), ui.h('h2', null, 'What the ancients called it'),
-      ui.h('p', null, 'On the left, what the movements serve. In the middle, how each takes hold of people. On the right, the patterns the ancient world already named: the image made to speak, calling up the dead, the tower, the merchant city, and others, each with its sources.'),
+      ui.h('p', null, 'On the left, what the movements serve. In the middle, how each takes hold of people. On the right, the patterns older traditions already named, from the ancient world to the modern philosophers: the image made to speak, calling up the dead, the tower, the merchant city, and others, each with its sources.'),
       ui.h('p', null, 'A solid line means a carrier of that ideal uses the ancient name itself, in its own words. A dotted line is this project’s reading: it says what the likeness is and where it stops. A dashed line is a documented or reported use of a mechanism, with its source; alleged uses are listed in the panels and not drawn.'),
       ui.h('p', 'note', 'The traditions are the subject here, quoted in their own words. A text can motivate a question. It never confirms a mechanism or a source, and nothing here says a text foretold anyone.'),
       spread(ix, ui),

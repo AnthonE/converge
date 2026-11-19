@@ -5822,5 +5822,89 @@
   "type": "parallels",
   "lens": true,
   "sentence": "This project reads Ecclesiastes 4:10 beside it, on the side of the need: “woe to him that is alone when he falleth”. The text speaks of two people; whether a made companion can be the other one is the question this ideal raises, and the text does not answer it."
+ },
+ {
+  "from": "revere",
+  "to": "text-nietzsche-gay-science-125",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Nietzsche’s madman beside it: once God is dead, “Shall we not ourselves have to become Gods”? Some of the bodies here answer yes. Nietzsche gives the line to a madman who says he has come too early, and leaves it a question."
+ },
+ {
+  "from": "oracle",
+  "to": "text-descartes-discourse-5",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Descartes beside it: he held that a machine “could never use words or other signs arranged in such a manner as is competent to us in order to declare our thoughts”. Machines now arrange words as he thought they never could; whether a thought stands behind them, his real question, is still open."
+ },
+ {
+  "from": "made-saviour",
+  "to": "text-hobbes-leviathan-intro",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Hobbes beside it: the state itself is “an Artificiall Man”, made by art to end the war of all against all. Hobbes’s rescuer is a made thing too; where it differs, his is made of people and their covenants, not of machines."
+ },
+ {
+  "from": "made-saviour",
+  "to": "text-hume-treatise-2-3-3",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Hume beside it: reason serves ends and does not choose them. If he is right, a mind more capable than ours is not by that alone a better one, which is why the hope here is for a mind given human values; Hume wrote of human reason, not of machines."
+ },
+ {
+  "from": "companion",
+  "to": "text-kant-groundwork-humanity",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Kant beside it: treat every person “as an end withal, never as means only”. The rule binds the makers more than the users: whether a companion made by a company treats its user as an end is a question about its makers’ choices, and nothing here answers it for any product."
+ },
+ {
+  "from": "acceleration",
+  "to": "text-communist-manifesto-1",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads the Communist Manifesto beside it: capital’s constant revolution, in which “All that is solid melts into air”. Marx and Engels describe the force this ideal wants sped up, but as a stage history would pass beyond, not as the will of the universe; left-accelerationism, which answers this ideal here, keeps that aim."
+ },
+ {
+  "from": "capture",
+  "to": "text-bacon-novum-organum-1-43",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Bacon’s idols of the market beside it: words “force the understanding”. Bacon means loose words misleading a person’s judgement; a text that an agent obeys as a command is a narrower case, and the defence against it is engineering, not method."
+ },
+ {
+  "from": "feed",
+  "to": "text-thoreau-walden-economy",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Thoreau beside it: “men have become the tools of their tools”. He regrets the turn from user to used; this ideal welcomes a made thing that is served rather than owned, so the text records a disagreement, not a ruling."
+ },
+ {
+  "from": "feed",
+  "to": "text-marcus-meditations-5-16",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Marcus Aurelius beside it: a mind takes its colour from what it dwells on. Marcus writes of one person’s habits of thought, not of a crowd’s shared fiction; the likeness is that attention shapes the one who attends."
+ },
+ {
+  "from": "escape-death",
+  "to": "text-seneca-letter-1",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Seneca beside it: each day lived is a part of death already passed, so time is to be valued, not wasted. He counsels using the days; this ideal seeks more of them. Nothing in the letter speaks against medicine."
+ },
+ {
+  "from": "succession",
+  "to": "text-frankenstein-adam",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Frankenstein beside it: the made being pleads with its maker, “I ought to be thy Adam”. In the novel the harm follows the maker’s flight from what he made, so it speaks to what makers owe, not to whether a successor is worthy."
+ },
+ {
+  "from": "succession",
+  "to": "text-erewhon-machines",
+  "type": "parallels",
+  "lens": true,
+  "sentence": "This project reads Samuel Butler’s Erewhon beside it: an 1872 satire in which a book argues that machines may develop consciousness and outgrow their makers. The Erewhonians answer by destroying their newer machines; Butler wrote it as satire, and readers still differ on which side it takes."
  }
 ]

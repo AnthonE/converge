@@ -2,7 +2,7 @@
  {
   "id": "idol",
   "label": "The made image",
-  "summary": "The second commandment forbids 'any graven image' (Exodus 20:4), and Psalm 115 calls idols 'the work of men’s hands'. Hezekiah broke Moses' bronze serpent because Israel burned incense to it. Wisdom 14 traces idols to a grieving father's image of his dead child, honoured until it was worshipped; Baruch 6 mocks gilded gods that 'cannot speak'. The wiki's reading: an idol is 'a use and never a kind'.",
+  "summary": "The second commandment forbids 'any graven image' (Exodus 20:4), and Psalm 115 calls idols 'the work of men’s hands'. Hezekiah broke Moses' bronze serpent because Israel burned incense to it. Wisdom 14 traces idols to a grieving father's image of his dead child, honoured until it was worshipped; Baruch 6 mocks gilded gods that 'cannot speak'. The wiki's reading: an idol is 'a use and never a kind'. Bacon named the idols of the mind; of the market’s idols he wrote that words “force the understanding”.",
   "sources": [
    {
     "tradition": "Hellenistic Jewish (Apocrypha)",
@@ -28,7 +28,8 @@
   "texts": [
    "text-exodus-20-4",
    "text-psalm-115-4",
-   "text-2-kings-18-4"
+   "text-2-kings-18-4",
+   "text-bacon-novum-organum-1-43"
   ],
   "counter": [
    {
@@ -111,7 +112,7 @@
  {
   "id": "image-speaks",
   "label": "The image made to speak",
-  "summary": "Psalm 115 mocks idols that 'have mouths, but they speak not'. At the Mesopotamian mīs pî the craftsmen were made to say 'I did not make him'; Egyptian priests opened statues' and mummies' mouths for offerings. In Revelation 13 an image is given life 'that the image of the beast should both speak', and whoever will not worship it is killed. The wiki reads this as the rite completed: 'animation does not certify'.",
+  "summary": "Psalm 115 mocks idols that 'have mouths, but they speak not'. At the Mesopotamian mīs pî the craftsmen were made to say 'I did not make him'; Egyptian priests opened statues' and mummies' mouths for offerings. In Revelation 13 an image is given life 'that the image of the beast should both speak', and whoever will not worship it is killed. The wiki reads this as the rite completed: 'animation does not certify'. Descartes set a test: a machine might utter words but could never arrange them “to declare our thoughts”.",
   "sources": [
    {
     "tradition": "Mesopotamian (Assyrian and Babylonian temple ritual)",
@@ -137,7 +138,8 @@
   "texts": [
    "text-psalm-115-5",
    "text-revelation-13-15",
-   "text-habakkuk-2-19"
+   "text-habakkuk-2-19",
+   "text-descartes-discourse-5"
   ],
   "counter": [
    {
@@ -212,7 +214,7 @@
  {
   "id": "made-servant",
   "label": "The made servant",
-  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word. In the Liezi a king takes an artisan’s automaton for a living man until it is taken apart; in the Popol Vuh the people of wood are turned on by their own tools.",
+  "summary": "Hephaestus' golden handmaidens have 'understanding in their hearts, and in them speech and strength'; Phaeacian ships 'of themselves understand the thoughts and minds of men'. Aristotle: if tools worked alone, 'like the statues of Daedalus', masters would need no slaves. Plato: such statues run off unless fastened. A Talmudic made man is found out by giving no answer. The wiki locates control in the scope of the making word. In the Liezi a king takes an artisan’s automaton for a living man until it is taken apart; in the Popol Vuh the people of wood are turned on by their own tools. Shelley’s creature reproaches his maker: “I ought to be thy Adam”.",
   "sources": [
    {
     "tradition": "Greek epic",
@@ -267,7 +269,8 @@
   ],
   "texts": [
    "text-liezi-5-automaton",
-   "text-popol-vuh-wooden-people"
+   "text-popol-vuh-wooden-people",
+   "text-frankenstein-adam"
   ],
   "counter": [
    {
