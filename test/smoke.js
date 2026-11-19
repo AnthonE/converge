@@ -563,12 +563,29 @@ const path = require('path');
   await page.locator('#the-page .door-go').nth(1).click();
   await page.waitForFunction(() => location.hash === '#methods');
   // Alignment methods side by side, and a method's own record with its five questions.
-  if ((await page.locator('#the-page .mk-table tbody tr').count()) !== graph.methods.length) fail('the methods table does not list every method');
+  if ((await page.locator('#the-page .mk-table:not(.mk-money) tbody tr').count()) !== graph.methods.length) fail('the methods table does not list every method');
   const own = graph.methods.reduce((n, m) => n + (m.key || []).filter(x => x.kind === 'own words').length, 0);
   if ((await page.locator('#the-page .mk-mark').allTextContents()).filter(t => t === 'their words').length !== own) fail('an answer in its proponents’ words is not marked "their words"');
-  await page.locator('#the-page .mk-name .linkbtn').first().click();
+  // Who pays for the bodies that push each method: one row per method, money sorted by kind, allegations left out.
+  if ((await page.locator('#the-page .mk-money tbody tr').count()) !== graph.methods.length) fail('the money-behind-methods table does not list every method');
+  const payTo = (id) => graph.edges.filter((e) => e.type === 'funds' && e.to === id && e.kind !== 'alleged' && e.money !== 'purchase');
+  const pushers = graph.methods[0].pushed_by.map((p) => p.node).filter(Boolean);
+  const paid = pushers.flatMap(payTo);
+  const moneyText = await page.locator('#the-page .mk-money').textContent();
+  for (const e of paid) {
+    const label = graph.funders.concat(graph.labs, graph.evaluators, graph.carriers).find((n) => n.id === e.from).label;
+    if (!moneyText.includes(label)) fail('the money-behind-methods table leaves out a payer on record: ' + label);
+  }
+  const alleged = pushers.flatMap((id) => graph.edges.filter((e) => e.type === 'funds' && e.to === id && e.kind === 'alleged'));
+  for (const e of alleged) {
+    if (paid.some((x) => x.from === e.from)) continue;
+    const label = graph.funders.concat(graph.labs, graph.evaluators, graph.carriers).find((n) => n.id === e.from).label;
+    if (moneyText.includes(label)) fail('the money-behind-methods table counts an allegation: ' + label);
+  }
+  await page.locator('#the-page .mk-table:not(.mk-money) .mk-name .linkbtn').first().click();
   await page.waitForFunction(() => location.hash === '#r/sample-method');
   if ((await page.locator('#the-page .mk-key dt').count()) !== 5) fail('a method record does not answer the five questions');
+  if (paid.length && !/Money behind those who push it/.test(await page.locator('#the-page').textContent())) fail('a method record does not show the money behind its pushers');
   await page.evaluate(() => { location.hash = '#r/lab-0'; });
   await page.waitForFunction(() => /Alignment methods it pushes/.test(document.getElementById('the-page').textContent));
 

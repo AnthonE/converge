@@ -56,6 +56,8 @@ def flow(a, b, t, i, **kw):
     e = {'from': a, 'to': b, 'type': t, 'sentence': f'Sample record: {a} {t} {b}.', 'source': 'Sample Register',
          'url': 'https://example.org/register', 'verified': ['primary', 'secondary', 'unverified'][i % 3],
          'kind': ['documented', 'reported', 'alleged'][i % 3]}
+    if t == 'funds':
+        e['money'] = ['grant', 'investment', 'government', 'commission', 'political', 'purchase'][i % 6]
     e.update(kw); edges.append(e)
 KINDS = ['person', 'foundation', 'fund', 'firm', 'company', 'government', 'nonprofit']
 for i in range(24):

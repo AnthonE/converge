@@ -18,6 +18,32 @@
     return (ix.g.methods || []).filter(function (m) { return (m.pushed_by || []).some(function (p) { return p.node === id; }); });
   };
 
+  /* Money behind a method: the records of money into the bodies on the map that push it. A funder of a pusher is
+     not thereby a backer of the method; allegations are left out, as on the money view. */
+  var MONEY_KIND = [
+    ['investment', 'Investment', 'a stake, share purchase or loan'],
+    ['grant', 'Grants and gifts', 'a grant, donation or pledge to give'],
+    ['government', 'Public money', 'given or appropriated by a state body'],
+    ['commission', 'Paid work', 'a contract or commissioned work'],
+    ['political', 'Political money', 'to or between political groups'],
+    ['purchase', 'Purchases', 'buying goods or services, such as compute']
+  ];
+  ns.moneyKinds = MONEY_KIND;
+  ns.moneyWord = function (k) { var r = MONEY_KIND.filter(function (x) { return x[0] === k; })[0]; return r ? r[1] : k; };
+  ns.moneyBehind = function (ix, m) {
+    var seen = {}, out = [], missing = [];
+    (m.pushed_by || []).forEach(function (p) {
+      if (!p.node || !ix.byId[p.node]) { if (missing.indexOf(p.name) < 0) missing.push(p.name); return; }
+      if (seen[p.node]) return;
+      seen[p.node] = true;
+      var flows = (ix.adj[p.node] || []).filter(function (l) {
+        return l.edge.type === 'funds' && l.edge.to === p.node && l.edge.kind !== 'alleged' && l.edge.money !== 'purchase' && ix.byId[l.edge.from];
+      }).map(function (l) { return l.edge; });
+      out.push({ node: ix.byId[p.node], flows: flows });
+    });
+    return { pushers: out, missing: missing };
+  };
+
   function answer(ui, x) {
     var d = ui.h('div', 'mk-answer');
     ui.add(d, ui.h('span', null, x.a + ' '));
@@ -55,7 +81,60 @@
       ui.add(tb, tr);
     });
     ui.add(t, tb); ui.add(wrap, t); ui.add(box, wrap);
+    renderMoneyTable(box, ix, ui, nav);
   };
+
+  /* Who pays for the bodies that push each method, by kind of money. */
+  function renderMoneyTable(box, ix, ui, nav) {
+    var rows = (ix.g.methods || []).map(function (m) { return { m: m, mb: ns.moneyBehind(ix, m) }; });
+    var used = MONEY_KIND.filter(function (k) {
+      return rows.some(function (r) { return r.mb.pushers.some(function (p) { return p.flows.some(function (e) { return e.money === k[0]; }); }); });
+    });
+    if (!used.length) return;
+    var intro = ui.h('div', 'watch-intro mk-money-intro');
+    ui.add(intro, ui.h('h2', null, 'Who pays for the bodies that push each method'),
+      ui.h('p', null, 'For each method, the companies and groups on this map that push it, and the money on record flowing into them, sorted by kind of money. Open a name for the amounts, dates and sources.'),
+      ui.h('p', 'note', 'Paying a body that pushes a method does not make the payer a backer of that method, and most of these bodies do other work too. A name appears once per column however many payments are on file. An empty cell means no record was found here, not that no money exists. Allegations are not counted, and neither are purchases of goods or services such as compute, which are money paid, not funding; the money view shows them.'));
+    ui.add(box, intro);
+    var wrap = ui.h('div', 'mk-wrap'), t = ui.h('table', 'mk-table mk-money'), thead = ui.h('thead'), hr = ui.h('tr');
+    ui.add(hr, ui.h('th', null, 'Method'), ui.h('th', null, 'Pushed by (on the map)'));
+    used.forEach(function (k) { ui.add(hr, ui.h('th', null, k[1])); });
+    ui.add(thead, hr); ui.add(t, thead);
+    var tb = ui.h('tbody');
+    rows.forEach(function (r) {
+      var tr = ui.h('tr'), th = ui.h('th', 'mk-name');
+      th.setAttribute('scope', 'row');
+      var b = ui.h('button', 'linkbtn', r.m.label); b.type = 'button';
+      b.addEventListener('click', function () { nav.goRecord(r.m.id); });
+      ui.add(tr, ui.add(th, b));
+      var pt = ui.h('td'); pt.setAttribute('data-q', 'Pushed by (on the map)');
+      nameList(ui, nav, pt, r.mb.pushers.map(function (p) { return p.node; }));
+      if (!r.mb.pushers.length) ui.add(pt, ui.h('span', 'note', 'none on the map'));
+      ui.add(tr, pt);
+      used.forEach(function (k) {
+        var td = ui.h('td'), names = {}, list = [];
+        td.setAttribute('data-q', k[1]);
+        r.mb.pushers.forEach(function (p) {
+          p.flows.forEach(function (e) { if (e.money === k[0] && !names[e.from]) { names[e.from] = true; list.push(ix.byId[e.from]); } });
+        });
+        list.sort(function (a, c) { return (a.label || '').localeCompare(c.label || ''); });
+        nameList(ui, nav, td, list);
+        if (!list.length) ui.add(td, ui.h('span', 'mk-none', '—'));
+        ui.add(tr, td);
+      });
+      ui.add(tb, tr);
+    });
+    ui.add(t, tb); ui.add(wrap, t); ui.add(box, wrap);
+  }
+  /* One name per line, so a long name never strands a separator. */
+  function nameList(ui, nav, el, nodes) {
+    nodes.forEach(function (n) { ui.add(el, ui.add(ui.h('span', 'mk-item'), nameButton(ui, nav, n))); });
+  }
+  function nameButton(ui, nav, n) {
+    var b = ui.h('button', 'linkbtn', n.label || n.ref); b.type = 'button';
+    b.addEventListener('click', function () { nav.goRecord(n.id); });
+    return b;
+  }
 
   /* A method's own record. */
   ns.renderMethodRecord = function (box, ix, ui, nav, m, trail) {
@@ -83,6 +162,25 @@
         ui.add(ul, li);
       });
       ui.add(box, ui.add(ps, ul));
+    }
+    var mb = ns.moneyBehind(ix, m);
+    if (mb.pushers.length) {
+      var ms = ui.section('Money behind those who push it', 'Records of money into the bodies above. Paying a body that pushes a method does not make the payer a backer of the method. Allegations and purchases of goods or services are left out.');
+      mb.pushers.forEach(function (p) {
+        ui.add(ms, ui.add(ui.h('h4', 'mk-payee'), nameButton(ui, nav, p.node)));
+        if (!p.flows.length) { ui.add(ms, ui.h('p', 'note', 'No record of money into it was found here.')); return; }
+        var ul = ui.h('ul', 'links rec-list');
+        p.flows.slice().sort(function (a, c) { return String(c.date || '').localeCompare(String(a.date || '')); }).forEach(function (e) {
+          var li = ui.h('li');
+          ui.add(li, nameButton(ui, nav, ix.byId[e.from]), ui.h('span', 'lane', ' ' + ns.moneyWord(e.money) + ' '),
+            ui.h('span', null, (e.amount ? e.amount : 'amount not stated') + (e.date ? ', ' + e.date : '') + '. '),
+            e.url ? ui.link(e.url, e.source || 'source', e.nolink) : null, ui.h('span', null, ' '), e.verified ? ui.badge(e.verified, e.url) : null);
+          ui.add(ul, li);
+        });
+        ui.add(ms, ul);
+      });
+      if (mb.missing.length) ui.add(ms, ui.h('p', 'note', 'Not on the map, so no money is on file for: ' + mb.missing.join('; ') + '.'));
+      ui.add(box, ms);
     }
     if ((m.pushback || []).length) ui.add(box, ui.add(ui.section('The pushback', 'Critics in their own words.'), ui.quoteList(m.pushback)));
     if ((m.happened || []).length) {

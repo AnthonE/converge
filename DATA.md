@@ -91,7 +91,12 @@ is named.
 
 **edges**: `edge_index` (position in `edges.json`; not stable across releases), `from`, `type`, `to`,
 `sentence` (the link as a plain sentence), `lens` (`true` = a way of reading, not a finding), `limit` (where the
-likeness stops), and for records `kind`, `amount`, `date`, `source`, `url`, `verified`. Types:
+likeness stops), and for records `kind`, `amount`, `date`, `source`, `url`, `verified`. A `funds` link also
+carries `money`, what kind of money it is: `investment` (a stake, share purchase or loan), `grant` (a gift,
+donation, grant or pledge to give), `government` (public money given or appropriated by a state body),
+`commission` (paid work, such as a contract or commissioned problems), `political` (money to or between
+political committees and groups) or `purchase` (buying goods or services, such as compute: money paid, not
+funding; the methods table leaves it out). Types:
 
 | Type | Reads as |
 |---|---|

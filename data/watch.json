@@ -990,6 +990,107 @@
   ]
  },
  {
+  "id": "misanthropic-statement-2026-11",
+  "date": "2026-11-18",
+  "title": "A statement signed by about ninety public figures says “Anthropic is not a safe AI company”, on the day its shares are priced",
+  "claimed_by": "The signatories of the MisAnthropic Statement (92 names on the page when read at 18:17 UTC on 18 Nov). The page names no author; its contact addresses are at safe.ai, the domain of the Center for AI Safety (CAIS), which announced the statement and says it “joined” the coalition. CAIS's executive director, Dan Hendrycks, signs it.",
+  "standing": "People outside the company, from camps that usually disagree: AI-risk groups (among them the Future of Life Institute, MIRI, ControlAI, PauseAI and the Midas Project), open-source and accelerationist founders, academics, authors and campaigners. By their listed titles, some lead or co-founded other AI companies (xAI, Hugging Face, Extropic, the tiny corp). Published as Anthropic's public offering is being priced.",
+  "claim": "Anthropic warns that recursively self-improving AI could concentrate power and escape human control, yet races to build it first. The company uses safety branding to court investors, employees, and the public—even as it has quietly weakened its safety pledges and lobbied for self-serving regulation. Anthropic is not a safe AI company, and we must reject its reckless attempt to amass power in the name of the greater good.",
+  "source": "The MisAnthropic Statement, published 18 Nov 2026, 17:17 UTC (the page's own timestamp)",
+  "url": "https://misanthropicstatement.com/",
+  "kind": "alleged",
+  "status": "partly checked",
+  "why": "A public charge against a company on this map, by named public figures, made on the day of its share offering. The map records the charge and checks its specifics against the sources; it does not rule on whether the company is safe.",
+  "checks": [
+   {
+    "what": "The page: the statement's text, then a list of signatories with their titles. It cites no evidence and links nothing but two email addresses at safe.ai and a privacy policy. It does not say who wrote it or how signatures were gathered or confirmed.",
+    "result": "supports",
+    "source": "misanthropicstatement.com, read 18 Nov 2026, 18:17 UTC",
+    "url": "https://misanthropicstatement.com/",
+    "verified": "primary"
+   },
+   {
+    "what": "CAIS's release gives the grounds the statement leaves out. It says CAIS “today joined a rare coalition of prominent figures in signing the MisAnthropic Statement” and quotes Hendrycks: “You cannot credibly claim to be safe while weakening your own previous safety commitments and asking the public for tens of billions of dollars to build recursively self-improving AI.” Its “Key Evidence”: that Anthropic warns of recursive self-improvement while “pitching recursive self-improvement to public-market investors as one of its core competitive advantages”; that in February it “weakened its Responsible Scaling Policy, including fully abandoning its unilateral commitments to pause”; and that it “has lobbied to weaken SB 1047, the RAISE Act, the AEGIS Act, and privately advocated for federal pre-emption of state AI laws.” The same release went out as a paid release on Business Wire.",
+    "result": "supports",
+    "source": "Center for AI Safety, newsroom, 18 Nov 2026",
+    "url": "https://safe.ai/news/anthropic-is-not-a-safe-ai-company",
+    "verified": "primary"
+   },
+   {
+    "what": "That Anthropic warns of loss of control and is automating AI development, in its own words: “at Anthropic, we are delegating a growing share of AI development to AI systems themselves, which is speeding up our work.” “We are not there yet, and recursive self-improvement is not inevitable.” “But full recursive self-improvement also might increase the risks of humans losing control over AI systems.” The page does not say Anthropic aims to get there first.",
+    "result": "partly supports",
+    "source": "Anthropic, “When AI builds itself” (cited by the release)",
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "verified": "primary"
+   },
+   {
+    "what": "The pause commitments. The RSP effective 24 Feb 2026 says: “Our previous RSP committed to implementing mitigations that would reduce our models' absolute risk levels to acceptable levels, without regard to whether other frontier AI developers would do the same.” Of its industry-wide recommendations: “But we cannot commit to following them unilaterally.” It keeps commitments to delay in two scenarios (Appendix A), among them, when Anthropic is in the lead: “We will delay AI development and deployment as needed to achieve this, until and unless we no longer believe we have a significant lead.”",
+    "result": "partly supports",
+    "source": "Anthropic, Responsible Scaling Policy, Version 3.0",
+    "url": "https://anthropic.com/responsible-scaling-policy/rsp-v3-0",
+    "verified": "primary"
+   },
+   {
+    "what": "SB 1047: Anthropic's letter of 21 Aug 2024 to the Governor of California says it had “submitted a Support if Amended letter regarding SB 1047, in which we suggested a series of amendments to the bill”, and of the amended bill: “we believe its benefits likely outweigh its costs.” Whether the amendments it sought weakened the bill is the statement's characterization.",
+    "result": "partly supports",
+    "source": "Anthropic's letter, read on a copy hosted by The Decoder (cited by the release)",
+    "url": "https://the-decoder.de/wp-content/uploads/2024/08/anthropic-sb1047-letter-1.pdf",
+    "verified": "secondary"
+   },
+   {
+    "what": "The rest of the lobbying claim and the investor claim: the release's sources for the RAISE Act (NY Focus, 14 Sep 2026) and the AEGIS Act (a post on X), and the registration statement it cites for “pitching” recursive self-improvement to investors, could not be read by automated means. It gives no source for “privately advocated for federal pre-emption”.",
+    "result": "could not read",
+    "source": "NY Focus; X; SEC EDGAR (Form S-1/A)",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+   }
+  ],
+  "responses": [
+   {
+    "who": "Anthropic",
+    "what": "No reply to the statement found as of about 18:30 UTC on 18 Nov, an hour after it went up.",
+    "source": "searches of news coverage"
+   },
+   {
+    "who": "Anthropic, on the RSP change (24 Feb 2026, before the statement)",
+    "what": "“The revised RSP aims to adopt more realistic unilateral commitments that are difficult but still achievable in the current environment, while continuing to comprehensively map the risks we believe the full industry needs to address multilaterally.” The RSP gives its reason: “If one AI developer paused development to implement safety measures while others moved forward training and deploying AI systems without strong mitigations, that could result in a world that is less safe”.",
+    "source": "Anthropic, “Responsible Scaling Policy Version 3.0” (post, 24 Feb 2026) and the RSP itself",
+    "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3"
+   },
+   {
+    "who": "Anthropic, on recursive self-improvement (before the statement)",
+    "what": "“AI that can build itself would be a major development in the history of technology—one that could bring enormous good for the world in science, healthcare, and beyond.” And: “In the coming months, we will organize conversations where policymakers, researchers, civil society, and other AI companies can help answer some of the questions this piece raises”.",
+    "source": "Anthropic, “When AI builds itself”",
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement"
+   }
+  ],
+  "open": [
+   "Whether Anthropic replies, and whether any person listed says they did not sign. None found so far.",
+   "Whether the registration statement presents recursive self-improvement as a competitive strength, as the release says; and the RAISE Act, AEGIS Act and pre-emption claims, whose sources were not read.",
+   "Hendrycks, in a post on X seen only in a relay (Digg): “Numerous AI safety groups told us privately they agreed with this statement, yet felt unable to sign without risking relationships or future funding.” The groups are not named, and no way to check this was found."
+  ],
+  "cautions": [
+   "This map is made with AI models made by Anthropic, the company the statement is about, on the day its shares are priced. A person independent of Anthropic should re-read these sources.",
+   "The statement itself gives no evidence; its grounds are in CAIS's press release, which is also a paid release on Business Wire.",
+   "The release says Anthropic was “fully abandoning its unilateral commitments to pause”. The RSP it cites drops the earlier unconditional commitment, by the company's own account, and keeps conditional commitments to delay (Appendix A).",
+   "The statement says the pledges were weakened “quietly”. The RSP change was announced in a post on Anthropic's site on 24 Feb 2026, with the reasons quoted under Responses.",
+   "The list is changing: 92 names when read at 18:17 UTC; one outlet's headline earlier gave 89. On the page, three names run together on one line (Joseph Jacks, Joe Allen, Dylan Hadfield-Menell). Titles are as the page lists them; a listed affiliation is not that institution's endorsement.",
+   "That some signatories lead or co-founded companies in the same market, and that CAIS's director signs, says who is speaking; it does not make the charge true or false.",
+   "Who pays: on the money view, several signatories' organisations (CAIS, ControlAI, PauseAI, the Midas Project, Encode, CHT) receive grants from Jaan Tallinn, from Dustin Moskovitz through SFF, or from FLI. Tallinn led Anthropic's 2021 Series A, in which Moskovitz also took part. This says who is speaking; it does not make the charge true or false."
+  ],
+  "touches": [
+   "anthropic",
+   "cais",
+   "controlai",
+   "pauseai",
+   "midas-project",
+   "encode",
+   "cht",
+   "fli",
+   "miri",
+   "extropic"
+  ]
+ },
+ {
   "id": "newyorker-maple-2026-11",
   "date": "2026-11-16",
   "title": "A New Yorker feature on MAPLE, a Buddhist monastery in Vermont that works on AI, and the monastery's reply",

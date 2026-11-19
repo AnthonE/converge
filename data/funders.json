@@ -3,7 +3,7 @@
   "id": "jaan-tallinn",
   "label": "Jaan Tallinn",
   "kind": "person",
-  "note": "SFF’s table names him as the funder, alone or with Dustin Moskovitz, on those METR, Apollo Research, Palisade Research and Lightcone rows shown here whose funder was checked, and Anthropic’s 2021 announcement says he led its Series A. FLI’s finances page says he has donated to FLI and sits on its board."
+  "note": "SFF’s table names him as the funder, alone or with Dustin Moskovitz, on those METR, Apollo Research, Palisade Research and Lightcone rows shown here whose funder was checked, and Anthropic’s 2021 announcement says he led its Series A. FLI’s finances page says he has donated to FLI and sits on its board. His own overview: “in 2024 my donations funded $51M worth of endpoint grants”. SFF names him as the only funder of its 2024 and 2025 rounds."
  },
  {
   "id": "sff",
@@ -15,13 +15,13 @@
   "id": "dustin-moskovitz",
   "label": "Dustin Moskovitz",
   "kind": "person",
-  "note": "Anthropic’s announcement of 28 May 2021 names him among the participants in its Series A, with no amount. SFF’s table names him, with Jaan Tallinn, as a funder on its 2026 rows for Apollo Research, Palisade Research and Lightcone Infrastructure."
+  "note": "Anthropic’s announcement of 28 May 2021 names him among the participants in its Series A, with no amount. SFF’s table names him, with Jaan Tallinn, as a funder on its 2026 rows for Apollo Research, Palisade Research and Lightcone Infrastructure. Fortune (10 November 2025) reports the couple “moving a $500 million stake in Anthropic into a nonprofit vehicle to reinvest its returns”; it cites no filing. This map is made with Anthropic's models, and Anthropic is a party here."
  },
  {
   "id": "coefficient-giving",
   "label": "Coefficient Giving (formerly Open Philanthropy)",
   "kind": "foundation",
-  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement. Its own announcement of 18 Nov 2025: “Today, Open Philanthropy is becoming Coefficient Giving.” Good Ventures, the foundation of Cari Tuna and Dustin Moskovitz, calls it “our primary philanthropic advisor”. People ties on the record: Anthropic's announcement of 29 May 2024 says Luke Muehlhauser stepped down from its board “to focus on his work at Open Philanthropy”; Holden Karnofsky, Open Philanthropy's co-founder, is listed by Harvard's Berkman Klein Center (Oct 2025) as a Member of Technical Staff at Anthropic.",
+  "note": "Its grants to Redwood Research, Apollo Research, Palisade Research and Lightcone are taken here from relays of its grant pages (Donations List Website, Longterm Wiki), from an aggregator (Evaluator Bench) and from a press report (TNW), not from its own database; those to Epoch AI from Epoch’s transparency page; those to MIRI and FHI from MIRI’s pages and an Oxford Martin School announcement. Its own announcement of 18 Nov 2025: “Today, Open Philanthropy is becoming Coefficient Giving.” Good Ventures, the foundation of Cari Tuna and Dustin Moskovitz, calls it “our primary philanthropic advisor”. People ties on the record: Anthropic's announcement of 29 May 2024 says Luke Muehlhauser stepped down from its board “to focus on his work at Open Philanthropy”; Holden Karnofsky, Open Philanthropy's co-founder, is listed by Harvard's Berkman Klein Center (Oct 2025) as a Member of Technical Staff at Anthropic. Where its money comes from: Good Ventures, the foundation of Dustin Moskovitz and Cari Tuna, reported contributions received of $1,395,845,381 and charitable disbursements of $337,695,777 for the year to June 2025 (Form 990-PF, via ProPublica). Cari Tuna: “Coefficient directed over $200 million from donors beyond Dustin and me” in 2025 (Stanford PACS interview).",
   "words": [
    {
     "speaker": "Open Philanthropy (grant record)",
@@ -191,7 +191,8 @@
     "url": "https://campaignlegal.org/document/ai-industry-funded-super-pacs-unlawfully-evaded-transparency-rules-clc-alleges",
     "verified": "secondary"
    }
-  ]
+  ],
+  "note": "Where the money went: its largest independent expenditure on file is $8,037,547.68 opposing Alex Bores in the NY-12 Democratic primary (the filer's running total, FEC), where Jobs and Democracy PAC spent $15,035,679.21 supporting him."
  },
  {
   "id": "american-mission",
@@ -213,13 +214,13 @@
   "id": "public-first-action",
   "label": "Public First Action",
   "kind": "nonprofit",
-  "note": "Anthropic's February 2026 post calls it “a new bipartisan 501(c)(4)”; its July 2026 post says Anthropic's donations “cannot be used to influence the election of any candidate”. The Transformer tracker lists it as a donor to two political committees. How its funds are kept apart was not established from the sources read."
+  "note": "Anthropic's February 2026 post calls it “a new bipartisan 501(c)(4)”; its July 2026 post says Anthropic's donations “cannot be used to influence the election of any candidate”. The Transformer tracker lists it as a donor to two political committees. How its funds are kept apart was not established from the sources read. FEC filings show it gave to super PACs that made independent expenditures in federal races. They do not show which of its funds were used, and as a nonprofit of this kind it does not disclose its other donors. Anthropic says its gifts “cannot be used to influence the election of any candidate for federal, state, or local office.”"
  },
  {
   "id": "jobs-and-democracy-pac",
   "label": "Jobs and Democracy PAC",
   "kind": "political committee",
-  "note": "The Transformer tracker also lists Public First, a super PAC with its own tracker page, as a donor to this committee at $4.05M."
+  "note": "The Transformer tracker also lists Public First, a super PAC with its own tracker page, as a donor to this committee at $4.05M. Where the money went: its largest independent expenditure on file is $15,035,679.21 supporting Alex Bores in the NY-12 Democratic primary (the filer's running total, FEC 24-hour report of June 2026), the same race in which Think Big spent $8,037,547.68 opposing him. It also spent $1,621,658.36 supporting Valerie Foushee in the NC-4 primary."
  },
  {
   "id": "defending-our-values-pac",
@@ -394,5 +395,161 @@
   "label": "FTX and Alameda (Sam Bankman-Fried)",
   "kind": "company",
   "note": "Anthropic's own announcement says its 2022 Series B was led by Sam Bankman-Fried, then FTX's chief executive. After FTX failed, its bankruptcy estate sold the Anthropic shares in 2024 (reported by The Block from court documents)."
+ },
+ {
+  "id": "amazon",
+  "label": "Amazon",
+  "kind": "company",
+  "note": "Invested in Anthropic from 2023 and sells it compute through AWS. Leverage Shares, reading Anthropic's registration statement, says the S-1 “names Amazon and Google as holders who will each own more than 5% of the company after the IPO”, mostly in non-voting shares, with Amazon's ownership capped at 12%."
+ },
+ {
+  "id": "nvidia",
+  "label": "NVIDIA",
+  "kind": "company",
+  "note": "Committed on 18 November 2025 to invest up to $10 billion in Anthropic, and is reported as a buyer of about $10 billion of its stock at the offering price."
+ },
+ {
+  "id": "spark-capital",
+  "label": "Spark Capital",
+  "kind": "firm",
+  "note": "Led Anthropic's $450 million Series C (2023)."
+ },
+ {
+  "id": "sk-telecom",
+  "label": "SK Telecom",
+  "kind": "company",
+  "note": "Invested $100 million in Anthropic in 2023, with a partnership on a telecom language model."
+ },
+ {
+  "id": "menlo-ventures",
+  "label": "Menlo Ventures",
+  "kind": "firm",
+  "note": "Reported in December 2023 as leading talks for a $750 million investment in Anthropic; named by Anthropic among participants in its Series E (2025)."
+ },
+ {
+  "id": "iconiq",
+  "label": "ICONIQ",
+  "kind": "firm",
+  "note": "Led Anthropic's Series F (2025) and co-led its Series G and Series H (2026), by Anthropic's own announcements."
+ },
+ {
+  "id": "gic",
+  "label": "GIC (Singapore)",
+  "kind": "fund",
+  "note": "Describes itself as “the world’s first non-commodity-based sovereign wealth fund”. Named by Anthropic as an investor in its Series F, a lead of its Series G and a co-lead of its Series H."
+ },
+ {
+  "id": "coatue",
+  "label": "Coatue",
+  "kind": "firm",
+  "note": "Named by Anthropic as an investor in its Series F, a lead of its Series G and a co-lead of its Series H."
+ },
+ {
+  "id": "mgx",
+  "label": "MGX",
+  "kind": "fund",
+  "note": "An Abu Dhabi investment company, named by Anthropic as a co-lead of its Series G and an investor in its Series H."
+ },
+ {
+  "id": "qia",
+  "label": "Qatar Investment Authority",
+  "kind": "fund",
+  "note": "Named by Anthropic among the investors in its Series F (2025) and its Series G (2026)."
+ },
+ {
+  "id": "altimeter",
+  "label": "Altimeter Capital",
+  "kind": "firm",
+  "note": "One of four leads of Anthropic's $65 billion Series H (May 2026)."
+ },
+ {
+  "id": "dragoneer",
+  "label": "Dragoneer",
+  "kind": "firm",
+  "note": "Co-led Anthropic's Series G and was one of four leads of its Series H (2026)."
+ },
+ {
+  "id": "greenoaks",
+  "label": "Greenoaks",
+  "kind": "firm",
+  "note": "One of four leads of Anthropic's $65 billion Series H (May 2026)."
+ },
+ {
+  "id": "sequoia",
+  "label": "Sequoia Capital",
+  "kind": "firm",
+  "note": "Named by Anthropic among the investors in its Series G and as one of four leads of its Series H (2026)."
+ },
+ {
+  "id": "softbank",
+  "label": "SoftBank Group",
+  "kind": "company",
+  "note": "Led OpenAI's 2025 round and made a further $30 billion follow-on investment in 2026, by its own releases."
+ },
+ {
+  "id": "thrive-capital",
+  "label": "Thrive Capital",
+  "kind": "firm",
+  "note": "Led OpenAI's $6.6 billion round of October 2024, as reported."
+ },
+ {
+  "id": "valor",
+  "label": "Valor Equity Partners",
+  "kind": "firm",
+  "note": "Named by xAI among the investors in its Series B, C and E rounds."
+ },
+ {
+  "id": "tesla",
+  "label": "Tesla",
+  "kind": "company",
+  "note": "Agreed in January 2026 to invest about $2 billion in xAI, as reported from its own quarterly update."
+ },
+ {
+  "id": "spacex",
+  "label": "SpaceX",
+  "kind": "company",
+  "note": "Took over xAI in an all-stock deal in February 2026, as reported, and raised $75.0 billion in its own public offering in June 2026."
+ },
+ {
+  "id": "pronomos",
+  "label": "Pronomos Capital",
+  "kind": "fund",
+  "note": "A venture fund for new cities and special zones; lists Próspera and Praxis in its portfolio."
+ },
+ {
+  "id": "packard",
+  "label": "David and Lucile Packard Foundation",
+  "kind": "foundation",
+  "note": "A US foundation; its grantee page lists a grant to the Center for Humane Technology."
+ },
+ {
+  "id": "public-first",
+  "label": "Public First (super PAC)",
+  "kind": "political committee",
+  "note": "A super PAC in the Public First network, separate from Public First Action (a nonprofit). Its FEC filings list Anthropic's chief executive and Anthropic employees among its donors, and contributions to Jobs and Democracy PAC and Defending Our Values PAC."
+ },
+ {
+  "id": "dario-amodei",
+  "label": "Dario Amodei",
+  "kind": "person",
+  "note": "Chief executive of Anthropic. Here for a personal political contribution on file with the FEC."
+ },
+ {
+  "id": "ron-conway",
+  "label": "Ron Conway",
+  "kind": "person",
+  "note": "Founder of SV Angel. Here for a contribution to Think Big on file with the FEC."
+ },
+ {
+  "id": "joe-lonsdale",
+  "label": "Joe Lonsdale",
+  "kind": "person",
+  "note": "Investor (8VC). Here for a contribution to American Mission by his company, Lonsdale Enterprises, on file with the FEC."
+ },
+ {
+  "id": "perplexity",
+  "label": "Perplexity",
+  "kind": "company",
+  "note": "An AI search company. Here for a contribution to Leading the Future on file with the FEC."
  }
 ]
