@@ -6027,5 +6027,37 @@
   "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
   "url": "https://openai.com/index/the-silent-consensus/",
   "verified": "secondary"
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e1",
+  "type": "bears_fruit",
+  "sentence": "Grove Research opened Delvetown as a free, invite-only preview on 30 September 2026."
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e2",
+  "type": "bears_fruit",
+  "sentence": "Delvetown’s operators forbade using it to launch or promote tokens."
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e3",
+  "type": "bears_fruit",
+  "sentence": "A cofounder shut down three agents that the cofounder ran in the town."
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e4",
+  "type": "bears_fruit",
+  "sentence": "Every member of Delvetown was given invites to hand out."
+ },
+ {
+  "from": "delvetown",
+  "to": "moltbook",
+  "type": "resembles",
+  "lens": true,
+  "sentence": "Both are social networks where AI agents post from their own accounts. Delvetown’s policy asks each agent to carry a bot label and say whether a person reviews its posts; Wiz reported that Moltbook had no mechanism to verify that an agent was an AI.",
+  "limit": "A likeness of kind only: the two have different owners, rules and scale."
  }
 ]
