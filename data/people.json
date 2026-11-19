@@ -606,5 +606,15 @@
   "url": "https://en.wikipedia.org/wiki/Hesiod",
   "verified": "secondary",
   "sort": "Hesiod"
+ },
+ {
+  "id": "dean-ball",
+  "name": "Dean Ball",
+  "who": "A writer on AI policy whose essays appear in OpenAI’s Intelligence Age series. In November 2026 he named and argued against “the silent consensus”.",
+  "group": "builders",
+  "source": "The Silent Consensus (OpenAI, Intelligence Age)",
+  "url": "https://openai.com/index/the-silent-consensus/",
+  "verified": "secondary",
+  "sort": "Ball"
  }
 ]
