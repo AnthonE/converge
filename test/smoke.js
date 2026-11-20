@@ -700,6 +700,10 @@ const path = require('path');
     return { side: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       card: document.querySelector('#the-page .card').getBoundingClientRect().top, compass: c ? c.getBoundingClientRect().bottom : null }; });
   if (front.side > 1) fail(`the front scrolls sideways by ${front.side}px at 390px wide`);
+  // Every tab is on the screen, none hidden off to the side.
+  const offTabs = await page.evaluate(() => [].slice.call(document.querySelectorAll('#views button')).filter(b => !b.hidden)
+    .filter(b => { const r = b.getBoundingClientRect(); return r.left < 0 || r.right > document.documentElement.clientWidth; }).map(b => b.id));
+  if (offTabs.length) fail(`on a phone these tabs are off the screen: ${offTabs.join(', ')}`);
   if (front.compass !== null && front.compass > 844) fail(`on a phone the families picture ends ${Math.round(front.compass)}px down, below the first screen`);
   if (front.compass === null && front.card > 844) fail(`on a phone the first card starts ${Math.round(front.card)}px down, below the first screen`);
   if (shots) await page.screenshot({ path: path.join(shots, 'narrow.png') });

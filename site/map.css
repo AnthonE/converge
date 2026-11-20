@@ -405,12 +405,10 @@ th { color: var(--ink-2); font-weight: 600; }
 .watch.is-wide { max-width: none; }
 .is-wide .watch-intro, .is-wide > .sec, .is-wide > .note { max-width: 860px; }
 
-/* On a phone the tabs sit in one row that scrolls sideways, so the content starts on the first screen. */
+/* On a phone the controls stack: search, then the tabs (a grid of short names, under "Phones" below). */
 @media (max-width: 560px) {
   .top .sub { font-size: 15px; }
   .controls { flex-wrap: nowrap; flex-direction: column; align-items: stretch; width: 100%; }
-  .views { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; padding-bottom: 2px; }
-  .views button, .views button:first-child, .views button:last-child, .views button.last-visible { flex: 0 0 auto; margin: 0 4px 0 0; white-space: nowrap; }
   #to-overview { align-self: flex-start; }
 }
 
@@ -524,3 +522,34 @@ button.badge-reread::before, .badge-mark.badge-reread::before { margin: 0 0.5em 
   .compass-name { font-size: 14px; }
 }
 .compass-apart { font-size: 13.5px; margin: 0 0 6px; max-width: 900px; }
+
+/* Phones. The tabs sit in a grid of short names, all on the first screen; away from the front the header is
+   compact (the draft note in one sentence, the date and "What's new" left to the front); a drawing wider than
+   the screen says it can be dragged; inputs are 16px so the phone does not zoom in when one is tapped. */
+.t-short { display: none; }
+.drag-hint { grid-column: 1 / -1; margin: 0; font-size: 13px; color: var(--ink-2); }
+.drag-hint[hidden] { display: none; }
+.dn-short { display: none; }
+@media (max-width: 560px) {
+  .viz-root { padding: 12px 14px; }
+  .top { position: relative; gap: 8px; }
+  .top h1 { padding-right: 44px; }
+  .theme-btn { position: absolute; top: 0; right: 0; }
+  .views { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; overflow: visible; padding: 0; }
+  .views button, .views button:first-child, .views button:last-child, .views button.last-visible { margin: 0; border-radius: 6px; padding: 5px 4px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .t-long { display: none; }
+  .t-short { display: inline; }
+  .search input, .tl-filters select { font-size: 16px; padding: 6px 10px; }
+  .draft-note { margin: 4px 0 8px; line-height: 1.4; }
+  .start-btn { padding: 5px 14px; }
+  [data-view]:not([data-view="cards"]) .dn-long { display: none; }
+  [data-view]:not([data-view="cards"]) .dn-short { display: inline; }
+  [data-view]:not([data-view="cards"]) .updated, [data-view]:not([data-view="cards"]) .whats-new { display: none; }
+  [data-view]:not([data-view="cards"]) .start-btn { padding: 4px 14px; font-size: 14px; }
+  .modebar { margin: 6px 0 2px; }
+  .front-names { margin-bottom: 10px; }
+  .panel { padding: 14px 12px; }
+  .claim { padding: 12px; }
+  .w-thread { padding: 0 10px; }
+  .rec-title { font-size: 23px; }
+}

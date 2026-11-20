@@ -29,14 +29,17 @@
   }
   function chainChart(steps) {
     var rows = [['hedges', 'Hedges', null], ['attribution', 'Attribution (0–4)', 4], ['label', 'Label (0–3)', 3]];
-    var n = steps.length, left = 118, right = 12, rowH = 46, top = 8, W = 640, H = top + rows.length * rowH + 26;
+    /* On a phone the chart is drawn narrow, with each row's name above its line, so its words stay readable. */
+    var narrow = window.matchMedia && window.matchMedia('(max-width: 560px)').matches;
+    var n = steps.length, left = narrow ? 6 : 118, right = narrow ? 6 : 12, rowH = narrow ? 60 : 46, top = narrow ? 4 : 8,
+      W = narrow ? 340 : 640, H = top + rows.length * rowH + 26;
     var hmax = Math.max(1, Math.max.apply(null, steps.map(function (s) { return (s.scores || {}).hedges || 0; })));
     var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, class: 'chain-chart', role: 'img', 'aria-label': 'Scores along the chain, in date order' });
     var x = function (i) { return left + (n === 1 ? 0 : i * (W - left - right) / (n - 1)); };
     rows.forEach(function (r, ri) {
-      var max = r[2] || hmax, y0 = top + ri * rowH + rowH - 10, y1 = top + ri * rowH + 6;
+      var max = r[2] || hmax, y0 = top + ri * rowH + rowH - (narrow ? 8 : 10), y1 = top + ri * rowH + (narrow ? 20 : 6);
       var y = function (v) { return y0 - (v / max) * (y0 - y1); };
-      svg.appendChild(el('text', { x: 0, y: y0 - 4, class: 'cc-label' }, r[1]));
+      svg.appendChild(el('text', { x: 0, y: narrow ? y1 - 8 : y0 - 4, class: 'cc-label' }, r[1]));
       svg.appendChild(el('line', { x1: left, x2: W - right, y1: y0, y2: y0, class: 'cc-base' }));
       var d = '', pen = false;
       steps.forEach(function (s, i) {
@@ -58,7 +61,7 @@
     var yb = H - 8;
     svg.appendChild(el('text', { x: left, y: yb, class: 'cc-axis' }, steps[0].date.slice(0, 7)));
     svg.appendChild(el('text', { x: W - right, y: yb, class: 'cc-axis', 'text-anchor': 'end' }, steps[n - 1].date.slice(0, 7)));
-    svg.appendChild(el('text', { x: (left + W - right) / 2, y: yb, class: 'cc-axis', 'text-anchor': 'middle' }, 'steps in date order (not to time scale)'));
+    svg.appendChild(el('text', { x: (left + W - right) / 2, y: yb, class: 'cc-axis', 'text-anchor': 'middle' }, narrow ? 'in date order, not to scale' : 'steps in date order (not to time scale)'));
     return svg;
   }
 

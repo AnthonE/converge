@@ -25,11 +25,11 @@
       </div>
       <span class="views" id="views" role="group" aria-label="Which map to show" hidden>
         <button type="button" id="tab-ideals" aria-pressed="true">Ideals</button>
-        <button type="button" id="tab-methods" aria-pressed="false" hidden>Alignment methods</button>
-        <button type="button" id="tab-money" aria-pressed="false">Money and evaluators</button>
-        <button type="button" id="tab-ancients" aria-pressed="false" hidden>The ancients</button>
+        <button type="button" id="tab-methods" aria-pressed="false" hidden><span class="t-long">Alignment methods</span><span class="t-short">Methods</span></button>
+        <button type="button" id="tab-money" aria-pressed="false"><span class="t-long">Money and evaluators</span><span class="t-short">Money</span></button>
+        <button type="button" id="tab-ancients" aria-pressed="false" hidden><span class="t-long">The ancients</span><span class="t-short">Ancients</span></button>
         <button type="button" id="tab-timeline" aria-pressed="false">Timeline</button>
-        <button type="button" id="tab-watch" aria-pressed="false" hidden>The Watch</button>
+        <button type="button" id="tab-watch" aria-pressed="false" hidden><span class="t-long">The Watch</span><span class="t-short">Watch</span></button>
       </span>
       <button type="button" id="to-overview" hidden>&larr; All ideals</button>
     </div>
@@ -79,6 +79,7 @@
   <section class="watch" id="the-page" aria-live="polite" hidden></section>
 
   <main class="layout" id="layout">
+    <p class="drag-hint" id="drag-hint" hidden>The drawing is wider than the screen: drag it sideways. Tap a name to open it below.</p>
     <div class="stage" id="stage" data-view="overview">
       <svg id="map" role="group" aria-label="Map of ideals and what links to them"></svg>
       <div id="tip" class="tip" role="status" hidden></div>
