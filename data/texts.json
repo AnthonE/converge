@@ -1040,5 +1040,23 @@
   "translation": "In English translation. Read as quoted in Wikipedia’s article on the story.",
   "url": "https://en.wikipedia.org/wiki/Tl%C3%B6n,_Uqbar,_Orbis_Tertius",
   "verified": "secondary"
+ },
+ {
+  "id": "text-milton-paradise-lost-1-pandaemonium",
+  "ref": "Milton, Paradise Lost I.756–757 (Pandemonium)",
+  "quote": "A solemn council forthwith to be held At Pandemonium, the high capital Of Satan and his peers.",
+  "tradition": "Modern literature",
+  "translation": "Written in English (1667); modernised spelling of Project Gutenberg EBook #26. Public domain.",
+  "url": "https://archive.org/details/paradiselost00026gut",
+  "verified": "primary"
+ },
+ {
+  "id": "text-selfridge-1959-pandemonium",
+  "ref": "Selfridge, “Pandemonium: A Paradigm for Learning” (1959), p. 516",
+  "quote": "Each cognitive demon computes a shriek, and from all the shrieks the highest level demon of all, the decision demon, merely selects the loudest.",
+  "tradition": "Modern thought",
+  "translation": "Written in English; read on a scan of the printed symposium proceedings, Mechanisation of Thought Processes (London, 1959), pp. 511–529.",
+  "url": "https://www.gwern.net/doc/ai/nn/1959-selfridge.pdf",
+  "verified": "primary"
  }
 ]

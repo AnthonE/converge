@@ -37,6 +37,7 @@ words belong to their authors and are not covered.
 | `watch_travelled.csv` | step in how a claim was passed along, oldest first |
 | `sources.csv` | cited page (URL), with its re-read and link status |
 | `people.csv` | public figure named on the map, in one plain sentence (who's who) |
+| `words.csv` | a word the people on the map use that a newcomer may not know, in one or two plain sentences (words you'll meet) |
 | `methods.csv`, `method_key.csv` | alignment method; its answer to each of the five questions |
 | `doors.csv` | stop on a way in (a door), in order |
 | `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked, the Watch's threads (`watch_threads`: id, `title`, `note`), the names the front offers first (`front_names`: ids of records or of people in Who's who), the families the front groups the ideals into (`families`: `id`, `name`, `question`, and `line`, an old text with `quote`, `ref`, `source`, `url`, `verified`; with `families_note`, which says the grouping is this project's reading), and, once set, `contribute` (where to send a correction) and `site_url` (the published address) |
@@ -139,6 +140,14 @@ it with the map: `holds`, `does not hold` (to be fixed), `corrected`, `removed`,
 **people** (who's who): `name`, `who` (one or two plain sentences: who they are and why they come up), `group`
 (builders, thinkers, faith, press, officials, past), `match` (the forms of the name the viewer marks), `node` (their
 own entry on the map, if any), `source`, `url`, `verified`, `nolink`. Public figures only.
+
+**words** (words you'll meet, an insider's guide): `word`, `group` (the guide's section: `ai`, `safety`, `movements`,
+`life`, `money`, `orgs` or `old`), `plain` (one or two plain sentences in the map's voice), `match` (the forms the viewer
+marks: in any letter case, except an acronym such as EA or PAC, and every form of a word with `case` true, which match
+exactly), `see` (the record or method that goes deeper), `view` (a view to open instead, such as
+`methods`), `said` (someone's own definition: a quotation already on the map, word for word, with the same `url` and
+`verified`; JSON), and, where the meaning was read on a page of its own, `source`, `url`, `verified`. A word with no
+`see` names its source. The notes are the map's wording; the people quoted may use a word in their own way.
 
 **methods**: `label`, `plain` (what it does, in plain words), `bet` (its core belief in its proponents' words; JSON),
 `pushed_by`, `pushback`, `happened`, `cautions` (JSON). **method_key**: one row per method and question. `q` is

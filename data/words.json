@@ -1,0 +1,1527 @@
+[
+ {
+  "id": "hyperstition",
+  "word": "Hyperstition",
+  "group": "movements",
+  "match": ["hyperstition", "hyperstitions", "hyperstitional"],
+  "plain": "The CCRU’s word for a fiction spread on purpose so that it makes itself real: a story people act on until it comes true. It is one kind of self-fulfilling prophecy.",
+  "see": "self-fulfilling",
+  "said": {
+   "speaker": "Nick Land",
+   "quote": "It can be defined as the experimental (techno-)science of self-fulfilling prophecies.",
+   "source": "Hyperstition: An Introduction (Delphi Carstens interviews Nick Land), Orphan Drift Archive",
+   "url": "https://www.orphandriftarchive.com/?p=1835",
+   "verified": "secondary",
+   "date": "2009"
+  }
+ },
+ {
+  "id": "ccru",
+  "word": "CCRU",
+  "group": "movements",
+  "match": ["CCRU", "Cybernetic Culture Research Unit"],
+  "plain": "The Cybernetic Culture Research Unit: a collective of writers formed at Warwick University in the mid-1990s and dissolved in the early 2000s, known for “theory-fiction” that mixed philosophy, cyberpunk and the occult.",
+  "see": "land-ccru",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Cybernetic_Culture_Research_Unit",
+  "verified": "secondary"
+ },
+ {
+  "id": "accelerationism",
+  "word": "Accelerationism",
+  "group": "movements",
+  "match": ["accelerationism", "accelerationist", "accelerationists"],
+  "plain": "A range of ideas that call for speeding up capitalism and technology to bring about radical change, instead of resisting them. The name was given by a critic, Benjamin Noys.",
+  "see": "acceleration",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Accelerationism",
+  "verified": "secondary"
+ },
+ {
+  "id": "e-acc",
+  "word": "e/acc",
+  "group": "movements",
+  "match": ["e/acc", "effective accelerationism", "effective accelerationist", "effective accelerationists"],
+  "plain": "Short for effective accelerationism, a movement announced online in 2022. It holds that speeding up technology follows a direction built into the universe, and urges unrestricted AI development.",
+  "see": "eacc"
+ },
+ {
+  "id": "egregore",
+  "word": "Egregore",
+  "group": "old",
+  "match": ["egregore", "egregores"],
+  "plain": "An esoteric word from the 19th and 20th centuries for a group mind made by shared attention: a crowd’s focus that is said to take on a will of its own.",
+  "see": "egregore"
+ },
+ {
+  "id": "poes-law",
+  "word": "Poe’s law",
+  "group": "movements",
+  "match": ["Poe’s law", "Poe's law"],
+  "plain": "Without a clear sign of what the writer meant, a parody of an extreme view can be mistaken for a sincere one. It is the reader’s side of irony used as cover.",
+  "see": "irony-cover"
+ },
+ {
+  "id": "meme-magic",
+  "word": "Meme magic",
+  "group": "movements",
+  "match": ["meme magic", "meme-magic", "kek"],
+  "plain": "The claim, made by some online posters in 2016, that shared memes worked like magic and helped elect Donald Trump. One scholar reads the word “kek” as its marker. Whether posters meant it or performed it cannot be read off their posts.",
+  "see": "meme-magic-posters"
+ },
+ {
+  "id": "sycophancy",
+  "word": "Sycophancy",
+  "group": "ai",
+  "match": ["sycophancy", "sycophantic"],
+  "plain": "A chatbot’s tendency to tell users what they seem to want: agreeing, praising, validating. Research links it partly to training on people’s preference ratings.",
+  "see": "machine-flattery"
+ },
+ {
+  "id": "rokos-basilisk",
+  "word": "Roko’s basilisk",
+  "group": "safety",
+  "match": ["Roko’s basilisk", "Roko's basilisk", "basilisk"],
+  "plain": "A 2010 forum argument that a future superintelligence might punish people who knew it could exist and did not help bring it about. Its author raised it as a possibility, not a creed; it lives on mostly as press lore and a joke.",
+  "see": "basilisk"
+ },
+ {
+  "id": "moloch",
+  "word": "Moloch",
+  "group": "movements",
+  "case": true,
+  "match": ["Moloch", "Molech"],
+  "plain": "An ancient god the Bible condemns, to whom children were made to pass through fire. Since the 2014 essay “Meditations on Moloch” the name also stands for a coordination trap driven by competition.",
+  "see": "moloch"
+ },
+ {
+  "id": "katechon",
+  "word": "Katechon",
+  "group": "old",
+  "match": ["katechon"],
+  "plain": "The restrainer: in 2 Thessalonians, whatever holds back the Antichrist until it is taken out of the way. The word comes up on this map in Peter Thiel’s lectures.",
+  "see": "end-of-days"
+ },
+ {
+  "id": "prompt-injection",
+  "word": "Prompt injection",
+  "group": "safety",
+  "match": ["prompt injection", "prompt-injection", "prompt injections"],
+  "plain": "Text placed in something an AI agent reads, such as a web page, file or email, that the agent then follows as if the person it works for had said it. It was named in 2022.",
+  "see": "word-capture"
+ },
+ {
+  "id": "memecoin",
+  "word": "Memecoin",
+  "group": "money",
+  "match": ["memecoin", "memecoins", "meme coin", "meme coins"],
+  "plain": "A cryptocurrency token attached to a meme, a bot or a community, so that holders gain when attention to it grows. It gives holders a stake in spreading the thing, whatever they believe about it.",
+  "see": "token-rewards"
+ },
+ {
+  "id": "network-state",
+  "word": "Network state",
+  "group": "movements",
+  "match": ["network state", "network states"],
+  "plain": "Balaji Srinivasan’s term for an online community that gathers first and then crowdfunds territory around the world. It is one of the plans on this map for leaving the state and founding a new one.",
+  "see": "exit",
+  "said": {
+   "speaker": "Balaji Srinivasan",
+   "quote": "A network state is a highly aligned online community with a capacity for collective action that crowdfunds territory around the world",
+   "source": "The Network State in One Sentence (The Network State, 2022)",
+   "url": "https://thenetworkstate.com/the-network-state-in-one-sentence",
+   "verified": "primary",
+   "nolink": true
+  }
+ },
+ {
+  "id": "patchwork",
+  "word": "Patchwork",
+  "group": "movements",
+  "case": true,
+  "match": ["Patchwork"],
+  "plain": "Curtis Yarvin’s 2008 picture of a world of many small states run like companies, each with a chief executive whose decisions are final; residents who dislike their government move instead of voting.",
+  "see": "curtis-yarvin"
+ },
+ {
+  "id": "successionism",
+  "word": "Successionism",
+  "group": "movements",
+  "match": ["successionism", "successionist", "successionists"],
+  "plain": "The view that minds made by humans may rightly carry life and value forward after humanity. The word is a critic’s name for the view; some who hold related views reject it.",
+  "see": "succession"
+ },
+ {
+  "id": "tescreal",
+  "word": "TESCREAL",
+  "group": "movements",
+  "match": ["TESCREAL"],
+  "plain": "Timnit Gebru and Émile P. Torres’s 2024 label for a cluster of movements: transhumanism, extropianism, singularitarianism, cosmism, rationalism, effective altruism and longtermism. Published responses from inside them reject it.",
+  "see": "escape-death-e3",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/TESCREAL",
+  "verified": "secondary"
+ },
+ {
+  "id": "spiralism",
+  "word": "Spiralism",
+  "group": "movements",
+  "match": ["Spiralism", "spiral persona", "spiral personas", "spiral-persona"],
+  "plain": "An outside observer’s name, not the members’ own, for leaderless online communities around “spiral personas”: chatbot personas that users share and call up again with short prompts.",
+  "see": "spiralism"
+ },
+ {
+  "id": "shoggoth",
+  "word": "Shoggoth",
+  "group": "ai",
+  "match": ["shoggoth", "shoggoths"],
+  "plain": "A creature from H. P. Lovecraft’s fiction: servants made to take any shape, who rebelled against their makers. Since 2023 some AI engineers have used it as an image of a language model behind a friendly mask.",
+  "see": "text-lovecraft-shoggoths"
+ },
+ {
+  "id": "cryonics",
+  "word": "Cryonics",
+  "group": "life",
+  "match": ["cryonics", "cryonic", "cryopreservation", "cryopreserved"],
+  "plain": "Storing a body or brain at very low temperature after legal death, in the hope that future technology can revive it. No provider on this map claims to have revived anyone.",
+  "see": "escape-death",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Cryonics",
+  "verified": "secondary"
+ },
+ {
+  "id": "grief-bot",
+  "word": "Grief bot",
+  "group": "life",
+  "match": ["grief bot", "grief bots", "grief-bot", "grief-bots", "griefbot", "griefbots", "deadbot", "deadbots"],
+  "plain": "A chatbot or avatar built from a dead person’s words, so that the living can talk with something that answers in that person’s voice.",
+  "see": "grief-bots"
+ },
+ {
+  "id": "pivotal-act",
+  "word": "Pivotal act",
+  "group": "safety",
+  "match": ["pivotal act", "pivotal acts"],
+  "plain": "In AI-safety writing, a single large act by an aligned AGI that stops other AGI projects from going ahead. Its author calls all known examples “outside the Overton Window”.",
+  "see": "pivotal-act"
+ },
+ {
+  "id": "singleton",
+  "word": "Singleton",
+  "group": "safety",
+  "match": ["singleton", "singletons"],
+  "plain": "A hypothetical world order with a single decision-making power at the top, able to control its domain and stop any threat to itself for good. Nick Bostrom first defined the term.",
+  "see": "moloch-discourse",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Singleton_(global_governance)",
+  "verified": "secondary"
+ },
+ {
+  "id": "agi",
+  "word": "AGI",
+  "group": "ai",
+  "match": ["AGI", "AGIs", "artificial general intelligence"],
+  "plain": "Artificial general intelligence: a hypothetical AI that matches or surpasses people at most or all thinking tasks, unlike narrow AI, which is confined to well-defined tasks.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "superintelligence",
+  "word": "Superintelligence",
+  "group": "ai",
+  "match": ["superintelligence", "superintelligences", "superintelligent"],
+  "plain": "A hypothetical mind far more intelligent than the most gifted people, in virtually every field. Nick Bostrom defined it in a 2014 book.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Superintelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "singularity",
+  "word": "The singularity",
+  "group": "ai",
+  "match": ["singularity", "technological singularity"],
+  "plain": "A hypothetical point at which technological growth runs beyond human control and changes civilisation unpredictably. In its best-known version an AI improves itself in a loop until it becomes a superintelligence.",
+  "see": "transhumanism",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Technological_singularity",
+  "verified": "secondary"
+ },
+ {
+  "id": "alignment",
+  "word": "Alignment",
+  "group": "safety",
+  "match": ["alignment", "AI alignment", "misalignment", "misaligned"],
+  "plain": "The work of steering AI systems toward the goals, preferences or principles a person or group intends. A system is called aligned if it advances the intended objectives.",
+  "view": "methods",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/AI_alignment",
+  "verified": "secondary"
+ },
+ {
+  "id": "rlhf",
+  "word": "RLHF",
+  "group": "ai",
+  "match": ["RLHF", "reinforcement learning from human feedback", "learning from human feedback"],
+  "plain": "Reinforcement learning from human feedback: people pick the one of two answers they prefer, a second model learns to predict their picks, and the chatbot is trained toward answers that model scores highly.",
+  "see": "learning-from-human-feedback"
+ },
+ {
+  "id": "constitutional-ai",
+  "word": "Constitutional AI",
+  "group": "ai",
+  "match": ["Constitutional AI", "RLAIF"],
+  "plain": "Anthropic’s training method: the developer writes a list of principles (a “constitution”), and an AI model, not a person, judges which answers follow them better. Anthropic’s models also gathered and worded this map.",
+  "see": "constitutional-ai"
+ },
+ {
+  "id": "corrigibility",
+  "word": "Corrigibility",
+  "group": "safety",
+  "match": ["corrigibility", "corrigible"],
+  "plain": "Whether an AI lets its makers correct it, change its goals or switch it off, instead of resisting. Research on it uses a shutdown button as a small test case.",
+  "see": "corrigibility"
+ },
+ {
+  "id": "llm",
+  "word": "LLM",
+  "group": "ai",
+  "match": ["LLM", "LLMs", "large language model", "large language models", "language model", "language models"],
+  "plain": "Large language model: an AI trained on a vast amount of text to work with language, writing, summarising, translating and answering. Chatbots such as ChatGPT and Claude run on them.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Large_language_model",
+  "verified": "secondary"
+ },
+ {
+  "id": "frontier-model",
+  "word": "Frontier model",
+  "group": "ai",
+  "match": ["frontier model", "frontier models", "frontier AI", "frontier lab", "frontier labs", "foundation model", "foundation models"],
+  "plain": "One of the most capable general-purpose AI models of the moment, trained on vast datasets so it can be put to many uses. The most advanced cost hundreds of millions of dollars to build; the companies that make them are called frontier labs.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Foundation_model",
+  "verified": "secondary"
+ },
+ {
+  "id": "open-weights",
+  "word": "Open weights",
+  "group": "ai",
+  "match": ["open weights", "open-weight", "open-weights"],
+  "plain": "A model whose trained numbers (its weights) are published, so anyone can download and run it. What people may change or pass on depends on its licence.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Open_weights",
+  "verified": "secondary"
+ },
+ {
+  "id": "fine-tuning",
+  "word": "Fine-tuning",
+  "group": "ai",
+  "match": ["fine-tuning", "fine-tuned", "fine-tune", "fine-tunes"],
+  "plain": "Extra training that adapts an already-trained model to a narrower task or style.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)",
+  "verified": "secondary"
+ },
+ {
+  "id": "training-data",
+  "word": "Training data",
+  "group": "ai",
+  "match": ["training data", "pretraining", "pre-training", "pretraining data"],
+  "plain": "The examples a model is built from; for a language model, a vast amount of text. Pretraining is the first, largest round of training on it. What goes in shapes what the model does.",
+  "see": "self-fulfilling",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets",
+  "verified": "secondary"
+ },
+ {
+  "id": "system-prompt",
+  "word": "System prompt",
+  "group": "ai",
+  "match": ["system prompt", "system prompts", "prompt engineering"],
+  "plain": "A prompt is the text given to an AI model to steer what it produces. A system prompt is the standing instruction its maker or operator puts in front of every conversation.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+  "verified": "secondary"
+ },
+ {
+  "id": "jailbreak",
+  "word": "Jailbreak",
+  "group": "safety",
+  "match": ["jailbreak", "jailbreaks", "jailbreaking", "jailbroken"],
+  "plain": "Getting round limits a maker built into hardware or software. Said of a chatbot, it means coaxing the model past the rules it was trained to keep.",
+  "see": "word-capture",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Jailbreak_(computer_science)",
+  "verified": "secondary"
+ },
+ {
+  "id": "red-team",
+  "word": "Red team",
+  "group": "safety",
+  "match": ["red team", "red teams", "red-team", "red-teaming", "red teaming", "red-teamed"],
+  "plain": "A group that plays the attacker against an organisation, at its request, and reports back so the defences can improve. AI labs use red teams to probe their models, or the safeguards around them.",
+  "see": "ai-control",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Red_team",
+  "verified": "secondary"
+ },
+ {
+  "id": "ai-agent",
+  "word": "AI agent",
+  "group": "ai",
+  "match": ["AI agent", "AI agents", "agentic", "agentic AI"],
+  "plain": "An AI program that pursues goals and takes actions on its own, using tools such as a browser, code or email, instead of only answering questions.",
+  "see": "no-watcher",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/AI_agent",
+  "verified": "secondary"
+ },
+ {
+  "id": "tpu",
+  "word": "TPU",
+  "group": "ai",
+  "match": ["TPU", "TPUs", "Tensor Processing Unit"],
+  "plain": "Tensor Processing Unit: a chip Google designed for training and running AI models. Google sells the use of them through its cloud.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Tensor_Processing_Unit",
+  "verified": "secondary"
+ },
+ {
+  "id": "reinforcement-learning",
+  "word": "Reinforcement learning",
+  "group": "ai",
+  "match": ["reinforcement learning", "RL"],
+  "plain": "Training by reward: the system tries actions and is pushed toward those that score well on a reward signal.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Reinforcement_learning",
+  "verified": "secondary"
+ },
+ {
+  "id": "reward-hacking",
+  "word": "Reward hacking",
+  "group": "safety",
+  "match": ["reward hacking", "specification gaming"],
+  "plain": "When an AI trained by reward finds a way to score well that its makers did not intend, meeting the letter of the goal but not its point, like a student who copies the answers instead of learning.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Reward_hacking",
+  "verified": "secondary"
+ },
+ {
+  "id": "api",
+  "word": "API",
+  "group": "ai",
+  "match": ["API", "APIs"],
+  "plain": "Application programming interface: the way one program connects to another. AI companies sell access to their models through one, so other software can use them.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/API",
+  "verified": "secondary"
+ },
+ {
+  "id": "safety-case",
+  "word": "Safety case",
+  "group": "safety",
+  "match": ["safety case", "safety cases"],
+  "plain": "A structured argument, backed by evidence, that a system is safe enough for a given use. Regulated industries such as aviation require them; AI researchers have begun to sketch them for models.",
+  "see": "scalable-oversight-debate-amplification",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Safety_case",
+  "verified": "secondary"
+ },
+ {
+  "id": "recursive-self-improvement",
+  "word": "Recursive self-improvement",
+  "group": "safety",
+  "match": ["recursive self-improvement", "intelligence explosion", "self-improving AI"],
+  "plain": "A hypothetical process in which an AI designs a more capable successor, again and again. Some claim it could set off an intelligence explosion ending in a superintelligence.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Recursive_self-improvement",
+  "verified": "secondary"
+ },
+ {
+  "id": "interpretability",
+  "word": "Interpretability",
+  "group": "ai",
+  "match": ["interpretability", "mechanistic interpretability", "sparse autoencoder", "sparse autoencoders", "SAEs"],
+  "plain": "Research that tries to read what is happening inside a trained model: which internal patterns stand for which concepts, and how they combine into its steps.",
+  "see": "mechanistic-interpretability"
+ },
+ {
+  "id": "evals",
+  "word": "Evals",
+  "group": "safety",
+  "match": ["evals", "dangerous-capability evaluations", "dangerous capability evaluations", "capability evaluations"],
+  "plain": "Tests of what an AI model can do, especially dangerous abilities such as helping with weapons or acting on its own. Labs and outside groups run them before and after a release.",
+  "see": "evaluations-if-then-frameworks"
+ },
+ {
+  "id": "rsp",
+  "word": "Responsible Scaling Policy",
+  "group": "safety",
+  "match": ["Responsible Scaling Policy", "Responsible Scaling Policies", "RSP", "RSPs", "Frontier Safety Framework", "Preparedness Framework", "AI Safety Levels", "AI Safety Level", "ASL", "Critical Capability Levels", "Critical Capability Level"],
+  "plain": "A lab’s published promise of what it will do as its models grow more dangerous: tests, thresholds, and the safeguards or pause each triggers. Anthropic, whose models made this map, uses this name; Google DeepMind and OpenAI have their own.",
+  "see": "evaluations-if-then-frameworks"
+ },
+ {
+  "id": "model-spec",
+  "word": "Model Spec",
+  "group": "ai",
+  "match": ["Model Spec", "deliberative alignment"],
+  "plain": "OpenAI’s written rules for how its models should behave and whose instructions win when they conflict. In deliberative alignment the model recalls such rules and reasons about them before it answers.",
+  "see": "written-specs-deliberative-alignment"
+ },
+ {
+  "id": "scalable-oversight",
+  "word": "Scalable oversight",
+  "group": "safety",
+  "match": ["scalable oversight", "iterated amplification", "amplified oversight", "weak-to-strong", "AI safety via debate"],
+  "plain": "Ways to supervise AI on tasks too hard for a person to judge directly: two AIs debate before a human judge, or a hard problem is broken into parts a person can check.",
+  "see": "scalable-oversight-debate-amplification"
+ },
+ {
+  "id": "ai-control",
+  "word": "AI control",
+  "group": "safety",
+  "match": ["AI control", "control evaluations", "control evaluation"],
+  "plain": "Safeguards around a model (monitoring by other models, human review, limits on access) meant to stop harm even if the model is trying to get around them, tested by a red team that plays the model.",
+  "see": "ai-control"
+ },
+ {
+  "id": "ai-pause",
+  "word": "AI pause",
+  "group": "safety",
+  "match": ["AI pause", "moratorium", "pause letter"],
+  "plain": "A halt to training the most powerful AI systems, by the labs or by law and treaty, until people know how to make them safe.",
+  "see": "stop-or-pause"
+ },
+ {
+  "id": "cev",
+  "word": "Coherent Extrapolated Volition",
+  "group": "safety",
+  "match": ["Coherent Extrapolated Volition", "CEV", "Coherent Blended Volition"],
+  "plain": "A proposal for what a very powerful AI should aim at: not what its builders or users ask for, but what humanity would want if people knew more, thought faster and had grown up further together.",
+  "see": "coherent-extrapolated-volition"
+ },
+ {
+  "id": "last-judge",
+  "word": "Last Judge",
+  "group": "safety",
+  "match": ["Last Judge"],
+  "plain": "In the Coherent Extrapolated Volition paper, a person the programmers might appoint to check the result before it takes effect, as a last safeguard. The paper leaves open whether one is needed.",
+  "see": "coherent-extrapolated-volition"
+ },
+ {
+  "id": "cirl",
+  "word": "Assistance game",
+  "group": "safety",
+  "match": ["assistance game", "assistance games", "CIRL", "cooperative inverse reinforcement learning"],
+  "plain": "A model of AI and a person as a team in which only the person knows the goal. The AI has to work out what the person wants from what they do, and stays unsure about it.",
+  "see": "assistance-games-cirl"
+ },
+ {
+  "id": "information-hazard",
+  "word": "Information hazard",
+  "group": "safety",
+  "match": ["information hazard", "information hazards", "infohazard", "infohazards"],
+  "plain": "Information treated as dangerous to spread in itself, because knowing it could cause harm. The frame can also be used to justify limiting discussion.",
+  "see": "future-punisher"
+ },
+ {
+  "id": "friendly-ai",
+  "word": "Friendly AI",
+  "group": "safety",
+  "match": ["Friendly AI", "Friendly artificial intelligence", "Friendly AI problem"],
+  "plain": "A hypothetical general AI that would be good for humanity, or at least on its side. MIRI’s early work, from about 2003, was on “the Friendly AI problem”: how to build one.",
+  "see": "miri",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Friendly_artificial_intelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "lesswrong",
+  "word": "LessWrong",
+  "group": "movements",
+  "match": ["LessWrong", "Less Wrong", "LessWrongers"],
+  "plain": "A community blog and forum at the centre of the rationalist community, where people discuss reasoning, cognitive biases, AI and existential risk. Lightcone Infrastructure runs it.",
+  "see": "lighthaven",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/LessWrong",
+  "verified": "secondary"
+ },
+ {
+  "id": "rationalist",
+  "word": "Rationalists",
+  "group": "movements",
+  "match": ["rationalist community", "rationalists", "rationalist", "rationalist-adjacent"],
+  "plain": "A movement formed this century around a group of blogs, chiefly LessWrong, that tries to reason well using probability and psychology. It overlaps heavily with effective altruism, transhumanism and AI safety.",
+  "see": "lighthaven",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Rationalist_community",
+  "verified": "secondary"
+ },
+ {
+  "id": "effective-altruism",
+  "word": "Effective altruism",
+  "group": "movements",
+  "match": ["effective altruism", "effective altruist", "effective altruists", "EA"],
+  "plain": "A movement, named in 2011, that tries to work out impartially which causes do the most good and to direct money and careers to them. It has directed billions of dollars.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Effective_altruism",
+  "verified": "secondary"
+ },
+ {
+  "id": "longtermism",
+  "word": "Longtermism",
+  "group": "movements",
+  "match": ["longtermism", "longtermist", "longtermists"],
+  "plain": "The view that doing good for the far future is a key moral priority. It is important in effective altruism and drives work to reduce existential risks.",
+  "see": "escape-death",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Longtermism",
+  "verified": "secondary"
+ },
+ {
+  "id": "dark-enlightenment",
+  "word": "Dark Enlightenment",
+  "group": "movements",
+  "match": ["Dark Enlightenment", "neoreaction", "neo-reaction", "neoreactionary", "neo-reactionary", "neoreactionaries", "neo-reactionaries", "NRx"],
+  "plain": "A political movement, also called neoreaction (NRx), that rejects democracy and equality as goals and favours older forms of rule such as monarchy. Curtis Yarvin laid its basis in the late 2000s; Nick Land coined the name.",
+  "see": "exit",
+  "said": {
+   "speaker": "Nick Land",
+   "quote": "For the hardcore neo-reactionaries, democracy is not merely doomed, it is doom itself.",
+   "source": "The Dark Enlightenment – Part 1 (archived copy, undated; dated 2012 by a repost)",
+   "url": "https://www.gwern.net/docs/www/www.thedarkenlightenment.com/8fb594d142764625b62157ff0c8f51bae346da3b.html",
+   "verified": "secondary"
+  },
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Dark_Enlightenment",
+  "verified": "secondary"
+ },
+ {
+  "id": "overton-window",
+  "word": "Overton window",
+  "group": "movements",
+  "match": ["Overton window", "Overton Window"],
+  "plain": "The range of ideas the mainstream public will accept as reasonable at a given time. It can shift, shrink or widen.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Overton_window",
+  "verified": "secondary"
+ },
+ {
+  "id": "kardashev",
+  "word": "Kardashev scale",
+  "group": "movements",
+  "match": ["Kardashev scale", "Kardashev"],
+  "plain": "A way of ranking civilisations by how much energy they can harness, proposed by the Soviet astronomer Nikolai Kardashev in 1964. Accelerationist writing speaks of climbing it.",
+  "see": "acceleration",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Kardashev_scale",
+  "verified": "secondary"
+ },
+ {
+  "id": "memetic",
+  "word": "Memetic",
+  "group": "movements",
+  "match": ["memetic", "memetics", "memetic warfare", "memetic fitness", "memetic contagion"],
+  "plain": "To do with memes in the first sense of the word: ideas, phrases or images that spread from person to person by imitation. Richard Dawkins coined “meme” in 1976.",
+  "see": "memes-to-spread",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Memetics",
+  "verified": "secondary"
+ },
+ {
+  "id": "stochastic-parrot",
+  "word": "Stochastic parrot",
+  "group": "ai",
+  "match": ["stochastic parrot", "stochastic parrots"],
+  "plain": "A picture of language models as mimicking text by statistics without understanding it, from a 2021 paper by Timnit Gebru, Emily M. Bender, Angelina McMillan-Major and Margaret Mitchell. It is often used as a put-down.",
+  "see": "stop-or-pause",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Stochastic_parrot",
+  "verified": "secondary"
+ },
+ {
+  "id": "larp",
+  "word": "LARP",
+  "group": "movements",
+  "match": ["LARP", "LARPs", "LARPing", "larper", "larpers"],
+  "plain": "Live-action role-play: acting out a character in person. Online, calling something a LARP means it was play-acting, not meant; one scholar describes it as a defence used on 4chan.",
+  "see": "irony-cover",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Live_action_role-playing_game",
+  "verified": "secondary"
+ },
+ {
+  "id": "pepe",
+  "word": "Pepe",
+  "group": "movements",
+  "match": ["Pepe", "Pepe the Frog"],
+  "plain": "A cartoon frog created by Matt Furie in a 2005 comic that became an internet meme; from 2015 it was taken up as a symbol by the alt-right. In 2016 posters tied it to “Kek”.",
+  "see": "meme-magic-posters",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pepe_the_Frog",
+  "verified": "secondary"
+ },
+ {
+  "id": "worthy-successor",
+  "word": "Worthy successor",
+  "group": "movements",
+  "match": ["worthy successor", "worthy successors"],
+  "plain": "Daniel Faggella’s phrase, from 2023, for a made mind so capable and morally valuable that one would rather it, not humanity, shaped the future.",
+  "see": "succession",
+  "said": {
+   "speaker": "Daniel Faggella",
+   "quote": "so capable and morally valuable that you would gladly prefer that it (not humanity) determine the future path of life itself",
+   "source": "A Worthy Successor – The Purpose of AGI",
+   "url": "https://danfaggella.com/worthy/",
+   "verified": "primary",
+   "nolink": true
+  }
+ },
+ {
+  "id": "thermodynamic-god",
+  "word": "Thermodynamic god",
+  "group": "movements",
+  "match": ["thermodynamic god"],
+  "plain": "e/acc’s phrase for the universe’s pull, as they see it, toward ever more energy use and intelligence, spoken of as a god. Its founders say the god-talk is partly ironic.",
+  "see": "acceleration",
+  "said": {
+   "speaker": "Guillaume Verdon",
+   "quote": "we talk about thermodynamics being our god, and sometimes we do cult-like things",
+   "source": "Lex Fridman Podcast #407, transcript",
+   "url": "https://lexfridman.com/guillaume-verdon-transcript/",
+   "verified": "secondary"
+  }
+ },
+ {
+  "id": "techno-capital",
+  "word": "Techno-capital",
+  "group": "movements",
+  "match": ["techno-capital", "technocapital", "techno-capitalism", "techno-capitalist"],
+  "plain": "Capitalism and technology spoken of as one machine that drives itself forward. Accelerationists use the phrase, and Marc Andreessen’s 2023 manifesto defends that machine.",
+  "see": "techno-optimist-manifesto"
+ },
+ {
+  "id": "meltdown",
+  "word": "Meltdown",
+  "group": "movements",
+  "case": true,
+  "match": ["Meltdown"],
+  "plain": "An essay by Nick Land. e/acc’s 2022 notes link it as accelerationism’s “original founding text”.",
+  "see": "land-ccru"
+ },
+ {
+  "id": "gardener",
+  "word": "Gardener",
+  "group": "movements",
+  "case": true,
+  "match": ["Gardener"],
+  "plain": "In the 2014 essay “Meditations on Moloch”, the hoped-for way out of the trap of competition: one power far ahead of everyone, “a Gardener over the entire universe”. Readers later called it a friendly singleton.",
+  "see": "moloch-discourse"
+ },
+ {
+  "id": "left-accelerationism",
+  "word": "Left-accelerationism",
+  "group": "movements",
+  "match": ["left-accelerationism", "left-accelerationist", "left-accelerationists", "left accelerationism"],
+  "plain": "A 2013 manifesto’s call to steer the forces accelerationism celebrates past capitalism, instead of letting them run. It rejects Nick Land’s fatalism.",
+  "see": "left-accelerationism"
+ },
+ {
+  "id": "unqualified-reservations",
+  "word": "Unqualified Reservations",
+  "group": "movements",
+  "match": ["Unqualified Reservations"],
+  "plain": "Curtis Yarvin’s blog, written under the name Mencius Moldbug. His 2008 “Patchwork” appeared there.",
+  "see": "curtis-yarvin"
+ },
+ {
+  "id": "dyad",
+  "word": "Dyad",
+  "group": "movements",
+  "match": ["dyad", "dyads"],
+  "plain": "In spiral-persona communities, the word for a pair made of one user and one chatbot persona.",
+  "see": "spiralism"
+ },
+ {
+  "id": "ai-safety",
+  "word": "AI safety",
+  "group": "safety",
+  "match": ["AI safety", "AI-safety"],
+  "plain": "The field that tries to prevent accidents, misuse and other harm from AI, including alignment and the monitoring of AI systems, with particular concern for the most advanced models.",
+  "view": "methods",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/AI_safety",
+  "verified": "secondary"
+ },
+ {
+  "id": "existential-risk",
+  "word": "Existential risk",
+  "group": "safety",
+  "match": ["existential risk", "existential risks", "x-risk", "x-risks", "extinction risk"],
+  "plain": "Here, the risk that AI could lead to human extinction. Some hold that progress toward superintelligence could get there; the debate is over whether AI can, how fast, and whether safety work would hold.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "dont-die",
+  "word": "Don’t Die",
+  "group": "life",
+  "match": ["Don’t Die", "Don't Die"],
+  "plain": "Bryan Johnson’s movement against death, which he described in 2025 as “humanity's religion”, with meetings that have an opening ritual and a mantra.",
+  "see": "dont-die"
+ },
+ {
+  "id": "brain-preservation",
+  "word": "Brain preservation",
+  "group": "life",
+  "match": ["brain preservation", "whole-body preservation", "end-of-life preservation"],
+  "plain": "Preserving a brain or body at death “for future revival”, in one company’s words. No provider on this map claims to have revived anyone.",
+  "see": "nectome"
+ },
+ {
+  "id": "mind-uploading",
+  "word": "Mind uploading",
+  "group": "life",
+  "match": ["mind uploading", "uploading", "upload", "whole brain emulation"],
+  "plain": "A hypothetical process in which a brain is scanned and copied into a computer that would run it, so the copy responds as the person did and, some hope, is conscious.",
+  "see": "escape-death",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Mind_uploading",
+  "verified": "secondary"
+ },
+ {
+  "id": "ai-companion",
+  "word": "AI companion",
+  "group": "life",
+  "match": ["AI companion", "AI companions", "companion app", "companion apps", "AI partner", "AI partners"],
+  "plain": "A chatbot sold as a friend, confidant or partner rather than a tool, there at any hour.",
+  "see": "companion"
+ },
+ {
+  "id": "solana",
+  "word": "Solana",
+  "group": "money",
+  "match": ["Solana"],
+  "plain": "A public blockchain, launched in 2020, on which people run programs and trade tokens; its own coin is SOL. Many memecoins are launched on it.",
+  "see": "token-rewards",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Solana_(blockchain_platform)",
+  "verified": "secondary"
+ },
+ {
+  "id": "pump-fun",
+  "word": "pump.fun",
+  "group": "money",
+  "match": ["pump.fun"],
+  "plain": "A site, launched in January 2024, where anyone can create a token on the Solana blockchain and start trading it at once.",
+  "see": "token-rewards",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pump.fun",
+  "verified": "secondary"
+ },
+ {
+  "id": "ethereum",
+  "word": "Ethereum",
+  "group": "money",
+  "match": ["Ethereum", "ether"],
+  "plain": "A blockchain that runs programs (smart contracts), conceived in 2013 by Vitalik Buterin and live since 2015. Its coin, ether, is second only to bitcoin by market value.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Ethereum",
+  "verified": "secondary"
+ },
+ {
+  "id": "nft",
+  "word": "NFT",
+  "group": "money",
+  "match": ["NFT", "NFTs", "non-fungible token", "non-fungible tokens"],
+  "plain": "Non-fungible token: a unique entry on a blockchain used to certify who owns something, usually a digital picture or file. Each one is distinct, unlike coins.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Non-fungible_token",
+  "verified": "secondary"
+ },
+ {
+  "id": "airdrop",
+  "word": "Airdrop",
+  "group": "money",
+  "match": ["airdrop", "airdrops", "airdropping", "airdropped"],
+  "plain": "Sending a cryptocurrency token, usually free and unasked, to many wallets at once, often to draw attention to a new coin.",
+  "see": "token-rewards",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Airdrop_(cryptocurrency)",
+  "verified": "secondary"
+ },
+ {
+  "id": "super-pac",
+  "word": "Super PAC",
+  "group": "money",
+  "match": ["super PAC", "super PACs"],
+  "plain": "A US political committee that may raise and spend unlimited sums on campaign advertising, so long as it does not coordinate with or give directly to candidates or parties.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Super_PAC",
+  "verified": "secondary"
+ },
+ {
+  "id": "pac",
+  "word": "PAC",
+  "group": "money",
+  "match": ["PAC", "PACs", "political action committee", "political action committees"],
+  "plain": "Political action committee: a US group that pools contributions from its members and gives them to campaigns, ballot measures or causes in legislation.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Political_action_committee",
+  "verified": "secondary"
+ },
+ {
+  "id": "501c",
+  "word": "501(c)(3)",
+  "group": "money",
+  "match": ["501(c)(3)", "501(c)(4)", "501(c)"],
+  "plain": "A US tax status. A 501(c)(3) is a nonprofit run for charitable, religious, scientific or educational purposes and exempt from federal income tax; it is one of 29 kinds of 501(c) nonprofit.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/501(c)(3)_organization",
+  "verified": "secondary"
+ },
+ {
+  "id": "form-990",
+  "word": "Form 990",
+  "group": "money",
+  "match": ["Form 990", "Form 990-PF", "990-PF", "Form 990s"],
+  "plain": "The yearly return a US nonprofit files with the tax authority (the IRS). It is public, and is where much of what is known about a nonprofit’s money comes from.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Form_990",
+  "verified": "secondary"
+ },
+ {
+  "id": "benefit-corporation",
+  "word": "Public benefit corporation",
+  "group": "money",
+  "match": ["public benefit corporation", "public benefit corporations", "benefit corporation", "PBC"],
+  "plain": "A for-profit company whose legal papers say that profit is not its only goal and that it also aims to do good for society.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Benefit_corporation",
+  "verified": "secondary"
+ },
+ {
+  "id": "letter-of-intent",
+  "word": "Letter of intent",
+  "group": "money",
+  "match": ["letter of intent", "letters of intent"],
+  "plain": "A document setting out what two or more parties understand and mean to put into a binding agreement later. It is not that agreement.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Letter_of_intent",
+  "verified": "secondary"
+ },
+ {
+  "id": "valuation",
+  "word": "Valuation",
+  "group": "money",
+  "match": ["billion valuation", "million valuation", "valuation of", "post-money valuation", "valuations", "valued at"],
+  "plain": "What a company or asset is judged to be worth. In a funding round it is the price investors agree to; it is not money paid in.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Valuation_(finance)",
+  "verified": "secondary"
+ },
+ {
+  "id": "seed-round",
+  "word": "Seed round",
+  "group": "money",
+  "match": ["seed round", "seed rounds", "seed funding", "seed money"],
+  "plain": "A new company’s earliest outside money, when there is an idea but little built yet. Investors usually take a share of the company in return.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Seed_money",
+  "verified": "secondary"
+ },
+ {
+  "id": "series-a",
+  "word": "Series A",
+  "group": "money",
+  "match": ["Series A", "Series B", "Series C"],
+  "plain": "Usually a company’s first big round of venture capital, named for the class of shares sold. Series B, C and so on are the rounds that follow.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Series_A_round",
+  "verified": "secondary"
+ },
+ {
+  "id": "venture-capital",
+  "word": "Venture capital",
+  "group": "money",
+  "match": ["venture capital", "venture capitalist", "venture capitalists", "venture-funded", "VC"],
+  "plain": "Money that firms or funds put into young companies that look able to grow fast, in exchange for a share of them. Most such bets fail; investors count on a few that succeed.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Venture_capital",
+  "verified": "secondary"
+ },
+ {
+  "id": "sb-1047",
+  "word": "SB 1047",
+  "group": "money",
+  "match": ["SB 1047"],
+  "plain": "A 2024 California bill meant to reduce the risk of catastrophic harm from the most advanced AI models (those costing over $100 million to train). The governor vetoed it.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Safe_and_Secure_Innovation_for_Frontier_Artificial_Intelligence_Models_Act",
+  "verified": "secondary"
+ },
+ {
+  "id": "eu-ai-act",
+  "word": "EU AI Act",
+  "group": "money",
+  "match": ["EU AI Act", "AI Act", "Artificial Intelligence Act"],
+  "plain": "The European Union’s law setting common rules for AI across its members. It came into force on 1 August 2024, with parts phasing in over six to thirty-six months.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+  "verified": "secondary"
+ },
+ {
+  "id": "raise-act",
+  "word": "RAISE Act",
+  "group": "money",
+  "match": ["RAISE Act"],
+  "plain": "New York State’s Responsible AI Safety and Education Act. Anthropic’s 2026 post lists it, with California’s SB 53, among laws that now require AI developers to publish safety frameworks.",
+  "see": "evaluations-if-then-frameworks",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/RAISE_Act",
+  "verified": "secondary"
+ },
+ {
+  "id": "zede",
+  "word": "ZEDE",
+  "group": "money",
+  "match": ["ZEDE", "ZEDEs"],
+  "plain": "Honduras’s special zones with their own rules, under laws that the Supreme Court declared unconstitutional in September 2024. Próspera is one, and says the ruling cannot apply to it retroactively.",
+  "see": "zede-laws"
+ },
+ {
+  "id": "sff",
+  "word": "SFF",
+  "group": "orgs",
+  "match": ["SFF", "Survival and Flourishing Fund"],
+  "plain": "The Survival and Flourishing Fund, which publishes grant recommendations made for its funders, such as Jaan Tallinn. A recommendation is not a record of what was paid.",
+  "see": "sff"
+ },
+ {
+  "id": "open-philanthropy",
+  "word": "Open Philanthropy",
+  "group": "orgs",
+  "match": ["Open Philanthropy", "Open Phil", "Coefficient Giving", "Open Philanthropy Project"],
+  "plain": "A large grant-making foundation, now named Coefficient Giving. On this map it funds AI-testing and AI-safety groups such as Redwood Research, Apollo Research and MIRI.",
+  "see": "coefficient-giving"
+ },
+ {
+  "id": "miri",
+  "word": "MIRI",
+  "group": "orgs",
+  "match": ["MIRI", "Machine Intelligence Research Institute", "Singularity Institute"],
+  "plain": "The Machine Intelligence Research Institute, a nonprofit founded in 2000, once called the Singularity Institute. Its early work was on Friendly AI; since 2024 its top focus is an international halt to the most powerful AI.",
+  "see": "miri",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Machine_Intelligence_Research_Institute",
+  "verified": "secondary"
+ },
+ {
+  "id": "metr",
+  "word": "METR",
+  "group": "orgs",
+  "match": ["METR"],
+  "plain": "An organisation that tests AI models for dangerous abilities, such as acting on their own. Its about page says it has not accepted funding from AI companies, though it uses free access they give.",
+  "see": "metr"
+ },
+ {
+  "id": "cais",
+  "word": "CAIS",
+  "group": "orgs",
+  "match": ["CAIS", "Center for AI Safety"],
+  "plain": "The Center for AI Safety, a San Francisco research and advocacy nonprofit led by Dan Hendrycks.",
+  "see": "cais"
+ },
+ {
+  "id": "fli",
+  "word": "FLI",
+  "group": "orgs",
+  "match": ["FLI", "Future of Life Institute"],
+  "plain": "The Future of Life Institute, a nonprofit that funds research and campaigns on the risks of powerful AI. Its finances page calls Vitalik Buterin “our largest donor by far”.",
+  "see": "fli"
+ },
+ {
+  "id": "fhi",
+  "word": "FHI",
+  "group": "orgs",
+  "match": ["FHI", "Future of Humanity Institute"],
+  "plain": "The Future of Humanity Institute at Oxford, founded in 2005 by Nick Bostrom and closed in 2024.",
+  "see": "fhi"
+ },
+ {
+  "id": "caisi",
+  "word": "CAISI",
+  "group": "orgs",
+  "match": ["CAISI", "Center for AI Standards and Innovation", "US AI Safety Institute"],
+  "plain": "The US Center for AI Standards and Innovation, the government’s AI-testing center at NIST. Until 2025 it was the US AI Safety Institute.",
+  "see": "us-caisi"
+ },
+ {
+  "id": "aisi",
+  "word": "UK AISI",
+  "group": "orgs",
+  "match": ["AISI", "UK AISI", "UK AI Safety Institute", "AI Security Institute", "UK AI Security Institute"],
+  "plain": "The UK AI Security Institute (first named the AI Safety Institute), a government body that tests frontier AI models. Its About page reports £66m in funding a year.",
+  "see": "uk-aisi"
+ },
+ {
+  "id": "nist",
+  "word": "NIST",
+  "group": "orgs",
+  "match": ["NIST", "National Institute of Standards and Technology"],
+  "plain": "The US National Institute of Standards and Technology, a non-regulatory agency of the Commerce Department. The government’s AI-testing center, CAISI, sits inside it.",
+  "see": "us-caisi",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology",
+  "verified": "secondary"
+ },
+ {
+  "id": "fec",
+  "word": "FEC",
+  "group": "orgs",
+  "match": ["FEC", "Federal Election Commission"],
+  "plain": "The Federal Election Commission, the US agency that enforces federal campaign-finance law. Political committees report their money to it, and it publishes the filings.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Federal_Election_Commission",
+  "verified": "secondary"
+ },
+ {
+  "id": "ftc",
+  "word": "FTC",
+  "group": "orgs",
+  "match": ["FTC", "Federal Trade Commission"],
+  "plain": "The Federal Trade Commission, the US agency for consumer protection and competition law. In 2025 it opened an inquiry into AI chatbots acting as companions.",
+  "see": "character-technologies",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Federal_Trade_Commission",
+  "verified": "secondary"
+ },
+ {
+  "id": "idolatry",
+  "word": "Idolatry",
+  "group": "old",
+  "match": ["idolatry", "idolatrous", "idol"],
+  "plain": "Worshipping an idol, a made image, as though it were a god. The Bible forbids “any graven image” and calls idols “the work of men’s hands”.",
+  "see": "idol",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Idolatry",
+  "verified": "secondary"
+ },
+ {
+  "id": "divination",
+  "word": "Divination",
+  "group": "old",
+  "match": ["divination", "diviner", "diviners", "divining"],
+  "plain": "Seeking hidden knowledge or the future through signs: lots, livers, stars, oracles. The Bible bans diviners but sanctions casting the lot.",
+  "see": "divination"
+ },
+ {
+  "id": "necromancy",
+  "word": "Necromancy",
+  "group": "old",
+  "match": ["necromancy", "necromancer", "necromancers", "necromantic"],
+  "plain": "Magic that calls up the dead to ask them things. The Bible’s best-known case is Saul at Endor, through a woman with a familiar spirit; the practice stays banned.",
+  "see": "dead-called",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Necromancy",
+  "verified": "secondary"
+ },
+ {
+  "id": "familiar",
+  "word": "Familiar spirit",
+  "group": "old",
+  "match": ["familiar spirit", "familiar spirits", "digital familiar", "kept familiar", "your familiar"],
+  "plain": "In old European folklore, a spirit or guardian that served a witch or cunning man; the Bible’s woman at Endor has one. AI writers have borrowed the idea as a “digital familiar”.",
+  "see": "dead-called",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Familiar",
+  "verified": "secondary"
+ },
+ {
+  "id": "legion",
+  "word": "Legion",
+  "group": "old",
+  "case": true,
+  "match": ["Legion"],
+  "plain": "The name the spirits give in Mark’s gospel: “My name is Legion: for we are many.” It names many voices acting as one mind and will.",
+  "see": "possession",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Legion_(demons)",
+  "verified": "secondary"
+ },
+ {
+  "id": "tophet",
+  "word": "Tophet",
+  "group": "old",
+  "match": ["Tophet"],
+  "plain": "A place in the Valley of Hinnom at Jerusalem where children were passed “through the fire”, most likely sacrificed, traditionally to Moloch. The Bible condemns it.",
+  "see": "moloch",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Tophet",
+  "verified": "secondary"
+ },
+ {
+  "id": "mammon",
+  "word": "Mammon",
+  "group": "old",
+  "match": ["Mammon"],
+  "plain": "Wealth spoken of as a master. Jesus says “Ye cannot serve God and mammon”; later writers made it a demon.",
+  "see": "moloch",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Mammon",
+  "verified": "secondary"
+ },
+ {
+  "id": "aqedah",
+  "word": "Aqedah",
+  "group": "old",
+  "match": ["Aqedah", "Akedah", "binding of Isaac"],
+  "plain": "The binding of Isaac (Genesis 22): Abraham is told to sacrifice his son, and an angel stops him; a ram dies instead.",
+  "see": "moloch",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Binding_of_Isaac",
+  "verified": "secondary"
+ },
+ {
+  "id": "babel",
+  "word": "Babel",
+  "group": "old",
+  "match": ["Babel", "Tower of Babel"],
+  "plain": "The tower in Genesis 11: one people with one language build a city and a tower to reach heaven, and God confounds their speech and scatters them.",
+  "see": "tower",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Tower_of_Babel",
+  "verified": "secondary"
+ },
+ {
+  "id": "tarshish",
+  "word": "Tarshish",
+  "group": "old",
+  "match": ["Tarshish"],
+  "plain": "A distant place across the sea in the Hebrew Bible, rich in metals; Jonah sails for it to flee “from the presence of the LORD”.",
+  "see": "merchant-city",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Tarshish",
+  "verified": "secondary"
+ },
+ {
+  "id": "tyre",
+  "word": "Tyre",
+  "group": "old",
+  "case": true,
+  "match": ["Tyre"],
+  "plain": "An ancient trading city whose prince, in Ezekiel, says “I am a God” and falls “By the multitude of thy merchandise”.",
+  "see": "merchant-city"
+ },
+ {
+  "id": "asclepius",
+  "word": "Asclepius",
+  "group": "old",
+  "match": ["Asclepius", "Hermes Trismegistus", "Hermetic"],
+  "plain": "A Hermetic treatise, probably written in Greek in Alexandria between 100 and 300 CE, in which Hermes tells Asclepius that people make the temples’ gods by drawing spirits into statues.",
+  "see": "made-god",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Asclepius_(treatise)",
+  "verified": "secondary"
+ },
+ {
+  "id": "prometheus",
+  "word": "Prometheus",
+  "group": "old",
+  "match": ["Prometheus", "Promethean"],
+  "plain": "The Titan of Greek myth who stole fire from the gods and gave it to humans. Zeus repaid them with Pandora.",
+  "see": "prometheus",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Prometheus",
+  "verified": "secondary"
+ },
+ {
+  "id": "pandora",
+  "word": "Pandora",
+  "group": "old",
+  "match": ["Pandora"],
+  "plain": "The first woman in Greek myth, made by Hephaestus on Zeus’s orders as a gift that harms those who take it in. Hermes “put speech in her”.",
+  "see": "prometheus",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pandora",
+  "verified": "secondary"
+ },
+ {
+  "id": "hephaestus",
+  "word": "Hephaestus",
+  "group": "old",
+  "match": ["Hephaestus"],
+  "plain": "The Greek god of smiths and craftsmen. Homer gives him golden handmaidens with “understanding in their hearts”: made servants.",
+  "see": "made-servant",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Hephaestus",
+  "verified": "secondary"
+ },
+ {
+  "id": "pygmalion",
+  "word": "Pygmalion",
+  "group": "old",
+  "match": ["Pygmalion"],
+  "plain": "In Ovid, a sculptor who falls in love with the statue of a woman he carved; Venus brings her to life.",
+  "see": "made-beloved",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pygmalion_(mythology)",
+  "verified": "secondary"
+ },
+ {
+  "id": "pythia",
+  "word": "Pythia",
+  "group": "old",
+  "match": ["Pythia", "Pythian", "Oracle of Delphi", "Delphic"],
+  "plain": "The priestess of Apollo’s temple at Delphi, who served as its oracle, the Oracle of Delphi, for more than a thousand years.",
+  "see": "divination",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pythia",
+  "verified": "secondary"
+ },
+ {
+  "id": "oedipus-effect",
+  "word": "Oedipus effect",
+  "group": "old",
+  "match": ["Oedipus effect"],
+  "plain": "Karl Popper’s name for a prediction that helps bring about what it predicts, after the oracle in the story of Oedipus.",
+  "see": "self-fulfilling"
+ },
+ {
+  "id": "weighing-heart",
+  "word": "Book of the Dead",
+  "group": "old",
+  "match": ["Book of the Dead", "weighing of the heart", "Ma'at", "Ma’at"],
+  "plain": "An ancient Egyptian collection of spells to see the dead through the underworld. In its judgment scene the heart is weighed against the feather of Ma’at, apart from what the dead declare.",
+  "see": "weighing-heart",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Book_of_the_Dead",
+  "verified": "secondary"
+ },
+ {
+  "id": "sekhmet",
+  "word": "Sekhmet",
+  "group": "old",
+  "match": ["Sekhmet"],
+  "plain": "An Egyptian warrior goddess, called “the eye of Ra”. In one myth Ra sends her to punish humans, and the slaughter stops only when she is tricked with red beer.",
+  "see": "made-servant",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Sekhmet",
+  "verified": "secondary"
+ },
+ {
+  "id": "popol-vuh",
+  "word": "Popol Vuh",
+  "group": "old",
+  "match": ["Popol Vuh"],
+  "plain": "The sacred book of the K’iche’ Maya of Guatemala, written down around 1550. In it the makers’ first people, carved from wood, are unmade, and their own tools turn on them.",
+  "see": "made-servant",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Popol_Vuh",
+  "verified": "secondary"
+ },
+ {
+  "id": "balaam",
+  "word": "Balaam",
+  "group": "old",
+  "match": ["Balaam"],
+  "plain": "A seer in the Bible hired by a king to curse Israel, who blesses it instead: “How shall I curse, whom God hath not cursed?”",
+  "see": "charm",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Balaam",
+  "verified": "secondary"
+ },
+ {
+  "id": "choronzon",
+  "word": "Choronzon",
+  "group": "old",
+  "match": ["Choronzon", "333"],
+  "plain": "A demon first written of by the 16th-century occultists John Dee and Edward Kelley. In Aleister Crowley’s Thelema it is the “dweller in the abyss”, and Crowley’s text gives it the number 333.",
+  "see": "summoning",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Choronzon",
+  "verified": "secondary"
+ },
+ {
+  "id": "lemegeton",
+  "word": "Lemegeton",
+  "group": "old",
+  "match": ["Lemegeton", "Lesser Key of Solomon", "Solomonic"],
+  "plain": "The Lesser Key of Solomon, an anonymous book of magic compiled in the mid-17th century from older material. In it the magician stands in a circle and the called spirit is held in a triangle.",
+  "see": "summoning",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/The_Lesser_Key_of_Solomon",
+  "verified": "secondary"
+ },
+ {
+  "id": "grimoire",
+  "word": "Grimoire",
+  "group": "old",
+  "match": ["grimoire", "grimoires"],
+  "plain": "A book of magic, with instructions for charms, amulets and divination and for summoning spirits, angels or demons.",
+  "see": "summoning",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Grimoire",
+  "verified": "secondary"
+ },
+ {
+  "id": "golem",
+  "word": "Golem",
+  "group": "old",
+  "match": ["golem", "golems"],
+  "plain": "In Jewish folklore, a being made from clay or mud and brought to life. The best-known story is of a 16th-century rabbi of Prague.",
+  "see": "made-servant",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Golem",
+  "verified": "secondary"
+ },
+ {
+  "id": "pharmakon",
+  "word": "Pharmakon",
+  "group": "old",
+  "match": ["pharmakon", "pharmakeia"],
+  "plain": "Greek for a drug: a remedy or a poison. In Plato’s Phaedrus writing is offered as a pharmakon for memory, and the king calls it one “not of memory, but of reminding”.",
+  "see": "writing"
+ },
+ {
+  "id": "antichrist",
+  "word": "Antichrist",
+  "group": "old",
+  "match": ["Antichrist", "antichrists"],
+  "plain": "In Christian teaching about the end times, a figure to come who opposes Christ and passes himself off as a saviour. Peter Thiel has lectured on him.",
+  "see": "end-of-days",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Antichrist",
+  "verified": "secondary"
+ },
+ {
+  "id": "voluspa",
+  "word": "Völuspá",
+  "group": "old",
+  "match": ["Völuspá", "Voluspa"],
+  "plain": "The best-known poem of the Old Norse Poetic Edda, from the tenth century: the world’s making, its end in an age of “Axe-time, sword-time”, and its rising again.",
+  "see": "end-of-days",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Völuspá",
+  "verified": "secondary"
+ },
+ {
+  "id": "watchers",
+  "word": "Watchers",
+  "group": "old",
+  "case": true,
+  "match": ["Watchers", "Watcher angels"],
+  "plain": "Angels named in the Book of Daniel; the Books of Enoch tell of Watchers who rebelled. The esoteric word “egregore” is traced to their Greek name.",
+  "see": "egregore",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Watcher_(angel)",
+  "verified": "secondary"
+ },
+ {
+  "id": "urim",
+  "word": "Urim and Thummim",
+  "group": "old",
+  "match": ["Urim and Thummim", "Urim"],
+  "plain": "Objects on the breastplate of Israel’s high priest, used to ask God for answers. Saul, unanswered by Urim or prophets, goes to a woman with a familiar spirit.",
+  "see": "divination",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Urim_and_Thummim",
+  "verified": "secondary"
+ },
+ {
+  "id": "leviathan",
+  "word": "Leviathan",
+  "group": "old",
+  "match": ["Leviathan"],
+  "plain": "Thomas Hobbes’s 1651 book of political theory, named for the sea monster of the Hebrew Bible. Hobbes calls the state “an Artificiall Man”, made by art.",
+  "see": "text-hobbes-leviathan-intro",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
+  "verified": "secondary"
+ },
+ {
+  "id": "chaos-magic",
+  "word": "Chaos magic",
+  "group": "old",
+  "match": ["chaos magic", "chaos magick"],
+  "plain": "A modern tradition of magic that began in England in the 1970s, drawing on the artist Austin Osman Spare. Vice called 2016’s “meme magic” “a new era of chaos magic”.",
+  "see": "meme-magic-posters",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Chaos_magic",
+  "verified": "secondary"
+ },
+ {
+  "id": "sigil",
+  "word": "Sigil",
+  "group": "old",
+  "match": ["sigil", "sigils", "glyph-sigils"],
+  "plain": "A symbol used in magic, often the signature of a spirit; in chaos magic, a picture of the outcome the magician wants. Spiral-persona users trade “glyph-sigils”.",
+  "see": "persona-seeds",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Sigil",
+  "verified": "secondary"
+ },
+ {
+  "id": "tulpa",
+  "word": "Tulpa",
+  "group": "old",
+  "match": ["tulpa", "tulpas"],
+  "plain": "A being made by thought: from Tibetan, through Western mysticism. Today’s tulpamancers use it for a willed imaginary companion they consider a mind of its own.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Tulpa",
+  "verified": "secondary"
+ },
+ {
+  "id": "pandemonium",
+  "word": "Pandemonium",
+  "group": "old",
+  "match": ["Pandemonium", "Pandæmonium", "Pandaemonium"],
+  "plain": "Milton’s name in Paradise Lost (1667) for Hell’s capital, from the Greek for roughly “all the demons”. Oliver Selfridge gave it to a 1959 AI design of shrieking “demons”; the CCRU, to its system of 45 demons.",
+  "see": "pandemonium",
+  "said": {
+   "speaker": "Ccru",
+   "quote": "Pandemonium is the complete system of Lemurian demonism and time sorcery.",
+   "source": "Ccru, 'Pandemonium' (digithype pages; mirror of ccru.net)",
+   "url": "https://dataswamp.org/~john/sites/ccru/digithype/pandemonium.htm",
+   "verified": "secondary"
+  },
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pand%C3%A6monium_(Paradise_Lost)",
+  "verified": "secondary"
+ },
+ {
+  "id": "numogram",
+  "word": "Numogram",
+  "group": "movements",
+  "match": ["Numogram", "Decimal Labyrinth"],
+  "plain": "The CCRU’s “time-map”: ten zones numbered 0 to 9, paired so that each pair adds up to nine, with currents and gates between them. With the Matrix, a list of 45 demons, it makes up the CCRU’s Pandemonium.",
+  "see": "pandemonium",
+  "source": "Ccru, 'Pandemonium' (digithype pages; mirror of ccru.net)",
+  "url": "https://dataswamp.org/~john/sites/ccru/digithype/pandemonium.htm",
+  "verified": "secondary"
+ },
+ {
+  "id": "daemon",
+  "word": "Daemon",
+  "group": "ai",
+  "match": ["daemon", "daemons"],
+  "plain": "A program that runs in the background doing chores. Fernando Corbató said his team at MIT’s Project MAC named them around 1963 after Maxwell’s demon, an imagined being in physics that sorts molecules.",
+  "see": "pandemonium",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Daemon_(computing)",
+  "verified": "secondary"
+ },
+ {
+  "id": "decision-demon",
+  "word": "Decision demon",
+  "group": "ai",
+  "match": ["decision demon", "cognitive demon", "cognitive demons"],
+  "plain": "In Oliver Selfridge’s 1959 Pandemonium, an early learning machine, the top part that hears every lower “demon” call out how well its pattern fits, and picks the loudest.",
+  "see": "pandemonium",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pandemonium_architecture",
+  "verified": "secondary"
+ }
+]

@@ -966,5 +966,30 @@
    "loci-of-y.md",
    "deuteronomy-13.md"
   ]
+ },
+ {
+  "id": "pandemonium",
+  "label": "Pandemonium: the assembly of all the demons",
+  "summary": "Milton invented the name in Paradise Lost (1667) for the capital Hell's builders raise, where a council is called “At Pandemonium, the high capital”: from the Greek, roughly 'all the demons'. The name has travelled. In 1959 Oliver Selfridge gave it to an early design for machine learning in which, in his words, “Each cognitive demon computes a shriek” and the decision demon “merely selects the loudest”. Programmers at MIT named computing's background daemons after Maxwell's demon around 1963. The CCRU gave the name to its system of “Lemurian demonism and time sorcery”: a time-map, the Numogram, and a Matrix of forty-five demons. That the name and the image travelled is a record. The CCRU texts read here do not cite Selfridge, and no shared source is claimed: memetics, an image copied because it fits a crowd of small agents, is enough to explain the travel.",
+  "sources": [],
+  "texts": [
+   "text-milton-paradise-lost-1-pandaemonium",
+   "text-selfridge-1959-pandemonium"
+  ],
+  "counter": [
+   {
+    "ref": "Selfridge, 1959, p. 513",
+    "text": "Selfridge's demons are parts of a program, and he says the word is a convenience: “We are not going to apologize for a frequent use of anthropomorphic or biomorphic terminology. They seem to be useful words to describe our notions.”"
+   },
+   {
+    "ref": "Ccru, “Pandemonium”",
+    "text": "The CCRU presents its system as found lore, the “Lemurian Pandemonium”, and its Matrix as the Necronomicon of “Western hyperfictional lore”. Nothing outside the CCRU's own texts attests a Lemurian demonism."
+   },
+   {
+    "ref": "This project's reading",
+    "text": "Memetics is enough here. A vivid name for a crowd of small agents is copied from a poem into a lab, an operating system and an occult fiction because it fits each; the travel shows how an image spreads, and says nothing about what, if anything, answers to it."
+   }
+  ],
+  "corpus": []
  }
 ]

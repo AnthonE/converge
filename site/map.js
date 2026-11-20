@@ -279,7 +279,7 @@
     var id = kb && svg.contains(act) ? act.getAttribute('data-id') : null;
     var ours = kb && (svg.contains(act) || panel.contains(act) || act.id === 'to-overview' || document.getElementById('the-watch').contains(act));
     if (state.view === 'watch') { paintWatch(); return; }
-    if (/^(cards|start|timeline|people|record|methods|door)$/.test(state.view)) { paintPage(); return; }
+    if (/^(cards|start|timeline|people|words|record|methods|door)$/.test(state.view)) { paintPage(); return; }
     document.getElementById('the-watch').hidden = true;
     document.getElementById('the-page').hidden = true;
     document.getElementById('tab-timeline').setAttribute('aria-pressed', 'false');
@@ -390,7 +390,7 @@
   }
   /* The guide and the timeline are pages, like the Watch: no drawing. */
   function paintPage() {
-    var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people', rec = state.view === 'record';
+    var box = document.getElementById('the-page'), start = state.view === 'start', people = state.view === 'people', rec = state.view === 'record', words = state.view === 'words';
     var meth = state.view === 'methods', door = state.view === 'door';
     box.classList.toggle('is-wide', meth || state.view === 'cards');
     showChrome(state.view === 'cards', false);
@@ -398,7 +398,7 @@
     document.getElementById('layout').hidden = true;
     document.getElementById('the-watch').hidden = true;
     box.hidden = false;
-    box.setAttribute('aria-label', start ? 'Start here: how to read this map' : people ? 'Who\u2019s who' : rec ? 'A record' : state.view === 'cards' ? 'The ideals, as cards' : meth ? 'Alignment methods, side by side' : door ? 'A way in' : 'Timeline: everything dated, newest first');
+    box.setAttribute('aria-label', start ? 'Start here: how to read this map' : people ? 'Who\u2019s who' : words ? 'Words you\u2019ll meet' : rec ? 'A record' : state.view === 'cards' ? 'The ideals, as cards' : meth ? 'Alignment methods, side by side' : door ? 'A way in' : 'Timeline: everything dated, newest first');
     ['legend-ideals', 'legend-money', 'legend-ancients'].forEach(function (l) { document.getElementById(l).hidden = true; });
     document.getElementById('to-overview').hidden = true;
     ['tab-money', 'tab-ancients', 'tab-watch'].forEach(function (t) { document.getElementById(t).setAttribute('aria-pressed', 'false'); });
@@ -407,7 +407,8 @@
     window.scrollTo(0, 0);
     if (state.view === 'cards') { ns.renderCards(box, ix, ui, nav); ns.annotate(box, ix, '.card'); return; }
     if (people) { ns.renderPeople(box, ix, ui, nav, state.selected); return; }
-    if (rec) { ns.renderRecord(box, ix, ui, nav, state.selected); ns.annotate(box, ix, '.rec-head, section'); return; }
+    if (words) { ns.renderWords(box, ix, ui, nav, state.selected); return; }
+    if (rec) { ns.renderRecord(box, ix, ui, nav, state.selected); ns.annotate(box, ix, '.rec-head, section', state.selected); return; }
     if (meth) { ns.renderMethods(box, ix, ui, nav); ns.annotate(box, ix, 'tr'); return; }
     if (door) { ns.renderDoor(box, ix, ui, nav, state.selected); return; }
     if (start) { ns.renderStart(box, ix, ui, nav); ns.annotate(box, ix); }
@@ -428,11 +429,12 @@
   function goView(v) {
     if (v === 'heart') { location.href = 'heart.html'; return; }
     ({ ideals: function () { go(null); }, methods: goMethods, money: function () { goMoney(null); }, ancients: function () { goAncients(null); },
-      timeline: goTimeline, watch: function () { goWatch(null); }, people: function () { goPeople(null); }, start: goStart }[v] || function () { go(null); })();
+      timeline: goTimeline, watch: function () { goWatch(null); }, people: function () { goPeople(null); }, words: function () { goWords(null); }, start: goStart }[v] || function () { go(null); })();
   }
   function goRecord(id) { state.view = 'record'; state.ideal = null; state.edge = null; state.selected = id; setHash('#r/' + id); render(); }
+  function goWords(id) { state.view = 'words'; state.ideal = null; state.edge = null; state.selected = id || null; setHash(id ? '#words/' + id : '#words'); render(); }
   function goPeople(id) { state.view = 'people'; state.ideal = null; state.edge = null; state.selected = id || null; setHash(id ? '#people/' + id : '#people'); render(); }
-  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goRecord: function (id) { goRecord(id); }, goMoney: function (id) { goMoney(id); },
+  var nav = { go: function (id) { go(id); }, openNode: function (id) { openNode(id); }, goWatch: function (id) { goWatch(id); }, goPeople: function (id) { goPeople(id); }, goWords: function (id) { goWords(id); }, goRecord: function (id) { goRecord(id); }, goMoney: function (id) { goMoney(id); },
     goMethods: function () { goMethods(); }, goDoor: function (id) { goDoor(id); }, goView: function (v) { goView(v); } };
   function goWatch(id) {
     state.view = 'watch'; state.ideal = null; state.edge = null;
@@ -489,6 +491,7 @@
     if (hash === 'methods' && ns.hasMethods(ix)) { goMethods(); return; }
     if (hash.indexOf('door/') === 0) { goDoor(hash.slice(5)); return; }
     if (ns.hasPeople(ix) && (hash === 'people' || hash.indexOf('people/') === 0)) { goPeople(hash.slice(7) || null); return; }
+    if (ns.hasWords(ix) && (hash === 'words' || hash.indexOf('words/') === 0)) { goWords(hash.slice(6) || null); return; }
     if (hash === 'ancients' || hash.indexOf('ancients/') === 0) { goAncients(hash.slice(9) || null); return; }
     if (hash === 'money' || hash.indexOf('money/') === 0) { goMoney(hash.slice(6) || null); return; }
     if (ns.hasWatch(ix) && (hash === 'watch' || hash.indexOf('watch/') === 0)) { goWatch(hash.slice(6) || null); return; }
@@ -611,7 +614,7 @@
       else { var tb = h('button', 'linkbtn', 'See how to send it'); tb.type = 'button'; tb.addEventListener('click', goStart); add(dn, tb); }
       dn.hidden = false;
     }
-    ns.initWho(ix, nav);
+    ns.initWho(ix, nav, ui);
     ns.initSearch(document.getElementById('search'), document.getElementById('search-hits'), ix, nav);
     document.getElementById('tab-watch').hidden = !ns.hasWatch(ix);
     document.getElementById('tab-money').hidden = !ix.g.edges.some(ns.isMoney);

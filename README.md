@@ -39,7 +39,16 @@ name, one voice from its record (named, with its source and flag), who holds it 
 stands in one plain sentence ("So far: … Partly: … Not yet: …", from each phase's `plain` words in
 `data/phases.json`). **Checking marks** are short: a filled dot for checked at the source, half for checked on a
 relay, a dashed ring for not checked, a ringed dot for re-read by a person. A tap shows the full words, screen
-readers always hear them, and the plain record pages spell them out. "Show the ideals
+readers always hear them, and the plain record pages spell them out. **Words you'll meet**
+(`data/words.json`), an insider's guide of about 150 words: a word the people on the map use that a newcomer may not
+know (hyperstition, e/acc, LessWrong, RLHF, SFF, super PAC, katechon, Choronzon and the rest) is underlined wherever it
+appears, like a name in Who's who. The guide is in seven sections (how AI is built; risk and safety; movements and their
+slang; death and made companions; money, crypto and law; acronyms; old words) with a box to find a word. A tap gives its meaning in one
+or two plain sentences, someone's own definition where the map already quotes one, where the meaning was read, and the
+record that goes deeper ("Read more"). The list is at `#words` in the map and at `words/` as a plain page; every plain
+record page ends with the words it uses, and `llms-full.txt` opens with them. The check refuses a word with no record
+and no source, a form that already marks another word or a person, and a defining quotation that is not already on the
+map word for word with the same page and flag. "Show the ideals
 as a drawing" switches to the linked map, with its key folded under "Key". "New here? Start here" holds the ways in
 by where you are coming from, every part of the map, the words it uses and what each checking mark means.
 **Timeline** lists every dated event and Watch claim, newest first. The search box finds any name, event or claim

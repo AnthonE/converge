@@ -53,8 +53,10 @@ VERIFIED = {'primary', 'secondary', 'unverified'}
 REREAD_RESULTS = {'holds', 'corrected', 'removed', 'does not hold', 'could not read'}
 PEOPLE_GROUPS = {'builders', 'thinkers', 'faith', 'press', 'officials', 'past'}
 METHOD_KEY = ['serves', 'values', 'inside', 'checks', 'fails']
-DOOR_VIEWS = {'ideals', 'methods', 'money', 'ancients', 'timeline', 'watch', 'people', 'start', 'heart'}
+DOOR_VIEWS = {'ideals', 'methods', 'money', 'ancients', 'timeline', 'watch', 'people', 'words', 'start', 'heart'}
 MAX_WHO = 240
+# Words you'll meet, in the guide's sections (site/people.js and tools/pages.py name them).
+WORD_GROUPS = {'ai', 'safety', 'movements', 'life', 'money', 'orgs', 'old'}
 FRUIT_KIND = {'documented', 'reported', 'alleged'}
 CARRIER_KIND = {'movement', 'organization', 'community', 'public figure', 'discourse', 'product', 'venue'}
 REQUIRED = {
@@ -115,6 +117,9 @@ def load(data_dir):
     # Who's who: one plain line on each public figure the map names (optional).
     ppath = os.path.join(data_dir, 'people.json')
     g['people'] = json.load(open(ppath, encoding='utf-8')) if os.path.exists(ppath) else []
+    # Words you'll meet: a plain meaning for each term a reader may not know, linked to the record that goes deeper.
+    wpath = os.path.join(data_dir, 'words.json')
+    g['words'] = json.load(open(wpath, encoding='utf-8')) if os.path.exists(wpath) else []
     # Alignment methods, each with the same five questions answered; and the doors, ways in by viewpoint (optional).
     for name in ('methods', 'doors'):
         fp = os.path.join(data_dir, name + '.json')
@@ -332,6 +337,8 @@ def validate(g):
             walk(n, f'{name}/{n.get("id")}')
     for i, e in enumerate(g['edges']):
         walk(e, f'edges[{i}] ({e.get("from")} {e.get("type")} {e.get("to")})')
+    for i, w in enumerate(g.get('words') or []):
+        walk(w, f'words[{i}] ({w.get("id")})')
     # The Watch: every claim says who made it, where, and how far it is checked; the map's own words label no one.
     W_STATUS = {'not checked', 'partly checked', 'checked', 'not supported', 'source not found'}
     W_RESULT = {'supports', 'partly supports', 'does not support', 'not found', 'could not read'}
@@ -684,6 +691,70 @@ def validate(g):
             if not (s.get('record') or s.get('view')) or not s.get('why'):
                 err(f'{who}: each stop needs a record or a view, and a "why"')
             plain_text_ok(f'{who} stop', s.get('why'))
+    # Words you'll meet: a plain meaning, in the map's voice, for a term a reader may not know. Each says where it goes
+    # deeper (a record on the map) or where its meaning was read (a source). A defining quotation is never new here: it
+    # must already be on the map, word for word, with the same page and the same flag.
+    def quotes_on_map():
+        out = set()
+
+        def walk(o):
+            if isinstance(o, dict):
+                if isinstance(o.get('quote'), str):
+                    out.add((o['quote'], o.get('url'), o.get('verified')))
+                for v in o.values():
+                    walk(v)
+            elif isinstance(o, list):
+                for v in o:
+                    walk(v)
+        for k, v in g.items():
+            if k not in ('words', 'reread', 'meta', 'phases'):
+                walk(v)
+        return out
+    on_map = quotes_on_map() if g.get('words') else set()
+    word_ids, word_forms = set(), {}
+    person_forms = {m for p in g.get('people') or [] for m in (p.get('match') or [p.get('name')])}
+    for i, w in enumerate(g.get('words') or []):
+        who = f'words[{i}] ({w.get("id")})'
+        if not ID.match(str(w.get('id', ''))) or w.get('id') in word_ids:
+            err(f'{who}: id must be unique, lower-case letters, digits and hyphens')
+        word_ids.add(w.get('id'))
+        for k in ('word', 'plain'):
+            if not str(w.get(k) or '').strip():
+                err(f'{who}: missing "{k}"')
+        if 'case' in w and not isinstance(w['case'], bool):
+            err(f'{who}: "case" is true or false')
+        if w.get('group') not in WORD_GROUPS:
+            err(f'{who}: group must be one of {sorted(WORD_GROUPS)}')
+        if len(str(w.get('plain', ''))) > MAX_WHO:
+            err(f'{who}: "plain" is longer than {MAX_WHO} characters; one plain sentence or two')
+        plain_text_ok(who, w.get('plain'))
+        see = w.get('see')
+        if see and see not in ids and see not in method_ids:
+            err(f'{who}: see {see} is not a record or a method on the map')
+        if not see and not all(w.get(k) for k in ('source', 'url', 'verified')):
+            err(f'{who}: a word with no record to go deeper names where its meaning was read: source, url, verified')
+        if w.get('view') and w['view'] not in DOOR_VIEWS:
+            err(f'{who}: view must be one of {sorted(DOOR_VIEWS)}')
+        if w.get('url') and not URL.match(w['url']):
+            err(f'{who}: bad url')
+        if w.get('verified') and w['verified'] not in VERIFIED:
+            err(f'{who}: bad verified flag')
+        said = w.get('said')
+        if said:
+            quote_ok(f'{who} said', said)
+            if (said.get('quote'), said.get('url'), said.get('verified')) not in on_map:
+                err(f'{who} said: the quotation must already be on the map, word for word, with the same url and flag')
+        forms_ = w.get('match') or [w.get('word')]
+        if not isinstance(forms_, list) or not all(isinstance(m, str) and m.strip() for m in forms_):
+            err(f'{who}: "match" must be a list of the forms of the word to mark')
+            continue
+        for m in forms_:
+            key = m.lower()
+            if key in word_forms and word_forms[key] != w.get('id'):
+                err(f'{who}: "{m}" already marks {word_forms[key]}')
+            if m in person_forms:
+                err(f'{who}: "{m}" already marks a person in who\'s who')
+            word_forms[key] = w.get('id')
     # The re-read ledger: one line per page a person has opened and compared with the map.
     cited, seen = cited_urls(g), set()
     for i, r in enumerate(g.get('reread') or []):

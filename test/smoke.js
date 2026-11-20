@@ -686,6 +686,29 @@ const path = require('path');
   await page.waitForFunction(() => location.hash === '#people');
   if ((await page.locator('#the-page .people dt').count()) !== 1) fail("Who's who does not list the fixture's one person");
 
+  // Words you'll meet: a word is marked where it appears; the mark opens its plain note and the record that goes deeper.
+  await page.evaluate(() => { location.hash = '#ideal-0'; });
+  await page.waitForSelector('#panel .word[data-word="sample-term"]');
+  await page.locator('#panel .word[data-word="sample-term"]').first().click();
+  await page.waitForSelector('#who-card:not([hidden])');
+  const wcard = await page.locator('#who-card').textContent();
+  if (!/explained in one plain sentence/.test(wcard || '') || !/A short sample quotation/.test(wcard || '')) fail(`word card reads "${wcard}"`);
+  await page.locator('#who-card .linkbtn', { hasText: 'Read more' }).click();
+  await page.waitForFunction(() => location.hash === '#r/mechanism-0');
+  if (await page.locator('#the-page .word[data-word="sample-term"]').count()) fail('a word is marked on the record it points to, whose title names it');
+  if (!(await page.locator('#the-page .word[data-word="other-term"]').count())) fail('a record does not mark a word it uses');
+  await page.evaluate(() => { location.hash = '#start'; });
+  const wordsBtn = page.locator('#the-page .guide-ways .linkbtn', { hasText: 'Words you’ll meet' });
+  if (!(await wordsBtn.count())) fail("Start here does not list Words you'll meet");
+  else await wordsBtn.click();
+  await page.waitForFunction(() => location.hash === '#words');
+  if ((await page.locator('#the-page .words dt').count()) !== 2) fail("Words you'll meet does not list the fixture's two words");
+  if ((await page.locator('#the-page .words').count()) !== 2) fail("Words you'll meet does not put the fixture's words in their two sections");
+  await page.locator('#the-page .word-find').fill('another sample');
+  if ((await page.locator('#the-page .words dt:visible').count()) !== 1) fail('finding a word does not narrow the guide to it');
+  await page.locator('#the-page .word-find').fill('');
+  if ((await page.locator('#the-page .words i').count()) !== 0) fail("a word's note was inserted as markup");
+
   // Narrow screen: no page-level horizontal scroll, on a page or on the front; on the front, a card starts on the first screen.
   await page.setViewportSize({ width: 390, height: 844 });
   const scroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);

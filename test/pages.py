@@ -117,6 +117,30 @@ def check(g, out):
             fail(f'{rid}: not in the list of every record')
     if not held:
         fail('the fixture has nothing waiting for a re-read, so the gate is untested')
+    # Words you'll meet: a page that uses a word ends with its note; a record does not list the word it explains; the list
+    # of words is a page of its own, in the sitemap, and in llms-full.txt; a note is text, never markup.
+    words = g.get('words') or []
+    if words:
+        wp = os.path.join(out, 'words', 'index.html')
+        if not os.path.exists(wp):
+            fail('no words/ page')
+        else:
+            page = open(wp, encoding='utf-8').read()
+            if any(f'id="word-{w["id"]}"' not in page for w in words):
+                fail('the words/ page does not list every word')
+            if '<i>term</i>' in page:
+                fail('a word\'s note was inserted as markup')
+        if f'<loc>{site}/words/</loc>' not in sitemap:
+            fail('the words/ page is missing from the sitemap')
+        if '# Words you’ll meet' not in full or any(f'## {w["word"]}' not in full for w in words):
+            fail('llms-full.txt does not carry the words')
+        for w in words:
+            used = [rid for rid, kind, x in recs if f'id="word-{w["id"]}"' in open(os.path.join(out, 'r', rid, 'index.html'), encoding='utf-8').read()]
+            if not used:
+                fail(f'{w["id"]}: no record page lists the word, though the fixture uses it')
+            named = w.get('see') in ix.by and any(m.lower() in pages.name(ix.by[w['see']]).lower() for m in w.get('match') or [w['word']])
+            if named and w['see'] in used:
+                fail(f'{w["id"]}: the record it points to, whose title names it, lists it as a word on its own page')
     # Once a person has re-read every page a claim cites, the gate lifts.
     w = (g.get('watch') or [None])[0]
     if w:

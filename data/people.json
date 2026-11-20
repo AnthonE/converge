@@ -645,5 +645,33 @@
    "Schiavo"
   ],
   "node": "delvetown"
+ },
+ {
+  "id": "oliver-selfridge",
+  "name": "Oliver Selfridge",
+  "who": "A British-American mathematician and computer scientist (1926–2008) who pioneered the early foundations of artificial intelligence. He comes up here for his 1959 paper “Pandemonium: A Paradigm for Learning”.",
+  "group": "thinkers",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Oliver_Selfridge",
+  "verified": "secondary",
+  "sort": "Selfridge",
+  "match": [
+   "Oliver Selfridge",
+   "Selfridge"
+  ]
+ },
+ {
+  "id": "john-milton",
+  "name": "John Milton",
+  "who": "An English poet, polemicist and civil servant (1608–1674). His Paradise Lost (1667) sets Moloch first among the fallen and invents the name Pandemonium for Hell's capital.",
+  "group": "past",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/John_Milton",
+  "verified": "secondary",
+  "sort": "Milton",
+  "match": [
+   "John Milton",
+   "Milton"
+  ]
  }
 ]
