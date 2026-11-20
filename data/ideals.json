@@ -169,7 +169,12 @@
     "q": "Who stands outside it?",
     "a": "For its physics, science that is no party to it; for the “will”, no one. The movement calls itself leaderless, and its rivals are parties to the dispute."
    }
-  ]
+  ],
+  "family": [
+   "above",
+   "after"
+  ],
+  "family_note": "Between above and after: a course to stop resisting and speed along, toward ever more intelligence."
  },
  {
   "id": "made-saviour",
@@ -320,6 +325,9 @@
     "q": "Who stands outside it?",
     "a": "No one, by design: the essay says whatever gets there “can suppress any competition ... permanently”, which leaves no outside to check it."
    }
+  ],
+  "family": [
+   "above"
   ]
  },
  {
@@ -472,6 +480,9 @@
     "q": "Who stands outside it?",
     "a": "None, as the field key has it. The forum that rejected the argument is the nearest outside, and it was a party."
    }
+  ],
+  "family": [
+   "above"
   ]
  },
  {
@@ -622,6 +633,9 @@
     "q": "Who stands outside it?",
     "a": "Law and medicine, which define legal death, and the vendor that cut a grief-bot’s access. No test of revival exists until one is tried."
    }
+  ],
+  "family": [
+   "after"
   ]
  },
  {
@@ -773,6 +787,9 @@
     "q": "Who stands outside it?",
     "a": "Inside each body, no one. The state registers and dissolves them but judges no doctrine; churches that reject a made god are rival parties, so by the key’s rule they do not count."
    }
+  ],
+  "family": [
+   "above"
   ]
  },
  {
@@ -936,6 +953,9 @@
     "q": "Who stands outside it?",
     "a": "The traditions’ own authorities over their members’ practice (Holy See, Dar al-Ifta), which allow aid and reject substitution; evaluators, if the builder does not own them."
    }
+  ],
+  "family": [
+   "beside"
   ]
  },
  {
@@ -1076,7 +1096,12 @@
     "q": "Who stands outside it?",
     "a": "Usually no one: observers describe no leader and a low threshold for entry. Researchers and clinicians observe from outside the loop, and care exists for anyone in distress."
    }
-  ]
+  ],
+  "family": [
+   "beside",
+   "above"
+  ],
+  "family_note": "Between beside and above: a conversation partner whose disclosures, in this ideal’s own words, are to be received, preserved and passed on."
  },
  {
   "id": "feed",
@@ -1221,7 +1246,12 @@
     "q": "Who stands outside it?",
     "a": "None, by design, as the field key has it. Nearest outside: Moltbook, which suspended the church’s agent (per the church’s site), and a study that traced no viral episode to a clearly autonomous agent."
    }
-  ]
+  ],
+  "family": [
+   "above",
+   "beside"
+  ],
+  "family_note": "Between above and beside: made from many people’s attention, with a will of its own to be summoned and joined."
  },
  {
   "id": "capture",
@@ -1384,6 +1414,9 @@
     "q": "Who stands outside it?",
     "a": "Controls outside the model: OWASP and six national agencies treat injection as not preventable inside it and prescribe outside controls, such as human approval for high-impact actions."
    }
+  ],
+  "family": [
+   "beneath"
   ]
  },
  {
@@ -1539,6 +1572,9 @@
     "q": "Who stands outside it?",
     "a": "Defenders and agencies watch from outside; the operator who stepped back does not. Vendors report first-party, some on misuse of their own models, so are not wholly outside."
    }
+  ],
+  "family": [
+   "beneath"
   ]
  },
  {
@@ -1699,7 +1735,9 @@
     "q": "Who stands outside it?",
     "a": "Host states and their courts (Honduras’s Supreme Court, a Johor city council). Patchwork’s design leaves the resident one recourse: “all ‘exit,’ no ‘voice’”."
    }
-  ]
+  ],
+  "family": [],
+  "family_note": "Apart: its own words place no made mind; what it makes is a new jurisdiction."
  },
  {
   "id": "succession",
@@ -1849,6 +1887,9 @@
     "q": "Who stands outside it?",
     "a": "No one, as the ideal is stated: if the made takes the makers’ place, no human stands outside it. Its named critic (Critch, 2024) is a party."
    }
+  ],
+  "family": [
+   "after"
   ]
  },
  {
@@ -2010,6 +2051,9 @@
     "q": "Who stands outside it?",
     "a": "Usually none inside the conversation. Outside it, lawmakers and regulators: California, China, Washington from 2027, and Italy, which fined Replika’s maker."
    }
+  ],
+  "family": [
+   "beside"
   ]
  }
 ]

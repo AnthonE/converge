@@ -84,6 +84,8 @@
     var title = ui.h('button', 'card-title', d.label); title.type = 'button';
     title.addEventListener('click', function () { nav.go(d.id); });
     ui.add(art, ui.add(ui.h('h3', 'card-h'), title));
+    /* An ideal on the line between two families, or in none, says why (this project's placement). */
+    if (d.family_note) ui.add(art, ui.h('p', 'card-between', d.family_note));
     /* One voice from the record: the one the data marks as its lead, else the first. Always with its speaker. */
     var words = d.words || [], w = words[typeof d.lead === 'number' && words[d.lead] ? d.lead : 0];
     if (w) {
@@ -141,18 +143,99 @@
     return ui.add(s, ul, ui.add(ui.h('p'), more));
   }
 
+  /* The families: where each ideal's own words put the made mind, drawn around "us" (this project's reading).
+     Above and beneath on the vertical, beside on the left, after on the right, where time runs. An ideal on the line
+     between two families is listed in both, its card in the first. */
+  function goFamily(id) {
+    var el = document.getElementById('fam-' + id);
+    if (el) { el.scrollIntoView({ block: 'start' }); el.focus({ preventScroll: true }); }
+  }
+  function compass(ix, ui, nav, fams, ideals) {
+    var box = ui.h('nav', 'compass');
+    box.setAttribute('aria-label', 'The ideals by where they put the made mind');
+    fams.forEach(function (f) {
+      var members = ideals.filter(function (d) { return d.family.indexOf(f.id) >= 0; });
+      var cell = ui.h('div', 'compass-cell fam-' + f.id);
+      var b = ui.h('button', 'compass-name', f.name); b.type = 'button';
+      b.addEventListener('click', function () { goFamily(f.id); });
+      ui.add(cell, b, ui.h('span', 'compass-count', members.length + (members.length === 1 ? ' ideal' : ' ideals')));
+      var ul = ui.h('ul', 'compass-list');
+      members.forEach(function (d) {
+        var li = ui.h('li', d.family.length > 1 ? 'is-between' : null), x = ui.h('button', 'linkbtn', d.label); x.type = 'button';
+        if (d.family_note) li.title = d.family_note;
+        x.addEventListener('click', function () { nav.go(d.id); });
+        ui.add(ul, ui.add(li, x));
+      });
+      ui.add(box, ui.add(cell, ul));
+    });
+    ui.add(box, ui.add(ui.h('div', 'compass-us'), ui.h('span', null, 'us')));
+    return box;
+  }
+  function familySection(ix, ui, nav, f, ideals) {
+    var sec = ui.h('section', 'family');
+    sec.id = 'fam-' + f.id; sec.tabIndex = -1;
+    var head = ui.h('header', 'family-head');
+    ui.add(head, ui.h('h3', 'family-name', f.name), ui.h('p', 'family-q', f.question));
+    if (f.line) {
+      var ln = ui.h('p', 'family-line');
+      ui.add(ln, ui.h('q', null, f.line.quote), ui.h('span', null, ' ' + f.line.ref + ' · '), ui.link(f.line.url, f.line.source || 'source'),
+        ui.h('span', null, ' '), ui.badge(f.line.verified, f.line.url), ui.h('span', 'lane', 'this project’s reading'));
+      ui.add(head, ln);
+    }
+    ui.add(sec, head);
+    var mine = ideals.filter(function (d) { return f.id === 'apart' ? !d.family.length : d.family[0] === f.id; });
+    var grid = ui.h('div', 'cards');
+    mine.forEach(function (d) { ui.add(grid, card(ui, nav, ix, d)); });
+    ui.add(sec, grid);
+    var also = ideals.filter(function (d) { return d.family.length > 1 && d.family.indexOf(f.id) > 0; });
+    if (also.length) {
+      var p = ui.h('p', 'family-also');
+      ui.add(p, ui.h('span', 'card-k', 'Also on this line: '));
+      also.forEach(function (d, i) {
+        var b = ui.h('button', 'linkbtn', d.label); b.type = 'button';
+        b.addEventListener('click', function () { goFamily(d.family[0]); });
+        ui.add(p, i ? ui.h('span', null, ', ') : null, b);
+      });
+      ui.add(p, ui.h('span', null, ' (its card is under its first family)'));
+      ui.add(sec, p);
+    }
+    return sec;
+  }
+
   ns.renderCards = function (box, ix, ui, nav) {
     while (box.firstChild) box.removeChild(box.firstChild);
     var m = ix.g.meta || {}, ideals = ix.g.ideals || [];
     ui.add(box, frontNames(ix, ui, nav));
     var intro = ui.h('div', 'watch-intro');
-    ui.add(intro, ui.h('h2', null, ideals.length + ' stated aims for AI'),
-      ui.h('p', null, 'Each card is one ideal: an end that a movement, company or community says AI serves, with one voice from its record, named. Open a card for who holds it, what has happened, who pays, and the other side.'),
-      ui.h('p', 'note', 'The ideals’ names are this map’s short labels. Where it stands turns on things you could observe; nothing here is a forecast.'));
-    ui.add(box, intro);
-    var grid = ui.h('div', 'cards');
-    ideals.forEach(function (d) { ui.add(grid, card(ui, nav, ix, d)); });
-    ui.add(box, grid);
+    var fams = (m.families || []).filter(function (f) { return f && f.id; });
+    var placed = fams.length && ideals.every(function (d) { return Array.isArray(d.family); });
+    if (!placed) {
+      ui.add(intro, ui.h('h2', null, ideals.length + ' stated aims for AI'),
+        ui.h('p', null, 'Each card is one ideal: an end that a movement, company or community says AI serves, with one voice from its record, named. Open a card for who holds it, what has happened, who pays, and the other side.'),
+        ui.h('p', 'note', 'The ideals’ names are this map’s short labels. Where it stands turns on things you could observe; nothing here is a forecast.'));
+      ui.add(box, intro);
+      var grid = ui.h('div', 'cards');
+      ideals.forEach(function (d) { ui.add(grid, card(ui, nav, ix, d)); });
+      ui.add(box, grid);
+    } else {
+      ui.add(intro, ui.h('h2', null, 'Where ' + ideals.length + ' ideals put the made mind'));
+      ui.add(box, intro, compass(ix, ui, nav, fams, ideals));
+      var away = ideals.filter(function (d) { return !d.family.length; });
+      if (away.length) {
+        var ap = ui.h('p', 'compass-apart');
+        ui.add(ap, ui.h('span', 'card-k', 'Apart, its own words placing no made mind: '));
+        away.forEach(function (d, i) {
+          var b = ui.h('button', 'linkbtn', d.label); b.type = 'button';
+          b.addEventListener('click', function () { goFamily('apart'); });
+          ui.add(ap, i ? ui.h('span', null, ', ') : null, b);
+        });
+        ui.add(box, ap);
+      }
+      if (m.families_note) ui.add(box, ui.h('p', 'note compass-note', m.families_note + ' Each card is one ideal, with one voice from its record, named; the ideals’ names are this map’s short labels.'));
+      fams.forEach(function (f) { ui.add(box, familySection(ix, ui, nav, f, ideals)); });
+      var apart = ideals.filter(function (d) { return !d.family.length; });
+      if (apart.length) ui.add(box, familySection(ix, ui, nav, { id: 'apart', name: 'Apart', question: 'Its own words place no made mind.' }, ideals));
+    }
     /* Below the cards, so a phone still opens on them; "What's new" in the header jumps here. */
     var nw = newest(ix, ui, nav);
     if (nw) { nw.id = 'newest'; nw.tabIndex = -1; ui.add(box, nw); }

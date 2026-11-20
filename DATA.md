@@ -39,7 +39,7 @@ words belong to their authors and are not covered.
 | `people.csv` | public figure named on the map, in one plain sentence (who's who) |
 | `methods.csv`, `method_key.csv` | alignment method; its answer to each of the five questions |
 | `doors.csv` | stop on a way in (a door), in order |
-| `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked, the Watch's threads (`watch_threads`: id, `title`, `note`), the names the front offers first (`front_names`: ids of records or of people in Who's who), and, once set, `contribute` (where to send a correction) and `site_url` (the published address) |
+| `meta.json` | title, notes, the author's disclosure (a draft), hosts that are named but never linked, the Watch's threads (`watch_threads`: id, `title`, `note`), the names the front offers first (`front_names`: ids of records or of people in Who's who), the families the front groups the ideals into (`families`: `id`, `name`, `question`, and `line`, an old text with `quote`, `ref`, `source`, `url`, `verified`; with `families_note`, which says the grouping is this project's reading), and, once set, `contribute` (where to send a correction) and `site_url` (the published address) |
 
 ## Fields that recur
 
@@ -57,7 +57,7 @@ words belong to their authors and are not covered.
 
 ## Tables
 
-**ideals**: `label` (the map's own short name), `ideal` (the end, stated as its carriers state it), `summary`,
+**ideals**: `label` (the map's own short name), `ideal` (the end, stated as its carriers state it), `family` (where its own words put the made mind, by the ids in `meta.json` → `families`: one, two when it sits on the line between, or none; this project's reading) and `family_note` (why, when not exactly one), `summary`,
 `field_key` (five questions answered: how did it come, does it speak, does it survive your silence, how many
 independent channels, who stands outside), `cautions`, `lead` (optional: which quotation, counted from 0, the
 ideal's card shows; the first when absent).
