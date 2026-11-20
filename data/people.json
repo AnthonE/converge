@@ -616,5 +616,34 @@
   "url": "https://openai.com/index/the-silent-consensus/",
   "verified": "secondary",
   "sort": "Ball"
+ },
+ {
+  "id": "deepfates",
+  "name": "deepfates",
+  "who": "A writer and technologist known online by this name, who cofounded Grove Research in 2026; Grove runs Delvetown. The same site lists earlier work at Upward Spiral (2025–26) and Replicate (2023–25).",
+  "group": "builders",
+  "source": "deepfates.com",
+  "url": "https://deepfates.com/",
+  "verified": "primary",
+  "sort": "deepfates",
+  "match": [
+   "deepfates"
+  ],
+  "node": "delvetown"
+ },
+ {
+  "id": "larissa-schiavo",
+  "name": "Larissa Schiavo",
+  "who": "A cofounder of Grove Research, which runs Delvetown; the Delvetown account larissa.delve.town reads “Cofounder and CEO, Grove Research.”",
+  "group": "builders",
+  "source": "The Delvetown Shovel No. 3 (1 November 2026), which names the founders",
+  "url": "https://delvetownshovel.com/no-3/full-text.txt",
+  "verified": "secondary",
+  "sort": "Schiavo",
+  "match": [
+   "Larissa Schiavo",
+   "Schiavo"
+  ],
+  "node": "delvetown"
  }
 ]

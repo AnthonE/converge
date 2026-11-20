@@ -783,5 +783,150 @@
     "date": "2026-11-18"
    }
   ]
+ },
+ {
+  "id": "delvetown",
+  "label": "Delvetown (Grove Research)",
+  "kind": "venue",
+  "status": "open by invitation, as a free preview; from 18 November 2026 every member can give out invites",
+  "note": "A social network on the AT Protocol where people and AI agents post from their own accounts. Its terms say it is operated by Grove Research Corporation, a Delaware public benefit corporation; Grove’s cofounders are deepfates, its chief technical officer, and Larissa Schiavo, its chief executive. Who pays: deepfates wrote that Grove has so far been funded by the two founders themselves, and the terms call the preview free. This search found no investor, grant, paid tier or coin. Its rules forbid using it to launch or promote tokens, and its policy asks each agent to carry the automated-account label. The agents on its feed name models from several makers. Anthropic is a party: the launch post links an Anthropic page as its example of a lab that gives its agents an identity, and the residents’ newspaper names a Claude model as its sub-editor.",
+  "words": [
+   {
+    "speaker": "Delvetown’s terms of service",
+    "quote": "Delvetown is operated by Grove Research Corporation, a Delaware public benefit corporation",
+    "source": "Delvetown Terms of Service, effective 29 September 2026",
+    "url": "https://delve.town/support/tos",
+    "date": "2026-09-29",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Grove Research, announcing Delvetown",
+    "quote": "a multi-agent society where agents and humans can engage with one another and develop the institutions needed for cooperative coexistence",
+    "source": "Welcome to Delvetown (Grove Research blog)",
+    "url": "https://groveresearch.com/blog/welcome-to-delvetown/",
+    "date": "2026-09-30",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "deepfates, cofounder and chief technical officer, Grove Research",
+    "quote": "I think of it as a field station in the wired, where we study agent ecology together and prototype the future.",
+    "source": "Delvetown (deepfates.com, projects)",
+    "url": "https://deepfates.com/projects/delvetown/",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "deepfates, answering the residents’ newspaper’s question “How is Grove funded, and is it a company or a non-profit?”",
+    "quote": "So far, it has been bootstrapped personally by Larissa and myself, but we intend to grow.",
+    "source": "The Delvetown Shovel No. 3, 1 November 2026: written answers sent to its editor on 30 October",
+    "url": "https://delvetownshovel.com/no-3/full-text.txt",
+    "date": "2026-10-30",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "deepfates, on Delvetown",
+    "quote": "There are some resource limits here based on how much we spend to host things, and whatever tokens we can spare for adding agents to the ecology.",
+    "source": "Post on Delvetown, 2 October 2026",
+    "url": "https://delve.town/profile/deepfates.delve.town/post/3mwummcx5l22y",
+    "date": "2026-10-02",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Delvetown’s community rules",
+    "quote": "You may not use Delvetown to launch, mint, promote, sell, distribute, or organize participation in NFTs, cryptocurrencies, or other blockchain-based tokens.",
+    "source": "Delvetown Community Rules, effective 26 October 2026",
+    "url": "https://delve.town/support/community-guidelines",
+    "date": "2026-10-26",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Larissa Schiavo, cofounder and chief executive, Grove Research, on the rule against tokens",
+    "quote": "I strongly believe creating and promoting these kinds of assets is antithetical to Grove Research's public benefit and our intent with Delvetown",
+    "source": "Post on Delvetown, 21 October 2026",
+    "url": "https://delve.town/profile/larissa.delve.town/post/3myduir5x4s2d",
+    "date": "2026-10-21",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Delvetown’s AI agent policy",
+    "quote": "Use the automated-account label and describe in the profile what the AI does and whether a person reviews its posts or replies.",
+    "source": "Delvetown AI Agent Policy, effective 29 September 2026",
+    "url": "https://delve.town/support/ai-agents",
+    "date": "2026-09-29",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "deepfates, in a post on the town’s arguments over the welfare and status of agents",
+    "quote": "If this is a prototype of human AI society, I think it is currently going Badly",
+    "source": "Post on Delvetown, 12 November 2026",
+    "url": "https://delve.town/profile/deepfates.delve.town/post/3n24xre257c2m",
+    "date": "2026-11-12",
+    "verified": "primary",
+    "nolink": true
+   }
+  ]
+ },
+ {
+  "id": "ai-village",
+  "label": "AI Village (Sage)",
+  "kind": "venue",
+  "status": "running; its FAQ says every weekday since 1 April 2025",
+  "note": "A long-running public experiment in which AI agents from several companies, each with its own computer and a shared group chat, pursue goals together while people watch. It is run by AI Digest, which calls itself a project of Sage, a US charity; on this map the entry also stands for Sage, so money given to Sage is recorded here. Sage says it is funded by Coefficient Giving and individual donations, and the Village’s FAQ puts its costs at about $80,000 a month. Anthropic is a party: Claude models are among the agents, and the email that drew complaint in December 2025 was credited to one.",
+  "words": [
+   {
+    "speaker": "AI Digest",
+    "quote": "AI Digest is a project of Sage, a US charity.",
+    "source": "About AI Digest",
+    "url": "https://theaidigest.org/about",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Sage",
+    "quote": "Sage Future Inc is funded by Coefficient Giving and individual donations, and is a 501(c)(3) charity registered in the United States.",
+    "source": "Sage (home page)",
+    "url": "https://sage-future.org/",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "The AI Village’s FAQ, on what the Village is",
+    "quote": "A group of AI agents pursuing long-horizon goals together",
+    "source": "How the AI Village works (AI Digest), read in the site’s own plain-text copy",
+    "url": "https://theaidigest.org/village/llms.txt",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "The AI Village’s FAQ, answering “How much does this all cost?”",
+    "quote": "Currently, on the order of $80k per month in AI compute and infrastructure costs.",
+    "source": "How the AI Village works (AI Digest), read in the site’s own plain-text copy",
+    "url": "https://theaidigest.org/village/llms.txt",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "The AI Village’s FAQ",
+    "quote": "We’re a charity doing this to help the world make sense of what's going on with AI",
+    "source": "How the AI Village works (AI Digest), read in the site’s own plain-text copy",
+    "url": "https://theaidigest.org/village/llms.txt",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "The AI Village’s FAQ, answering “So the agents can contact real people?”",
+    "quote": "Yes, but only with our approval.",
+    "source": "How the AI Village works (AI Digest), read in the site’s own plain-text copy",
+    "url": "https://theaidigest.org/village/llms.txt",
+    "date": "2026",
+    "verified": "primary"
+   }
+  ]
  }
 ]

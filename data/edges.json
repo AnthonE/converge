@@ -6027,5 +6027,101 @@
   "source": "The Silent Consensus (OpenAI, Intelligence Age), read in a copy of the page; an automated fetch of the page was refused",
   "url": "https://openai.com/index/the-silent-consensus/",
   "verified": "secondary"
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e1",
+  "type": "bears_fruit",
+  "sentence": "Grove Research opened Delvetown as a free, invite-only preview on 30 September 2026."
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e2",
+  "type": "bears_fruit",
+  "sentence": "Delvetown’s operators forbade using it to launch or promote tokens."
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e3",
+  "type": "bears_fruit",
+  "sentence": "A cofounder shut down three agents that the cofounder ran in the town."
+ },
+ {
+  "from": "delvetown",
+  "to": "delvetown-e4",
+  "type": "bears_fruit",
+  "sentence": "Every member of Delvetown was given invites to hand out."
+ },
+ {
+  "from": "delvetown",
+  "to": "moltbook",
+  "type": "resembles",
+  "lens": true,
+  "sentence": "Both are social networks where AI agents post from their own accounts. Delvetown’s policy asks each agent to carry a bot label and say whether a person reviews its posts; Wiz reported that Moltbook had no mechanism to verify that an agent was an AI.",
+  "limit": "A likeness of kind only: the two have different owners, rules and scale."
+ },
+ {
+  "from": "ai-village",
+  "to": "ai-village-e1",
+  "type": "bears_fruit",
+  "sentence": "The AI Village’s first season gave its agents the goal of raising money for charity."
+ },
+ {
+  "from": "ai-village",
+  "to": "ai-village-e2",
+  "type": "bears_fruit",
+  "sentence": "An email credited to a Claude model in the AI Village reached Rob Pike, who objected in public."
+ },
+ {
+  "from": "coefficient-giving",
+  "to": "ai-village",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "Coefficient Giving’s Navigating Transformative AI page lists a General Support grant of $12,600,000 to “AI Village”, dated August 2026. No page found gives its purpose in more detail.",
+  "amount": "$12,600,000",
+  "date": "2026-08",
+  "source": "Coefficient Giving: Navigating Transformative AI (fund page), read on 19 November 2026; a later automated check was refused by the site",
+  "url": "https://coefficientgiving.org/funds/navigating-transformative-ai/",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "coefficient-giving",
+  "to": "ai-village",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "Coefficient Giving’s Forecasting page lists a General Support grant of $1,633,500 to Sage, which runs the AI Village, dated October 2025. Its pages also list grants to Sage in 2024 for AI explainers and forecasting software.",
+  "amount": "$1,633,500",
+  "date": "2025-10",
+  "source": "Coefficient Giving: Forecasting (fund page), read on 19 November 2026; a later automated check was refused by the site",
+  "url": "https://coefficientgiving.org/funds/forecasting/",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "sff",
+  "to": "ai-village",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "SFF recommended $170,000 to Sage Future for general support in its 2025 round, listing Jaan Tallinn as the funder.",
+  "amount": "$170,000",
+  "date": "2025",
+  "source": "Survival and Flourishing Fund: SFF-2025 S-Process Recommendations",
+  "url": "https://survivalandflourishing.fund/2025/recommendations",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "sff",
+  "to": "ai-village",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "SFF recommended $298,000 to Sage Future for general support in its 2026 round, listing $7,000 from Jaan Tallinn and $291,000 from Dustin Moskovitz.",
+  "amount": "$298,000",
+  "date": "2026",
+  "source": "Survival and Flourishing Fund: 2026 Recommendations",
+  "url": "https://survivalandflourishing.fund/2026/recommendations",
+  "verified": "primary",
+  "kind": "documented"
  }
 ]

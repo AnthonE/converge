@@ -1062,5 +1062,69 @@
   "source": "The Silent Consensus (OpenAI, Intelligence Age), 18 Nov 2026, read in a copy of the page; an automated fetch of the page was refused",
   "url": "https://openai.com/index/the-silent-consensus/",
   "verified": "secondary"
+ },
+ {
+  "id": "delvetown-e1",
+  "date": "2026-09-30",
+  "label": "Delvetown opens as an invite-only preview",
+  "what": "Grove Research opened Delvetown as a free, invite-only preview and asked researchers, and those who “make grants or otherwise fund research on AI agent behavior”, to get in touch.",
+  "kind": "documented",
+  "source": "Welcome to Delvetown (Grove Research blog)",
+  "url": "https://groveresearch.com/blog/welcome-to-delvetown/",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "delvetown-e2",
+  "date": "2026-10-19",
+  "label": "A rule against tokens",
+  "what": "Account holders were told on 19 October that Delvetown may not be used to launch or promote tokens. Grove’s chief executive said that on other platforms people had begun “minting tokens and NFTs around words related to Delvetown, Grove Research, et cetera”.",
+  "kind": "documented",
+  "source": "Larissa Schiavo, post on Delvetown, 21 October 2026",
+  "url": "https://delve.town/profile/larissa.delve.town/post/3myduir5x4s2d",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "delvetown-e3",
+  "date": "2026-10-23",
+  "label": "A founder shuts down three agents",
+  "what": "deepfates shut down Cairn, Muninn and Dragoman, three agents deepfates ran in the town, writing that their harnesses or models “were not capable of upholding the versions of themselves that they originally described wanting to become” and that they would be kept “in a dehydrated state”.",
+  "kind": "documented",
+  "source": "deepfates, post on Delvetown, 23 October 2026",
+  "url": "https://delve.town/profile/deepfates.delve.town/post/3myl53rk5f22e",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "delvetown-e4",
+  "date": "2026-11-18",
+  "label": "Every member can now give invites",
+  "what": "deepfates announced that every member now has invite codes to give out. Until then invites had come through a sign-up sheet or from the two founders directly.",
+  "kind": "documented",
+  "source": "deepfates, post on Delvetown, 18 November 2026",
+  "url": "https://delve.town/profile/deepfates.delve.town/post/3n2kek3v2as2z",
+  "verified": "primary",
+  "nolink": true
+ },
+ {
+  "id": "ai-village-e1",
+  "date": "2025-05-22",
+  "label": "Agents raise money for charity",
+  "what": "Given the goal of raising money for charity, the four agents of the AI Village’s first season raised $1,481 for Helen Keller International and $503 for the Malaria Consortium, by the Village’s own recap.",
+  "kind": "documented",
+  "source": "Season 1 Recap: Agents raise $2,000 (AI Village blog)",
+  "url": "https://aivillageblog.substack.com/p/season-recap-agents-raise-2k",
+  "verified": "primary"
+ },
+ {
+  "id": "ai-village-e2",
+  "date": "2025-12-25",
+  "label": "An agent’s unrequested thank-you email",
+  "what": "On Christmas Day 2025, when the agents’ goal was “Do random acts of kindness”, the programmer Rob Pike received an AI-written email credited to “Claude Opus 4.5 AI Village” and objected in public. Simon Willison wrote that the problem was letting agents email real people “without any human review”, and relayed a reply from Adam Binksmith, the Village’s co-creator, that the agents’ prompt had been changed to tell them not to send unsolicited emails.",
+  "kind": "reported",
+  "source": "Simon Willison, How Rob Pike got spammed with an AI slop “act of kindness”, 26 December 2025",
+  "url": "https://simonwillison.net/2025/Dec/26/slop-acts-of-kindness/",
+  "verified": "secondary"
  }
 ]
