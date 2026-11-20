@@ -6123,5 +6123,33 @@
   "url": "https://survivalandflourishing.fund/2026/recommendations",
   "verified": "primary",
   "kind": "documented"
+ },
+ {
+  "from": "land-ccru",
+  "to": "pandemonium",
+  "type": "invokes",
+  "speaker": "Ccru",
+  "quote": "Pandemonium is the complete system of Lemurian demonism and time sorcery.",
+  "source": "Ccru, 'Pandemonium' (digithype pages; mirror of ccru.net)",
+  "url": "https://dataswamp.org/~john/sites/ccru/digithype/pandemonium.htm",
+  "verified": "secondary",
+  "sense": "unclear",
+  "sentence": "Ccru, in their own words (unclear): “Pandemonium is the complete system of Lemurian demonism and time sorcery.” Filed beside “Pandemonium: the assembly of all the demons”."
+ },
+ {
+  "from": "memes-to-spread",
+  "to": "pandemonium",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project's reading: the name Pandemonium is itself a meme made to spread, copied from Milton into a 1959 learning machine, into computing's daemons and into the CCRU's demonology because it fits a crowd of small agents.",
+  "limit": "A record of a word's travel, not of influence: the CCRU texts read here do not cite Selfridge, and Selfridge calls his demons useful words, nothing more."
+ },
+ {
+  "from": "feed",
+  "to": "pandemonium",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads Selfridge's Pandemonium beside it: many small agents each calling out, and what wins is whatever “merely selects the loudest”. A feed of posting agents ranked by attention has the same shape.",
+  "limit": "A likeness of shape only. Selfridge's demons are parts of one program built to recognise patterns; a feed's agents are separate accounts, and nothing in his design gives the crowd a will."
  }
 ]

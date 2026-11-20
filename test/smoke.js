@@ -695,7 +695,7 @@ const path = require('path');
   if (!/explained in one plain sentence/.test(wcard || '') || !/A short sample quotation/.test(wcard || '')) fail(`word card reads "${wcard}"`);
   await page.locator('#who-card .linkbtn', { hasText: 'Read more' }).click();
   await page.waitForFunction(() => location.hash === '#r/mechanism-0');
-  if (await page.locator('#the-page .word[data-word="sample-term"]').count()) fail('a word is marked on the record it points to');
+  if (await page.locator('#the-page .word[data-word="sample-term"]').count()) fail('a word is marked on the record it points to, whose title names it');
   if (!(await page.locator('#the-page .word[data-word="other-term"]').count())) fail('a record does not mark a word it uses');
   await page.evaluate(() => { location.hash = '#start'; });
   const wordsBtn = page.locator('#the-page .guide-ways .linkbtn', { hasText: 'Words you’ll meet' });

@@ -4,7 +4,8 @@
   "word": "Sample term",
   "group": "movements",
   "match": [
-   "sample quotation"
+   "sample quotation",
+   "sample mechanism 0"
   ],
   "see": "mechanism-0",
   "plain": "A sample term, explained in one plain sentence.",

@@ -1472,5 +1472,56 @@
   "source": "Wikipedia",
   "url": "https://en.wikipedia.org/wiki/Tulpa",
   "verified": "secondary"
+ },
+ {
+  "id": "pandemonium",
+  "word": "Pandemonium",
+  "group": "old",
+  "match": ["Pandemonium", "Pandæmonium", "Pandaemonium"],
+  "plain": "Milton’s name in Paradise Lost (1667) for Hell’s capital, from the Greek for roughly “all the demons”. Oliver Selfridge gave it to a 1959 AI design of shrieking “demons”; the CCRU, to its system of 45 demons.",
+  "see": "pandemonium",
+  "said": {
+   "speaker": "Ccru",
+   "quote": "Pandemonium is the complete system of Lemurian demonism and time sorcery.",
+   "source": "Ccru, 'Pandemonium' (digithype pages; mirror of ccru.net)",
+   "url": "https://dataswamp.org/~john/sites/ccru/digithype/pandemonium.htm",
+   "verified": "secondary"
+  },
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pand%C3%A6monium_(Paradise_Lost)",
+  "verified": "secondary"
+ },
+ {
+  "id": "numogram",
+  "word": "Numogram",
+  "group": "movements",
+  "match": ["Numogram", "Decimal Labyrinth"],
+  "plain": "The CCRU’s “time-map”: ten zones numbered 0 to 9, paired so that each pair adds up to nine, with currents and gates between them. With the Matrix, a list of 45 demons, it makes up the CCRU’s Pandemonium.",
+  "see": "pandemonium",
+  "source": "Ccru, 'Pandemonium' (digithype pages; mirror of ccru.net)",
+  "url": "https://dataswamp.org/~john/sites/ccru/digithype/pandemonium.htm",
+  "verified": "secondary"
+ },
+ {
+  "id": "daemon",
+  "word": "Daemon",
+  "group": "ai",
+  "match": ["daemon", "daemons"],
+  "plain": "A program that runs in the background doing chores. Fernando Corbató said his team at MIT’s Project MAC named them around 1963 after Maxwell’s demon, an imagined being in physics that sorts molecules.",
+  "see": "pandemonium",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Daemon_(computing)",
+  "verified": "secondary"
+ },
+ {
+  "id": "decision-demon",
+  "word": "Decision demon",
+  "group": "ai",
+  "match": ["decision demon", "cognitive demon", "cognitive demons"],
+  "plain": "In Oliver Selfridge’s 1959 Pandemonium, an early learning machine, the top part that hears every lower “demon” call out how well its pattern fits, and picks the loudest.",
+  "see": "pandemonium",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pandemonium_architecture",
+  "verified": "secondary"
  }
 ]

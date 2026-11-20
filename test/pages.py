@@ -138,8 +138,9 @@ def check(g, out):
             used = [rid for rid, kind, x in recs if f'id="word-{w["id"]}"' in open(os.path.join(out, 'r', rid, 'index.html'), encoding='utf-8').read()]
             if not used:
                 fail(f'{w["id"]}: no record page lists the word, though the fixture uses it')
-            if w.get('see') and w['see'] in used:
-                fail(f'{w["id"]}: the record it points to lists it as a word on its own page')
+            named = w.get('see') in ix.by and any(m.lower() in pages.name(ix.by[w['see']]).lower() for m in w.get('match') or [w['word']])
+            if named and w['see'] in used:
+                fail(f'{w["id"]}: the record it points to, whose title names it, lists it as a word on its own page')
     # Once a person has re-read every page a claim cites, the gate lifts.
     w = (g.get('watch') or [None])[0]
     if w:

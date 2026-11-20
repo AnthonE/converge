@@ -53,9 +53,9 @@
 
   var SKIP = /^(A|BUTTON|INPUT|SELECT|TEXTAREA|SCRIPT|STYLE|H1|H2|H3|H4|TIME|LABEL|OPTION)$/;
   var MARKED = ['who', 'who-card', 'word'];
-  function annotateBlock(block, w, here) {
+  function annotateBlock(block, w, skip) {
     var test = new RegExp(w.src, w.flags), nodes = [], done = {};
-    if (here) done[here] = true;
+    Object.keys(skip || {}).forEach(function (k) { done[k] = true; });
     var walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, null);
     while (walker.nextNode()) {
       var n = walker.currentNode, ok = test.test(n.nodeValue);
@@ -68,7 +68,7 @@
       var text = n.nodeValue, re = new RegExp(w.src, 'g' + w.flags), m, last = 0, frag = document.createDocumentFragment(), any = false;
       while ((m = re.exec(text))) {
         var name = m[2], p = w.by[w.key(name)], at = m.index + m[1].length;
-        if (!p || done[p.id] || done[p.see]) continue;
+        if (!p || done[p.id]) continue;
         done[p.id] = any = true;
         frag.appendChild(document.createTextNode(text.slice(last, at)));
         var b = document.createElement('button');
@@ -84,8 +84,18 @@
     });
   }
 
-  /* Mark the first mention of each person, and of each word, in each block (a panel, a Watch entry, a timeline item).
-     On a record's own page (here), its own word is not marked: the page is the longer answer. */
+  /* On a record's own page (here), a word that points to it and that its title already names is not marked: the
+     page is the longer answer. Other words that point to it still are. */
+  ns.wordsTitled = function (ix, here) {
+    var n = here && (ix.byId[here] || (ns.methodById && ns.methodById(ix, here))), skip = {};
+    if (!n) return skip;
+    var title = String(n.label || n.ref || n.name || n.title || '').toLowerCase();
+    (ix.g.words || []).forEach(function (w) {
+      if (w.see === here && (w.match && w.match.length ? w.match : [w.word]).some(function (m) { return title.indexOf(m.toLowerCase()) >= 0; })) skip[w.id] = true;
+    });
+    return skip;
+  };
+  /* Mark the first mention of each person, and of each word, in each block (a panel, a Watch entry, a timeline item). */
   ns.annotate = function (root, ix, blockSelector, here) {
     if (!root) return;
     var sets = [];
@@ -93,7 +103,8 @@
     if (ns.hasWords(ix)) wordForms(ix).forEach(function (w) { sets.push(w); });
     if (!sets.length) return;
     var blocks = blockSelector ? root.querySelectorAll(blockSelector) : [root];
-    [].forEach.call(blocks, function (b) { sets.forEach(function (w) { annotateBlock(b, w, w.cls === 'word' ? here : null); }); });
+    var skip = here ? ns.wordsTitled(ix, here) : null;
+    [].forEach.call(blocks, function (b) { sets.forEach(function (w) { annotateBlock(b, w, w.cls === 'word' ? skip : null); }); });
   };
   ns.hasWords = function (ix) { return (ix.g.words || []).length > 0; };
 

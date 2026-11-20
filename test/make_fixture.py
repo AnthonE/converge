@@ -184,7 +184,7 @@ json.dump([{'id': 'sample-speaker', 'name': 'Sample Speaker', 'who': 'A sample p
           open(os.path.join(OUT, 'people.json'), 'w'), indent=1)
 # Words you'll meet: one that goes deeper in a record and quotes a definition already on the map, and one read on a page
 # of its own; the second carries markup that must stay text.
-json.dump([{'id': 'sample-term', 'word': 'Sample term', 'group': 'movements', 'match': ['sample quotation'], 'see': 'mechanism-0',
+json.dump([{'id': 'sample-term', 'word': 'Sample term', 'group': 'movements', 'match': ['sample quotation', 'sample mechanism 0'], 'see': 'mechanism-0',
             'plain': 'A sample term, explained in one plain sentence.',
             'said': {'speaker': 'Sample Speaker', 'quote': 'A short sample quotation.', 'source': 'Sample Source',
                      'url': 'https://example.org/source', 'verified': 'primary'}},

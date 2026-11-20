@@ -256,14 +256,19 @@ def word_matcher(ix):
 
 
 def words_on(ix, rid, body):
-    """The words a page's text uses, in the order they first appear; a record's own word is left to the record."""
+    """The words a page's text uses, in the order they first appear. A word that points to this record and that its
+    title already names is left to the record."""
+    n = ix.by.get(rid) or ix.methods.get(rid)
+    title = str(name(n) if n else '').lower()
+    own = {w['id'] for w in ix.g.get('words') or [] if w.get('see') == rid and
+           any(m.lower() in title for m in (w.get('match') or [w['word']]))}
     text, hits = html.unescape(TAG.sub(' ', body)), []
     for pat, by, exact in word_matcher(ix):
         for m in pat.finditer(text):
             hits.append((m.start(), by[m.group(1) if exact else m.group(1).lower()]))
     out, seen = [], set()
     for _, w in sorted(hits, key=lambda h: h[0]):
-        if w['id'] not in seen and w.get('see') != rid:
+        if w['id'] not in seen and w['id'] not in own:
             seen.add(w['id'])
             out.append(w)
     return out
