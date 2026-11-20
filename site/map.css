@@ -494,3 +494,33 @@ button.badge-reread::before, .badge-mark.badge-reread::before { background: curr
 .theme-btn::before { content: ''; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid currentColor; background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
 button.badge-reread::before, .badge-mark.badge-reread::before { margin: 0 0.5em 0 0.2em; }
 .glance .rec-sub { text-transform: none; letter-spacing: normal; color: var(--ink); font-size: 14px; margin: 12px 0 4px; }
+
+/* The families, drawn around "us": above and beneath on the vertical, beside on the left, after on the right. */
+.compass { display: grid; grid-template-columns: 1fr minmax(150px, 1.15fr) 1fr; grid-template-areas: ". above ." "beside us after" ". beneath ."; gap: 8px; align-items: center; max-width: 900px; margin: 6px 0 8px; }
+.fam-above { grid-area: above; } .fam-beside { grid-area: beside; } .fam-after { grid-area: after; } .fam-beneath { grid-area: beneath; }
+.compass-us { grid-area: us; display: flex; justify-content: center; }
+.compass-us span { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--ink); display: flex; align-items: center; justify-content: center; font-weight: 650; background: var(--plane); }
+.compass-cell { border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 8px 10px; }
+.compass-name { border: 0; background: none; padding: 0; font-weight: 650; font-size: 15px; text-decoration: underline; text-underline-offset: 3px; }
+.compass-count { display: block; font-size: 12.5px; color: var(--ink-2); }
+.compass-list { list-style: none; margin: 4px 0 0; padding: 0; font-size: 13px; }
+.compass-list li { margin: 2px 0; }
+.compass-list li.is-between .linkbtn { text-decoration-style: dashed; }
+.compass-note { max-width: 900px; margin: 0 0 6px; }
+.family { margin: 18px 0 6px; scroll-margin-top: 8px; }
+.family:focus { outline: none; }
+.family-head { border-top: 2px solid var(--ink); padding-top: 8px; margin-bottom: 8px; max-width: 900px; }
+.family-name { font-size: 20px; text-transform: none; letter-spacing: normal; color: var(--ink); margin: 0; }
+.family-q { margin: 2px 0 4px; font-size: 15px; }
+.family-line { font-size: 13px; color: var(--ink-2); margin: 0; }
+.family-line q { font-style: italic; }
+.family-also { font-size: 13.5px; color: var(--ink-2); margin: 8px 0 0; }
+.card-between { font-size: 13px; color: var(--ink-2); border-left: 2px dashed var(--axis); padding-left: 8px; margin: 0 0 8px; }
+@media (max-width: 560px) {
+  .compass { grid-template-columns: 1fr 112px 1fr; gap: 6px; }
+  .compass-us span { width: 40px; height: 40px; font-size: 14px; }
+  .compass-list { display: none; }
+  .compass-cell { padding: 6px 8px; text-align: center; }
+  .compass-name { font-size: 14px; }
+}
+.compass-apart { font-size: 13.5px; margin: 0 0 6px; max-width: 900px; }

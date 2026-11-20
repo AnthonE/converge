@@ -30,6 +30,27 @@ const path = require('path');
   }
   // Every card says where its ideal stands in one plain sentence.
   if ((await page.locator('#the-page .card .stand-text').count()) !== graph.ideals.length) fail('a card does not say in words where its ideal stands');
+  // The families: one place per family around "us", with the right count; each card under its first family; an
+  // ideal on the line between two says why on its card; one in none stands apart; old lines are labelled readings.
+  const fams = (graph.meta || {}).families || [];
+  if (fams.length) {
+    if ((await page.locator('#the-page .compass .compass-cell').count()) !== fams.length) fail('the families picture does not show each family');
+    for (const f of fams) {
+      const n = graph.ideals.filter(d => (d.family || []).includes(f.id)).length;
+      const txt = await page.locator(`#the-page .compass .fam-${f.id} .compass-count`).textContent();
+      if (!txt.startsWith(n + ' ')) fail(`the ${f.id} family counts "${txt}", not ${n}`);
+      const want = graph.ideals.filter(d => (d.family || [])[0] === f.id).map(d => d.id).sort();
+      const got = (await page.locator(`#fam-${f.id} .card`).evaluateAll(els => els.map(e => e.dataset.ideal))).sort();
+      if (JSON.stringify(want) !== JSON.stringify(got)) fail(`the ${f.id} family shows ${got.join(', ')}, not ${want.join(', ')}`);
+    }
+    const apart = graph.ideals.filter(d => Array.isArray(d.family) && !d.family.length);
+    if (apart.length && (await page.locator('#fam-apart .card').count()) !== apart.length) fail('an ideal in no family is not shown apart');
+    if (apart.length && (await page.locator('#the-page .compass-apart .linkbtn').count()) !== apart.length) fail('the families picture does not name the ideals that stand apart');
+    for (const d of graph.ideals.filter(x => (x.family || []).length !== 1))
+      if (!(await page.locator(`#the-page .card[data-ideal="${d.id}"] .card-between`).count())) fail(`${d.id}: between two families or in none, but its card does not say why`);
+    if (await page.locator('#the-page .family-line b').count()) fail('a family\'s old line was inserted as markup');
+    if (!(await page.locator('#the-page .family-line .lane').first().textContent()).includes('reading')) fail('a family\'s old line is not marked as this project\'s reading');
+  }
   // A checking mark is short, says its full words to a screen reader, and shows them on a tap.
   const mark = page.locator('#the-page .card-quote button.badge').first();
   if (await mark.count()) {
@@ -674,10 +695,13 @@ const path = require('path');
   await page.locator('#mode-cards').click();
   await page.waitForSelector('#the-page .card');
   await page.evaluate(() => window.scrollTo(0, 0));
-  const front = await page.evaluate(() => ({ side: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-    card: document.querySelector('#the-page .card').getBoundingClientRect().top }));
+  // The front opens on content: the families picture, whole, or where there are no families the first card.
+  const front = await page.evaluate(() => { const c = document.querySelector('#the-page .compass');
+    return { side: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+      card: document.querySelector('#the-page .card').getBoundingClientRect().top, compass: c ? c.getBoundingClientRect().bottom : null }; });
   if (front.side > 1) fail(`the front scrolls sideways by ${front.side}px at 390px wide`);
-  if (front.card > 844) fail(`on a phone the first card starts ${Math.round(front.card)}px down, below the first screen`);
+  if (front.compass !== null && front.compass > 844) fail(`on a phone the families picture ends ${Math.round(front.compass)}px down, below the first screen`);
+  if (front.compass === null && front.card > 844) fail(`on a phone the first card starts ${Math.round(front.card)}px down, below the first screen`);
   if (shots) await page.screenshot({ path: path.join(shots, 'narrow.png') });
 
   await browser.close();

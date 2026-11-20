@@ -135,6 +135,14 @@ edges.append({'from': 'offshoot-2', 'to': 'carrier-1-0', 'type': 'opposes', 'sen
 edges.append({'from': 'funder-0', 'to': 'pattern-0', 'type': 'invokes', 'sentence': 'Funder 0 invokes pattern 0.', 'speaker': 'Sample Funder 0',
               'quote': 'Words from a name outside every ideal.', 'source': 'Sample Source', 'url': 'https://example.org/funder-words',
               'verified': 'secondary', 'sense': 'sincere'})
+# Families: one family each in turn, one ideal on the line between two, one in none (both say why).
+FAMS = ['above', 'beside', 'beneath', 'after']
+for i, d in enumerate(ideals):
+    d['family'] = [FAMS[i % 4]]
+ideals[1]['family'] = ['beside', 'above']
+ideals[1]['family_note'] = 'Between beside and above: a sample placement note.'
+ideals[-1]['family'] = []
+ideals[-1]['family_note'] = 'Apart: a sample ideal whose own words place no made mind.'
 ideals[0]['field_key'] = [{'q': q, 'a': 'A sample answer.'} for q in ('How did it come?', 'Does it speak?', 'Does it survive your silence?', 'How many independent channels?', 'Who stands outside?')]
 os.makedirs(OUT, exist_ok=True)
 for name, obj in [('ideals', ideals), ('carriers', carriers), ('vehicles', vehicles), ('fruits', fruits), ('texts', texts), ('edges', edges),
@@ -164,6 +172,10 @@ json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 
            'made_with': 'Synthetic fixture, made by a script.', 'nolink_hosts': ['example.net'],
            'contribute': 'https://github.com/example/ideals-map/issues/new/choose', 'site_url': 'https://example.org/map/',
            'repo': 'example/ideals-map', 'front_names': ['lab-0', 'sample-speaker'],
+           'families': [{'id': f, 'name': f.capitalize() + ' us', 'question': 'A sample question?',
+                         'line': {'quote': 'A sample <b>old</b> line.', 'ref': 'Sample 1:1', 'source': 'Sample Source',
+                                  'url': 'https://example.org/old-line', 'verified': 'primary'}} for f in FAMS],
+           'families_note': 'Grouped by a sample reading.',
            'watch_threads': {'sample-thread': {'title': 'A sample thread', 'note': 'Why these sample claims are shown together.'}}},
           open(os.path.join(OUT, 'meta.json'), 'w'))
 # Who's who: a public figure named in the sample quotations.

@@ -29,7 +29,12 @@ Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file w
 have heard of (`front_names` in `data/meta.json`; the check refuses a name that is not on the map). Each opens its
 record **at a glance**: their own words from anywhere on the map, money in and out (one line each: when, from or to
 whom, how much, never added up), what has happened and claims on the Watch, a few lines of each before the full
-record. The plain page `r/<id>/` carries the same glance. Below come the ideals as cards: each gives the ideal's
+record. The plain page `r/<id>/` carries the same glance. Below comes **where the 13 ideals put the made mind**: four
+families drawn around "us" (above us, beside us, beneath us, after us; `families` in `data/meta.json`, each with a
+question and an old line, labelled this project's reading). Each ideal names its family in `family` in
+`data/ideals.json`: one, or two when its own words sit on the line between (its card goes under the first and says
+why in `family_note`), or none, when its words place no made mind (shown apart, with a note). The check refuses an
+unknown family and a missing note. Then the ideals as cards, grouped by family: each gives the ideal's
 name, one voice from its record (named, with its source and flag), who holds it and who answers it, and where it
 stands in one plain sentence ("So far: … Partly: … Not yet: …", from each phase's `plain` words in
 `data/phases.json`). **Checking marks** are short: a filled dot for checked at the source, half for checked on a

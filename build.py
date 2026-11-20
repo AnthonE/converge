@@ -554,6 +554,25 @@ def validate(g):
     for fid in (g.get('meta') or {}).get('front_names') or []:
         if fid not in ids and fid not in person_ids:
             err(f'meta.json front_names: {fid!r} is not a record or a person on the map')
+    # The families: where each ideal's own words put the made mind (this project's reading). Each has a name, a
+    # question and an old line with its source; each ideal names one family, or two when it sits on the line between,
+    # or none, and says why in family_note whenever it is not in exactly one.
+    fams = (g.get('meta') or {}).get('families') or []
+    fam_ids = [f.get('id') for f in fams]
+    if fams:
+        if len(set(fam_ids)) != len(fam_ids):
+            err('meta.json families: two families share an id')
+        for f in fams:
+            if not all(f.get(k) for k in ('id', 'name', 'question', 'line')):
+                err(f'meta.json families: {f.get("id")!r} needs id, name, question and line')
+            elif not all((f['line'] or {}).get(k) for k in ('quote', 'ref', 'url', 'verified')):
+                err(f'meta.json families: {f["id"]}: its line needs quote, ref, url and verified')
+        for d in g['ideals']:
+            fam = d.get('family')
+            if not isinstance(fam, list) or len(fam) > 2 or len(set(fam)) != len(fam) or any(x not in fam_ids for x in fam):
+                err(f'ideals/{d["id"]}: family must list one or two of {fam_ids}, or none')
+            elif len(fam) != 1 and not d.get('family_note'):
+                err(f'ideals/{d["id"]}: an ideal between two families, or in none, says why in family_note')
     # Who's who: public figures only, each in one plain, sourced sentence that labels no one.
     seen_p, forms = set(), {}
     for i, p in enumerate(g.get('people') or []):

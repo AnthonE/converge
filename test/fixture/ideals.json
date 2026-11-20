@@ -87,6 +87,9 @@
   "cautions": [
    "Synthetic fixture."
   ],
+  "family": [
+   "above"
+  ],
   "field_key": [
    {
     "q": "How did it come?",
@@ -223,7 +226,12 @@
   "cautions": [
    "Synthetic fixture."
   ],
-  "lead": 1
+  "lead": 1,
+  "family": [
+   "beside",
+   "above"
+  ],
+  "family_note": "Between beside and above: a sample placement note."
  },
  {
   "id": "ideal-2",
@@ -329,6 +337,9 @@
   ],
   "cautions": [
    "Synthetic fixture."
+  ],
+  "family": [
+   "beneath"
   ]
  },
  {
@@ -435,6 +446,9 @@
   ],
   "cautions": [
    "Synthetic fixture."
+  ],
+  "family": [
+   "after"
   ]
  },
  {
@@ -541,6 +555,9 @@
   ],
   "cautions": [
    "Synthetic fixture."
+  ],
+  "family": [
+   "above"
   ]
  },
  {
@@ -630,6 +647,9 @@
   ],
   "cautions": [
    "Synthetic fixture."
+  ],
+  "family": [
+   "beside"
   ]
  },
  {
@@ -736,6 +756,9 @@
   ],
   "cautions": [
    "Synthetic fixture."
+  ],
+  "family": [
+   "beneath"
   ]
  },
  {
@@ -842,6 +865,9 @@
   ],
   "cautions": [
    "Synthetic fixture."
+  ],
+  "family": [
+   "after"
   ]
  },
  {
@@ -948,6 +974,8 @@
   ],
   "cautions": [
    "Synthetic fixture."
-  ]
+  ],
+  "family": [],
+  "family_note": "Apart: a sample ideal whose own words place no made mind."
  }
 ]

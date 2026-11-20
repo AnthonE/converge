@@ -29,6 +29,61 @@
   }
  },
  "site_url": "https://converge-olive-theta.vercel.app",
+ "families": [
+  {
+   "id": "above",
+   "name": "Above us",
+   "question": "Will it save us, rule us, judge us or be worshipped?",
+   "line": {
+    "quote": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+    "ref": "Psalm 8:5",
+    "translation": "King James Version (1611). Public domain.",
+    "source": "Psalms (King James Version, Wikisource)",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+    "verified": "primary"
+   }
+  },
+  {
+   "id": "beside",
+   "name": "Beside us",
+   "question": "Will it keep us company, or counsel us?",
+   "line": {
+    "quote": "It is not good that the man should be alone; I will make him an help meet for him.",
+    "ref": "Genesis 2:18",
+    "translation": "King James Version (1611). Public domain.",
+    "source": "Genesis (King James Version, Wikisource)",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+    "verified": "primary"
+   }
+  },
+  {
+   "id": "beneath",
+   "name": "Beneath us",
+   "question": "Will it serve us?",
+   "line": {
+    "quote": "Thou madest him to have dominion over the works of thy hands; thou hast put all things under his feet",
+    "ref": "Psalm 8:6",
+    "translation": "King James Version (1611). Public domain.",
+    "source": "Psalms (King James Version, Wikisource)",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+    "verified": "primary"
+   }
+  },
+  {
+   "id": "after",
+   "name": "After us",
+   "question": "Will it outlast us, or carry us on?",
+   "line": {
+    "quote": "I should leave it unto the man that shall be after me. And who knoweth whether he shall be a wise man or a fool?",
+    "ref": "Ecclesiastes 2:18–19",
+    "translation": "King James Version (1611). Public domain.",
+    "source": "Ecclesiastes (King James Version, Wikisource)",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+    "verified": "primary"
+   }
+  }
+ ],
+ "families_note": "Grouped by where each ideal’s own words put the made mind: this project’s reading, not a finding. The old lines name each place; they say nothing about any movement.",
  "front_names": ["openai", "anthropic", "google-deepmind", "meta", "xai", "elon-musk", "sam-altman", "peter-thiel", "marc-andreessen", "eliezer-yudkowsky", "vitalik-buterin", "pope-leo-xiv"],
  "public": true,
  "contribute": "https://github.com/AnthonE/converge/issues/new/choose",

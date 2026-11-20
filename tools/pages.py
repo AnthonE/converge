@@ -129,6 +129,18 @@ def reread_count(ix, x):
     return sum(1 for s in srcs if s['url'] in ix.reread), len(srcs)
 
 
+def family_line(ix, n):
+    """Where an ideal's own words put the made mind, as the front groups it (meta.families): this project's reading."""
+    fams = {f['id']: f for f in ix.meta.get('families') or [] if f.get('id')}
+    fam = n.get('family')
+    if not fams or not isinstance(fam, list):
+        return ''
+    if n.get('family_note'):   # between two families or in none: the note says where and why
+        return n['family_note']
+    return ' and '.join(fams[f]['name'] for f in fam if f in fams) + '.'
+
+
+
 def is_gated(ix, kind, x):
     """A Watch claim, an allegation or an offshoot waits for a person's re-read of every page it cites."""
     if kind == 'watch' or (kind == 'node' and (x['type'] == 'offshoot' or x.get('kind') == 'alleged')) \
@@ -454,6 +466,10 @@ class Writer:
                         f'{self.link(n.get("url"), n.get("source") or "source", n.get("nolink"))} {self.badge(n.get("verified"), n.get("url"))}</p>')
         if n['type'] == 'ideal' and n.get('summary'):
             head.append(f'<p>{E(n["summary"])}</p>')
+        fam = family_line(ix, n) if n['type'] == 'ideal' else ''
+        if fam:
+            head.append(f'<p class="family-line"><span class="card-k">Where it puts the made mind: </span>{E(fam)} '
+                        '<span class="lane">this project’s reading</span></p>')
         srcs = own_sources(dict(n, **({'_person': p} if p else {})))
         head.append(self.trail(srcs))
         out.append('<header class="rec-head">' + ''.join(head) + '</header>')
@@ -879,6 +895,8 @@ def full_text(ix, recs):
                                f'{flag_word(x.get("verified"), x.get("url"), ix)})')
                 elif lede:
                     out.append(lede)
+                if x['type'] == 'ideal' and family_line(ix, x):
+                    out.append('Where it puts the made mind (this project’s reading): ' + family_line(ix, x))
                 if x.get('words'):
                     out += ['In their own words and others’:'] + [text_quote(w, ix) for w in x['words']]
                 evs = sorted((ix.by[o] for e, o in ix.adj[rid] if ix.by[o]['type'] == 'fruit' and e.get('type') not in MONEY
