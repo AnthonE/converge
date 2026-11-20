@@ -703,6 +703,10 @@ const path = require('path');
   else await wordsBtn.click();
   await page.waitForFunction(() => location.hash === '#words');
   if ((await page.locator('#the-page .words dt').count()) !== 2) fail("Words you'll meet does not list the fixture's two words");
+  if ((await page.locator('#the-page .words').count()) !== 2) fail("Words you'll meet does not put the fixture's words in their two sections");
+  await page.locator('#the-page .word-find').fill('another sample');
+  if ((await page.locator('#the-page .words dt:visible').count()) !== 1) fail('finding a word does not narrow the guide to it');
+  await page.locator('#the-page .word-find').fill('');
   if ((await page.locator('#the-page .words i').count()) !== 0) fail("a word's note was inserted as markup");
 
   // Narrow screen: no page-level horizontal scroll, on a page or on the front; on the front, a card starts on the first screen.

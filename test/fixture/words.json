@@ -2,6 +2,7 @@
  {
   "id": "sample-term",
   "word": "Sample term",
+  "group": "movements",
   "match": [
    "sample quotation"
   ],
@@ -18,6 +19,7 @@
  {
   "id": "other-term",
   "word": "Other term",
+  "group": "old",
   "match": [
    "synthetic definition"
   ],

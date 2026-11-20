@@ -128,7 +128,7 @@
     if (ns.hasWords(ix)) {
       var wd = ui.h('button', 'linkbtn', 'Words you\u2019ll meet'); wd.type = 'button';
       wd.addEventListener('click', function () { nav.goWords(null); });
-      ui.add(wl, ui.add(ui.h('li'), wd, ui.h('span', null, ': words such as hyperstition, egregore or e/acc, each in one or two plain sentences, with where to read more. Any underlined word opens the same note.')));
+      ui.add(wl, ui.add(ui.h('li'), wd, ui.h('span', null, ': an insider\u2019s guide to the words this world uses, from hyperstition and e/acc to RLHF, SFF and the katechon, each in one or two plain sentences, with where to read more. Any underlined word opens the same note.')));
     }
     ui.add(box, ui.add(ways, wl));
 

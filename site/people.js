@@ -25,15 +25,24 @@
       ask: function (name) { return name + ': who is this?'; } };
     return ix.who;
   }
-  /* Words you'll meet: the same marking for a term a newcomer may not know, in any letter case. */
+  /* Words you'll meet: the same marking for a term a newcomer may not know. A form is matched in any letter case,
+     except an acronym (EA, RL, PAC) and the forms of a word marked "case", which must match exactly. */
+  var ACRONYM = /^[A-Z][A-Z0-9]{1,8}s?$/;
+  ns.wordCase = function (w, m) { return !!w['case'] || ACRONYM.test(m); };
   function wordForms(ix) {
     if (ix.wordsAt) return ix.wordsAt;
-    var list = [], by = {};
-    (ix.g.words || []).forEach(function (w) {
-      (w.match && w.match.length ? w.match : [w.word]).forEach(function (m) { list.push(m); by[m.toLowerCase()] = w; });
-    });
-    ix.wordsAt = { by: by, src: pattern(list), flags: 'i', cls: 'word', attr: 'data-word', key: function (m) { return m.toLowerCase(); },
-      ask: function (word) { return word + ': what does it mean?'; } };
+    ix.wordsAt = [false, true].map(function (exact) {
+      var list = [], by = {};
+      (ix.g.words || []).forEach(function (w) {
+        (w.match && w.match.length ? w.match : [w.word]).forEach(function (m) {
+          if (ns.wordCase(w, m) !== exact) return;
+          list.push(m); by[exact ? m : m.toLowerCase()] = w;
+        });
+      });
+      return { by: by, src: pattern(list), flags: exact ? '' : 'i', cls: 'word', attr: 'data-word',
+        key: exact ? function (m) { return m; } : function (m) { return m.toLowerCase(); },
+        ask: function (word) { return word + ': what does it mean?'; } };
+    }).filter(function (w) { return w.src; });
     return ix.wordsAt;
   }
   function pattern(list) {
@@ -81,7 +90,7 @@
     if (!root) return;
     var sets = [];
     if (ns.hasPeople(ix) && forms(ix).src) sets.push(forms(ix));
-    if (ns.hasWords(ix) && wordForms(ix).src) sets.push(wordForms(ix));
+    if (ns.hasWords(ix)) wordForms(ix).forEach(function (w) { sets.push(w); });
     if (!sets.length) return;
     var blocks = blockSelector ? root.querySelectorAll(blockSelector) : [root];
     [].forEach.call(blocks, function (b) { sets.forEach(function (w) { annotateBlock(b, w, w.cls === 'word' ? here : null); }); });
@@ -216,18 +225,62 @@
     });
   };
 
-  /* Words you'll meet: every word, in one or two plain sentences, with where to read more. */
+  /* Words you'll meet: every word, in the guide's sections, each in one or two plain sentences, with where to read more. */
+  var WORD_GROUPS = [
+    ['ai', 'How AI is built, run and tested'],
+    ['safety', 'Risk, safety and control'],
+    ['movements', 'Movements, factions and their slang'],
+    ['life', 'Death, longevity and made companions'],
+    ['money', 'Money, crypto, politics and law'],
+    ['orgs', 'Acronyms and organisations'],
+    ['old', 'Old words: scripture, myth and the occult']
+  ];
+  function sortKey(w) { return w.word.toLowerCase().replace(/^the /, ''); }
   ns.renderWords = function (box, ix, ui, nav, focusId) {
     while (box.firstChild) box.removeChild(box.firstChild);
+    var all = ix.g.words || [];
     var intro = ui.h('div', 'watch-intro');
-    ui.add(intro, ui.h('h2', null, 'Words you’ll meet'),
-      ui.h('p', null, 'Words the people on this map use that a newcomer may not know, each in one or two plain sentences, with where to read more. Tap an underlined word anywhere on the map to see the same note.'),
-      ui.h('p', 'note', 'The notes are this map’s plain wording; the people quoted may use a word in their own way. Where a note gives someone’s own definition, it is a quotation already on the map, with its source and how it was checked.'));
+    ui.add(intro, ui.h('h2', null, 'Words you\u2019ll meet'),
+      ui.h('p', null, 'An insider\u2019s guide: ' + all.length + ' words the people on this map use that a newcomer may not know, each in one or two plain sentences, with where to read more. Tap an underlined word anywhere on the map to see the same note.'),
+      ui.h('p', 'note', 'The notes are this map\u2019s plain wording; the people quoted may use a word in their own way. Where a note gives someone\u2019s own definition, it is a quotation already on the map, with its source and how it was checked.'));
     ui.add(box, intro);
-    var words = (ix.g.words || []).slice().sort(function (a, b) { return a.word.toLowerCase().replace(/^the /, '').localeCompare(b.word.toLowerCase().replace(/^the /, '')); });
-    var sec = ui.section('From A to Z (' + words.length + ')'), dl = ui.h('dl', 'glossary words');
+    /* Find a word: the list narrows as you type; nothing leaves the page. */
+    var find = ui.h('input', 'word-find'); find.type = 'search'; find.placeholder = 'Find a word'; find.setAttribute('aria-label', 'Find a word in the guide');
+    var jump = ui.h('nav', 'word-jump'); jump.setAttribute('aria-label', 'Sections of the guide');
+    ui.add(box, find, jump);
+    var none = ui.h('p', 'note', 'No word in the guide matches that.'); none.hidden = true;
+    var secs = [];
+    WORD_GROUPS.forEach(function (g) {
+      var words = all.filter(function (w) { return w.group === g[0]; }).sort(function (a, b) { return sortKey(a).localeCompare(sortKey(b)); });
+      if (!words.length) return;
+      var sec = ui.section(g[1] + ' (' + words.length + ')'), dl = ui.h('dl', 'glossary words');
+      sec.id = 'words-' + g[0];
+      var j = ui.h('button', 'linkbtn', g[1]); j.type = 'button';
+      j.addEventListener('click', function () { sec.scrollIntoView(); });
+      ui.add(jump, j);
+      secs.push(sec);
+      fillWords(ix, ui, nav, dl, words);
+      ui.add(box, ui.add(sec, dl));
+    });
+    ui.add(box, none);
+    find.addEventListener('input', function () {
+      var q = find.value.trim().toLowerCase(), shown = 0;
+      secs.forEach(function (sec) {
+        var any = false;
+        [].forEach.call(sec.querySelectorAll('dt'), function (dt) {
+          var dd = dt.nextElementSibling, hit = !q || (dt.textContent + ' ' + dt.getAttribute('data-forms') + ' ' + dd.textContent).toLowerCase().indexOf(q) >= 0;
+          dt.hidden = dd.hidden = !hit; if (hit) { any = true; shown++; }
+        });
+        sec.hidden = !any;
+      });
+      jump.hidden = !!q; none.hidden = shown > 0;
+    });
+    var target = focusId && document.getElementById('word-' + focusId);
+    if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
+  };
+  function fillWords(ix, ui, nav, dl, words) {
     words.forEach(function (w) {
-      var dt = ui.h('dt', null, w.word); dt.id = 'word-' + w.id;
+      var dt = ui.h('dt', null, w.word); dt.id = 'word-' + w.id; dt.setAttribute('data-forms', (w.match || []).join(' '));
       var dd = ui.h('dd');
       ns.wordParts(ix, ui, w).forEach(function (x) { ui.add(dd, x); });
       var row = ui.h('p', 'word-more'), name = w.see && (ix.byId[w.see] || (ns.methodById && ns.methodById(ix, w.see)));
@@ -244,10 +297,7 @@
       if (row.children.length) ui.add(dd, row);
       ui.add(dl, dt, dd);
     });
-    ui.add(box, ui.add(sec, dl));
-    var target = focusId && document.getElementById('word-' + focusId);
-    if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
-  };
+  }
 
   /* The whole list, grouped. */
   ns.renderPeople = function (box, ix, ui, nav, focusId) {

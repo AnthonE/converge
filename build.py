@@ -55,6 +55,8 @@ PEOPLE_GROUPS = {'builders', 'thinkers', 'faith', 'press', 'officials', 'past'}
 METHOD_KEY = ['serves', 'values', 'inside', 'checks', 'fails']
 DOOR_VIEWS = {'ideals', 'methods', 'money', 'ancients', 'timeline', 'watch', 'people', 'words', 'start', 'heart'}
 MAX_WHO = 240
+# Words you'll meet, in the guide's sections (site/people.js and tools/pages.py name them).
+WORD_GROUPS = {'ai', 'safety', 'movements', 'life', 'money', 'orgs', 'old'}
 FRUIT_KIND = {'documented', 'reported', 'alleged'}
 CARRIER_KIND = {'movement', 'organization', 'community', 'public figure', 'discourse', 'product', 'venue'}
 REQUIRED = {
@@ -719,6 +721,10 @@ def validate(g):
         for k in ('word', 'plain'):
             if not str(w.get(k) or '').strip():
                 err(f'{who}: missing "{k}"')
+        if 'case' in w and not isinstance(w['case'], bool):
+            err(f'{who}: "case" is true or false')
+        if w.get('group') not in WORD_GROUPS:
+            err(f'{who}: group must be one of {sorted(WORD_GROUPS)}')
         if len(str(w.get('plain', ''))) > MAX_WHO:
             err(f'{who}: "plain" is longer than {MAX_WHO} characters; one plain sentence or two')
         plain_text_ok(who, w.get('plain'))

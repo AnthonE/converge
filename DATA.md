@@ -141,8 +141,10 @@ it with the map: `holds`, `does not hold` (to be fixed), `corrected`, `removed`,
 (builders, thinkers, faith, press, officials, past), `match` (the forms of the name the viewer marks), `node` (their
 own entry on the map, if any), `source`, `url`, `verified`, `nolink`. Public figures only.
 
-**words** (words you'll meet): `word`, `plain` (one or two plain sentences in the map's voice), `match` (the forms the
-viewer marks, in any letter case), `see` (the record or method that goes deeper), `view` (a view to open instead, such as
+**words** (words you'll meet, an insider's guide): `word`, `group` (the guide's section: `ai`, `safety`, `movements`,
+`life`, `money`, `orgs` or `old`), `plain` (one or two plain sentences in the map's voice), `match` (the forms the viewer
+marks: in any letter case, except an acronym such as EA or PAC, and every form of a word with `case` true, which match
+exactly), `see` (the record or method that goes deeper), `view` (a view to open instead, such as
 `methods`), `said` (someone's own definition: a quotation already on the map, word for word, with the same `url` and
 `verified`; JSON), and, where the meaning was read on a page of its own, `source`, `url`, `verified`. A word with no
 `see` names its source. The notes are the map's wording; the people quoted may use a word in their own way.

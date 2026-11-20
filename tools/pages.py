@@ -218,25 +218,51 @@ def target(ix, rid):
 VIEW_NAME = {'methods': 'The alignment methods, side by side', 'money': 'Money and evaluators', 'ancients': 'The ancients',
              'watch': 'The Watch', 'timeline': 'Timeline', 'ideals': 'The ideals', 'people': 'Who’s who', 'start': 'Start here'}
 WORD_NOTE = 'Plain notes from this map; the people quoted may use a word in their own way.'
+WORD_GROUPS = [('ai', 'How AI is built, run and tested'), ('safety', 'Risk, safety and control'),
+               ('movements', 'Movements, factions and their slang'), ('life', 'Death, longevity and made companions'),
+               ('money', 'Money, crypto, politics and law'), ('orgs', 'Acronyms and organisations'),
+               ('old', 'Old words: scripture, myth and the occult')]
+
+
+def word_sections(ix):
+    """The guide's sections, in order, each with its words from A to Z."""
+    key = lambda x: re.sub(r'^the ', '', x['word'].lower())
+    words = ix.g.get('words') or []
+    return [(gid, title, sorted((w for w in words if w.get('group') == gid), key=key)) for gid, title in WORD_GROUPS
+            if any(w.get('group') == gid for w in words)]
 TAG = re.compile(r'<[^>]+>')
 
 
+ACRONYM = re.compile(r'^[A-Z][A-Z0-9]{1,8}s?$')
+
+
+def word_case(w, m):
+    """An acronym (EA, RL, PAC) and the forms of a word marked "case" match exactly; any other form in any case."""
+    return bool(w.get('case')) or bool(ACRONYM.match(m))
+
+
 def word_matcher(ix):
-    if not hasattr(ix, 'word_re'):
-        forms = sorted(((m, w) for w in ix.g.get('words') or [] for m in (w.get('match') or [w['word']])), key=lambda t: -len(t[0]))
-        ix.word_by = {m.lower(): w for m, w in forms}
-        ix.word_re = re.compile(r'(?<![A-Za-z\u00C0-\u024F])(' + '|'.join(re.escape(m) for m, _ in forms) +
-                                r')(?![A-Za-z\u00C0-\u024F])', re.I) if forms else None
-    return ix.word_re
+    if not hasattr(ix, 'word_res'):
+        ix.word_res = []
+        for exact in (False, True):
+            forms = sorted(((m, w) for w in ix.g.get('words') or [] for m in (w.get('match') or [w['word']]) if word_case(w, m) == exact),
+                           key=lambda t: -len(t[0]))
+            if forms:
+                by = {(m if exact else m.lower()): w for m, w in forms}
+                pat = re.compile(r'(?<![A-Za-z\u00C0-\u024F])(' + '|'.join(re.escape(m) for m, _ in forms) +
+                                 r')(?![A-Za-z\u00C0-\u024F])', 0 if exact else re.I)
+                ix.word_res.append((pat, by, exact))
+    return ix.word_res
 
 
 def words_on(ix, rid, body):
     """The words a page's text uses, in the order they first appear; a record's own word is left to the record."""
-    pat, out, seen = word_matcher(ix), [], set()
-    if not pat:
-        return out
-    for m in pat.finditer(html.unescape(TAG.sub(' ', body))):
-        w = ix.word_by[m.group(1).lower()]
+    text, hits = html.unescape(TAG.sub(' ', body)), []
+    for pat, by, exact in word_matcher(ix):
+        for m in pat.finditer(text):
+            hits.append((m.start(), by[m.group(1) if exact else m.group(1).lower()]))
+    out, seen = [], set()
+    for _, w in sorted(hits, key=lambda h: h[0]):
         if w['id'] not in seen and w.get('see') != rid:
             seen.add(w['id'])
             out.append(w)
@@ -901,8 +927,11 @@ def listing(ix, recs, public):
 def words_page(ix, public):
     """words/: every word a newcomer may not know, each with its plain note and where to read more."""
     w = Writer(ix, public, {})
-    words = sorted(ix.g.get('words') or [], key=lambda x: re.sub(r'^the ', '', x['word'].lower()))
-    items = ''.join(w.word_entry(x, '../') for x in words)
+    words = ix.g.get('words') or []
+    secs = word_sections(ix)
+    jump = ' '.join(f'<a href="#words-{gid}">{E(title)}</a>' for gid, title, _ in secs)
+    items = ''.join(f'<section class="sec" id="words-{gid}"><h2 class="sec-h">{E(title)} ({len(ws)})</h2>'
+                    f'<dl class="glossary words">{"".join(w.word_entry(x, "../") for x in ws)}</dl></section>' for gid, title, ws in secs)
     site = (ix.meta.get('site_url') or '').rstrip('/')
     robots = '' if public else '<meta name="robots" content="noindex, nofollow">\n'
     canon = f'<link rel="canonical" href="{E(site)}/words/">\n' if site else ''
@@ -921,9 +950,10 @@ def words_page(ix, public):
 <p class="static-nav"><a href="../r/">Every record</a> <a href="../#start">Start here</a> <a href="../#words">Open it in the map</a></p></header>
 <main class="static-main">
 <h1 class="rec-title">Words you’ll meet</h1>
-<p class="rec-lede">{len(words)} words the people on this map use that a newcomer may not know, each in one or two plain sentences, with where to read more.</p>
+<p class="rec-lede">An insider’s guide: {len(words)} words the people on this map use that a newcomer may not know, each in one or two plain sentences, with where to read more.</p>
 <p class="note">{E(WORD_NOTE)} Where a note gives someone’s own definition, it is a quotation already on the map, with its source and how it was checked.</p>
-<dl class="glossary words">{items}</dl>
+<p class="static-nav word-jump">{jump}</p>
+{items}
 </main>
 </div>
 </body>
@@ -968,10 +998,10 @@ def full_text(ix, recs):
            (ix.meta.get('made_with') or ''), '',
            f'{len(held)} records (claims on the Watch, allegations and offshoots) are left out of this file until a person has '
            're-read every page they cite. The site shows them, marked as waiting for that re-read.', '']
-    words = sorted(ix.g.get('words') or [], key=lambda x: re.sub(r'^the ', '', x['word'].lower()))
-    if words:
-        out += ['# Words you’ll meet', '', WORD_NOTE, '']
-        for x in words:
+    secs = word_sections(ix)
+    if secs:
+        out += ['# Words you’ll meet: an insider’s guide', '', WORD_NOTE, '']
+        for x in [x for _, _, ws in secs for x in ws]:
             out += [f'## {x["word"]}', x['plain']]
             if x.get('said'):
                 out += ['In someone’s own words:', text_quote(x['said'], ix)]

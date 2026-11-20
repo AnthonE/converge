@@ -291,6 +291,9 @@ th { color: var(--ink-2); font-weight: 600; }
 .glossary.words .word-said { margin: 4px 0; color: var(--ink-2); font-size: 14px; }
 .glossary.words .who-line { margin: 0 0 4px; }
 .glossary.words .who-src { margin: 0 0 4px; font-size: 13px; color: var(--ink-2); }
+.word-find { display: block; width: 100%; max-width: 420px; box-sizing: border-box; margin: 4px 0 10px; padding: 10px 12px; font: inherit; font-size: 16px; color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 8px; }
+.word-jump { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 8px; font-size: 14px; }
+.word-jump[hidden], .glossary.words dt[hidden], .glossary.words dd[hidden], .sec[hidden] { display: none; }
 .glossary.words .word-more { margin: 2px 0 0; display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
 .who-card { position: absolute; z-index: 30; background: var(--surface); color: var(--ink); border: 1px solid var(--axis); border-radius: 10px; padding: 12px 14px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18); font-size: 14px; line-height: 1.45; }
 .who-card[hidden] { display: none; }
