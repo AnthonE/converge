@@ -125,6 +125,11 @@
       wb.addEventListener('click', function () { nav.goPeople(null); });
       ui.add(wl, ui.add(ui.h('li'), wb, ui.h('span', null, ': every public figure named here, in one plain sentence. Any underlined name anywhere opens the same sentence.')));
     }
+    if (ns.hasWords(ix)) {
+      var wd = ui.h('button', 'linkbtn', 'Words you\u2019ll meet'); wd.type = 'button';
+      wd.addEventListener('click', function () { nav.goWords(null); });
+      ui.add(wl, ui.add(ui.h('li'), wd, ui.h('span', null, ': words such as hyperstition, egregore or e/acc, each in one or two plain sentences, with where to read more. Any underlined word opens the same note.')));
+    }
     ui.add(box, ui.add(ways, wl));
 
     var kept = ui.section('How this record is kept');
@@ -136,7 +141,7 @@
     ui.add(kept, kl, ui.h('p', 'note', 'Every record carries this as its trail: drafted \u2192 checked by a model \u2192 re-read by a person. It is not a wiki: the map does not speak in one smoothed-over voice. Every line says who is speaking and where it was checked.'));
     ui.add(box, kept);
 
-    var gl = ui.section('The words this map uses'), dl = ui.h('dl', 'glossary');
+    var gl = ui.section('The words this map uses', ns.hasWords(ix) ? 'The map\u2019s own terms. The words its people use (hyperstition, egregore, e/acc and the rest) are in \u201cWords you\u2019ll meet\u201d, above.' : null), dl = ui.h('dl', 'glossary');
     GLOSSARY.forEach(function (g) { ui.add(dl, ui.h('dt', null, g[0]), ui.h('dd', null, g[1])); });
     ui.add(box, ui.add(gl, dl));
 

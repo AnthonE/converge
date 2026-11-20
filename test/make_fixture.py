@@ -182,6 +182,16 @@ json.dump({'title': 'The Ideals Map (fixture)', 'note': 'Synthetic test data.', 
 json.dump([{'id': 'sample-speaker', 'name': 'Sample Speaker', 'who': 'A sample public figure, described in one plain sentence.', 'group': 'thinkers',
             'source': 'Sample Encyclopedia', 'url': 'https://example.org/sample-speaker', 'verified': 'secondary', 'sort': 'Speaker', 'node': 'carrier-0-0'}],
           open(os.path.join(OUT, 'people.json'), 'w'), indent=1)
+# Words you'll meet: one that goes deeper in a record and quotes a definition already on the map, and one read on a page
+# of its own; the second carries markup that must stay text.
+json.dump([{'id': 'sample-term', 'word': 'Sample term', 'match': ['sample quotation'], 'see': 'mechanism-0',
+            'plain': 'A sample term, explained in one plain sentence.',
+            'said': {'speaker': 'Sample Speaker', 'quote': 'A short sample quotation.', 'source': 'Sample Source',
+                     'url': 'https://example.org/source', 'verified': 'primary'}},
+           {'id': 'other-term', 'word': 'Other term', 'match': ['synthetic definition'],
+            'plain': 'Another sample <i>term</i>, read on a page of its own.', 'source': 'Sample Encyclopedia',
+            'url': 'https://example.org/other-term', 'verified': 'secondary'}],
+          open(os.path.join(OUT, 'words.json'), 'w'), indent=1)
 # An alignment method with the five questions, and a door with three stops.
 def ans(q, own=False):
     d = {'q': q, 'kind': 'own words' if own else 'reading', 'a': f'A sample answer to {q}.'}

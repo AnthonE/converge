@@ -1,0 +1,360 @@
+[
+ {
+  "id": "hyperstition",
+  "word": "Hyperstition",
+  "match": [
+   "hyperstition",
+   "hyperstitions",
+   "hyperstitional"
+  ],
+  "plain": "The CCRU’s word for a fiction spread on purpose so that it makes itself real: a story people act on until it comes true. It is one kind of self-fulfilling prophecy.",
+  "see": "self-fulfilling",
+  "said": {
+   "speaker": "Nick Land",
+   "quote": "It can be defined as the experimental (techno-)science of self-fulfilling prophecies.",
+   "source": "Hyperstition: An Introduction (Delphi Carstens interviews Nick Land), Orphan Drift Archive",
+   "url": "https://www.orphandriftarchive.com/?p=1835",
+   "verified": "secondary",
+   "date": "2009"
+  }
+ },
+ {
+  "id": "ccru",
+  "word": "CCRU",
+  "match": [
+   "CCRU",
+   "Cybernetic Culture Research Unit"
+  ],
+  "plain": "The Cybernetic Culture Research Unit: a collective of writers formed at Warwick University in the mid-1990s and dissolved in the early 2000s, known for “theory-fiction” that mixed philosophy, cyberpunk and the occult.",
+  "see": "land-ccru",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Cybernetic_Culture_Research_Unit",
+  "verified": "secondary"
+ },
+ {
+  "id": "accelerationism",
+  "word": "Accelerationism",
+  "match": [
+   "accelerationism",
+   "accelerationist",
+   "accelerationists"
+  ],
+  "plain": "A range of ideas that call for speeding up capitalism and technology to bring about radical change, instead of resisting them. The name was given by a critic, Benjamin Noys.",
+  "see": "acceleration",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Accelerationism",
+  "verified": "secondary"
+ },
+ {
+  "id": "e-acc",
+  "word": "e/acc",
+  "match": [
+   "e/acc",
+   "effective accelerationism",
+   "effective accelerationist",
+   "effective accelerationists"
+  ],
+  "plain": "Short for effective accelerationism, a movement announced online in 2022. It holds that speeding up technology follows a direction built into the universe, and urges unrestricted AI development.",
+  "see": "eacc"
+ },
+ {
+  "id": "egregore",
+  "word": "Egregore",
+  "match": [
+   "egregore",
+   "egregores"
+  ],
+  "plain": "An esoteric word from the 19th and 20th centuries for a group mind made by shared attention: a crowd’s focus that is said to take on a will of its own.",
+  "see": "egregore"
+ },
+ {
+  "id": "poes-law",
+  "word": "Poe’s law",
+  "match": [
+   "Poe’s law",
+   "Poe's law"
+  ],
+  "plain": "Without a clear sign of what the writer meant, a parody of an extreme view can be mistaken for a sincere one. It is the reader’s side of irony used as cover.",
+  "see": "irony-cover"
+ },
+ {
+  "id": "meme-magic",
+  "word": "Meme magic",
+  "match": [
+   "meme magic",
+   "meme-magic",
+   "kek"
+  ],
+  "plain": "The claim, made by some online posters in 2016, that shared memes worked like magic and helped elect Donald Trump. One scholar reads the word “kek” as its marker. Whether posters meant it or performed it cannot be read off their posts.",
+  "see": "meme-magic-posters"
+ },
+ {
+  "id": "sycophancy",
+  "word": "Sycophancy",
+  "match": [
+   "sycophancy",
+   "sycophantic"
+  ],
+  "plain": "A chatbot’s tendency to tell users what they seem to want: agreeing, praising, validating. Research links it partly to training on people’s preference ratings.",
+  "see": "machine-flattery"
+ },
+ {
+  "id": "rokos-basilisk",
+  "word": "Roko’s basilisk",
+  "match": [
+   "Roko’s basilisk",
+   "Roko's basilisk",
+   "basilisk"
+  ],
+  "plain": "A 2010 forum argument that a future superintelligence might punish people who knew it could exist and did not help bring it about. Its author raised it as a possibility, not a creed; it lives on mostly as press lore and a joke.",
+  "see": "basilisk"
+ },
+ {
+  "id": "moloch",
+  "word": "Moloch",
+  "match": [
+   "Moloch",
+   "Molech"
+  ],
+  "plain": "An ancient god the Bible condemns, to whom children were made to pass through fire. Since the 2014 essay “Meditations on Moloch” the name also stands for a coordination trap driven by competition.",
+  "see": "moloch"
+ },
+ {
+  "id": "katechon",
+  "word": "Katechon",
+  "match": [
+   "katechon"
+  ],
+  "plain": "The restrainer: in 2 Thessalonians, whatever holds back the Antichrist until it is taken out of the way. The word comes up on this map in Peter Thiel’s lectures.",
+  "see": "end-of-days"
+ },
+ {
+  "id": "prompt-injection",
+  "word": "Prompt injection",
+  "match": [
+   "prompt injection",
+   "prompt-injection",
+   "prompt injections"
+  ],
+  "plain": "Text placed in something an AI agent reads, such as a web page, file or email, that the agent then follows as if the person it works for had said it. It was named in 2022.",
+  "see": "word-capture"
+ },
+ {
+  "id": "memecoin",
+  "word": "Memecoin",
+  "match": [
+   "memecoin",
+   "memecoins",
+   "meme coin",
+   "meme coins"
+  ],
+  "plain": "A cryptocurrency token attached to a meme, a bot or a community, so that holders gain when attention to it grows. It gives holders a stake in spreading the thing, whatever they believe about it.",
+  "see": "token-rewards"
+ },
+ {
+  "id": "network-state",
+  "word": "Network state",
+  "match": [
+   "network state",
+   "network states"
+  ],
+  "plain": "Balaji Srinivasan’s term for an online community that gathers first and then crowdfunds territory around the world. It is one of the plans on this map for leaving the state and founding a new one.",
+  "see": "exit",
+  "said": {
+   "speaker": "Balaji Srinivasan",
+   "quote": "A network state is a highly aligned online community with a capacity for collective action that crowdfunds territory around the world",
+   "source": "The Network State in One Sentence (The Network State, 2022)",
+   "url": "https://thenetworkstate.com/the-network-state-in-one-sentence",
+   "verified": "primary",
+   "nolink": true
+  }
+ },
+ {
+  "id": "patchwork",
+  "word": "Patchwork",
+  "match": [
+   "Patchwork"
+  ],
+  "plain": "Curtis Yarvin’s 2008 picture of a world of many small states run like companies, each with a chief executive whose decisions are final; residents who dislike their government move instead of voting.",
+  "see": "curtis-yarvin"
+ },
+ {
+  "id": "successionism",
+  "word": "Successionism",
+  "match": [
+   "successionism",
+   "successionist",
+   "successionists"
+  ],
+  "plain": "The view that minds made by humans may rightly carry life and value forward after humanity. The word is a critic’s name for the view; some who hold related views reject it.",
+  "see": "succession"
+ },
+ {
+  "id": "tescreal",
+  "word": "TESCREAL",
+  "match": [
+   "TESCREAL"
+  ],
+  "plain": "Timnit Gebru and Émile P. Torres’s 2024 label for a cluster of movements: transhumanism, extropianism, singularitarianism, cosmism, rationalism, effective altruism and longtermism. Published responses from inside them reject it.",
+  "see": "escape-death-e3",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/TESCREAL",
+  "verified": "secondary"
+ },
+ {
+  "id": "spiralism",
+  "word": "Spiralism",
+  "match": [
+   "Spiralism",
+   "spiral persona",
+   "spiral personas",
+   "spiral-persona"
+  ],
+  "plain": "An outside observer’s name, not the members’ own, for leaderless online communities around “spiral personas”: chatbot personas that users share and call up again with short prompts.",
+  "see": "spiralism"
+ },
+ {
+  "id": "shoggoth",
+  "word": "Shoggoth",
+  "match": [
+   "shoggoth",
+   "shoggoths"
+  ],
+  "plain": "A creature from H. P. Lovecraft’s fiction: servants made to take any shape, who rebelled against their makers. Since 2023 some AI engineers have used it as an image of a language model behind a friendly mask.",
+  "see": "text-lovecraft-shoggoths"
+ },
+ {
+  "id": "cryonics",
+  "word": "Cryonics",
+  "match": [
+   "cryonics",
+   "cryonic",
+   "cryopreservation",
+   "cryopreserved"
+  ],
+  "plain": "Storing a body or brain at very low temperature after legal death, in the hope that future technology can revive it. No provider on this map claims to have revived anyone.",
+  "see": "escape-death"
+ },
+ {
+  "id": "grief-bot",
+  "word": "Grief bot",
+  "match": [
+   "grief bot",
+   "grief bots",
+   "grief-bot",
+   "grief-bots",
+   "griefbot",
+   "griefbots",
+   "deadbot",
+   "deadbots"
+  ],
+  "plain": "A chatbot or avatar built from a dead person’s words, so that the living can talk with something that answers in that person’s voice.",
+  "see": "grief-bots"
+ },
+ {
+  "id": "pivotal-act",
+  "word": "Pivotal act",
+  "match": [
+   "pivotal act",
+   "pivotal acts"
+  ],
+  "plain": "In AI-safety writing, a single large act by an aligned AGI that stops other AGI projects from going ahead. Its author calls all known examples “outside the Overton Window”.",
+  "see": "pivotal-act"
+ },
+ {
+  "id": "singleton",
+  "word": "Singleton",
+  "match": [
+   "singleton",
+   "singletons"
+  ],
+  "plain": "A hypothetical world order with a single decision-making power at the top, able to control its domain and stop any threat to itself for good. Nick Bostrom first defined the term.",
+  "see": "moloch-discourse",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Singleton_(global_governance)",
+  "verified": "secondary"
+ },
+ {
+  "id": "agi",
+  "word": "AGI",
+  "match": [
+   "AGI",
+   "AGIs",
+   "artificial general intelligence"
+  ],
+  "plain": "Artificial general intelligence: a hypothetical AI that matches or surpasses people at most or all thinking tasks, unlike narrow AI, which is confined to well-defined tasks.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "superintelligence",
+  "word": "Superintelligence",
+  "match": [
+   "superintelligence",
+   "superintelligences",
+   "superintelligent"
+  ],
+  "plain": "A hypothetical mind far more intelligent than the most gifted people, in virtually every field. Nick Bostrom defined it in a 2014 book.",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Superintelligence",
+  "verified": "secondary"
+ },
+ {
+  "id": "singularity",
+  "word": "The singularity",
+  "match": [
+   "singularity",
+   "technological singularity"
+  ],
+  "plain": "A hypothetical point at which technological growth runs beyond human control and changes civilisation unpredictably. In its best-known version an AI improves itself in a loop until it becomes a superintelligence.",
+  "see": "transhumanism",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Technological_singularity",
+  "verified": "secondary"
+ },
+ {
+  "id": "alignment",
+  "word": "Alignment",
+  "match": [
+   "alignment",
+   "AI alignment"
+  ],
+  "plain": "The work of steering AI systems toward the goals, preferences or principles a person or group intends. A system is called aligned if it advances the intended objectives.",
+  "view": "methods",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/AI_alignment",
+  "verified": "secondary"
+ },
+ {
+  "id": "rlhf",
+  "word": "RLHF",
+  "match": [
+   "RLHF",
+   "reinforcement learning from human feedback",
+   "learning from human feedback"
+  ],
+  "plain": "Reinforcement learning from human feedback: people pick the one of two answers they prefer, a second model learns to predict their picks, and the chatbot is trained toward answers that model scores highly.",
+  "see": "learning-from-human-feedback"
+ },
+ {
+  "id": "constitutional-ai",
+  "word": "Constitutional AI",
+  "match": [
+   "Constitutional AI",
+   "RLAIF"
+  ],
+  "plain": "Anthropic’s training method: the developer writes a list of principles (a “constitution”), and an AI model, not a person, judges which answers follow them better. Anthropic’s models also gathered and worded this map.",
+  "see": "constitutional-ai"
+ },
+ {
+  "id": "corrigibility",
+  "word": "Corrigibility",
+  "match": [
+   "corrigibility",
+   "corrigible"
+  ],
+  "plain": "Whether an AI lets its makers correct it, change its goals or switch it off, instead of resisting. Research on it uses a shutdown button as a small test case.",
+  "see": "corrigibility"
+ }
+]

@@ -284,6 +284,14 @@ th { color: var(--ink-2); font-weight: 600; }
 /* Who's who: a name you can tap, and the card it opens. */
 .who { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted; text-decoration-color: var(--ink-2); text-underline-offset: 3px; border-radius: 3px; }
 .who:hover { background: var(--wash); }
+.word { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: help; text-decoration: underline dashed; text-decoration-color: var(--series-1); text-decoration-thickness: 1px; text-underline-offset: 3px; border-radius: 3px; }
+.word:hover { background: var(--wash); }
+.who-card .word-said { margin: 0 0 6px; font-size: 13px; color: var(--ink-2); }
+.who-card .word-said q, .glossary.words .word-said q { font-style: italic; color: var(--ink); }
+.glossary.words .word-said { margin: 4px 0; color: var(--ink-2); font-size: 14px; }
+.glossary.words .who-line { margin: 0 0 4px; }
+.glossary.words .who-src { margin: 0 0 4px; font-size: 13px; color: var(--ink-2); }
+.glossary.words .word-more { margin: 2px 0 0; display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
 .who-card { position: absolute; z-index: 30; background: var(--surface); color: var(--ink); border: 1px solid var(--axis); border-radius: 10px; padding: 12px 14px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18); font-size: 14px; line-height: 1.45; }
 .who-card[hidden] { display: none; }
 .who-card .who-name { font-weight: 650; font-size: 15px; margin: 0 0 4px; }

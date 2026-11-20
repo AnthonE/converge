@@ -1,5 +1,5 @@
 /* Who's who: a plain line on every public figure the map names, shown where the name appears (tap it) and on a
-   page of its own. All text enters the DOM through textContent. */
+   page of its own. Words you'll meet: the same for a term a newcomer may not know (data/words.json). All text enters the DOM through textContent. */
 (function (ns) {
   'use strict';
 
@@ -11,7 +11,7 @@
     ['officials', 'Officials'],
     ['past', 'Writers of the past']
   ];
-  var IX = null, NAV = null;
+  var IX = null, NAV = null, UI = null;
 
   ns.hasPeople = function (ix) { return (ix.g.people || []).length > 0; };
 
@@ -21,34 +21,51 @@
     (ix.g.people || []).forEach(function (p) {
       (p.match && p.match.length ? p.match : [p.name]).forEach(function (m) { list.push(m); by[m] = p; });
     });
+    ix.who = { by: by, src: pattern(list), flags: '', cls: 'who', attr: 'data-who', key: function (m) { return m; },
+      ask: function (name) { return name + ': who is this?'; } };
+    return ix.who;
+  }
+  /* Words you'll meet: the same marking for a term a newcomer may not know, in any letter case. */
+  function wordForms(ix) {
+    if (ix.wordsAt) return ix.wordsAt;
+    var list = [], by = {};
+    (ix.g.words || []).forEach(function (w) {
+      (w.match && w.match.length ? w.match : [w.word]).forEach(function (m) { list.push(m); by[m.toLowerCase()] = w; });
+    });
+    ix.wordsAt = { by: by, src: pattern(list), flags: 'i', cls: 'word', attr: 'data-word', key: function (m) { return m.toLowerCase(); },
+      ask: function (word) { return word + ': what does it mean?'; } };
+    return ix.wordsAt;
+  }
+  function pattern(list) {
     list.sort(function (a, b) { return b.length - a.length; });
     var esc = list.map(function (m) { return m.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
-    ix.who = { by: by, src: esc.length ? '(^|[^A-Za-z\\u00C0-\\u024F])(' + esc.join('|') + ')(?![A-Za-z\\u00C0-\\u024F])' : null };
-    return ix.who;
+    return esc.length ? '(^|[^A-Za-z\\u00C0-\\u024F])(' + esc.join('|') + ')(?![A-Za-z\\u00C0-\\u024F])' : null;
   }
 
   var SKIP = /^(A|BUTTON|INPUT|SELECT|TEXTAREA|SCRIPT|STYLE|H1|H2|H3|H4|TIME|LABEL|OPTION)$/;
-  function annotateBlock(block, w) {
-    var test = new RegExp(w.src), nodes = [], done = {};
+  var MARKED = ['who', 'who-card', 'word'];
+  function annotateBlock(block, w, here) {
+    var test = new RegExp(w.src, w.flags), nodes = [], done = {};
+    if (here) done[here] = true;
     var walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, null);
     while (walker.nextNode()) {
       var n = walker.currentNode, ok = test.test(n.nodeValue);
       for (var e = n.parentNode; ok && e && e !== block.parentNode; e = e.parentNode) {
-        if (SKIP.test(e.tagName) || (e.classList && (e.classList.contains('who') || e.classList.contains('who-card')))) ok = false;
+        if (SKIP.test(e.tagName) || (e.classList && MARKED.some(function (c) { return e.classList.contains(c); }))) ok = false;
       }
       if (ok) nodes.push(n);
     }
     nodes.forEach(function (n) {
-      var text = n.nodeValue, re = new RegExp(w.src, 'g'), m, last = 0, frag = document.createDocumentFragment(), any = false;
+      var text = n.nodeValue, re = new RegExp(w.src, 'g' + w.flags), m, last = 0, frag = document.createDocumentFragment(), any = false;
       while ((m = re.exec(text))) {
-        var name = m[2], p = w.by[name], at = m.index + m[1].length;
-        if (!p || done[p.id]) continue;
+        var name = m[2], p = w.by[w.key(name)], at = m.index + m[1].length;
+        if (!p || done[p.id] || done[p.see]) continue;
         done[p.id] = any = true;
         frag.appendChild(document.createTextNode(text.slice(last, at)));
         var b = document.createElement('button');
-        b.type = 'button'; b.className = 'who'; b.textContent = name;
-        b.setAttribute('data-who', p.id); b.setAttribute('aria-haspopup', 'dialog');
-        b.setAttribute('aria-label', name + ': who is this?');
+        b.type = 'button'; b.className = w.cls; b.textContent = name;
+        b.setAttribute(w.attr, p.id); b.setAttribute('aria-haspopup', 'dialog');
+        b.setAttribute('aria-label', w.ask(name));
         frag.appendChild(b);
         last = at + name.length;
       }
@@ -58,14 +75,18 @@
     });
   }
 
-  /* Mark the first mention of each person in each block (a panel, a Watch entry, a timeline item). */
-  ns.annotate = function (root, ix, blockSelector) {
-    if (!root || !ns.hasPeople(ix)) return;
-    var w = forms(ix);
-    if (!w.src) return;
+  /* Mark the first mention of each person, and of each word, in each block (a panel, a Watch entry, a timeline item).
+     On a record's own page (here), its own word is not marked: the page is the longer answer. */
+  ns.annotate = function (root, ix, blockSelector, here) {
+    if (!root) return;
+    var sets = [];
+    if (ns.hasPeople(ix) && forms(ix).src) sets.push(forms(ix));
+    if (ns.hasWords(ix) && wordForms(ix).src) sets.push(wordForms(ix));
+    if (!sets.length) return;
     var blocks = blockSelector ? root.querySelectorAll(blockSelector) : [root];
-    [].forEach.call(blocks, function (b) { annotateBlock(b, w); });
+    [].forEach.call(blocks, function (b) { sets.forEach(function (w) { annotateBlock(b, w, w.cls === 'word' ? here : null); }); });
   };
+  ns.hasWords = function (ix) { return (ix.g.words || []).length > 0; };
 
   function personById(id) { return (IX.g.people || []).filter(function (p) { return p.id === id; })[0]; }
 
@@ -96,24 +117,96 @@
     c.appendChild(row);
     c.setAttribute('aria-label', 'Who is ' + p.name);
   }
+  /* A word's card: its plain meaning, the coiner's own words where the map has them, where the meaning was read,
+     and the way to the record that goes deeper. */
+  var FLAG = { primary: 'checked at the source', secondary: 'checked on a relay', unverified: 'not checked' };
+  var VIEW_NAME = { methods: 'The alignment methods, side by side', money: 'Money and evaluators', ancients: 'The ancients',
+    watch: 'The Watch', timeline: 'Timeline', ideals: 'The ideals', people: 'Who’s who', start: 'Start here' };
+  function wordById(id) { return (IX.g.words || []).filter(function (w) { return w.id === id; })[0]; }
+  function seeName(w) {
+    var n = w.see && (IX.byId[w.see] || (ns.methodById && ns.methodById(IX, w.see)));
+    return n ? (n.label || n.ref || n.name || n.title || n.id) : '';
+  }
+  function anchor(url, text, nolink) {
+    if (!url || nolink) return document.createTextNode(text);
+    var a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = text;
+    return a;
+  }
+  /* The parts a word shows wherever it is shown: on its card and on the list of words. */
+  ns.wordParts = function (ix, ui, w) {
+    var out = [];
+    var t = document.createElement('p'); t.className = 'who-line'; t.textContent = w.plain; out.push(t);
+    if (w.said) {
+      var q = document.createElement('p'); q.className = 'word-said';
+      var qq = document.createElement('q'); qq.textContent = w.said.quote;
+      q.appendChild(qq);
+      q.appendChild(document.createTextNode(' — ' + w.said.speaker + ', '));
+      q.appendChild(anchor(w.said.url, w.said.source, w.said.nolink));
+      q.appendChild(document.createTextNode(' '));
+      q.appendChild(ui && ui.badge ? ui.badge(w.said.verified, w.said.url) : document.createTextNode('(' + (FLAG[w.said.verified] || FLAG.unverified) + ')'));
+      out.push(q);
+    }
+    if (w.url) {
+      var s = document.createElement('p'); s.className = 'who-src';
+      s.appendChild(document.createTextNode('Meaning as given by '));
+      s.appendChild(anchor(w.url, w.source || 'source', w.nolink));
+      s.appendChild(document.createTextNode(' '));
+      s.appendChild(ui && ui.badge ? ui.badge(w.verified, w.url) : document.createTextNode('(' + (FLAG[w.verified] || FLAG.unverified) + ')'));
+      out.push(s);
+    }
+    return out;
+  };
+  function fillWord(c, w) {
+    while (c.firstChild) c.removeChild(c.firstChild);
+    var h = document.createElement('p'); h.className = 'who-name'; h.textContent = w.word;
+    c.appendChild(h);
+    ns.wordParts(IX, UI, w).forEach(function (x) { c.appendChild(x); });
+    var n = document.createElement('p'); n.className = 'who-src';
+    n.textContent = 'A plain note from this map. The people quoted may use the word in their own way.';
+    c.appendChild(n);
+    var row = document.createElement('p'); row.className = 'who-actions';
+    var name = seeName(w);
+    if (name) {
+      var o = document.createElement('button'); o.type = 'button'; o.className = 'linkbtn'; o.textContent = 'Read more: ' + name;
+      o.addEventListener('click', function () { c.hidden = true; NAV.goRecord(w.see); });
+      row.appendChild(o);
+    }
+    if (w.view && VIEW_NAME[w.view]) {
+      var v = document.createElement('button'); v.type = 'button'; v.className = 'linkbtn'; v.textContent = VIEW_NAME[w.view];
+      v.addEventListener('click', function () { c.hidden = true; NAV.goView(w.view); });
+      row.appendChild(v);
+    }
+    var all = document.createElement('button'); all.type = 'button'; all.className = 'linkbtn'; all.textContent = 'All the words';
+    all.addEventListener('click', function () { c.hidden = true; NAV.goWords(w.id); });
+    row.appendChild(all);
+    c.appendChild(row);
+    c.setAttribute('aria-label', 'What ' + w.word + ' means');
+  }
   function show(btn) {
-    var p = personById(btn.getAttribute('data-who')), c = card();
-    if (!p) return;
-    fill(c, p);
+    var c = card(), id;
+    if ((id = btn.getAttribute('data-word'))) {
+      var w = wordById(id);
+      if (!w) return;
+      fillWord(c, w);
+    } else {
+      var p = personById(btn.getAttribute('data-who'));
+      if (!p) return;
+      fill(c, p);
+    }
     c.hidden = false;
-    var r = btn.getBoundingClientRect(), w = Math.min(340, document.documentElement.clientWidth - 24);
-    c.style.width = w + 'px';
-    c.style.left = Math.max(12, Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - w - 12)) + 'px';
+    var r = btn.getBoundingClientRect(), wd = Math.min(340, document.documentElement.clientWidth - 24);
+    c.style.width = wd + 'px';
+    c.style.left = Math.max(12, Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - wd - 12)) + 'px';
     c.style.top = (r.bottom + window.scrollY + 6) + 'px';
     c.setAttribute('tabindex', '-1');
     c.focus({ preventScroll: true });
     card.from = btn;
   }
 
-  ns.initWho = function (ix, nav) {
-    IX = ix; NAV = nav;
+  ns.initWho = function (ix, nav, ui) {
+    IX = ix; NAV = nav; UI = ui;
     document.addEventListener('click', function (ev) {
-      var b = ev.target.closest ? ev.target.closest('.who') : null, c = card();
+      var b = ev.target.closest ? ev.target.closest('.who, .word') : null, c = card();
       if (b) { ev.preventDefault(); if (!c.hidden && card.from === b) c.hidden = true; else show(b); return; }
       if (!c.hidden && !c.contains(ev.target)) c.hidden = true;
     });
@@ -121,6 +214,39 @@
       var c = card();
       if (ev.key === 'Escape' && !c.hidden) { c.hidden = true; if (card.from) card.from.focus(); }
     });
+  };
+
+  /* Words you'll meet: every word, in one or two plain sentences, with where to read more. */
+  ns.renderWords = function (box, ix, ui, nav, focusId) {
+    while (box.firstChild) box.removeChild(box.firstChild);
+    var intro = ui.h('div', 'watch-intro');
+    ui.add(intro, ui.h('h2', null, 'Words you’ll meet'),
+      ui.h('p', null, 'Words the people on this map use that a newcomer may not know, each in one or two plain sentences, with where to read more. Tap an underlined word anywhere on the map to see the same note.'),
+      ui.h('p', 'note', 'The notes are this map’s plain wording; the people quoted may use a word in their own way. Where a note gives someone’s own definition, it is a quotation already on the map, with its source and how it was checked.'));
+    ui.add(box, intro);
+    var words = (ix.g.words || []).slice().sort(function (a, b) { return a.word.toLowerCase().replace(/^the /, '').localeCompare(b.word.toLowerCase().replace(/^the /, '')); });
+    var sec = ui.section('From A to Z (' + words.length + ')'), dl = ui.h('dl', 'glossary words');
+    words.forEach(function (w) {
+      var dt = ui.h('dt', null, w.word); dt.id = 'word-' + w.id;
+      var dd = ui.h('dd');
+      ns.wordParts(ix, ui, w).forEach(function (x) { ui.add(dd, x); });
+      var row = ui.h('p', 'word-more'), name = w.see && (ix.byId[w.see] || (ns.methodById && ns.methodById(ix, w.see)));
+      if (name) {
+        var b = ui.h('button', 'linkbtn', 'Read more: ' + (name.label || name.ref || name.name || name.id)); b.type = 'button';
+        b.addEventListener('click', function () { nav.goRecord(w.see); });
+        ui.add(row, b);
+      }
+      if (w.view && VIEW_NAME[w.view]) {
+        var v = ui.h('button', 'linkbtn', VIEW_NAME[w.view]); v.type = 'button';
+        v.addEventListener('click', function () { nav.goView(w.view); });
+        ui.add(row, v);
+      }
+      if (row.children.length) ui.add(dd, row);
+      ui.add(dl, dt, dd);
+    });
+    ui.add(box, ui.add(sec, dl));
+    var target = focusId && document.getElementById('word-' + focusId);
+    if (target) { target.setAttribute('tabindex', '-1'); target.scrollIntoView(); target.focus(); }
   };
 
   /* The whole list, grouped. */

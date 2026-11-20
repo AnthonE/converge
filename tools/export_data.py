@@ -93,6 +93,7 @@ def main():
                     'link_status': lk.get('status', ''), 'link_code': lk.get('code', '')})
     made.append(write_table(a.out, 'sources', src, first=('url',)))
     made.append(write_table(a.out, 'people', load('people'), first=('id', 'name', 'group', 'who')))
+    made.append(write_table(a.out, 'words', load('words'), first=('id', 'word', 'plain', 'see')))
     methods = load('methods')
     made.append(write_table(a.out, 'methods', [{k: v for k, v in m.items() if k not in ('key',)} for m in methods], first=('id', 'label', 'plain')))
     made.append(write_table(a.out, 'method_key', [dict({'method_id': m['id']}, **x) for m in methods for x in m.get('key') or []],
@@ -104,6 +105,7 @@ def main():
     graph['meta'] = json.load(open(os.path.join(S.DATA, 'meta.json'), encoding='utf-8'))
     graph['reread'] = S.ledger()
     graph['people'] = load('people')
+    graph['words'] = load('words')
     graph['methods'] = methods
     graph['doors'] = load('doors')
     json.dump(graph, open(os.path.join(a.out, 'graph.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)

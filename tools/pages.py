@@ -7,6 +7,7 @@ writes, under OUT:
   r/<id>/index.html   every record and every Watch claim as a plain page (no script), with its own title,
                       description, preview tags, citation markup and a link into the map
   r/index.html        every record, listed, so readers and crawlers can reach each page
+  words/index.html    every word a newcomer may not know, in plain words, with the record that goes deeper
   sitemap.xml         the pages search engines may index
   llms-full.txt       the same records as plain text, each quotation with its source and its checking flag
 
@@ -210,6 +211,46 @@ def target(ix, rid):
     if p and p.get('node') in ix.by:
         return p['node']
     return rid
+
+
+# Words you'll meet: the same matching as the viewer (any letter case, whole words), so a page lists the words a reader
+# meets on it, each with its plain note and the way to the record that goes deeper.
+VIEW_NAME = {'methods': 'The alignment methods, side by side', 'money': 'Money and evaluators', 'ancients': 'The ancients',
+             'watch': 'The Watch', 'timeline': 'Timeline', 'ideals': 'The ideals', 'people': 'Who’s who', 'start': 'Start here'}
+WORD_NOTE = 'Plain notes from this map; the people quoted may use a word in their own way.'
+TAG = re.compile(r'<[^>]+>')
+
+
+def word_matcher(ix):
+    if not hasattr(ix, 'word_re'):
+        forms = sorted(((m, w) for w in ix.g.get('words') or [] for m in (w.get('match') or [w['word']])), key=lambda t: -len(t[0]))
+        ix.word_by = {m.lower(): w for m, w in forms}
+        ix.word_re = re.compile(r'(?<![A-Za-z\u00C0-\u024F])(' + '|'.join(re.escape(m) for m, _ in forms) +
+                                r')(?![A-Za-z\u00C0-\u024F])', re.I) if forms else None
+    return ix.word_re
+
+
+def words_on(ix, rid, body):
+    """The words a page's text uses, in the order they first appear; a record's own word is left to the record."""
+    pat, out, seen = word_matcher(ix), [], set()
+    if not pat:
+        return out
+    for m in pat.finditer(html.unescape(TAG.sub(' ', body))):
+        w = ix.word_by[m.group(1).lower()]
+        if w['id'] not in seen and w.get('see') != rid:
+            seen.add(w['id'])
+            out.append(w)
+    return out
+
+
+def see_of(ix, w):
+    """The record a word goes deeper in: (title, its page id, waits for a re-read), or None."""
+    sid = w.get('see')
+    if sid in ix.by:
+        return name(ix.by[sid]), target(ix, sid), is_gated(ix, 'node', ix.by[sid])
+    if sid in ix.methods:
+        return ix.methods[sid]['label'], sid, False
+    return None
 
 
 def own_voice(ix, n):
@@ -628,6 +669,35 @@ class Writer:
         return ''.join(out), srcs
 
     # The page around it -------------------------------------------------------------------------------------
+    def word_entry(self, w, up):
+        """One word: its plain note, the coiner's own words where the map has them, where the meaning was read, and
+        the way to the record that goes deeper. up is the way from this page to the site's root."""
+        parts = [f'<p class="who-line">{E(w["plain"])}</p>']
+        q = w.get('said')
+        if q:
+            parts.append(f'<p class="word-said"><q>{E(q["quote"])}</q> — {E(q["speaker"])}, '
+                         f'{self.link(q.get("url"), q.get("source") or "source", q.get("nolink"))} {self.badge(q.get("verified"), q.get("url"))}</p>')
+        if w.get('url'):
+            parts.append(f'<p class="who-src">Meaning as given by {self.link(w["url"], w.get("source") or "source", w.get("nolink"))} '
+                         f'{self.badge(w.get("verified"), w["url"])}</p>')
+        more, see = [], see_of(self.ix, w)
+        if see:
+            rel = ' rel="nofollow"' if see[2] else ''
+            more.append(f'<a href="{up}r/{E(see[1])}/"{rel}>Read more: {E(see[0])}</a>')
+        if w.get('view') in VIEW_NAME:
+            more.append(f'<a href="{up}#{E(w["view"])}">{E(VIEW_NAME[w["view"]])}</a>')
+        if more:
+            parts.append(f'<p class="word-more">{" ".join(more)}</p>')
+        return f'<dt id="word-{E(w["id"])}">{E(w["word"])}</dt><dd>{"".join(parts)}</dd>'
+
+    def words_section(self, rid, body):
+        ws = words_on(self.ix, rid, body)
+        if not ws:
+            return ''
+        items = ''.join(self.word_entry(w, '../../') for w in ws)
+        return (f'<section class="sec" id="words"><h2 class="sec-h">Words on this page</h2><p class="note">{E(WORD_NOTE)} '
+                f'<a href="../../words/">All the words</a></p><dl class="glossary words">{items}</dl></section>\n')
+
     def page(self, rid, kind, x):
         ix = self.ix
         if kind == 'node':
@@ -691,7 +761,7 @@ class Writer:
 <p class="static-nav"><a href="../">Every record</a> <a href="../../#start">Start here</a> <a href="../../{E(hash_)}">Open it in the map</a></p></header>
 {draft}<main class="static-main">
 {gate}<article class="record">
-{body}{self.foot(rid, title, x['type'] if kind == 'node' else kind, hash_)}
+{body}{self.words_section(rid, body)}{self.foot(rid, title, x['type'] if kind == 'node' else kind, hash_)}
 </article>
 </main>
 <footer class="static-foot"><p>The Ideals Map is a record, not a verdict. Every item says who is speaking, quotes them, links the source and
@@ -816,11 +886,44 @@ def listing(ix, recs, public):
 <body>
 <div class="viz-root static-page">
 <header class="top static-top"><p class="static-brand"><a href="../">The Ideals Map</a> <span class="tag">{"draft" if public else "private prototype"}</span></p>
-<p class="static-nav"><a href="../#start">Start here</a> <a href="../heart.html">The heart</a> <a href="../llms-full.txt">All of it as text</a></p></header>
+<p class="static-nav"><a href="../#start">Start here</a> <a href="../heart.html">The heart</a>{' <a href="../words/">Words you’ll meet</a>' if ix.g.get("words") else ""} <a href="../llms-full.txt">All of it as text</a></p></header>
 <main class="static-main">
 <h1 class="rec-title">Every record</h1>
 <p class="rec-lede">{len(recs)} records, each on a plain page of its own with its sources and how they were checked. The map draws the same records and the links between them.</p>
 {chr(10).join(body)}
+</main>
+</div>
+</body>
+</html>
+'''
+
+
+def words_page(ix, public):
+    """words/: every word a newcomer may not know, each with its plain note and where to read more."""
+    w = Writer(ix, public, {})
+    words = sorted(ix.g.get('words') or [], key=lambda x: re.sub(r'^the ', '', x['word'].lower()))
+    items = ''.join(w.word_entry(x, '../') for x in words)
+    site = (ix.meta.get('site_url') or '').rstrip('/')
+    robots = '' if public else '<meta name="robots" content="noindex, nofollow">\n'
+    canon = f'<link rel="canonical" href="{E(site)}/words/">\n' if site else ''
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{robots}<title>Words you’ll meet · The Ideals Map</title>
+<meta name="description" content="Words the people on the Ideals Map use that a newcomer may not know, such as hyperstition, egregore and e/acc, each in one or two plain sentences, with where to read more.">
+{canon}<link rel="stylesheet" href="../map.css">
+</head>
+<body>
+<div class="viz-root static-page">
+<header class="top static-top"><p class="static-brand"><a href="../">The Ideals Map</a> <span class="tag">{"draft" if public else "private prototype"}</span></p>
+<p class="static-nav"><a href="../r/">Every record</a> <a href="../#start">Start here</a> <a href="../#words">Open it in the map</a></p></header>
+<main class="static-main">
+<h1 class="rec-title">Words you’ll meet</h1>
+<p class="rec-lede">{len(words)} words the people on this map use that a newcomer may not know, each in one or two plain sentences, with where to read more.</p>
+<p class="note">{E(WORD_NOTE)} Where a note gives someone’s own definition, it is a quotation already on the map, with its source and how it was checked.</p>
+<dl class="glossary words">{items}</dl>
 </main>
 </div>
 </body>
@@ -833,7 +936,7 @@ def sitemap(ix, recs, public):
     if not site or not public:
         return None
     lastmod = f'<lastmod>{E(ix.g.get("updated"))}</lastmod>' if ix.g.get('updated') else ''
-    urls = [site + '/', site + '/heart.html', site + '/r/']
+    urls = [site + '/', site + '/heart.html', site + '/r/'] + ([site + '/words/'] if ix.g.get('words') else [])
     urls += [f'{site}/r/{rid}/' for rid, kind, x in recs if not is_gated(ix, 'node' if kind == 'node' else kind, x)]
     rows = ''.join(f'<url><loc>{E(u)}</loc>{lastmod}</url>\n' for u in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{rows}</urlset>\n'
@@ -865,6 +968,19 @@ def full_text(ix, recs):
            (ix.meta.get('made_with') or ''), '',
            f'{len(held)} records (claims on the Watch, allegations and offshoots) are left out of this file until a person has '
            're-read every page they cite. The site shows them, marked as waiting for that re-read.', '']
+    words = sorted(ix.g.get('words') or [], key=lambda x: re.sub(r'^the ', '', x['word'].lower()))
+    if words:
+        out += ['# Words you’ll meet', '', WORD_NOTE, '']
+        for x in words:
+            out += [f'## {x["word"]}', x['plain']]
+            if x.get('said'):
+                out += ['In someone’s own words:', text_quote(x['said'], ix)]
+            if x.get('url'):
+                out.append(f'Meaning as given by: {x.get("source")} <{x["url"]}> ({flag_word(x.get("verified"), x["url"], ix)})')
+            see = see_of(ix, x)
+            if see and not see[2]:
+                out.append(f'Read more: {see[0]} ({site}/r/{see[1]}/)' if site else f'Read more: {see[0]} (r/{see[1]}/)')
+            out.append('')
     for key, head in GROUPS:
         rs = [r for r in recs if group_of(r[1], r[2]) == key and r not in held]
         if not rs:
@@ -939,6 +1055,10 @@ def main():
             fh.write(w.page(rid, kind, x))
     with open(os.path.join(a.out, 'r', 'index.html'), 'w', encoding='utf-8') as fh:
         fh.write(listing(ix, recs, a.public))
+    if ix.g.get('words'):
+        os.makedirs(os.path.join(a.out, 'words'), exist_ok=True)
+        with open(os.path.join(a.out, 'words', 'index.html'), 'w', encoding='utf-8') as fh:
+            fh.write(words_page(ix, a.public))
     sm = sitemap(ix, recs, a.public)
     if sm:
         with open(os.path.join(a.out, 'sitemap.xml'), 'w', encoding='utf-8') as fh:
