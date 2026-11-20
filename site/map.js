@@ -294,13 +294,18 @@
   }
   /* On a narrow screen the map is wider than the page and scrolls sideways: bring what the reader opened into view. */
   function centreOnPhone() {
-    if (stage.scrollWidth <= stage.clientWidth + 1) return;
+    var wide = stage.scrollWidth > stage.clientWidth + 1;
+    document.getElementById('drag-hint').hidden = stage.scrollWidth < stage.clientWidth + 60;
+    if (!wide) { pinMore(); return; }
     var focal = (state.selected && svg.querySelector('[data-id="' + state.selected + '"]')) ||
       svg.querySelector('.node.role-centre, .node.role-money-centre');
     var s = svg.getBoundingClientRect(), x = s.width / 2;
     if (focal) { var b = focal.getBoundingClientRect(); x = b.left - s.left + b.width / 2; }
     stage.scrollLeft = Math.max(0, x - stage.clientWidth / 2);
+    pinMore();
   }
+  /* The line under the drawing ("N more linked items are in the list below") stays in view while it is dragged. */
+  function pinMore() { document.getElementById('more').style.transform = stage.scrollLeft ? 'translateX(' + stage.scrollLeft + 'px)' : ''; }
   function paint() {
     var money = state.view === 'money', anc = state.view === 'ancients';
     var layout = money ? ns.money(ix, state.selected) : anc ? ns.ancients(ix, state.selected) : state.view === 'focus' ? ns.focus(ix, state.ideal) : ns.overview(ix);
@@ -562,6 +567,7 @@
     (g.reread || []).forEach(function (r) { ix.reread[r.url] = r; });
     svg = document.getElementById('map'); panel = document.getElementById('panel');
     tip = document.getElementById('tip'); stage = document.getElementById('stage');
+    stage.addEventListener('scroll', pinMore, { passive: true });
     document.getElementById('to-overview').addEventListener('click', function () { go(null); });
     document.getElementById('theme').addEventListener('click', function () {
       var root = document.documentElement, cur = root.getAttribute('data-theme');
@@ -596,8 +602,11 @@
     /* Said plainly while it is true: the map went out before a person had re-read its riskiest sources. */
     var s = g.sources || {}, dn = document.getElementById('draft-note'), m = g.meta || {};
     if (s.gate && s.gate_reread < s.gate) {
-      add(dn, h('span', null, 'Published early, as a draft. AI models gathered and checked these records; a person is now re-reading the sources, starting with the ' +
-        s.gate + ' pages behind the Watch and the allegations (' + s.gate_reread + ' done so far). Spot a mistake or a missing side? '));
+      add(dn, h('span', 'dn-long', 'Published early, as a draft. AI models gathered and checked these records; a person is now re-reading the sources, starting with the ' +
+        s.gate + ' pages behind the Watch and the allegations (' + s.gate_reread + ' done so far). Spot a mistake or a missing side? '),
+        /* On a phone, away from the front, the same facts in one sentence. */
+        h('span', 'dn-short', 'A draft, checked by AI models: a person has re-read ' + s.gate_reread + ' of the ' + s.gate +
+          ' pages behind the Watch and the allegations so far. '));
       if (m.contribute) add(dn, link(m.contribute, 'Tell us'), h('span', null, '.'));
       else { var tb = h('button', 'linkbtn', 'See how to send it'); tb.type = 'button'; tb.addEventListener('click', goStart); add(dn, tb); }
       dn.hidden = false;
