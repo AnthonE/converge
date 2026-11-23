@@ -465,6 +465,10 @@
    {
     "ref": "Plato, Phaedrus 274c-275b",
     "text": "The critique of writing is made inside a written dialogue, and Phaedrus himself says Socrates makes up Egyptian stories."
+   },
+   {
+    "ref": "Deuteronomy 31:19, 21 (KJV)",
+    "text": "Deuteronomy has a song written down so that it can be put “in their mouths”, where “it shall not be forgotten out of the mouths of their seed” and it “shall testify against them as a witness”: writing used to carry words into memory rather than to stand in for it."
    }
   ],
   "corpus": []
@@ -943,7 +947,7 @@
  {
   "id": "weighing-heart",
   "label": "The weighing of the heart",
-  "summary": "No one sees the heart from outside: “man looketh on the outward appearance, but the LORD looketh on the heart.” Proverbs uses the scale: a man's ways are right “in his own eyes: but the LORD pondereth the hearts”, “weigheth the spirits”. In the Egyptian hall of judgment the dead declare their innocence, and the heart is weighed separately against the feather of Ma'at, because the declaration knows it is being judged. A spell cut on a stone scarab and laid over the heart (Book of the Dead, Spell 30B) speaks to the heart itself and asks it not to stand as a witness against the dead: an attempt on the witness, not a plea to the judge. The Qur’an weighs deeds on scales: “him whose scales are heavy (with good works)”.",
+  "summary": "No one sees the heart from outside: “man looketh on the outward appearance, but the LORD looketh on the heart.” Proverbs uses the scale: a man's ways are right “in his own eyes: but the LORD pondereth the hearts”, “weigheth the spirits”. In the Egyptian hall of judgment the dead declare their innocence, and the heart is weighed separately against the feather of Ma'at, because the declaration knows it is being judged. A spell cut on a stone scarab and laid over the heart (Book of the Dead, Spell 30B) speaks to the heart itself and asks it not to stand as a witness against the dead: an attempt on the witness, not a plea to the judge. The Qur’an weighs deeds on scales: “him whose scales are heavy (with good works)”. Plato tells the problem as a reform of the court: people were once judged on the day they were to die, still living and “tried in their clothing”, souls “clad in fair bodies and ancestry and wealth” arriving with “many witnesses”, so Zeus would “put a stop to their foreknowledge of their death” and the judge too must be “naked, dead, beholding with very soul the very soul of each”. In the Garuda Purana the witnesses who “know the actions of man” include “the heart”.",
   "sources": [],
   "texts": [
    "text-1-samuel-16-7",
@@ -952,7 +956,9 @@
    "text-jeremiah-17-9-10",
    "text-proverbs-4-23",
    "text-book-of-the-dead-30b",
-   "text-quran-101-6-8"
+   "text-quran-101-6-8",
+   "text-plato-gorgias-523",
+   "text-garuda-purana-3-16"
   ],
   "counter": [
    {

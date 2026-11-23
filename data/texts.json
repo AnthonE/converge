@@ -1058,5 +1058,21 @@
   "translation": "Written in English; read on a scan of the printed symposium proceedings, Mechanisation of Thought Processes (London, 1959), pp. 511–529.",
   "url": "https://www.gwern.net/doc/ai/nn/1959-selfridge.pdf",
   "verified": "primary"
+ },
+ {
+  "id": "text-plato-gorgias-523",
+  "ref": "Plato, Gorgias 523e",
+  "quote": "Their judge also must be naked, dead, beholding with very soul the very soul of each immediately upon his death",
+  "tradition": "Greek and Roman",
+  "translation": "W. R. M. Lamb, Loeb Classical Library (first published 1925), read on Perseus.",
+  "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0178:text=Gorg.:page=523",
+  "verified": "primary"
+ },
+ {
+  "id": "text-garuda-purana-3-16",
+  "ref": "Garuda Purana III.16",
+  "quote": "The sun and moon, fire, wind, sky, earth and water, the heart. Yama, day and night, the two twilights, and Justice--know the actions of man.",
+  "tradition": "Hindu",
+  "translation": "Ernest Wood and S. V. Subrahmanyam (1911), The Sacred Books of the Hindus. Public domain."
  }
 ]
