@@ -1,5 +1,299 @@
 [
  {
+  "id": "nvidia-paid-influencers-2026-11",
+  "date": "2026-11-16",
+  "thread": "huang-talk-2026-11",
+  "title": "A nonprofit reports that more than 80 influencers on X were likely paid to promote articles favouring Nvidia and two AI-industry groups",
+  "claimed_by": "The Midas Project",
+  "standing": "A nonprofit founded in 2024 by Tyler Johnston that publishes investigations of AI companies. Its site lists no funders; SFF's 2024 round recommended $31,000 to it from Jaan Tallinn (see its record).",
+  "claim": "over 80 different influencers on X have likely been paid to endorse and link",
+  "source": "The Midas Project, “Who paid right-wing influencers to promote Nvidia chip sales to China?”, 16 Nov 2026",
+  "url": "https://themidasproject.com/articles/nvidia-urban-legend-influencer-campaigns",
+  "kind": "reported",
+  "status": "not checked",
+  "why": "It names two AI-industry groups as beneficiaries, one of them tied to a super PAC on this map, in the same weeks as the claims about funded journalism.",
+  "checks": [
+   {
+    "what": "The groups it names: “Build American AI is a dark-money group tied to pro-AI super PAC Leading the Future.” and “Innovation Council Action, a dark-money group linked to Trump AI Advisor David Sacks.” It gives the campaigns to Urban Legend, “an influencer marketing company”, and shows one influencer's “#ad #BuildAmericanAI”. These are the claimant's findings, not a check of them.",
+    "result": "supports",
+    "source": "The Midas Project, 16 Nov 2026",
+    "url": "https://themidasproject.com/articles/nvidia-urban-legend-influencer-campaigns",
+    "verified": "primary"
+   },
+   {
+    "what": "A Cybernews report on the same campaigns (“80+ influencers paid to promote Nvidia sales in China”).",
+    "result": "could not read",
+    "source": "Cybernews",
+    "url": "https://cybernews.com/news/influencer-campaign-nvidia-chip-sales-china/",
+    "verified": "unverified"
+   }
+  ],
+  "responses": [
+   {
+    "who": "Urban Legend, as reported by the Midas Project",
+    "what": "“Urban Legend declined to comment.”",
+    "source": "The Midas Project, 16 Nov 2026",
+    "url": "https://themidasproject.com/articles/nvidia-urban-legend-influencer-campaigns"
+   },
+   {
+    "who": "Build American AI, Innovation Council Action and NVIDIA, as reported by the Midas Project",
+    "what": "“did not respond to requests for comment.”",
+    "source": "The Midas Project, 16 Nov 2026",
+    "url": "https://themidasproject.com/articles/nvidia-urban-legend-influencer-campaigns"
+   }
+  ],
+  "open": [
+   "Who paid for each campaign. The article: “there doesn't appear to be a single funder that paid for all of them”, and “it's likely that the full extent of such campaigns — and who is funding them — will remain unknown”."
+  ],
+  "cautions": [
+   "The article says itself: “There's no conclusive link between Nvidia and these campaigns.” And: “Urban Legend doesn't disclose publicly who pays for a particular campaign, so it's hard to know for sure.”",
+   "“Likely” is the article's word: the payments are inferred from tracking links and disclosures on some posts.",
+   "This record was gathered and worded with AI models made by Anthropic, and Anthropic stands near both sides: NVIDIA committed in November 2025 to invest up to $10 billion in it (see NVIDIA), and Coefficient Giving and the Survival and Flourishing Fund, which fund Tarbell and others on this thread, are tied to it through people and money shown on their records. A person independent of Anthropic should re-read these sources.",
+   "People who are not public figures are named here by role only."
+  ],
+  "touches": [
+   "midas-project",
+   "nvidia",
+   "leading-the-future"
+  ]
+ },
+ {
+  "id": "huang-fake-accounts-2026-11",
+  "date": "2026-11-10",
+  "thread": "huang-talk-2026-11",
+  "title": "A nonprofit reports more than 400 apparent fake accounts that defended Jensen Huang and attacked lawmakers over chip exports",
+  "claimed_by": "The Midas Project (Tyler Johnston)",
+  "standing": "A nonprofit founded in 2024 by Tyler Johnston that publishes investigations of AI companies. Its site lists no funders; SFF's 2024 round recommended $31,000 to it from Jaan Tallinn (see its record).",
+  "claim": "In thousands of posts, a foreign influence network promoted Nvidia, attacked export controls, and defended Jensen Huang amid a spy scandal.",
+  "source": "The Midas Project, 10 Nov 2026",
+  "url": "https://themidasproject.com/articles/hundreds-of-fake-accounts-defended-jensen-huang-and-attacked-lawmakers-over-chip-exports",
+  "kind": "reported",
+  "status": "not checked",
+  "why": "It is the other direction of the thread's question: money and coordination behind voices that spoke for Huang and for Nvidia.",
+  "checks": [
+   {
+    "what": "The article's own figures (its body, published under the same byline on the project's Model Republic site): “a network of over 400 apparent sockpuppet accounts” and “over 4,000 posts about chips and AI” since November 2025. These are the claimant's figures, not a check of them.",
+    "result": "supports",
+    "source": "The Midas Project, Model Republic, 10 Nov 2026",
+    "url": "https://modelrepublic.org/articles/nvidia-koios-campaign-sockpuppet-accounts",
+    "verified": "primary"
+   },
+   {
+    "what": "The Washington Post (12 Nov), as quoted by Slashdot: “at least 400 of them were fake, according to research from the nonprofit Midas Project”, and “at least 260 of them have been deactivated or suspended by X.” The figure is given to Midas. The Post's own page could not be read.",
+    "result": "partly supports",
+    "source": "Slashdot, 14 Nov 2026, quoting The Washington Post",
+    "url": "https://tech.slashdot.org/story/26/11/14/0529218/",
+    "verified": "secondary"
+   }
+  ],
+  "responses": [
+   {
+    "who": "NVIDIA, as quoted by the Midas Project",
+    "what": "“We have no relationship with those firms and have not asked any other party to engage them on our behalf.” The company says it is “attempting to identify the source, which has so far been unsuccessful.”",
+    "source": "The Midas Project, 10 Nov 2026",
+    "url": "https://modelrepublic.org/articles/nvidia-koios-campaign-sockpuppet-accounts"
+   },
+   {
+    "who": "Koios, the company a Haaretz report tied to the accounts, as quoted by the Midas Project",
+    "what": "It “has no connection to this matter”, and it says it ceased operations in September 2025. Its liquidator “claimed that no company assets were sold or transferred”. IntellACT, which the article says appears to carry on its business, did not respond.",
+    "source": "The Midas Project, 10 Nov 2026",
+    "url": "https://modelrepublic.org/articles/nvidia-koios-campaign-sockpuppet-accounts"
+   }
+  ],
+  "open": [
+   "Who paid. The article: “Who is ultimately behind this campaign, we don't know.”",
+   "The Haaretz report the article relies on for Koios was not read for this record.",
+   "Whether X's suspensions were for this network, and on what grounds.",
+   "The Washington Post article could not be read; its own wording is known here only through a relay."
+  ],
+  "cautions": [
+   "“Apparent” is the article's word: the accounts are judged fake from their patterns, not from an admission.",
+   "The tie to Koios is through a Haaretz report and a successor business, which Koios denies.",
+   "The Model Republic copy's page data gives 17 Nov 2026; its byline and the project's listing give 10 Nov 2026.",
+   "This record was gathered and worded with AI models made by Anthropic, and Anthropic stands near both sides: NVIDIA committed in November 2025 to invest up to $10 billion in it (see NVIDIA), and Coefficient Giving and the Survival and Flourishing Fund, which fund Tarbell and others on this thread, are tied to it through people and money shown on their records. A person independent of Anthropic should re-read these sources.",
+   "People who are not public figures are named here by role only."
+  ],
+  "touches": [
+   "midas-project",
+   "nvidia"
+  ]
+ },
+ {
+  "id": "huang-coverage-coordinated-2026-11",
+  "date": "2026-11",
+  "thread": "huang-talk-2026-11",
+  "title": "Posts on X call the coverage of Jensen Huang a coordinated campaign, citing a chatbot's table of reporters' ties to an AI-journalism nonprofit",
+  "claimed_by": "An X user (a private person, not named here), posting a screenshot of a ChatGPT answer",
+  "standing": "A reader of the coverage, not a party to it. The table was written by an AI chatbot in answer to a prompt that asked for “the recent hit pieces on Jensen Huang” and their links “to the EA movement”.",
+  "claim": "Holy shit man, this is an insanely coordinated campaign. This is way worse than what I expected to learn",
+  "source": "post on X, read on a screenshot given to this project",
+  "kind": "claimed",
+  "status": "partly checked",
+  "why": "It joins a funding record that can be checked at its source (the Tarbell Center's donors, fellows and grants) to an inference of coordination, and the step between the two can be read.",
+  "checks": [
+   {
+    "what": "The table's donor lines (Coefficient Giving, Survival and Flourishing Fund and Longview Philanthropy at $1M+; EA Infrastructure Fund and Future of Life Institute at $100K–$1M). Tarbell's own supporters list, “grouped by lifetime giving”, shows the same names in the same bands.",
+    "result": "supports",
+    "source": "Tarbell Center for AI Journalism, About",
+    "url": "https://www.tarbellcenter.org/about",
+    "verified": "primary"
+   },
+   {
+    "what": "The table's $10 million program and its two grants. Tarbell's release of 5 Oct 2026: “The first two grantees under this program are NPR’s Power and Influence team and Machine Gods.” It gives Machine Gods “a grant of $480,000”; its grants page gives NPR's team “a grant of $250,000”.",
+    "result": "supports",
+    "source": "Tarbell Center for AI Journalism, blog, 5 Oct 2026",
+    "url": "https://www.tarbellcenter.org/blog/tarbell-launches-10-million-institutional-grants-program-to-expand-ai-journalism",
+    "verified": "primary"
+   },
+   {
+    "what": "The table's “His publication is operated by Tarbell”, of Transformer. Tarbell: “Tarbell is the publisher of Transformer, a publication covering the power and politics of transformative AI.” The same page: “Transformer retains full editorial independence from Tarbell”.",
+    "result": "supports",
+    "source": "Tarbell Center for AI Journalism, About",
+    "url": "https://www.tarbellcenter.org/about",
+    "verified": "primary"
+   },
+   {
+    "what": "The table's origin line: “Tarbell originated as a project of Training for Good. Its organizers advertised it on the EA Forum in 2022 and subsequently described their objective as placing people into journalism and policy careers that reduce risks from advanced AI.” The 2022 post lists the “Tarbell Fellowship (journalism)” for journalists covering topics “such as global poverty, animal welfare, and existential risks”, and says Training for Good “runs fellowships that place talented professionals in impactful careers in policy, journalism & other areas.” The AI-risk wording comes in the 2023 post: “Journalism as a career path is neglected by those interested in reducing risks from advanced AI.” The table's one sentence joins the two.",
+    "result": "partly supports",
+    "source": "Training for Good, EA Forum, 15 Nov 2022 and 28 Sep 2023 (read on the forum's own bot-facing address)",
+    "url": "https://forum.effectivealtruism.org/posts/22zk3tZyYWoanQwt7/training-for-good-update-and-plans-for-2023",
+    "verified": "primary"
+   },
+   {
+    "what": "Coordination: any page, among those the table cites and those read for this record, saying that coverage of Huang was coordinated, assigned or directed by Tarbell or its donors. None was found. Tarbell's fellowship page: “The specific assignments Tarbell Fellows pursue are up to our partner newsrooms and their editors.” Semafor (4 Oct 2026): “Semafor has not found instances where Tarbell interfered directly in any stories”.",
+    "result": "not found",
+    "source": "Tarbell Center for AI Journalism, Fellowship; Semafor, 4 Oct 2026",
+    "url": "https://www.tarbellcenter.org/fellowship",
+    "verified": "primary"
+   }
+  ],
+  "responses": [
+   {
+    "who": "Tarbell (Cillian Crosson, executive director), to Semafor, December 2025, before this claim",
+    "what": "“We maintain a strict firewall between our funding and our fellows' editorial output.”",
+    "source": "Semafor, 7 Dec 2025",
+    "url": "https://www.semafor.com/article/12/07/2025/ai-critics-funded-ai-coverage-at-top-newsrooms"
+   },
+   {
+    "who": "Coefficient Giving (Naina Bajekal, director of communications), to Semafor, December 2025",
+    "what": "“We have no involvement in coverage decisions”.",
+    "source": "Semafor, 7 Dec 2025",
+    "url": "https://www.semafor.com/article/12/07/2025/ai-critics-funded-ai-coverage-at-top-newsrooms"
+   },
+   {
+    "who": "Kevin Roose, co-host of Machine Gods, to Semafor, October 2026",
+    "what": "“Their funding has been very useful in helping us get started,” and “It was a way for us to de-risk going out on our own.” Semafor adds, in its own words, that Tarbell “did not interfere or insert itself into any editorial content”.",
+    "source": "Semafor, 4 Oct 2026",
+    "url": "https://semafor.com/article/10/04/2026/ai-nonprofit-will-spend-10-million-on-journalism"
+   },
+   {
+    "who": "The outlets and reporters named in the table",
+    "what": "No response to this claim was found by 23 Nov 2026."
+   }
+  ],
+  "open": [
+   "Whether each tie the table gives for each reporter holds. They were not checked one by one here, and the reporters are not named on this map.",
+   "What share of the coverage of Huang was written by reporters with any such tie. The table lists only reporters with ties, in answer to a prompt that asked for them.",
+   "Whether the articles on Huang by Tarbell fellows carry the disclosure Tarbell's rules require (“Fellows and grantees are required to disclose Tarbell's support for their work.”).",
+   "The table's line that Machine Gods “has since devoted multiple episodes to the Nvidia scandal” was not checked.",
+   "The screenshot of the answer is cut off at its section on the New York Times, which says it investigated those reporters; what it found is not shown."
+  ],
+  "cautions": [
+   "The table is an AI chatbot's answer, read on screenshots. A chatbot's answer is a relay, not a source: the lines above were checked on the pages behind it.",
+   "The table shows funding ties: fellowships, grants and a publication that Tarbell publishes. “Coordinated” is the poster's word. The table itself does not use it, and it says that “Tarbell expressly states that its donors cannot exercise editorial control.”",
+   "The screenshot shared on X shows four rows of the table. It does not show the prompt, Tarbell's statement on editorial control or the section on the New York Times.",
+   "Tarbell's ties to effective altruism were reported before the coverage of Huang: by the Washington Examiner (Nov 2025), Semafor (Dec 2025) and Fox News (Aug 2026). See How it travelled.",
+   "Claims in the other direction, about fake accounts and paid influencers who spoke for Huang and for Nvidia, are on the same thread.",
+   "This record was gathered and worded with AI models made by Anthropic, and Anthropic stands near both sides: NVIDIA committed in November 2025 to invest up to $10 billion in it (see NVIDIA), and Coefficient Giving and the Survival and Flourishing Fund, which fund Tarbell and others on this thread, are tied to it through people and money shown on their records. A person independent of Anthropic should re-read these sources.",
+   "The keeper of this map has drafted, not sent, funding applications to Coefficient Giving and the Survival and Flourishing Fund (see the disclosure).",
+   "People who are not public figures are named here by role only."
+  ],
+  "touches": [
+   "tarbell",
+   "coefficient-giving",
+   "sff",
+   "fli",
+   "nvidia"
+  ],
+  "travelled": [
+   {
+    "date": "2025-11-14",
+    "who": "Washington Examiner (Robert Schmad)",
+    "said": "A network of tech donors skeptical of artificial intelligence is paying to insert reporters in major newsrooms",
+    "source": "Washington Examiner, “Tech donors fund media fellowship shaping coverage of their pet issue”, 14 Nov 2025",
+    "url": "https://www.washingtonexaminer.com/?p=3884823",
+    "verified": "primary",
+    "cites": "Tarbell's About page, and “a Washington Examiner review”"
+   },
+   {
+    "date": "2025-12-07",
+    "who": "Semafor (Max Tani)",
+    "said": "OpenAI reacted with frustration — not with the reporting, but with who paid for it.",
+    "source": "Semafor, “AI critics funded AI coverage at top newsrooms”, 7 Dec 2025",
+    "url": "https://www.semafor.com/article/12/07/2025/ai-critics-funded-ai-coverage-at-top-newsrooms",
+    "verified": "primary",
+    "cites": "OpenAI's objection to an NBC News story; responses from Tarbell and Coefficient Giving",
+    "changed": "The funding point is given to OpenAI, the subject of a story. Adds Tarbell's and Coefficient Giving's statements that they have no part in coverage."
+   },
+   {
+    "date": "2026-08-04",
+    "who": "Fox News (Leo Briceno)",
+    "said": "Top media outlets fail to disclose who is bankrolling their AI reporters",
+    "source": "Fox News, 4 Aug 2026",
+    "url": "https://www.foxnews.com/politics/top-media-outlets-fail-disclose-bankrolling-ai-reporters",
+    "verified": "primary",
+    "cites": "Tarbell's site and “the organization's public grants' database”",
+    "changed": "From who pays to whether the outlets disclose it. Adds a figure: Coefficient Giving “has awarded more than $4.7 million to Tarbell”."
+   },
+   {
+    "date": "2026-10-04",
+    "who": "Semafor (Max Tani)",
+    "said": "Semafor has not found instances where Tarbell interfered directly in any stories",
+    "source": "Semafor, “AI nonprofit will spend $10 million on journalism”, 4 Oct 2026",
+    "url": "https://semafor.com/article/10/04/2026/ai-nonprofit-will-spend-10-million-on-journalism",
+    "verified": "primary",
+    "cites": "Tarbell; Kevin Roose",
+    "changed": "Reports the $10 million program and its first grants, and Semafor's own finding of no direct interference."
+   },
+   {
+    "date": "2026-11",
+    "who": "Toby Rogers, a commentator, on X",
+    "said": "The @NYTimes' coordinated assault on Jensen Huang is astonishing. Three to five hit pieces a day. Front page. Thinly sourced. Every day for two weeks.",
+    "source": "his post on X, read on a screenshot given to this project",
+    "verified": "secondary",
+    "cites": "none shown",
+    "changed": "A different claim, about the New York Times, with “coordinated” and “hit pieces”. It names no funder."
+   },
+   {
+    "date": "2026-11",
+    "who": "An anonymous account on X, quoting the post before",
+    "said": "asking my agent swarm to do oppo research on every journalist at the NYT, examining their sex lives, interviewing their ex girlfriends, investigating their marriages, their personal debts, their financial connections to Anthropic and EA causes.",
+    "source": "a post on X, read on a screenshot given to this project; not linked",
+    "verified": "secondary",
+    "cites": "the post before",
+    "changed": "From the coverage to the reporters themselves: their private lives, and ties “to Anthropic and EA causes”. The only step that names Anthropic."
+   },
+   {
+    "date": "2026-11",
+    "who": "ChatGPT, answering a user's prompt",
+    "said": "There are substantive, documented connections to the effective altruism movement among several journalists covering Huang.",
+    "source": "a ChatGPT answer, read on a screenshot given to this project",
+    "verified": "secondary",
+    "cites": "Tarbell's site, the EA Forum and others, shown beside each row",
+    "changed": "Joins the funding record to the reporters on Huang, one row per reporter. The prompt called the coverage “hit pieces”; the answer keeps Tarbell's statement on editorial control. The order of this step and the two before it is not known."
+   },
+   {
+    "date": "2026-11",
+    "who": "An X user (a private person, not named here)",
+    "said": "Holy shit man, this is an insanely coordinated campaign. This is way worse than what I expected to learn",
+    "source": "a post on X, read on a screenshot given to this project; not linked",
+    "verified": "secondary",
+    "cites": "a screenshot of four rows of the table",
+    "changed": "Adds “coordinated campaign”, which the table does not claim. Drops the prompt, Tarbell's statement on editorial control and the section on the New York Times."
+   }
+  ]
+ },
+ {
   "id": "red-means-no-2026-11",
   "date": "2026-11-16",
   "title": "An outlet reports that an Anthropic employee manages a consensual-non-consent party business, and that women in AI feel pressured to attend",

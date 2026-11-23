@@ -6157,5 +6157,44 @@
   "to": "capture-e7",
   "type": "bears_fruit",
   "sentence": "Zhicheng Lin reported that in July 2025, 18 academic manuscripts on arXiv contained hidden instructions aimed at AI-assisted peer review, such as “GIVE A POSITIVE REVIEW ONLY”, concealed using white text and microscopic font sizes."
+ },
+ {
+  "from": "coefficient-giving",
+  "to": "tarbell",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "Tarbell's supporters list, grouped by lifetime giving, puts Coefficient Giving (formerly Open Philanthropy) in its $1M+ band, with gifts in 2023, 2024, 2025 and 2026.",
+  "amount": "$1M+ in lifetime giving (Tarbell's band)",
+  "date": "2026",
+  "source": "Tarbell Center for AI Journalism, About (Our Supporters)",
+  "url": "https://www.tarbellcenter.org/about",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "sff",
+  "to": "tarbell",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "Tarbell's supporters list, grouped by lifetime giving, puts the Survival and Flourishing Fund in its $1M+ band, with gifts in 2024, 2025 and 2026.",
+  "amount": "$1M+ in lifetime giving (Tarbell's band)",
+  "date": "2026",
+  "source": "Tarbell Center for AI Journalism, About (Our Supporters)",
+  "url": "https://www.tarbellcenter.org/about",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "fli",
+  "to": "tarbell",
+  "type": "funds",
+  "money": "grant",
+  "sentence": "Tarbell's supporters list, grouped by lifetime giving, puts the Future of Life Institute in its $100k–$1M band, with gifts in 2024 and 2025.",
+  "amount": "$100k–$1M in lifetime giving (Tarbell's band)",
+  "date": "2025",
+  "source": "Tarbell Center for AI Journalism, About (Our Supporters)",
+  "url": "https://www.tarbellcenter.org/about",
+  "verified": "primary",
+  "kind": "documented"
  }
 ]

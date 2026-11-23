@@ -551,5 +551,53 @@
   "label": "Perplexity",
   "kind": "company",
   "note": "An AI search company. Here for a contribution to Leading the Future on file with the FEC."
+ },
+ {
+  "id": "tarbell",
+  "label": "Tarbell Center for AI Journalism",
+  "kind": "nonprofit",
+  "note": "Pays fellows placed as AI reporters in newsrooms and gives grants to outlets. Its supporters list, grouped by lifetime giving: $1M+, Coefficient Giving (formerly Open Philanthropy; 2023–2026), Longview Philanthropy (2026) and the Survival and Flourishing Fund (2024–2026); $100k–$1M, among others the EA Infrastructure Fund (2023), Founders Pledge GCR Fund (2025), the Future of Life Institute (2024, 2025) and Ought (2026); smaller gifts below that. It is the publisher of Transformer, which it calls its “in-house, editorially-independent publication”. Fellows are “placed as reporters at a newsroom covering artificial intelligence for nine months”, at salaries of $75,000 to $120,000; its rules say “Fellows and grantees are required to disclose Tarbell's support for their work.” On 5 October 2026 it announced a $10M Institutional Grants program, naming as first grantees NPR’s Power and Influence team ($250,000) and Machine Gods, “a new video-first show from Casey Newton and Kevin Roose” ($480,000). History: Training for Good listed the “Tarbell Fellowship (journalism)” on the EA Forum in November 2022; Tarbell says it was a fiscally sponsored project of Players Philanthropy Fund until mid-2025 and is now an independent 501(c)(3), incorporated in Delaware in 2025. Fox News (4 Aug 2026) reported that Coefficient Giving “has awarded more than $4.7 million to Tarbell, according to the organization's public grants' database”; that database could not be read for this record.",
+  "words": [
+   {
+    "speaker": "Tarbell Center for AI Journalism",
+    "quote": "Our donors have no editorial control over the work of Tarbell, our fellows, or our grantees.",
+    "source": "Tarbell Center for AI Journalism, About",
+    "url": "https://www.tarbellcenter.org/about",
+    "date": "2026-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Tarbell Center for AI Journalism",
+    "quote": "fear that uncontrollable human-level AI could result in human extinction or disempowerment.",
+    "source": "Tarbell Center for AI Journalism, Mission statement (of experts it names, among them Geoffrey Hinton)",
+    "url": "https://www.tarbellcenter.org/mission-statement",
+    "date": "2026-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Training for Good (Cillian Crosson), announcing the Tarbell Fellowship 2024",
+    "quote": "Journalism as a career path is neglected by those interested in reducing risks from advanced AI.",
+    "source": "EA Forum, 28 Sep 2023",
+    "url": "https://forum.effectivealtruism.org/posts/7awJW2GPafcE4HYNf/tarbell-fellowship-2024-applications-open-ai-journalism",
+    "date": "2023-09-28",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Tarbell Center for AI Journalism",
+    "quote": "Tarbell aims to distribute at least $10M in funding by the end of 2027 to support ambitious journalism on AI.",
+    "source": "Tarbell Center for AI Journalism, Institutional grants",
+    "url": "https://www.tarbellcenter.org/institutional-grants",
+    "date": "2026-10",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Tarbell Center for AI Journalism",
+    "quote": "Grantees will need to disclose Tarbell funding and the specific wording and format must be approved by Tarbell in advance.",
+    "source": "Tarbell Center for AI Journalism, Institutional grants (FAQ)",
+    "url": "https://www.tarbellcenter.org/institutional-grants",
+    "date": "2026-10",
+    "verified": "primary"
+   }
+  ]
  }
 ]

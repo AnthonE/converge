@@ -28,6 +28,10 @@
   "outages-2026-11": {
    "title": "The outages of mid-November 2026",
    "note": "Reports of outages at a brokerage and on the NSA's classified network, and remarks on the outages by the President and a senator. They are on the Watch because they circulated on the same day as the AI claims beside them. The FAA and Microsoft said they saw no sign of malicious activity behind the earlier troubles, and Chase said its problems were not the result of a cyberattack (as reported by AP, 15 November 2026). No record found links the outages to each other or to AI, and their place here implies no link."
+  },
+  "huang-talk-2026-11": {
+   "title": "Who shaped what was said about Jensen Huang, November 2026",
+   "note": "Claims about money and coordination behind what was said about Nvidia's chief executive after, as the SF Standard reported on 9 November 2026, he “admitted Sunday that he became entangled with a woman who U.S. intelligence agencies say was feeding information to the Chinese government.” Claims from both directions are here: that the critical coverage was coordinated by people funded from the AI-safety side, and that fake accounts and paid influencers spoke for him and for Nvidia. Their place together implies no link between them, and none is a finding about the reporting on him or about him."
   }
  },
  "site_url": "https://converge-olive-theta.vercel.app",
