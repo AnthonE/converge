@@ -52,7 +52,7 @@ attributed. An unchecked claim is not false, and a claim on the Watch is not a f
 
 The records were gathered and worded with AI models made by Anthropic, which is itself on the map. Say so wherever
 Anthropic or its models are a party, and do not soften results about them. The disclosure line in `data/meta.json`
-states the operator's own ties as the operator gave them (2026-11-18: applications drafted, none sent). Change it
+states the operator's own ties as the operator gave them (2026-11-23: no funding from and no application pending with any body on the map; earlier drafts were never sent and the operator stopped). Change it
 only on the operator's word, and keep it current when anything is sent or comes of it.
 
 ## Published early
