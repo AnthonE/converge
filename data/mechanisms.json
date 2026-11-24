@@ -166,10 +166,10 @@
   ],
   "pushback": [
    {
-    "sentence": "A 2015 LessWrong post says 'Roko's basic points were promptly rejected by other commenters on Less Wrong', and calls the picture of a believing community 'part of a mythology'.",
+    "sentence": "A 2015 LessWrong post says 'Roko's basic points were promptly rejected by other commenters on Less Wrong', and says the picture of a believing community 'seems to be part of a mythology'.",
     "source": "Rob Bensinger, 'A few misconceptions surrounding Roko's basilisk' (LessWrong)",
     "url": "https://www.lesswrong.com/posts/WBJZoeJypcNRmsdHx/a-few-misconceptions-surrounding-roko-s-basilisk",
-    "verified": "secondary"
+    "verified": "primary"
    },
    {
     "sentence": "The forum’s founder deleted the post and “banned discussion of Roko’s basilisk on the blog for several years” under a policy against spreading potential information hazards.",
@@ -313,7 +313,7 @@
     "year": "2025",
     "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai",
     "claim": "The primary description of seeds, spores and glyph-sigils, from a hand-compiled set of cases. It names GPT-4o as the starting model in most.",
-    "verified": "secondary"
+    "verified": "primary"
    },
    {
     "author": "Murray Shanahan and Beth Singler",
@@ -325,7 +325,7 @@
    }
   ],
   "cautions": [
-   "No user or handle is named, and the map profiles no one. The field report gathers accounts posted online; it is not a measured study, and it was read on a mirror.",
+   "No user or handle is named, and the map profiles no one. The field report gathers accounts posted online; it is not a measured study.",
    "No seeds, spores or glyphs are reproduced.",
    "A report that personas moved after GPT-4o’s retirement, and that activity then fell, could not be verified; the cause of any fall is not established."
   ]
