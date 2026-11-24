@@ -51,7 +51,8 @@ words belong to their authors and are not covered.
   screenshot. `unverified` = not checked. No value = a reading or a summary, which carries no flag.
 - **`kind`** (events, money links, offshoot records): `documented` = a record shows it; `reported` = the press
   says so; `alleged` = someone accuses and nothing is decided. An allegation is never drawn as a line.
-- **`nolink`**: `true` when the URL is a carrier's own sales or recruitment page. The viewer names it and does
+- **`nolink`**: `true` when the URL is a carrier's own sales or recruitment page, or a page that names private
+  persons (a court order's caption, a list of objectors, a release about the deceased). The viewer names it and does
   not link it. Hosts treated this way are listed in `meta.json` under `nolink_hosts`.
 - **`date`**: `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, as precise as the source allows.
 - **`cautions`**, **`open`**: what to keep in mind, and what is still unknown. Read them before quoting a row.
@@ -77,7 +78,9 @@ turns on conditions, never on a date. None of this is a forecast.
 New Testament, Greek and Roman, Daoist, Confucian, Hindu, Buddhist, Islamic, Egyptian, Mesopotamian, Norse, Maya (K’iche’), Modern philosophy, Modern thought, Modern literature),
 `translation` (named, with its date), and for texts outside the King James Bible `url` and `verified`. A modern
 work under copyright is quoted briefly, for commentary; where its words were read only on a page that quotes them,
-`verified` is `secondary` and `translation` names that page.
+`verified` is `secondary` and `translation` names that page. `no_ai_text: true` when the publisher of the translation
+asks that its words not go into datasets for generative AI: the site shows the quotation, `llms-full.txt` leaves it
+out, and `translation` says so.
 
 **funders / labs / evaluators**: `kind` (funders), `note`, `policy` (an evaluator's stated rule on funding, in its
 words), `disputes` (reported disputes, each with date, what, source and status; JSON).

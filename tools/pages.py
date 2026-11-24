@@ -1038,7 +1038,10 @@ def full_text(ix, recs):
                 if p:
                     out.append(p.get('who') or '')
                 lede = x.get(LEDE.get(x['type'], '')) or x.get('note') or ''
-                if x['type'] == 'text':
+                if x['type'] == 'text' and x.get('no_ai_text'):
+                    out.append(f'{x.get("ref", "")} ({x.get("tradition") or "Hebrew Bible"}; {x.get("translation") or "King James Version"}) '
+                               'The quotation is on the page only.')
+                elif x['type'] == 'text':
                     out.append(f'“{x.get("quote")}” {x.get("ref", "")} ({x.get("tradition") or "Hebrew Bible"}; {x.get("translation") or "King James Version"})')
                 elif x['type'] == 'fruit':
                     at = '' if x.get('nolink') or not x.get('url') else f' <{x["url"]}>'

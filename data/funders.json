@@ -532,7 +532,7 @@
   "id": "dario-amodei",
   "label": "Dario Amodei",
   "kind": "person",
-  "note": "Chief executive of Anthropic. Here for a personal political contribution on file with the FEC."
+  "note": "Chief executive of Anthropic. Here for a personal political contribution on file with the FEC and for his own essays on the AI race and on abundance. This map is made with Anthropic's models, and Anthropic is a party here."
  },
  {
   "id": "ron-conway",
@@ -551,5 +551,59 @@
   "label": "Perplexity",
   "kind": "company",
   "note": "An AI search company. Here for a contribution to Leading the Future on file with the FEC."
+ },
+ {
+  "id": "navigation-fund",
+  "label": "The Navigation Fund",
+  "kind": "foundation",
+  "note": "Daily Nous reported in July 2024 that it gave $5 million of the $6 million that made NYU's Center for Mind, Ethics, and Policy permanent. The Digital Minds Newsletter names it, with Longview Philanthropy and Macroscopic Ventures, among the funders that launched the Digital Sentience Consortium in 2025."
+ },
+ {
+  "id": "polaris-ventures",
+  "label": "Polaris Ventures",
+  "kind": "fund",
+  "note": "Daily Nous reported in July 2024 that it gave $1 million toward the endowment of NYU's Center for Mind, Ethics, and Policy. Whether Polaris Ventures is the former name of Macroscopic Ventures is not confirmed on Macroscopic's own pages."
+ },
+ {
+  "id": "macroscopic-ventures",
+  "label": "Macroscopic Ventures",
+  "kind": "nonprofit",
+  "note": "A Swiss nonprofit in Basel. Its focus-areas page names the NYU Center for Mind, Ethics, and Policy and Eleos AI among its grantees in AI welfare, without amounts; its grants list also names NYU's Center for Mind, Brain, and Consciousness, the Consortium for Digital Sentience Research and Applied Work, PRISM and Rethink Priorities. Its grants page says “This year, we plan to give up to $100m in total” across all its focus areas, and lists Anthropic first under “Impact Investments”, saying it invested as part of Anthropic's Series A and Series B. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "id": "longview",
+  "label": "Longview Philanthropy",
+  "kind": "nonprofit",
+  "note": "The Digital Minds Newsletter reports that it launched the Digital Sentience Consortium with Macroscopic Ventures and The Navigation Fund in 2025, and a second round of “digital minds” fellowships and project grants with a deadline of 10 July 2026. The newsletter gives no amounts or grantees."
+ },
+ {
+  "id": "effective-ventures",
+  "label": "Effective Ventures",
+  "kind": "nonprofit",
+  "note": "The 2023 report Consciousness in Artificial Intelligence says that workshops for it, run by Robert Long and Patrick Butlin, were supported by Effective Ventures and the EA Long-Term Future Fund. No amount is given."
+ },
+ {
+  "id": "berggruen-institute",
+  "label": "Berggruen Institute",
+  "kind": "nonprofit",
+  "note": "Runs the Berggruen Prize Essay Competition. On 14 January 2026 it announced the winners of its 2025 competition, among them Anil Seth, with a $50,000 award for “The Mythology Of Conscious AI”."
+ },
+ {
+  "id": "alphabet",
+  "label": "Alphabet",
+  "kind": "company",
+  "note": "Google's parent company. It took part in Isomorphic Labs' $2.1 billion Series B (May 2026), by the company's release."
+ },
+ {
+  "id": "situational-awareness-lp",
+  "label": "Situational Awareness LP",
+  "kind": "fund",
+  "note": "Leopold Aschenbrenner's investment firm focused on AGI. His About page (undated; the essay series is dated June 2024) says he founded it with anchor investments from Patrick Collison, John Collison, Nat Friedman and Daniel Gross; no amounts are stated. TechCrunch, citing The Wall Street Journal, reported on 30 July 2026 that it had sold most of its public stock portfolio and kept its private holdings, the largest a stake in Anthropic. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "id": "san-francisco-foundation",
+  "label": "San Francisco Foundation",
+  "kind": "foundation",
+  "note": "The San Francisco Foundation holds a donor-advised fund to which Anthropic committed $50 million, Bay City News reports (12 November 2026); the foundation announced the fund's first grants, $500,000 split among four San Francisco and Marin nonprofits. TechCrunch says the money did not come from Anthropic's Public Benefit Fund. Which organisations will receive grants beyond the first four is not known. This map is made with Anthropic's models, and Anthropic is a party here."
  }
 ]

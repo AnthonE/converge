@@ -161,7 +161,7 @@
   /* Draw one layout into the svg. handlers: {node(n), edge(e), tip(text, evt), untip()} */
   ns.draw = function (svg, layout, ix, state, handlers) {
     while (svg.firstChild) svg.removeChild(svg.firstChild);
-    svg.setAttribute('viewBox', '0 0 ' + ns.size.w + ' ' + ns.size.h);
+    svg.setAttribute('viewBox', '0 0 ' + ns.size.w + ' ' + (layout.h || ns.size.h));
     var edgeLayer = el('g', { 'class': 'edges' }, svg);
     var nodeLayer = el('g', { 'class': 'nodes' }, svg);
 
