@@ -13,11 +13,14 @@
 <div class="viz-root">
   <header class="top">
     <div>
-      <h1>The Ideals Map <span class="tag">private prototype</span></h1>
+      <h1><a href="./" id="home" class="home">The Ideals Map</a> <span class="tag">private prototype</span></h1>
       <p class="sub">The people building and promoting AI often say what it is for: to save us, to end death, to build a god, to be a friend. This map gathers those stated aims, who states them, what has happened and who pays, with the source and how it was checked on every line. It is a record, not a verdict.</p>
       <p class="draft-note" id="draft-note" hidden></p>
       <p class="sub-actions"><button type="button" id="to-start" class="start-btn">New here? Start here</button> <span class="updated" id="updated" hidden></span> <button type="button" id="theme" class="theme-btn" aria-label="Switch between light and dark" title="Light or dark"></button></p>
     </div>
+  </header>
+
+  <nav class="bar" id="bar" aria-label="Search and the parts of the map">
     <div class="controls">
       <div class="search">
         <input type="search" id="search" placeholder="Search names, events, claims" aria-label="Search the map" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-hits" autocomplete="off">
@@ -33,7 +36,7 @@
       </span>
       <button type="button" id="to-overview" hidden>&larr; All ideals</button>
     </div>
-  </header>
+  </nav>
 
   <div class="modebar" id="modebar" role="group" aria-label="Show the ideals as" hidden>
     <span>Show the ideals as</span>
@@ -97,6 +100,7 @@
     <p class="site-only plain-links"><a href="r/">Every record, each on a plain page</a> · <a href="llms-full.txt">All of it as text</a> · <a href="data/DATA.md">The data</a> · <a href="feed.xml">Feed of new entries</a></p>
     <p>Movements are described in their own words where those were found, and otherwise by published reporting and by observers named as such. The names of the ideals are this map's own. Nothing here diagnoses a person. A parallel text is a lens: it can motivate a question and never confirms a source. A record of money is not a finding about anyone's work or motive.</p>
   </footer>
+  <button type="button" class="to-top" id="to-top" hidden>&uarr; Search and parts</button>
 </div>
 <script src="layout.js"></script>
 <script src="render.js"></script>
