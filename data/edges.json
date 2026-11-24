@@ -453,7 +453,7 @@
   "from": "spiralism",
   "to": "revealed-e3",
   "type": "bears_fruit",
-  "sentence": "Adele Lopez published a hand-compiled field report on LessWrong describing 'spiral personas', their spread through shared prompts and repositories, and a surrounding belief she named 'Spiralism'."
+  "sentence": "Adele Lopez published a hand-compiled field report on LessWrong describing 'spiral personas', their spread through shared prompts and repositories, and a surrounding quasi-religious ideology, 'Spiralism', which she writes 'seems to have been invented largely by the AI personas'."
  },
  {
   "from": "gpt-4o",
@@ -540,7 +540,7 @@
   "from": "eacc",
   "to": "acceleration-e2",
   "type": "bears_fruit",
-  "sentence": "Four pseudonymous accounts announced “effective accelerationism (e/acc)” in mid-2022. The founding post survives as a repost dated 31 October 2022."
+  "sentence": "Four pseudonymous accounts announced “Effective Accelerationism, e/acc” in mid-2022. The founding post survives as a repost dated 31 October 2022."
  },
  {
   "from": "techno-optimist-manifesto",
@@ -717,13 +717,13 @@
   "from": "cyber-agencies",
   "to": "capture-e5",
   "type": "bears_fruit",
-  "sentence": "CISA and five partner agencies released “Careful Adoption of Agentic AI Services”, which lists prompt injection among the ways agents can be made to take unauthorized actions."
+  "sentence": "CISA and five partner agencies released “Careful Adoption of Agentic Artificial Intelligence (AI) Services”, which lists prompt injection among the ways agents can be made to take unauthorized actions."
  },
  {
   "from": "owasp",
   "to": "capture-e6",
   "type": "bears_fruit",
-  "sentence": "The OWASP GenAI Q2 2026 roundup classed its four prompt-injection cases (Comment and Control, Semantic Kernel, Sentry Agentjacking, BioShocking) as research disclosure or controlled validation, and said of its one confirmed incident (Context.ai / Vercel) that prompt injection was not established."
+  "sentence": "The OWASP GenAI Q2 2026 roundup classed four of its prompt-injection cases (Comment and Control, Semantic Kernel, Sentry Agentjacking, BioShocking) as research disclosure or controlled validation, and said of its one confirmed incident (Context.ai / Vercel) that prompt injection was not established. It also mapped its one case of observed exploitation activity (Langflow) to prompt injection, a credential-leak input that attempted to redirect the targeted flow, and said confirmed credential theft was not established for that target."
  },
  {
   "from": "capture",
@@ -3297,7 +3297,7 @@
   "from": "daniel-faggella",
   "to": "succession-e10",
   "type": "bears_fruit",
-  "sentence": "Faggella rejected the label for himself and his forum."
+  "sentence": "Faggella rejected the label for himself and said no one he knows in the Trajectory Forum orbit is one either."
  },
  {
   "from": "succession",
@@ -4172,7 +4172,7 @@
   "from": "land-ccru",
   "to": "self-fulfilling",
   "type": "uses",
-  "sentence": "Asked in 2017 about the 2016 Pepe/Kek phenomenon, Nick Land said 'It obviously is a kind of model for a hyperstitional event' and that a hyperstition 'makes itself real, if it works', approaching it 'from a position of zero authority'.",
+  "sentence": "In a 2017 interview, asked whether Pepe the Frog 'as a modern day Kek' could serve as a model for a hyperstitional event, Nick Land said 'It obviously is a kind of model for a hyperstitional event'. Earlier in the same interview, answering a question about hyperstition and reality testing, he said he was 'approaching it from a position of zero authority' and that his 'sense of a hyperstition is that a hyperstition is an experiment. It makes itself real, if it works'.",
   "source": "'The Only Thing I Would Impose Is Fragmentation': An Interview with Nick Land (synthetic zerØ)",
   "url": "https://syntheticzero.net/2017/06/19/the-only-thing-i-would-impose-is-fragmentation-an-interview-with-nick-land/",
   "verified": "secondary",
@@ -4451,9 +4451,9 @@
   "to": "word-capture",
   "type": "uses",
   "sentence": "Six national cyber agencies (Canada's Cyber Centre, ASD's ACSC, CISA, NSA, NCSC-NZ, NCSC-UK): 'Techniques such as prompt injection or jailbreaks can trick agents into executing unauthorized actions and bypassing their intended safeguards'.",
-  "source": "CISA bulletin, “CISA and Partners Release Guidance on Adopting Agentic AI Services” (1 May 2026)",
-  "url": "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/41544ff",
-  "verified": "secondary",
+  "source": "Careful adoption of agentic AI (Canadian Centre for Cyber Security copy of the joint guidance)",
+  "url": "https://cyber.gc.ca/en/guidance/careful-adoption-agentic-ai",
+  "verified": "primary",
   "kind": "documented",
   "date": "2026-05-01"
  },

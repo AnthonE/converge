@@ -436,7 +436,7 @@
     "source": "Reddit comment, r/Futurology thread \"Roko's Basilisk\", as quoted in full on LessWrong's wiki page \"Roko's Basilisk\"",
     "url": "https://www.lesswrong.com/w/rokos-basilisk",
     "date": "2014",
-    "verified": "primary"
+    "verified": "secondary"
    },
    {
     "speaker": "Rob Bensinger",
@@ -908,7 +908,7 @@
     "source": "'AI Jesus' avatar tests man's faith in machines and the divine (AP, Jamey Keaten)",
     "url": "https://www.nbcsandiego.com/news/national-international/ai-jesus-avatar-tests-mans-faith-in-machines-and-the-divine/3687879/",
     "date": "2024-11-28",
-    "verified": "primary"
+    "verified": "secondary"
    },
    {
     "speaker": "Tensho Goto, priest, Kodaiji temple",
@@ -916,7 +916,7 @@
     "source": "Playing god: Japan temple puts faith in robot priest (AFP)",
     "url": "https://techxplore.com/news/2019-08-god-japan-temple-faith-robot.html",
     "date": "2019-08-14",
-    "verified": "primary"
+    "verified": "secondary"
    },
    {
     "speaker": "Vikas Sahu, founder of a GitaGPT platform",
@@ -1198,7 +1198,7 @@
     "source": "Jeff Wilser, \"The Truth Terminal: AI-Crypto's Weird Future\", CoinDesk",
     "url": "https://www.coindesk.com/tech/2024/12/10/the-truth-terminal-ai-crypto-s-weird-future",
     "date": "2024-12-10",
-    "verified": "primary"
+    "verified": "secondary"
    },
    {
     "speaker": "Andy Ayrey",
@@ -1766,7 +1766,7 @@
      {
       "text": "The main carrier accepts the name its critics use (a check on the 'we').",
       "status": "not_met",
-      "evidence": "Faggella wrote on 11 August 2026: “I’m no ‘AI successionist’,” and said the same of his forum.",
+      "evidence": "Faggella wrote on 11 August 2026: “I’m no ‘AI successionist,’” and said no one he knows in the Trajectory Forum orbit is one either.",
       "url": "https://danfaggella.com/successionism/",
       "nolink": true,
       "context": true
@@ -1904,7 +1904,7 @@
      {
       "text": "Makers state the offer in their own published words.",
       "status": "met",
-      "evidence": "Kuyda, a founder of Replika (9 Feb 2026): ‘think of it as a therapist, friend and partner all in one’; and ‘only a small number of people use Replika for romantic relationships’. Replika’s homepage says the companion will ‘pick up every time’ (quotation above).",
+      "evidence": "Kuyda, a founder of Replika (9 Feb 2026): ‘think of it as a therapist, friend and partner all in one’; and ‘As far as we know, only a small number of people use Replika for romantic relationships’. Replika’s homepage says the companion will ‘pick up every time’ (quotation above).",
       "url": "https://mindsitenews.org/2026/02/09/replikas-eugenia-kuyda-doesnt-believe-in-regulation/"
      }
     ]
