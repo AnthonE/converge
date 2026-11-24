@@ -1517,5 +1517,67 @@
   "translation": "King James Version (1611). Public domain. The page prints LORD in small capitals.",
   "url": "https://www.biblegateway.com/passage/?search=Numbers%2022%3A28&version=KJV",
   "verified": "primary"
+ },
+ {
+  "id": "text-herodotus-1-46",
+  "ref": "Herodotus, Histories 1.46 (Croesus tests the oracles)",
+  "quote": "His intent in sending was to test the knowledge of the oracles",
+  "tradition": "Greek and Roman",
+  "translation": "A. D. Godley, Loeb Classical Library (1920), read on Perseus.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=46",
+  "verified": "primary"
+ },
+ {
+  "id": "text-herodotus-1-47",
+  "ref": "Herodotus, Histories 1.47",
+  "quote": "on the hundredth day inquire of the oracles what Croesus, king of Lydia, son of Alyattes, was doing then",
+  "tradition": "Greek and Roman",
+  "translation": "A. D. Godley, Loeb Classical Library (1920), read on Perseus.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=47",
+  "verified": "primary"
+ },
+ {
+  "id": "text-daniel-2-9",
+  "ref": "Daniel 2:9",
+  "quote": "tell me the dream, and I shall know that ye can shew me the interpretation thereof.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-1-samuel-6-9",
+  "ref": "1 Samuel 6:9",
+  "quote": "but if not, then we shall know that it is not his hand that smote us; it was a chance that happened to us.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-deuteronomy-18-22",
+  "ref": "Deuteronomy 18:22",
+  "quote": "if the thing follow not, nor come to pass, that is the thing which the LORD hath not spoken",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-1-kings-22-22",
+  "ref": "1 Kings 22:22",
+  "quote": "I will go forth, and I will be a lying spirit in the mouth of all his prophets.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-gilgamesh-12-enkidu",
+  "ref": "Epic of Gilgamesh, Twelfth Tablet (Enkidu’s spirit comes up)",
+  "quote": "the spirit of Enkidu issued Forth from the earth like a wind.",
+  "tradition": "Mesopotamian",
+  "translation": "R. Campbell Thompson (1928). Public domain.",
+  "url": "https://archive.org/details/thompson-1928-gilgamesh",
+  "verified": "primary"
+ },
+ {
+  "id": "text-isaiah-29-4",
+  "ref": "Isaiah 29:4",
+  "quote": "thy voice shall be, as of one that hath a familiar spirit, out of the ground",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
  }
 ]

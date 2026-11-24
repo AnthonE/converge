@@ -9256,5 +9256,21 @@
   "type": "bears_fruit",
   "to": "no-one-inside-e87",
   "sentence": "His own remarks, to CNBC at the AfroTech conference in Houston, as Slashdot excerpts the report."
+ },
+ {
+  "from": "oracle",
+  "to": "oracle-test",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the tested oracle beside it: before acting on an answer, Croesus asked several oracles at once for something “which no conjecture could discover”, and Daniel's king kept his dream back. A machine that answers can be asked the same kind of question: one whose answer was settled beforehand and kept from it.",
+  "limit": "Croesus' test is a story told generations later, and the oracle that passed it gave the answer that ruined him (Herodotus 1.53). A passed test shows what a voice could do that day. The texts' own last check is where the voice leads over time (Deuteronomy 13:1–3)."
+ },
+ {
+  "from": "authority-transfer",
+  "to": "oracle-test",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the four hundred prophets beside it: they all say “Go up”, and the visiting king still asks, “Is there not here a prophet of the LORD besides”. Many voices with one source behind them are one witness, and the same holds for many replies drawn from one model.",
+  "limit": "The story gives the shared source as a spirit sent to deceive one king. That replies from one model, or from models built alike, do not count as independent is this project's analogy; nothing on the map measures it."
  }
 ]
