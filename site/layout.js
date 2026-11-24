@@ -94,7 +94,9 @@
   /* Overview: every ideal on one ellipse, in data order, with ideal-to-ideal links. */
   ns.overview = function (ix) {
     var ideals = ix.g.ideals, n = ideals.length, pos = {}, nodes = [], edges = [];
-    var cx = W / 2, cy = H / 2 - 12, rx = 560, ry = 292;
+    /* Past thirteen ideals the drawing grows taller, so the stacked names at the sides keep apart. */
+    var extra = Math.max(0, n - 13) * 30, h = H + extra;
+    var cx = W / 2, cy = h / 2 - 12, rx = extra ? 590 : 560, ry = 292 + extra / 2;
     /* Equal spacing along the ellipse, not equal angles, so the sides do not crowd. */
     var steps = 720, cum = [0], pts = [];
     for (var k = 0; k <= steps; k++) {
@@ -114,7 +116,7 @@
         edges.push({ edge: e, a: pos[e.from], b: pos[e.to], bend: { x: cx, y: cy } });
       }
     });
-    return { nodes: nodes, edges: edges };
+    return { nodes: nodes, edges: edges, h: h };
   };
 
   /* Members of an ideal's neighbourhood: the ideal, everything one link away, and the

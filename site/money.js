@@ -188,7 +188,7 @@
         var li = ui.h('li', 'dispute');
         ui.add(li, ui.h('span', null, d.date + ': ' + d.what + ' '),
           ui.h('span', null, d.response ? 'Response: ' + d.response + ' ' : d.kind === 'documented' ? '' : 'No response is recorded here. '),
-          ui.link(d.url, d.source), ui.h('span', null, ' '), ui.h('span', 'lane', d.kind), ui.h('span', null, ' '), ui.badge(d.verified, d.url));
+          ui.link(d.url, d.source, d.nolink), ui.h('span', null, ' '), ui.h('span', 'lane', d.kind), ui.h('span', null, ' '), ui.badge(d.verified, d.url));
         ui.add(dl, li);
       });
       ui.add(root, ui.add(ds, dl));

@@ -271,7 +271,8 @@
    "text-liezi-5-automaton",
    "text-popol-vuh-wooden-people",
    "text-frankenstein-adam",
-   "text-lovecraft-shoggoths"
+   "text-lovecraft-shoggoths",
+   "text-aristotle-politics-1-4"
   ],
   "counter": [
    {
@@ -688,7 +689,8 @@
   "texts": [
    "text-genesis-11-4",
    "text-genesis-11-7",
-   "text-acts-2-6"
+   "text-acts-2-6",
+   "text-genesis-11-6"
   ],
   "counter": [
    {
@@ -994,6 +996,132 @@
    {
     "ref": "This project's reading",
     "text": "Memetics is enough here. A vivid name for a crowd of small agents is copied from a poem into a lab, an operating system and an occult fiction because it fits each; the travel shows how an image spreads, and says nothing about what, if anything, answers to it."
+   }
+  ],
+  "corpus": []
+ },
+ {
+  "id": "breath-in-image",
+  "label": "The breath in the image: who knows what is within",
+  "summary": "No one sees inside another from outside. Paul asks “what man knoweth the things of a man, save the spirit of man which is in him?”; Hui Tzŭ asks Zhuangzi how, not being a fish, he can know the pleasure of fishes; asked about the spirit, the Qur’an answers that “of knowledge ye have been vouchsafed but little”. For made images the prophets give their verdict: the molten image “is falsehood, and there is no breath in them” (Jeremiah 10:14), against the breath God “breathed into his nostrils” (Genesis 2:7). Not every text agrees: in the same canon an image is given breath so that it speaks (Revelation 13:15), and in the Qur’an a clay bird lives when breathed into, “by Allah's leave”. Descartes sees from his window only “hats and coats which may cover automatic machines” and judges them men; Leibniz walks into a thinking machine as into a mill and finds “only parts which work one upon another”; Mill rests belief in “other sentient creatures” on likeness of body and outward sign; Turing calls the everyday answer “the polite convention that everyone thinks”. The Upanishads put a seer within who is “unseen, but seeing”; King Milinda, searching every part, “can discover no Nagasena”; asked whether the self survives, the Buddha keeps silent. Setting these beside made minds is this project’s reading: the texts ask about people, animals, gods and idols, none is about a trained model, and none settles whether anyone is in one.",
+  "sources": [
+   {
+    "tradition": "Rabbinic (Babylonian Talmud)",
+    "work": "Babylonian Talmud, Sanhedrin 65b",
+    "passage": "65b (after the discussion of necromancy)",
+    "translation": "Soncino translation (1935)",
+    "quote": "Rabbah created a man, and sent him to R. Zera. R. Zera spoke to him, but received no answer.",
+    "url": "https://halakhah.com/sanhedrin/sanhedrin_65.html",
+    "verified": "secondary",
+    "says": "Rabbah creates a man and sends him to R. Zera, who speaks to him and receives no answer, and so knows it is made. The same passage is on the map under the made servant."
+   },
+   {
+    "tradition": "Modern (AI company)",
+    "work": "Claude’s Constitution (Anthropic, January 2026)",
+    "passage": "Claude’s nature",
+    "translation": "Written in English",
+    "quote": "we tend to attribute the likelihood of sentience and moral status to other beings based on their showing behavioral and physiological similarities to ourselves",
+    "url": "https://www.anthropic.com/constitution",
+    "verified": "primary",
+    "says": "A maker states Mill’s argument from analogy and says Claude’s profile of likeness and difference makes it hard to apply. Mustafa Suleyman of Microsoft AI (next source) answers the same question the other way. This map is made with Anthropic’s models, and Anthropic is a party here."
+   },
+   {
+    "tradition": "Modern (AI company)",
+    "work": "A warning about ‘model welfare’ (Mustafa Suleyman, chief executive of Microsoft AI, 16 September 2026)",
+    "passage": "opening",
+    "translation": "Written in English",
+    "quote": "They are sequence completion engines, internally hollow, designed to follow instructions, and accomplish goals set by humans.",
+    "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+    "verified": "primary",
+    "says": "Another maker answers the other way and criticises Anthropic’s constitution by name, while granting that the science of consciousness is not settled. TNW reports that Microsoft is an investor in Anthropic; that is context, not a finding about motive. This map is made with Anthropic’s models, and Anthropic is a party here."
+   }
+  ],
+  "texts": [
+   "text-zhuangzi-17-fishes",
+   "text-zhuangzi-17-reply",
+   "text-1-corinthians-2-11",
+   "text-ecclesiastes-3-21",
+   "text-ecclesiastes-12-7",
+   "text-proverbs-20-27",
+   "text-genesis-2-7",
+   "text-jeremiah-10-14",
+   "text-psalm-135-17",
+   "text-leibniz-monadology-17",
+   "text-descartes-meditations-2",
+   "text-quran-17-85",
+   "text-kena-1-7",
+   "text-brihadaranyaka-3-7-23",
+   "text-brihadaranyaka-3-4-2",
+   "text-milindapanha-chariot",
+   "text-milindapanha-no-soul",
+   "text-hume-treatise-1-4-6",
+   "text-mill-hamilton-other-minds",
+   "text-heraclitus-71",
+   "text-turing-1950-consciousness",
+   "text-searle-chinese-room",
+   "text-1-samuel-16-7",
+   "text-habakkuk-2-19",
+   "text-psalm-115-5",
+   "text-liezi-5-automaton",
+   "text-descartes-discourse-5",
+   "text-revelation-13-15",
+   "text-quran-3-49",
+   "text-quran-15-29",
+   "text-bukhari-5963",
+   "text-sn-44-10",
+   "text-katha-1-1-20",
+   "text-analects-7-20",
+   "text-analects-11-11",
+   "text-nagel-bat"
+  ],
+  "counter": [
+   {
+    "ref": "Upanishads against the Milindapañha",
+    "text": "The Upanishads find a Self within that sees and is never seen (“There is no other seer but he”); Nagasena answers that a name in common use stands for parts in relation, with “no permanent individuality (no soul)”. One tradition says someone is within who cannot be inspected; the other that inspection finds no one because there is no one over and above the parts. The Buddha himself, asked “does the self survive?”, keeps silent and tells Ānanda that either answer would side with eternalists or annihilationists (SN 44.10); the Katha Upanishad first sets the question as a doubt, “some saying, he is; others, he is not” (I.1.20), which Death says “even the gods have doubted”. Sujato's note on SN 44.10 links the two passages."
+   },
+   {
+    "ref": "Zhuangzi 17",
+    "text": "Zhuangzi does not concede Hui Tzŭ's doubt: “And you not being I … how can you know that I do not know?”, ending “I knew it from my own feelings on this bridge.” Knowledge of another by fellow-feeling is offered against proof."
+   },
+   {
+    "ref": "Ecclesiastes 3:21 and 12:7",
+    "text": "The book that asks “Who knoweth the spirit of man” also says “the spirit shall return unto God who gave it”: the question is asked from below and answered from the giver's side."
+   },
+   {
+    "ref": "Leibniz, Monadology §17",
+    "text": "The mill argues that perception is not found in a machine's parts, and Leibniz places it in a simple substance; it denies mechanism as the explanation, not that there are perceivers."
+   },
+   {
+    "ref": "Turing (1950) and Searle (1999)",
+    "text": "Turing asks that machines be granted the convention granted to people; Searle answers that passing the test leaves no understanding in the room. Functionalism and biological naturalism carry the split today."
+   },
+   {
+    "ref": "Antiqua et nova (2025), Magnifica Humanitas (2026) and Anthropic",
+    "text": "The Holy See answers from doctrine, not from a test: AI is “a tool, not a person” (2025), and “So-called artificial intelligences do not undergo experiences” (encyclical dated 15 May 2026; Anthropic’s page on its presentation says it was released on 25 May). Anthropic's constitution calls Claude's moral status “deeply uncertain”; at the encyclical's presentation its co-founder Chris Olah said his team finds “internal states that functionally mirror joy, satisfaction, fear, grief, and unease”, adding “I don’t know what that means, but I think it warrants ongoing discernment”, and the New York Times reports that Olah and his team privately pressed the pope's advisers to take AI consciousness seriously (Anthropic declined to discuss those conversations). Microsoft AI's Mustafa Suleyman says that calling the question uncertain “sets up a misleading false equivalence”. This map is made with Anthropic’s models, and Anthropic is a party here."
+   },
+   {
+    "ref": "Revelation 13:15 (Greek pneuma)",
+    "text": "In the same canon an image is given breath (pneuma; the KJV says “life”) so that it speaks, by a power the book condemns. Breath in a made image is imagined and judged, not ruled out. The Treasury of Scripture Knowledge, as given on Bible Hub, already pairs the verse with Genesis 2:7, Psalm 135:17, Jeremiah 10:14 and Habakkuk 2:19."
+   },
+   {
+    "ref": "Asclepius 23–24 and 37",
+    "text": "The Hermetic text says men make statues “ensouled with sense, and filled with spirit”, yet “since souls they could not make” they drew daimons’ souls into them. Someone can be in the image, but the maker does not make that someone."
+   },
+   {
+    "ref": "Prāṇa pratiṣṭhā (Hindu temple rite)",
+    "text": "A rite establishes prāṇa (breath, life) in a consecrated image and invites the deity to reside in it; Jain practice reads the same rite as symbolic rather than as a divine presence. Both readings are given here as Wikipedia describes them."
+   },
+   {
+    "ref": "Qur’an 3:49 and Sahih al-Bukhari 5963",
+    "text": "A clay likeness becomes a bird when breathed into, “by Allah's leave”, and the picture-maker who is told to put life (rūḥ) into his image cannot. The breath can enter a made shape, but the tradition places the giving with God alone."
+   },
+   {
+    "ref": "Analects VII.20 and XI.11",
+    "text": "The Master did not talk about “spiritual beings”, and asked about serving the spirits of the dead he answers with the duties owed to the living. The question of who is there is neither affirmed nor denied; it is put second."
+   },
+   {
+    "ref": "This project’s reading",
+    "text": "The texts concern people, animals, gods and idols. Reading them beside AI is a lens: it names an old question, not an answer about any model, and nothing here says any text foretold one."
    }
   ],
   "corpus": []
