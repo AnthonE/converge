@@ -29,7 +29,7 @@ Then open http://localhost:8000. Or open `dist/ideals-map.html`, a single file w
 have heard of (`front_names` in `data/meta.json`; the check refuses a name that is not on the map). Each opens its
 record **at a glance**: their own words from anywhere on the map, money in and out (one line each: when, from or to
 whom, how much, never added up), what has happened and claims on the Watch, a few lines of each before the full
-record. The plain page `r/<id>/` carries the same glance. Below comes **where the 13 ideals put the made mind**: four
+record. The plain page `r/<id>/` carries the same glance. Below comes **where the ideals put the made mind**: four
 families drawn around "us" (above us, beside us, beneath us, after us; `families` in `data/meta.json`, each with a
 question and an old line, labelled this project's reading). Each ideal names its family in `family` in
 `data/ideals.json`: one, or two when its own words sit on the line between (its card goes under the first and says

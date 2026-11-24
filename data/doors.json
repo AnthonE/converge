@@ -6,7 +6,7 @@
   "stops": [
    {
     "view": "ideals",
-    "title": "The thirteen ideals",
+    "title": "The seventeen ideals",
     "why": "The aims people state for AI, from “a made mind will save us” to “a made companion can be there for you”."
    },
    {
@@ -18,6 +18,38 @@
     "view": "timeline",
     "title": "What happened, in order",
     "why": "Every dated event and claim, newest first."
+   }
+  ]
+ },
+ {
+  "id": "anyone-in-there",
+  "label": "Is anyone in there? AI and consciousness",
+  "lede": "Two opposed answers to whether a made mind could be someone, the people and money on each side, what has happened so far, and what older texts said about images that seem alive.",
+  "stops": [
+   {
+    "record": "someone-inside",
+    "why": "That a made mind may be someone whose welfare matters, in its holders’ own words."
+   },
+   {
+    "record": "no-one-inside",
+    "why": "That AI should be a tool and never seem to be a person, in its holders’ own words."
+   },
+   {
+    "record": "anthropic-model-welfare",
+    "why": "One AI company’s welfare programme for its own models, with its critics. This map is made with Anthropic’s models, and Anthropic is a party here."
+   },
+   {
+    "record": "mustafa-suleyman",
+    "why": "The head of Microsoft AI, who named “Seemingly Conscious AI” and argues against model welfare."
+   },
+   {
+    "record": "breath-in-image",
+    "why": "This project’s reading: older texts on whether anyone can know what is within another, and on images with breath or without it. A reading, not a finding."
+   },
+   {
+    "view": "words",
+    "title": "Words you’ll meet",
+    "why": "Qualia, sentience, the hard problem and the rest, each in a sentence."
    }
   ]
  },

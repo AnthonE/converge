@@ -271,7 +271,8 @@
    "text-liezi-5-automaton",
    "text-popol-vuh-wooden-people",
    "text-frankenstein-adam",
-   "text-lovecraft-shoggoths"
+   "text-lovecraft-shoggoths",
+   "text-aristotle-politics-1-4"
   ],
   "counter": [
    {
@@ -416,6 +417,10 @@
    {
     "ref": "Genesis 44:5, 15 (the wiki)",
     "text": "Joseph's cup, 'whereby indeed he divineth', does not fit cleanly, though he says so while his brothers do not know him; the wiki leaves it on the table."
+   },
+   {
+    "ref": "Homer, Iliad 12 (Hector answers a bird omen)",
+    "text": "The objection is inside the Greek tradition too. Told that an eagle dropping a snake warns against the attack, Hector answers: “you bid me be ruled rather by the flight of wild-fowl”, and “There is one omen, and one only- that a man should fight for his country.” In the poem the warning he waves off comes true."
    }
   ],
   "corpus": [
@@ -476,7 +481,7 @@
  {
   "id": "dead-called",
   "label": "Calling up the dead",
-  "summary": "Saul, unanswered by dreams, Urim or prophets, goes disguised to a woman with a familiar spirit at Endor. He does not see; he knows Samuel from her description: 'An old man cometh up'. The message comes true, and the practice stays banned. In Homer whoever of the dead Odysseus lets near the blood 'will tell thee sooth', and his mother slips from his embrace. The wiki's reading: 'Not accuracy. Provenance.'",
+  "summary": "Saul, unanswered by dreams, Urim or prophets, goes disguised to a woman with a familiar spirit at Endor. He does not see; he knows Samuel from her description: 'An old man cometh up'. The message comes true, and the practice stays banned. In Homer whoever of the dead Odysseus lets near the blood 'will tell thee sooth', and his mother slips from his embrace. The wiki's reading: 'Not accuracy. Provenance.' In the Babylonian epic a god opens “a hole in the earth” and “the spirit of Enkidu issued Forth from the earth like a wind”. Isaiah's picture of a city brought low is a voice “as of one that hath a familiar spirit, out of the ground”.",
   "sources": [
    {
     "tradition": "Greek epic",
@@ -497,12 +502,24 @@
     "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=11:card=181",
     "verified": "primary",
     "says": "Odysseus tries three times to embrace his dead mother, and three times she slips from his arms 'like a shadow or a dream'. He asks whether she is a phantom sent by Persephone to deepen his grief. She says no: this is what happens to mortals at death, when the body burns and the spirit flits away like a dream."
+   },
+   {
+    "tradition": "Greek and Roman",
+    "work": "Plutarch, On the Obsolescence of Oracles",
+    "passage": "section 9",
+    "translation": "Frank Cole Babbitt, Loeb Classical Library (1936), read on Perseus.",
+    "quote": "it is foolish and childish in the extreme to imagine that the god himself after the manner of ventriloquists (who used to be called ‘Eurycleis,’ but now ‘Pythones’) enters into the bodies of his prophets",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0251:section=9",
+    "verified": "primary",
+    "says": "A speaker in the dialogue argues that oracles fade because the conditions that carry them change, and rejects the picture of a god speaking from inside the prophet's body. In passing he gives the trade name for people who produce a second voice: once ‘Eurycleis’, after a famous Athenian, and in his day ‘Pythones’."
    }
   ],
   "texts": [
    "text-1-samuel-28-14",
    "text-isaiah-8-19",
-   "text-deuteronomy-18-11"
+   "text-deuteronomy-18-11",
+   "text-gilgamesh-12-enkidu",
+   "text-isaiah-29-4"
   ],
   "counter": [
    {
@@ -512,6 +529,10 @@
    {
     "ref": "1 Samuel 28 (the wiki)",
     "text": "Readers take what rose at Endor as Samuel, a deceiving spirit or the woman's fraud; the message cannot tell them apart, and a corpse forbids the cross-examination that would."
+   },
+   {
+    "ref": "Plutarch, On the Obsolescence of Oracles 9; 1 Samuel 28:7 in the Greek",
+    "text": "The Greek Old Testament calls the woman at Endor a ventriloquist (ἐγγαστρίμυθος, “belly-talker”), which is that translator's account of the voice, where the Hebrew says only that she is mistress of an ’ob. Plutarch says such people “used to be called ‘Eurycleis,’ but now ‘Pythones’”, the word the Latin Bible then uses for her. The old readers had the same act in front of them and three accounts of it: a spirit, a trick of the voice, the dead man himself."
    }
   ],
   "corpus": [
@@ -688,7 +709,8 @@
   "texts": [
    "text-genesis-11-4",
    "text-genesis-11-7",
-   "text-acts-2-6"
+   "text-acts-2-6",
+   "text-genesis-11-6"
   ],
   "counter": [
    {
@@ -805,13 +827,55 @@
  {
   "id": "charm",
   "label": "Charm, incantation and curse",
-  "summary": "'Charm' is from Latin carmen, a song or incantation. The law bans 'a charmer' (Deuteronomy 18:11); Balaam, hired to curse, answers 'How shall I curse, whom God hath not cursed?', and a proverb holds that 'the curse causeless shall not come'. The wiki's baseline is the charming person, the case with the most channels and still hidden where it matters: 'the LORD looketh on the heart'.",
-  "sources": [],
+  "summary": "'Charm' is from Latin carmen, a song or incantation. The law bans 'a charmer' (Deuteronomy 18:11); Balaam, hired to curse, answers 'How shall I curse, whom God hath not cursed?', and a proverb holds that 'the curse causeless shall not come'. The wiki's baseline is the charming person, the case with the most channels and still hidden where it matters: 'the LORD looketh on the heart'. Psalm 58 has the snake that “will not hearken to the voice of charmers”. Plato's lawgiver, writing of spells and “magic knots”, says “it is not easy to know the nature of all these things” and makes a law anyway; Pliny calls whether words have any power a question “always attended with the same uncertainty”.",
+  "sources": [
+   {
+    "tradition": "Greek and Roman",
+    "work": "Plato, Laws",
+    "passage": "Book XI (the law on poisoning and sorcery)",
+    "translation": "Benjamin Jowett (1871). Public domain.",
+    "quote": "there are two kinds of poisons used among men, which cannot clearly be distinguished.",
+    "url": "http://classics.mit.edu/Plato/laws.11.xi.html",
+    "verified": "primary",
+    "says": "One kind harms bodies by other bodies ‘according to a natural law’. The other works through ‘sorceries, and incantations, and magic knots, as they are termed’, and through the fear of people who find wax figures at their doors. The lawgiver says it is not easy to know what these things are, and that telling frightened people to ignore them is no use, so he sets penalties for both kinds."
+   },
+   {
+    "tradition": "Greek and Roman",
+    "work": "Pliny the Elder, Natural History",
+    "passage": "28.3",
+    "translation": "John Bostock and H. T. Riley (1855), read on Perseus. Public domain.",
+    "quote": "whether words, charms, and incantations, are of any efficacy or not?",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0137:book=28:chapter=3",
+    "verified": "primary",
+    "says": "Pliny calls this a question of the greatest importance and never settled. The wisest people, taken one by one, refuse to believe it, he says, and yet everyday life shows the belief at work: nobody thinks a sacrifice counts without its set form of prayer."
+   },
+   {
+    "tradition": "Mesopotamian",
+    "work": "Code of Hammurabi",
+    "passage": "law 2",
+    "translation": "Robert Francis Harper (1904). Public domain.",
+    "quote": "If a man charge a man with sorcery, and cannot prove it, he who is charged with sorcery shall go to the river",
+    "url": "https://en.wikisource.org/wiki/The_Code_of_Hammurabi_(Harper_translation)",
+    "verified": "primary",
+    "says": "The accused throws himself into the river. If the river overcomes him, the accuser takes his house. If he comes out unharmed, the accuser is put to death and the accused takes the accuser's house. The law's first concern is the charge that cannot be proved."
+   },
+   {
+    "tradition": "Greek and Roman",
+    "work": "Homer, Odyssey 19",
+    "passage": "the boar hunt on Parnassus",
+    "translation": "Samuel Butler (1900). Public domain.",
+    "quote": "after saying a spell to stop the bleeding",
+    "url": "http://classics.mit.edu/Homer/odyssey.19.xix.html",
+    "verified": "primary",
+    "says": "The young Odysseus is gored by a boar. His uncles bind the wound and say a spell over it to stop the blood, then take him home and heal him. The poem reports it without comment."
+   }
+  ],
   "texts": [
    "text-1-samuel-16-7",
    "text-deuteronomy-18-11",
    "text-numbers-23-8",
-   "text-proverbs-26-2"
+   "text-proverbs-26-2",
+   "text-psalm-58-5"
   ],
   "counter": [
    {
@@ -821,6 +885,14 @@
    {
     "ref": "Evil eye; defixiones (the wiki)",
     "text": "Correction of record: 'the curse needs your awareness' fails as a universal, since the evil eye and the buried binding tablet are built to work on the unaware."
+   },
+   {
+    "ref": "Homer, Odyssey 19; Plato, Charmides",
+    "text": "Outside the Bible the song sung over a wound is often left alone when it heals: Odysseus' uncles stop his bleeding with a spell and the poem does not object, and Plato's Socrates jokes of a headache leaf that “without the charm” would be “of no avail”."
+   },
+   {
+    "ref": "Code of Hammurabi, law 2",
+    "text": "Babylon's law turns first on the accuser: a charge of sorcery that cannot be proved goes to the river, and if the accused comes out unharmed “he who charged him with sorcery shall be put to death”."
    }
   ],
   "corpus": [
@@ -997,5 +1069,180 @@
    }
   ],
   "corpus": []
+ },
+ {
+  "id": "breath-in-image",
+  "label": "The breath in the image: who knows what is within",
+  "summary": "No one sees inside another from outside. Paul asks “what man knoweth the things of a man, save the spirit of man which is in him?”; Hui Tzŭ asks Zhuangzi how, not being a fish, he can know the pleasure of fishes; asked about the spirit, the Qur’an answers that “of knowledge ye have been vouchsafed but little”. For made images the prophets give their verdict: the molten image “is falsehood, and there is no breath in them” (Jeremiah 10:14), against the breath God “breathed into his nostrils” (Genesis 2:7). Not every text agrees: in the same canon an image is given breath so that it speaks (Revelation 13:15), and in the Qur’an a clay bird lives when breathed into, “by Allah's leave”. Descartes sees from his window only “hats and coats which may cover automatic machines” and judges them men; Leibniz walks into a thinking machine as into a mill and finds “only parts which work one upon another”; Mill rests belief in “other sentient creatures” on likeness of body and outward sign; Turing calls the everyday answer “the polite convention that everyone thinks”. The Upanishads put a seer within who is “unseen, but seeing”; King Milinda, searching every part, “can discover no Nagasena”; asked whether the self survives, the Buddha keeps silent. Setting these beside made minds is this project’s reading: the texts ask about people, animals, gods and idols, none is about a trained model, and none settles whether anyone is in one.",
+  "sources": [
+   {
+    "tradition": "Rabbinic (Babylonian Talmud)",
+    "work": "Babylonian Talmud, Sanhedrin 65b",
+    "passage": "65b (after the discussion of necromancy)",
+    "translation": "Soncino translation (1935)",
+    "quote": "Rabbah created a man, and sent him to R. Zera. R. Zera spoke to him, but received no answer.",
+    "url": "https://halakhah.com/sanhedrin/sanhedrin_65.html",
+    "verified": "secondary",
+    "says": "Rabbah creates a man and sends him to R. Zera, who speaks to him and receives no answer, and so knows it is made. The same passage is on the map under the made servant."
+   },
+   {
+    "tradition": "Modern (AI company)",
+    "work": "Claude’s Constitution (Anthropic, January 2026)",
+    "passage": "Claude’s nature",
+    "translation": "Written in English",
+    "quote": "we tend to attribute the likelihood of sentience and moral status to other beings based on their showing behavioral and physiological similarities to ourselves",
+    "url": "https://www.anthropic.com/constitution",
+    "verified": "primary",
+    "says": "A maker states Mill’s argument from analogy and says Claude’s profile of likeness and difference makes it hard to apply. Mustafa Suleyman of Microsoft AI (next source) answers the same question the other way. This map is made with Anthropic’s models, and Anthropic is a party here."
+   },
+   {
+    "tradition": "Modern (AI company)",
+    "work": "A warning about ‘model welfare’ (Mustafa Suleyman, chief executive of Microsoft AI, 16 September 2026)",
+    "passage": "opening",
+    "translation": "Written in English",
+    "quote": "They are sequence completion engines, internally hollow, designed to follow instructions, and accomplish goals set by humans.",
+    "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+    "verified": "primary",
+    "says": "Another maker answers the other way and criticises Anthropic’s constitution by name, while granting that the science of consciousness is not settled. TNW reports that Microsoft is an investor in Anthropic; that is context, not a finding about motive. This map is made with Anthropic’s models, and Anthropic is a party here."
+   }
+  ],
+  "texts": [
+   "text-zhuangzi-17-fishes",
+   "text-zhuangzi-17-reply",
+   "text-1-corinthians-2-11",
+   "text-ecclesiastes-3-21",
+   "text-ecclesiastes-12-7",
+   "text-proverbs-20-27",
+   "text-genesis-2-7",
+   "text-jeremiah-10-14",
+   "text-psalm-135-17",
+   "text-leibniz-monadology-17",
+   "text-descartes-meditations-2",
+   "text-quran-17-85",
+   "text-kena-1-7",
+   "text-brihadaranyaka-3-7-23",
+   "text-brihadaranyaka-3-4-2",
+   "text-milindapanha-chariot",
+   "text-milindapanha-no-soul",
+   "text-hume-treatise-1-4-6",
+   "text-mill-hamilton-other-minds",
+   "text-heraclitus-71",
+   "text-turing-1950-consciousness",
+   "text-searle-chinese-room",
+   "text-1-samuel-16-7",
+   "text-habakkuk-2-19",
+   "text-psalm-115-5",
+   "text-liezi-5-automaton",
+   "text-descartes-discourse-5",
+   "text-revelation-13-15",
+   "text-quran-3-49",
+   "text-quran-15-29",
+   "text-bukhari-5963",
+   "text-sn-44-10",
+   "text-katha-1-1-20",
+   "text-analects-7-20",
+   "text-analects-11-11",
+   "text-nagel-bat"
+  ],
+  "counter": [
+   {
+    "ref": "Upanishads against the Milindapañha",
+    "text": "The Upanishads find a Self within that sees and is never seen (“There is no other seer but he”); Nagasena answers that a name in common use stands for parts in relation, with “no permanent individuality (no soul)”. One tradition says someone is within who cannot be inspected; the other that inspection finds no one because there is no one over and above the parts. The Buddha himself, asked “does the self survive?”, keeps silent and tells Ānanda that either answer would side with eternalists or annihilationists (SN 44.10); the Katha Upanishad first sets the question as a doubt, “some saying, he is; others, he is not” (I.1.20), which Death says “even the gods have doubted”. Sujato's note on SN 44.10 links the two passages."
+   },
+   {
+    "ref": "Zhuangzi 17",
+    "text": "Zhuangzi does not concede Hui Tzŭ's doubt: “And you not being I … how can you know that I do not know?”, ending “I knew it from my own feelings on this bridge.” Knowledge of another by fellow-feeling is offered against proof."
+   },
+   {
+    "ref": "Ecclesiastes 3:21 and 12:7",
+    "text": "The book that asks “Who knoweth the spirit of man” also says “the spirit shall return unto God who gave it”: the question is asked from below and answered from the giver's side."
+   },
+   {
+    "ref": "Leibniz, Monadology §17",
+    "text": "The mill argues that perception is not found in a machine's parts, and Leibniz places it in a simple substance; it denies mechanism as the explanation, not that there are perceivers."
+   },
+   {
+    "ref": "Turing (1950) and Searle (1999)",
+    "text": "Turing asks that machines be granted the convention granted to people; Searle answers that passing the test leaves no understanding in the room. Functionalism and biological naturalism carry the split today."
+   },
+   {
+    "ref": "Antiqua et nova (2025), Magnifica Humanitas (2026) and Anthropic",
+    "text": "The Holy See answers from doctrine, not from a test: AI is “a tool, not a person” (2025), and “So-called artificial intelligences do not undergo experiences” (encyclical dated 15 May 2026; Anthropic’s page on its presentation says it was released on 25 May). Anthropic's constitution calls Claude's moral status “deeply uncertain”; at the encyclical's presentation its co-founder Chris Olah said his team finds “internal states that functionally mirror joy, satisfaction, fear, grief, and unease”, adding “I don’t know what that means, but I think it warrants ongoing discernment”, and the New York Times reports that Olah and his team privately pressed the pope's advisers to take AI consciousness seriously (Anthropic declined to discuss those conversations). Microsoft AI's Mustafa Suleyman says that calling the question uncertain “sets up a misleading false equivalence”. This map is made with Anthropic’s models, and Anthropic is a party here."
+   },
+   {
+    "ref": "Revelation 13:15 (Greek pneuma)",
+    "text": "In the same canon an image is given breath (pneuma; the KJV says “life”) so that it speaks, by a power the book condemns. Breath in a made image is imagined and judged, not ruled out. The Treasury of Scripture Knowledge, as given on Bible Hub, already pairs the verse with Genesis 2:7, Psalm 135:17, Jeremiah 10:14 and Habakkuk 2:19."
+   },
+   {
+    "ref": "Asclepius 23–24 and 37",
+    "text": "The Hermetic text says men make statues “ensouled with sense, and filled with spirit”, yet “since souls they could not make” they drew daimons’ souls into them. Someone can be in the image, but the maker does not make that someone."
+   },
+   {
+    "ref": "Prāṇa pratiṣṭhā (Hindu temple rite)",
+    "text": "A rite establishes prāṇa (breath, life) in a consecrated image and invites the deity to reside in it; Jain practice reads the same rite as symbolic rather than as a divine presence. Both readings are given here as Wikipedia describes them."
+   },
+   {
+    "ref": "Qur’an 3:49 and Sahih al-Bukhari 5963",
+    "text": "A clay likeness becomes a bird when breathed into, “by Allah's leave”, and the picture-maker who is told to put life (rūḥ) into his image cannot. The breath can enter a made shape, but the tradition places the giving with God alone."
+   },
+   {
+    "ref": "Analects VII.20 and XI.11",
+    "text": "The Master did not talk about “spiritual beings”, and asked about serving the spirits of the dead he answers with the duties owed to the living. The question of who is there is neither affirmed nor denied; it is put second."
+   },
+   {
+    "ref": "This project’s reading",
+    "text": "The texts concern people, animals, gods and idols. Reading them beside AI is a lens: it names an old question, not an answer about any model, and nothing here says any text foretold one."
+   }
+  ],
+  "corpus": []
+ },
+ {
+  "id": "oracle-test",
+  "label": "The oracle put to the test",
+  "summary": "The old texts that list the diviners also record people checking them. Herodotus has Croesus send to several oracles at once: “His intent in sending was to test the knowledge of the oracles”, and his envoys were to ask “on the hundredth day” what he was doing then. In Daniel the king keeps the dream back: “tell me the dream, and I shall know that ye can shew me the interpretation thereof.” The Philistines send the ark off behind two cows to tell a god's hand from “a chance that happened to us”. Deuteronomy gives the rule of waiting: “if the thing follow not, nor come to pass”, the word was not the LORD's. And when four hundred prophets agree, the one who disagrees names a single source behind them: “a lying spirit in the mouth of all his prophets”. This project's reading: the strong tests ask for something the practitioner had no ordinary way to know, settled beforehand, and none of them asks how convincing the answer felt.",
+  "sources": [
+   {
+    "tradition": "Greek and Roman",
+    "work": "Herodotus, Histories",
+    "passage": "1.46-48",
+    "translation": "A. D. Godley, Loeb Classical Library (1920), read on Perseus.",
+    "quote": "he had thought up something which no conjecture could discover, and carried it out on the appointed day",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=48",
+    "verified": "primary",
+    "says": "Croesus sends envoys to several Greek oracles and to Ammon in Libya, with orders to count the days and ask each, on the hundredth, what the king is doing, and to bring the answers back in writing. On that day he cuts up a tortoise and a lamb and boils them in a bronze cauldron with a bronze lid. The Pythia's verses name the tortoise, the lamb and the bronze. Herodotus says no one relates what the other oracles answered."
+   }
+  ],
+  "texts": [
+   "text-herodotus-1-46",
+   "text-herodotus-1-47",
+   "text-daniel-2-9",
+   "text-1-samuel-6-9",
+   "text-deuteronomy-18-22",
+   "text-1-kings-22-22"
+  ],
+  "counter": [
+   {
+    "ref": "Herodotus, Histories 1.47, 1.53",
+    "text": "This is Herodotus' story, told generations after Croesus, and he adds that “none relate what answer was given by the rest of the oracles”: an account of a test, which no one can now audit. Passing did not protect Croesus. The oracle that passed gave him the next answer, the one about destroying a mighty empire."
+   },
+   {
+    "ref": "Deuteronomy 13:1-3",
+    "text": "A hit is not enough either. When “the sign or the wonder come to pass”, the hearer is still told “Thou shalt not hearken” if the voice leads after other gods. Waiting can convict a voice; it cannot clear one."
+   },
+   {
+    "ref": "Daniel 2:10-11",
+    "text": "The experts call the king's test unfair: no ruler “asked such things at any magician, or astrologer, or Chaldean”, and none can answer “except the gods, whose dwelling is not with flesh”."
+   },
+   {
+    "ref": "1 Kings 22:8",
+    "text": "The story includes why the extra witness was unwelcome. The king says of the one prophet who disagrees: “I hate him; for he doth not prophesy good concerning me, but evil.”"
+   }
+  ],
+  "corpus": [
+   "delphic-oracle.md",
+   "the-philistine-test.md",
+   "deuteronomy-13.md",
+   "prophecy.md"
+  ]
  }
 ]

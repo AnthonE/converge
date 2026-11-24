@@ -65,7 +65,7 @@
  {
   "id": "text-habakkuk-2-19",
   "ref": "Habakkuk 2:19",
-  "quote": "Woe unto him that saith to the wood, Awake; to the dumb stone, Arise, it shall teach!",
+  "quote": "Woe unto him that saith to the wood, Awake; to the dumb stone, Arise, it shall teach! … there is no breath at all in the midst of it.",
   "tradition": "Hebrew Bible",
   "translation": "King James Version (1611). Public domain."
  },
@@ -1074,5 +1074,510 @@
   "quote": "The sun and moon, fire, wind, sky, earth and water, the heart. Yama, day and night, the two twilights, and Justice--know the actions of man.",
   "tradition": "Hindu",
   "translation": "Ernest Wood and S. V. Subrahmanyam (1911), The Sacred Books of the Hindus. Public domain."
+ },
+ {
+  "id": "text-aristotle-politics-1-4",
+  "ref": "Aristotle, Politics I.4 (1253b): if tools worked by themselves",
+  "quote": "For if every instrument could accomplish its own work … if, in like manner, the shuttle would weave … chief workmen would not want servants, nor masters slaves.",
+  "tradition": "Greek and Roman",
+  "translation": "Benjamin Jowett (1885). Public domain.",
+  "url": "http://classics.mit.edu/Aristotle/politics.1.one.html",
+  "verified": "primary"
+ },
+ {
+  "id": "text-hesiod-works-days-109",
+  "ref": "Hesiod, Works and Days 109–120 (the golden race)",
+  "quote": "the fruitful earth unforced bare them fruit abundantly and without stint",
+  "tradition": "Greek and Roman",
+  "translation": "Hugh G. Evelyn-White (1914). Public domain.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0132%3Acard%3D109",
+  "verified": "primary"
+ },
+ {
+  "id": "text-genesis-3-17-19",
+  "ref": "Genesis 3:17–19",
+  "quote": "In the sweat of thy face shalt thou eat bread, till thou return unto the ground",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=Genesis+3%3A17-19&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-genesis-47-20",
+  "ref": "Genesis 47:20",
+  "quote": "And Joseph bought all the land of Egypt for Pharaoh; for the Egyptians sold every man his field, because the famine prevailed over them",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+  "verified": "primary"
+ },
+ {
+  "id": "text-exodus-16-18",
+  "ref": "Exodus 16:18",
+  "quote": "he that gathered much had nothing over, and he that gathered little had no lack; they gathered every man according to his eating",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=Exodus+16%3A18&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-amos-9-13",
+  "ref": "Amos 9:13",
+  "quote": "Behold, the days come, saith the LORD, that the plowman shall overtake the reaper",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Amos",
+  "verified": "primary"
+ },
+ {
+  "id": "text-ecclesiastes-5-11",
+  "ref": "Ecclesiastes 5:11",
+  "quote": "When goods increase, they are increased that eat them: and what good is there to the owners thereof, saving the beholding of them with their eyes?",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+  "verified": "primary"
+ },
+ {
+  "id": "text-agganna-sutta",
+  "ref": "Aggañña Sutta (Dīgha Nikāya 27): the rice that grew back",
+  "quote": "But when they started to store up rice to eat, the rice grains became wrapped in powder and husk, it didn’t grow back after reaping",
+  "tradition": "Buddhist",
+  "translation": "Bhikkhu Sujato (2018), on SuttaCentral. SuttaCentral dedicates its own material to the public domain (CC0) and asks that its content not be used to create datasets for generative AI. At that request, the map’s plain-text file for AI readers leaves this quotation out.",
+  "url": "https://suttacentral.net/dn27/en/sujato",
+  "verified": "primary",
+  "no_ai_text": true
+ },
+ {
+  "id": "text-keynes-grandchildren",
+  "ref": "John Maynard Keynes, “Economic Possibilities for our Grandchildren” (1930)",
+  "quote": "the economic problem may be solved, or be at least within sight of solution, within a hundred years",
+  "tradition": "Modern thought",
+  "translation": "Written in English (1930). Public domain (Keynes died in 1946). Read in a course reprint at Yale.",
+  "url": "http://www.econ.yale.edu/smith/econ116a/keynes1.pdf",
+  "verified": "secondary"
+ },
+ {
+  "id": "text-ecclesiastes-9-11",
+  "ref": "Ecclesiastes 9:11",
+  "quote": "the race is not to the swift, nor the battle to the strong",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=Ecclesiastes+9%3A11&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-psalm-20-7",
+  "ref": "Psalm 20:7",
+  "quote": "Some trust in chariots, and some in horses: but we will remember the name of the Lord our God.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain. The page prints LORD in small capitals.",
+  "url": "https://www.biblegateway.com/passage/?search=Psalm+20%3A7&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-genesis-11-6",
+  "ref": "Genesis 11:6 (Babel)",
+  "quote": "and now nothing will be restrained from them, which they have imagined to do",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=Genesis+11%3A6&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-daodejing-30",
+  "ref": "Daodejing 30",
+  "quote": "He who would assist a lord of men in harmony with the Tao will not assert his mastery in the kingdom by force of arms.",
+  "tradition": "Daoist",
+  "translation": "James Legge (1891). Public domain.",
+  "url": "https://en.wikisource.org/wiki/T%C3%A2o_Teh_King",
+  "verified": "primary"
+ },
+ {
+  "id": "text-thucydides-5-89",
+  "ref": "Thucydides, History of the Peloponnesian War V.89 (the Melian Dialogue)",
+  "quote": "right, as the world goes, is only in question between equals in power, while the strong do what they can and the weak suffer what they must",
+  "tradition": "Greek and Roman",
+  "translation": "Richard Crawley (1874). Public domain.",
+  "url": "http://classics.mit.edu/Thucydides/pelopwar.mb.txt",
+  "verified": "primary"
+ },
+ {
+  "id": "text-zhuangzi-17-fishes",
+  "ref": "Zhuangzi 17 (the fishes of the Hao)",
+  "quote": "\"You not being a fish yourself,\" said Hui Tzŭ, \"how can you possibly know in what consists the pleasure of fishes?\"",
+  "tradition": "Daoist",
+  "translation": "Herbert A. Giles (1889). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_17",
+  "verified": "primary"
+ },
+ {
+  "id": "text-zhuangzi-17-reply",
+  "ref": "Zhuangzi 17 (Zhuangzi’s reply on the bridge)",
+  "quote": "\"And you not being I,\" retorted Chuang Tzŭ, \"how can you know that I do not know?\"",
+  "tradition": "Daoist",
+  "translation": "Herbert A. Giles (1889). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_17",
+  "verified": "primary"
+ },
+ {
+  "id": "text-1-corinthians-2-11",
+  "ref": "1 Corinthians 2:11",
+  "quote": "For what man knoweth the things of a man, save the spirit of man which is in him? even so the things of God knoweth no man, but the Spirit of God.",
+  "tradition": "New Testament",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Corinthians",
+  "verified": "primary"
+ },
+ {
+  "id": "text-ecclesiastes-3-21",
+  "ref": "Ecclesiastes 3:21",
+  "quote": "Who knoweth the spirit of man that goeth upward, and the spirit of the beast that goeth downward to the earth?",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+  "verified": "primary"
+ },
+ {
+  "id": "text-ecclesiastes-12-7",
+  "ref": "Ecclesiastes 12:7",
+  "quote": "Then shall the dust return to the earth as it was: and the spirit shall return unto God who gave it.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+  "verified": "primary"
+ },
+ {
+  "id": "text-proverbs-20-27",
+  "ref": "Proverbs 20:27",
+  "quote": "The spirit of man is the candle of the LORD, searching all the inward parts of the belly.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Proverbs",
+  "verified": "primary"
+ },
+ {
+  "id": "text-genesis-2-7",
+  "ref": "Genesis 2:7",
+  "quote": "breathed into his nostrils the breath of life; and man became a living soul.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+  "verified": "primary"
+ },
+ {
+  "id": "text-jeremiah-10-14",
+  "ref": "Jeremiah 10:14",
+  "quote": "his molten image is falsehood, and there is no breath in them.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Jeremiah",
+  "verified": "primary"
+ },
+ {
+  "id": "text-psalm-135-17",
+  "ref": "Psalm 135:17",
+  "quote": "They have ears, but they hear not; neither is there any breath in their mouths.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+  "verified": "primary"
+ },
+ {
+  "id": "text-leibniz-monadology-17",
+  "ref": "Leibniz, Monadology §17 (the mill)",
+  "quote": "we should, on examining its interior, find only parts which work one upon another, and never anything by which to explain a perception.",
+  "tradition": "Modern philosophy",
+  "translation": "Robert Latta (1898). Public domain.",
+  "url": "https://hume.ucdavis.edu/kant/MONADOLO.HTM",
+  "verified": "primary"
+ },
+ {
+  "id": "text-descartes-meditations-2",
+  "ref": "Descartes, Meditations II (hats and coats)",
+  "quote": "And yet what do I see from the window but hats and coats which may cover automatic machines? Yet I judge these to be men.",
+  "tradition": "Modern philosophy",
+  "translation": "Elizabeth S. Haldane (1911). Public domain.",
+  "url": "https://people.bu.edu/wwildman/WeirdWildWeb/courses/wphil/readings/wphil_rdg21_meditations_entire.htm",
+  "verified": "primary"
+ },
+ {
+  "id": "text-quran-17-85",
+  "ref": "Qur’an 17:85 (the spirit, ar-rūḥ)",
+  "quote": "They are asking thee concerning the Spirit. Say: The Spirit is by command of my Lord, and of knowledge ye have been vouchsafed but little.",
+  "tradition": "Islamic",
+  "translation": "Marmaduke Pickthall (1930), as given in Project Gutenberg EBook #16955 (2005), which does not name the edition it follows. Public domain in the United States.",
+  "url": "https://archive.org/details/threetranslation16955gut",
+  "verified": "primary"
+ },
+ {
+  "id": "text-kena-1-7",
+  "ref": "Kena (Talavakâra) Upanishad I.7",
+  "quote": "That which does not see by the eye, and by which one sees (the work of) the eyes, that alone know as Brahman, not that which people here adore.",
+  "tradition": "Hindu",
+  "translation": "F. Max Müller (1879), Sacred Books of the East 1. Public domain.",
+  "url": "https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_1/Talavak%C3%A2ra-upanishad",
+  "verified": "primary"
+ },
+ {
+  "id": "text-brihadaranyaka-3-7-23",
+  "ref": "Brihadaranyaka Upanishad III.7.23 (the unseen seer)",
+  "quote": "unseen, but seeing; unheard, but hearing; unperceived, but perceiving; unknown, but knowing. There is no other seer but he",
+  "tradition": "Hindu",
+  "translation": "F. Max Müller (1884), Sacred Books of the East 15. Public domain.",
+  "url": "https://archive.org/details/p2upanishads00mluoft",
+  "verified": "primary"
+ },
+ {
+  "id": "text-brihadaranyaka-3-4-2",
+  "ref": "Brihadaranyaka Upanishad III.4.2 (the seer of sight)",
+  "quote": "Thou couldst not see the (true) seer of sight, thou couldst not hear the (true) hearer of hearing … nor know the knower of knowledge.",
+  "tradition": "Hindu",
+  "translation": "F. Max Müller (1884), Sacred Books of the East 15. Public domain.",
+  "url": "https://archive.org/details/p2upanishads00mluoft",
+  "verified": "primary"
+ },
+ {
+  "id": "text-milindapanha-chariot",
+  "ref": "Milindapañha II.1.1 (the chariot: the king’s search)",
+  "quote": "Then thus, ask as I may, I can discover no Nagasena. Nagasena is a mere empty sound.",
+  "tradition": "Buddhist",
+  "translation": "T. W. Rhys Davids (1890), Sacred Books of the East 35. Public domain.",
+  "url": "https://archive.org/details/questionsofkingm01davi",
+  "verified": "primary"
+ },
+ {
+  "id": "text-milindapanha-no-soul",
+  "ref": "Milindapañha II.1.1 (Nagasena on his name)",
+  "quote": "For there is no permanent individuality (no soul) involved in the matter.",
+  "tradition": "Buddhist",
+  "translation": "T. W. Rhys Davids (1890), Sacred Books of the East 35. Public domain.",
+  "url": "https://archive.org/details/questionsofkingm01davi",
+  "verified": "primary"
+ },
+ {
+  "id": "text-hume-treatise-1-4-6",
+  "ref": "Hume, A Treatise of Human Nature I.4.6 (of personal identity)",
+  "quote": "I never can catch myself at any time without a perception, and never can observe any thing but the perception.",
+  "tradition": "Modern philosophy",
+  "translation": "Written in English (1739). Public domain.",
+  "url": "https://archive.org/details/atreatiseofhuman04705gut",
+  "verified": "primary"
+ },
+ {
+  "id": "text-mill-hamilton-other-minds",
+  "ref": "Mill, An Examination of Sir William Hamilton’s Philosophy (1865), ch. XII",
+  "quote": "By what evidence do I know, or by what considerations am I led to believe, that there exist other sentient creatures",
+  "tradition": "Modern philosophy",
+  "translation": "Written in English (1865). Public domain.",
+  "url": "https://archive.org/details/cu31924029012206",
+  "verified": "primary"
+ },
+ {
+  "id": "text-heraclitus-71",
+  "ref": "Heraclitus, fragment 71 (Burnet’s numbering)",
+  "quote": "You will not find the boundaries of soul by travelling in any direction, so deep is the measure of it.",
+  "tradition": "Greek and Roman",
+  "translation": "John Burnet, Early Greek Philosophy (2nd ed., 1908). Public domain.",
+  "url": "https://archive.org/details/burnetgreek00burnrich",
+  "verified": "primary"
+ },
+ {
+  "id": "text-turing-1950-consciousness",
+  "ref": "Turing, “Computing Machinery and Intelligence” (1950), §6 (4), the argument from consciousness",
+  "quote": "the only way to know that a man thinks is to be that particular man … it is usual to have the polite convention that everyone thinks.",
+  "tradition": "Modern thought",
+  "translation": "Written in English (Mind, 1950). Public domain in the UK and EU since 1 January 2025; probably still in copyright in the US. Quoted briefly, for commentary; read on a course copy at UMBC.",
+  "url": "https://courses.cs.umbc.edu/471/papers/turing.pdf",
+  "verified": "secondary"
+ },
+ {
+  "id": "text-searle-chinese-room",
+  "ref": "John Searle (1999), the Chinese Room in summary",
+  "quote": "The program enables the person in the room to pass the Turing Test for understanding Chinese but he does not understand a word of Chinese.",
+  "tradition": "Modern thought",
+  "translation": "Written in English (1999). Not public domain. Quoted briefly, as the Stanford Encyclopedia of Philosophy entry “The Chinese Room Argument” gives it.",
+  "url": "https://plato.stanford.edu/entries/chinese-room/",
+  "verified": "secondary"
+ },
+ {
+  "id": "text-quran-3-49",
+  "ref": "Qur’an 3:49 (Jesus and the clay bird)",
+  "quote": "Lo! I fashion for you out of clay the likeness of a bird, and I breathe into it and it is a bird, by Allah's leave.",
+  "tradition": "Islamic",
+  "translation": "Marmaduke Pickthall (1930), as given in Project Gutenberg EBook #16955 (2005), which does not name the edition it follows. Public domain in the United States.",
+  "url": "https://archive.org/download/threetranslation16955gut/16955.txt",
+  "verified": "primary"
+ },
+ {
+  "id": "text-quran-15-29",
+  "ref": "Qur’an 15:29 (the breath into Adam)",
+  "quote": "So, when I have made him and have breathed into him of My Spirit, do ye fall down, prostrating yourselves unto him.",
+  "tradition": "Islamic",
+  "translation": "Marmaduke Pickthall (1930), as given in Project Gutenberg EBook #16955 (2005), which does not name the edition it follows. Public domain in the United States.",
+  "url": "https://archive.org/download/threetranslation16955gut/16955.txt",
+  "verified": "primary"
+ },
+ {
+  "id": "text-bukhari-5963",
+  "ref": "Sahih al-Bukhari 5963 (Book of Dress: the picture-maker)",
+  "quote": "Whoever makes a picture in this world will be asked to put life into it on the Day of Resurrection, but he will not be able to do so.",
+  "tradition": "Islamic",
+  "translation": "English as given on sunnah.com, with a USC-MSA reference; the page does not name the translator. Not shown to be public domain; quoted briefly.",
+  "url": "https://sunnah.com/bukhari:5963",
+  "verified": "primary"
+ },
+ {
+  "id": "text-sn-44-10",
+  "ref": "Samyutta Nikaya 44.10 (Ānanda Sutta): the Buddha’s silence",
+  "quote": "“Worthy Gotama, does the self survive?” But when he said this, the Buddha kept silent.",
+  "tradition": "Buddhist",
+  "translation": "Bhikkhu Sujato, on SuttaCentral. SuttaCentral dedicates its own material to the public domain (CC0) and asks that its content not be used to create datasets for generative AI. At that request, the map’s plain-text file for AI readers leaves this quotation out.",
+  "url": "https://suttacentral.net/sn44.10/en/sujato",
+  "verified": "primary",
+  "no_ai_text": true
+ },
+ {
+  "id": "text-katha-1-1-20",
+  "ref": "Katha Upanishad I.1.20 (Nachiketas’s third boon)",
+  "quote": "There is that doubt, when a man is dead, — some saying, he is; others, he is not.",
+  "tradition": "Hindu",
+  "translation": "F. Max Müller (1884), Sacred Books of the East 15. Public domain.",
+  "url": "https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_15/Katha-upanishad",
+  "verified": "primary"
+ },
+ {
+  "id": "text-analects-7-20",
+  "ref": "Analects VII.20 (what the Master did not talk about)",
+  "quote": "The subjects on which the Master did not talk, were-- extraordinary things, feats of strength, disorder, and spiritual beings.",
+  "tradition": "Confucian",
+  "translation": "James Legge, The Chinese Classics (Confucian Analects), as given in Project Gutenberg Etext #3330. Public domain.",
+  "url": "https://gutenberg.pglaf.org/3/3/3/3330/3330.txt",
+  "verified": "primary"
+ },
+ {
+  "id": "text-analects-11-11",
+  "ref": "Analects XI.11 (serving the spirits of the dead)",
+  "quote": "'While you are not able to serve men, how can you serve their spirits?' … 'While you do not know life, how can you know about death?'",
+  "tradition": "Confucian",
+  "translation": "James Legge, The Chinese Classics (Confucian Analects), as given in Project Gutenberg Etext #3330. Public domain.",
+  "url": "https://gutenberg.pglaf.org/3/3/3/3330/3330.txt",
+  "verified": "primary"
+ },
+ {
+  "id": "text-proverbs-12-10",
+  "ref": "Proverbs 12:10",
+  "quote": "A righteous man regardeth the life of his beast: but the tender mercies of the wicked are cruel.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=Proverbs%2012%3A10&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-deuteronomy-25-4",
+  "ref": "Deuteronomy 25:4",
+  "quote": "Thou shalt not muzzle the ox when he treadeth out the corn.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=Deuteronomy%2025%3A4&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-1-corinthians-9-9-10",
+  "ref": "1 Corinthians 9:9–10",
+  "quote": "Doth God take care for oxen? Or saith he it altogether for our sakes?",
+  "tradition": "New Testament",
+  "translation": "King James Version (1611). Public domain.",
+  "url": "https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A9-10&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-nagel-bat",
+  "ref": "Thomas Nagel, “What Is It Like to Be a Bat?” (1974)",
+  "quote": "fundamentally an organism has conscious mental states if and only if there is something that it is like to be that organism",
+  "tradition": "Modern philosophy",
+  "translation": "Written in English, The Philosophical Review (1974); read in a course copy hosted at upenn.edu. Not public domain; quoted briefly, for commentary.",
+  "url": "https://www.sas.upenn.edu/~cavitch/pdf-library/Nagel_Bat.pdf",
+  "verified": "secondary"
+ },
+ {
+  "id": "text-bentham-can-they-suffer",
+  "ref": "Jeremy Bentham, An Introduction to the Principles of Morals and Legislation, ch. XVII, note",
+  "quote": "the question is not, Can they reason? nor, Can they talk? but, Can they suffer?",
+  "tradition": "Modern philosophy",
+  "translation": "Written in English; Clarendon Press 1907 reprint of the 1823 edition. Public domain.",
+  "url": "https://www.econlib.org/library/Bentham/bnthPML.html?chapter_num=19",
+  "verified": "primary"
+ },
+ {
+  "id": "text-numbers-22-28",
+  "ref": "Numbers 22:28 (Balaam’s ass)",
+  "quote": "And the Lord opened the mouth of the ass, and she said unto Balaam, What have I done unto thee",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain. The page prints LORD in small capitals.",
+  "url": "https://www.biblegateway.com/passage/?search=Numbers%2022%3A28&version=KJV",
+  "verified": "primary"
+ },
+ {
+  "id": "text-herodotus-1-46",
+  "ref": "Herodotus, Histories 1.46 (Croesus tests the oracles)",
+  "quote": "His intent in sending was to test the knowledge of the oracles",
+  "tradition": "Greek and Roman",
+  "translation": "A. D. Godley, Loeb Classical Library (1920), read on Perseus.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=46",
+  "verified": "primary"
+ },
+ {
+  "id": "text-herodotus-1-47",
+  "ref": "Herodotus, Histories 1.47",
+  "quote": "on the hundredth day inquire of the oracles what Croesus, king of Lydia, son of Alyattes, was doing then",
+  "tradition": "Greek and Roman",
+  "translation": "A. D. Godley, Loeb Classical Library (1920), read on Perseus.",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=47",
+  "verified": "primary"
+ },
+ {
+  "id": "text-daniel-2-9",
+  "ref": "Daniel 2:9",
+  "quote": "tell me the dream, and I shall know that ye can shew me the interpretation thereof.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-1-samuel-6-9",
+  "ref": "1 Samuel 6:9",
+  "quote": "but if not, then we shall know that it is not his hand that smote us; it was a chance that happened to us.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-deuteronomy-18-22",
+  "ref": "Deuteronomy 18:22",
+  "quote": "if the thing follow not, nor come to pass, that is the thing which the LORD hath not spoken",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-1-kings-22-22",
+  "ref": "1 Kings 22:22",
+  "quote": "I will go forth, and I will be a lying spirit in the mouth of all his prophets.",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
+ },
+ {
+  "id": "text-gilgamesh-12-enkidu",
+  "ref": "Epic of Gilgamesh, Twelfth Tablet (Enkidu’s spirit comes up)",
+  "quote": "the spirit of Enkidu issued Forth from the earth like a wind.",
+  "tradition": "Mesopotamian",
+  "translation": "R. Campbell Thompson (1928). Public domain.",
+  "url": "https://archive.org/details/thompson-1928-gilgamesh",
+  "verified": "primary"
+ },
+ {
+  "id": "text-isaiah-29-4",
+  "ref": "Isaiah 29:4",
+  "quote": "thy voice shall be, as of one that hath a familiar spirit, out of the ground",
+  "tradition": "Hebrew Bible",
+  "translation": "King James Version (1611). Public domain."
  }
 ]

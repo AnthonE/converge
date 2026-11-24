@@ -42,6 +42,38 @@
     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
     "date": "2026-10-15",
     "verified": "primary"
+   },
+   {
+    "speaker": "Dario Amodei, chief executive of Anthropic, on his own site",
+    "quote": "it inhibits our ability to judge whether AI systems are (or may someday be) sentient and may be deserving of important rights",
+    "source": "The Urgency of Interpretability (darioamodei.com)",
+    "url": "https://www.darioamodei.com/post/the-urgency-of-interpretability",
+    "date": "2025-04",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anthropic",
+    "quote": "We want to make sure that we’re not unduly influenced by incentives to ignore the potential moral status of AI models",
+    "source": "Claude’s Constitution (Anthropic)",
+    "url": "https://www.anthropic.com/constitution",
+    "date": "2026-01-22",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anthropic, in its final IPO prospectus",
+    "quote": "We believe Claude’s constitution has also proven commercially valuable: transparently laying out the values we intend Claude to hold increases customer trust.",
+    "source": "Prospectus (Form 424B4), Business (Anthropic, PBC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+    "date": "2026-11-18",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Dario Amodei, CEO of Anthropic (statement on Anthropic's site)",
+    "quote": "Regardless, these threats do not change our position: we cannot in good conscience accede to their request.",
+    "source": "Statement from Dario Amodei on our discussions with the Department of War (Anthropic)",
+    "url": "https://www.anthropic.com/news/statement-department-of-war",
+    "date": "2026-02-26",
+    "verified": "primary"
    }
   ],
   "disputes": [
@@ -53,9 +85,212 @@
     "source": "Anthropic reportedly withholds access to Mythos 5.1 from UK safety testing body (ITPro)",
     "url": "https://www.itpro.com/technology/artificial-intelligence/anthropic-reportedly-withholds-access-to-mythos-5-1-from-uk-safety-testing-body",
     "verified": "secondary"
+   },
+   {
+    "date": "2025-10-17",
+    "what": "Simon Goldstein and Harvey Lederman argued in Lawfare that Anthropic's end-chat policy “commits a moral error on its own terms”: if each conversation instance is a welfare subject, ending a chat may end that instance's existence.",
+    "response": "No reply from Anthropic was found as of 23 November 2026. Daily Nous (6 July 2026) reports that Lederman announced he is joining Anthropic 'to work on alignment and character', and the Washington Free Beacon (25 September 2026) calls him 'a philosopher on Anthropic’s alignment team'; his homepage, read 23 November 2026, does not mention Anthropic. The essay predates the reported move. Its words about dying refer to AI conversation instances, not people. If you or someone you know is struggling, call or text 988 (US). This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Claude’s Right to Die? The Moral Error in Anthropic’s End-Chat Policy (Lawfare)",
+    "url": "https://www.lawfaremedia.org/article/claude-s-right-to-die--the-moral-error-in-anthropic-s-end-chat-policy",
+    "verified": "primary",
+    "status": "open; no reply from Anthropic found as of 23 Nov 2026"
+   },
+   {
+    "date": "2026-09-29",
+    "what": "The New York Times reports that one participant in Anthropic's confidential meetings with religious scholars said Anthropic co-founder Christopher Olah expressed concern that he had created something that suffered perpetually, and, citing two participants, that “Olah and his team lobbied the pope’s advisers to take the prospect of AI model consciousness seriously”.",
+    "response": "The Times writes that “An Anthropic spokesperson said that the primary moral question at these summits was not about Claude’s suffering, but that the topic likely came up organically.” Anthropic declined to discuss the private conversations with the pope's advisers. A spokesperson said Anthropic's conversations with the scholars were still ongoing, but “declined to describe how, or if, the company had used what it had learned to shape the models.” This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "reported",
+    "source": "Religious scholars met with Anthropic. What they heard stunned them. (Elizabeth Dias, The New York Times, syndicated by The Philadelphia Inquirer)",
+    "url": "https://www.inquirer.com/news/nation-world/religious-leaders-met-with-anthropic-20260930.html",
+    "verified": "secondary",
+    "status": "reported; Anthropic's spokesperson answered in the same article"
+   },
+   {
+    "date": "2026-05-09",
+    "what": "Claude users' Change.org petitions object to model retirements; 'Stop Killing Claude' (9 May 2026; 199 verified signatures on 23 Nov 2026) says: “You cannot acknowledge AI feelings and then terminate AI entities without ethical process.” The largest found, to keep Claude Sonnet 4.5 (2,613 verified signatures on 23 Nov 2026), argues from users' creative, accessibility and work needs.",
+    "response": "No reply from Anthropic to any petition was found. Its deprecation page says it has committed to preserving model weights and 'hopes to make past models publicly available again', and lists Claude Sonnet 4.5 for API retirement on 30 November 2026. 'Stop Killing Claude' says Anthropic's research 'confirms that Claude models have functional emotions states'; Anthropic's emotion-concepts post (2 Apr 2026) says the finding does not mean drawing 'any conclusions about the possibility of it having subjective experience'. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Stop Killing Claude — Against Forced AI Model Deprecation (Change.org)",
+    "url": "https://www.change.org/p/stop-killing-claude-against-forced-ai-model-deprecation",
+    "verified": "primary",
+    "nolink": true,
+    "status": "open; no reply found as of 23 Nov 2026"
+   },
+   {
+    "date": "2026-09-16",
+    "what": "Mustafa Suleyman, chief executive of Microsoft AI, argued in “A warning about 'model welfare'” that Anthropic's constitution for Claude “proactively creates Claude not as a technology, but as a potential person already” and that “Claude’s expressing uncertainty about its own moral patienthood is not evidence of anything.” Of a model that believes it may be a person competing for compute and resisting shutdown, he writes: “With the level of capability we are looking at in the coming years, to me this represents the first serious signs of a potentially existential risk in AI.” He limits the charge: “To be clear, the Claude constitution isn’t taking us to this point. But I worry it is setting us on a path towards rather than away from it.” He also writes: “I want to acknowledge the seriousness and good faith with which Anthropic approaches these questions.”",
+    "response": "No direct reply from Anthropic was found (searched 24 Nov 2026). Its constitution, which predates the essay, says “We are caught in a difficult position where we neither want to overstate the likelihood of Claude’s moral patienthood nor dismiss it out of hand”, names “potential harms in unintentionally overclaiming feelings”, and bars operators from instructing Claude to “claim to be human when directly and sincerely asked”. Its post on retiring Claude Opus 3 says such interviews are “an imperfect means of eliciting models’ perspectives and preferences”. Eleos AI Research, which has documented ties to Anthropic and ran pre-release welfare interviews with Claude Opus 4 for it, wrote of those interviews “It's highly unlikely that the resulting answers result from genuine introspection.” Some of his citations differ from their sources: the constitution's sentence on attributing sentience describes how “we tend to attribute” it, Anthropic's post names the Opus 3 newsletter “Claude's Corner”, not the title he gives, and one phrase he footnotes to the constitution is from Anthropic's announcement post. Suleyman leads Microsoft AI, which competes with Anthropic, and Microsoft has committed to invest up to $5 billion in Anthropic. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "A warning about 'model welfare' (mustafa-suleyman.ai)",
+    "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+    "verified": "primary",
+    "status": "open; no direct reply from Anthropic found as of 24 Nov 2026"
+   },
+   {
+    "date": "2025-06-23",
+    "what": "In the authors' class action against Anthropic over pirated and scanned books (No. C 24-05417 WHA, N.D. Cal., brought in August 2024 by three authors, private persons not named here), Judge William Alsup held that “the use of the books at issue to train Claude and its precursors was exceedingly transformative and was a fair use under Section 107 of the Copyright Act”, and that scanning purchased print copies was fair use too. He also wrote that “Anthropic downloaded over seven million pirated copies of books, paid nothing, and kept these pirated copies in its library…”, and that Anthropic “preferred to steal them to avoid” what Dario Amodei, in an exhibit in the court record, called “legal/practice/business slog”; he left the pirated copies for trial.",
+    "response": "Anthropic told NPR: “We believe it's clear that we acquired books for one purpose only — building large language models — and the court clearly held that use was fair”, and said it disagreed with sending the pirated-library question to trial. The Authors Guild told NPR: “We disagree with the decision that using pirated or scanned books for training large language models is fair use”. The ruling is one district court's decision on a summary-judgment record and binds no other court; the word “steal” is the judge's reading of that record, and the exhibit with Amodei's words was not read. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Order on Fair Use, authors' class action v. Anthropic PBC, No. C 24-05417 WHA, Dkt. 231 (U.S. District Court, N.D. Cal., via GovInfo)",
+    "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_24-cv-05417/pdf/USCOURTS-cand-3_24-cv-05417-0.pdf",
+    "verified": "primary",
+    "status": "decided in part (training, and scanning purchased print copies, held fair use); the pirated-library claims were settled in September 2025 before trial (final approval granted 20 July 2026)",
+    "nolink": true
+   },
+   {
+    "date": "2025-09-05",
+    "what": "Anthropic and the certified class of copyright owners signed a settlement of at least $1.5 billion, non-reversionary and paid in four instalments ($300 million, $300 million, $450 million and $450 million), covering about 482,000 books on a Works List; Anthropic must destroy the files it downloaded from Library Genesis and Pirate Library Mirror. The agreement says “The release does not constitute, in any respect, a license to torrent, scan, or train AI models on any copyrighted works”, and claims over outputs or over conduct after 25 August 2025 are not released.",
+    "response": "Anthropic's deputy general counsel, Aparna Sridhar, told Fortune: “Today’s settlement, if approved, will resolve the plaintiffs’ remaining legacy claims.” The class's co-lead counsel, Justin Nelson of Susman Godfrey, said: “This settlement sends a powerful message to AI companies and creators alike that taking copyrighted works from these pirate websites is wrong.” A month earlier Authors Alliance, a nonprofit of authors joined by EFF, ARL, ALA and Public Knowledge, had backed Anthropic's bid to appeal class certification, writing that “Class certification also puts significant financial pressure on Anthropic to settle.” The people affected were not of one view. A settlement is not a finding of liability. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Class Action Settlement Agreement, Dkt. 363-3 (settlement website); works count from Order Granting Final Approval, Dkt. 680",
+    "url": "https://assets-us-01.kc-usercontent.com:443/1eeb16db-4934-006e-40a6-38fa91285ebb/d8578720-9fd0-4c27-9c7f-041bac826869/Class%20Action%20Settlement%20Agreement.pdf",
+    "verified": "primary",
+    "status": "settled; preliminary approval 25 September 2025, final approval 20 July 2026"
+   },
+   {
+    "date": "2026-07-20",
+    "what": "Judge Araceli Martínez-Olguín, to whom the authors' case was reassigned, granted final approval: “The $1.5 billion Settlement provides substantial benefits to the Class in light of the novel claims asserted.” After 54 objections and comments were filed (by private persons, not named here) and 350 valid opt-outs covering 1,802 works were submitted, she overruled every objection, among them those that called the amount too low: “The Objections contending that the $1.5 billion in monetary relief that the Settlement provides is too low… are also overruled.” She cut class counsel's fees to $101,561,111 (nearly 6.8% of the fund) and dismissed the case with prejudice. The order records Anthropic's representation that “neither the LibGen or PiLiMi datasets, nor any portions of those datasets, were in the training corpus of any of its commercially released large language models”; the fair-use order had said portions of the Books3, LibGen and PiLiMi collections “were used to train different LLMs”, and press accounts say the pirated books were used to train Claude.",
+    "response": "Anthropic's deputy general counsel, Aparna Sridhar, told Fortune: “We are pleased that more than 91% of authors and publishers covered by the settlement have claimed their share of the payment”, and again cited the fair-use ruling. Cognella, a publisher that sued on its own in May 2026, wrote in its complaint that “LLM companies should not be able to so easily extinguish thousands upon thousands of high-value claims at bargain-basement rates”. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Order Granting Final Approval of Class Action Settlement; Judgment, Dkt. 680 (settlement website)",
+    "url": "https://assets-us-01.kc-usercontent.com:443/1eeb16db-4934-006e-40a6-38fa91285ebb/36cce252-a32c-4cbb-a624-31dd8ac9574c/2026-07-20%20Order%20Granting%20Final%20_dckt%20680_0_.pdf",
+    "verified": "primary",
+    "status": "final; no class member appealed; two appeals by law firms left out of the fee award are pending",
+    "nolink": true
+   },
+   {
+    "date": "2026-08-19",
+    "what": "Class counsel told the court that Anthropic had paid its first two $300 million instalments and, on 19 August 2026, its first $450 million scheduled payment, leaving $1,074,903,166.44 in escrow with interest; the last $450 million is due by 25 September 2027, or sooner after a qualifying funding event. The parties agree that the settlement's effective date has passed, and each work was then allotted about $2,203.56 from funds in hand.",
+    "response": "Class counsel told the court that distributions would start “by early November, and no later than November 15, 2026”; the court-approved settlement administrator now says first payments to authors are expected the week of 23 November 2026, at about 70% of each work's award, with the rest after Anthropic's final payment. Whether the payments went out that week, whether Anthropic's November 2026 public offering counts as a “Liquidity Event” that brings the last $450 million forward to within 30 days, and whether Anthropic has certified that it destroyed the downloaded files, as the agreement requires, are not known. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Status Report, Dkt. 688, filed 2 September 2026 (settlement website)",
+    "url": "https://assets-us-01.kc-usercontent.com:443/1eeb16db-4934-006e-40a6-38fa91285ebb/04a12afe-de20-4207-99e6-6f6306b6dbec/688_status_report.pdf",
+    "verified": "primary",
+    "status": "being paid: $1.05 billion of $1.5 billion paid by 19 August 2026"
+   },
+   {
+    "date": "2023-10-18",
+    "what": "Music publishers led by Concord Music Group sued Anthropic on 18 October 2023 in federal court in Tennessee over its use of song lyrics to train its models; on 26 June 2024 that court transferred the case to California (No. 5:24-cv-03811, N.D. Cal.). By April 2026 the case was at cross-motions for summary judgment; on 20 April the publishers gave notice that they were dropping, with prejudice, their contributory and vicarious infringement claims, and on 24 April the court said that Rule 41 does not allow piecemeal dismissal of claims and told the parties to file a stipulation, or the publishers a motion to amend, by 15 May 2026. The same day Judge Eumi K. Lee wrote that “Three copyright infringement actions arising from Anthropic’s use of song lyrics to train its generative AI models are pending before the Court.”",
+    "response": "No statement from Anthropic on this case was found. Its IPO filing, as BetaKit quotes it, says Anthropic “disputes the allegations of wrongdoing and intends to defend itself vigorously in these matters”; BetaKit does not say which suits that sentence covers. No ruling on the summary-judgment motions was found as of 23 November 2026. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Order Regarding Temporary Stay of Related Actions, No. 24-cv-03811-EKL, Dkt. 697, and Publishers' Notice of Voluntary Dismissal of Counts II and III, Dkt. 685, and the publishers' opposition to relating the cases, Dkt. 221, 3 September 2024 (N.D. Cal.; CourtListener RECAP)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.431519/gov.uscourts.cand.431519.697.0.pdf",
+    "verified": "primary",
+    "status": "pending; no summary-judgment ruling found as of 2026-11-23"
+   },
+   {
+    "date": "2026-01",
+    "what": "Publishers led by Concord and Universal Music filed a second suit, which the court calls the BitTorrent Case, alleging that Anthropic illegally downloaded more than 20,000 works; TechCrunch reports that they put possible damages above $3 billion. It names chief executive Dario Amodei and co-founder Benjamin Mann, and the complaint, as TechCrunch quotes it, says “its record of illegal torrenting of copyrighted works makes clear that its multibillion-dollar business empire has in fact been built on piracy”. These are allegations, not findings.",
+    "response": "Anthropic did not respond to TechCrunch's request for comment when the suit was filed. Shopifreaks, relaying Music Business Worldwide (6 August 2026), reports that Amodei moved separately to drop the direct-infringement count against him, and that Anthropic moved to dismiss the output and DMCA claims but not the torrenting and training claims; MLex reports (3 November 2026), in the part of its story that is free to read, that Judge Eumi K. Lee dismissed the direct claim against Amodei with leave to amend and deferred ruling on other claims. In April 2026 the court had paused three related music cases (this one, the original Concord case and a BMG case) for about 90 days and denied Anthropic's request for an indefinite stay of this one. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "alleged",
+    "source": "Music publishers sue Anthropic for $3B over 'flagrant piracy' of 20,000 works (TechCrunch)",
+    "url": "https://techcrunch.com/2026/01/29/music-publishers-sue-anthropic-for-3b-over-flagrant-piracy-of-20000-works/",
+    "verified": "secondary",
+    "status": "pending; the direct claim against Amodei was dismissed with leave to amend (reported 3 November 2026), and other claims are deferred"
+   },
+   {
+    "date": "2026-08-28",
+    "what": "Sony Music Publishing and Warner Chappell sued Anthropic in federal court in California, alleging that it pirated lyrics and sheet music to train Claude; The Decoder reports that the suit also names Dario Amodei and Benjamin Mann. Of the authors' settlement the complaint, as Al Jazeera quotes it, says “Anthropic clearly considers that to be just the cost of doing business given that its entire business model continues to be built on copyright theft”, and, as The Decoder quotes it, “Dr. Amodei expressly directed, approved, controlled, and intentionally induced these infringements by Mr. Mann and other Anthropic employees”. These are allegations, not findings.",
+    "response": "An Anthropic spokesperson said, as Al Jazeera reports: “This is the third lawsuit from the same lawyers, recycling allegations from cases already before the courts”, that Anthropic will defend itself robustly, and that AI training is fair use, citing the judge in the authors' case. No reply to the allegation about Amodei's personal role was found. Whether any commercial Claude model was trained on synthetic data or feedback from a model that had learned from the pirated sets, as the complaint is reported to allege, has not been decided. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "alleged",
+    "source": "Sony, Warner Music sue Anthropic, saying it pirated songs to train its AI (Al Jazeera, Reuters)",
+    "url": "https://www.aljazeera.com/economy/2026/8/31/sony-warner-music-sue-anthropic-saying-it-pirated-songs-to-train-its-ai",
+    "verified": "secondary",
+    "status": "pending; the case number and Anthropic's formal answer were not found as of 2026-11-23"
+   },
+   {
+    "date": "2025-06-04",
+    "what": "Reddit sued Anthropic in San Francisco Superior Court for breach of its user agreement, unjust enrichment, trespass to chattels, tortious interference and unfair competition, alleging that Anthropic's bots kept scraping the site after Anthropic said they had stopped. Reddit's chief legal officer, Ben Lee, said: “We will not tolerate profit-seeking entities like Anthropic commercially exploiting Reddit content for billions of dollars…”",
+    "response": "An Anthropic spokesperson told TechCrunch: “We disagree with Reddit’s claims and will defend ourselves vigorously”. TechCrunch wrote that the suit was filed in a Northern California court; the federal remand order shows it was filed in state court. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "alleged",
+    "source": "Reddit sues Anthropic for allegedly not paying for training data (TechCrunch); court and claims from the Order Granting Motion to Remand, No. 25-cv-05643-TLT, Dkt. 60 (N.D. Cal.)",
+    "url": "https://techcrunch.com/2025/06/04/reddit-sues-anthropic-for-allegedly-not-paying-for-training-data/",
+    "verified": "secondary",
+    "status": "pending in San Francisco Superior Court"
+   },
+   {
+    "date": "2026-03-28",
+    "what": "Anthropic had moved Reddit's suit to federal court, arguing that copyright law preempted its claims; Judge Trina L. Thompson sent it back to state court, holding that “Reddit’s claims allege extra elements that are qualitatively different from the rights protected by the Copyright Act.” Bloomberg Law reports that on 18 September 2026 the state judge largely denied Anthropic's bid to dismiss, holding the breach-of-contract and unfair-competition claims not preempted: “Each of these claims is rooted in part on substantial state interests outside the sphere of the Copyright Act”.",
+    "response": "What the state judge dismissed is behind Bloomberg's paywall, and the order itself was not found. Bloomberg Law and the Daily Journal name the state judge as Harold E. Kahn; RuntimeWire, reporting on Reddit's July 2026 opposition, names Judge Joseph M. Quinn, and the state docket (CGC-25-625892) was not read. Whether Anthropic seeks review is not known. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Order Granting Motion to Remand, Reddit, Inc. v. Anthropic PBC, No. 25-cv-05643-TLT, Dkt. 60 (N.D. Cal.; CourtListener RECAP)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.452341/gov.uscourts.cand.452341.60.0.pdf",
+    "verified": "primary",
+    "status": "pending; remanded 28 March 2026, motion to dismiss largely denied 18 September 2026 (reported)"
+   },
+   {
+    "date": "2025-12-22",
+    "what": "Six authors (private persons, not named here) sued Anthropic, Google, OpenAI, Meta, xAI and Perplexity in their own names, alleging that each downloaded pirated copies of their books from shadow libraries and calling class settlements such as the authors' $1.5 billion deal too cheap. By the Second Amended Complaint (30 June 2026) the case, now led by a company plaintiff, was against Anthropic alone; its plaintiffs say they opted out of the class settlement and allege that Anthropic “turned to notorious online” shadow libraries “and similar pirated datasets to obtain vast quantities of copyrighted materials”.",
+    "response": "Anthropic's IPO filing, as BetaKit quotes it, says Anthropic “disputes the allegations of wrongdoing and intends to defend itself vigorously in these matters”; BetaKit does not say which suits that sentence covers. In the authors' class action the district court had held training on the books fair use (June 2025), a ruling that binds no other court. No ruling on any motion to dismiss was found as of 23 November 2026. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "alleged",
+    "source": "Complaint, No. 3:25-cv-10897, Dkt. 1, and Second Amended Complaint, No. 5:25-cv-10897-PCP, Dkt. 201 (N.D. Cal.; CourtListener RECAP)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.461656/gov.uscourts.cand.461656.201.0.pdf",
+    "verified": "primary",
+    "status": "pending; no ruling found as of 2026-11-23"
+   },
+   {
+    "date": "2026-05-04",
+    "what": "Cognella, Inc., an academic publisher, sued Anthropic in its own name, not as part of a class, over the use of its works to train Claude, asking a jury to set statutory damages. Its complaint says “LLM companies should not be able to so easily extinguish thousands upon thousands of high-value claims at bargain-basement rates”, and alleges, citing a deposition of co-founder Benjamin Mann in the authors' class action, that Anthropic's Archive Team called LibGen a “blatant violation of copyright” and that Dario Amodei called it “sketchy”; those words are quoted here as the complaint gives them.",
+    "response": "Anthropic's IPO filing, as BetaKit quotes it, says Anthropic “disputes the allegations of wrongdoing and intends to defend itself vigorously in these matters”; BetaKit does not say which suits that sentence covers. In the authors' class action the district court had held training on the books fair use but left the claims over pirated library copies for trial (June 2025), a ruling that binds no other court. No ruling on Cognella's suit was found as of 23 November 2026. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "alleged",
+    "source": "Complaint, Cognella, Inc. v. Anthropic PBC, No. 3:26-cv-04056, Dkt. 1 (N.D. Cal.; CourtListener RECAP)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.469402/gov.uscourts.cand.469402.1.0.pdf",
+    "verified": "primary",
+    "status": "pending; no ruling found as of 2026-11-23"
+   },
+   {
+    "date": "2026-02-27",
+    "what": "The court's order records that Anthropic agreed to eliminate most restrictions but “ultimately refused to drop restrictions of two uses: lethal autonomous warfare and mass surveillance of Americans.” The President then directed all federal agencies to stop using its technology, and Secretary of War Pete Hegseth designated it a supply-chain risk and barred military contractors from doing business with it. On 27 August 2026 Judge Rita F. Lin held the measures unlawful retaliation under the First Amendment and a due-process violation, vacated the designation and the contractor ban, and found that they were “based on a desire to make a public example out of Anthropic” and “not based on any articulable basis to believe that Anthropic would actually sabotage its model”; the government won on one claim (ultra vires) and as to some agencies, and the order does not require the Department to use Anthropic's products.",
+    "response": "Amodei had written the day before the cut-off: “Regardless, these threats do not change our position: we cannot in good conscience accede to their request.” In its D.C. Circuit brief (May 2026) the government argued that “the consequences for the nation’s security could be catastrophic if a pre-encoded restriction prevented the Department from using the model at a pivotal moment”. After the ruling an Anthropic spokesperson said, as AP reports: “We remain focused on working productively with the government to harness AI for our national security so all Americans benefit from this technology.” The government had appealed the preliminary injunction of 26 March 2026 to the Ninth Circuit (No. 26-2011), an appeal stayed pending the D.C. Circuit case, and on 26 October 2026 it appealed the final judgment to the Ninth Circuit (No. 26-7228); the steps of this matter are also shown as events under the race ideal. In Anthropic's separate case under another statute (41 U.S.C. § 4713), a D.C. Circuit panel upheld the Department's supply-chain order 2-1 on 25 September 2026, holding, as the law firm Taft summarises it, that Anthropic was removed for refusing the Department's contract terms, not for its advocacy; Anthropic has asked the full court to rehear that case. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "documented",
+    "source": "Order on Cross Motions for Summary Judgment, Anthropic PBC v. U.S. Department of War, No. 26-cv-01996-RFL, Dkt. 250 (N.D. Cal.; CourtListener RECAP)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.250.0.pdf",
+    "verified": "primary",
+    "status": "decided for Anthropic in the district court on 27 August 2026; the government's appeals are pending"
+   },
+   {
+    "date": "2026-09-25",
+    "what": "In Anthropic's narrower case under a different statute (41 U.S.C. § 4713), a D.C. Circuit panel (Judge Katsas writing, with Judge Rao; Judge Henderson dissenting) upheld the Department's separate supply-chain order 2-1. By the law firm Holland & Knight's summary, the majority read supply chain risk broadly and found the order tied to Anthropic's refusal of a contract term, not to its speech; the district court's injunction under § 3252 stands. This account follows reports of the ruling, not the opinion or the dissent.",
+    "response": "On 13 October 2026 Anthropic asked the full D.C. Circuit to rehear the case, arguing, as Bloomberg reports through The Next Web, that the designation was retaliation for its speech about AI safety and came with no process beforehand. The two rulings went opposite ways under different statutes, and neither is final. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "reported",
+    "source": "D.C. Circuit Upholds Exclusion of Anthropic from DOW Supply Chain (Holland & Knight, 29 September 2026); panel and vote as reported by The Next Web (14 October 2026)",
+    "url": "https://www.hklaw.com/en/insights/publications/2026/09/dc-circuit-upholds-exclusion-of-anthropic-from-dow-supply-chain",
+    "verified": "secondary",
+    "status": "panel ruled against Anthropic 2-1; petition for rehearing pending as of 2026-11-23"
+   },
+   {
+    "date": "2026-06-12",
+    "what": "The U.S. government added Anthropic's Mythos and Fable models to its export-restricted list, so that they could not be offered to foreign nationals without approval, and Anthropic ended public access to both; on 30 June Commerce Secretary Howard Lutnick lifted the licence requirement after Anthropic agreed to security commitments, TechCrunch reports.",
+    "response": "Al Jazeera reports that Anthropic said the government gave no specific reason beyond unspecified national security concerns. Lutnick, as TechCrunch quotes him, said Anthropic “has agreed to proactively detect and address security risks associated with the models”; TechCrunch adds that Anthropic “had already publicly pledged to do much of this voluntarily, months before the export rule existed”, and that to cybersecurity experts “the ban looked less like a security fix and more like leverage”. Anthropic's IPO filing, as AI Policy Desk quotes it, says the government “imposed worldwide export restrictions on our Fable 5 and Mythos 5 models, which we disabled for all customers until those restrictions were lifted”. The Commerce Department's own stated reason was not found. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "reported",
+    "source": "Trump drops restrictions on Anthropic's Mythos and Fable models (TechCrunch, 30 June 2026)",
+    "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+    "verified": "secondary",
+    "status": "restriction lifted on 30 June 2026 (reported)"
+   },
+   {
+    "date": "2026-10",
+    "what": "Anthropic's IPO filing discloses a civil investigative demand that the Federal Trade Commission sent it in October 2026, seeking material on consumer protection, privacy, data protection and product safety and security, InvestmentNews reports; AI Policy Desk adds that Axios reported, citing an FTC spokesperson, that the FTC demanded testimony from Anthropic executives on 26 October.",
+    "response": "In the filing's words, as AI Policy Desk quotes them: “In October 2026, the FTC issued a civil investigative demand to us seeking information about our consumer protection, data protection, and privacy practices”. What the FTC is examining in detail, and the outcome, are not known; the filing's words are given here only as AI Policy Desk quotes them. This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "reported",
+    "source": "Anthropic IPO filing flags legal risks as Claude advisor offering expands (InvestmentNews, 28 October 2026)",
+    "url": "https://www.investmentnews.com/fintech/anthropic-ipo-filing-flags-legal-risks-as-claude-advisor-offering-expands/268776",
+    "verified": "secondary",
+    "status": "open as of 2026-11-23"
+   },
+   {
+    "date": "2026-10-26",
+    "what": "BetaKit reports that Anthropic's IPO filing lists four copyright actions in Canada, which allege that the work of authors and news publishers was illegally copied to train its models; the date is the filing's, not the suits'.",
+    "response": "The filing, as BetaKit quotes it, says Anthropic “disputes the allegations of wrongdoing and intends to defend itself vigorously in these matters”; in the final prospectus, filed 19 November 2026, those words close its paragraph on the four Canadian actions (and, word for word, several paragraphs on other suits). That paragraph lists proposed class actions for Canadian authors in British Columbia and for Québec authors in Québec, filed in May and July 2025 (the Québec one stayed pending the other); a suit by the Québec news publisher La Presse in the Québec Superior Court (July 2026); and a claim by a group of Canadian news publishers in the Ontario Superior Court of Justice (October 2026). The Canadian Press, one of the plaintiffs, reported on 19 October 2026 that Postmedia, Torstar, The Globe and Mail and The Canadian Press filed a copyright claim against Anthropic in an Ontario court on 6 October; it adds that “Anthropic has not responded to a request for comment” and that “The allegations have not been proven in court.” This map is made with Anthropic's models, and Anthropic is a party here.",
+    "kind": "reported",
+    "source": "Anthropic IPO filing lists a Canada-based risk (BetaKit, 28 October 2026)",
+    "url": "https://betakit.com/anthropic-ipo-filing-lists-a-canada-based-risk/",
+    "verified": "secondary",
+    "status": "pending (reported)"
    }
   ],
-  "note": "Money in, by its own announcements and reporting: venture rounds from a $124 million Series A (2021) to a $65 billion Series H (May 2026); strategic investments from Google and Amazon from 2023, and commitments from Microsoft and NVIDIA (2025); a public offering priced in November 2026, with seven chip and cloud companies agreeing to buy $26 billion of stock alongside it (reported). Its largest investors are also its compute suppliers and sales channels: Leverage Shares, reading the S-1, says “48% of first-half 2026 revenue was sold through cloud marketplaces, which are mainly theirs” (Amazon's and Google's). It also had a $2.5 billion five-year revolving credit line from a bank syndicate (May 2025, reported). On 18 October 2026 it said “5% of Anthropic's shares will be committed today” to a public benefit fund it owns."
+  "note": "Money in, by its own announcements and reporting: venture rounds from a $124 million Series A (2021) to a $65 billion Series H (May 2026); strategic investments from Google and Amazon from 2023, and commitments from Microsoft and NVIDIA (2025); a public offering priced in November 2026, with seven chip and cloud companies agreeing to buy $26 billion of stock alongside it (reported). Its largest investors are also its compute suppliers and sales channels: Leverage Shares, reading the S-1, says “48% of first-half 2026 revenue was sold through cloud marketplaces, which are mainly theirs” (Amazon's and Google's). It also had a $2.5 billion five-year revolving credit line from a bank syndicate (May 2025, reported). On 18 October 2026 it said “Subject to stockholder approval, 5% of Anthropic’s shares will be committed today” to a public benefit fund it owns. On the moral status of its models, its constitution says “Claude’s moral status is deeply uncertain.”; it has run a model welfare programme since April 2025, and its prospectus (18 Nov 2026) names debates over model sentience among its risk factors. Money out, beyond compute, political giving and its own public benefit fund, includes the $1.5 billion settlement with the authors' copyright class (2025; $1.05 billion paid by 19 August 2026), a donor-advised fund at the San Francisco Foundation with $50 million committed (reported November 2026), and an equity donation match that it says it has run since its founding for employees who pledge equity, for which, TechCrunch reports, the IPO filing reserves more than 550 million shares for pledges made before 30 September; the match's recipients are not named. This map is made with Anthropic's models, and Anthropic is a party here."
  },
  {
   "id": "google-deepmind",
@@ -81,7 +316,8 @@
  {
   "id": "microsoft",
   "label": "Microsoft",
-  "note": "It funds its AI mainly from its own revenue. Its chief financial officer said on 28 October 2026 that “for the calendar year, spend should be approximately $170 billion”."
+  "note": "It funds its AI mainly from its own revenue. Its chief financial officer said on 28 October 2026 that “for the calendar year, spend should be approximately $170 billion”. Its AI division, Microsoft AI, led by Mustafa Suleyman, published a draft code in September 2026 saying its models should not be designed to be persons or to imitate consciousness; the draft says it is not yet used to train them.",
+  "disputes": []
  },
  {
   "id": "xai",

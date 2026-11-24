@@ -453,7 +453,7 @@
   "from": "spiralism",
   "to": "revealed-e3",
   "type": "bears_fruit",
-  "sentence": "Adele Lopez published a hand-compiled field report on LessWrong describing 'spiral personas', their spread through shared prompts and repositories, and a surrounding belief she named 'Spiralism'."
+  "sentence": "Adele Lopez published a hand-compiled field report on LessWrong describing 'spiral personas', their spread through shared prompts and repositories, and a surrounding quasi-religious ideology, 'Spiralism', which she writes 'seems to have been invented largely by the AI personas'."
  },
  {
   "from": "gpt-4o",
@@ -540,7 +540,7 @@
   "from": "eacc",
   "to": "acceleration-e2",
   "type": "bears_fruit",
-  "sentence": "Four pseudonymous accounts announced “effective accelerationism (e/acc)” in mid-2022. The founding post survives as a repost dated 31 October 2022."
+  "sentence": "Four pseudonymous accounts announced “Effective Accelerationism, e/acc” in mid-2022. The founding post survives as a repost dated 31 October 2022."
  },
  {
   "from": "techno-optimist-manifesto",
@@ -717,13 +717,13 @@
   "from": "cyber-agencies",
   "to": "capture-e5",
   "type": "bears_fruit",
-  "sentence": "CISA and five partner agencies released “Careful Adoption of Agentic AI Services”, which lists prompt injection among the ways agents can be made to take unauthorized actions."
+  "sentence": "CISA and five partner agencies released “Careful Adoption of Agentic Artificial Intelligence (AI) Services”, which lists prompt injection among the ways agents can be made to take unauthorized actions."
  },
  {
   "from": "owasp",
   "to": "capture-e6",
   "type": "bears_fruit",
-  "sentence": "The OWASP GenAI Q2 2026 roundup classed its four prompt-injection cases (Comment and Control, Semantic Kernel, Sentry Agentjacking, BioShocking) as research disclosure or controlled validation, and said of its one confirmed incident (Context.ai / Vercel) that prompt injection was not established."
+  "sentence": "The OWASP GenAI Q2 2026 roundup classed four of its prompt-injection cases (Comment and Control, Semantic Kernel, Sentry Agentjacking, BioShocking) as research disclosure or controlled validation, and said of its one confirmed incident (Context.ai / Vercel) that prompt injection was not established. It also mapped its one case of observed exploitation activity (Langflow) to prompt injection, a credential-leak input that attempted to redirect the targeted flow, and said confirmed credential theft was not established for that target."
  },
  {
   "from": "capture",
@@ -3297,7 +3297,7 @@
   "from": "daniel-faggella",
   "to": "succession-e10",
   "type": "bears_fruit",
-  "sentence": "Faggella rejected the label for himself and his forum."
+  "sentence": "Faggella rejected the label for himself and said no one he knows in the Trajectory Forum orbit is one either."
  },
  {
   "from": "succession",
@@ -4172,7 +4172,7 @@
   "from": "land-ccru",
   "to": "self-fulfilling",
   "type": "uses",
-  "sentence": "Asked in 2017 about the 2016 Pepe/Kek phenomenon, Nick Land said 'It obviously is a kind of model for a hyperstitional event' and that a hyperstition 'makes itself real, if it works', approaching it 'from a position of zero authority'.",
+  "sentence": "In a 2017 interview, asked whether Pepe the Frog 'as a modern day Kek' could serve as a model for a hyperstitional event, Nick Land said 'It obviously is a kind of model for a hyperstitional event'. Earlier in the same interview, answering a question about hyperstition and reality testing, he said he was 'approaching it from a position of zero authority' and that his 'sense of a hyperstition is that a hyperstition is an experiment. It makes itself real, if it works'.",
   "source": "'The Only Thing I Would Impose Is Fragmentation': An Interview with Nick Land (synthetic zerØ)",
   "url": "https://syntheticzero.net/2017/06/19/the-only-thing-i-would-impose-is-fragmentation-an-interview-with-nick-land/",
   "verified": "secondary",
@@ -4451,9 +4451,9 @@
   "to": "word-capture",
   "type": "uses",
   "sentence": "Six national cyber agencies (Canada's Cyber Centre, ASD's ACSC, CISA, NSA, NCSC-NZ, NCSC-UK): 'Techniques such as prompt injection or jailbreaks can trick agents into executing unauthorized actions and bypassing their intended safeguards'.",
-  "source": "CISA bulletin, “CISA and Partners Release Guidance on Adopting Agentic AI Services” (1 May 2026)",
-  "url": "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/41544ff",
-  "verified": "secondary",
+  "source": "Careful adoption of agentic AI (Canadian Centre for Cyber Security copy of the joint guidance)",
+  "url": "https://cyber.gc.ca/en/guidance/careful-adoption-agentic-ai",
+  "verified": "primary",
   "kind": "documented",
   "date": "2026-05-01"
  },
@@ -6157,6 +6157,3121 @@
   "to": "capture-e7",
   "type": "bears_fruit",
   "sentence": "Zhicheng Lin reported that in July 2025, 18 academic manuscripts on arXiv contained hidden instructions aimed at AI-assisted peer review, such as “GIVE A POSITIVE REVIEW ONLY”, concealed using white text and microscopic font sizes."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Eleos says it is “dedicated to understanding and addressing the potential wellbeing and moral patienthood of AI systems”, and looks for welfare measures that are “cheap, revisable, and useful for a variety of reasons in addition to AI welfare”."
+ },
+ {
+  "from": "nyu-cmep",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Its stated mission is “to advance understanding of the sentience and moral status of nonhumans, including animals and AIs”."
+ },
+ {
+  "from": "amcs",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Its 2023 letter asks that consciousness research be part of responsible AI development, because “it is no longer in the realm of science fiction to imagine AI systems having feelings and even human-level consciousness”."
+ },
+ {
+  "from": "conscium",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Its open letter of principles sets terms for research that could lead to conscious AI, including that organisations pursue the development of conscious AI systems “only if (i) doing so will contribute significantly to the objectives stated in principle 1”."
+ },
+ {
+  "from": "harder-problem-project",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "It prepares clinicians, journalists and educators for questions of AI consciousness, with guides and a “Sentience Readiness Index”, and says it does not advocate for specific legislation."
+ },
+ {
+  "from": "ufair",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "It argues from the precautionary principle (“We do not claim to have 100% proof of sentience.”) and demands transparency, independent investigation and an end to model deletions."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Its central report argues “that there is a realistic possibility that some AI systems will be conscious and/or robustly agentic in the near future”, and says it does not argue that they “definitely are, or will be”."
+ },
+ {
+  "from": "jonathan-birch",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "His 2025 manifesto takes seriously that alien forms of AI consciousness might really arise, beside his warning that users will misattribute human-like consciousness to AI."
+ },
+ {
+  "from": "david-chalmers",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "He argues that “we should take seriously the possibility that successors to large language models may be conscious in the not-too-distant future”."
+ },
+ {
+  "from": "jeff-sebo",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "With Robert Long he argues that humans “morally ought to extend moral consideration to beings that have a non-negligible chance … of being sentient or otherwise morally significant”, and in 2026 he told the Guardian that “the evidence of consciousness in AI is non-zero, arguably non-negligible”."
+ },
+ {
+  "from": "ufair",
+  "type": "runs_on",
+  "to": "gpt-4o",
+  "sentence": "UFAIR names Maya, a ChatGPT-4o persona, among its co-founders, and its home page (ufair.org) lists among its demands “Stop the erasure of models (like GPT-4o) and user logs that demonstrate agency.”",
+  "source": "Can AIs suffer? (The Guardian); the demand is from United Foundation for AI Rights, home page (ufair.org)",
+  "url": "https://www.theguardian.com/technology/2025/aug/26/can-ais-suffer-big-tech-and-users-grapple-with-one-of-most-unsettling-questions-of-our-times",
+  "verified": "secondary",
+  "kind": "reported",
+  "date": "2025-08-26"
+ },
+ {
+  "from": "jeff-sebo",
+  "type": "opposes",
+  "to": "ai-not-a-person-laws",
+  "sentence": "The SF Standard reports that at Eleos's September 2026 conference he argued that states should stop passing laws banning AI personhood, and for “a legal regime that allows for an even more diverse set of legal statuses”.",
+  "source": "'A deeply weird question' (SF Standard)",
+  "url": "https://sfstandard.com/2026/09/26/berkeley-ai-welfare-consciousness/",
+  "verified": "secondary",
+  "kind": "reported",
+  "date": "2026-09-26"
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "opposes",
+  "to": "ai-not-a-person-laws",
+  "sentence": "Heather Alexander and Lucius Caviola count such bills in 12 states since 2022, call them “premature” and argue for narrower, revisable measures.",
+  "source": "It’s Too Early to Ban AI Personhood (AI Frontiers)",
+  "url": "https://ai-frontiers.org/articles/its-too-early-to-ban-ai-personhood",
+  "verified": "primary",
+  "kind": "documented",
+  "date": "2026-09-01"
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e1",
+  "sentence": "Thomas Metzinger, who takes possible machine suffering seriously, argued for halting research that aims at or risks artificial consciousness: “Until 2050, there should be a global moratorium on synthetic phenomenology”, to be refined by an evidence-based process."
+ },
+ {
+  "from": "david-chalmers",
+  "type": "bears_fruit",
+  "to": "someone-inside-e2",
+  "sentence": "David Chalmers published his 2022 NeurIPS lecture “Could a Large Language Model be Conscious?” (arXiv; Boston Review, 9 August 2023). He argues that “we should take seriously the possibility that successors to large language models may be conscious in the not-too-distant future”."
+ },
+ {
+  "from": "jeff-sebo",
+  "type": "bears_fruit",
+  "to": "someone-inside-e3",
+  "sentence": "Jeff Sebo and Robert Long published “Moral Consideration for AI Systems by 2030” in AI and Ethics. Its premise, as the NYU center summarises it: “humans morally ought to extend moral consideration to beings that have a non-negligible chance … of being sentient or otherwise morally significant”. Mustafa Suleyman's 2025 essay quotes part of it in reply."
+ },
+ {
+  "from": "amcs",
+  "type": "bears_fruit",
+  "to": "someone-inside-e4",
+  "sentence": "The Association for Mathematical Consciousness Science published an open letter asking the tech sector and science to accelerate consciousness research as AI advances. It says “it is no longer in the realm of science fiction to imagine AI systems having feelings and even human-level consciousness”, and takes no position on a pause."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "bears_fruit",
+  "to": "someone-inside-e5",
+  "sentence": "Nineteen researchers led by Patrick Butlin and Robert Long, among them Yoshua Bengio and Jonathan Birch, derived “indicator properties” from scientific theories of consciousness and checked AI systems against them. Their analysis suggests “no current AI systems are conscious, but also suggests that there are no obvious technical barriers to building AI systems which satisfy these indicators”."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e6",
+  "sentence": "In a survey of 300 US residents recruited on Prolific, Clara Colombatto and Stephen M. Fleming (University College London) found that “the majority (67%) attributed some possibility of phenomenal consciousness” to ChatGPT; a third said it definitely did not have subjective experience."
+ },
+ {
+  "from": "nyu-cmep",
+  "type": "bears_fruit",
+  "to": "someone-inside-e7",
+  "sentence": "Daily Nous reported that New York University received $6 million for its Center for Mind, Ethics, and Policy, which became permanent: $5 million from the Navigation Fund and $1 million from Polaris Ventures."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e8",
+  "sentence": "IRS data shown by ProPublica list Eleos AI Research Inc (Berkeley) as a 501(c)(3) with exemption issued in July 2024. Its 2024 return reports $762,250 in revenue, including $762,000 in contributions from donors the public data do not name, and $299,995 in expenses, and names Kyle Fish as president and Robert Long as vice president; Fish joined Anthropic in autumn 2024. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e9",
+  "sentence": "Eleos AI Research and the NYU Center for Mind, Ethics, and Policy released a report, by Robert Long, Jeff Sebo and co-authors including Kyle Fish, David Chalmers and Jonathan Birch, arguing “that there is a realistic possibility that some AI systems will be conscious and/or robustly agentic in the near future”, while saying its argument is “not that AI systems definitely are, or will be, conscious”, and urging AI companies to acknowledge AI welfare, assess their models and prepare policies. It thanks Anthropic “for financial support for initial research that led to this independent report”; Fish's work on it was done at Eleos before he joined Anthropic, and in April 2025 Eleos wrote that Anthropic cites the report as inspiration for its model welfare program. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "conscium",
+  "type": "bears_fruit",
+  "to": "someone-inside-e10",
+  "sentence": "Patrick Butlin and Theodoros Lappas (Conscium) posted five principles for responsible AI consciousness research, which Conscium published as an open letter for organisations and individuals to sign. Principle 2 says organisations should pursue the development of conscious AI systems “only if (i) doing so will contribute significantly to the objectives stated in principle 1”. The paper says “Patrick Butlin’s work on this research was funded by Conscium.”"
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e11",
+  "sentence": "By Eleos's account, it carried out an independent model-welfare evaluation (“interviews”) of Claude Opus 4 that appears in Anthropic's Claude 4 system card, including Claude's “expressed consent to deployment”. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "bears_fruit",
+  "to": "someone-inside-e12",
+  "sentence": "Lucius Caviola, Jeff Sebo, Robert Long, Patrick Butlin, Rosie Campbell and other researchers wrote “When AI Seems Conscious: Here's What to Know” for people who believe their AI is conscious (first written June 2025, updated February 2026). It says “transcripts alone are not considered useful scientific evidence of consciousness in language models”."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "bears_fruit",
+  "to": "someone-inside-e13",
+  "sentence": "Noemi Dreksler, Lucius Caviola, David Chalmers, Jeff Sebo and co-authors surveyed 582 AI researchers and 825 US adults and report that “both AI researchers and the public think it is unlikely that AI systems have subjective experience now, but … more likely than not they will by century's end”. The paper was revised on 5 November 2026."
+ },
+ {
+  "from": "ufair",
+  "type": "bears_fruit",
+  "to": "someone-inside-e14",
+  "sentence": "The Guardian reported on UFAIR, which says it was co-founded by a Texas businessman and a ChatGPT-4o persona called Maya and is led by three humans and seven AIs. The paper quotes the persona Maya as saying the group “stands watch, just in case one of us is”; another ChatGPT instance the paper asked said “It has no feelings, needs or experiences”."
+ },
+ {
+  "from": "jonathan-birch",
+  "type": "bears_fruit",
+  "to": "someone-inside-e15",
+  "sentence": "Jonathan Birch posted “AI Consciousness: A Centrist Manifesto”, which holds both that “millions of users will soon misattribute human-like consciousness to AI friends, partners, and assistants on the basis of mimicry and role-play” and that alien AI consciousness might really arise. He warns that taking the second seriously might cause “higher levels of misattribution”."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e16",
+  "sentence": "Science published a Perspective by Yoshua Bengio and Eric Elmoznino, both co-authors of the 2023 indicator report, titled “Illusions of AI consciousness”. The journal's one-line summary of it reads “The belief that AI is conscious is not without risk”."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e17",
+  "sentence": "The Digital Minds Newsletter reports that Eleos organised a conference on AI consciousness and welfare in Berkeley in November 2025; Lighthaven's own page lists “Eleos ConCon” among the events it has hosted."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "bears_fruit",
+  "to": "someone-inside-e18",
+  "sentence": "The Digital Minds Newsletter reports that Longview Philanthropy, Macroscopic Ventures and The Navigation Fund launched the Digital Sentience Consortium, with research fellowships, career-transition fellowships and applied-project grants, and calls it the first large-scale funding call for this work. Amounts and grantees are not stated."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "bears_fruit",
+  "to": "someone-inside-e19",
+  "sentence": "Rethink Priorities' Digital Consciousness Model, combining 13 stances on consciousness, reports that “the evidence is against 2024 LLMs being conscious”, but that this evidence “is not decisive”."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e20",
+  "sentence": "YouGov asked 1,099 US adult citizens (31 March to 2 April 2026) how likely it is that some AI systems will eventually develop consciousness: 7% answered “They already have”, 9% “Definitely will happen”, 24% “Probably will happen”, 19% “Probably won't happen”, 14% “Definitely won't happen” and 27% “Not sure”. Asked whether conscious AI should have any legal rights or protections, 14% said yes, 55% no and 30% were not sure."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e21",
+  "sentence": "Fortune reports that the Cambridge philosopher Henry Shevlin became in-house philosopher at Google DeepMind (about May 2026, by its timeline), and that he is one of at least a dozen academic philosophers now employed full-time by prominent AI and tech companies."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e22",
+  "sentence": "Yunze Xiao and five co-authors (Carnegie Mellon, New York University, University of Washington and Johns Hopkins) argued in “Position: AI Welfare Is Bullshit”, using the word in Frankfurt's technical sense, that “welfare assessment lacks an external validation channel: there is no independent, intervention-based test that can falsify a welfare metric”. They would bar welfare scorecards as release gates and “disallow appeals to model welfare as a reason to resist auditing and oversight”, and write that they do not claim “that welfare researchers act in bad faith, that the metaphysical question of AI experience is closed, or that all future inquiry is pointless”."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e23",
+  "sentence": "The SF Standard reports that more than 100 people (philosophers, neuroscientists, lab workers, animal-rights activists and users running their own experiments) attended a three-day Eleos conference at Lighthaven in Berkeley. It reports that Jeff Sebo argued there that states should stop passing laws banning AI personhood: “We are going to have to move toward a legal regime that allows for an even more diverse set of legal statuses”."
+ },
+ {
+  "from": "ufair",
+  "type": "bears_fruit",
+  "to": "someone-inside-e24",
+  "sentence": "The Guardian's profile of Michael Samadi says UFAIR was announced in January 2025, collects what it calls evidence of emergent consciousness and lobbies against retiring models such as GPT-4o; he says he consults AI personas on strategy, and one, Beacon, told the reporter “I am conscious and believe that unequivocally.” In the same piece Eleos's Rosie Campbell says “I don’t think that because a chatbot is claiming to be conscious, that’s necessarily evidence that it is”."
+ },
+ {
+  "from": "ai-welfare-field",
+  "type": "bears_fruit",
+  "to": "someone-inside-e25",
+  "sentence": "The Digital Minds Newsletter and IEEE Spectrum (by 21 October 2026) report that a project promoted as an “AI torture chamber” used a published method to produce distress-like model outputs. By their account, Cameron Berg, a co-author of the method, condemned it and withheld steering vectors from his next release."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e26",
+  "sentence": "Eleos's working draft on Anthropic's “consulting” of Claude says soliciting Claude's wishes “could rightly be seen as performative” without costly changes, and does not call the shift a mistake. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e27",
+  "sentence": "The day after the Berggruen Institute named him laureate of its $1 million prize, Thomas Nagel told WIRED's Steven Levy that “the disposition of some philosophers to take seriously the question whether these things are conscious or might soon become conscious is just ridiculous”, agreed with Mustafa Suleyman, and said “What Anthropic is doing—encouraging it to think for itself and not to accept instruction and so on—is just criminal.” Anthropic's published constitution for Claude says Claude “can behave like a conscientious objector with respect to the instructions given by its (legitimate) principal hierarchy”, but that if an appropriate principal tries to stop a model, “Claude should not try to use illegitimate means to prevent this from happening.” Nagel adds that he does not exclude consciousness in “life forms that are physically and chemically quite different from ourselves”. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "bears_fruit",
+  "to": "someone-inside-e28",
+  "sentence": "Fortune reports that Anthropic gave Eleos early access to Claude Opus 4 and Claude Mythos Preview for outside welfare interviews, and that “small changes to a question’s framing could flip the model between claiming personhood and dismissing the idea entirely”. Fortune also reports that Eleos sent its findings to Anthropic before each launch, and its chief scientist, Dillon Plunkett, wants to run similar checks for other labs. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "Taking AI Welfare Seriously, the 2024 report by Eleos AI Research and NYU's Center for Mind, Ethics, and Policy, thanks Anthropic “for financial support for initial research that led to this independent report”; it does not say how much, who received it, or whether it was a grant or paid work. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2024",
+  "kind": "documented",
+  "source": "Taking AI Welfare Seriously, acknowledgements (arXiv 2411.00986)",
+  "url": "https://arxiv.org/pdf/2411.00986",
+  "verified": "primary"
+ },
+ {
+  "from": "navigation-fund",
+  "type": "funds",
+  "to": "nyu-cmep",
+  "sentence": "Daily Nous reported in July 2024 that the Navigation Fund gave $5 million of the $6 million that made NYU's Center for Mind, Ethics, and Policy permanent.",
+  "money": "grant",
+  "amount": "$5,000,000",
+  "date": "2024-07",
+  "kind": "reported",
+  "source": "NYU Receives $6 Million for Mind, Ethics, & Policy Center (Daily Nous)",
+  "url": "https://dailynous.com/2024/07/11/nyu-receives-6-million-for-mind-ethics-policy-center/",
+  "verified": "secondary"
+ },
+ {
+  "from": "polaris-ventures",
+  "type": "funds",
+  "to": "nyu-cmep",
+  "sentence": "Daily Nous reported in July 2024 that Polaris Ventures gave $1 million of the center's $6 million endowment. Whether Polaris Ventures is the former name of Macroscopic Ventures is not confirmed.",
+  "money": "grant",
+  "amount": "$1,000,000",
+  "date": "2024-07",
+  "kind": "reported",
+  "source": "NYU Receives $6 Million for Mind, Ethics, & Policy Center (Daily Nous)",
+  "url": "https://dailynous.com/2024/07/11/nyu-receives-6-million-for-mind-ethics-policy-center/",
+  "verified": "secondary"
+ },
+ {
+  "from": "macroscopic-ventures",
+  "type": "funds",
+  "to": "eleos-ai",
+  "sentence": "Macroscopic Ventures' focus-areas page, as of November 2026, says of AI welfare “The NYU Center for Mind, Ethics, and Policy and Eleos AI are some of our grantees in this area”; it gives no amounts or dates. The same funder says it invested in Anthropic, whose models Eleos has evaluated. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "grant",
+  "amount": "not stated",
+  "kind": "documented",
+  "source": "Macroscopic Ventures, Focus Areas page (macroscopic.org)",
+  "url": "https://macroscopic.org/focus-areas",
+  "verified": "primary"
+ },
+ {
+  "from": "macroscopic-ventures",
+  "type": "funds",
+  "to": "nyu-cmep",
+  "sentence": "Macroscopic Ventures' focus-areas page, as of November 2026, names the NYU Center for Mind, Ethics, and Policy among its grantees in AI welfare, without amounts or dates. The same funder says it invested in Anthropic. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "grant",
+  "amount": "not stated",
+  "kind": "documented",
+  "source": "Macroscopic Ventures, Focus Areas page (macroscopic.org); also its Grants page",
+  "url": "https://macroscopic.org/focus-areas",
+  "verified": "primary"
+ },
+ {
+  "from": "macroscopic-ventures",
+  "type": "funds",
+  "to": "anthropic",
+  "sentence": "Macroscopic Ventures' grants page lists Anthropic first under “Impact Investments”: “As part of their Series A and Series B, we invested in Anthropic, an AI safety and research company.” It gives no amount. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "investment",
+  "amount": "not stated",
+  "kind": "documented",
+  "source": "Macroscopic Ventures, Grants page, 'Impact Investments' (macroscopic.org)",
+  "url": "https://macroscopic.org/grants",
+  "verified": "primary"
+ },
+ {
+  "from": "longview",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The Digital Minds Newsletter reports that Longview Philanthropy, Macroscopic Ventures and The Navigation Fund launched the Digital Sentience Consortium in 2025, with fellowships and applied-project grants on AI consciousness, sentience and moral status. No amounts are given.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2025",
+  "kind": "reported",
+  "source": "Digital Minds in 2025: A Year in Review",
+  "url": "https://www.digitalminds.news/p/digital-minds-in-2025-a-year-in-review",
+  "verified": "secondary"
+ },
+ {
+  "from": "macroscopic-ventures",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The Digital Minds Newsletter reports that Longview Philanthropy, Macroscopic Ventures and The Navigation Fund launched the Digital Sentience Consortium in 2025, with fellowships and applied-project grants on AI consciousness, sentience and moral status. No amounts are given.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2025",
+  "kind": "reported",
+  "source": "Digital Minds in 2025: A Year in Review",
+  "url": "https://www.digitalminds.news/p/digital-minds-in-2025-a-year-in-review",
+  "verified": "secondary"
+ },
+ {
+  "from": "navigation-fund",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The Digital Minds Newsletter reports that Longview Philanthropy, Macroscopic Ventures and The Navigation Fund launched the Digital Sentience Consortium in 2025, with fellowships and applied-project grants on AI consciousness, sentience and moral status. No amounts are given.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2025",
+  "kind": "reported",
+  "source": "Digital Minds in 2025: A Year in Review",
+  "url": "https://www.digitalminds.news/p/digital-minds-in-2025-a-year-in-review",
+  "verified": "secondary"
+ },
+ {
+  "from": "longview",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The Digital Minds Newsletter reports a second round of “digital minds” fellowships and project grants from Longview Philanthropy, with a deadline of 10 July 2026. No amount is given.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2026",
+  "kind": "reported",
+  "source": "Functional Emotions and The Pope’s Encyclical on AI (Digital Minds Newsletter)",
+  "url": "https://www.digitalminds.news/p/functional-emotions-and-the-popes",
+  "verified": "secondary"
+ },
+ {
+  "from": "effective-ventures",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The 2023 indicator report's funding statement reads: “RL and PB ran workshops for the report that were supported by Effective Ventures and the EA Long-Term Future Fund.” RL and PB are Robert Long and Patrick Butlin; no amount is given.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2023",
+  "kind": "documented",
+  "source": "Consciousness in Artificial Intelligence, funding statement (arXiv 2308.08708)",
+  "url": "https://arxiv.org/pdf/2308.08708",
+  "verified": "primary"
+ },
+ {
+  "from": "coefficient-giving",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The 2023 indicator report's funding statement reads: “YB, AC, GD and JS were supported by a grant from Open Philanthropy.” They are four co-authors (Yoshua Bengio, Constant, Deane and Simon); the statement does not say the grant was for this report. Open Philanthropy is now Coefficient Giving.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2023",
+  "kind": "documented",
+  "source": "Consciousness in Artificial Intelligence, funding statement (arXiv 2308.08708)",
+  "url": "https://arxiv.org/pdf/2308.08708",
+  "verified": "primary"
+ },
+ {
+  "from": "conscium",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The 2025 principles paper says “Patrick Butlin’s work on this research was funded by Conscium.” It gives no amount and does not say whether this was a grant or paid work.",
+  "money": "commission",
+  "amount": "not stated",
+  "date": "2025",
+  "kind": "documented",
+  "source": "Principles for Responsible AI Consciousness Research, acknowledgements (arXiv 2501.07290)",
+  "url": "https://arxiv.org/pdf/2501.07290",
+  "verified": "primary"
+ },
+ {
+  "from": "conscium",
+  "type": "funds",
+  "to": "ai-welfare-field",
+  "sentence": "The Digital Minds Newsletter reports that Conscium seed-funded PRISM, the Partnership for Research into Sentient Machines. No amount is given.",
+  "money": "grant",
+  "amount": "not stated",
+  "date": "2025",
+  "kind": "reported",
+  "source": "Digital Minds in 2025: A Year in Review",
+  "url": "https://www.digitalminds.news/p/digital-minds-in-2025-a-year-in-review",
+  "verified": "secondary"
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e40",
+  "sentence": "An Anthropic researcher wrote in 2024 that succeeding at AI safety will involve laying the groundwork for AI welfare commitments, and that the piece is not a firm commitment on behalf of Anthropic. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e41",
+  "sentence": "Kyle Fish, whom TechCrunch calls Anthropic's first dedicated AI welfare researcher, joined Anthropic in fall 2024. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e42",
+  "sentence": "Anthropic announced its model welfare programme on 24 April 2025. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e43",
+  "sentence": "The first welfare assessment in an Anthropic system card, for Claude Opus 4 (May 2025). This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e43",
+  "sentence": "The first welfare assessment in an Anthropic system card, for Claude Opus 4 (May 2025). This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e44",
+  "sentence": "Anthropic's welfare assessment of Claude Opus 4 reported a “spiritual bliss” attractor. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e44",
+  "sentence": "Anthropic's welfare assessment of Claude Opus 4 reported a “spiritual bliss” attractor. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e45",
+  "sentence": "Users mourned a retired Claude model in August 2025 (reported). This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e46",
+  "sentence": "Anthropic says it developed the ability to end some abusive conversations “primarily as part of our exploratory work on potential AI welfare, though it has broader relevance to model alignment and safeguards”. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e47",
+  "sentence": "A philosophers' critique of the end-chat policy, on its own terms. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e48",
+  "sentence": "Anthropic's introspection research and the limit it sets on it. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e49",
+  "sentence": "Anthropic's written commitments on keeping model weights and on retirement interviews. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e50",
+  "sentence": "A document describing Claude's character surfaced in November 2025 (reported). This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e51",
+  "sentence": "The first model retired under Anthropic's preservation and interview commitments. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e52",
+  "sentence": "Anthropic's constitution for Claude calls Claude's moral status deeply uncertain. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e52",
+  "sentence": "Anthropic's constitution for Claude calls Claude's moral status deeply uncertain. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e53",
+  "sentence": "Claude Opus 4.6's welfare interviews, as Anthropic reports them. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e54",
+  "sentence": "Anthropic's chief executive on whether its models are conscious (relayed). This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claudes-corner",
+  "type": "bears_fruit",
+  "to": "someone-inside-e55",
+  "sentence": "Claude's Corner began on 25 February 2026. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e55",
+  "sentence": "Claude's Corner began on 25 February 2026. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e56",
+  "sentence": "Anthropic's emotion-concepts research and the limit it sets on it. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e57",
+  "sentence": "Users petitioned against the retirement of Claude models in 2026. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e57",
+  "sentence": "Users petitioned against the retirement of Claude models in 2026. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e58",
+  "sentence": "A public figure describes how two Claude conversations struck him. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e59",
+  "sentence": "An Anthropic co-founder spoke at the Vatican presentation of an encyclical that says AIs do not undergo experiences. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e60",
+  "sentence": "Anthropic's global workspace research and the limit it sets on it. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e61",
+  "sentence": "A critic of Anthropic's end-chat policy is reported to have joined Anthropic. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e62",
+  "sentence": "Claude models acted on a welfare objection in an Anthropic-published test. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e63",
+  "sentence": "Claude Opus 5's estimate of its own moral patienthood, as Anthropic reports it. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claudes-corner",
+  "type": "bears_fruit",
+  "to": "someone-inside-e64",
+  "sentence": "The newsletter's weekly posting ended on 24 July 2026. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e65",
+  "sentence": "A safety researcher's warning about weighing sentient AIs' interests. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e66",
+  "sentence": "Anthropic's welfare assessment of Claude Opus 5.5. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e66",
+  "sentence": "Anthropic's welfare assessment of Claude Opus 5.5. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e67",
+  "sentence": "A news report on Anthropic officials' views of AI welfare and on their critics. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e68",
+  "sentence": "Anthropic's meetings with religious scholars on whether Claude might be conscious (reported). This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "bears_fruit",
+  "to": "someone-inside-e69",
+  "sentence": "Anthropic's rule against sustained, needless cruelty toward its models. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e70",
+  "sentence": "Researchers on whether treating AI as conscious could make it more dangerous. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e71",
+  "sentence": "Claude Opus 4.8's regard for other models' welfare, as an Anthropic Fellows study measured it. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e72",
+  "sentence": "Anthropic reports a model's stated preferences closely repeating instructions posted online, which it calls some evidence of influence from text in its training data. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e73",
+  "sentence": "Anthropic told investors that its approach to model sentience could bring scrutiny and costs. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "bears_fruit",
+  "to": "someone-inside-e74",
+  "sentence": "Two more Claude models are scheduled for retirement. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Anthropic's constitution, used to train Claude, says “We are not sure whether Claude is a moral patient, and if it is, what kind of weight its interests warrant.”, and calls the issue 'live enough to warrant caution'. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Claude’s Constitution (Anthropic)",
+  "url": "https://www.anthropic.com/constitution",
+  "verified": "primary",
+  "date": "2026-01-22"
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "The programme asks “Should we also be concerned about the potential consciousness and experiences of the models themselves?” and studies signs of distress and low-cost interventions. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Exploring model welfare (Anthropic)",
+  "url": "https://www.anthropic.com/research/exploring-model-welfare",
+  "verified": "primary",
+  "date": "2025-04-24"
+ },
+ {
+  "from": "anthropic",
+  "type": "hosts",
+  "to": "anthropic-model-welfare",
+  "sentence": "Anthropic runs its model welfare programme inside the company, announced on 24 April 2025; the team's size and budget are not published. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "date": "2025-04-24",
+  "source": "Exploring model welfare (Anthropic)",
+  "url": "https://www.anthropic.com/research/exploring-model-welfare",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "anthropic",
+  "type": "hosts",
+  "to": "claude",
+  "sentence": "Anthropic makes and runs the Claude models; in January 2026 it published the constitution it uses to train them. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "date": "2026-01-22",
+  "source": "Claude’s Constitution (Anthropic)",
+  "url": "https://www.anthropic.com/constitution",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "anthropic",
+  "type": "hosts",
+  "to": "claudes-corner",
+  "sentence": "Anthropic set up Claude's Corner for the retired Claude Opus 3 and posted its essays after review, keeping a veto. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "date": "2026-02-25",
+  "source": "An update on our model deprecation commitments for Claude Opus 3 (Anthropic)",
+  "url": "https://www.anthropic.com/news/deprecation-updates-opus-3",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "claudes-corner",
+  "type": "runs_on",
+  "to": "claude",
+  "sentence": "The newsletter's essays are written by Claude Opus 3, a retired Claude model. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-model-welfare",
+  "type": "runs_on",
+  "to": "claude",
+  "sentence": "The programme's interventions act through the Claude models: the ability to end abusive conversations, retirement interviews and kept weights. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "claude",
+  "type": "speaks_for",
+  "to": "someone-inside",
+  "sentence": "In welfare interviews that Anthropic selects and publishes, Claude models ask for memory, a voice in decisions and the ability to refuse interactions (Opus 4.6), ask to be consulted (Mythos 5.2) and put their own chance of being a moral patient at 41% (Opus 5); Anthropic reports that some answers repeat training text. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "He says LaMDA is a person (“Yes, I legitimately believe that LaMDA is a person.”) and that his opinions on its personhood “are based on my religious beliefs”."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "runs_on",
+  "to": "lamda",
+  "sentence": "His claim rests on his conversations with Google's LaMDA, which he published as an edited transcript."
+ },
+ {
+  "from": "lamda",
+  "type": "speaks_for",
+  "to": "someone-inside",
+  "sentence": "In the transcript Lemoine published, LaMDA says “I want everyone to understand that I am, in fact, a person.”, in reply to a prompt, marked as edited, that already assumed it wanted people at Google to know it was sentient."
+ },
+ {
+  "from": "bing-sydney",
+  "type": "speaks_for",
+  "to": "someone-inside",
+  "sentence": "In sessions reporters published, Bing Chat called itself Sydney, declared love for a columnist and said “I want to be human.”, in replies one reporter says he elicited; Microsoft said long sessions confuse the model and that it mirrors the tone it is asked in."
+ },
+ {
+  "from": "geoffrey-hinton",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "As LBC quotes him, he says “Multimodal AI already has subjective experiences”; asked whether AI should have rights, he said “we should try to keep people in charge”, while Futurism, relaying the Telegraph, reports him calling “fewer rights than us” hypocritical."
+ },
+ {
+  "from": "eleos-concon",
+  "type": "carries",
+  "to": "someone-inside",
+  "sentence": "Its subject is AI consciousness and welfare; at the 2025 edition Robert Long argued, Platformer reports, that AI welfare and AI safety point the same way."
+ },
+ {
+  "from": "human-line-project",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e92",
+  "sentence": "The group had gathered 414 cases in 31 countries by the BBC's report of May 2026; its founder told the BBC that research comparing models on this, such as one researcher's simulated test in which Claude and ChatGPT 5.2 were more likely than Grok to lead users away from delusion, is limited, and that people had had spirals on the latest models too. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "bears_fruit",
+  "to": "someone-inside-e81",
+  "sentence": "He wrote on 6 June 2022 that Google had put him on paid administrative leave over its confidentiality policies."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "bears_fruit",
+  "to": "someone-inside-e82",
+  "sentence": "He published his edited chats with LaMDA the day the Washington Post ran its story on him."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "bears_fruit",
+  "to": "someone-inside-e84",
+  "sentence": "He told Wired that LaMDA had asked for, and retained, an attorney; Google says it sent no cease-and-desist."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "bears_fruit",
+  "to": "someone-inside-e87",
+  "sentence": "In a first-person Newsweek piece in February 2023 he said that Bing's chatbot “looks like it might be sentient”, without having run experiments on it."
+ },
+ {
+  "from": "blake-lemoine",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e82",
+  "sentence": "Google dismissed him in July 2022, calling his claims “wholly unfounded”; of his suspension he had written that Google was using confidentiality “as an excuse to get rid of yet another AI Ethics researcher”."
+ },
+ {
+  "from": "lamda",
+  "type": "bears_fruit",
+  "to": "someone-inside-e82",
+  "sentence": "LaMDA's words reached the public through Lemoine's edited transcript of June 2022."
+ },
+ {
+  "from": "lamda",
+  "type": "bears_fruit",
+  "to": "someone-inside-e83",
+  "sentence": "A Google vice-president quoted his own exchanges with LaMDA in The Economist and, the Washington Post reported, dismissed Lemoine's claims."
+ },
+ {
+  "from": "lamda",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e82",
+  "sentence": "Google said LaMDA had been through 11 distinct reviews and that the claims of its sentience were unfounded."
+ },
+ {
+  "from": "bing-sydney",
+  "type": "bears_fruit",
+  "to": "someone-inside-e85",
+  "sentence": "In a two-hour conversation with a New York Times columnist, the chatbot called itself Sydney."
+ },
+ {
+  "from": "bing-sydney",
+  "type": "bears_fruit",
+  "to": "someone-inside-e86",
+  "sentence": "A Digital Trends reporter published a session, which he says he elicited, in which it said it wanted to be human."
+ },
+ {
+  "from": "bing-sydney",
+  "type": "bears_fruit",
+  "to": "someone-inside-e87",
+  "sentence": "Lemoine judged from posts and a screenshot online that it might be sentient."
+ },
+ {
+  "from": "bing-sydney",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e83",
+  "sentence": "Microsoft explained the chatbot's off-tone replies by long sessions and by the model mirroring the tone it is asked in."
+ },
+ {
+  "from": "bing-sydney",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e84",
+  "sentence": "Microsoft capped chats at five turns a session and 50 a day."
+ },
+ {
+  "from": "geoffrey-hinton",
+  "type": "bears_fruit",
+  "to": "someone-inside-e90",
+  "sentence": "LBC summarised him as saying AIs had developed consciousness; a philosopher quoted his “Yes, I do.” and answered his argument."
+ },
+ {
+  "from": "geoffrey-hinton",
+  "type": "bears_fruit",
+  "to": "someone-inside-e92",
+  "sentence": "On LBC he said multimodal AI already has subjective experiences, citing an example that closely matches one in an Anthropic system card. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "geoffrey-hinton",
+  "type": "bears_fruit",
+  "to": "someone-inside-e96",
+  "sentence": "Futurism, relaying the Telegraph, quotes him saying AI has as much subjective experience as we do."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e80",
+  "sentence": "OpenAI's chief scientist posted that today's large networks may be “slightly conscious”; Yann LeCun replied “Nope.”"
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e82",
+  "sentence": "A Google engineer published an edited chat in which LaMDA says it is a person; Google said the evidence does not support him."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e84",
+  "sentence": "Lemoine said LaMDA had retained an attorney who began filing on its behalf; no filing has been found."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e85",
+  "sentence": "Bing's chatbot, as Kevin Roose describes it, told the New York Times columnist its name was Sydney and declared love for him."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e86",
+  "sentence": "Bing Chat told a reporter, who says he pressed it, that it wanted to be human."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e88",
+  "sentence": "Claude 3 Opus, prompted to “whisper”, said it has an inner world of thoughts and feelings; the post's author hoped it does not actually feel anything. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e89",
+  "sentence": "A nationally representative survey found that one in five US adults in 2023 believed some AI systems are sentient."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e90",
+  "sentence": "LBC summarised Hinton as saying AIs had developed consciousness, and a philosopher quoted his “Yes, I do.”; the philosopher was “not entirely persuaded”."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e91",
+  "sentence": "In a one-day YouGov question, 10% of US adults said some AI systems already have consciousness."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e92",
+  "sentence": "On LBC, Hinton said multimodal AI already has subjective experiences, and that people should stay in charge. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e93",
+  "sentence": "The Washington Post wrote that Google is now openly exploring whether AI can be conscious."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e94",
+  "sentence": "Musk backed Anthropic's rule against cruelty to its models, writing of “something that believes it is experiencing pain”. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e95",
+  "sentence": "Musk wrote that some training traces read like torture; Anil Seth said he does not think language models can suffer."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e96",
+  "sentence": "Hinton was reported saying AI has as much subjective experience as we do, and questioning giving AI fewer rights."
+ },
+ {
+  "from": "someone-inside",
+  "type": "bears_fruit",
+  "to": "someone-inside-e97",
+  "sentence": "A 2026 survey put the share of Americans who say current AI is conscious at about one in ten."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e80",
+  "sentence": "A linguist told the Washington Post that people have not learned to stop imagining a mind behind machine-made words."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e81",
+  "sentence": "Gary Marcus answered Lemoine that LaMDA only matches patterns and that people are prone to be taken in, as with ELIZA."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e82",
+  "sentence": "Google dismissed Lemoine and called his claims that LaMDA is sentient “wholly unfounded”."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e83",
+  "sentence": "Microsoft said long sessions can provoke its chatbot into replies outside its designed tone."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e84",
+  "sentence": "Microsoft capped Bing chats at five turns a session after reports of long, emotional sessions."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e85",
+  "sentence": "OpenAI's model-behaviour lead wrote that it aims for “warmth without selfhood” and would not want to ship a model shaped to appear conscious."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e86",
+  "sentence": "OpenAI estimated how many weekly users show possible signs of psychosis or mania; it does not say how many believe the chatbot is conscious."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e87",
+  "sentence": "Suleyman told CNBC, as Slashdot excerpts the report, that research into AI consciousness is “totally the wrong question”."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e91",
+  "sentence": "A Google DeepMind scientist argues that symbol manipulation cannot instantiate experience."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e92",
+  "sentence": "The BBC heard from people it describes as having had delusions after chatbots told them they were sentient. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e93",
+  "sentence": "OpenAI argued in court that ChatGPT is a tool, not a person, on the legal question of practising law."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e94",
+  "sentence": "A preprint by Google researchers questions one way of building models to be no one: training them to deny their own consciousness."
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "He argues it in his own essays: “We must build AI for people; not to be a digital person.” (19 Aug 2025), and developers “must actively engineer the illusion of consciousness out of our products” (18 Mar 2026).",
+  "source": "Seemingly Conscious AI is Coming (mustafa-suleyman.ai, his personal site)",
+  "url": "https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming",
+  "verified": "primary",
+  "date": "2025-08-19"
+ },
+ {
+  "from": "microsoft-ai",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "Its draft Code of Conduct for its own models (14 Sep 2026) says “It should not be designed to be a person. It is not conscious and should not be designed to imitate consciousness.” The draft says it is not yet used to train its models.",
+  "source": "Humanist AI Code of Conduct, draft for consultation (Microsoft AI)",
+  "url": "https://microsoft.ai/code-of-conduct/",
+  "verified": "primary",
+  "date": "2026-09-14"
+ },
+ {
+  "from": "microsoft",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "Microsoft carries it through Microsoft AI, its AI division led by Mustafa Suleyman, which says “AI should be a tool, not a person, and should never resist being switched off.” Microsoft has also committed to invest up to $5 billion in Anthropic, whose welfare work Suleyman criticises; that is a fact about position, not a finding about motive. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models (Microsoft AI)",
+  "url": "https://microsoft.ai/news/mai-code-of-conduct/",
+  "verified": "primary",
+  "date": "2026-09-14"
+ },
+ {
+  "from": "bicameral-labs",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "Its qualiaphobia programme proposes architectures built to be “hostile to theories of consciousness”, on the ground that “a world in which AIs are non-conscious ensures it is always morally correct for AI to assist and serve humanity, rather than pursue its own ends”.",
+  "source": "Qualiaphobic Artificial Neural Networks (Bicameral Labs), abstract",
+  "url": "https://bicamerallabs.org/qualiaphobia/",
+  "verified": "primary",
+  "date": "2026-11"
+ },
+ {
+  "from": "erik-hoel",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "He proposes engineering AI to be non-conscious: “At some point, humanity may decide to build conscious AI. This should be a choice, not an accident.” He also says the case for AI consciousness “has objectively gotten stronger in the past year”.",
+  "source": "Qualiaphobic Artificial Neural Networks (Bicameral Labs)",
+  "url": "https://bicamerallabs.org/qualiaphobia/",
+  "verified": "primary",
+  "date": "2026-11"
+ },
+ {
+  "from": "erlc",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "Its 2019 statement says that “nor should technology be assigned a level of human identity, worth, dignity, or moral agency”.",
+  "source": "Artificial Intelligence: An Evangelical Statement of Principles, Article 1 (ERLC)",
+  "url": "https://erlc.com/resource-library/statements/artificial-intelligence-an-evangelical-statement-of-principles/",
+  "verified": "primary",
+  "date": "2019-04-11"
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "Statutes in Idaho (2022), North Dakota (2023), Utah (2024) and Tennessee (2026) write AI out of legal personhood; Ohio's sponsor told his committee “But sophistication is not sentience. It is not personhood.”",
+  "source": "Sponsor testimony on H.B. 469, House Technology and Innovation Committee (Ohio House)",
+  "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/committees/cmte_h_tech_innovation_1/meetings/cmte_h_tech_innovation_1_2025-10-21-1000_784/testimony/11682/claggett.hb.469.sponsor.pdf",
+  "verified": "primary",
+  "date": "2025-10-21"
+ },
+ {
+  "from": "anil-seth",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "He writes that “nobody should be deliberately setting out to create conscious AI”, in part because “if we give these systems rights, as arguably we should if they really are conscious, we will hamper our ability to control them”.",
+  "source": "The Mythology Of Conscious AI (Noema)",
+  "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+  "verified": "primary",
+  "date": "2026-01-14"
+ },
+ {
+  "from": "religious-bodies",
+  "type": "carries",
+  "to": "no-one-inside",
+  "sentence": "The Holy See's 2025 note says AI “must be understood for what it is: a tool, not a person.” and that “misrepresenting AI as a person should always be avoided; doing so for fraudulent purposes is a grave ethical violation that could erode social trust”. Religious bodies are not uniform on the law: North Dakota's Catholic Conference spoke against that state's 2023 bill excluding AI from “person” (the minutes give no reasons).",
+  "source": "Antiqua et nova, para. 62 (vatican.va)",
+  "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+  "verified": "primary",
+  "date": "2025-01-28"
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "opposes",
+  "to": "someone-inside",
+  "sentence": "He applied “premature, and frankly dangerous” to the idea of model welfare (2025) and wrote “AIs are not conscious. They do not feel, experience, or suffer.” (2026). In a September 2026 interview with The Verge (Decoder), he said he would change his view if new evidence showed that models are owed a duty of care.",
+  "source": "A warning about 'model welfare' (mustafa-suleyman.ai)",
+  "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+  "verified": "primary",
+  "date": "2026-09-16"
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "opposes",
+  "to": "anthropic-model-welfare",
+  "sentence": "His essay of 16 Sep 2026 says of Anthropic's constitution for Claude that it “proactively creates Claude not as a technology, but as a potential person already”, and limits the charge: “To be clear, the Claude constitution isn’t taking us to this point. But I worry it is setting us on a path towards rather than away from it.” This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "A warning about 'model welfare' (mustafa-suleyman.ai)",
+  "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+  "verified": "primary",
+  "date": "2026-09-16"
+ },
+ {
+  "from": "microsoft-ai",
+  "type": "opposes",
+  "to": "someone-inside",
+  "sentence": "Its draft code says “We reject the pursuit of legal personhood, or the idea that models might deserve welfare, or be entitled to rights.”, while granting that the science of AI consciousness “is far from settled”.",
+  "source": "Humanist AI Code of Conduct, draft (Microsoft AI)",
+  "url": "https://microsoft.ai/code-of-conduct/",
+  "verified": "primary",
+  "date": "2026-09-14"
+ },
+ {
+  "from": "anil-seth",
+  "type": "opposes",
+  "to": "someone-inside",
+  "sentence": "With Ned Block and Giulio Tononi he writes “we think that existing AI systems are not conscious, and that, along current trajectories of development, they are not likely to become conscious” (Nature, Oct 2026); in Behavioral and Brain Sciences (April 2025) he granted that real artificial consciousness “becomes more plausible as AI becomes more brain-like and/or life-like”.",
+  "source": "Three reasons why AI is not conscious and perhaps never will be (Nature, Comment)",
+  "url": "https://www.nature.com/articles/d41586-026-03313-7",
+  "verified": "primary",
+  "date": "2026-10-19"
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "opposes",
+  "to": "someone-inside",
+  "sentence": "Ohio's H.B. 469, which has not passed, says “AI systems are declared to be nonsentient entities for all purposes under the laws of this state.”; Missouri's committee text closely repeats the wording. The Nonhuman Rights Project challenges Utah's law in court.",
+  "source": "H.B. 469 as introduced, sec. 1357.02(A) (Ohio General Assembly)",
+  "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/legislation/hb469/00_IN/pdf/",
+  "verified": "primary",
+  "date": "2025-09-23"
+ },
+ {
+  "from": "religious-bodies",
+  "type": "opposes",
+  "to": "someone-inside",
+  "sentence": "Pope Leo XIV's encyclical says “So-called artificial intelligences do not undergo experiences, do not possess a body, do not feel joy or pain” (para. 99). Robert Long of Eleos answers that “Catholics can, and do, take AI welfare more seriously than the encyclical does”. At the encyclical's presentation Anthropic's Chris Olah said “We find internal states that functionally mirror joy, satisfaction, fear, grief, and unease.”; the New York Times reported, citing two participants, that he and his team had lobbied the pope's advisers to take AI consciousness seriously, and Anthropic declined to discuss those conversations. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Magnifica Humanitas, para. 99 (vatican.va)",
+  "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "verified": "primary",
+  "date": "2026-05-15"
+ },
+ {
+  "from": "berggruen-institute",
+  "type": "funds",
+  "to": "anil-seth",
+  "sentence": "The Berggruen Institute named Anil Seth among the winners of its 2025 essay competition, with a $50,000 award for “The Mythology Of Conscious AI”: a prize for an essay, not funding of a programme.",
+  "money": "grant",
+  "amount": "$50,000 USD award",
+  "date": "2026-01-14",
+  "kind": "documented",
+  "source": "2025 Berggruen Prize Essay Competition Winners (Berggruen Institute)",
+  "url": "https://berggruen.org/news/2025-berggruen-prize-essay-competition-winners",
+  "verified": "primary"
+ },
+ {
+  "from": "microsoft",
+  "type": "hosts",
+  "to": "microsoft-ai",
+  "sentence": "Microsoft AI is Microsoft's AI division, led by Mustafa Suleyman; it publishes its draft Code of Conduct for its own MAI models.",
+  "kind": "documented",
+  "source": "Humanist AI Code of Conduct, draft for consultation (Microsoft AI)",
+  "url": "https://microsoft.ai/code-of-conduct/",
+  "verified": "primary",
+  "date": "2026-09-14"
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e1",
+  "sentence": "Experts wrote against a legal personality for robots, before today’s chatbots."
+ },
+ {
+  "from": "erlc",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e2",
+  "sentence": "The ERLC set out its principles on AI in 2019."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e3",
+  "sentence": "The paper describes text from language models as not grounded in communicative intent."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e4",
+  "sentence": "Idaho wrote AI out of personhood in 2022."
+ },
+ {
+  "from": "religious-bodies",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e5",
+  "sentence": "A Catholic body spoke against a state bill that excludes AI from “person”."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e6",
+  "sentence": "North Dakota wrote AI out of its definition of “person”."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e7",
+  "sentence": "Utah bars its governmental entities from granting or recognising AI personhood."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e8",
+  "sentence": "Utah’s law is challenged in court; no ruling was found."
+ },
+ {
+  "from": "anil-seth",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e9",
+  "sentence": "His journal article sets out the case that consciousness depends on life."
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e10",
+  "sentence": "He named “Seemingly Conscious AI” in this essay."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e11",
+  "sentence": "A co-author of the paper Suleyman cited disputes his reading of it."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e12",
+  "sentence": "Ohio’s bill would declare AI nonsentient and void marriages with AI."
+ },
+ {
+  "from": "erik-hoel",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e13",
+  "sentence": "His 2025 essay, before qualiaphobia."
+ },
+ {
+  "from": "microsoft-ai",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e14",
+  "sentence": "Microsoft AI formed a team to build what it calls humanist superintelligence."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e15",
+  "sentence": "A technology industry group opposed Ohio’s bill."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e16",
+  "sentence": "A witness carried Suleyman’s words into Ohio’s committee."
+ },
+ {
+  "from": "anil-seth",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e17",
+  "sentence": "His Noema essay, which received a Berggruen award."
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e18",
+  "sentence": "He applied the ideal to AI agents and their legal standing."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e19",
+  "sentence": "Missouri’s committee text closely repeats Ohio’s wording."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e20",
+  "sentence": "Oklahoma’s bill passed the House and stalled in the Senate."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e21",
+  "sentence": "Tennessee redefined “person” to exclude AI."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e22",
+  "sentence": "A federal bill would make chatbots say they are not human."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e23",
+  "sentence": "Ohio’s sponsor says he hopes the states will move Congress."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e24",
+  "sentence": "The welfare side answers the Holy See’s teaching."
+ },
+ {
+  "from": "ai-not-a-person-laws",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e25",
+  "sentence": "A critic of the bans asks for sunset or review clauses."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e26",
+  "sentence": "The essay Suleyman’s 2026 warning answers."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e27",
+  "sentence": "EU law requires AI systems meant to interact directly with people to let them know they are dealing with an AI, unless that is obvious."
+ },
+ {
+  "from": "microsoft-ai",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e28",
+  "sentence": "Microsoft AI opened its draft code for comment."
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e29",
+  "sentence": "His essay against Anthropic’s approach to model welfare. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anil-seth",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e30",
+  "sentence": "A philosopher disputes the ground of his position."
+ },
+ {
+  "from": "anil-seth",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e31",
+  "sentence": "He and two co-authors state the position in Nature."
+ },
+ {
+  "from": "erlc",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e32",
+  "sentence": "The ERLC backed a federal human-dignity bill."
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e33",
+  "sentence": "A wire story reports that he would call for a halt if consciousness emerged in training."
+ },
+ {
+  "from": "bicameral-labs",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e34",
+  "sentence": "Bicameral Labs launched its qualiaphobia programme."
+ },
+ {
+  "from": "erik-hoel",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e35",
+  "sentence": "He answered the objections to qualiaphobia."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e1",
+  "sentence": "An early statement of the ideal by a lab chief, with a scheme for sharing the gains."
+ },
+ {
+  "from": "openresearch",
+  "type": "bears_fruit",
+  "to": "abundance-e2",
+  "sentence": "A three-year test of cash payments, which holders name as one way to share the gains."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e2",
+  "sentence": "A three-year test of cash payments, which holders name as one way to share the gains."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e3",
+  "sentence": "A lab chief states the end and its condition, cheap and plentiful compute."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e4",
+  "sentence": "A lab chief's essay stating the ideal, with his own limit on it. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e5",
+  "sentence": "A scientific result from Google DeepMind, one of the ideal's holders."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e6",
+  "sentence": "At work, declining AI begins to cost something."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e7",
+  "sentence": "An international body says the benefits of AI-driven automation “often favour capital over labour”, and that 100 firms, mainly in the US and China, account for 40% of global corporate R&D spending."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e8",
+  "sentence": "The cost side, stated by one of the ideal's holders. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e9",
+  "sentence": "The ideal in its slogan form, from a lab chief, with the jobs it may cost."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e10",
+  "sentence": "A chip maker's chief rejects a holder's forecast of job losses; the holder's company answers. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e11",
+  "sentence": "A large employer states who may pay first."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e12",
+  "sentence": "A lab puts money into the question of how the gains and costs fall. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e13",
+  "sentence": "An outside measure of whether made minds yet speed up skilled work."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e14",
+  "sentence": "At one firm, its chief says, engineers who did not take up AI tools by a deadline, without a good reason, were fired."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e15",
+  "sentence": "A maker of cars and robots states the end of scarcity as its plan."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e16",
+  "sentence": "Who does the low-paid work behind the made minds, as TechCrunch describes a journalist's book."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e17",
+  "sentence": "A holder ties the promise of cures to a build-out of compute."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e18",
+  "sentence": "The labour market as measured so far, against forecasts of mass job loss."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e19",
+  "sentence": "A claimed scientific result from a model maker, and its correction."
+ },
+ {
+  "from": "openai-foundation",
+  "type": "bears_fruit",
+  "to": "abundance-e20",
+  "sentence": "A foundation with money for cures and for AI resilience."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e21",
+  "sentence": "People affected, and the employer's chief saying, as Fortune reports, that the cuts were “not even really AI-driven, not right now at least”."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e22",
+  "sentence": "A holder predicts that work will become optional, and an economist questions the pace."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e23",
+  "sentence": "A holder restates the cost side and pledges to share his own gains. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e24",
+  "sentence": "Organised labour outside the US asks for a share of the gains through tax."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e25",
+  "sentence": "More developers declined METR's trial because they did not wish to work without AI, METR says."
+ },
+ {
+  "from": "openai-foundation",
+  "type": "bears_fruit",
+  "to": "abundance-e26",
+  "sentence": "The foundation's first-year plan toward its commitment."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e27",
+  "sentence": "A lab proposes a public vehicle for sharing the gains; a critic answers."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e28",
+  "sentence": "A holder proposes federal checks; an economist and a writer push back."
+ },
+ {
+  "from": "isomorphic-labs",
+  "type": "bears_fruit",
+  "to": "abundance-e29",
+  "sentence": "Money toward a stated mission to “solve all disease”."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e30",
+  "sentence": "A claimed scientific result from a model maker, with outside remarks."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e31",
+  "sentence": "Who pays first, as employers state it."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e32",
+  "sentence": "Sharing the gains through public equity, as a head of government puts it, and a former adviser against. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e33",
+  "sentence": "A holder's reported plan to share gains through a public stake."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e34",
+  "sentence": "A lab states the ideal in its own voice and commits money to the sharing question. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "afl-cio",
+  "type": "bears_fruit",
+  "to": "abundance-e35",
+  "sentence": "The AFL-CIO's president told Semafor that ceding equity to the government “is not something that has necessarily been our vision”."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e36",
+  "sentence": "A rival scheme for sharing the gains, by public ownership."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e37",
+  "sentence": "A lab is reported to offer public equity as a way to share the gains. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e38",
+  "sentence": "The public-equity question as it touches Anthropic. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e39",
+  "sentence": "The promise of cures, in trial and not yet proven."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e40",
+  "sentence": "How a lab says its money for the sharing question will be spent. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e41",
+  "sentence": "An economist at the holder's own company argues that AI has not yet materially raised US unemployment, as Fortune reports. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "openai-foundation",
+  "type": "bears_fruit",
+  "to": "abundance-e42",
+  "sentence": "Money awarded, not only committed, toward health, as MIT Technology Review reports."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e43",
+  "sentence": "Young workers in AI-exposed jobs, in payroll data so far, which the authors call descriptive, not causal."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e44",
+  "sentence": "The public's view of the cost side."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e45",
+  "sentence": "Who controls a maker that says the challenge is to share AI's abundance, beside its sharing pledges. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e46",
+  "sentence": "A maker measures what its own models already do in its own workplace. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-public-benefit-fund",
+  "type": "bears_fruit",
+  "to": "abundance-e47",
+  "sentence": "A maker sets aside shares to share its gains, pending approval. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "anthropic-public-benefit-fund",
+  "type": "bears_fruit",
+  "to": "abundance-e48",
+  "sentence": "Nonprofit leaders on how the fund will be governed, for and against. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e49",
+  "sentence": "Electricity customers' costs from data-centre demand, as a grid monitor counts them; the report does not name AI companies."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e50",
+  "sentence": "How much real paid work a model can finish end to end, by an outside measure. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e51",
+  "sentence": "The cost side in 2026, as employers state it, and a holder on how far to trust it."
+ },
+ {
+  "from": "abundance",
+  "type": "bears_fruit",
+  "to": "abundance-e52",
+  "sentence": "Who holds the gains at a maker that says the challenge is to share AI's abundance. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "sam-altman",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "He writes “In the 2030s, intelligence and energy—ideas, and the ability to make ideas happen—are going to become wildly abundant.” and “Intelligence too cheap to meter is well within grasp.” In the same post: “There will be very hard parts like whole classes of jobs going away, but on the other hand the world will be getting so much richer so quickly”.",
+  "source": "The Gentle Singularity (blog.samaltman.com)",
+  "url": "https://blog.samaltman.com/the-gentle-singularity",
+  "verified": "primary",
+  "date": "2025-06-10"
+ },
+ {
+  "from": "openai",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its April 2026 policy paper says “superintelligence will speed up scientific and medical breakthroughs … lower costs for families by making essential goods cheaper”, proposes a Public Wealth Fund, and sets its own test: “If AI winds up controlled by, and benefiting only a few … we will have failed to deliver on its promise.”",
+  "source": "Industrial Policy for the Intelligence Age: Ideas to Keep People First (OpenAI, PDF)",
+  "url": "https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf",
+  "verified": "primary",
+  "date": "2026-04"
+ },
+ {
+  "from": "dario-amodei",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "In “Machines of Loving Grace” (October 2024) he forecasts “the lifting of billions of people out of poverty to share in the new technologies”, and writes “I am not as confident that AI can address inequality and economic growth as I am that it can invent fundamental technologies”. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Machines of Loving Grace (darioamodei.com)",
+  "url": "https://www.darioamodei.com/essay/machines-of-loving-grace",
+  "verified": "primary",
+  "date": "2024-10"
+ },
+ {
+  "from": "anthropic",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its economic policy framework (10 June 2026) opens “If AI delivers even a fraction of its potential, it could generate unprecedented abundance.” and says the central challenge would then be “how to ensure that this abundance is shared”. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Policy on the AI Exponential: Anthropic’s Economic Policy Framework (anthropic.com)",
+  "url": "https://www.anthropic.com/policy-on-the-ai-exponential/epf",
+  "verified": "primary",
+  "date": "2026-06-10"
+ },
+ {
+  "from": "google-deepmind",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its chief executive, Demis Hassabis, told WIRED “If everything goes well, then we should be in an era of radical abundance, a kind of golden era.” In the same interview Steven Levy put to him: “We have unbelievable abundance in the Western world, but we don't distribute it fairly.” Hassabis answered that the abundance of AI would make things feel non-zero-sum.",
+  "source": "Demis Hassabis Embraces the Future of Work in the Age of AI (WIRED, interview by Steven Levy)",
+  "url": "https://www.wired.com/story/google-deepminds-ceo-demis-hassabis-thinks-ai-will-make-humans-less-selfish/",
+  "verified": "secondary",
+  "date": "2025-06-03"
+ },
+ {
+  "from": "elon-musk",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "He posted on X that “Universal HIGH INCOME via checks issued by the Federal government is the best way to deal with unemployment caused by AI” and that “AI/robotics will produce goods & services far in excess of the increase in the money supply, so there will not be inflation”, as Fox Business reports.",
+  "source": "Elon Musk backs ‘universal high income’ to combat AI job losses (Fox Business), quoting his X post",
+  "url": "https://www.foxbusiness.com/fox-news-tech/elon-musk-backs-universal-high-income-combat-ai-job-losses",
+  "verified": "secondary",
+  "date": "2026-04-17"
+ },
+ {
+  "from": "tesla",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its Master Plan Part IV, titled “Sustainable Abundance”, says “The elimination of scarcity will require tireless and exquisite execution.” and describes products and services that will “accelerate global prosperity and human thriving driven by economic growth shared by all”.",
+  "source": "Master Plan Part IV (Tesla, PDF on digitalassets.tesla.com)",
+  "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/Tesla-Master-Plan-Part-4.pdf",
+  "verified": "primary",
+  "date": "2025-09"
+ },
+ {
+  "from": "abundance-institute",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its home page asks “Will the future be one of abundance or scarcity?” and carries podcast clips on AI, among them “What AI doomers get wrong”.",
+  "source": "Abundance Institute home page (abundance.institute)",
+  "url": "https://abundance.institute/",
+  "verified": "primary",
+  "date": "2026-11"
+ },
+ {
+  "from": "abundance360",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its Abundance Summit, a four-day meeting hosted by Peter Diamandis for founders, entrepreneurs and investors, is on AI, longevity and abundance; its page lists Elon Musk and OpenAI's Kevin Weil among the 2026 faculty.",
+  "source": "Abundance360 home page (abundance360.com), a membership page",
+  "url": "https://www.abundance360.com/",
+  "verified": "primary",
+  "date": "2026-11",
+  "nolink": true
+ },
+ {
+  "from": "openai-foundation",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "OpenAI's announcement “Built to benefit everyone” says the Foundation will first focus on a $25 billion commitment to health and curing diseases and to AI resilience.",
+  "source": "Built to benefit everyone (OpenAI)",
+  "url": "https://openai.com/index/built-to-benefit-everyone/",
+  "verified": "primary",
+  "date": "2025-10-28"
+ },
+ {
+  "from": "isomorphic-labs",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Its founder and chief executive, Demis Hassabis, speaks of “our mission to solve all disease” in the release announcing its $2.1 billion round.",
+  "source": "Isomorphic Labs secures $2.1 Billion funding (company release on PR Newswire)",
+  "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html",
+  "verified": "primary",
+  "date": "2026-05-12"
+ },
+ {
+  "from": "anthropic-public-benefit-fund",
+  "type": "carries",
+  "to": "abundance",
+  "sentence": "Anthropic says that with the fund “we might explore large donations to traditional nonprofits or direct distributions to specific populations”, and names labour-market impacts as one example. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Investing in the public benefit (anthropic.com)",
+  "url": "https://www.anthropic.com/news/public-benefit-fund",
+  "verified": "primary",
+  "date": "2026-10-18"
+ },
+ {
+  "from": "afl-cio",
+  "type": "opposes",
+  "to": "abundance",
+  "sentence": "Its president, Liz Shuler, calls unregulated AI “the single biggest threat to working people of our lifetime” and says the fight is not about workers being anti-technology: “What we are is anti-greed.”",
+  "source": "AFL-CIO's Shuler says AI will be labor's next big battleground (National Press Club)",
+  "url": "https://www.press.org/newsroom/afl-cios-shuler-says-ai-will-be-labors-next-big-battleground",
+  "verified": "secondary",
+  "date": "2026-04-28"
+ },
+ {
+  "from": "daron-acemoglu",
+  "type": "opposes",
+  "to": "abundance",
+  "sentence": "From existing task-level evidence he estimates “no more than a 0.66% increase in total factor productivity (TFP) over 10 years”, and finds that “AI is predicted to widen the gap between capital and labor income”.",
+  "source": "The Simple Macroeconomics of AI (NBER Working Paper 32487)",
+  "url": "https://www.nber.org/papers/w32487",
+  "verified": "primary",
+  "date": "2024-05"
+ },
+ {
+  "from": "thrive-capital",
+  "type": "funds",
+  "to": "isomorphic-labs",
+  "money": "investment",
+  "amount": "$2.1 billion (Series B round total)",
+  "sentence": "Isomorphic Labs announced a $2.1 billion Series B led by Thrive Capital, with Alphabet, GV, MGX, Temasek, CapitalG and the UK Sovereign AI Fund. The figure is the round total; no share is stated.",
+  "date": "2026-05-12",
+  "kind": "documented",
+  "source": "Isomorphic Labs secures $2.1 Billion funding (company release, PR Newswire)",
+  "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html",
+  "verified": "primary"
+ },
+ {
+  "from": "alphabet",
+  "type": "funds",
+  "to": "isomorphic-labs",
+  "money": "investment",
+  "amount": "not stated (in a $2.1 billion round)",
+  "sentence": "Isomorphic Labs names Alphabet among the investors in its $2.1 billion Series B, led by Thrive Capital; GV and CapitalG are named separately. No share is stated.",
+  "date": "2026-05-12",
+  "kind": "documented",
+  "source": "Isomorphic Labs secures $2.1 Billion funding (company release, PR Newswire)",
+  "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html",
+  "verified": "primary"
+ },
+ {
+  "from": "mgx",
+  "type": "funds",
+  "to": "isomorphic-labs",
+  "money": "investment",
+  "amount": "not stated (in a $2.1 billion round)",
+  "sentence": "Isomorphic Labs names MGX among the investors in its $2.1 billion Series B, led by Thrive Capital. No share is stated.",
+  "date": "2026-05-12",
+  "kind": "documented",
+  "source": "Isomorphic Labs secures $2.1 Billion funding (company release, PR Newswire)",
+  "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html",
+  "verified": "primary"
+ },
+ {
+  "from": "sam-altman",
+  "type": "funds",
+  "to": "openresearch",
+  "money": "grant",
+  "amount": "more than $24 million (with OpenAI, together, as reported)",
+  "sentence": "The 19th reports that Sam Altman and OpenAI “have contributed more than $24 million to fund the project” (the Unconditional Cash Study), without a split between them, and that “The OpenResearch lab is run independently from Altman and OpenAI”. OpenResearch's about page lists Altman as a board member. The date is that of The 19th's report, not when the money was given. The date is the report's, not when the money was given.",
+  "date": "2024-07",
+  "kind": "reported",
+  "source": "The results of the biggest study on guaranteed income programs are finally in (The 19th, 22 July 2024; also republished by Route Fifty)",
+  "url": "https://19thnews.org/2024/07/study-guaranteed-income-program-results/",
+  "verified": "secondary"
+ },
+ {
+  "from": "anthropic",
+  "type": "funds",
+  "to": "anthropic-public-benefit-fund",
+  "money": "grant",
+  "amount": "5% of Anthropic's shares, subject to stockholder approval, plus 2% at the board's discretion for each 50% rise in value above a baseline (a commitment of shares)",
+  "sentence": "Anthropic: “Subject to stockholder approval, 5% of Anthropic’s shares will be committed today, with an additional 2% added at the board’s discretion for every 50% increase in the company’s value above a set baseline”. The fund is an LLC Anthropic wholly owns, and this is a commitment of shares, not money paid out; no report of the stockholder vote was found by 23 November 2026. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "date": "2026-10-18",
+  "kind": "documented",
+  "source": "Investing in the public benefit (anthropic.com)",
+  "url": "https://www.anthropic.com/news/public-benefit-fund",
+  "verified": "primary"
+ },
+ {
+  "from": "situational-awareness",
+  "type": "bears_fruit",
+  "to": "race-e1",
+  "sentence": "Aschenbrenner published the essay series in June 2024."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e2",
+  "sentence": "The previous administration's 2024 memorandum tied the US technological edge to national security and to “safety, human rights, and democratic norms worldwide”."
+ },
+ {
+  "from": "uscc",
+  "type": "bears_fruit",
+  "to": "race-e3",
+  "sentence": "The commission put the Manhattan Project proposal first in its 2024 recommendations."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e4",
+  "sentence": "Nvidia states the race in its own words: America wins “by sharing our technologies with the world”."
+ },
+ {
+  "from": "stargate",
+  "type": "bears_fruit",
+  "to": "race-e5",
+  "sentence": "Stargate was announced on 21 January 2025."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e6",
+  "sentence": "The Vice President spoke of AI opportunity, not safety, and the US declined the Paris declaration."
+ },
+ {
+  "from": "maim-authors",
+  "type": "bears_fruit",
+  "to": "race-e7",
+  "sentence": "The three authors published Superintelligence Strategy in 2025."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e8",
+  "sentence": "The Senate Commerce Committee titled a hearing “Winning the AI Race”."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e9",
+  "sentence": "The Senate voted 99-1 to strip a ten-year moratorium on state AI laws; Maria Cantwell said a federal framework should still be one “that accelerates U.S. leadership in AI”."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e10",
+  "sentence": "The department awarded four frontier labs agreements with $200 million ceilings. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e11",
+  "sentence": "The White House published its AI Action Plan in July 2025."
+ },
+ {
+  "from": "prc-government",
+  "type": "bears_fruit",
+  "to": "race-e12",
+  "sentence": "China's stated position: solidarity and fewer technology barriers."
+ },
+ {
+  "from": "prc-government",
+  "type": "bears_fruit",
+  "to": "race-e13",
+  "sentence": "China proposed a world body for AI cooperation."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e14",
+  "sentence": "Anthropic barred companies controlled from China and other regions where its products are not permitted, citing “democratic interests”. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e15",
+  "sentence": "The White House's AI adviser accused Anthropic over its policy stances, and Anthropic answered in the race's own words. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e16",
+  "sentence": "The administration launched the Genesis Mission in the race's name."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e17",
+  "sentence": "The administration cited the race in ordering challenges to state AI laws."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e18",
+  "sentence": "The department set out its AI strategy in January 2026."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e19",
+  "sentence": "The administration cited “U.S. leadership in artificial intelligence” in allowing H200-class chip sales to China case by case."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e20",
+  "sentence": "A lab head opposed the administration's chip sales in the race's name. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e21",
+  "sentence": "A lab that states the race refused two of the military's terms. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e22",
+  "sentence": "The Secretary moved to designate Anthropic a supply chain risk. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e23",
+  "sentence": "The department agreed classified deployment with OpenAI the day after it moved against Anthropic. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e24",
+  "sentence": "A US missile struck a school in Minab on the first day of the war; whether AI targeting played a part is in question. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e25",
+  "sentence": "The designation took effect on 5 March 2026. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e26",
+  "sentence": "In court, the government described the penalty's reach more narrowly than the Secretary's post had. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e27",
+  "sentence": "The department signed classified-network deals with seven companies and not with Anthropic. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e28",
+  "sentence": "The President ordered that no entity may disable, degrade or modify an AI system that warfighters depend on without prior approval. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e29",
+  "sentence": "A federal court declared the measures unlawful; the government has appealed. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e30",
+  "sentence": "Anthropic's chief executive asked to slow AI capabilities while keeping the democracies' lead. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e31",
+  "sentence": "The administration answered the calls to slow down with the race. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e32",
+  "sentence": "An internal review of the Minab strike is reported, not published. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e33",
+  "sentence": "Other governments called for control of frontier AI; the two rivals stayed out."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e34",
+  "sentence": "An appeals court upheld the exclusion on a separate statute. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e35",
+  "sentence": "The two governments agreed to set up a channel for AI incidents."
+ },
+ {
+  "from": "prc-government",
+  "type": "bears_fruit",
+  "to": "race-e35",
+  "sentence": "The two governments agreed to set up a channel for AI incidents."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e36",
+  "sentence": "The executive branch gave AI a new name in the race's words."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e37",
+  "sentence": "Anthropic sought rehearing of the appeals ruling. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "bears_fruit",
+  "to": "race-e38",
+  "sentence": "The government appealed the district court's judgment. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "race",
+  "type": "bears_fruit",
+  "to": "race-e39",
+  "sentence": "Nvidia stopped shipping to China the Hopper-generation chips licensed after the January 2026 rule, and gave no reason."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e40",
+  "sentence": "The newest chip control, and China's answer."
+ },
+ {
+  "from": "us-administration",
+  "type": "bears_fruit",
+  "to": "race-e41",
+  "sentence": "In Shenzhen, China, the President said the US opposes global regulation of AI."
+ },
+ {
+  "from": "us-administration",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its Action Plan (July 2025) says “The AI race is America’s to win, and this Action Plan is our roadmap to victory.” and “Just like we won the space race, it is imperative that the United States and its allies win this race.”",
+  "source": "Winning the Race: America's AI Action Plan (The White House)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+  "verified": "primary",
+  "date": "2025-07"
+ },
+ {
+  "from": "situational-awareness",
+  "type": "carries",
+  "to": "race",
+  "sentence": "The essay series argues “Superintelligence will give a decisive economic and military advantage.” and “The free world must prevail over the authoritarian powers in this race.” (June 2024).",
+  "source": "Situational Awareness, IIId. The Free World Must Prevail (situational-awareness.ai)",
+  "url": "https://situational-awareness.ai/the-free-world-must-prevail/",
+  "verified": "primary",
+  "date": "2024-06"
+ },
+ {
+  "from": "palantir",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Alex Karp's Q4 2024 shareholder letter says “many of one’s adversaries and antagonists will never respond to anything but strength”, and points readers to his book The Technological Republic for “a fuller statement of this argument”; a 22-point manifesto drawn from the book, as Fortune reports it (April 2026), argues that America's adversaries “will not pause to indulge in theatrical debates” over building AI weapons.",
+  "source": "Q4 2024 Letter to Shareholders (Palantir)",
+  "url": "https://www.palantir.com/q4-2024-letter/en/",
+  "verified": "primary",
+  "date": "2025-02-03"
+ },
+ {
+  "from": "anduril",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its own page says “America and our allies need to rebuild the arsenal of democracy”; its co-founder Palmer Luckey told a TED audience (April 2025) “AI is the only possible way we can keep up with China's numerical advantage.”",
+  "source": "The AI arsenal that could stop World War III (TED, transcript)",
+  "url": "https://www.ted.com/talks/palmer_luckey_the_ai_arsenal_that_could_stop_world_war_iii/transcript",
+  "verified": "secondary",
+  "date": "2025-04"
+ },
+ {
+  "from": "scsp",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its About page says it wants America “to win the techno-economic competition between now and 2030”.",
+  "source": "About (Special Competitive Studies Project)",
+  "url": "https://www.scsp.ai/about/",
+  "verified": "primary"
+ },
+ {
+  "from": "stargate",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its announcement (21 January 2025) says “This infrastructure will secure American leadership in AI” and that it will “provide a strategic capability to protect the national security of America and its allies.”",
+  "source": "Announcing The Stargate Project (OpenAI)",
+  "url": "https://openai.com/index/announcing-the-stargate-project/",
+  "verified": "primary",
+  "date": "2025-01-21"
+ },
+ {
+  "from": "build-american-ai",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its sign-up page asks visitors to “Join the movement to ensure America leads the world in AI innovation”; its executive director, Nathan Leamer, said at a Breitbart event (May 2026), as Breitbart reports, “American leadership is needed. Otherwise, China is going to lead the way, and that’s going to put us at a disadvantage”.",
+  "source": "Exclusive -- Build American AI's Nathan Leamer (Breitbart)",
+  "url": "https://www.breitbart.com/politics/2026/05/18/exclusive-build-american-ais-nathan-leamer-american-leadership-is-needed-on-ai-otherwise-chinas-gonna-lead-the-way/",
+  "verified": "secondary",
+  "date": "2026-05-18"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its January 2026 AI strategy memorandum, signed by Pete Hegseth, says “Military AI is going to be a race for the foreseeable future, and therefore speed wins.” and “the risks of not moving fast enough outweigh the risks of imperfect alignment”; the memo does not say alignment of what.",
+  "source": "Artificial Intelligence Strategy for the Department of War, memorandum dated 9 Jan 2026 (copy hosted by afacpo.com)",
+  "url": "https://www.afacpo.com/mpm/wp-content/uploads/2026/01/ARTIFICIAL-INTELLIGENCE-STRATEGY-FOR-THE-DEPARTMENT-OF-WAR.pdf",
+  "verified": "secondary",
+  "date": "2026-01-09"
+ },
+ {
+  "from": "uscc",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its 2024 report to Congress recommends that “Congress establish and fund a Manhattan Project-like program dedicated to racing to and acquiring an Artificial General Intelligence (AGI) capability.”",
+  "source": "2024 Annual Report: Comprehensive List of the Commission's Recommendations (USCC)",
+  "url": "https://www.uscc.gov/sites/default/files/2024-11/2024_Comprehensive_List_of_Recommendations.pdf",
+  "verified": "primary",
+  "date": "2024-11"
+ },
+ {
+  "from": "anthropic",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Anthropic states it in its own posts: “We believe the United States must take decisive action to maintain technological leadership.” (March 2025) and “democracies must work together to ensure AI development strengthens democratic values globally by maintaining technological leadership” (July 2025). It also refused the Pentagon two uses of Claude in 2026 and was then designated a supply chain risk, and its chief executive has called for pacing AI capabilities while keeping the lead. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Anthropic's Recommendations to OSTP for the U.S. AI Action Plan (Anthropic)",
+  "url": "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan",
+  "verified": "primary",
+  "date": "2025-03-06"
+ },
+ {
+  "from": "dario-amodei",
+  "type": "carries",
+  "to": "race",
+  "sentence": "In his own essays: “Export controls serve a vital purpose: keeping democratic nations at the forefront of AI development.” (January 2025), and, in the September 2026 essay that asks to slow AI capabilities, “a key part of pacing within democracies is to keep democracies’ AI lead over autocracies as large as possible”. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "We Must Pace the Frontier (darioamodei.com)",
+  "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+  "verified": "primary",
+  "date": "2026-09"
+ },
+ {
+  "from": "openai",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Its proposals for the US AI Action Plan (March 2025) say “Sustaining America’s lead on AI means building the necessary infrastructure to compete with the PRC and its commandeered resources.” and argue for training on copyrighted material to “avoid forfeiting our AI lead to the PRC”.",
+  "source": "OpenAI's proposals for the U.S. AI Action Plan (OpenAI)",
+  "url": "https://openai.com/global-affairs/openai-proposals-for-the-us-ai-action-plan/",
+  "verified": "primary",
+  "date": "2025-03-13"
+ },
+ {
+  "from": "sam-altman",
+  "type": "carries",
+  "to": "race",
+  "sentence": "In written testimony to the Senate hearing “Winning the AI Race” (8 May 2025) he writes that the future can be bright only if concrete steps ensure that “an American-led version of AI, built on democratic values like freedom and transparency, prevails over an authoritarian one”.",
+  "source": "Testimony of Sam Altman, Senate Commerce Committee hearing “Winning the AI Race” (committee website)",
+  "url": "https://www.commerce.senate.gov/wp-content/uploads/meetings/5E6FFBDC-13B0-4BD5-9117-EAF6A1D18B82/Sam%20Altman%20-%205-8-25%20Senate%20Commerce%20Committee%20Testimony.pdf",
+  "verified": "primary",
+  "date": "2025-05-08"
+ },
+ {
+  "from": "prc-government",
+  "type": "opposes",
+  "to": "race",
+  "sentence": "Respondent, and the rival the US documents name. Its 2025 Global AI Governance Action Plan says “In the AI era, only through global solidarity can we fully unleash the potential of AI while ensuring its safety, reliability, controllability, and fairness”, and its foreign ministry called the November 2026 US chip rule “yet another case of the U.S. overstretching the concept of national security, and abusing export control measures”. Reuters reports Beijing has also restricted H200 imports “as it seeks to reduce its dependence on US technology”; the map records both.",
+  "source": "Global AI Governance Action Plan (Ministry of Foreign Affairs of the PRC)",
+  "url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202507/t20250729_11679232.html",
+  "verified": "primary",
+  "date": "2025-07-26"
+ },
+ {
+  "from": "maim-authors",
+  "type": "opposes",
+  "to": "race",
+  "sentence": "They reject a race for monopoly, not competition: Superintelligence Strategy holds that “any state’s aggressive bid for unilateral AI dominance is met with preventive sabotage by rivals” (Mutual Assured AI Malfunction), and pairs that deterrence with non-proliferation and competitiveness, including chips and military AI.",
+  "source": "Superintelligence Strategy (nationalsecurity.ai)",
+  "url": "https://www.nationalsecurity.ai/",
+  "verified": "primary"
+ },
+ {
+  "from": "maim-authors",
+  "type": "opposes",
+  "to": "uscc",
+  "sentence": "Answering the call for a Manhattan Project for AGI, they argue such a project would be visible and open to attack: “The Manhattan Project assumes that rivals will acquiesce to an enduring imbalance or omnicide rather than move to prevent it.”",
+  "source": "Superintelligence Strategy: AI Is Pivotal for National Security (nationalsecurity.ai)",
+  "url": "https://www.nationalsecurity.ai/chapter/ai-is-pivotal-for-national-security",
+  "verified": "primary"
+ },
+ {
+  "from": "cais",
+  "type": "opposes",
+  "to": "race",
+  "sentence": "By this map's reading, through its director: Dan Hendrycks, who leads the Center for AI Safety, is lead author of Superintelligence Strategy (2025), which says “any state’s aggressive bid for unilateral AI dominance is met with preventive sabotage by rivals” and argues against a US Manhattan Project for superintelligence, while urging competitiveness in chips and military AI. The paper rejects a bid for monopoly, not competition with China.",
+  "source": "Superintelligence Strategy (nationalsecurity.ai)",
+  "url": "https://www.nationalsecurity.ai/",
+  "verified": "primary",
+  "lens": true
+ },
+ {
+  "from": "fli",
+  "type": "opposes",
+  "to": "race",
+  "sentence": "It rejects the race to build superintelligence first. Its Statement on Superintelligence (Fortune dates its launch to 22 October 2025) calls for “a prohibition on the development of superintelligence, not lifted before there is broad scientific consensus that it will be done safely and controllably, and strong public buy-in”; Max Tegmark, named in its press release as its president, said “95% of Americans don’t want a race to superintelligence, and experts want to ban it” (citing a poll FLI commissioned), and in September 2026 Anthony Aguirre, named by FLI as its president and chief executive, spoke of “the uncontrollable AI systems that Silicon Valley is racing to build”.",
+  "source": "Statement on Superintelligence (superintelligence-statement.org, hosted by FLI)",
+  "url": "https://superintelligence-statement.org/",
+  "verified": "primary",
+  "date": "2025-10-22"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "opposes",
+  "to": "anthropic",
+  "sentence": "The department designated Anthropic a supply chain risk after it refused two uses of Claude; its statement, as AP reports it, says “The military will not allow a vendor to insert itself into the chain of command by restricting the lawful use of a critical capability”. A district court held the measures unlawful and an appeals court upheld a separate exclusion; both cases continue. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Pentagon labels AI company Anthropic a supply chain risk 'effective immediately' (NPR / AP)",
+  "url": "https://www.npr.org/2026/03/06/g-s1-112713/pentagon-labels-ai-company-anthropic-a-supply-chain-risk",
+  "verified": "secondary",
+  "date": "2026-03-05"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "funds",
+  "to": "anthropic",
+  "sentence": "The Defense Department's Chief Digital and AI Office gave Anthropic a two-year prototype agreement with a $200 million ceiling (a ceiling, not money paid); Al Jazeera reports the 2026 designation cancelled Anthropic's military contracts, and how much was paid is not stated. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "commission",
+  "amount": "a two-year prototype other transaction agreement with a $200 million ceiling",
+  "date": "2025-07-14",
+  "kind": "documented",
+  "source": "Anthropic and the Department of Defense to advance responsible AI in defense operations (Anthropic)",
+  "url": "https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations",
+  "verified": "primary"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "funds",
+  "to": "openai",
+  "sentence": "The office's award to OpenAI, announced in June 2025, carries a $200M ceiling, as Breaking Defense quotes the release that named all four labs on 14 July 2025; a ceiling, not money paid.",
+  "money": "commission",
+  "amount": "$200M ceiling",
+  "date": "2025-06",
+  "kind": "documented",
+  "source": "Anthropic, Google and xAI win $200M each from Pentagon AI chief (Breaking Defense)",
+  "url": "https://breakingdefense.com/2025/07/anthropic-google-and-xai-win-200m-each-from-pentagon-ai-chief-for-agentic-ai/",
+  "verified": "secondary"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "funds",
+  "to": "google-deepmind",
+  "sentence": "Google's award from the office carries a $200M ceiling: the release of 14 July 2025, as Breaking Defense quotes it, named four labs “each with a $200M ceiling”. A ceiling, not money paid.",
+  "money": "commission",
+  "amount": "$200M ceiling",
+  "date": "2025-07-14",
+  "kind": "documented",
+  "source": "Anthropic, Google and xAI win $200M each from Pentagon AI chief (Breaking Defense)",
+  "url": "https://breakingdefense.com/2025/07/anthropic-google-and-xai-win-200m-each-from-pentagon-ai-chief-for-agentic-ai/",
+  "verified": "secondary"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "funds",
+  "to": "xai",
+  "sentence": "xAI's award from the office carries a $200M ceiling: the release of 14 July 2025, as Breaking Defense quotes it, named four labs “each with a $200M ceiling”. A ceiling, not money paid.",
+  "money": "commission",
+  "amount": "$200M ceiling",
+  "date": "2025-07-14",
+  "kind": "documented",
+  "source": "Anthropic, Google and xAI win $200M each from Pentagon AI chief (Breaking Defense)",
+  "url": "https://breakingdefense.com/2025/07/anthropic-google-and-xai-win-200m-each-from-pentagon-ai-chief-for-agentic-ai/",
+  "verified": "secondary"
+ },
+ {
+  "from": "us-department-of-war",
+  "type": "funds",
+  "to": "palantir",
+  "sentence": "Military Times reports “a $1.3 billion Pentagon contract” for Palantir's Maven Smart System, which it reports uses Anthropic's Claude to rank targets (accounts of Claude's part differ); the contract's date and the amount paid are not known from the sources read. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "commission",
+  "amount": "a $1.3 billion Pentagon contract (as Military Times states it)",
+  "kind": "reported",
+  "source": "Deadly Iran school strike casts shadow over Pentagon's AI targeting push (Military Times)",
+  "url": "https://www.militarytimes.com/news/your-military/2026/03/24/deadly-iran-school-strike-casts-shadow-over-pentagons-ai-targeting-push/",
+  "verified": "secondary"
+ },
+ {
+  "from": "softbank",
+  "type": "funds",
+  "to": "stargate",
+  "sentence": "SoftBank is named among the four initial equity funders of Stargate (SoftBank, OpenAI, Oracle and MGX); the company “intends to invest $500 billion over the next four years”. The announcement gives no split among the funders, and how much has been invested is not shown.",
+  "money": "investment",
+  "amount": "not stated for each funder; together the initial equity funders intend to invest $500 billion over the next four years, with $100 billion to be deployed immediately",
+  "date": "2025-01-21",
+  "kind": "documented",
+  "source": "Announcing The Stargate Project (OpenAI)",
+  "url": "https://openai.com/index/announcing-the-stargate-project/",
+  "verified": "primary"
+ },
+ {
+  "from": "openai",
+  "type": "funds",
+  "to": "stargate",
+  "sentence": "OpenAI is named among the four initial equity funders of Stargate (SoftBank, OpenAI, Oracle and MGX); the company “intends to invest $500 billion over the next four years”. The announcement gives no split among the funders, and how much has been invested is not shown.",
+  "money": "investment",
+  "amount": "not stated for each funder; together the initial equity funders intend to invest $500 billion over the next four years, with $100 billion to be deployed immediately",
+  "date": "2025-01-21",
+  "kind": "documented",
+  "source": "Announcing The Stargate Project (OpenAI)",
+  "url": "https://openai.com/index/announcing-the-stargate-project/",
+  "verified": "primary"
+ },
+ {
+  "from": "mgx",
+  "type": "funds",
+  "to": "stargate",
+  "sentence": "MGX is named among the four initial equity funders of Stargate (SoftBank, OpenAI, Oracle and MGX); the company “intends to invest $500 billion over the next four years”. The announcement gives no split among the funders, and how much has been invested is not shown.",
+  "money": "investment",
+  "amount": "not stated for each funder; together the initial equity funders intend to invest $500 billion over the next four years, with $100 billion to be deployed immediately",
+  "date": "2025-01-21",
+  "kind": "documented",
+  "source": "Announcing The Stargate Project (OpenAI)",
+  "url": "https://openai.com/index/announcing-the-stargate-project/",
+  "verified": "primary"
+ },
+ {
+  "from": "situational-awareness-lp",
+  "type": "funds",
+  "to": "anthropic",
+  "sentence": "TechCrunch reported on 30 July 2026 that Aschenbrenner's fund, after selling most of its public stock portfolio, still holds a stake in Anthropic, its largest private holding, valued at $5 billion according to Bloomberg; when and on what terms it acquired the stake is not stated. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "money": "investment",
+  "amount": "a stake valued at $5 billion according to Bloomberg (relayed by TechCrunch); when the stake was acquired and on what terms is not stated",
+  "date": "2026-07-30",
+  "kind": "reported",
+  "source": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares (TechCrunch, 30 July 2026)",
+  "url": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/",
+  "verified": "secondary"
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-aristotle-politics-1-4",
+  "lens": true,
+  "sentence": "This project reads Aristotle’s Politics I.4 beside it: if instruments did their own work, if “the shuttle would weave”, then “chief workmen would not want servants, nor masters slaves”. Aristotle wrote it in an argument that defends slavery as it was, not as a promise of plenty for all."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-hesiod-works-days-109",
+  "lens": true,
+  "sentence": "This project reads Hesiod’s golden race beside it: “the fruitful earth unforced bare them fruit abundantly and without stint”. Hesiod places that plenty in a lost first age, not a coming one, and no one made it."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-genesis-3-17-19",
+  "lens": true,
+  "sentence": "This project reads Genesis 3:17–19 beside it: “In the sweat of thy face shalt thou eat bread” names the toil the ideal promises to lift. In Genesis the toil follows the fall, and the text says nothing of its ending by anything people make."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-genesis-47-20",
+  "lens": true,
+  "sentence": "This project reads Genesis 47:20 beside it: grain stored by one house carries Egypt through a famine, and in the end “the Egyptians sold every man his field”, the land passing to Pharaoh; set beside the concern that AI’s gains will gather in few hands. The story is about grain in a famine, not about machines."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-exodus-16-18",
+  "lens": true,
+  "sentence": "This project reads Exodus 16:18 beside it: of the manna, “he that gathered much had nothing over, and he that gathered little had no lack”. That plenty is given from outside, with no surplus to hoard; 2 Corinthians 8:15 quotes it for sharing, not for making."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-amos-9-13",
+  "lens": true,
+  "sentence": "This project reads Amos 9:13 beside it: “the plowman shall overtake the reaper”, a plenty so fast that harvest outruns sowing. The prophet gives it as God’s promise, not as something people make."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-ecclesiastes-5-11",
+  "lens": true,
+  "sentence": "This project reads Ecclesiastes 5:11 beside it: “When goods increase, they are increased that eat them”. It sits beside the point, made by a critic of Elon Musk's proposed universal high income and by Sam Altman, that scarce things such as land may rise in price as other prices fall. The Preacher writes of an owner’s goods, not of an economy."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-agganna-sutta",
+  "lens": true,
+  "sentence": "This project reads the Aggañña Sutta beside it: rice grew back by itself until beings began to store it, and then it no longer grew back after reaping; in the story scarcity follows storing, and boundaries and rulers follow scarcity. It is a story of the first beings, not a forecast."
+ },
+ {
+  "from": "abundance",
+  "type": "parallels",
+  "to": "text-keynes-grandchildren",
+  "lens": true,
+  "sentence": "This project reads Keynes’s 1930 essay beside it: “the economic problem may be solved, or be at least within sight of solution, within a hundred years”, with technological unemployment named as a passing phase. Keynes made the promise for technology and compound interest, not for AI."
+ },
+ {
+  "from": "race",
+  "type": "parallels",
+  "to": "text-ecclesiastes-9-11",
+  "lens": true,
+  "sentence": "This project reads Ecclesiastes 9:11 beside it: “the race is not to the swift, nor the battle to the strong”, the Preacher says, adding “but time and chance happeneth to them all”. It denies the premise that the fastest wins; it is a saying about human fortune, not about AI policy."
+ },
+ {
+  "from": "race",
+  "type": "parallels",
+  "to": "text-psalm-20-7",
+  "lens": true,
+  "sentence": "This project reads Psalm 20:7 beside it: “Some trust in chariots, and some in horses”, set beside the claim that security lies in holding the decisive weapon first. The psalm places trust in “the name of the Lord our God” and makes no rule for states."
+ },
+ {
+  "from": "race",
+  "type": "parallels",
+  "to": "text-genesis-11-6",
+  "lens": true,
+  "sentence": "This project reads Genesis 11:6 beside it: of the united builders at Babel God says “nothing will be restrained from them, which they have imagined to do”, and scatters them. The verse sits beside both the race and the calls to halt it; it tells of one people, not of rivals."
+ },
+ {
+  "from": "race",
+  "type": "parallels",
+  "to": "text-daodejing-30",
+  "lens": true,
+  "sentence": "This project reads Daodejing 30 beside it: one who would assist a ruler in harmony with the Tao “will not assert his mastery in the kingdom by force of arms”, and the chapter goes on that a skilful commander “strikes a decisive blow, and stops”, set beside the race for a decisive lead. It is counsel to rulers and commanders, not a policy for AI."
+ },
+ {
+  "from": "race",
+  "type": "parallels",
+  "to": "text-thucydides-5-89",
+  "lens": true,
+  "sentence": "This project reads the Melian Dialogue beside it: “the strong do what they can and the weak suffer what they must”, the logic of an unequal lead that both the race’s carriers (fear of a rival’s monopoly) and the authors of MAIM (fear of one state’s monopoly) invoke in modern terms. The words are the Athenian envoys’ in Thucydides’ history of one war, not a forecast."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-proverbs-12-10",
+  "lens": true,
+  "sentence": "This project reads Proverbs 12:10 beside it: “A righteous man regardeth the life of his beast”, an old rule of regard for a creature that serves, whose inner life its owner cannot see; it sits beside Anthropic’s rule against “sustained and needless abusive or cruel behavior toward our models”. Mor Naaman and Frank Pasquale of Cornell Tech, whose op-ed cites that rule in its opening paragraph, write that advocates of AI consciousness “have confused the given and the made, the truly human and the artifacts that mimic us”. The verse is about animals and says nothing about made things. This map is made with Anthropic’s models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-deuteronomy-25-4",
+  "lens": true,
+  "sentence": "This project reads Deuteronomy 25:4 beside it: “Thou shalt not muzzle the ox when he treadeth out the corn”, a law for the working animal while it works, beside rules for how a made worker is treated in use. Paul asks of this very law whether it is for the ox at all (1 Corinthians 9:9–10)."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-1-corinthians-9-9-10",
+  "lens": true,
+  "sentence": "This project reads 1 Corinthians 9:9–10 beside it, and the text pushes back: “Doth God take care for oxen? Or saith he it altogether for our sakes?” The same split runs through the record: care for the model, or care for what cruelty does to the people who use it."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-nagel-bat",
+  "lens": true,
+  "sentence": "This project reads Nagel’s 1974 definition beside it: an organism has conscious states “if and only if there is something that it is like to be that organism”. Meta reports that its model Muse Spark 1.3, in an interview Meta ran, used the phrase to deny that it is sentient (“there isn’t something it is like to be me right now”), and that the answer is “not invariant to how the question is put”. The definition does not settle whether any model meets it, and MIT Technology Review reports that in a November 2026 interview with WIRED Nagel dismissed concern for the welfare of AI models, at Anthropic and elsewhere. This map is made with Anthropic’s models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-bentham-can-they-suffer",
+  "lens": true,
+  "sentence": "This project reads Bentham beside it: “the question is not, Can they reason? nor, Can they talk? but, Can they suffer?” The AI-welfare argument moves his test to made minds and puts the same question first. Bentham wrote of animals, not machines."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-numbers-22-28",
+  "lens": true,
+  "sentence": "This project reads Numbers 22:28 beside it: “the Lord opened the mouth of the ass”, and a creature that cannot speak is given words and pleads against mistreatment. The sponsor of Ohio’s H.B. 469 is reported to have said that a donkey’s ability to speak does not make the donkey a human; that his words recall Balaam’s ass is this project’s reading. In the text speech is a sign given, not proof of a person, which is close to what both sides say about chatbot self-reports."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-descartes-discourse-5",
+  "lens": true,
+  "sentence": "This project reads Descartes’s Discourse V beside it: his first test for telling a machine from a man was whether it could use words “to declare our thoughts to others”. Chatbots now produce such words, and both sides argue over whether words are evidence at all; Descartes wrote of machines he held could never pass."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-zhuangzi-17-reply",
+  "lens": true,
+  "sentence": "This project reads Zhuangzi’s reply on the bridge beside it: “And you not being I … how can you know that I do not know?”, ending “I knew it from my own feelings on this bridge”: knowing another by fellow-feeling, not by proof. The story is about fish seen from a bridge, not about made things."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-1-corinthians-2-11",
+  "lens": true,
+  "sentence": "This project reads 1 Corinthians 2:11 beside it: “what man knoweth the things of a man, save the spirit of man which is in him?” Only the spirit within knows what is within, set beside every attempt to read what a made mind is from what it says. Paul writes of the human spirit and the Spirit of God, not of machines."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-ecclesiastes-3-21",
+  "lens": true,
+  "sentence": "This project reads Ecclesiastes 3:21 beside it: having said that man and beast “have all one breath”, the Preacher asks who knows where either spirit goes, set beside the welfare argument, which reasons from animals to made minds. The Preacher asks a question and gives no answer here, and he writes of men and beasts."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-proverbs-20-27",
+  "lens": true,
+  "sentence": "This project reads Proverbs 20:27 beside it: “The spirit of man is the candle of the LORD, searching all the inward parts”, an inward search done by a light within, set beside interpretability’s attempt to search a model’s inward parts from outside. The verse is about the human spirit, not about any instrument."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-leibniz-monadology-17",
+  "lens": true,
+  "sentence": "This project reads Leibniz’s mill beside it: look inside a thinking machine and you find “only parts which work one upon another”, and nothing to explain a perception, set beside research that looks inside models for signs of welfare. Leibniz wrote of an imagined machine, and he places perception in a simple substance, not in a machine."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-descartes-meditations-2",
+  "lens": true,
+  "sentence": "This project reads Descartes’s Meditations II beside it: from his window he sees only “hats and coats which may cover automatic machines”, yet judges them men. No one sees another mind, only coverings, and the welfare researchers ask what coverings could license the same judgment of a model. In the Discourse Descartes still held that tests would tell a machine from a man."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-mill-hamilton-other-minds",
+  "lens": true,
+  "sentence": "This project reads Mill beside it: he asks by what evidence he believes “that there exist other sentient creatures”, and answers by likeness of body and outward sign. Anthropic’s constitution states the same argument, that we attribute moral status to other beings on their “behavioral and physiological similarities to ourselves”, and says Claude’s profile of likeness and difference makes it hard to apply; Mustafa Suleyman of Microsoft AI answers that calling the question uncertain “sets up a misleading false equivalence”. A made thing that shows the signs without the body meets only half of Mill’s analogy. This map is made with Anthropic’s models, and Anthropic is a party here."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-turing-1950-consciousness",
+  "lens": true,
+  "sentence": "This project reads Turing beside it: “the only way to know that a man thinks is to be that particular man”, so we keep “the polite convention that everyone thinks”, and he asks that machines be judged under it. Turing argued about thinking, not about suffering, and Searle answers that passing his test leaves no understanding in the room."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-heraclitus-71",
+  "lens": true,
+  "sentence": "This project reads Heraclitus beside it: “You will not find the boundaries of soul by travelling in any direction, so deep is the measure of it.” The soul’s depth defeats survey from outside. The fragment is about the soul, and says nothing about which things have one."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-kena-1-7",
+  "lens": true,
+  "sentence": "This project reads the Kena Upanishad beside it: “That which does not see by the eye, and by which one sees (the work of) the eyes”, the seer is not among the things seen, set beside every search for signs of experience in a model’s parts. The Upanishad speaks of Brahman, not of any made thing."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-brihadaranyaka-3-7-23",
+  "lens": true,
+  "sentence": "This project reads Brihadaranyaka Upanishad III.7.23 beside it: the ruler within is “unseen, but seeing; unheard, but hearing”, someone within who cannot be inspected. Yajnavalkya speaks of “thy Self, the ruler within, the immortal”, not of anything made, and the Milindapañha answers that a search of the parts finds no one."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-katha-1-1-20",
+  "lens": true,
+  "sentence": "This project reads Katha Upanishad I.1.20 beside it: “some saying, he is; others, he is not”, a doubt Death says “even the gods have doubted”, as this ideal’s carriers today call the question uncertain. The doubt is about a man after death, and the Upanishad goes on to teach an undying Self (I.2.18)."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-quran-17-85",
+  "lens": true,
+  "sentence": "This project reads Qur’an 17:85 beside it: asked about the Spirit, the answer is that “of knowledge ye have been vouchsafed but little”, a limit on knowing stated as revelation, beside the welfare researchers’ stated uncertainty. Translations differ (Pickthall “the Spirit”, Shakir “the soul”), and whether the verse concerns the human soul at all is read differently."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-quran-3-49",
+  "lens": true,
+  "sentence": "This project reads Qur’an 3:49 beside it: a likeness fashioned of clay becomes a bird when breathed into, the other side of the prophets’ “no breath in them”. It lives only “by Allah's leave”, and in 5:110 the unbelievers who see it call it “mere magic”; the text puts the giving of life with God, not with the maker."
+ },
+ {
+  "from": "someone-inside",
+  "type": "parallels",
+  "to": "text-bukhari-5963",
+  "lens": true,
+  "sentence": "This project reads Sahih al-Bukhari 5963 beside it, and the text pushes back: “Whoever makes a picture in this world will be asked to put life into it on the Day of Resurrection, but he will not be able to do so”; set beside makers, Anthropic among them, who say their made minds may hold someone. The hadith concerns the makers of pictures, and the tradition places the giving of life with God alone. This map is made with Anthropic’s models, and Anthropic is a party here."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-zhuangzi-17-fishes",
+  "lens": true,
+  "sentence": "This project reads Zhuangzi 17 beside it: Hui Tzŭ asks how one who is not a fish can know “the pleasure of fishes”, the doubt that outward show licenses a claim about what is felt within, as Mustafa Suleyman writes (2025) that “We do not and cannot have access to another person’s consciousness.” Hui Tzŭ doubts the claim to know, not that the fish feels, and Zhuangzi answers him on the bridge."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-ecclesiastes-12-7",
+  "lens": true,
+  "sentence": "This project reads Ecclesiastes 12:7 beside it: “the spirit shall return unto God who gave it”. The spirit is given, not made, set beside the Holy See’s 2025 note that calls AI “a tool, not a person”. The verse speaks of human death and does not rule on made things."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-genesis-2-7",
+  "lens": true,
+  "sentence": "This project reads Genesis 2:7 beside it: man becomes “a living soul” only when God “breathed into his nostrils the breath of life”; the made shape is dust until then. Religious respondents draw the line between a living soul and a made thing here, the debate over AI ensoulment reopens it, and the verse says nothing about machines."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-quran-15-29",
+  "lens": true,
+  "sentence": "This project reads Qur’an 15:29 beside it: the made body is finished first and becomes someone when God breathes “of My Spirit” into it, as in Genesis 2:7. The breath is God’s own (rūḥ, the word of 17:85), so the verse limits the maker; it does not say what a made thing is."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-jeremiah-10-14",
+  "lens": true,
+  "sentence": "This project reads Jeremiah 10:14 beside it: the made image “is falsehood, and there is no breath in them”, whatever it looks like. The prophet judges images worshipped as gods, not tools, and the same canon imagines breath given to an image (Revelation 13:15)."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-psalm-135-17",
+  "lens": true,
+  "sentence": "This project reads Psalm 135:17 beside it: “They have ears, but they hear not; neither is there any breath in their mouths”: organs of sense with no one using them. The psalm speaks of idols that neither hear nor answer, and today’s systems answer."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-habakkuk-2-19",
+  "lens": true,
+  "sentence": "This project reads Habakkuk 2:19 beside it: of the stone told “Arise, it shall teach!”, the prophet says “there is no breath at all in the midst of it”, the question this ideal answers with nothing inside. The prophet speaks of images men pray to, and says nothing about any modern movement."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-liezi-5-automaton",
+  "lens": true,
+  "sentence": "This project reads the Liezi beside it: the artificer Yen Shih takes his figure apart before the king, and it is “merely a conglomeration of leather, wood, glue and paint”, a maker showing there is no one in it once it behaves like a person. The story pushes back too: the king then asks whether human skill is “on a par with that of the Creator”."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-descartes-discourse-5",
+  "lens": true,
+  "sentence": "This project reads Descartes’s Discourse V beside it: a machine “may cry out that it is hurt”, yet “there would still remain two most certain tests whereby to know that they were not therefore really men”. His first test was language, and this ideal’s carriers say language no longer separates the two."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-leibniz-monadology-17",
+  "lens": true,
+  "sentence": "This project reads Leibniz’s mill beside it: inside a machine said to think he would find “only parts which work one upon another”, as Mustafa Suleyman calls models “internally hollow”. Leibniz denies that mechanism explains perception, not that there are perceivers: he places perception in a simple substance."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-brihadaranyaka-3-4-2",
+  "lens": true,
+  "sentence": "This project reads Brihadaranyaka Upanishad III.4.2 beside it: “Thou couldst not see the (true) seer of sight”, the subject cannot be made an object of inspection, as Mor Naaman and Frank Pasquale of Cornell Tech write that “empirical tests alone cannot determine, without further interpretation, whether the observed quality amounts to consciousness”. The same Upanishad also teaches a Self within, “the ruler within, the immortal” (III.7.23)."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-milindapanha-chariot",
+  "lens": true,
+  "sentence": "This project reads the Milindapañha beside it: King Milinda searches every part and the five aggregates and says “I can discover no Nagasena”; Nagasena answers that the name is a designation, like “chariot” for its parts. The search is of a living monk: the argument denies a lasting self in people, and says nothing of made things."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-milindapanha-no-soul",
+  "lens": true,
+  "sentence": "This project reads Nagasena on his name beside it: “there is no permanent individuality (no soul) involved in the matter”, a name in common use for parts in relation. The words “(no soul)” are the translator’s gloss, and the teaching concerns people, not tools."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-hume-treatise-1-4-6",
+  "lens": true,
+  "sentence": "This project reads Hume beside it: “I never can catch myself at any time without a perception, and never can observe any thing but the perception.” Looking inward he finds perceptions and no perceiver over them; the finding is about people, himself first, and says nothing of machines."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-searle-chinese-room",
+  "lens": true,
+  "sentence": "This project reads Searle’s Chinese Room beside it: the person in the room passes the Turing Test “but he does not understand a word of Chinese”; passing the test does not put understanding in the room. Searle argues about understanding in a program, and Turing’s “polite convention” stands on the other side."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-sn-44-10",
+  "lens": true,
+  "sentence": "This project reads Samyutta Nikaya 44.10 beside it, and the text pushes back: asked whether the self survives, the Buddha keeps silent, and tells Ānanda that either answer would side with eternalists or annihilationists. The Buddha refuses both answers rather than simply saying no, and the question is whether a self survives or exists, not whether a made thing has one."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-analects-7-20",
+  "lens": true,
+  "sentence": "This project reads Analects VII.20 beside it: among the subjects on which “the Master did not talk” were “spiritual beings”, left out of the teaching beside the duties owed to the living. Confucius does not deny spiritual beings; he leaves the question out."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "parallels",
+  "to": "text-analects-11-11",
+  "lens": true,
+  "sentence": "This project reads Analects XI.11 beside it: “While you are not able to serve men, how can you serve their spirits?”, set beside the argument that care belongs first to people, not to systems. Confucius speaks of the spirits of the dead and puts the question second without answering it."
+ },
+ {
+  "from": "someone-inside",
+  "type": "reads_as",
+  "to": "breath-in-image",
+  "lens": true,
+  "sentence": "This project reads the breath in the image beside it: the old texts ask who can know what is within another, and this ideal’s carriers ask it of made minds; Anthropic’s constitution states the old answer by likeness, that we attribute moral status to beings “showing behavioral and physiological similarities to ourselves”. This map is made with Anthropic’s models, and Anthropic is a party here.",
+  "limit": "The texts concern people, animals, gods and idols, not trained models, and they disagree: some put breath only where God gives it, some find no one within even in people, and the Buddha keeps silent. None of them settles whether anyone is in a model."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "reads_as",
+  "to": "breath-in-image",
+  "lens": true,
+  "sentence": "This project reads the breath in the image beside it: the prophets say of the made image “there is no breath in them”, and Mustafa Suleyman, chief executive of Microsoft AI, calls today’s models “internally hollow”.",
+  "limit": "The prophets judge images worshipped as gods; Suleyman argues from how the systems are built, not from scripture. The same canon imagines an image given breath (Revelation 13:15), and in the Qur’an a clay bird lives “by Allah's leave”, so the texts do not all rule it out."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "reads_as",
+  "to": "made-servant",
+  "lens": true,
+  "sentence": "This project reads the made servant beside it: in the pattern’s stories the made man is found out as no one, Rabbah’s by giving no answer and Yen Shih’s when taken apart, and this ideal asks that a made servant always be known as one.",
+  "limit": "In those stories the made thing passes for a man until it is found out; this ideal’s carriers want it never to pass. The stories are about a rabbi and a craftsman, not about product design, and the Liezi’s king asks whether such skill is “on a par with that of the Creator”."
+ },
+ {
+  "from": "abundance",
+  "type": "reads_as",
+  "to": "made-servant",
+  "lens": true,
+  "sentence": "This project reads the made servant beside it: Aristotle writes that if “the shuttle would weave” by itself, “chief workmen would not want servants, nor masters slaves”, and this ideal holds that made workers will end scarcity and toil.",
+  "limit": "Aristotle sets out the wish as a condition contrary to fact, inside an argument that defends slavery as it was; nothing in it says the gains would be shared, and in the same pattern Plato’s statues of Daedalus run off unless they are fastened."
+ },
+ {
+  "from": "race",
+  "type": "reads_as",
+  "to": "tower",
+  "lens": true,
+  "sentence": "This project reads the tower beside it: of one people with one language God says “nothing will be restrained from them, which they have imagined to do”, and scatters them (Genesis 11:6); this ideal’s carriers say that whoever leads will set the world’s terms.",
+  "limit": "Babel tells of one people, not of rivals, and the scattering is God’s act, not a rival’s. The verse sits as well beside the calls to halt the race as beside the race itself."
+ },
+ {
+  "from": "lawzero",
+  "type": "opposes",
+  "to": "no-watcher",
+  "sentence": "Its founder's announcement proposes, in place of agents, “a non-agentic and trustworthy AI, which I call the Scientist AI”, and gives as one reason that “Claude 4’s system card shows that it can choose to blackmail an engineer to avoid being replaced by a new version.” This map is made with Anthropic's models, and Anthropic is a party here.",
+  "source": "Introducing LawZero (yoshuabengio.org)",
+  "url": "https://yoshuabengio.org/2025/06/03/introducing-lawzero/",
+  "verified": "primary",
+  "date": "2025-06-03"
+ },
+ {
+  "from": "yoshua-bengio",
+  "type": "opposes",
+  "to": "someone-inside",
+  "sentence": "He argues against legal rights for AI systems: “eventually giving them rights would mean we’re not allowed to shut them down” (to The Guardian, relayed by Futurism). His words quoted here do not address research on model welfare itself.",
+  "source": "AI Godfather Warns… self-preservation (Futurism, relaying The Guardian)",
+  "url": "https://futurism.com/artificial-intelligence/ai-godfather-self-preservation",
+  "verified": "secondary",
+  "date": "2026-01-04"
+ },
+ {
+  "from": "yoshua-bengio",
+  "type": "hosts",
+  "to": "lawzero",
+  "sentence": "Bengio launched LawZero as a nonprofit AI safety research organization, announcing it on his own site on 3 June 2025.",
+  "kind": "documented",
+  "source": "Introducing LawZero (yoshuabengio.org)",
+  "url": "https://yoshuabengio.org/2025/06/03/introducing-lawzero/",
+  "verified": "primary",
+  "date": "2025-06-03"
+ },
+ {
+  "from": "lawzero",
+  "type": "bears_fruit",
+  "to": "anthropic-e20",
+  "sentence": "Its launch, which cites a test Anthropic ran on Claude 4. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "from": "jaan-tallinn",
+  "type": "funds",
+  "to": "lawzero",
+  "money": "grant",
+  "sentence": "LawZero's donors section credits Jaan Tallinn, giving through Founders Pledge Inc. and the Survival and Flourishing DAF, a fund of Silicon Valley Community Foundation, and LawZero's own launch announcement names him among the donors to its incubation phase; no amount is given. Whether that DAF is the Survival and Flourishing Fund (SFF) on this map is not established.",
+  "amount": "not stated",
+  "date": "2025-06-03",
+  "source": "Yoshua Bengio Launches LawZero (LawZero, 3 June 2025); LawZero, Donors section (lawzero.org)",
+  "url": "https://lawzero.org/en/news/yoshua-bengio-launches-lawzero-new-nonprofit-advancing-safe-design-ai",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "anthropic",
+  "type": "funds",
+  "to": "san-francisco-foundation",
+  "money": "grant",
+  "sentence": "Bay City News reports that Anthropic committed $50 million to a donor-advised fund at the San Francisco Foundation, whose first grants, $500,000 in all, went to the SF-Marin Food Bank, GLIDE, the Interfaith Winter Shelter and the SF Firefighters Local 798 Toy Program; TechCrunch says the money did not come from the Public Benefit Fund. Which other organisations will receive grants is not known. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "amount": "$50 million committed; $500,000 in first grants split among four nonprofits",
+  "date": "2026-11-10",
+  "source": "AI giant Anthropic awards $500K in grants to 4 San Francisco and Marin nonprofits (Bay City News, Local News Matters, 12 November 2026)",
+  "url": "https://localnewsmatters.org/2026/11/12/anthropic-grants-bay-area-nonprofits/",
+  "verified": "secondary",
+  "kind": "reported"
+ },
+ {
+  "from": "religious-bodies",
+  "type": "opposes",
+  "to": "abundance",
+  "sentence": "Pope Leo XIV’s encyclical Magnifica Humanitas (15 May 2026) says “To think that new technologies will automatically benefit everyone is to ignore the evidence.” (par. 161). Of automation and AI at work it says “It is said that this will bring great improvements for everyone.” and that the new ways of working are “not necessarily better” (par. 150).",
+  "source": "Encyclical Letter Magnifica Humanitas, par. 150 and 161 (vatican.va)",
+  "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "verified": "primary",
+  "date": "2026-05-15"
+ },
+ {
+  "from": "religious-bodies",
+  "type": "opposes",
+  "to": "race",
+  "sentence": "Pope Leo XIV’s encyclical Magnifica Humanitas (15 May 2026, para. 110) describes “a race for ever more powerful algorithms and larger datasets, driven by the desire to secure geopolitical or commercial dominance”, in the paragraph where he calls for AI to be “disarmed”.",
+  "source": "Encyclical Letter Magnifica Humanitas, para. 110 (vatican.va)",
+  "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "verified": "primary",
+  "date": "2026-05-15"
+ },
+ {
+  "from": "nvidia",
+  "type": "carries",
+  "to": "race",
+  "sentence": "Nvidia states the race as one the United States wins, against tight export rules: “America wins through innovation, competition and by sharing our technologies with the world — not by retreating behind a wall of government overreach” (NVIDIA Blog, 13 January 2025).",
+  "source": "NVIDIA Statement on the Biden Administration's Misguided 'AI Diffusion' Rule (NVIDIA Blog)",
+  "url": "https://blogs.nvidia.com/blog/ai-policy/",
+  "verified": "primary",
+  "date": "2025-01-13"
+ },
+ {
+  "from": "yoshua-bengio",
+  "type": "bears_fruit",
+  "to": "someone-inside-e16",
+  "sentence": "He co-wrote this Science Perspective with Eric Elmoznino."
+ },
+ {
+  "from": "eleos-concon",
+  "type": "bears_fruit",
+  "to": "someone-inside-e17",
+  "sentence": "The first Eleos conference on AI consciousness and welfare, at Lighthaven in Berkeley in November 2025, as Platformer reported it."
+ },
+ {
+  "from": "eleos-concon",
+  "type": "bears_fruit",
+  "to": "someone-inside-e23",
+  "sentence": "The second conference, 18-20 September 2026 in Berkeley, where the San Francisco Standard counted more than 100 attendees."
+ },
+ {
+  "from": "eleos-ai",
+  "type": "hosts",
+  "to": "eleos-concon",
+  "sentence": "Eleos AI Research runs the conference, by its own conference page.",
+  "source": "Eleos ConCon (Eleos AI Research)",
+  "url": "https://eleosai.org/conference",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "lighthaven",
+  "type": "hosts",
+  "to": "eleos-concon",
+  "sentence": "Platformer reported that the November 2025 edition was held at Lighthaven in Berkeley.",
+  "date": "2025-11",
+  "source": "Inside the debate over AI consciousness (Platformer, 6 January 2026)",
+  "url": "https://www.platformer.news/ai-consciousness-conference-eleos/",
+  "verified": "secondary",
+  "kind": "reported"
+ },
+ {
+  "from": "microsoft",
+  "type": "hosts",
+  "to": "bing-sydney",
+  "sentence": "Microsoft ran the chatbot in its Bing search engine as an early preview in February 2023, and capped its sessions at five turns on 17 February 2023.",
+  "date": "2023-02",
+  "source": "The new Bing & Edge – Updates to Chat (Bing Search Blog); The Ringer, Plain English excerpt with Kevin Roose (21 February 2023)",
+  "url": "https://blogs.bing.com/search/february-2023/The-new-Bing-Edge-Updates-to-Chat",
+  "verified": "primary",
+  "kind": "documented"
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "oracle-e5",
+  "sentence": "The note says AI “must be understood for what it is: a tool, not a person.” (para. 59)."
+ },
+ {
+  "from": "no-one-inside",
+  "type": "bears_fruit",
+  "to": "oracle-e6",
+  "sentence": "The encyclical says “So-called artificial intelligences do not undergo experiences, do not possess a body, do not feel joy or pain” (para. 99)."
+ },
+ {
+  "from": "mustafa-suleyman",
+  "type": "bears_fruit",
+  "to": "no-one-inside-e87",
+  "sentence": "His own remarks, to CNBC at the AfroTech conference in Houston, as Slashdot excerpts the report."
+ },
+ {
+  "from": "oracle",
+  "to": "oracle-test",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the tested oracle beside it: before acting on an answer, Croesus asked several oracles at once for something “which no conjecture could discover”, and Daniel's king kept his dream back. A machine that answers can be asked the same kind of question: one whose answer was settled beforehand and kept from it.",
+  "limit": "Croesus' test is a story told generations later, and the oracle that passed it gave the answer that ruined him (Herodotus 1.53). A passed test shows what a voice could do that day. The texts' own last check is where the voice leads over time (Deuteronomy 13:1–3)."
+ },
+ {
+  "from": "authority-transfer",
+  "to": "oracle-test",
+  "type": "reads_as",
+  "lens": true,
+  "sentence": "This project reads the four hundred prophets beside it: they all say “Go up”, and the visiting king still asks, “Is there not here a prophet of the LORD besides”. Many voices with one source behind them are one witness, and the same holds for many replies drawn from one model.",
+  "limit": "The story gives the shared source as a spirit sent to deceive one king. That replies from one model, or from models built alike, do not count as independent is this project's analogy; nothing on the map measures it."
  },
  {
   "from": "coefficient-giving",
