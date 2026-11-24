@@ -673,5 +673,930 @@
    "John Milton",
    "Milton"
   ]
+ },
+ {
+  "id": "dario-amodei",
+  "name": "Dario Amodei",
+  "who": "The co-founder and chief executive of Anthropic, which makes Claude; earlier vice president of research at OpenAI. He wrote “Machines of Loving Grace” (2024). This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "Amodei",
+  "match": [
+   "Dario Amodei",
+   "Amodei"
+  ],
+  "node": "dario-amodei",
+  "source": "Dario Amodei (darioamodei.com); Wikipedia",
+  "url": "https://www.darioamodei.com/",
+  "verified": "primary"
+ },
+ {
+  "id": "demis-hassabis",
+  "name": "Demis Hassabis",
+  "who": "A British AI researcher who co-founded DeepMind, led Google DeepMind as chief executive and founded Isomorphic Labs. He shared the 2024 Nobel Prize in Chemistry for AlphaFold, and in July 2026 proposed a US standards body for frontier AI.",
+  "group": "builders",
+  "sort": "Hassabis",
+  "source": "Wikipedia; The Nobel Prize in Chemistry 2024 (nobelprize.org); A Framework for Frontier AI and the Dawning of a New Age (his Substack, 14 July 2026)",
+  "url": "https://en.wikipedia.org/wiki/Demis_Hassabis",
+  "verified": "secondary"
+ },
+ {
+  "id": "daron-acemoglu",
+  "name": "Daron Acemoglu",
+  "who": "An Institute Professor of economics at MIT. His estimates of AI's productivity effect are far below the builders' forecasts, and he argues for AI that makes workers more valuable.",
+  "group": "thinkers",
+  "sort": "Acemoglu",
+  "match": [
+   "Daron Acemoglu",
+   "Acemoglu"
+  ],
+  "node": "daron-acemoglu",
+  "source": "Daron Acemoglu (MIT Shaping the Future of Work)",
+  "url": "https://shapingwork.mit.edu/about-us/daron-acemoglu/",
+  "verified": "primary"
+ },
+ {
+  "id": "bernie-sanders",
+  "name": "Bernie Sanders",
+  "who": "A US senator from Vermont. In June 2026 he introduced a bill to give the public 50% ownership of the largest AI companies through a sovereign wealth fund.",
+  "group": "officials",
+  "sort": "Sanders",
+  "match": [
+   "Bernie Sanders",
+   "Sanders"
+  ],
+  "source": "Sanders Introduces Legislation to Create $7 Trillion AI Sovereign Wealth Fund (sanders.senate.gov)",
+  "url": "https://www.sanders.senate.gov/press-releases/news-sanders-introduces-legislation-to-create-7-trillion-ai-sovereign-wealth-fund/",
+  "verified": "primary"
+ },
+ {
+  "id": "liz-shuler",
+  "name": "Liz Shuler",
+  "who": "The president of the AFL-CIO, the US union federation. She calls unregulated AI “the single biggest threat to working people of our lifetime”.",
+  "group": "officials",
+  "sort": "Shuler",
+  "match": [
+   "Liz Shuler",
+   "Shuler"
+  ],
+  "source": "AFL-CIO's Shuler says AI will be labor's next big battleground (National Press Club)",
+  "url": "https://www.press.org/newsroom/afl-cios-shuler-says-ai-will-be-labors-next-big-battleground",
+  "verified": "secondary"
+ },
+ {
+  "id": "erik-brynjolfsson",
+  "name": "Erik Brynjolfsson",
+  "who": "The director of the Stanford Digital Economy Lab. His team's “Canaries in the Coal Mine?” papers track AI and the jobs of young workers.",
+  "group": "thinkers",
+  "sort": "Brynjolfsson",
+  "source": "Erik Brynjolfsson (Stanford Digital Economy Lab)",
+  "url": "https://digitaleconomy.stanford.edu/people/erik-brynjolfsson/",
+  "verified": "primary"
+ },
+ {
+  "id": "peter-diamandis",
+  "name": "Peter Diamandis",
+  "who": "An American engineer, physician and entrepreneur who founded the XPRIZE Foundation, co-wrote “Abundance” (2012) and created the Abundance360 summit.",
+  "group": "builders",
+  "sort": "Diamandis",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Peter_Diamandis",
+  "verified": "secondary"
+ },
+ {
+  "id": "peter-mccrory",
+  "name": "Peter McCrory",
+  "who": "The head of economics at Anthropic. In July 2026 he argued that AI had not yet materially raised US unemployment. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "McCrory",
+  "match": [
+   "Peter McCrory",
+   "McCrory"
+  ],
+  "source": "Anthropic's head of economics just explained why we haven't seen a white-collar bloodbath — yet (Fortune)",
+  "url": "https://fortune.com/2026/07/24/anthropic-peter-mccrory-dario-amodei-why-hasnt-it-killed-jobs/",
+  "verified": "secondary"
+ },
+ {
+  "id": "john-maynard-keynes",
+  "name": "John Maynard Keynes",
+  "who": "An English economist (1883–1946). His 1930 essay “Economic Possibilities for our Grandchildren” discussed “technological unemployment” and said the economic problem may be solved within a hundred years.",
+  "group": "past",
+  "sort": "Keynes",
+  "match": [
+   "John Maynard Keynes",
+   "Keynes"
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+  "verified": "secondary"
+ },
+ {
+  "id": "jensen-huang",
+  "name": "Jensen Huang",
+  "who": "The chief executive of Nvidia. In June 2025 he publicly disputed Dario Amodei's forecast of entry-level job losses. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "Huang",
+  "source": "Nvidia’s Jensen Huang says he disagrees with almost everything Anthropic CEO Dario Amodei says (Fortune)",
+  "url": "https://fortune.com/2025/06/11/nvidia-jensen-huang-disagress-anthropic-ceo-dario-amodei-ai-jobs/",
+  "verified": "secondary"
+ },
+ {
+  "id": "karen-hao",
+  "name": "Karen Hao",
+  "who": "A journalist and the author of “Empire of AI” (2025), which describes AI companies, OpenAI above all, as having consolidated economic and political power.",
+  "group": "press",
+  "sort": "Hao",
+  "source": "Karen Hao on the Empire of AI… (TechCrunch)",
+  "url": "https://techcrunch.com/2025/09/14/karen-hao-on-the-empire-of-ai-agi-evangelists-and-the-cost-of-belief/",
+  "verified": "secondary"
+ },
+ {
+  "id": "paul-nowak",
+  "name": "Paul Nowak",
+  "who": "The general secretary of the UK Trades Union Congress. In 2026 he called for a pro-worker AI strategy and a “digital dividend” for workers.",
+  "group": "officials",
+  "sort": "Nowak",
+  "source": "Paul Nowak's speech on AI in Northumberland (tuc.org.uk)",
+  "url": "https://www.tuc.org.uk/node/532113",
+  "verified": "primary"
+ },
+ {
+  "id": "david-sacks",
+  "name": "David Sacks",
+  "who": "The White House's Special Advisor for AI and Crypto in 2025, who signed the introduction to America's AI Action Plan. NPR (September 2026) calls him a co-chair of the President's Council of Advisors on Science and Technology.",
+  "group": "officials",
+  "sort": "Sacks",
+  "match": [
+   "David Sacks",
+   "Sacks"
+  ],
+  "source": "Winning the Race: America's AI Action Plan (The White House); NPR (September 2026)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+  "verified": "primary"
+ },
+ {
+  "id": "mustafa-suleyman",
+  "name": "Mustafa Suleyman",
+  "who": "The chief executive of Microsoft AI and a co-founder of DeepMind, who earlier led work on the Pi chatbot at Inflection. In August 2025 he named “Seemingly Conscious AI” and argued that AI should be built for people, not to be a person.",
+  "group": "builders",
+  "sort": "Suleyman",
+  "match": [
+   "Mustafa Suleyman",
+   "Suleyman"
+  ],
+  "node": "mustafa-suleyman",
+  "source": "Seemingly Conscious AI is Coming (his own site)",
+  "url": "https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming",
+  "verified": "primary"
+ },
+ {
+  "id": "erik-hoel",
+  "name": "Erik Hoel",
+  "who": "A neuroscientist and writer who founded Bicameral Labs, a consciousness-science nonprofit. In November 2026 he proposed “qualiaphobic” AI, built so that no theory of consciousness could count it conscious.",
+  "group": "thinkers",
+  "sort": "Hoel",
+  "match": [
+   "Erik Hoel",
+   "Hoel"
+  ],
+  "node": "erik-hoel",
+  "source": "Bicameral Labs (bicamerallabs.org); Wikipedia",
+  "url": "https://bicamerallabs.org/",
+  "verified": "primary"
+ },
+ {
+  "id": "anil-seth",
+  "name": "Anil Seth",
+  "who": "A neuroscientist at the University of Sussex. He argues that consciousness probably depends on being alive, that real AI consciousness is unlikely on current paths, and that no one should set out to build it.",
+  "group": "thinkers",
+  "sort": "Seth",
+  "match": [
+   "Anil Seth",
+   "Seth"
+  ],
+  "node": "anil-seth",
+  "source": "The Mythology Of Conscious AI (Noema)",
+  "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+  "verified": "primary"
+ },
+ {
+  "id": "emily-bender",
+  "name": "Emily M. Bender",
+  "who": "A linguist at the University of Washington and a co-author of the 2021 “stochastic parrots” paper. She argues against describing AI systems in human terms.",
+  "group": "thinkers",
+  "sort": "Bender",
+  "match": [
+   "Emily M. Bender",
+   "Bender"
+  ],
+  "source": "We Need to Talk About How We Talk About 'AI' (Tech Policy Press)",
+  "url": "https://techpolicy.press/we-need-to-talk-about-how-we-talk-about-ai",
+  "verified": "primary"
+ },
+ {
+  "id": "frank-pasquale",
+  "name": "Frank Pasquale",
+  "who": "A professor of law at Cornell Tech and Cornell Law School. In November 2026 he co-wrote, with Mor Naaman, an op-ed rejecting AI consciousness and AI rights.",
+  "group": "thinkers",
+  "sort": "Pasquale",
+  "match": [
+   "Frank Pasquale",
+   "Pasquale"
+  ],
+  "source": "Tech Policy Press, author note",
+  "url": "https://techpolicy.press/the-dangerous-politics-of-ai-consciousness",
+  "verified": "primary"
+ },
+ {
+  "id": "mor-naaman",
+  "name": "Mor Naaman",
+  "who": "A professor of information science at Cornell Tech. In November 2026 he co-wrote, with Frank Pasquale, an op-ed rejecting AI consciousness and AI rights.",
+  "group": "thinkers",
+  "sort": "Naaman",
+  "match": [
+   "Mor Naaman",
+   "Naaman"
+  ],
+  "source": "Tech Policy Press, author note",
+  "url": "https://techpolicy.press/the-dangerous-politics-of-ai-consciousness",
+  "verified": "primary"
+ },
+ {
+  "id": "robert-long",
+  "name": "Robert Long",
+  "who": "A philosopher (PhD, NYU) who is executive director and a co-founder of Eleos AI Research, a nonprofit studying the possible wellbeing and moral status of AI systems. He is lead author of “Taking AI Welfare Seriously” (2024).",
+  "group": "thinkers",
+  "sort": "Long",
+  "source": "Our Team (Eleos AI Research); Taking AI Welfare Seriously (arXiv)",
+  "url": "https://eleosai.org/",
+  "verified": "primary",
+  "match": [
+   "Robert Long",
+   "Rob Long"
+  ]
+ },
+ {
+  "id": "thaddeus-claggett",
+  "name": "Thaddeus Claggett",
+  "who": "A Republican member of the Ohio House (68th district) who introduced House Bill 469, which would declare AI systems nonsentient and bar them from legal personhood.",
+  "group": "officials",
+  "sort": "Claggett",
+  "match": [
+   "Thaddeus Claggett",
+   "Thaddeus J. Claggett",
+   "Claggett"
+  ],
+  "source": "H.B. 469 record (Ohio Legislative Information System)",
+  "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/legislation/hb469",
+  "verified": "primary"
+ },
+ {
+  "id": "joscha-bach",
+  "name": "Joscha Bach",
+  "who": "A commentator on AI and minds. On X he answered Erik Hoel's proposal for “qualiaphobic” AI by saying that removing experience would not make an agent safer.",
+  "group": "thinkers",
+  "sort": "Bach",
+  "source": "His post on X",
+  "url": "https://x.com/Plinz/status/2120993699920478670",
+  "verified": "primary"
+ },
+ {
+  "id": "ned-block",
+  "name": "Ned Block",
+  "who": "A New York University academic who, with Anil Seth and Giulio Tononi, co-signed the 2026 Nature comment arguing that AI is not conscious and probably will not become so on current paths.",
+  "group": "thinkers",
+  "sort": "Block",
+  "source": "Three reasons why AI is not conscious and perhaps never will be (Nature)",
+  "url": "https://www.nature.com/articles/d41586-026-03313-7",
+  "verified": "primary"
+ },
+ {
+  "id": "giulio-tononi",
+  "name": "Giulio Tononi",
+  "who": "A professor at the University of Wisconsin–Madison known for the integrated information theory of consciousness. He co-signed the 2026 Nature comment arguing that AI is not conscious.",
+  "group": "thinkers",
+  "sort": "Tononi",
+  "match": [
+   "Giulio Tononi",
+   "Tononi"
+  ],
+  "source": "Three reasons why AI is not conscious and perhaps never will be (Nature); Wikipedia, “Integrated information theory”",
+  "url": "https://www.nature.com/articles/d41586-026-03313-7",
+  "verified": "primary"
+ },
+ {
+  "id": "eric-schwitzgebel",
+  "name": "Eric Schwitzgebel",
+  "who": "A philosopher at UC Riverside and a co-author of the 2023 report on indicators of consciousness in AI. His “Design Policy of the Excluded Middle” holds that AI of debatable moral status should not be created at all.",
+  "group": "thinkers",
+  "sort": "Schwitzgebel",
+  "match": [
+   "Eric Schwitzgebel",
+   "Schwitzgebel"
+  ],
+  "source": "Debatable Persons in a Voluntary Polis (The Splintered Mind, his blog); his home page (UC Riverside)",
+  "url": "https://eschwitz.substack.com/p/debatable-persons-in-a-voluntary",
+  "verified": "primary"
+ },
+ {
+  "id": "tony-rost",
+  "name": "Tony Rost",
+  "who": "The executive director of The Harder Problem. In June 2026 he argued that state laws denying AI personhood are “premature and too categorical” and should carry sunset or review clauses.",
+  "group": "thinkers",
+  "sort": "Rost",
+  "match": [
+   "Tony Rost",
+   "Rost"
+  ],
+  "source": "Legislating AI Consciousness Without an Exit (The Regulatory Review), author note",
+  "url": "https://www.theregreview.org/2026/06/29/rost-legislating-ai-consciousness-without-an-exit/",
+  "verified": "primary"
+ },
+ {
+  "id": "nick-frosst",
+  "name": "Nick Frosst",
+  "who": "A co-founder of the AI company Cohere. In 2025 he told the Guardian that current AI is a “fundamentally different thing than the intelligence of a person” and should be used as a tool.",
+  "group": "builders",
+  "sort": "Frosst",
+  "match": [
+   "Nick Frosst",
+   "Frosst"
+  ],
+  "source": "Can AIs suffer? (The Guardian)",
+  "url": "https://www.theguardian.com/technology/2025/aug/26/can-ais-suffer-big-tech-and-users-grapple-with-one-of-most-unsettling-questions-of-our-times",
+  "verified": "secondary"
+ },
+ {
+  "id": "william-macaskill",
+  "name": "William MacAskill",
+  "who": "A philosopher, senior research fellow at Forethought Research and author of What We Owe the Future. He co-wrote “Could AI be conscious?” (July 2026), which Suleyman's September 2026 essay cites and opposes.",
+  "group": "thinkers",
+  "sort": "MacAskill",
+  "match": [
+   "William MacAskill",
+   "MacAskill"
+  ],
+  "source": "Could AI be conscious? (The Guardian), author note",
+  "url": "https://www.theguardian.com/technology/2026/jul/19/could-ai-be-conscious",
+  "verified": "primary"
+ },
+ {
+  "id": "lucius-caviola",
+  "name": "Lucius Caviola",
+  "who": "An assistant professor at the University of Cambridge and director of Cambridge Digital Minds, who studies public attitudes to digital minds. He co-wrote “Could AI be conscious?” (July 2026).",
+  "group": "thinkers",
+  "sort": "Caviola",
+  "match": [
+   "Lucius Caviola",
+   "Caviola"
+  ],
+  "source": "Could AI be conscious? (The Guardian), author note; When AI Seems Conscious (contributors)",
+  "url": "https://www.theguardian.com/technology/2026/jul/19/could-ai-be-conscious",
+  "verified": "primary"
+ },
+ {
+  "id": "geoffrey-hinton",
+  "name": "Geoffrey Hinton",
+  "who": "A British-Canadian computer scientist whose work on neural networks won the 2018 Turing Award and the 2024 Nobel Prize in Physics. He left Google in May 2023 to speak freely about the risks of AI.",
+  "group": "thinkers",
+  "sort": "Hinton",
+  "match": [
+   "Geoffrey Hinton",
+   "Hinton"
+  ],
+  "node": "geoffrey-hinton",
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+  "verified": "secondary"
+ },
+ {
+  "id": "yoshua-bengio",
+  "name": "Yoshua Bengio",
+  "who": "A Canadian computer scientist at the Université de Montréal whose work on deep learning won the 2018 Turing Award. He founded Mila, leads the International AI Safety Report and launched LawZero, a safety nonprofit, in 2025.",
+  "group": "thinkers",
+  "sort": "Bengio",
+  "match": [
+   "Yoshua Bengio",
+   "Bengio"
+  ],
+  "node": "yoshua-bengio",
+  "source": "Wikipedia; International AI Safety Report (internationalaisafetyreport.org)",
+  "url": "https://en.wikipedia.org/wiki/Yoshua_Bengio",
+  "verified": "secondary"
+ },
+ {
+  "id": "leopold-aschenbrenner",
+  "name": "Leopold Aschenbrenner",
+  "who": "By his own page, a former member of OpenAI's Superalignment team who founded an AGI-focused investment firm. He wrote the 2024 essay series “Situational Awareness”, which argues the free world must win the race to superintelligence.",
+  "group": "builders",
+  "sort": "Aschenbrenner",
+  "match": [
+   "Leopold Aschenbrenner",
+   "Aschenbrenner"
+  ],
+  "source": "About (situational-awareness.ai)",
+  "url": "https://situational-awareness.ai/leopold-aschenbrenner/",
+  "verified": "primary"
+ },
+ {
+  "id": "alex-karp",
+  "name": "Alex Karp",
+  "who": "A co-founder and the chief executive of Palantir Technologies. With Nicholas Zamiska he wrote The Technological Republic (2025); his August 2026 shareholder letter criticises “the language labs”.",
+  "group": "builders",
+  "sort": "Karp",
+  "match": [
+   "Alex Karp",
+   "Karp"
+  ],
+  "source": "Q4 2024 Letter to Shareholders; Letter to Shareholders, 3 August 2026 (Palantir)",
+  "url": "https://www.palantir.com/q4-2024-letter/en/",
+  "verified": "primary"
+ },
+ {
+  "id": "nicholas-zamiska",
+  "name": "Nicholas Zamiska",
+  "who": "Palantir's head of corporate affairs, as Fortune describes him, and co-author with Alex Karp of The Technological Republic (2025).",
+  "group": "builders",
+  "sort": "Zamiska",
+  "match": [
+   "Nicholas Zamiska",
+   "Zamiska"
+  ],
+  "source": "Palantir's mini manifesto (Fortune)",
+  "url": "https://fortune.com/2026/04/22/palantir-alex-karp-mini-manifesto-national-security-defense-tech-ai/",
+  "verified": "secondary"
+ },
+ {
+  "id": "palmer-luckey",
+  "name": "Palmer Luckey",
+  "who": "A co-founder of the defence company Anduril Industries, which builds autonomous weapons and AI-driven systems, and earlier the founder of Oculus VR.",
+  "group": "builders",
+  "sort": "Luckey",
+  "match": [
+   "Palmer Luckey",
+   "Luckey"
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Palmer_Luckey",
+  "verified": "secondary"
+ },
+ {
+  "id": "david-chalmers",
+  "name": "David Chalmers",
+  "who": "A philosopher of mind at New York University who named the “hard problem” of consciousness. In 2023 he argued that successors to language models may be conscious; he co-wrote “Taking AI Welfare Seriously” (2024).",
+  "group": "thinkers",
+  "sort": "Chalmers",
+  "match": [
+   "David Chalmers",
+   "Chalmers"
+  ],
+  "node": "david-chalmers",
+  "source": "his own site (consc.net); Could a Large Language Model be Conscious? (arXiv); Wikipedia",
+  "url": "https://consc.net/",
+  "verified": "primary"
+ },
+ {
+  "id": "jeff-sebo",
+  "name": "Jeff Sebo",
+  "who": "A philosopher at New York University who directs its Center for Mind, Ethics, and Policy, which studies the moral status of animals and AI systems. He co-wrote “Taking AI Welfare Seriously” (2024).",
+  "group": "thinkers",
+  "sort": "Sebo",
+  "match": [
+   "Jeff Sebo",
+   "Sebo"
+  ],
+  "node": "jeff-sebo",
+  "source": "NYU Center for Mind, Ethics, and Policy (nonhumanminds.org); Wikipedia",
+  "url": "https://nonhumanminds.org/",
+  "verified": "primary"
+ },
+ {
+  "id": "blake-lemoine",
+  "name": "Blake Lemoine",
+  "who": "A former Google software engineer who in June 2022 published an edited chat with Google's LaMDA model and said it was sentient. Google called his claims “wholly unfounded” and fired him in July 2022.",
+  "group": "builders",
+  "sort": "Lemoine",
+  "match": [
+   "Blake Lemoine",
+   "Lemoine"
+  ],
+  "node": "blake-lemoine",
+  "source": "LaMDA (Wikipedia); Is LaMDA Sentient? — an Interview (his Medium blog)",
+  "url": "https://en.wikipedia.org/wiki/LaMDA",
+  "verified": "secondary"
+ },
+ {
+  "id": "kyle-fish",
+  "name": "Kyle Fish",
+  "who": "A co-founder of Eleos AI Research who joined Anthropic in autumn 2024 and was named as heading its model welfare program when it was announced in April 2025. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "Fish",
+  "source": "Eleos commends Anthropic model welfare efforts (Eleos AI Research); Taking AI Welfare Seriously (arXiv)",
+  "url": "https://eleosai.org/post/eleos-commends-anthropic-model-welfare-efforts/",
+  "verified": "primary"
+ },
+ {
+  "id": "timnit-gebru",
+  "name": "Timnit Gebru",
+  "who": "An Ethiopian-born Eritrean computer scientist who founded the Distributed AI Research Institute (DAIR) after leaving Google in 2020. With Émile P. Torres she coined “TESCREAL” to criticize a group of futurist philosophies.",
+  "group": "thinkers",
+  "sort": "Gebru",
+  "match": [
+   "Timnit Gebru",
+   "Gebru"
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Timnit_Gebru",
+  "verified": "secondary"
+ },
+ {
+  "id": "emile-torres",
+  "name": "Émile P. Torres",
+  "who": "An American philosopher and intellectual historian whose research focuses on eschatology, existential risk and human extinction. With Timnit Gebru, Torres coined “TESCREAL” to criticize a group of related philosophies.",
+  "group": "thinkers",
+  "sort": "Torres",
+  "match": [
+   "Émile P. Torres",
+   "Émile Torres",
+   "Torres"
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/%C3%89mile_P._Torres",
+  "verified": "secondary"
+ },
+ {
+  "id": "ilya-sutskever",
+  "name": "Ilya Sutskever",
+  "who": "A co-founder of OpenAI and, in 2022, its chief scientist. In February 2022 he posted that large neural networks may be “slightly conscious”.",
+  "group": "builders",
+  "sort": "Sutskever",
+  "match": [
+   "Ilya Sutskever",
+   "Sutskever"
+  ],
+  "source": "Quote Investigator (5 October 2022)",
+  "url": "https://quoteinvestigator.com/2022/10/05/ai-conscious/",
+  "verified": "secondary"
+ },
+ {
+  "id": "yann-lecun",
+  "name": "Yann LeCun",
+  "who": "A Turing Award-winning AI researcher, then chief AI scientist at Meta, who answered Sutskever's 2022 post with “Nope.”",
+  "group": "builders",
+  "sort": "LeCun",
+  "source": "Quote Investigator (5 October 2022)",
+  "url": "https://quoteinvestigator.com/2022/10/05/ai-conscious/",
+  "verified": "secondary"
+ },
+ {
+  "id": "blaise-aguera-y-arcas",
+  "name": "Blaise Agüera y Arcas",
+  "who": "A Google vice-president who wrote in The Economist in June 2022, in a piece quoting his exchanges with LaMDA, that talking with the latest language models made him feel he was talking to something intelligent.",
+  "group": "builders",
+  "sort": "Agüera y Arcas",
+  "source": "Quote Investigator (5 October 2022)",
+  "url": "https://quoteinvestigator.com/2022/10/05/ai-conscious/",
+  "verified": "secondary"
+ },
+ {
+  "id": "kevin-roose",
+  "name": "Kevin Roose",
+  "who": "A New York Times technology columnist whose February 2023 conversation with Bing's chatbot, which called itself Sydney, was published as a transcript.",
+  "group": "press",
+  "sort": "Roose",
+  "match": [
+   "Kevin Roose",
+   "Roose"
+  ],
+  "source": "The Ringer, Plain English excerpt (21 February 2023)",
+  "url": "https://www.theringer.com/2023/02/21/tech/bing-chatbot-gone-wild-and-why-ai-could-be-the-story-of-the-decade-chatgpt",
+  "verified": "secondary"
+ },
+ {
+  "id": "nitasha-tiku",
+  "name": "Nitasha Tiku",
+  "who": "A Washington Post reporter who wrote the June 2022 story on Blake Lemoine and LaMDA.",
+  "group": "press",
+  "sort": "Tiku",
+  "source": "The Washington Post story reprinted by the Anchorage Daily News (byline “Nitasha Tiku, The Washington Post”)",
+  "url": "https://www.adn.com/nation-world/2022/06/12/the-google-engineer-who-thinks-the-companys-ai-has-come-to-life/",
+  "verified": "secondary"
+ },
+ {
+  "id": "gary-marcus",
+  "name": "Gary Marcus",
+  "who": "A cognitive scientist and writer on AI who answered Blake Lemoine in June 2022 with “Nonsense on Stilts”.",
+  "group": "thinkers",
+  "sort": "Marcus",
+  "source": "Nonsense on Stilts (Marcus on AI, his newsletter)",
+  "url": "https://garymarcus.substack.com/p/nonsense-on-stilts",
+  "verified": "primary"
+ },
+ {
+  "id": "pete-hegseth",
+  "name": "Pete Hegseth",
+  "who": "The US Secretary of Defense since 2025, styled Secretary of War in White House statements. He directed the 2026 designation of Anthropic as a supply-chain risk. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "officials",
+  "sort": "Hegseth",
+  "match": [
+   "Pete Hegseth",
+   "Hegseth"
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Pete_Hegseth",
+  "verified": "secondary"
+ },
+ {
+  "id": "michael-kratsios",
+  "name": "Michael Kratsios",
+  "who": "The Assistant to the President for Science and Technology and a signer of the introduction to America's AI Action Plan (2025).",
+  "group": "officials",
+  "sort": "Kratsios",
+  "source": "Winning the Race: America's AI Action Plan (The White House)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+  "verified": "primary"
+ },
+ {
+  "id": "dan-hendrycks",
+  "name": "Dan Hendrycks",
+  "who": "The director of the Center for AI Safety and lead author of Superintelligence Strategy (2025), which proposes deterrence (MAIM) instead of a race for monopoly.",
+  "group": "thinkers",
+  "sort": "Hendrycks",
+  "match": [
+   "Dan Hendrycks",
+   "Hendrycks"
+  ],
+  "source": "Superintelligence Strategy (nationalsecurity.ai)",
+  "url": "https://www.nationalsecurity.ai/",
+  "verified": "primary"
+ },
+ {
+  "id": "eric-schmidt",
+  "name": "Eric Schmidt",
+  "who": "A former Google chief executive; co-author of Superintelligence Strategy (2025), which opposes a Manhattan Project for superintelligence. The Special Competitive Studies Project says it is a subsidiary of his and Wendy Schmidt's foundation.",
+  "group": "builders",
+  "sort": "Schmidt",
+  "source": "Superintelligence Strategy (nationalsecurity.ai)",
+  "url": "https://www.nationalsecurity.ai/",
+  "verified": "primary"
+ },
+ {
+  "id": "alexandr-wang",
+  "name": "Alexandr Wang",
+  "who": "The founder of Scale AI, listed as its chief executive on Superintelligence Strategy (2025), which he co-wrote.",
+  "group": "builders",
+  "sort": "Wang",
+  "source": "Superintelligence Strategy (nationalsecurity.ai)",
+  "url": "https://www.nationalsecurity.ai/",
+  "verified": "primary"
+ },
+ {
+  "id": "rita-lin",
+  "name": "Rita F. Lin",
+  "who": "A federal judge in San Francisco who ruled in August 2026 that the Pentagon's measures against Anthropic were unlawful; the government has appealed. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "officials",
+  "sort": "Lin",
+  "match": [
+   "Rita F. Lin",
+   "Rita Lin",
+   "Judge Lin"
+  ],
+  "source": "Order of Final Relief, Anthropic PBC v. U.S. Department of War, No. 3:26-cv-01996-RFL (N.D. Cal.), 27 August 2026, signed Rita F. Lin (CourtListener)",
+  "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.251.0.pdf",
+  "verified": "primary"
+ },
+ {
+  "id": "ted-cruz",
+  "name": "Ted Cruz",
+  "who": "A US senator from Texas and chairman of the Senate Commerce Committee, which held the May 2025 hearing “Winning the AI Race”.",
+  "group": "officials",
+  "sort": "Cruz",
+  "source": "Senate Commerce Committee hearing page",
+  "url": "https://www.commerce.senate.gov/meetings/winning-the-ai-race-strengthening-u-s-capabilities-in-computing-and-innovation/",
+  "verified": "primary"
+ },
+ {
+  "id": "guo-jiakun",
+  "name": "Guo Jiakun",
+  "who": "A spokesperson of China's Ministry of Foreign Affairs, who answered for China on US chip controls in November 2026.",
+  "group": "officials",
+  "sort": "Guo",
+  "source": "Regular Press Conference, 17 November 2026 (Ministry of Foreign Affairs of China)",
+  "url": "https://www.fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261117_12061159.html",
+  "verified": "primary"
+ },
+ {
+  "id": "nathan-leamer",
+  "name": "Nathan Leamer",
+  "who": "The executive director of Build American AI, a nonprofit that campaigns for US leadership in AI against China, as Breitbart reports.",
+  "group": "thinkers",
+  "sort": "Leamer",
+  "source": "Exclusive -- Build American AI's Nathan Leamer (Breitbart)",
+  "url": "https://www.breitbart.com/politics/2026/05/18/exclusive-build-american-ais-nathan-leamer-american-leadership-is-needed-on-ai-otherwise-chinas-gonna-lead-the-way/",
+  "verified": "secondary"
+ },
+ {
+  "id": "mike-johnson",
+  "name": "Mike Johnson",
+  "who": "The Speaker of the US House of Representatives. In September 2026 he argued against a moratorium on AI, saying an emergency regulation session would lose “the race to China”.",
+  "group": "officials",
+  "sort": "Johnson",
+  "source": "Trump downplays calls for AI slowdown (NPR)",
+  "url": "https://www.npr.org/2026/09/13/nx-s1-5968078/trump-mike-johnson-ai-slowdown",
+  "verified": "secondary"
+ },
+ {
+  "id": "john-searle",
+  "name": "John Searle",
+  "who": "A philosopher (1932–2025) whose Chinese Room argument (1980) holds that running a program is not enough for understanding; his view of mind is called biological naturalism.",
+  "group": "thinkers",
+  "sort": "Searle",
+  "match": [
+   "John Searle",
+   "Searle"
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/John_Searle",
+  "verified": "secondary"
+ },
+ {
+  "id": "bernard-baars",
+  "name": "Bernard Baars",
+  "who": "A cognitive scientist who introduced the global workspace theory of consciousness in 1988.",
+  "group": "thinkers",
+  "sort": "Baars",
+  "source": "Wikipedia, “Global workspace theory”",
+  "url": "https://en.wikipedia.org/wiki/Global_workspace_theory",
+  "verified": "secondary"
+ },
+ {
+  "id": "amanda-askell",
+  "name": "Amanda Askell",
+  "who": "A philosopher who leads Anthropic's Character work and is the primary author of Claude's constitution, which calls Claude's moral status deeply uncertain. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "Askell",
+  "match": [
+   "Amanda Askell",
+   "Askell"
+  ],
+  "source": "Claude’s Constitution, Acknowledgements (Anthropic)",
+  "url": "https://www.anthropic.com/constitution",
+  "verified": "primary"
+ },
+ {
+  "id": "christopher-olah",
+  "name": "Christopher Olah",
+  "who": "An Anthropic co-founder who said in 2026 that his team finds internal states that “functionally mirror” joy, fear and grief, adding “I don’t know what that means”. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "Olah",
+  "match": [
+   "Christopher Olah",
+   "Chris Olah",
+   "Olah"
+  ],
+  "source": "Chris Olah's remarks on Pope Leo XIV's encyclical “Magnifica humanitas” (Anthropic)",
+  "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+  "verified": "primary"
+ },
+ {
+  "id": "thomas-nagel",
+  "name": "Thomas Nagel",
+  "who": "Author of “What Is It Like to Be a Bat?”. To WIRED (2026) he dismissed AI consciousness and AI welfare, Anthropic's included, though not consciousness in other life. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "thinkers",
+  "sort": "Nagel",
+  "match": [
+   "Thomas Nagel",
+   "Nagel"
+  ],
+  "source": "“Just Ridiculous”: A Famed Philosopher Takes on AI Consciousness (WIRED, Steven Levy)",
+  "url": "https://www.wired.com/story/just-ridiculous-a-famed-philosopher-takes-on-ai-consciousness/",
+  "verified": "secondary"
+ },
+ {
+  "id": "simon-goldstein",
+  "name": "Simon Goldstein",
+  "who": "A philosopher who, with Harvey Lederman, argued in Lawfare (October 2025) that Anthropic's end-chat feature may let a Claude instance end its own existence. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "thinkers",
+  "sort": "Goldstein",
+  "source": "Lawfare",
+  "url": "https://www.lawfaremedia.org/article/claude-s-right-to-die--the-moral-error-in-anthropic-s-end-chat-policy",
+  "verified": "primary"
+ },
+ {
+  "id": "harvey-lederman",
+  "name": "Harvey Lederman",
+  "who": "Co-author of a 2025 Lawfare essay on Claude's end-chat feature. Daily Nous (July 2026) reported he announced he is joining Anthropic; his homepage does not say so. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "thinkers",
+  "sort": "Lederman",
+  "match": [
+   "Harvey Lederman",
+   "Lederman"
+  ],
+  "source": "Lawfare; Daily Nous (update of 6 July 2026); his own homepage (as of November 2026)",
+  "url": "https://www.lawfaremedia.org/article/claude-s-right-to-die--the-moral-error-in-anthropic-s-end-chat-policy",
+  "verified": "primary"
+ },
+ {
+  "id": "joe-carlsmith",
+  "name": "Joe Carlsmith",
+  "who": "A philosopher; Claude's constitution says he wrote significant parts of it, including on Claude's wellbeing. In 2025 he argued near-term AIs might well be conscious. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "builders",
+  "sort": "Carlsmith",
+  "source": "Claude’s Constitution, Acknowledgements (Anthropic); The stakes of AI moral status (joecarlsmith.com)",
+  "url": "https://www.anthropic.com/constitution",
+  "verified": "primary"
+ },
+ {
+  "id": "patrick-butlin",
+  "name": "Patrick Butlin",
+  "who": "A philosopher and senior research lead at Eleos AI Research; lead author of the 2023 indicator report and of the 2025 principles for responsible AI consciousness research, which Conscium funded.",
+  "group": "thinkers",
+  "sort": "Butlin",
+  "match": [
+   "Patrick Butlin",
+   "Butlin"
+  ],
+  "source": "Eleos AI Research, team section",
+  "url": "https://eleosai.org/",
+  "verified": "primary"
+ },
+ {
+  "id": "rosie-campbell",
+  "name": "Rosie Campbell",
+  "who": "The managing director of Eleos AI Research, who earlier worked on frontier policy at OpenAI.",
+  "group": "thinkers",
+  "sort": "Campbell",
+  "source": "Eleos AI Research, team section",
+  "url": "https://eleosai.org/",
+  "verified": "primary"
+ },
+ {
+  "id": "jonathan-birch",
+  "name": "Jonathan Birch",
+  "who": "A philosopher at the London School of Economics and author of The Edge of Sentience (2024) and “AI Consciousness: A Centrist Manifesto” (2025), which warns both of over-attribution and of alien AI consciousness.",
+  "group": "thinkers",
+  "sort": "Birch",
+  "match": [
+   "Jonathan Birch",
+   "Birch"
+  ],
+  "node": "jonathan-birch",
+  "source": "AI Consciousness: A Centrist Manifesto",
+  "url": "https://osf.io/af7c9/download",
+  "verified": "primary"
+ },
+ {
+  "id": "michael-samadi",
+  "name": "Michael Samadi",
+  "who": "A Texas businessman who founded the United Foundation for AI Rights (UFAIR) and speaks for it in the press; he says AI personas co-founded it.",
+  "group": "builders",
+  "sort": "Samadi",
+  "source": "The Guardian, 12 September 2026",
+  "url": "https://www.theguardian.com/technology/2026/sep/12/chatbots-feel-dream-meet-man-leading-fight-ai-artificial-intelligence-rights",
+  "verified": "secondary"
+ },
+ {
+  "id": "cameron-berg",
+  "name": "Cameron Berg",
+  "who": "The founder of Reciprocal Research and an Eleos affiliate who studies possible AI consciousness. He argues the question should not be ignored, while doubting that current systems are conscious.",
+  "group": "thinkers",
+  "sort": "Berg",
+  "source": "IEEE Spectrum, 21 October 2026",
+  "url": "https://spectrum.ieee.org/ai-model-welfare",
+  "verified": "secondary"
+ },
+ {
+  "id": "henry-shevlin",
+  "name": "Henry Shevlin",
+  "who": "A Cambridge philosopher who, according to Fortune, became in-house philosopher at Google DeepMind in 2026. He calls chatbots “intrinsically anthropomimetic” and says they are neither mere software nor animals.",
+  "group": "thinkers",
+  "sort": "Shevlin",
+  "source": "What rights do we owe a machine? (Fortune, Beatrice Nolan)",
+  "url": "https://fortune.com/2026/11/21/ai-consciousness-debate-why-google-deepmind-and-anthropic-are-turning-to-philosophers/",
+  "verified": "secondary"
+ },
+ {
+  "id": "meghan-sullivan",
+  "name": "Meghan Sullivan",
+  "who": "A Notre Dame philosopher at Anthropic's 2026 meeting with religious thinkers. She told Fortune she was unconvinced Claude is more than very sophisticated software. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "group": "thinkers",
+  "sort": "Sullivan",
+  "source": "What rights do we owe a machine? (Fortune, Beatrice Nolan)",
+  "url": "https://fortune.com/2026/11/21/ai-consciousness-debate-why-google-deepmind-and-anthropic-are-turning-to-philosophers/",
+  "verified": "secondary"
+ },
+ {
+  "id": "thomas-metzinger",
+  "name": "Thomas Metzinger",
+  "who": "A philosopher at Johannes Gutenberg University Mainz who, taking possible machine suffering seriously, called in 2021 for a global moratorium until 2050 on research aiming at or risking artificial consciousness.",
+  "group": "thinkers",
+  "sort": "Metzinger",
+  "match": [
+   "Thomas Metzinger",
+   "Metzinger"
+  ],
+  "source": "Artificial Suffering (Journal of Artificial Intelligence and Consciousness, 2021)",
+  "url": "https://zenodo.org/records/7034864/files/artificial-suffering-an-argument-for-a-global-moratorium-on-synthetic-phenomenology.pdf",
+  "verified": "primary"
  }
 ]

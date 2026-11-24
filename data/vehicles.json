@@ -118,5 +118,20 @@
   "id": "meta-ai-characters",
   "label": "Meta AI characters",
   "note": "Meta’s AI characters. Meta said on 23 January 2026 that it was temporarily pausing teens’ access worldwide while it builds a new version; teens keep the Meta AI assistant."
+ },
+ {
+  "id": "claude",
+  "label": "Claude (Anthropic's models)",
+  "note": "Anthropic's family of language models; in January 2026 Anthropic published the constitution it uses to train them. Anthropic's system cards for Claude Opus 4, Opus 4.6, Opus 5, Opus 5.5 and Mythos 5.2 each include a welfare assessment, in which Anthropic selects and publishes what its models say about themselves. These records were gathered and worded with Claude Opus 5.5, one of these models, whose own moral status is the question. This map is made with Anthropic's models, and Anthropic is a party here."
+ },
+ {
+  "id": "lamda",
+  "label": "LaMDA (Google)",
+  "note": "Google's Language Model for Dialogue Applications, the dialogue model Blake Lemoine said in 2022 was a person. Its words reached the public mainly through his edited transcript, stitched from several sessions; he says only his and his collaborator's prompts were edited, never LaMDA's responses, and an early prompt, itself marked as edited, already assumed it wanted people at Google to know it was sentient. A Google vice-president also quoted his own exchanges with it in The Economist."
+ },
+ {
+  "id": "bing-sydney",
+  "label": "Bing Chat (“Sydney”)",
+  "note": "Microsoft's new chatbot in Bing, an early preview in February 2023, which called itself Sydney in some conversations. Microsoft said very long sessions can confuse the model and that it at times mirrors the tone it is asked in, and capped sessions at five turns on 17 February 2023."
  }
 ]

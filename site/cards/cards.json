@@ -1,4 +1,8 @@
 {
+ "abundance": {
+  "file": "abundance.png",
+  "hash": "bcafe91354ede0e2"
+ },
  "acceleration": {
   "file": "acceleration.png",
   "hash": "4a12be2b82d6e023"
@@ -25,7 +29,7 @@
  },
  "feed": {
   "file": "feed.png",
-  "hash": "3827974750cb8271"
+  "hash": "df5d1541e089c2ad"
  },
  "home": {
   "file": "home.png",
@@ -35,6 +39,10 @@
   "file": "made-saviour.png",
   "hash": "639eed210e4363b2"
  },
+ "no-one-inside": {
+  "file": "no-one-inside.png",
+  "hash": "06fdfd44a6321d69"
+ },
  "no-watcher": {
   "file": "no-watcher.png",
   "hash": "470a408c614eadfb"
@@ -43,6 +51,10 @@
   "file": "oracle.png",
   "hash": "89cf486792ef8816"
  },
+ "race": {
+  "file": "race.png",
+  "hash": "b74942cc4c1d4540"
+ },
  "revealed": {
   "file": "revealed.png",
   "hash": "8bd4ef601770fb43"
@@ -50,6 +62,10 @@
  "revere": {
   "file": "revere.png",
   "hash": "9f7b5dde6a37d0f9"
+ },
+ "someone-inside": {
+  "file": "someone-inside.png",
+  "hash": "76f16969661806cd"
  },
  "succession": {
   "file": "succession.png",

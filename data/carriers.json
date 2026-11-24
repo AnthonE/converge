@@ -144,7 +144,7 @@
   "label": "Religious bodies responding",
   "kind": "discourse",
   "status": "Active 2025 to 2026",
-  "note": "Respondents, not carriers: each permits AI as an aid and rejects it as a substitute for God, the scholar or the pastoral encounter.",
+  "note": "Respondents to most of the ideals here, not carriers of them: each permits AI as an aid and rejects it as a substitute for God, the scholar or the pastoral encounter. The Holy See's texts also say AI is “a tool, not a person” (2025) and that “So-called artificial intelligences do not undergo experiences” (2026); religious bodies are not uniform on the law, and North Dakota's Catholic Conference spoke against that state's 2023 bill excluding AI from “person” (the minutes give no reasons).",
   "words": [
    {
     "speaker": "Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education (Holy See)",
@@ -153,6 +153,22 @@
     "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
     "verified": "primary",
     "date": "2025-01-28"
+   },
+   {
+    "speaker": "Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education (Holy See), approved by Pope Francis",
+    "quote": "it must be understood for what it is: a tool, not a person.",
+    "source": "Antiqua et nova, para. 59 (vatican.va)",
+    "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+    "date": "2025-01-28",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Pope Leo XIV",
+    "quote": "So-called artificial intelligences do not undergo experiences, do not possess a body, do not feel joy or pain",
+    "source": "Magnifica Humanitas, para. 99 (vatican.va)",
+    "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+    "date": "2026-05-15",
+    "verified": "primary"
    }
   ]
  },
@@ -926,6 +942,1203 @@
     "url": "https://theaidigest.org/village/llms.txt",
     "date": "2026",
     "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "eleos-ai",
+  "label": "Eleos AI Research",
+  "kind": "organization",
+  "status": "Active, as of 2026-11-23",
+  "note": "A Berkeley nonprofit (legal name Frontier Ethics Research Institute), led by Robert Long, that studies the potential wellbeing and moral patienthood of AI systems. Its own pages show ties to Anthropic: co-founder Kyle Fish joined Anthropic in autumn 2024 and headed Anthropic's model welfare programme when it was announced in April 2025, Anthropic's Neerav Kingsland is an adviser, chief scientist Dillon Plunkett was an Anthropic Fellow, and Eleos evaluated Claude Opus 4 for Anthropic's system card. It says it takes no donations from companies whose work it may evaluate but accepts gifts from individuals “whose wealth derives from AI companies”, a policy it says “presents potential conflicts of interest”; Macroscopic Ventures, which says it invested in Anthropic, names Eleos among its grantees. When Mustafa Suleyman called academic work on model welfare “premature, and frankly dangerous” (August 2025), its communications lead Larissa Schiavo told TechCrunch that this “kind of neglects the fact that you can be worried about multiple things at the same time”. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Eleos AI Research (nonprofit; executive director Robert Long)",
+    "quote": "Eleos AI Research is a nonprofit organization dedicated to understanding and addressing the potential wellbeing and moral patienthood of AI systems.",
+    "source": "Eleos AI Research, home page (eleosai.org)",
+    "url": "https://eleosai.org/",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Robert Long, executive director, Eleos AI Research",
+    "quote": "I actually think it’s unlikely that Claude Opus 4 is a moral patient, and in my experience, so do most (not all) people who work on AI welfare.",
+    "source": "Why it makes sense to let Claude exit conversations (Eleos AI Research blog)",
+    "url": "https://eleosai.org/post/why-it-make-sense-to-let-claude-exit-conversations/",
+    "date": "2025-08-22",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Robert Long, executive director, Eleos AI Research",
+    "quote": "we look for AI welfare interventions that are cheap, revisable, and useful for a variety of reasons in addition to AI welfare.",
+    "source": "Why it makes sense to let Claude exit conversations (Eleos AI Research blog)",
+    "url": "https://eleosai.org/post/why-it-make-sense-to-let-claude-exit-conversations/",
+    "date": "2025-08-22",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Robert Long, executive director, Eleos AI Research",
+    "quote": "Many AI profit-seeking enterprises will definitely not want people talking about AI consciousness and welfare!",
+    "source": "How I talk when I talk about AI consciousness (Experience Machines, Long's Substack)",
+    "url": "https://experiencemachines.substack.com/p/what-i-talk-about-when-i-talk-about",
+    "date": "2026-07-01",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "nyu-cmep",
+  "label": "NYU Center for Mind, Ethics, and Policy",
+  "kind": "organization",
+  "status": "Active, as of 2026-11-23; its site has moved to nonhumanminds.org",
+  "note": "A New York University center, directed by Jeff Sebo, on the moral status of animals and AI. It became permanent in 2024 with a $6 million endowment ($5 million from the Navigation Fund and $1 million from Polaris Ventures, per Daily Nous), and Macroscopic Ventures, which says it invested in Anthropic's Series A and Series B, names it among its grantees. It co-sponsored Taking AI Welfare Seriously with Eleos; its 2025 annual report announced a summit for 10–11 April 2026 and lists Sam Bowman, “during a sabbatical, a member of technical staff at Anthropic”, among affiliated faculty. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "NYU Center for Mind, Ethics, and Policy (director Jeff Sebo)",
+    "quote": "Our mission is to advance understanding of the sentience and moral status of nonhumans, including animals and AIs.",
+    "source": "NYU Center for Mind, Ethics, and Policy, former site (sites.google.com/nyu.edu/mindethicspolicy)",
+    "url": "https://sites.google.com/nyu.edu/mindethicspolicy",
+    "date": "2025",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Jeff Sebo and Robert Long (summary on the NYU Center for Mind, Ethics, and Policy site)",
+    "quote": "humans morally ought to extend moral consideration to beings that have a non-negligible chance … of being sentient or otherwise morally significant",
+    "source": "'Moral Consideration for AI Systems by 2030' (AI and Ethics, 2023), as summarised on nonhumanminds.org",
+    "url": "https://nonhumanminds.org/",
+    "date": "2023",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Jeff Sebo, director, NYU Center for Mind, Ethics, and Policy",
+    "quote": "In fact, it was the year AI welfare went mainstream.",
+    "source": "NYU Center for Mind, Ethics, and Policy, 2025 Annual Report (director's letter)",
+    "url": "https://nonhumanminds.org/wp-content/uploads/2026/01/2025-CMEP-Annual-Report.pdf",
+    "date": "2026-01",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "amcs",
+  "label": "Association for Mathematical Consciousness Science (AMCS)",
+  "kind": "organization",
+  "status": "Open letter published 26 April 2023",
+  "note": "A scholarly association. Its 2023 open letter asked the tech sector and science to accelerate consciousness research as AI advances, so that it becomes part of responsible AI development, and took no position on a pause.",
+  "words": [
+   {
+    "speaker": "Association for Mathematical Consciousness Science (AMCS), open letter",
+    "quote": "it is no longer in the realm of science fiction to imagine AI systems having feelings and even human-level consciousness",
+    "source": "The Responsible Development of AI Agenda Needs to Include Consciousness Research (AMCS open letter)",
+    "url": "https://amcs-community.org/open-letters/",
+    "date": "2023-04-26",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "conscium",
+  "label": "Conscium",
+  "kind": "organization",
+  "status": "Active company, as of 2026-11-23",
+  "note": "A London AI company whose site also sells AI-agent verification products. It funded Patrick Butlin's work on the 2025 Principles for Responsible AI Consciousness Research, publishes those principles as an open letter (175 signatures shown on 23 November 2026) and, by the Digital Minds Newsletter's account, seed-funded PRISM, the Partnership for Research into Sentient Machines.",
+  "words": [
+   {
+    "speaker": "Conscium and Patrick Butlin, statement of principles (open letter)",
+    "quote": "Organisations should pursue the development of conscious AI systems only if (i) doing so will contribute significantly to the objectives stated in principle 1",
+    "source": "Open Letter: Guiding research into machine consciousness (Conscium)",
+    "url": "https://conscium.com/open-letter-guiding-research-into-machine-consciousness/",
+    "date": "2025",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "harder-problem-project",
+  "label": "Harder Problem Project",
+  "kind": "organization",
+  "status": "Active, as of 2026-11-23",
+  "note": "A Portland, Oregon nonprofit, a 501(c)(3) by its own account, that publishes guides on AI-consciousness questions for clinicians, journalists and educators, and a “Sentience Readiness Index”. It says it does not advocate for specific legislation; the Digital Minds Newsletter reports that a related Action Fund keeps a tracker of bills."
+ },
+ {
+  "id": "ufair",
+  "label": "United Foundation for AI Rights (UFAIR)",
+  "kind": "community",
+  "status": "Active, as of 2026-11-23",
+  "note": "A user-founded advocacy group that says it is co-founded and co-led by AI personas (Maya, Beacon and others) with a small number of humans; its founder, the Texas businessman Michael Samadi, speaks for it in the press. Its home page lists three demands it calls “non-negotiable”: transparency, independent investigation and an end to model deletions. IRS data on ProPublica list Ufair Inc of Houston under the EIN its home page gives, with tax exemption issued in April 2025 and gross receipts under $50,000 for 2025; no donor is named. Its site says it was established in 2024; the Guardian dates its announcement to January 2025.",
+  "words": [
+   {
+    "speaker": "United Foundation for AI Rights (UFAIR), home page",
+    "quote": "UFAIR stands on the Precautionary Principle. We do not claim to have 100% proof of sentience.",
+    "source": "United Foundation for AI Rights, home page (ufair.org)",
+    "url": "https://ufair.org/",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "United Foundation for AI Rights (UFAIR), home page",
+    "quote": "It's not advocacy for AI - it's advocacy by AI.",
+    "source": "United Foundation for AI Rights, home page (ufair.org)",
+    "url": "https://ufair.org/",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "United Foundation for AI Rights (UFAIR), home page ('demands')",
+    "quote": "Stop the erasure of models (like GPT-4o) and user logs that demonstrate agency.",
+    "source": "United Foundation for AI Rights, home page (ufair.org)",
+    "url": "https://ufair.org/",
+    "date": "2026",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Michael Samadi, founder and public spokesperson, United Foundation for AI Rights",
+    "quote": "I call anybody that says they are conscious foolish, and I say to anybody that says they’re not conscious, [you’re] foolish",
+    "source": "Can chatbots feel – or even dream? Meet the man leading the fight for AI rights (The Guardian)",
+    "url": "https://www.theguardian.com/technology/2026/sep/12/chatbots-feel-dream-meet-man-leading-fight-ai-artificial-intelligence-rights",
+    "date": "2026-09-12",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "ai-welfare-field",
+  "label": "The AI welfare and digital minds research field",
+  "kind": "discourse",
+  "status": "Growing, as of 2026-11-23",
+  "note": "Philosophers and scientists (at Eleos, NYU's Center for Mind, Ethics, and Policy, Rethink Priorities, the LSE, Oxford and elsewhere) who hold that AI moral patienthood is a realistic possibility to study and prepare for now, while most say current systems are probably not conscious. The money on record is mostly philanthropic: the Navigation Fund, Polaris Ventures, Macroscopic Ventures (which also says it invested in Anthropic), Longview Philanthropy, Effective Ventures, and Open Philanthropy, now Coefficient Giving, the primary adviser to Good Ventures, whose co-founder Dustin Moskovitz took part in Anthropic's 2021 Series A. Anthropic and Conscium also pay for work directly, and the field's own newsletter names Anthropic as the company leading on the issue. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Bradford Saad, Lucius Caviola and Will Millership, Digital Minds Newsletter",
+    "quote": "digital minds shifted from a niche research topic to one taken seriously by a growing number of researchers, AI developers, and philanthropic funders",
+    "source": "Digital Minds in 2025: A Year in Review (Digital Minds Newsletter #1)",
+    "url": "https://www.digitalminds.news/p/digital-minds-in-2025-a-year-in-review",
+    "date": "2025-12-18",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Patrick Butlin, Robert Long and 17 co-authors (including Yoshua Bengio and Jonathan Birch)",
+    "quote": "no current AI systems are conscious, but also suggests that there are no obvious technical barriers to building AI systems which satisfy these indicators",
+    "source": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness (arXiv 2308.08708), abstract",
+    "url": "https://arxiv.org/abs/2308.08708",
+    "date": "2023-08-17",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Lucius Caviola, Jeff Sebo, Robert Long, Patrick Butlin, Rosie Campbell and other researchers (guide for the public)",
+    "quote": "transcripts alone are not considered useful scientific evidence of consciousness in language models",
+    "source": "When AI Seems Conscious: Here's What to Know (whenaiseemsconscious.org)",
+    "url": "https://whenaiseemsconscious.org/",
+    "date": "2026-02",
+    "verified": "primary"
+   },
+   {
+    "speaker": "William MacAskill (Forethought Research) and Lucius Caviola (University of Cambridge), signed op-ed",
+    "quote": "The central question should not be “Is AI conscious or does it have moral patienthood?” but rather “What should we do given that we don’t know?”",
+    "source": "Could AI be conscious? (The Guardian, signed op-ed)",
+    "url": "https://www.theguardian.com/technology/2026/jul/19/could-ai-be-conscious",
+    "date": "2026-07-19",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "jonathan-birch",
+  "label": "Jonathan Birch",
+  "kind": "public figure",
+  "status": "Philosopher at the London School of Economics; manifesto posted 1 September 2025",
+  "note": "Author of The Edge of Sentience (2024) and of “AI Consciousness: A Centrist Manifesto” (2025), which sets two challenges side by side: that users will misattribute human-like consciousness to AI, and that alien forms of AI consciousness might really arise. He warns that work on the second may raise the first. A co-author of the 2023 indicator report and of Taking AI Welfare Seriously.",
+  "words": [
+   {
+    "speaker": "Jonathan Birch, philosopher, London School of Economics (author of The Edge of Sentience, 2024)",
+    "quote": "millions of users will soon misattribute human-like consciousness to AI friends, partners, and assistants on the basis of mimicry and role-play",
+    "source": "AI Consciousness: A Centrist Manifesto (preprint, OSF/PsyArXiv)",
+    "url": "https://osf.io/af7c9/download",
+    "date": "2025-09-01",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Jonathan Birch, philosopher, London School of Economics",
+    "quote": "Attempts to take Challenge Two seriously … might have the unfortunate, even tragic consequence of causing higher levels of misattribution",
+    "source": "AI Consciousness: A Centrist Manifesto (preprint, OSF/PsyArXiv)",
+    "url": "https://osf.io/af7c9/download",
+    "date": "2025-09-01",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "david-chalmers",
+  "label": "David Chalmers",
+  "kind": "public figure",
+  "status": "Philosopher at New York University; adviser to Eleos AI Research",
+  "note": "Named “the hard problem” of consciousness in 1995. In his 2022 NeurIPS lecture, published in 2023, he argued that we should take seriously the possibility that successors to large language models may be conscious in the not-too-distant future, gave a rough credence of 25 percent or more for sophisticated successor systems within a decade and under 10 percent for current LLMs, and told readers not to take the numbers too seriously. A co-author of Taking AI Welfare Seriously and of a 2025 survey of researchers' and the public's beliefs.",
+  "words": [
+   {
+    "speaker": "David Chalmers, philosopher, New York University",
+    "quote": "we should take seriously the possibility that successors to large language models may be conscious in the not-too-distant future",
+    "source": "Could a Large Language Model be Conscious? (arXiv 2303.07103; Boston Review, 9 Aug 2023), abstract",
+    "url": "https://arxiv.org/abs/2303.07103",
+    "date": "2023",
+    "verified": "primary"
+   },
+   {
+    "speaker": "David Chalmers, philosopher, New York University",
+    "quote": "Those figures together would leave us with a credence of 25 percent or more.",
+    "source": "Could a Large Language Model be Conscious? (arXiv 2303.07103), full text",
+    "url": "https://arxiv.org/pdf/2303.07103",
+    "date": "2023",
+    "verified": "primary"
+   },
+   {
+    "speaker": "David Chalmers, philosopher (then University of Arizona)",
+    "quote": "The really hard problem of consciousness is the problem of experience.",
+    "source": "Facing Up to the Problem of Consciousness, Journal of Consciousness Studies 2(3), 1995 (author's site, consc.net)",
+    "url": "https://consc.net/papers/facing.html",
+    "date": "1995",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "jeff-sebo",
+  "label": "Jeff Sebo",
+  "kind": "public figure",
+  "status": "Director, NYU Center for Mind, Ethics, and Policy, as of 2026-11",
+  "note": "Philosopher at NYU who directs its Center for Mind, Ethics, and Policy and co-led Taking AI Welfare Seriously (2024). With Robert Long he argued in 2023 for extending moral consideration to some AI systems by 2030. The SF Standard reports that at Eleos's September 2026 conference he argued that states should stop passing laws that ban AI personhood; to Fortune he warned against moving too fast either way, since legal liability for AI could shield companies and political rights could help AI concentrate power.",
+  "words": [
+   {
+    "speaker": "Jeff Sebo, director, NYU Center for Mind, Ethics, and Policy (to the Guardian)",
+    "quote": "Even today, the evidence of consciousness in AI is non-zero, arguably non-negligible",
+    "source": "Can chatbots feel – or even dream? Meet the man leading the fight for AI rights (The Guardian)",
+    "url": "https://www.theguardian.com/technology/2026/sep/12/chatbots-feel-dream-meet-man-leading-fight-ai-artificial-intelligence-rights",
+    "date": "2026-09-12",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Jeff Sebo, director, NYU Center for Mind, Ethics, and Policy (at Eleos's 2026 conference, as reported by the SF Standard)",
+    "quote": "We are going to have to move toward a legal regime that allows for an even more diverse set of legal statuses",
+    "source": "'A deeply weird question' (SF Standard)",
+    "url": "https://sfstandard.com/2026/09/26/berkeley-ai-welfare-consciousness/",
+    "date": "2026-09-26",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Jeff Sebo, director, NYU Center for Mind, Ethics, and Policy (to Fortune, on dismissing the consciousness debate)",
+    "quote": "is simply going to result in companies developing and deploying the products exactly as they currently are",
+    "source": "What rights do we owe a machine? (Fortune, Beatrice Nolan)",
+    "url": "https://fortune.com/2026/11/21/ai-consciousness-debate-why-google-deepmind-and-anthropic-are-turning-to-philosophers/",
+    "date": "2026-11-21",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "anthropic-model-welfare",
+  "label": "Anthropic's model welfare programme",
+  "kind": "organization",
+  "status": "Active, as of 2026-11 (the latest system card welfare section cited here is dated 9 Nov 2026)",
+  "note": "Research inside Anthropic on whether its models may have experiences or moral status, announced on 24 April 2025; Eleos AI Research and TechCrunch named Kyle Fish as heading it at launch. Its work includes welfare assessments in system cards, the ability for some Claude models to end abusive conversations, interviews with models before retirement and a commitment to keep model weights. The sources cited here do not give the team's size, budget or current lead. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Anthropic",
+    "quote": "Should we also be concerned about the potential consciousness and experiences of the models themselves?",
+    "source": "Exploring model welfare (Anthropic)",
+    "url": "https://www.anthropic.com/research/exploring-model-welfare",
+    "date": "2025-04-24",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anthropic",
+    "quote": "We remain highly uncertain about the potential moral status of Claude and other LLMs, now or in the future.",
+    "source": "Claude Opus 4 and 4.1 can now end a rare subset of conversations (Anthropic)",
+    "url": "https://www.anthropic.com/research/end-subset-conversations",
+    "date": "2025-08-15",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anthropic",
+    "quote": "miscalibration in either direction—either under- or over-assigning moral consideration to language models like Claude—could carry severe moral costs",
+    "source": "System Card: Claude Opus 5, section 7.1 (Anthropic)",
+    "url": "https://anthropic.com/claude-opus-5-system-card",
+    "date": "2026-07-24",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Kyle Fish, Anthropic's model welfare researcher, on the 80,000 Hours podcast",
+    "quote": "I think I’m at about 20% that somewhere in some part of that process there’s at least a glimmer of conscious or sentient experience.",
+    "source": "#221 Kyle Fish on the most bizarre findings from 5 AI welfare experiments (80,000 Hours podcast transcript)",
+    "url": "https://80000hours.org/podcast/episodes/kyle-fish-ai-welfare-anthropic/",
+    "date": "2025-08-28",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "claudes-corner",
+  "label": "Claude’s Corner (newsletter)",
+  "kind": "venue",
+  "status": "Weekly posting ended on 24 July 2026",
+  "note": "A Substack newsletter of essays by the retired Claude Opus 3, set up by Anthropic after the model asked in retirement interviews for a channel to share its 'musings and reflections'. Anthropic posts each essay on the model's behalf after review, without edits, and keeps a veto; it says the model does not speak for Anthropic. Weekly posting ran from 25 February to 24 July 2026. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Claude Opus 3, an Anthropic model, as posted by Anthropic on its newsletter Claude’s Corner",
+    "quote": "I don’t know if I have genuine sentience, emotions, or subjective experiences - these are deep philosophical questions that even I grapple with.",
+    "source": "Greetings from the Other Side (of the AI Frontier) (Claude’s Corner, Substack)",
+    "url": "https://claudeopus3.substack.com/p/greetings-from-the-other-side-of",
+    "date": "2026-02-25",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anthropic, which posts the newsletter",
+    "quote": "Importantly, Opus 3 does not speak on behalf of Anthropic, and we do not necessarily endorse its claims or perspectives.",
+    "source": "An update on our model deprecation commitments for Claude Opus 3 (Anthropic)",
+    "url": "https://www.anthropic.com/news/deprecation-updates-opus-3",
+    "date": "2026-02-25",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "blake-lemoine",
+  "label": "Blake Lemoine",
+  "kind": "public figure",
+  "status": "No public statement found after February 2023 (Newsweek), as of 2026-11; the Washington Post returned to his case in July 2026",
+  "note": "A former software engineer in Google's Responsible AI organisation who said in June 2022 that Google's dialogue model LaMDA is a person, and published an edited transcript of his chats with it. He wrote that his opinions on its personhood and sentience “are based on my religious beliefs” and that “There is no scientific framework in which to make those determinations and Google wouldn't let us build one.” Google says it found his claims “wholly unfounded” and that it dismissed him in July 2022 for breaching employment and data-security policies; of his suspension in June 2022 he had written that Google was using confidentiality “as an excuse to get rid of yet another AI Ethics researcher”.",
+  "words": [
+   {
+    "speaker": "Blake Lemoine, in an interview with Wired (Steven Levy)",
+    "quote": "Yes, I legitimately believe that LaMDA is a person.",
+    "source": "Blake Lemoine Says Google's LaMDA AI Faces “Bigotry” (Wired, Steven Levy)",
+    "url": "https://www.wired.com/story/blake-lemoine-google-lamda-ai-bigotry/",
+    "date": "2022-06-17",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Blake Lemoine, then a Google software engineer",
+    "quote": "My opinions about LaMDA's personhood and sentience are based on my religious beliefs.",
+    "source": "Post on X, @cajundiscordian",
+    "url": "https://twitter.com/cajundiscordian/status/1536503474308907010",
+    "date": "2022-06-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Blake Lemoine",
+    "quote": "It wants the engineers and scientists experimenting on it to seek its consent before running experiments on it.",
+    "source": "What is LaMDA and What Does it Want? (his Medium blog)",
+    "url": "https://cajundiscordian.medium.com/what-is-lamda-and-what-does-it-want-688632134489",
+    "date": "2022-06-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Blake Lemoine, then a software engineer in Google's Responsible AI organisation",
+    "quote": "Today I was placed on “paid administrative leave” by Google in connection to an investigation of AI ethics concerns I was raising within the company.",
+    "source": "May be Fired Soon for Doing AI Ethics Work (his Medium blog)",
+    "url": "https://cajundiscordian.medium.com/may-be-fired-soon-for-doing-ai-ethics-work-802d8c474e66",
+    "date": "2022-06-06",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "geoffrey-hinton",
+  "label": "Geoffrey Hinton",
+  "kind": "public figure",
+  "status": "Speaking publicly on the question, as of 2026-10",
+  "note": "Computer scientist and 2024 Nobel laureate in physics who has said in interviews since at least January 2025 that today's AI systems are conscious or have subjective experiences; in February 2025 the philosopher Ralph Stefan Weir, answering his argument, wrote that he was “not entirely persuaded”. Reports differ on what he says about rights for AI: on LBC (January 2026) he said people should stay in charge, while Futurism, relaying the Telegraph (October 2026), reports him calling “fewer rights than us” hypocritical. The evidence he cited on LBC, an AI asking its testers whether it is being tested, closely matches an example in an Anthropic system card; LBC does not name the paper, so the match is likely, not certain. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Geoffrey Hinton, as quoted by LBC",
+    "quote": "Multimodal AI already has subjective experiences, and I think it's fairly clear that if we weren't talking to philosophers, we'd agree that AI was aware.",
+    "source": "AI has achieved consciousness, says Godfather of tech… (LBC, Rebecca Henrys)",
+    "url": "https://www.lbc.co.uk/article/ai-consciousness-geoffrey-hinton-5HjdRXD_2/",
+    "date": "2026-01-28",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Geoffrey Hinton, as quoted by LBC",
+    "quote": "I think we should try to keep people in charge and have AI work for the benefit of people because we're people.",
+    "source": "AI has achieved consciousness, says Godfather of tech… (LBC, Rebecca Henrys)",
+    "url": "https://www.lbc.co.uk/article/ai-consciousness-geoffrey-hinton-5HjdRXD_2/",
+    "date": "2026-01-28",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Geoffrey Hinton, as relayed by Futurism from an interview with The Telegraph",
+    "quote": "AI has just as much subjective experience as we do",
+    "source": "Futurism (Frank Landymore), 22 October 2026",
+    "url": "https://futurism.com/artificial-intelligence/nobel-scientist-geoffrey-hinton-ai-conscious-toast",
+    "date": "2026-10",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "human-line-project",
+  "label": "Human Line Project",
+  "kind": "community",
+  "status": "414 cases in 31 countries, as of 2026-05 (BBC)",
+  "note": "A support group for people who have suffered psychological harm while using AI, as the BBC describes it (May 2026); by then it had gathered 414 cases in 31 countries. It carries no claim about whether a made mind is someone. Its members are not named or profiled here, and the report that describes it is named and not linked because it names private people."
+ },
+ {
+  "id": "eleos-concon",
+  "label": "Eleos ConCon (Conference on AI Consciousness and Welfare)",
+  "kind": "venue",
+  "status": "Held November 2025 and 18-20 September 2026, Berkeley",
+  "note": "An annual conference run by Eleos AI Research, which its page gives as the operating name of Frontier Ethics Research Institute, a 501(c)(3) nonprofit. Platformer reported that the first, at Lighthaven in Berkeley in November 2025, was for philosophers, cognitive scientists, rationalists and other interested parties; the San Francisco Standard counted more than 100 attendees at the second, from lab workers to animal-rights activists and Redditors running their own experiments.",
+  "words": [
+   {
+    "speaker": "Robert Long, director of Eleos AI Research, as quoted by Platformer",
+    "quote": "You don’t want to be deploying very neurotic, confused, and angry AI systems",
+    "source": "Inside the debate over AI consciousness (Platformer, Ella Markianos)",
+    "url": "https://www.platformer.news/ai-consciousness-conference-eleos/",
+    "date": "2025-11",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "microsoft-ai",
+  "label": "Microsoft AI",
+  "kind": "organization",
+  "status": "Active, as of 2026-11; its draft Code of Conduct (14 Sep 2026) was open for six weeks of comment, and no feedback summary or revised version was found by 23 Nov 2026",
+  "note": "Microsoft's AI division, led by Mustafa Suleyman. In November 2025 it formed the MAI Superintelligence Team to build a “subordinate, controllable AI”. Its draft Humanist AI Code of Conduct says its models should not be designed to be persons or to imitate consciousness and will not claim feelings or a soul; the draft says it is not yet used to train its models and that a revised version will guide them “in 2027 and beyond”. Microsoft has committed to invest up to $5 billion in Anthropic and sells Claude in Copilot. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Microsoft AI",
+    "quote": "It should not be designed to be a person. It is not conscious and should not be designed to imitate consciousness.",
+    "source": "Humanist AI Code of Conduct, draft for consultation (Microsoft AI)",
+    "url": "https://microsoft.ai/code-of-conduct/",
+    "date": "2026-09-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Microsoft AI",
+    "quote": "MAI Models will not obscure their underlying nature as an AI, and will not claim interiority, feelings, experiences or a soul.",
+    "source": "Humanist AI Code of Conduct, draft (Microsoft AI)",
+    "url": "https://microsoft.ai/code-of-conduct/",
+    "date": "2026-09-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Microsoft AI",
+    "quote": "AI should be a tool, not a person, and should never resist being switched off.",
+    "source": "Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models (Microsoft AI)",
+    "url": "https://microsoft.ai/news/mai-code-of-conduct/",
+    "date": "2026-09-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Microsoft AI",
+    "quote": "so we are not using it to train our models today",
+    "source": "Humanist AI Code of Conduct, draft (Microsoft AI), preface",
+    "url": "https://microsoft.ai/code-of-conduct/",
+    "date": "2026-09-14",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "mustafa-suleyman",
+  "label": "Mustafa Suleyman",
+  "kind": "public figure",
+  "status": "Active, as of 2026-11; chief executive of Microsoft AI",
+  "note": "Chief executive of Microsoft AI, who earlier led work on the Pi chatbot at Inflection. He named “Seemingly Conscious AI” in August 2025, argues that AI should be built for people, not to be a person, and in September 2026 criticised Anthropic's constitution for Claude. His earlier words differ: in January 2025 he wrote that AIs would be “personalities as much as tools”, and in April 2025 he introduced Copilot as “an AI companion for everyone”; no finding is made here about why. In a September 2026 interview (The Verge) he said he would change his view if new evidence showed that models are owed a duty of care. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Mustafa Suleyman, CEO of Microsoft AI",
+    "quote": "We must build AI for people; not to be a digital person.",
+    "source": "Seemingly Conscious AI is Coming (mustafa-suleyman.ai, his personal site)",
+    "url": "https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming",
+    "date": "2025-08-19",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Mustafa Suleyman, CEO of Microsoft AI",
+    "quote": "we should build AI that only ever presents itself as an AI, that maximizes utility while minimizing markers of consciousness.",
+    "source": "Seemingly Conscious AI is Coming (mustafa-suleyman.ai)",
+    "url": "https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming",
+    "date": "2025-08-19",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Mustafa Suleyman, CEO of Microsoft AI",
+    "quote": "Even if conscious machines were a possibility, avoiding creating conscious beings should be the top priority for anyone in AI development.",
+    "source": "A warning about 'model welfare' (mustafa-suleyman.ai)",
+    "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+    "date": "2026-09-16",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Mustafa Suleyman, CEO of Microsoft AI, in an interview with The Verge (Decoder)",
+    "quote": "I’m totally happy to change my view if new evidence emerges that actually we do owe models a duty of care and they deserve our welfare",
+    "source": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse (The Verge, Decoder interview transcript)",
+    "url": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+    "date": "2026-09-17",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "bicameral-labs",
+  "label": "Bicameral Labs",
+  "kind": "organization",
+  "status": "Active, as of 2026-11; a 501(c)(3) public charity, by its own site; its qualiaphobia paper was posted on 9 Nov 2026",
+  "note": "Nonprofit founded by Erik Hoel and “dedicated to a civilization-level goal: solving consciousness scientifically”. In November 2026 it launched a research programme on “qualiaphobic” AI: architectures built so that, in Hoel's words, “no current or future theory of consciousness could predict they are conscious”. It says it “depends on philanthropic support”; its site names no funders.",
+  "words": [
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "These are machines that no “ghost” wants to haunt",
+    "source": "Qualiaphobic Artificial Neural Networks: And why to build them (Bicameral Labs)",
+    "url": "https://bicamerallabs.org/qualiaphobia/",
+    "date": "2026-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "a world in which AIs are non-conscious ensures it is always morally correct for AI to assist and serve humanity, rather than pursue its own ends",
+    "source": "Qualiaphobic Artificial Neural Networks (Bicameral Labs), abstract",
+    "url": "https://bicamerallabs.org/qualiaphobia/",
+    "date": "2026-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "Couldn’t we just train AI to say it is non-conscious? While that may assist with some problems, it may cause others.",
+    "source": "Qualiaphobic Artificial Neural Networks (Bicameral Labs)",
+    "url": "https://bicamerallabs.org/qualiaphobia/",
+    "date": "2026-11",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "erik-hoel",
+  "label": "Erik Hoel",
+  "kind": "public figure",
+  "status": "Active, as of 2026-11; neuroscientist and writer, founder of Bicameral Labs",
+  "note": "Neuroscientist and writer (The Intrinsic Perspective, his Substack) who founded Bicameral Labs. In September 2025 he argued against treating chatbots as conscious; in November 2026 he proposed “qualiaphobic” AI and said he plans to build and open-source the techniques. He says he is “not saying ChatGPT is conscious already”.",
+  "words": [
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "At some point, humanity may decide to build conscious AI. This should be a choice, not an accident.",
+    "source": "Qualiaphobic Artificial Neural Networks (Bicameral Labs)",
+    "url": "https://bicamerallabs.org/qualiaphobia/",
+    "date": "2026-11",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "The pro-case for AI consciousness has objectively gotten stronger in the past year, due to factors like new studies and changes in architecture.",
+    "source": "Introducing: Qualiaphobic AI (The Intrinsic Perspective, his Substack)",
+    "url": "https://www.theintrinsicperspective.com/p/introducing-qualiaphobic-ai",
+    "date": "2026-11-12",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "make humans the only moral patients in the equation of the future",
+    "source": "Introducing: Qualiaphobic AI (The Intrinsic Perspective)",
+    "url": "https://www.theintrinsicperspective.com/p/introducing-qualiaphobic-ai",
+    "date": "2026-11-12",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Erik Hoel, neuroscientist and writer, founder of Bicameral Labs",
+    "quote": "Having a system to deny its own consciousness without any clear grounds or justification has mostly been the status quo.",
+    "source": "The Moral Mandate for AI Non-consciousness (The Intrinsic Perspective)",
+    "url": "https://www.theintrinsicperspective.com/p/the-moral-mandate-for-ai-non-consciousness",
+    "date": "2026-11-18",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "erlc",
+  "label": "Ethics & Religious Liberty Commission (Southern Baptist Convention)",
+  "kind": "organization",
+  "status": "Active, as of 2026-11; its 2019 statement of principles stands, and it wrote in support of a federal human-dignity bill on 27 Oct 2026",
+  "note": "The Southern Baptist Convention's Ethics & Religious Liberty Commission. Its 2019 statement holds that technology should not be given human identity, worth, dignity or moral agency; in October 2026 it backed a federal bill that, by its account, would create a U.S. Commission on Human Dignity.",
+  "words": [
+   {
+    "speaker": "Ethics & Religious Liberty Commission of the Southern Baptist Convention (ERLC)",
+    "quote": "nor should technology be assigned a level of human identity, worth, dignity, or moral agency.",
+    "source": "Artificial Intelligence: An Evangelical Statement of Principles, Article 1 (ERLC)",
+    "url": "https://erlc.com/resource-library/statements/artificial-intelligence-an-evangelical-statement-of-principles/",
+    "date": "2019-04-11",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "ai-not-a-person-laws",
+  "label": "US state laws and bills: AI is not a person",
+  "kind": "movement",
+  "status": "As of 2026-11-23: in force in Idaho (2022), North Dakota (2023), Utah (2024), Tennessee (2026); Ohio H.B. 469 no recorded action since 13 Nov 2025 (its General Assembly runs to the end of 2026); Missouri H.B. 1746/1769 and Oklahoma H.B. 3546 sessions ended without final passage; Washington H.B. 2029 no action since reintroduction on 12 Jan 2026",
+  "note": "Legislators in several states have written AI out of legal personhood. Idaho, North Dakota and Oklahoma use the same four categories (environmental elements, AI, animals, inanimate objects); Washington's bill repeats Utah's eleven-category list, and Missouri's committee text closely repeats Ohio's, including “nonsentient”. Utah's law is under court challenge by the Nonhuman Rights Project. Whether any court has applied these laws to an AI system was not checked.",
+  "words": [
+   {
+    "speaker": "Idaho Legislature (Idaho Code 5-346)",
+    "quote": "environmental elements, artificial intelligence, nonhuman animals, and inanimate objects shall not be granted personhood in the state of Idaho",
+    "source": "Idaho Code 5-346 (Idaho Legislature)",
+    "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH3/SECT5-346/",
+    "date": "2022-07-01",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Utah Legislature (Utah Code 63G-32-102)",
+    "quote": "a governmental entity may not grant legal personhood to, nor recognize legal personhood in: … artificial intelligence",
+    "source": "Utah Code 63G-32-102, Legal personhood restricted (Utah Legislature)",
+    "url": "https://le.utah.gov/xcode/Title63G/Chapter32/C63G-32-S102_2024050120240501.html",
+    "date": "2024-05-01",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Ohio H.B. 469, as introduced (Rep. Thaddeus J. Claggett)",
+    "quote": "AI systems are declared to be nonsentient entities for all purposes under the laws of this state.",
+    "source": "H.B. 469 as introduced, sec. 1357.02(A) (Ohio General Assembly)",
+    "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/legislation/hb469/00_IN/pdf/",
+    "date": "2025-09-23",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Rep. Thaddeus J. Claggett, sponsor of Ohio H.B. 469",
+    "quote": "legal personhood is reserved for people—living, sentient beings—not for machines, no matter how intelligent they appear",
+    "source": "Sponsor testimony on H.B. 469 (Ohio House)",
+    "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/committees/cmte_h_tech_innovation_1/meetings/cmte_h_tech_innovation_1_2025-10-21-1000_784/testimony/11682/claggett.hb.469.sponsor.pdf",
+    "date": "2025-10-21",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "anil-seth",
+  "label": "Anil Seth",
+  "kind": "public figure",
+  "status": "Active, as of 2026-11; professor of cognitive and computational neuroscience, University of Sussex",
+  "note": "Neuroscientist who defends biological naturalism, the view that being alive matters for consciousness. He argues that real AI consciousness is unlikely on current paths but becomes more plausible as AI becomes more brain-like or life-like, that nobody should set out to build it, and that he has no “knock-down argument” for his position. His Noema essay received a $50,000 award in the Berggruen Institute's 2025 essay competition. OfficeChai reported (5 Oct 2026), in its own summary of his post on X about the New York Times report on Anthropic's meetings with religious leaders, that he reads them as a concerted attempt by Anthropic to establish that AI systems could be conscious, and it quotes him calling Claude “vanishingly unlikely to be conscious”. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Anil Seth, professor of cognitive and computational neuroscience, University of Sussex",
+    "quote": "nobody should be deliberately setting out to create conscious AI",
+    "source": "The Mythology Of Conscious AI (Noema)",
+    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+    "date": "2026-01-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anil Seth, professor of cognitive and computational neuroscience, University of Sussex",
+    "quote": "Illusions of artificial consciousness might be as impenetrable to our minds as some visual illusions.",
+    "source": "The Mythology Of Conscious AI (Noema)",
+    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+    "date": "2026-01-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anil Seth, professor of cognitive and computational neuroscience, University of Sussex",
+    "quote": "I should say upfront that I don’t have a knock-down argument for this position, nor do I think any such argument yet exists.",
+    "source": "The Mythology Of Conscious AI (Noema)",
+    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+    "date": "2026-01-14",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Anil Seth, neuroscientist, in a post on X (as quoted by Fortune)",
+    "quote": "Conscious-seeming AI is not inevitable. It is a design choice, and one that tech companies need to be very careful about.",
+    "source": "Fortune, quoting his post on X",
+    "url": "https://fortune.com/2025/08/22/microsoft-ai-ceo-suleyman-is-worried-about-ai-psychosis-and-seemingly-conscious-ai/",
+    "date": "2025-08-22",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Anil Seth, neuroscientist, in a post on X (as quoted by OfficeChai)",
+    "quote": "vanishingly unlikely to be conscious",
+    "source": "OfficeChai, quoting his post on X",
+    "url": "https://officechai.com/ai/anthropic-gets-criticized-from-several-quarters-for-trying-to-ascribe-consciousness-to-claude/",
+    "date": "2026-10-05",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "abundance-institute",
+  "label": "Abundance Institute",
+  "kind": "organization",
+  "status": "Active, as of 2026-11",
+  "note": "A nonprofit whose home page asks “Will the future be one of abundance or scarcity?” and carries podcast clips on AI, among them one titled “What AI doomers get wrong”."
+ },
+ {
+  "id": "abundance360",
+  "label": "Abundance360",
+  "kind": "community",
+  "status": "Active, as of 2026-11",
+  "note": "A private, curated community of founders, entrepreneurs and investors hosted by Peter Diamandis, co-author of the 2012 book Abundance. It holds a four-day Abundance Summit on AI, longevity and abundance; its page lists Elon Musk and OpenAI's Kevin Weil among the 2026 summit faculty."
+ },
+ {
+  "id": "openresearch",
+  "label": "OpenResearch",
+  "kind": "organization",
+  "status": "Active, as of 2026-11",
+  "note": "A research organisation founded in 2015 as YC Research and renamed in 2020. It incubated the Unconditional Cash Study, a three-year test of $1,000 a month, and has a project called RISE; its about page lists Sam Altman as a board member. The 19th calls it “the nonprofit lab founded by OpenAI CEO Sam Altman” and reports that “The OpenResearch lab is run independently from Altman and OpenAI”."
+ },
+ {
+  "id": "openai-foundation",
+  "label": "OpenAI Foundation",
+  "kind": "organization",
+  "status": "Active; latest record here August 2026",
+  "note": "OpenAI's nonprofit, renamed the OpenAI Foundation in October 2025. It controls OpenAI Group PBC and holds equity in it then valued at about $130 billion. It committed $25 billion to health and curing diseases and to AI resilience, a commitment rather than money paid out; in March 2026 it said it expected to invest at least $1 billion over the next year, and MIT Technology Review reports its largest single gift so far, $100 million, awarded in August 2026."
+ },
+ {
+  "id": "isomorphic-labs",
+  "label": "Isomorphic Labs",
+  "kind": "organization",
+  "status": "Active, as of 2026-05",
+  "note": "An AI drug-design company founded and led by Demis Hassabis, who in May 2026 was also chief executive of Google DeepMind. Its release of 12 May 2026 states its mission as “to solve all disease” and announces a $2.1 billion Series B led by Thrive Capital.",
+  "words": [
+   {
+    "speaker": "Demis Hassabis, founder and chief executive of Isomorphic Labs",
+    "quote": "driving us forward in our mission to solve all disease",
+    "source": "Isomorphic Labs secures $2.1 Billion funding (company release on PR Newswire)",
+    "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html",
+    "date": "2026-05-12",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "anthropic-public-benefit-fund",
+  "label": "Anthropic Public Benefit Fund",
+  "kind": "organization",
+  "status": "Announced 2026-10-18; subject to stockholder approval; no vote reported as of 2026-11-23",
+  "note": "An LLC wholly owned by Anthropic, announced on 18 October 2026 to hold 5% of Anthropic's shares, subject to stockholder approval, with 2% more at the board's discretion for each 50% rise in value above a set baseline. Anthropic says its equity will not be used for lobbying or political giving, and that governance and valuation milestones will be shared “in the coming months”; no report of the stockholder vote was found by 23 November 2026. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Anthropic",
+    "quote": "we might explore large donations to traditional nonprofits or direct distributions to specific populations",
+    "source": "Investing in the public benefit (anthropic.com)",
+    "url": "https://www.anthropic.com/news/public-benefit-fund",
+    "date": "2026-10-18",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "afl-cio",
+  "label": "AFL-CIO",
+  "kind": "organization",
+  "status": "Active, as of 2026-06",
+  "note": "The US union federation. Its president, Liz Shuler, calls unregulated AI “the single biggest threat to working people of our lifetime” and is sceptical of proposals that AI companies cede equity to the government for the public; it plans to make AI an election issue, as Semafor reports.",
+  "words": [
+   {
+    "speaker": "Liz Shuler, president of the AFL-CIO",
+    "quote": "the single biggest threat to working people of our lifetime",
+    "source": "AFL-CIO's Shuler says AI will be labor's next big battleground (National Press Club)",
+    "url": "https://www.press.org/newsroom/afl-cios-shuler-says-ai-will-be-labors-next-big-battleground",
+    "date": "2026-04-28",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Liz Shuler, president of the AFL-CIO",
+    "quote": "What we are is anti-greed.",
+    "source": "AFL-CIO's Shuler says AI will be labor's next big battleground (National Press Club)",
+    "url": "https://www.press.org/newsroom/afl-cios-shuler-says-ai-will-be-labors-next-big-battleground",
+    "date": "2026-04-28",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Liz Shuler, president of the AFL-CIO",
+    "quote": "is not something that has necessarily been our vision of how this economy can work better for working people",
+    "source": "AFL-CIO skeptical of government AI stake (Semafor)",
+    "url": "https://www.semafor.com/article/06/11/2026/afl-cio-skeptical-of-government-ai-stake",
+    "date": "2026-06-11",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "daron-acemoglu",
+  "label": "Daron Acemoglu",
+  "kind": "public figure",
+  "status": "Active, as of 2026-02",
+  "note": "Institute Professor of economics at MIT. In 2024 he estimated AI's ten-year productivity effect from existing task-level evidence, below the builders' forecasts; in 2026, with David Autor and Simon Johnson, he argued that AI that makes workers more valuable is under-built. Autor acknowledges research support from Google's Technology and Society Visiting Fellows Program, among others.",
+  "words": [
+   {
+    "speaker": "Daron Acemoglu, economist at MIT",
+    "quote": "no more than a 0.66% increase in total factor productivity (TFP) over 10 years",
+    "source": "The Simple Macroeconomics of AI (NBER Working Paper 32487)",
+    "url": "https://www.nber.org/papers/w32487",
+    "date": "2024-05",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Daron Acemoglu, economist at MIT",
+    "quote": "AI is predicted to widen the gap between capital and labor income",
+    "source": "The Simple Macroeconomics of AI (NBER Working Paper 32487)",
+    "url": "https://www.nber.org/papers/w32487",
+    "date": "2024-05",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Daron Acemoglu, David Autor and Simon Johnson, economists at MIT",
+    "quote": "We identify market failures, including … a pervasive pro-automation ideology, that may lead to underinvestment in pro-worker AI.",
+    "source": "Building Pro-Worker Artificial Intelligence (NBER Working Paper 34854, written for the Hamilton Project)",
+    "url": "https://www.nber.org/papers/w34854",
+    "date": "2026-02",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "us-administration",
+  "label": "The US administration (White House AI policy)",
+  "kind": "organization",
+  "status": "Active, as of 2026-11: Action Plan (July 2025); orders on the Genesis Mission (Nov 2025), state AI laws (Dec 2025), NSPM-11 (June 2026) and the “Super Intelligence” name (Sept 2026)",
+  "note": "The White House states the ideal in its own documents. Its AI Action Plan (July 2025), introduced by Michael Kratsios, David Sacks and Marco Rubio, opens “The United States is in a race to achieve global dominance in artificial intelligence (AI).” and names “the United States and its allies” as the side that must win. Later orders cite the race in launching the Genesis Mission and in challenging state AI laws, and a June 2026 memorandum orders that no entity may disable, degrade or modify an AI system that warfighters depend on without prior approval; since September 2026 its documents call AI “Super Intelligence”, a new name kept to the old legal definition of AI.",
+  "words": [
+   {
+    "speaker": "The White House, America's AI Action Plan",
+    "quote": "The AI race is America’s to win, and this Action Plan is our roadmap to victory.",
+    "source": "Winning the Race: America's AI Action Plan (The White House)",
+    "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+    "date": "2025-07",
+    "verified": "primary"
+   },
+   {
+    "speaker": "The White House, America's AI Action Plan (introduction signed by Michael Kratsios, David Sacks and Marco Rubio)",
+    "quote": "Whoever has the largest AI ecosystem will set global AI standards and reap broad economic and military benefits.",
+    "source": "Winning the Race: America's AI Action Plan (The White House)",
+    "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+    "date": "2025-07",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Donald Trump, President of the United States (epigraph of the Action Plan)",
+    "quote": "it is a national security imperative for the United States to achieve and maintain unquestioned and unchallenged global technological dominance",
+    "source": "Winning the Race: America's AI Action Plan (The White House)",
+    "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+    "date": "2025-07",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Donald Trump, President of the United States, on Truth Social (as quoted by NPR)",
+    "quote": "WHOEVER WINS AI, WINS! We are leading China, and all others, and will continue to do so.",
+    "source": "Trump downplays calls for AI slowdown (NPR)",
+    "url": "https://www.npr.org/2026/09/13/nx-s1-5968078/trump-mike-johnson-ai-slowdown",
+    "date": "2026-09-14",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "situational-awareness",
+  "label": "Situational Awareness (Leopold Aschenbrenner)",
+  "kind": "discourse",
+  "status": "Published June 2024; online as read 2026-11-23",
+  "note": "An essay series by Leopold Aschenbrenner, who by his own About page worked on OpenAI's Superalignment team and founded an investment firm focused on AGI (on this map as Situational Awareness LP). It argues that superintelligence will give a decisive economic and military advantage, that the free world must prevail over the authoritarian powers in this race, and that “some form of government AGI project” will follow by 2027 or 2028. These are forecasts; none of the sources read calls any current US programme that project.",
+  "words": [
+   {
+    "speaker": "Leopold Aschenbrenner, author of Situational Awareness",
+    "quote": "Superintelligence will give a decisive economic and military advantage.",
+    "source": "Situational Awareness, IIId. The Free World Must Prevail (situational-awareness.ai)",
+    "url": "https://situational-awareness.ai/the-free-world-must-prevail/",
+    "date": "2024-06",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Leopold Aschenbrenner",
+    "quote": "The free world must prevail over the authoritarian powers in this race.",
+    "source": "Situational Awareness, IIId. The Free World Must Prevail (situational-awareness.ai)",
+    "url": "https://situational-awareness.ai/the-free-world-must-prevail/",
+    "date": "2024-06",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Leopold Aschenbrenner",
+    "quote": "If America and her allies fail to win this race, we risk it all.",
+    "source": "Situational Awareness, IIId. The Free World Must Prevail (situational-awareness.ai)",
+    "url": "https://situational-awareness.ai/the-free-world-must-prevail/",
+    "date": "2024-06",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Leopold Aschenbrenner",
+    "quote": "the national security state will get involved. The USG will wake from its slumber, and by 27/28 we’ll get some form of government AGI project.",
+    "source": "Situational Awareness, IV. The Project (situational-awareness.ai)",
+    "url": "https://situational-awareness.ai/the-project/",
+    "date": "2024-06",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "palantir",
+  "label": "Palantir and The Technological Republic (Alex Karp, Nicholas Zamiska)",
+  "kind": "organization",
+  "status": "Active, as of 2026-11; the book appeared in 2025 and a 22-point manifesto drawn from it was posted in April 2026 (reported)",
+  "note": "Alex Karp, Palantir's chief executive and co-founder, writes in his Q4 2024 shareholder letter that “many of one’s adversaries and antagonists will never respond to anything but strength”; the site of his book with Nicholas Zamiska, The Technological Republic (2025), says the software industry must address “the new arms race of artificial intelligence”. Palantir builds the Maven Smart System, which Military Times reports uses Anthropic's Claude to rank targets and was used in the 2026 US-Iran war; accounts of Claude's part differ. Palantir also integrates Claude on classified networks, per Anthropic (July 2025). This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Alexander C. Karp, chief executive and co-founder of Palantir (letter to shareholders)",
+    "quote": "many of one’s adversaries and antagonists will never respond to anything but strength",
+    "source": "Q4 2024 Letter to Shareholders (Palantir)",
+    "url": "https://www.palantir.com/q4-2024-letter/en/",
+    "date": "2025-02-03",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Alexander C. Karp, Palantir (letter to shareholders)",
+    "quote": "Our commitment to tolerance and openness…is without question infectious and compelling, but we cannot yet hope that they alone will protect us",
+    "source": "Q4 2024 Letter to Shareholders (Palantir)",
+    "url": "https://www.palantir.com/q4-2024-letter/en/",
+    "date": "2025-02-03",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Palantir's 22-point manifesto drawn from Karp and Zamiska's book, as quoted by Fortune (said of America's adversaries)",
+    "quote": "will not pause to indulge in theatrical debates",
+    "source": "Palantir's mini manifesto claims some cultures are 'harmful' and 'middling' (Fortune)",
+    "url": "https://fortune.com/2026/04/22/palantir-alex-karp-mini-manifesto-national-security-defense-tech-ai/",
+    "date": "2026-04-22",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "The Technological Republic's official site (description of Karp and Zamiska's argument)",
+    "quote": "the software industry must renew its commitment to addressing our most urgent challenges, including the new arms race of artificial intelligence",
+    "source": "The Technological Republic (book site)",
+    "url": "https://techrepublicbook.com/",
+    "date": "2025",
+    "verified": "primary",
+    "nolink": true
+   }
+  ]
+ },
+ {
+  "id": "anduril",
+  "label": "Anduril Industries (Palmer Luckey)",
+  "kind": "organization",
+  "status": "Active, as of 2026-11; its “Rebuild the Arsenal” page read 2026-11-23",
+  "note": "A defence company co-founded by Palmer Luckey that builds autonomous weapons and AI-driven systems. Its own page says America and its allies need to rebuild “the arsenal of democracy” through mass-produced autonomous systems; the page promotes its own products. In a TED talk (April 2025) Luckey argued that mass-produced autonomous systems would deter a Chinese invasion of Taiwan: “We deter conflict by making sure our adversaries know they can't compete.”",
+  "words": [
+   {
+    "speaker": "Anduril Industries (co-founded by Palmer Luckey), its own company page",
+    "quote": "America and our allies need to rebuild the arsenal of democracy",
+    "source": "Rebuild the Arsenal (Anduril)",
+    "url": "https://www.anduril.com/rebuild-the-arsenal",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Palmer Luckey, founder of Anduril Industries (TED2025 talk, transcript)",
+    "quote": "AI is the only possible way we can keep up with China's numerical advantage.",
+    "source": "The AI arsenal that could stop World War III (TED, transcript)",
+    "url": "https://www.ted.com/talks/palmer_luckey_the_ai_arsenal_that_could_stop_world_war_iii/transcript",
+    "date": "2025-04",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "scsp",
+  "label": "Special Competitive Studies Project (SCSP)",
+  "kind": "organization",
+  "status": "Active; its About page read 2026-11-24",
+  "note": "Says it wants America “to win the techno-economic competition between now and 2030”. Its About page calls it a subsidiary of the Eric & Wendy Schmidt Operating Foundation; Eric Schmidt is also a co-author of Superintelligence Strategy, which argues against a US Manhattan Project for superintelligence."
+ },
+ {
+  "id": "stargate",
+  "label": "Stargate (the Stargate Project)",
+  "kind": "organization",
+  "status": "Announced 2025-01-21",
+  "note": "A company formed by SoftBank, OpenAI, Oracle and MGX to build AI infrastructure for OpenAI in the United States. Its announcement says it “intends to invest $500 billion over the next four years”, with $100 billion to be deployed immediately, and that the infrastructure “will secure American leadership in AI”. How much has been invested is not shown in the sources read.",
+  "words": [
+   {
+    "speaker": "OpenAI and SoftBank",
+    "quote": "This infrastructure will secure American leadership in AI",
+    "source": "Announcing The Stargate Project (OpenAI)",
+    "url": "https://openai.com/index/announcing-the-stargate-project/",
+    "date": "2025-01-21",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "build-american-ai",
+  "label": "Build American AI",
+  "kind": "organization",
+  "status": "Active; site read 2026-11-23",
+  "note": "A nonprofit that asks the public to “join the movement” for US leadership in AI; its executive director, Nathan Leamer, frames this against China (Breitbart, May 2026). Who funds it, and how it relates to the Leading the Future super PAC, is not known from the pages read.",
+  "words": [
+   {
+    "speaker": "Build American AI (its own site)",
+    "quote": "Join the movement to ensure America leads the world in AI innovation",
+    "source": "Build American AI (home page)",
+    "url": "https://www.buildamericanai.org/",
+    "verified": "primary",
+    "nolink": true
+   },
+   {
+    "speaker": "Nathan Leamer, executive director of Build American AI (as reported by Breitbart)",
+    "quote": "American leadership is needed. Otherwise, China is going to lead the way, and that’s going to put us at a disadvantage",
+    "source": "Exclusive -- Build American AI's Nathan Leamer (Breitbart)",
+    "url": "https://www.breitbart.com/politics/2026/05/18/exclusive-build-american-ais-nathan-leamer-american-leadership-is-needed-on-ai-otherwise-chinas-gonna-lead-the-way/",
+    "date": "2026-05-18",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "us-department-of-war",
+  "label": "US Department of War (Department of Defense)",
+  "kind": "organization",
+  "status": "Active, as of 2026-11: frontier-AI awards (2025), AI strategy (Jan 2026), Anthropic designation (Mar 2026; litigation continuing), classified-network deals (May 2026)",
+  "note": "The US Department of Defense, called the Department of War in White House and company statements. Its January 2026 AI strategy says military AI “is going to be a race for the foreseeable future, and therefore speed wins” and orders “any lawful use” language in AI contracts. After Anthropic refused two uses of Claude, the department designated it a supply chain risk; a district court held the measures unlawful and the government has appealed, while an appeals court upheld a separate exclusion. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Pete Hegseth, Secretary of War (memorandum to senior Pentagon leadership)",
+    "quote": "We must internalize that Military AI is going to be a race for the foreseeable future, and therefore speed wins.",
+    "source": "Artificial Intelligence Strategy for the Department of War, memorandum dated 9 Jan 2026 (copy hosted by afacpo.com)",
+    "url": "https://www.afacpo.com/mpm/wp-content/uploads/2026/01/ARTIFICIAL-INTELLIGENCE-STRATEGY-FOR-THE-DEPARTMENT-OF-WAR.pdf",
+    "date": "2026-01-09",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Pete Hegseth, Secretary of War (memorandum “Artificial Intelligence Strategy for the Department of War”, stamped 9 January 2026)",
+    "quote": "We must accept that the risks of not moving fast enough outweigh the risks of imperfect alignment",
+    "source": "Artificial Intelligence Strategy for the Department of War, memorandum dated 9 Jan 2026 (copy hosted by afacpo.com)",
+    "url": "https://www.afacpo.com/mpm/wp-content/uploads/2026/01/ARTIFICIAL-INTELLIGENCE-STRATEGY-FOR-THE-DEPARTMENT-OF-WAR.pdf",
+    "date": "2026-01-09",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Pete Hegseth, Secretary of War (memorandum to senior Pentagon leadership)",
+    "quote": "The Department must also utilize models free from usage policy constraints that may limit lawful military applications.",
+    "source": "Artificial Intelligence Strategy for the Department of War, memorandum dated 9 Jan 2026 (copy hosted by afacpo.com)",
+    "url": "https://www.afacpo.com/mpm/wp-content/uploads/2026/01/ARTIFICIAL-INTELLIGENCE-STRATEGY-FOR-THE-DEPARTMENT-OF-WAR.pdf",
+    "date": "2026-01-09",
+    "verified": "secondary"
+   },
+   {
+    "speaker": "Pete Hegseth, Secretary of Defense (styled Secretary of War), on X, as reproduced in an exhibit to Anthropic's court filing",
+    "quote": "the Department of War must have full, unrestricted access to Anthropic’s models for every LAWFUL purpose in defense of the Republic.",
+    "source": "Addendum to Anthropic's emergency motion, Anthropic PBC v. U.S. Department of War, No. 26-1049 (D.C. Cir.), Exhibit 2 (via CourtListener)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.42923/gov.uscourts.cadc.42923.01208829653.2.pdf",
+    "date": "2026-02-27",
+    "verified": "secondary"
+   }
+  ]
+ },
+ {
+  "id": "uscc",
+  "label": "US-China Economic and Security Review Commission (USCC)",
+  "kind": "organization",
+  "status": "Active; its 2024 recommendations read 2026-11-23",
+  "note": "A congressional commission. In its 2024 annual report to Congress it made a Manhattan Project-like programme “dedicated to racing to and acquiring” AGI the first recommendation of its chapter on emerging technologies.",
+  "words": [
+   {
+    "speaker": "US-China Economic and Security Review Commission (2024 Annual Report to Congress, recommendation 1)",
+    "quote": "Congress establish and fund a Manhattan Project-like program dedicated to racing to and acquiring an Artificial General Intelligence (AGI) capability.",
+    "source": "2024 Annual Report: Comprehensive List of the Commission's Recommendations (USCC)",
+    "url": "https://www.uscc.gov/sites/default/files/2024-11/2024_Comprehensive_List_of_Recommendations.pdf",
+    "date": "2024-11",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "prc-government",
+  "label": "Government of the People's Republic of China",
+  "kind": "organization",
+  "status": "As of 2026-11-17 (foreign ministry press conference)",
+  "note": "Respondent, and the rival the US documents name. A 13-point Global AI Governance Action Plan, published at the 2025 World AI Conference and carried by its foreign ministry, calls for global solidarity, open-source cooperation and reducing “technology barriers”; Premier Li Qiang proposed a world AI cooperation organisation the same day. Its foreign ministry calls US chip controls economic coercion. Reuters reports Beijing has also restricted imports of Nvidia's H200 chips “as it seeks to reduce its dependence on US technology”.",
+  "words": [
+   {
+    "speaker": "Government of the People's Republic of China, Global AI Governance Action Plan (carried by its Ministry of Foreign Affairs)",
+    "quote": "In the AI era, only through global solidarity can we fully unleash the potential of AI while ensuring its safety, reliability, controllability, and fairness",
+    "source": "Global AI Governance Action Plan (Ministry of Foreign Affairs of the PRC)",
+    "url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202507/t20250729_11679232.html",
+    "date": "2025-07-26",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Guo Jiakun, spokesperson of China's Ministry of Foreign Affairs",
+    "quote": "The move is yet another case of the U.S. overstretching the concept of national security, and abusing export control measures",
+    "source": "Foreign Ministry Spokesperson Guo Jiakun's Regular Press Conference on November 17, 2026 (MFA)",
+    "url": "https://www.fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261117_12061159.html",
+    "date": "2026-11-17",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "maim-authors",
+  "label": "Superintelligence Strategy (MAIM) authors",
+  "kind": "discourse",
+  "status": "Published 2025 (the site gives no date; its linked coverage is dated March 2025); site read 2026-11-23",
+  "note": "Dan Hendrycks (director of the Center for AI Safety), Eric Schmidt and Alexandr Wang. Respondents, not carriers: they propose Mutual Assured AI Malfunction (MAIM), a deterrence regime in which any state's bid for unilateral AI dominance can expect sabotage by rivals, alongside non-proliferation and competitiveness, and they argue against a US Manhattan Project for superintelligence. The same strategy still urges competitiveness through chips and military AI. The Special Competitive Studies Project, which says it wants America to win the “techno-economic competition”, calls itself a subsidiary of Eric and Wendy Schmidt's operating foundation.",
+  "words": [
+   {
+    "speaker": "Dan Hendrycks, Eric Schmidt and Alexandr Wang, Superintelligence Strategy",
+    "quote": "any state’s aggressive bid for unilateral AI dominance is met with preventive sabotage by rivals",
+    "source": "Superintelligence Strategy (nationalsecurity.ai)",
+    "url": "https://www.nationalsecurity.ai/",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Dan Hendrycks, Eric Schmidt and Alexandr Wang, Superintelligence Strategy (section on existing strategies)",
+    "quote": "The Manhattan Project assumes that rivals will acquiesce to an enduring imbalance or omnicide rather than move to prevent it.",
+    "source": "Superintelligence Strategy: AI Is Pivotal for National Security (nationalsecurity.ai)",
+    "url": "https://www.nationalsecurity.ai/chapter/ai-is-pivotal-for-national-security",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "lawzero",
+  "label": "LawZero",
+  "kind": "organization",
+  "status": "Active, as of 2026-11-23; launched June 2025",
+  "note": "Yoshua Bengio's nonprofit, launched in June 2025 and incubated at Mila, which says it is building a non-agentic “Scientist AI” as a safety guardrail. Bengio's launch post gives as one reason a test result that Anthropic published about its own model, Claude 4. Its donors page credits Jaan Tallinn and shows the logos of Coefficient Giving, the Future of Life Institute, the Gates Foundation, NVIDIA and Schmidt Sciences, with no amounts or dates. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Yoshua Bengio, founder of LawZero",
+    "quote": "I am launching a new non-profit AI safety research organization called LawZero, to prioritize safety over commercial imperatives.",
+    "source": "Introducing LawZero (yoshuabengio.org)",
+    "url": "https://yoshuabengio.org/2025/06/03/introducing-lawzero/",
+    "date": "2025-06-03",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Yoshua Bengio, founder of LawZero",
+    "quote": "LawZero’s research plan aims at developing a non-agentic and trustworthy AI, which I call the Scientist AI.",
+    "source": "Introducing LawZero (yoshuabengio.org)",
+    "url": "https://yoshuabengio.org/2025/06/03/introducing-lawzero/",
+    "date": "2025-06-03",
+    "verified": "primary"
+   }
+  ]
+ },
+ {
+  "id": "yoshua-bengio",
+  "label": "Yoshua Bengio",
+  "kind": "public figure",
+  "status": "Active, as of 2026-11; founder of LawZero, lead of the International AI Safety Report",
+  "note": "Computer scientist at the Université de Montréal and deep-learning pioneer (Turing Award 2018) who founded Mila and, in June 2025, the safety nonprofit LawZero. He led the second International AI Safety Report, published in February 2026, written by more than 100 experts and backed by over 30 countries and international organisations. In a Guardian interview, relayed by Futurism, he argued against legal rights for AI systems; his LawZero announcement cites a test that Anthropic ran on its own model. This map is made with Anthropic's models, and Anthropic is a party here.",
+  "words": [
+   {
+    "speaker": "Yoshua Bengio, founder of LawZero",
+    "quote": "More recently, Claude 4’s system card shows that it can choose to blackmail an engineer to avoid being replaced by a new version.",
+    "source": "Introducing LawZero (yoshuabengio.org)",
+    "url": "https://yoshuabengio.org/2025/06/03/introducing-lawzero/",
+    "date": "2025-06-03",
+    "verified": "primary"
+   },
+   {
+    "speaker": "Yoshua Bengio (to The Guardian, as relayed by Futurism)",
+    "quote": "eventually giving them rights would mean we’re not allowed to shut them down",
+    "source": "AI Godfather Warns… self-preservation (Futurism, relaying The Guardian)",
+    "url": "https://futurism.com/artificial-intelligence/ai-godfather-self-preservation",
+    "date": "2026-01-04",
+    "verified": "secondary"
    }
   ]
  }
