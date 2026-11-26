@@ -578,6 +578,33 @@
       root.setAttribute('data-theme', dark ? 'light' : 'dark');
     });
     document.getElementById('tab-ideals').addEventListener('click', function () { go(null); });
+    /* A tab opens its view at the top, now that the tabs can be reached from far down a page. The views paint
+       first (the buttons' own listeners run before this one), then the page goes to the top. */
+    document.getElementById('views').addEventListener('click', function (ev) { if (ev.target.closest('button')) window.scrollTo(0, 0); });
+    /* The title goes back to the front, as a reader expects of a site's name. */
+    document.getElementById('home').addEventListener('click', function (ev) {
+      if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return;
+      ev.preventDefault(); go(null); window.scrollTo(0, 0);
+    });
+    /* The bar (search and the parts of the map). On a wide screen it stays at the top while the page scrolls and
+       draws a rule once it has left its place; on a narrow screen it is too tall to keep, so once it is out of
+       sight a button brings it back. */
+    (function () {
+      var bar = document.getElementById('bar'), up = document.getElementById('to-top'), wide = window.matchMedia('(min-width: 901px)');
+      function onScroll() {
+        var r = bar.getBoundingClientRect();
+        bar.classList.toggle('is-stuck', wide.matches && window.scrollY > 0 && r.top <= 0.5);
+        up.hidden = wide.matches || r.bottom > -window.innerHeight;
+      }
+      up.addEventListener('click', function () {
+        window.scrollTo(0, Math.max(0, bar.getBoundingClientRect().top + window.scrollY - 8));
+        var t = document.querySelector('#views [aria-pressed="true"]') || document.getElementById('search');
+        t.focus({ preventScroll: true });
+      });
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      onScroll();
+    })();
     document.getElementById('tab-money').addEventListener('click', function () { goMoney(null); });
     document.getElementById('tab-ancients').addEventListener('click', function () { goAncients(null); });
     document.getElementById('tab-ancients').hidden = !ns.hasAncients(ix);

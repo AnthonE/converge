@@ -253,6 +253,10 @@
       ui.add(box, ui.add(s, ul));
     }
     var notes = [m.note, m.made_with].filter(Boolean);
-    notes.forEach(function (t) { ui.add(box, ui.h('p', 'note cards-note', t)); });
+    if (notes.length) {
+      var fn = ui.h('div', 'front-notes');
+      notes.forEach(function (t) { ui.add(fn, ui.h('p', 'note cards-note', t)); });
+      ui.add(box, fn);
+    }
   };
 })(window.IdealsMap = window.IdealsMap || {});
