@@ -632,8 +632,9 @@
     /* Said plainly while it is true: the map went out before a person had re-read its riskiest sources. */
     var s = g.sources || {}, dn = document.getElementById('draft-note'), m = g.meta || {};
     if (s.gate && s.gate_reread < s.gate) {
-      add(dn, h('span', 'dn-long', 'Published early, as a draft. AI models gathered and checked these records; a person is now re-reading the sources, starting with the ' +
-        s.gate + ' pages behind the Watch and the allegations (' + s.gate_reread + ' done so far). Spot a mistake or a missing side? '),
+      /* One wording everywhere (here, the plain pages, Start here): "a person has re-read N of the M pages". */
+      add(dn, h('span', 'dn-long', 'Published early, as a draft. AI models gathered and checked these records. A person re-reads the sources, ' +
+        'the ' + s.gate + ' pages behind the Watch and the allegations first: ' + s.gate_reread + ' of ' + s.gate + ' re-read so far. Spot a mistake or a missing side? '),
         /* On a phone, away from the front, the same facts in one sentence. */
         h('span', 'dn-short', 'A draft, checked by AI models: a person has re-read ' + s.gate_reread + ' of the ' + s.gate +
           ' pages behind the Watch and the allegations so far. '));

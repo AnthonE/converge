@@ -771,9 +771,9 @@ class Writer:
         s = ix.g.get('sources') or {}
         draft = ''
         if s.get('gate') and s.get('gate_reread', 0) < s['gate']:
-            draft = (f'<p class="draft-note" data-nosnippet>Published early, as a draft. AI models gathered and checked these records; a person is '
-                     f'now re-reading the sources, starting with the {s["gate"]} pages behind the Watch and the allegations '
-                     f'({s.get("gate_reread", 0)} done so far).</p>')
+            draft = (f'<p class="draft-note" data-nosnippet>Published early, as a draft. AI models gathered and checked these records. '
+                     f'A person re-reads the sources, the {s["gate"]} pages behind the Watch and the allegations first: '
+                     f'{s.get("gate_reread", 0)} of {s["gate"]} re-read so far.</p>')
         tag = 'draft' if self.public else 'private prototype'
         made = E(ix.meta.get('made_with') or '')
         return f'''<!doctype html>

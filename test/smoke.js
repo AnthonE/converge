@@ -74,7 +74,7 @@ const path = require('path');
   const src = graph.sources || {};
   if (src.gate && src.gate_reread < src.gate) {
     const dn = await page.locator('#draft-note').textContent().catch(() => '');
-    if (!dn.includes(src.gate + ' pages') || !dn.includes('(' + src.gate_reread + ' done so far)')) fail(`the draft notice reads "${dn}"`);
+    if (!dn.includes(src.gate + ' pages') || !dn.includes(src.gate_reread + ' of ' + src.gate + ' re-read so far')) fail(`the draft notice reads "${dn}"`);
     if ((graph.meta || {}).contribute && !(await page.locator('#draft-note a').count())) fail('the draft notice gives no way to send feedback');
   }
   if ((await page.locator('#the-page .card').first().locator('.card-phases li').count()) !== 6) fail('a card does not name its six phases');
