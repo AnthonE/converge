@@ -27,11 +27,13 @@
     if (!ids.length) return null;
     var n = names(ix, ids, 4), p = ui.h('p', 'card-names');
     ui.add(p, ui.h('span', 'card-k', label + ' '));
-    /* The comma stays with the name before it, so a line never starts with one. */
+    /* The comma sits inside the button, after the name, so a line never starts with one and a name that wraps
+       keeps its comma beside its last word (a button wraps as one block, so a comma after it lands at the edge). */
     n.shown.forEach(function (c, i) {
       var b = ui.h('button', 'linkbtn', c.label); b.type = 'button';
+      if (i < n.shown.length - 1) { var cm = ui.h('span', 'card-comma', ','); cm.setAttribute('aria-hidden', 'true'); ui.add(b, cm); }
       b.addEventListener('click', function () { nav.goRecord(c.id); });
-      ui.add(p, ui.add(ui.h('span', 'card-nm'), b, i < n.shown.length - 1 ? ui.h('span', null, ',') : null), ui.h('span', null, ' '));
+      ui.add(p, ui.add(ui.h('span', 'card-nm'), b), ui.h('span', null, ' '));
     });
     if (n.more) ui.add(p, ui.h('span', 'card-more', ' and ' + n.more + ' more'));
     return p;
