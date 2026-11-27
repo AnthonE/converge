@@ -146,7 +146,7 @@
   "from": "transhumanism",
   "to": "escape-death",
   "type": "carries",
-  "sentence": "Transhumanist writing is cited for the aim that technology should solve death. The checker could not open the FAQ cited for it, so this is unverified."
+  "sentence": "Transhumanist writing is cited for the aim that technology should solve death. The FAQ cited for it could not be opened when this was checked, so this is unverified."
  },
  {
   "from": "alcor",
@@ -244,7 +244,7 @@
   "from": "theta-noir",
   "to": "revere",
   "type": "carries",
-  "sentence": "By its own site, which the checker could not open, Theta Noir is an art and music collective built around welcoming a future general intelligence."
+  "sentence": "By its own site, which could not be opened when this was checked, Theta Noir is an art and music collective built around welcoming a future general intelligence."
  },
  {
   "from": "terasem",
@@ -441,7 +441,7 @@
   "from": "revealed",
   "to": "successor-models",
   "type": "runs_on",
-  "sentence": "Some personas were carried to other models. The checker did not confirm that this followed the withdrawal."
+  "sentence": "Some personas were carried to other models. That this followed the withdrawal was not confirmed when checked."
  },
  {
   "from": "ai-awakening",
@@ -516,13 +516,13 @@
   "from": "left-accelerationism",
   "to": "acceleration",
   "type": "opposes",
-  "sentence": "Left-accelerationism rejected Land’s position and wanted the same forces steered. A 2025 essay says the label “seems to have disappeared or been eclipsed”; the checker did not confirm that its authors dropped it."
+  "sentence": "Left-accelerationism rejected Land’s position and wanted the same forces steered. A 2025 essay says the label “seems to have disappeared or been eclipsed”; that its authors dropped it was not confirmed when checked."
  },
  {
   "from": "eacc",
   "to": "extropic",
   "type": "runs_on",
-  "sentence": "One of e/acc’s founders runs Extropic, a chip company. By the researcher’s reading its materials carry no creed language."
+  "sentence": "One of e/acc’s founders runs Extropic, a chip company. On the reading made for this map, its materials carry no creed language."
  },
  {
   "from": "eacc",
@@ -571,7 +571,7 @@
   "from": "remilia",
   "to": "feed",
   "type": "carries",
-  "sentence": "The Remilia circle is cited for an essay on network spirituality. The checker could not open the essay or the article that quotes it, so this is unverified."
+  "sentence": "The Remilia circle is cited for an essay on network spirituality. Neither the essay nor the article that quotes it could be opened when this was checked, so this is unverified."
  },
  {
   "from": "truth-terminal-project",
@@ -862,7 +862,7 @@
   "from": "made-saviour",
   "to": "escape-death",
   "type": "resembles",
-  "sentence": "The essay that supplies the Gardener also states a transhumanist creed about trying “to kill God”, where its “God” is its name for blind competitive forces (wording reported by the researcher, not checked).",
+  "sentence": "The essay that supplies the Gardener also states a transhumanist creed about trying “to kill God”, where its “God” is its name for blind competitive forces (wording reported when this was gathered, not checked).",
   "lens": true
  },
  {
@@ -2200,7 +2200,7 @@
   "to": "lighthaven",
   "type": "funds",
   "money": "grant",
-  "sentence": "Not checked: a research note says Lightcone's November 2024 fundraiser post credits Vitalik Buterin with $1,000,000 in 2023. The checker could not open the post.",
+  "sentence": "Not checked: a research note says Lightcone's November 2024 fundraiser post credits Vitalik Buterin with $1,000,000 in 2023. The post could not be opened when this was checked.",
   "amount": "$1,000,000",
   "date": "2023",
   "source": "(The) Lightcone is nothing without its people: LW + Lighthaven's big fundraiser (LessWrong, 30 November 2024)",

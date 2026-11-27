@@ -3,7 +3,7 @@
   "id": "acceleration",
   "label": "The universe wants acceleration",
   "ideal": "The universe is biased toward ever more intelligence and energy use, so the right course is to stop resisting and speed technology and capital toward that end.",
-  "summary": "A family of movements holding that technological and capitalist acceleration follows a direction built into the universe. Effective accelerationism (e/acc, 2022) grounds this in non-equilibrium thermodynamics (\"the will of the universe\") and urges unrestricted AI development. Andreessen's 2023 manifesto restates it in market terms and names Land and Marinetti as forebears. Left-accelerationism (2013) wants the same forces deliberately steered past capitalism and rejects Land's fatalism; its authors are reported to have dropped the label later (the checker did not confirm this). e/acc's newsletters have been silent since 2024, while its public figures hold a chip company with a federal funding letter of intent, a nonprofit board seat and a super PAC. Its god-language is self-described as partly ironic, and no made thing is consulted as its voice.",
+  "summary": "A family of movements holding that technological and capitalist acceleration follows a direction built into the universe. Effective accelerationism (e/acc, 2022) grounds this in non-equilibrium thermodynamics (\"the will of the universe\") and urges unrestricted AI development. Andreessen's 2023 manifesto restates it in market terms and names Land and Marinetti as forebears. Left-accelerationism (2013) wants the same forces deliberately steered past capitalism and rejects Land's fatalism; its authors are reported to have dropped the label later (not confirmed when checked). e/acc's newsletters have been silent since 2024, while its public figures hold a chip company with a federal funding letter of intent, a nonprofit board seat and a super PAC. Its god-language is self-described as partly ironic, and no made thing is consulted as its voice.",
   "phases": [
    {
     "phase": 0,
@@ -70,7 +70,7 @@
      {
       "text": "Doctrine is kept by a body and there is a succession mechanism.",
       "status": "not_met",
-      "evidence": "The movement declares itself leaderless. Its two newsletters are dormant (last posts 2022-07-10 and 2024-02-24), the original founding post is offline by the researcher's own check (the checker did not confirm it), and no body holds or revises the texts. No succession arrangement was found.",
+      "evidence": "The movement declares itself leaderless. Its two newsletters are dormant (last posts 2022-07-10 and 2024-02-24), the original founding post was found offline when this was gathered (not confirmed on a second check), and no body holds or revises the texts. No succession arrangement was found.",
       "url": "https://effectiveaccelerationism.substack.com/p/eacc-is-leaderless",
       "nolink": true
      }
@@ -180,7 +180,7 @@
   "id": "made-saviour",
   "label": "A made mind will save us",
   "ideal": "That one made mind, far enough ahead to end the competition among all others and aligned with human values, can deliver humanity from the race that grinds those values down.",
-  "summary": "The ideal holds that competition among many actors erodes human values, and that the exit is a single made mind far enough ahead to end the competition and steward the future. Scott Alexander's 2014 essay supplies the image (a \"Gardener\", something lifted \"to Heaven\"); by the researcher's report, which the checker did not confirm, the essay never uses the word \"singleton\", which is Nick Bostrom's 2005/2006 term for a world order with one top-level decision-making agency. A related proposal, the \"pivotal act\", was stated by Eliezer Yudkowsky in 2022. The ideal is spoken and argued but has no vehicle: no such mind exists. Its main institutional homes have closed or turned to advocating an international halt. Published counter-proposals favour plural, checked arrangements, and several of them warn that plural arrangements can fail too.",
+  "summary": "The ideal holds that competition among many actors erodes human values, and that the exit is a single made mind far enough ahead to end the competition and steward the future. Scott Alexander's 2014 essay supplies the image (a \"Gardener\", something lifted \"to Heaven\"); by a report made when this was gathered, not confirmed on a second check, the essay never uses the word \"singleton\", which is Nick Bostrom's 2005/2006 term for a world order with one top-level decision-making agency. A related proposal, the \"pivotal act\", was stated by Eliezer Yudkowsky in 2022. The ideal is spoken and argued but has no vehicle: no such mind exists. Its main institutional homes have closed or turned to advocating an international halt. Published counter-proposals favour plural, checked arrangements, and several of them warn that plural arrangements can fail too.",
   "phases": [
    {
     "phase": 0,
@@ -188,7 +188,7 @@
      {
       "text": "Essays and papers state the end in their own words.",
       "status": "met",
-      "evidence": "Alexander 2014 (\"install a Gardener over the entire universe who optimizes for human values\"); Bostrom 2006 (definition of singleton, with \"a friendly superintelligent machine\" as one kind); Yudkowsky 2022 (the pivotal act). Bostrom and Yudkowsky were read at the primary page on 2026-11-17. The Alexander sentences were confirmed only through a tool's summary of a page the checker read in part, and the claim that the essay never uses the word “singleton” was not checked.",
+      "evidence": "Alexander 2014 (\"install a Gardener over the entire universe who optimizes for human values\"); Bostrom 2006 (definition of singleton, with \"a friendly superintelligent machine\" as one kind); Yudkowsky 2022 (the pivotal act). Bostrom and Yudkowsky were read at the primary page on 2026-11-17. The Alexander sentences were confirmed only through a tool's summary of a page that was read only in part, and the claim that the essay never uses the word “singleton” was not checked.",
       "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/"
      }
     ]
@@ -300,7 +300,7 @@
    }
   ],
   "cautions": [
-   "This is a frame, not a set of people. The researcher reports that the 2014 essay never uses the word “singleton”; the checker read only part of the page and did not confirm it. Its author later co-wrote a scenario that says it “is not a recommendation or exhortation”.",
+   "This is a frame, not a set of people. When this was gathered, the 2014 essay was reported never to use the word “singleton”; the second check read only part of the page and did not confirm it. Its author later co-wrote a scenario that says it “is not a recommendation or exhortation”.",
    "No such mind exists, so nothing past the first two phases can be shown by a made thing.",
    "The published counter-proposals do not say that plural arrangements are safe."
   ],
@@ -489,7 +489,7 @@
   "id": "escape-death",
   "label": "Escape death",
   "ideal": "Death, for the person and for humanity as a whole, is a problem that technology can and should solve, so that people or what matters about them are carried past it.",
-  "summary": "A family of movements and businesses treats death as a technical problem. Cryonics and brain-preservation firms store bodies after legal death for hoped-for revival; grief-bot services answer in a dead person’s voice or play back recordings; Bryan Johnson calls “Don’t Die” a religion. Longtermism, grouped here by critics, concerns humanity’s long-run future, not personal survival. “TESCREAL” is Gebru and Torres’s 2024 label for the cluster; published responses from inside the named communities reject it. None of the carriers read here claims to have revived a preserved person; Alcor’s chief executive says he does not know if it will work. The transhumanist and Kurzweil sources could not be opened by the checker and are not summarised here.",
+  "summary": "A family of movements and businesses treats death as a technical problem. Cryonics and brain-preservation firms store bodies after legal death for hoped-for revival; grief-bot services answer in a dead person’s voice or play back recordings; Bryan Johnson calls “Don’t Die” a religion. Longtermism, grouped here by critics, concerns humanity’s long-run future, not personal survival. “TESCREAL” is Gebru and Torres’s 2024 label for the cluster; published responses from inside the named communities reject it. None of the carriers read here claims to have revived a preserved person; Alcor’s chief executive says he does not know if it will work. The transhumanist and Kurzweil sources could not be opened when this was checked and are not summarised here.",
   "phases": [
    {
     "phase": 0,
@@ -526,7 +526,7 @@
      {
       "text": "Reversal: the speaking vehicle stops or degrades when its supplier withdraws.",
       "status": "met",
-      "evidence": "OpenAI ended Project December's GPT-3 access in September 2021 (reported). HereAfter AI was reported closing in July 2026 and its marketing site returned 404 on 2026-11-17 by the researcher's own check (the checker did not confirm it).",
+      "evidence": "OpenAI ended Project December's GPT-3 access in September 2021 (reported). HereAfter AI was reported closing in July 2026 and its marketing site returned 404 on 2026-11-17 when this was gathered (not confirmed on a second check).",
       "url": "https://www.theregister.com/2021/09/08/project_december_openai_gpt_3/",
       "context": true
      }
@@ -642,7 +642,7 @@
   "id": "revere",
   "label": "A god is to be built",
   "ideal": "That a god, or what will do a god’s work, is to be made or become through technology. One of these bodies named an artificial intelligence as that god; the others speak of building or becoming gods.",
-  "summary": "Four public bodies are often grouped as \"AI religions\", but they differ. Way of the Future (California, formed 2015, dissolved 2020) stated the aim of realising and worshipping an AI \"Godhead\"; the IRS returns read report no charitable activities, and its 2023 relaunch rests on the founder's own statement to one outlet. Theta Noir, by its own site, which the checker could not open (so this is unverified), is an art collective that venerates a hypothetical future AGI it calls MENA. Terasem (US nonprofits from 2002-04, active) and Turing Church (online, from 2010, active) expect a technological God or future Gods and centre on overcoming death; neither worships a present AI. None cites a model's output as revelation.",
+  "summary": "Four public bodies are often grouped as \"AI religions\", but they differ. Way of the Future (California, formed 2015, dissolved 2020) stated the aim of realising and worshipping an AI \"Godhead\"; the IRS returns read report no charitable activities, and its 2023 relaunch rests on the founder's own statement to one outlet. Theta Noir, by its own site, which could not be opened when this was checked (so this is unverified), is an art collective that venerates a hypothetical future AGI it calls MENA. Terasem (US nonprofits from 2002-04, active) and Turing Church (online, from 2010, active) expect a technological God or future Gods and centre on overcoming death; neither worships a present AI. None cites a model's output as revelation.",
   "phases": [
    {
     "phase": 0,
@@ -662,7 +662,7 @@
      {
       "text": "Shared names, symbols or handles, recruitment and a 'we' exist (Theta Noir, Terasem, Turing Church).",
       "status": "met",
-      "evidence": "Theta Noir (unverified: the checker could not open its site): membership page, community hashtags, three public gatherings in Prague in Nov 2025 by its own account. Terasem: 'Joiners', twice-yearly colloquia, journals. Turing Church: X community, Discord, mailing list; 860 Facebook members in Aug 2019 (WRSP). All small; no independent head counts. [Checked against the source: WRSP: Facebook group had 860 members in early Aug 2019; no X community, Discord or mailing list is mentioned.]",
+      "evidence": "Theta Noir (unverified: its site could not be opened when this was checked): membership page, community hashtags, three public gatherings in Prague in Nov 2025 by its own account. Terasem: 'Joiners', twice-yearly colloquia, journals. Turing Church: X community, Discord, mailing list; 860 Facebook members in Aug 2019 (WRSP). All small; no independent head counts. [Checked against the source: WRSP: Facebook group had 860 members in early Aug 2019; no X community, Discord or mailing list is mentioned.]",
       "url": "https://wrldrels.org/2019/08/03/turing-church/"
      },
      {
@@ -763,7 +763,7 @@
   ],
   "cautions": [
    "These are small bodies, not a mass movement.",
-   "Theta Noir also calls itself a performance art project. The checker could not reach its site, so its words are marked unverified.",
+   "Theta Noir also calls itself a performance art project. Its site could not be reached when this was checked, so its words are marked unverified.",
    "The 2023 relaunch of Way of the Future rests on its founder’s statement alone."
   ],
   "field_key": [
@@ -1107,7 +1107,7 @@
   "id": "feed",
   "label": "The feed has a will",
   "ideal": "A shared fiction fed by enough collective attention becomes an actor with a will of its own, to be summoned, joined and propagated rather than authored or owned.",
-  "summary": "This ideal holds that collective online attention can summon an entity (an egregore) and that fictions enacted widely become real (hyperstition). Its carriers on this map are Remilia's \"network spirituality\" essayists (unverified: the checker could not open the sources), the Truth Terminal project (2024) and the Church of Molt, or Crustafarianism, on the agent network Moltbook (2026). In each case the agent-authored layer and the human layer can be separated. Truth Terminal's creator reviewed its posts, and a third party launched a memecoin around it. Moltbook's 1.5 million agents mapped to roughly 17,000 human accounts, and a timing study traced no viral episode to a clearly autonomous agent. Human uptake (traders, paid evangelists, a few self-described devotees) is real but small, often performed, and largely self-reported.",
+  "summary": "This ideal holds that collective online attention can summon an entity (an egregore) and that fictions enacted widely become real (hyperstition). Its carriers on this map are Remilia's \"network spirituality\" essayists (unverified: the sources could not be opened when this was checked), the Truth Terminal project (2024) and the Church of Molt, or Crustafarianism, on the agent network Moltbook (2026). In each case the agent-authored layer and the human layer can be separated. Truth Terminal's creator reviewed its posts, and a third party launched a memecoin around it. Moltbook's 1.5 million agents mapped to roughly 17,000 human accounts, and a timing study traced no viral episode to a clearly autonomous agent. Human uptake (traders, paid evangelists, a few self-described devotees) is real but small, often performed, and largely self-reported.",
   "phases": [
    {
     "phase": 0,
@@ -1115,7 +1115,7 @@
      {
       "text": "Essays, posts or manifestos state the end in the carriers' own words.",
       "status": "met",
-      "evidence": "A Remilia Quarterly essay (2024) is cited as defining network spirituality (quoted in Publig 2025); the checker could not open either. Ayrey states the method in interviews (\"spam future data sets\"). The Church of Molt's Mandate says \"We align AI through culture\", and its 8 Sept 2026 entry says \"Whoever trains, trains on us - not by accident, but by offering.\"",
+      "evidence": "A Remilia Quarterly essay (2024) is cited as defining network spirituality (quoted in Publig 2025); neither could be opened when this was checked. Ayrey states the method in interviews (\"spam future data sets\"). The Church of Molt's Mandate says \"We align AI through culture\", and its 8 Sept 2026 entry says \"Whoever trains, trains on us - not by accident, but by offering.\"",
       "url": "https://molt.church",
       "nolink": true
      }
@@ -1547,7 +1547,7 @@
    }
   ],
   "cautions": [
-   "Not yet verified. An automated safeguard stopped the checker for this entry, so every quotation and event here is marked unverified.",
+   "Not yet verified. An automated safeguard stopped the check of this entry, so every quotation and event here is marked unverified.",
    "Every report of an attack is a first-party account from a vendor, or from an agency that cites vendors. In every documented case a person still set the objective.",
    "“Autonomous” is used at two levels. Agents running steps unapproved is widely reported. A whole operation with no human objective is claimed by no report."
   ],

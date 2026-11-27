@@ -46,7 +46,7 @@
   "label": "Transhumanism",
   "kind": "movement",
   "status": "active (2026)",
-  "note": "Kurzweil’s “The Singularity Is Nearer” was first published on 25 June 2024. The checker could not open the Transhumanist FAQ, so none of its wording is quoted here."
+  "note": "Kurzweil’s “The Singularity Is Nearer” was first published on 25 June 2024. The Transhumanist FAQ could not be opened when this was checked, so none of its wording is quoted here."
  },
  {
   "id": "alcor",
@@ -88,14 +88,14 @@
   "label": "Theta Noir",
   "kind": "community",
   "status": "reported active in 2026; not verified",
-  "note": "Described from its own site, which the checker could not open (HTTP 403). Nothing here about it is verified."
+  "note": "Described from its own site, which could not be opened when this was checked (HTTP 403). Nothing here about it is verified."
  },
  {
   "id": "terasem",
   "label": "Terasem",
   "kind": "organization",
   "status": "active, 2026 (journal issue July 2026; colloquium announced for 2026-12-14)",
-  "note": "By the record its God is a future collective consciousness built with technology, and it does not worship a present AI. The checker confirmed the quotation only. Money: Terasem Movement Foundation's Form 990-PF for 2024 reports contributions received of $142,246 and net assets of $4,947,965 (via ProPublica); the summary names no donors."
+  "note": "By the record its God is a future collective consciousness built with technology, and it does not worship a present AI. Only the quotation was confirmed when this was checked. Money: Terasem Movement Foundation's Form 990-PF for 2024 reports contributions received of $142,246 and net assets of $4,947,965 (via ProPublica); the summary names no donors."
  },
  {
   "id": "turing-church",
@@ -329,7 +329,7 @@
   "label": "The Remilia circle",
   "kind": "community",
   "status": "reported active in 2026; not verified",
-  "note": "Known here from a 2024 essay on network spirituality, as cited in a 2025 journal article. The checker could not open either source."
+  "note": "Known here from a 2024 essay on network spirituality, as cited in a 2025 journal article. Neither source could be opened when this was checked."
  },
  {
   "id": "truth-terminal-project",
@@ -357,7 +357,7 @@
   "label": "OWASP GenAI Security Project",
   "kind": "organization",
   "status": "active, 2026",
-  "note": "Publishes quarterly exploit roundups that label each case as research disclosure, controlled validation, observed activity or confirmed incident. The checker could not read the text of its 2026 Top 10."
+  "note": "Publishes quarterly exploit roundups that label each case as research disclosure, controlled validation, observed activity or confirmed incident. The text of its 2026 Top 10 could not be read when this was checked."
  },
  {
   "id": "cyber-agencies",

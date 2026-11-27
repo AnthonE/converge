@@ -81,8 +81,24 @@ LABEL_BAN = re.compile(r'\b(cult|cults|cultists?|brainwash\w*|idolaters?|possess
 # Working notes that must not reach a reader: research ids, file paths, instructions to curators.
 INTERNAL = re.compile(r'\b(primary-s\d+|invoked-i\d+|mechanisms-[a-z-]+-[sx]\d+|map flag|do not link|name it, never|'
                       r'string-check|research record|map quotation|not yet in the corpus|in this pass|alt URL|not opened here|'
-                      r'Describe, never prescribe|fetch tool|returned 403|dossiers?|per the checker)\b|(?-i:\bTODO\b)|(?-i:\bEXP-[A-Z]+)|\(Adapted\.\)|\.json\b|\bops/(ideals-map|lab)/|'
+                      r'Describe, never prescribe|fetch tool|returned 403|dossiers?|(per )?the checker|by the researcher[\x27’]s|the researcher reports)\b|(?-i:\bTODO\b)|(?-i:\bEXP-[A-Z]+)|\(Adapted\.\)|\.json\b|\bops/(ideals-map|lab)/|'
                       r'/data/[a-z]', re.I)
+
+
+def reader_strings(x, path=''):
+    """Every string in a record with where it sits, leaving out addresses (keys ending in url) and a speaker's own
+    quoted words, which may use any word."""
+    if isinstance(x, dict):
+        for k, v in x.items():
+            if not str(k).lower().endswith('url') and k != 'quote':
+                yield from reader_strings(v, f'{path}.{k}' if path else str(k))
+    elif isinstance(x, list):
+        for i, v in enumerate(x):
+            yield from reader_strings(v, f'{path}[{i}]')
+    elif isinstance(x, str):
+        yield path, x
+
+
 RELAYED = re.compile(r'\b(as quoted|quoted by|quoted in|as reported|reported by|in a release by|relayed? (by|on|through)|via(?! X\b))\b', re.I)
 # A page the speaker did not publish: an interview, a transcript, an encyclopedia.
 NOT_OWN = re.compile(r'\binterview (by|with)\b|\btranscript\b|\bas told to\b', re.I)
@@ -184,6 +200,12 @@ def validate(g):
                     err(f'{name}/{nid}: missing "{k}"')
             if not ID.match(str(nid)):
                 err(f'{name}/{nid}: id must be lower-case letters, digits and hyphens')
+            # Every reader-facing string in a record (summaries, notes, phase evidence, cautions, money lines) is
+            # scanned for working notes; the ancient files get the fuller scan below. Addresses are not reader text.
+            if name not in ANCIENT_FILES:
+                for where, text in reader_strings(n):
+                    if INTERNAL.search(text):
+                        err(f'{name}/{nid}: a working note reaches the reader in "{where}": {text[:70]}')
             if nid in ('money', 'ancients', 'drawing'):
                 err(f'{name}/{nid}: "{nid}" is the address of a view (#{nid}); use another id')
             if nid in ids:
